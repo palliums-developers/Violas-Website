@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/whitePaper.css">
+  <link rel="icon" href="./img/hLogo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/hLogo.ico" type="image/x-icon">
   <script src="js/scrollSpy.js"></script>
   <title>violas</title>
 </head>
@@ -235,8 +237,10 @@
                         参议院与众议院的权利将参照美国两院的权利制定，两者将形成分权和制衡的关系。</p>
                       <span>（二）成员</span>
                       <span>成员分为两类:</span>
-                      <p style="margin-bottom: 15px; font-size: 24px;"><span>1、节点运营者。</span>天然获得协会成员身份,这些成员组成协会的“参议院”。</p>
-                      <p style="font-size: 24px;"><span>2、节点参与者。</span>投资了某个节点，或者是某个节点支持的稳定币或应用运营者,需要通过该节点社群选举当选。这些成员组成协会的“众议院”。</p>
+                      <p style="margin-bottom: 15px; font-size: 24px;"><span>1、节点运营者。</span>天然获得协会成员身份,这些成员组成协会的“参议院”。
+                      </p>
+                      <p style="font-size: 24px;">
+                        <span>2、节点参与者。</span>投资了某个节点，或者是某个节点支持的稳定币或应用运营者,需要通过该节点社群选举当选。这些成员组成协会的“众议院”。</p>
                     </div>
                   </div>
                 </div>
@@ -373,10 +377,10 @@
   let lists = document.querySelectorAll('.select .list span');
   selects.style.display = 'none'
   let wPaper = document.getElementById('whitePaper');
-   wPaper.onclick = function () {
-      wPaper.style.cssText +="background:#FFF;color:rgba(44, 9, 108, 1)";
-      window.location = 'whitePaper.html';
-    }
+  wPaper.onclick = function () {
+    wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
+    window.location = 'whitePaper.html';
+  }
   docum.onclick = function () {
     if (selects.style.display == 'none') {
       docum.style.color = "rgba(62, 209, 246, 1)"
@@ -388,11 +392,11 @@
   }
   for (var i = 0; i < lists.length; i++) {
     lists[i].onclick = function () {
-      if(this.innerHTML == 'Violas'){
+      if (this.innerHTML == 'Violas') {
         selects.style.display = 'none'
-      }else if(this.innerHTML == 'libra'){
-          window.location = 'libra_doc/lib_doc_en2cn/welcome-to-libra.htm';
-          selects.style.display = 'none'
+      } else if (this.innerHTML == 'libra') {
+        window.location = 'libra_doc/lib_doc_en2cn/welcome-to-libra.htm';
+        selects.style.display = 'none'
       }
       for (var i = 0; i < lists.length; i++) {
         lists[i].style.background = '#FFF';
