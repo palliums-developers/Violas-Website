@@ -101,16 +101,11 @@ header {
   list-style: none;
 }
 .onPageNav ul li {
-  /* font-size: 12px;
-  line-height: 20px;
-  padding-bottom: 8px; */
-
-
-height: 60px;
-font-size: 20px;
-font-family: PingFangSC-Regular,PingFang SC;
-font-weight: 400;
-color: rgba(44, 9, 108, .5);
+  height: 60px;
+  font-size: 20px;
+  font-family: PingFangSC-Regular,PingFang SC;
+  font-weight: 400;
+  color: rgba(44, 9, 108, .5);
 }
 
 .onPageNav .toc-headings{
@@ -223,7 +218,7 @@ section {
 }
 .introduction > .bg img {
   width: 1270px;
-  height: 15810px;
+  height: 16210px;
 }
 .introductionContent {
   width: 1200px;
@@ -238,25 +233,25 @@ section {
 
 .introduction1 {
   width: 80%;
-  height: 2400px;
+  height: 2500px;
   position: relative;
   right:0;
   overflow: hidden;
 }
 .introduction2 {
-  height: 3418px;
+  height: 3480px;
 }
 .introduction3 {
-  height: 2930px;
+  height: 2990px;
 }
 .introduction4 {
-  height: 1293px;
+  height: 1323px;
 }
 .introduction5 {
-  height: 1986px;
+  height: 2076px;
 }
 .introduction6 {
-  height: 1504px;
+  height: 1554px;
 }
 .introduction7 {
   height: 1269px;
