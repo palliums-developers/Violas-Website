@@ -136,9 +136,10 @@
    for (var i = 0; i < lists.length; i++) {
     lists[i].onclick = function () {
       if(this.innerHTML == 'Violas'){
-          
+        selects.style.display = 'none'
       }else if(this.innerHTML == 'libra'){
           window.location = 'libra_doc/lib_doc_en2cn/welcome-to-libra.htm';
+          selects.style.display = 'none'
       }
       for (var i = 0; i < lists.length; i++) {
       lists[i].style.background = '#FFF';
