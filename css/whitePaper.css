@@ -1,0 +1,434 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* list-style: none; */
+  text-decoration: none;
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+}
+.whitepaper {
+  width: 100%;
+  background: rgba(44, 9, 108, 1);
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 642px;
+  display: flex;
+  flex-direction: column;
+  background: url("../img/编组 4@2x.png") no-repeat;
+  background-size: 100% 100%;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 99;
+}
+.header .head {
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo img {
+  width: 173px;
+  height: 55px;
+}
+.navList {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 200px;
+}
+.navList li {
+  font-size: 20px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 77px;
+  cursor: pointer;
+  white-space: nowrap;
+  list-style: none;
+}
+.navList li.active {
+  color: rgba(62, 209, 246, 1);
+}
+.onPageNav {
+  display: block;
+  margin-bottom: 10px;
+  position: sticky;
+  height:100%;
+  width:200px;
+  flex: 0 0 240px;
+  /* overflow-y: auto; */
+  /* max-height: calc(100vh - 90px); */
+  margin-top:200px;
+}
+.onPageNav::-webkit-scrollbar {
+  width: 7px;
+}
+.onPageNav::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.onPageNav::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.onPageNav::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.onPageNav a {
+  color: #717171;
+}
+.onPageNav a.active {
+    font-size:20px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:600;
+    color:rgba(44,9,108,1);
+}
+.onPageNav ul {
+  margin-left: 10px;
+  list-style: none;
+}
+.onPageNav ul li {
+  /* font-size: 12px;
+  line-height: 20px;
+  padding-bottom: 8px; */
+
+
+height: 60px;
+font-size: 20px;
+font-family: PingFangSC-Regular,PingFang SC;
+font-weight: 400;
+color: rgba(44, 9, 108, .5);
+}
+
+.onPageNav .toc-headings{
+   padding: 10px 0 2px 15px;
+}
+.navList li:last-child{
+  position: relative;
+}
+.navList li:last-child .select{
+  width: 145px;
+  height: 116px;
+  position: relative;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  /* display: none; */
+}
+.navList li:last-child .select .bg{
+  position: absolute;
+  top: 0;
+}
+.navList li:last-child .select>div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top:15px;
+}
+.navList li:last-child .select>div span{
+  width: 100%;
+  height: 50px;
+  font-size:23px;
+  font-family:PingFangSC-Medium,PingFang SC;
+  font-weight:500;
+  color:rgba(44,9,108,1);
+  line-height:50px;
+  text-align: center;
+  letter-spacing:1px;
+  border-radius:5px;
+}
+.navList li:last-child .select .bg img{
+ width: 145px;
+ height: 116px;
+}
+.descr {
+  display: flex;
+}
+.descr span {
+  color: #fff;
+  margin-right: 38px;
+  cursor: pointer;
+}
+.descr span:nth-child(1) {
+  width: 100px;
+  height: 31px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 14px;
+}
+.descr span:nth-child(2) {
+  font-size: 22px;
+}
+
+.headContent {
+  width: 1300px;
+  flex: 1;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.headContent .headTalk {
+  margin-top: 150px;
+  margin-left: 100px;
+}
+.headContent .headTalk p img {
+  width: 466px;
+  height: 85px;
+}
+.headContent .headTalk p {
+  width: 509px;
+  font-size: 30px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(249, 249, 249, 1);
+  line-height: 66px;
+  letter-spacing: 2px;
+}
+.headContent .headLogo img {
+  width: 453px;
+  height: 455px;
+}
+.headContent .headLogo {
+  width: 582px;
+  height: 598px;
+  position: absolute;
+  right: -30px;
+  top: 50px;
+}
+section {
+  width: 100%;
+}
+.introduction {
+  width: 1270px;
+  /* height: 16966px; */
+  margin: 119px auto;
+  position: relative;
+}
+.introduction > .bg img {
+  width: 1270px;
+  height: 15810px;
+}
+.introductionContent {
+  width: 1200px;
+  height: auto;
+  background: #fff;
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  margin-left: -600px;
+  display: flex;
+}
+
+.introduction1 {
+  width: 80%;
+  height: 2400px;
+  position: relative;
+  right:0;
+  overflow: hidden;
+}
+.introduction2 {
+  height: 3418px;
+}
+.introduction3 {
+  height: 2930px;
+}
+.introduction4 {
+  height: 1293px;
+}
+.introduction5 {
+  height: 1986px;
+}
+.introduction6 {
+  height: 1504px;
+}
+.introduction7 {
+  height: 1269px;
+}
+.introduction8 {
+  height: 958px;
+}
+.introduction1 > .bg {
+  width: 1200px;
+  height: 440px;
+}
+.introduction1 > .bg img {
+  width: 1001px;
+  height: 440px;
+}
+.introduction1Descr {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.introduction1Descr .descrLeft {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 230px;
+  margin-left: 0px;
+}
+.introduction1Descr .descrLeft a {
+  height: 80px;
+  font-size: 20px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(44, 9, 108, 0.5);
+}
+.introduction1Descr .descrLeft a.active {
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
+}
+.introduction1Descr .descrRight {
+  display: block;
+  /* flex-direction: row; */
+  width: 800px;
+  /* height: 2072px; */
+  margin-top: 80px;
+  margin-left: 80px;
+  right: 0px;
+}
+.introduction1Descr .descrRight .intro > div img {
+  width: 860px;
+  height: 884px;
+}
+.introduction1Descr .descrRight .intro > div p {
+  margin-bottom: 20px;
+  line-height: 55px;
+}
+.introduction1Descr .descrRight h4 {
+  font-size: 20px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
+}
+.introduction1Descr .descrRight h2 {
+  font-size: 53px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: rgba(44, 9, 108, 1);
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.introduction1Descr .descrRight h3 {
+  font-size: 40px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
+  margin-bottom: 25px;
+}
+.introduction1Descr .descrRight p {
+  font-size: 25px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(44, 9, 108, 0.8);
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.introduction1Descr .descrRight p > span,
+.introduction1Descr .descrRight .state > span {
+  font-size: 25px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: rgba(44, 9, 108, 0.8);
+}
+.introduction1Descr .descrRight .state {
+  display: flex;
+  flex-direction: column;
+}
+.introduction1Descr .descrRight .state > span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.introduction1Descr .descrRight .state > div p {
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.introduction1Descr .descrRight ul li {
+  font-size: 25px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(44, 9, 108, 0.8);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.introduction6 .descrRight p {
+  margin-bottom: 10px;
+}
+.introduction6 .descrRight .state {
+  margin-bottom: 10px;
+}
+footer {
+  width: 100%;
+  height: 464px;
+  background: url("../img/编组 44@3x.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+footer h2 {
+  height: 56px;
+  font-size: 40px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  margin: 134px 0 19px 362px;
+}
+footer > div {
+  display: flex;
+  align-items: center;
+  margin-left: 309px;
+}
+footer > div i img {
+  width: 36px;
+  height: 29px;
+}
+footer > div label {
+  font-size: 32px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  margin-left: 17px;
+}
+footer > p {
+  width: 100%;
+  font-size: 25px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-top: 154px;
+}
+@media (max-width:1700px){
+  footer h2{
+      margin-left: 220px;
+  }
+  footer>div{
+     
+      margin-left:170px ;
+      
+  }
+}
+@media (max-width: 1300px) {
+  .whitepaper {
+    width: 1300px;
+  }
+}

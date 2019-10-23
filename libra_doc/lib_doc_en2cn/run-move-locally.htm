@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Run Move Programs Locally · Libra</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content="Docusaurus" />
+  <meta name="description" content="&lt;blockquote class=&quot;block_note&quot;&gt;" />
+  <meta name="docsearch:language" content="en" />
+  <meta property="og:title" content="Run Move Programs Locally · Libra" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://developers.libra.org/" />
+  <meta property="og:description" content="&lt;blockquote class=&quot;block_note&quot;&gt;" />
+  <meta property="og:image" content="https://developers.libra.org/img/libra.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://developers.libra.org/img/libra.png" />
+  <link rel="shortcut icon" href="libra.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+  <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Libra Blog ATOM Feed" />
+  <link rel="alternate" type="application/rss+xml" href="feed.xml" title="Libra Blog RSS Feed" />
+  <script type="text/javascript" src="buttons.js"></script>
+  <script type="text/javascript" src="code_block_buttons.js"></script>
+  <script type="text/javascript" src="cookie_banner.js"></script>
+  <script type="text/javascript" src="disable_adblock.js"></script>
+  <script type="text/javascript" src="segment.analytics.min.js"></script>
+  <script type="text/javascript" src="segment.js"></script>
+  <script type="text/javascript" src="clipboardjs.2.0.0.min.js"></script>
+  <script type="text/javascript" src="forms.js"></script>
+  <script src="scrollSpy.js"></script>
+  <link rel="stylesheet" href="main.css" />
+  <script src="codetabs.js"></script>
+</head>
+
+<body class="sideNavVisible separateOnPageNav">
+  <div class="fixedHeaderContainer">
+    <div class="headerWrapper wrapper">
+      <header><a href="https://developers.libra.org/"><img class="logo" src="libra-nav-logo.png" alt="Libra" />
+          <h2 class="headerTitleWithLogo">Libra</h2>
+        </a>
+        <div class="navigationWrapper navigationSlider">
+          <nav class="slidingNav">
+            <ul class="nav-site nav-site-internal">
+              <li class=""><a href="https://violas.io/">主页</a></li>
+              <li class="siteNavGroupActive"><a href="welcome-to-libra.htm" target="_self">文档</a></li>
+              <li class=""><a href="https://community.libra.org" target="_self">Libra 社区</a></li>
+              <li class=""><a href="blog_2.html" target="_self">Libra Blog</a></li>
+              <li class=""><a href="https://libra.org" target="_self">libra 官网</a></li>
+              <li class=""><a href="https://github.com/libra/libra" target="_self">Libra GitHub</a></li>
+              <li class=""><a href="../lib_doc_en/run-move-locally.htm">中/EN</a></li>
+              <li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react"
+                  placeholder="Search" title="Search" /></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <div class="hamburger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                </div>
+                <h2><i>›</i><span>学习 Libra</span></h2>
+                <div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div>
+              </div>
+              <div class="navGroups">
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习 Libra</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="welcome-to-libra.htm">欢迎</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="libra-protocol.htm">Libra 协议: 核心概念</a></li>
+                    <li class="navListItem"><a class="navItem" href="life-of-a-transaction.htm">交易的生命周期</a></li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">技术论文</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="the-libra-blockchain-paper.htm">Libra 区块链</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="move-paper.htm">Move: 一种可编程资源的语言</a></li>
+                        <li class="navListItem"><a class="navItem"
+                            href="state-machine-replication-paper.htm">Libra区块链中状态机的复制</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习Libra核心</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="my-first-transaction.htm">我的第一笔交易</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="move-overview.htm">Move概述</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="run-local-network.htm">在本地网络上运行</a></li>
+                    <li class="navListItem navListItemActive"><a class="navItem"
+                        href="run-move-locally.htm">本地运行Move程序</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">社区</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-open-source-paper.htm">Libra开源</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="contributing.htm">贡献指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="coding-guidelines.htm">代码指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="security.htm">报告漏洞</a></li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Libra 协议实现</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-core-overview.htm">Libra Core概述</a>
+                    </li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">READMEs</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="admission-control.htm">准入控制 admission
+                            control</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="bytecode-verifier.htm">字节码验证器 Bytecode
+                            Verifier</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="consensus.htm">共识组件 Consensus</a></li>
+                        <li class="navListItem"><a class="navItem" href="crypto.htm">加密组件 Crypto</a></li>
+                        <li class="navListItem"><a class="navItem" href="execution.htm">执行组件 Execution</a></li>
+                        <li class="navListItem"><a class="navItem" href="mempool.htm">内存池 Mempool</a></li>
+                        <li class="navListItem"><a class="navItem" href="ir-to-bytecode.htm">Move IR 编译器</a></li>
+                        <li class="navListItem"><a class="navItem" href="move-language.htm">Move 语言</a></li>
+                        <li class="navListItem"><a class="navItem" href="network.htm">网络组件 Network</a></li>
+                        <li class="navListItem"><a class="navItem" href="storage.htm">存储组件 Storage</a></li>
+                        <li class="navListItem"><a class="navItem" href="vm.htm">虚拟机 Virtual Machine</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">参考引用</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-cli.htm">Libra命令行工具</a></li>
+                    <li class="navListItem"><a class="navItem" href="glossary.htm">词汇表</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory) {
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')) {
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function () {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function (event) {
+                var el = event.target;
+                while (el !== headings) {
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else {
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function (event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader"><a class="edit-page-link button"
+                href="https://github.com/libra/website/edit/master/docs/run-move-locally.md" target="_blank"
+                rel="noreferrer noopener">编辑</a>
+              <h1 class="postHeaderTitle">在本地运行Move程序</h1>
+            </header>
+            <article>
+              <div><span>
+                  <blockquote class="block_note">
+                    <p><strong>注意:</strong> 当前，您只能在本地网络上运行自定义Move模块和脚本，而不能在Libra测试网上运行</p>
+                  </blockquote>
+                  <p>本教程将指导您发布本地模块上的Move模块并执行Move事务脚本。要执行现有Move事务脚本本身不支持的操作， 可以创建和发布Move模块并编写脚本以使用这些模块。
+                    有关Move的基本信息，请参阅 <a href="move-overview.htm">Move 入门</a>.
+                    要更深入地了解Move， 请参阅 <a href="move-paper.htm">技术文件</a>。有关运行节点本地网络的指导，请参阅 <a
+                      href="run-local-network.htm">“运行本地网络”</a>。Libra CLI客户端提供了
+                    <code>dev</code> 在本地编译，发布和执行Move程序的 命令。请参阅 <a
+                      href="libra-cli.htm#dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules">CLI
+                      指南 - dev命令</a> 用于命令用法。要查看子命令列表，请在CLI上输入<code>dev</code>。
+                     </p>
+                  <p>要将Move模块创建，编译和发布到本地区块链上的帐户，请按照<a href="run-move-locally.htm#compile-and-publish-move-modules">编译和发布Move模块中</a>的说明进行操作。要编译和执行Move事务脚本，请遵循 <a
+                      href="run-move-locally.htm#compile-and-execute-transaction-scripts">编译和执行事务脚本中的说明</a>。</p>
+                  <h2><a class="anchor" aria-hidden="true" id="compile-and-publish-move-modules"></a><a
+                      href="run-move-locally.htm#compile-and-publish-move-modules" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>编译和发布Move模块</h2>
+                  <h3><a class="anchor" aria-hidden="true" id="create-move-module"></a><a
+                      href="run-move-locally.htm#create-move-module" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>创建Move模块</h3>
+                  <p>让我们从一个名为的极其简单的模块开始 <code>MyModule</code>。该模块有一个名为的过程 <code>id</code>,它是硬币的标识函数。它以
+                    <code>LibraCoin.T</code> 资源作为输入并将其交还给调用程序。下面提供了此模块的移动中间表示（IR）代码，并将其保存在名为 
+                    <code>my_module.mvir.</code></p>
+                  <pre><code class="hljs">module MyModule {
+  import 0x0.LibraCoin;
+
+  // The identity function for coins: takes a LibraCoin.T as input and hands it back
+  public id(c: LibraCoin.T): LibraCoin.T {
+    return move(c);
+  }
+}
+</code></pre>
+                  <h3><a class="anchor" aria-hidden="true" id="start-a-local-network-of-validator-nodes"></a><a
+                      href="run-move-locally.htm#start-a-local-network-of-validator-nodes" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>启动验证者节点的本地网络</h3>
+                  <p>要使用一个验证器节点运行本地网络并创建本地区块链，请更改
+                    <code>libra</code>目录并运行<code>libra_swarm</code>, 如下所示：</p>
+                  <pre><code class="hljs">$ cd libra
+$ cargo run -p libra_swarm -- -s
+</code></pre>
+                  <p>该命令将需要一些时间才能运行，并且将执行以下操作：</p>
+                  <ul>
+                    <li>用计算机上的一个验证程序节点生成一个本地网络。</li>
+                    <li>生成节点的创世交易，初始密钥和引导程序配置。</li>
+                    <li>启动Libra CLI客户端的实例；客户端已连接到本地网络。</li>
+                  </ul>
+                  <p>成功执行命令后，您将看到CLI客户端菜单和
+                    <code>libra%</code> 提示符，如下所示：</p>
+                  <pre><code class="hljs">usage: &lt;command&gt; &lt;args&gt;
+
+Use the following commands:
+
+account | a
+Account operations
+query | q
+Query operations
+transfer | transferb | t | tb
+&lt;sender_account_address&gt;|&lt;sender_account_ref_id&gt; &lt;receiver_account_address&gt;|&lt;receiver_account_ref_id&gt; &lt;number_of_coins&gt; [gas_unit_price_in_micro_libras (default=0)] [max_gas_amount_in_micro_libras (default 100000)] Suffix 'b' is for blocking.
+Transfer coins (in libra) from account to another.
+dev
+Local Move development
+help | h
+Prints this help
+quit | q!
+Exit this client
+
+
+Please, input commands:
+
+libra%
+</code></pre>
+                  <p>有关使用验证器节点的本地集群的详细说明，请参阅 <a
+                      href="run-local-network.htm">“运行本地网络”</a>。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="create-an-account"></a><a
+                      href="run-move-locally.htm#create-an-account" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>创建一个帐户</h3>
+                  <p>每个Move模块和资源类型都由特定的帐户地址托管。例如，
+                    <code>LibraCoin</code> 模块由地址为<code>0x0</code>的帐户托管. 要将
+                    <code>LibraCoin</code> 模块导入 其他模块或事务脚本中，请使用
+                    <code>import 0x0.LibraCoin</code>.</p>
+                  <p>要托管 <code>MyModule</code>, 请创建一个帐户：</p>
+                  <pre><code class="hljs">libra% account create
+&gt;&gt; Creating/retrieving next account from wallet
+Created/retrieved account #0 address 810abcc08dbed34ea15d7eb261b8001da6a62d72acdbf87714dd243a175f9b62
+
+</code></pre>
+                  <p>在上面的输出中， 0是您刚创建的帐户的索引，十六进制字符串是该帐户的地址。索引只是在本地引用此帐户的便捷方式也称为 <code>ref_id</code>。有关创建帐户的更多信息，请参阅 <a
+                      href="my-first-transaction.htm">“ 我的第一笔交易”</a>。</p>
+                  <p>该 <code>create</code>命令生成本地密钥对。 要在本地区块链上创建帐户，您需要向该帐户注入资金，如下所示：</p>
+                  <pre><code class="hljs">libra% account mintb 0 76
+&gt;&gt; Minting coins
+waiting ....transaction is stored!
+Finished minting!
+</code></pre>
+                  <p>要检查是否在本地区块链上成功创建了帐户，请查询帐户余额。 请注意，您在输出中看到的帐户余额在libra中。</p>
+                  <pre><code class="hljs">libra% query balance 0
+Balance is: 76.000000
+</code></pre>
+                  <h3><a class="anchor" aria-hidden="true" id="compile-move-module"></a><a
+                      href="run-move-locally.htm#compile-move-module" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>编译移动模块</h3>
+                  <p>要进行编译 <code>my_module.mvir</code>,请使用 <a
+                      href="libra-cli.htm#dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules">dev
+                      compile</a> 命令。</p>
+                  <pre><code class="hljs">libra% dev compile 0 &lt;path to my_module.mvir&gt; module
+</code></pre>
+                  <ul>
+                    <li>0 — Index/ref_id 的帐户 ，该模块将在下面发布。</li>
+                    <li><code>module</code> — 表示您正在编译Move模块。 如果要编译事务脚本，则可以使用 <code>script</code> instead.</li>
+                  </ul>
+                  <p>将IR移动到<code>.mvir</code>文件中的IR编译器中，编译器将输出相应的字节码文件。当您准备将此模块发布到区块链上的帐户中时，请使用此字节码文件而不是 <code>.mvir</code> 文件。</p>
+                  <p>成功编译模块后，您将在输出中看到以下消息， 其中包含由compiling生成的字节码文件的路径 <code>my_module.mvir</code>.</p>
+                  <pre><code class="hljs">Successfully compiled a program at /var/folders/tq/8gxrrmhx16376zxd5r4h9hhn_x1zq3/T/.tmpigAZCx
+</code></pre>
+                  <p>如果要将字节码文件保存在特定路径而不是临时路径中，则可以将其指定为 <a
+                      href="libra-cli.htm#dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules">dev编译</a>命令。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="publish-compiled-module"></a><a
+                      href="run-move-locally.htm#publish-compiled-module" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>发布编译模块</h3>
+                  <p>要在本地区块链上发布模块字节码，请运行 <a
+                      href="libra-cli.htm#dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules">dev
+                      publish</a> 命令并使用已编译模块字节码文件的路径，如下所示：</p>
+                  <pre><code class="hljs">libra% dev publish 0 /var/folders/tq/8gxrrmhx16376zxd5r4h9hhn_x1zq3/T/.tmpigAZCx
+
+waiting .....transaction is stored!
+no events emitted.
+Successfully published module
+</code></pre>
+                  <p>成功执行 <code>dev publish</code> 命令后，字节码
+                    <code>MyModule</code> 将在发送者的帐户下发布。要使用在<code>MyModule</code>中声明的过程和类型，其他事务脚本和模块可以使用
+                    <code>import &lt;sender_address&gt;.MyModule</code>来导入它。</p>
+                  <p>发布在 <code>&lt;sender_address&gt;</code> 下的后续模块不能命名为
+                    <code>MyModule</code>。 每个帐户最多可以拥有一个给定名称的模块。试图在<code>&lt;sender_address&gt;</code> 下发布第二个名为<code>MyModule</code>的模块将导致事务失败。</p>
+                  <h2><a class="anchor" aria-hidden="true" id="compile-and-execute-transaction-scripts"></a><a
+                      href="run-move-locally.htm#compile-and-execute-transaction-scripts" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>编译并执行事务脚本</h2>
+                  <h3><a class="anchor" aria-hidden="true" id="create-transaction-script"></a><a
+                      href="run-move-locally.htm#create-transaction-script" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>创建交易脚本</h3>
+                  <blockquote class="block_note">
+                    <p><strong>注意</strong>: 您可以在<a
+                        href="https://github.com/libra/libra/tree/master/language/stdlib/transaction_scripts">libra/language/stdlib/transaction_scripts</a>
+                        目录中找到事务脚本的样本。</p>
+                  </blockquote>
+                  <p>现在，让我们编写以下脚本来使用 <code>MyModule</code> 并将其另存为
+                    <code>custom_script.mvir</code>:</p>
+                  <pre><code class="hljs">import 0x0.LibraAccount;
+import 0x0.LibraCoin;
+import {{sender}}.MyModule;
+
+main(amount: u64) {
+  let coin: LibraCoin.T;
+  coin = LibraAccount.withdraw_from_sender(move(amount));
+  //calls the id procedure defined in our custom module
+  LibraAccount.deposit(get_txn_sender(), MyModule.id(move(coin)));
+  return;
+}
+</code></pre>
+                  <p>在此脚本中， <code>{{sender}}</code>执行脚本时将自动用发件人帐户地址替换。或者，您可以编写具有完全限定地址的导入：</p>
+                  <pre><code class="hljs"> import 0x810abcc08dbed34ea15d7eb261b8001da6a62d72acdbf87714dd243a175f9b62.MyModule;
+</code></pre>
+                  <h3><a class="anchor" aria-hidden="true" id="compile-transaction-script"></a><a
+                      href="run-move-locally.htm#compile-transaction-script" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>编译事务脚本</h3>
+                  <p>要编译事务脚本，请使用 <a
+                      href="libra-cli.htm#dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules">dev
+                      compile</a>命令。</p>
+                  <pre><code class="hljs">libra% dev compile 0 &lt;path_to_custom_script.mvir&gt; script
+</code></pre>
+                  <p><code>custom_script.mvir</code> 处于Move IR中，并且成功编译了
+                    <code>custom_script.mvir</code> 编译器将输出相应的字节码文件。在执行这个脚本时，将使用这个字节码文件(而不是<code>.mvir</code>文件)。 脚本成功编译后，您将在输出中看到字节码文件的路径:</p>
+                  <pre><code class="hljs">Successfully compiled a program at /var/folders/tq/8gxrrmhx16376zxd5r4h9hhn_x1zq3/T/.tmpDZhL21
+</code></pre>
+                  <p>如果要将字节码文件保存在特定路径而不是临时路径，则可以将其指定为<a
+                      href="libra-cli.htm#dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules">dev
+                      编译</a> 命令。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="execute-transaction-script"></a><a
+                      href="run-move-locally.htm#execute-transaction-script" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>执行交易脚本</h3>
+                  <p>要执行脚本，请对上面的 <a
+                      href="libra-cli.htm#dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules">dev
+                      脚本</a> command on the bytecode output from <a
+                      href="run-move-locally.htm#compile-transaction-script">Compile Transaction Script</a> step above.
+                  </p>
+                  <blockquote class="block_note">
+                    <p><strong>注意:</strong> 传递给 <code>dev execute</code> 命令的确切参数集将取决于特定脚本期望的参数。</p>
+                  </blockquote>
+                  <pre><code class="hljs">libra% dev execute 0 /var/folders/tq/8gxrrmhx16376zxd5r4h9hhn_x1zq3/T/.tmpDZhL21 10
+waiting .....transaction is stored!
+Successfully finished execution
+</code></pre>
+                  <ul>
+                    <li><code>0</code> — Index/ref_id 为发送者账户.在此示例中，编译和发布该模块的帐户是同一帐户。</li>
+                    <li><code>/var/folders/tq/8gxrrmhx16376zxd5r4h9hhn_x1zq3/T/.tmpDZhL21</code> — 本例中的
+                      compiled_script的路径。
+                    </li>
+                    <li><code>10</code> — 微量天秤座。 此金额必须小于或等于发件人帐户中的金额。</li>
+                  </ul>
+                  <h2><a class="anchor" aria-hidden="true" id="troubleshooting"></a><a
+                      href="run-move-locally.htm#troubleshooting" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>故障排除</h2>
+                  <h3><a class="anchor" aria-hidden="true" id="compile-move-program"></a><a
+                      href="run-move-locally.htm#compile-move-program" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>编译Move程序</h3>
+                  <p>如果客户端找不到您的Move程序（模块或脚本），则会看到此错误：</p>
+                  <pre><code class="hljs">libra% dev compile 0 ~/my-tscripts/custom_script.mvir script
+&gt;&gt; Compiling program
+No such file or directory (os error 2)
+</code></pre>
+                  <p>如果看到以下错误， 请参考 <a
+                      href="libra-cli.htm#dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules">dev
+                      compile</a> 命令的用法， 指定所有必需的参数，然后再次尝试编译。</p>
+                  <pre><code class="hljs">Invalid number of arguments for compilation
+</code></pre>
+                  <p>有关与语法相关的编译错误，请参阅 <a
+                      href="https://github.com/libra/libra/blob/master/language/compiler/ir_to_bytecode/syntax/src/lib.rs">Move
+                      IR 语法</a>。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="publish-compiled-module-1"></a><a
+                      href="run-move-locally.htm#publish-compiled-module-1" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>发布编译模块</h3>
+                  <p>如果使用一个帐户（例如 <code>dev compile</code> 0 ...）编译模块，并尝试将其发布到其他帐户（例如 <code>dev publish</code> 1 ...），则会看到以下错误：
+                  </p>
+                  <pre><code class="hljs">libra% dev publish 1 /var/folders/tq/8gxrrmhx16376zxd5r4h9hhn_x1zq3/T/.tmpigAZCx
+
+Transaction failed with vm status: Validation(SendingAccountDoesNotExist("sender address: 21cd9d131bce6050218281f737186861e9dcb7b7804485742e1be8fd564137f9"))
+
+</code></pre>
+                  <p>已编译模块包含要发布模块的帐户地址，而
+                    <a href="vm.htm">Move Virtual Machine (VM)</a> 只允许事务发送方在发送方自己的帐户地址下发布模块。如果不是这样，其他用户可以在您的帐户下发布模块! 要修复此错误，请使用所需的发件人地址重新编译模块。</p>
+                  <p>如果您没有提供编译模块的正确路径，则会看到此错误：</p>
+                  <pre><code class="hljs">libra% dev publish 0 incorrect-path-to-compiled-module
+No such file or directory (os error 2)
+</code></pre>
+                  <p>如果索引1的帐户不存在，尝试将模块发布到1将导致以下错误:</p>
+                  <pre><code class="hljs">Unable to find account by account reference id: 1, to see all existing accounts, run: 'account list'
+</code></pre>
+                  <p>在相同的发件人帐户地址下重新发布/更新现有模块对区块链没有任何影响。这是一次失败的交易，但是它从发件人帐户中扣除了费用，并将发件人帐户的序列号增加了一个。如果模块是使用该帐户地址编译的，则可以在不同的发送者帐户地址处发布同一模块。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="execute-transaction-script-1"></a><a
+                      href="run-move-locally.htm#execute-transaction-script-1" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>执行交易脚本</h3>
+                  <p>如果发件人帐户索引无效，则会看到此错误：</p>
+                  <pre><code class="hljs">libra% dev execute 2 /var/folders/tq/8gxrrmhx16376zxd5r4h9hhn_x1zq3/T/.tmpDZhL21 10
+Unable to find account by account reference id: 2, to see all existing accounts, run: 'account list'
+</code></pre>
+                  <p>以下错误表明事务脚本的参数丢失，或者一个或多个参数的类型错误。</p>
+                  <pre><code class="hljs">libra% dev execute 0 /var/folders/tq/8gxrrmhx16376zxd5r4h9hhn_x1zq3/T/.tmpDZhL21
+Transaction failed with vm status: Verification([Script(TypeMismatch("Actual Type Mismatch"))])
+
+</code></pre>
+                  <h2><a class="anchor" aria-hidden="true" id="reference"></a><a href="run-move-locally.htm#reference"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>参考</h2>
+                  <ul>
+                    <li><a href="run-local-network.htm">运行本地网络 </a> — 提供有关运行本地网络的信息。</li>
+                    <li><a href="move-overview.htm">Move入门 </a> — 向您介绍Move，一种新的区块链编程语言。</li>
+                    <li><a href="move-paper.htm">Move技术论文</a>。</li>
+                    <li>Move自述文件:
+                      <ul>
+                        <li><a href="move-language.htm">Move 语言</a>。</li>
+                        <li><a href="ir-to-bytecode.htm">Move IR 编译器</a>。</li>
+                        <li><a
+                            href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.libra.org%2Fdocs%2Fcrates%2Fbytecode-verifier&amp;h=AT22hXPt7Fjx80GBMVQ5NOZaVAvQRzD-W4QLZK3j44-Jk11H7EzR7RpTqJpaWX0FMSWFcMdhlvfSTw7TVYk15xAC2fd520s8erlICkc4F_AMTOWrMowCqqG5Qv8RLXROLXZ1MTxGMGq4L1J7czZSas5l">字节码验证程序</a>。</li>
+                        <li><a href="vm.htm">虚拟机</a>。</li>
+                      </ul>
+                    </li>
+                    <li><a href="libra-cli.htm">CLI 指南 </a> — 列出Libra CLI客户端的命令。</li>
+                    <li><a href="my-first-transaction.htm">我的第一笔交易 </a> — 指导您使用Libra CLI客户端在Libra区块链上执行您的第一笔交易。</li>
+                  </ul>
+                </span></div>
+            </article>
+          </div>
+          <div class="docs-prevnext"><a class="docs-prev button" href="run-local-network.htm"><span class="arrow-prev">←
+              </span><span>在本地网络上运行</span></a><a class="docs-next button"
+              href="libra-open-source-paper.htm"><span>Libra开源</span><span class="arrow-next"> →</span></a>
+          </div>
+        </div>
+      </div>
+      <nav class="onPageNav">
+        <ul class="toc-headings">
+          <li><a href="run-move-locally.htm#compile-and-publish-move-modules">编译和发布移动模块</a>
+            <ul class="toc-headings">
+              <li><a href="run-move-locally.htm#create-move-module">创建Move模块</a></li>
+              <li><a href="run-move-locally.htm#start-a-local-network-of-validator-nodes">启动验证者节点的本地网络</a></li>
+              <li><a href="run-move-locally.htm#create-an-account">创建一个帐户</a></li>
+              <li><a href="run-move-locally.htm#compile-move-module">编译Move模块</a></li>
+              <li><a href="run-move-locally.htm#publish-compiled-module">发布编译模块</a></li>
+            </ul>
+          </li>
+          <li><a href="run-move-locally.htm#compile-and-execute-transaction-scripts">编译并执行事务脚本</a>
+            <ul class="toc-headings">
+              <li><a href="run-move-locally.htm#create-transaction-script">创建交易脚本</a></li>
+              <li><a href="run-move-locally.htm#compile-transaction-script">编译事务脚本</a></li>
+              <li><a href="run-move-locally.htm#execute-transaction-script">执行交易脚本</a></li>
+            </ul>
+          </li>
+          <li><a href="run-move-locally.htm#troubleshooting">故障排除</a>
+            <ul class="toc-headings">
+              <li><a href="run-move-locally.htm#compile-move-program">编译Move程序</a></li>
+              <li><a href="run-move-locally.htm#publish-compiled-module-1">发布编译模块</a></li>
+              <li><a href="run-move-locally.htm#execute-transaction-script-1">执行交易脚本</a></li>
+            </ul>
+          </li>
+          <li><a href="run-move-locally.htm#reference">参考</a></li>
+        </ul>
+      </nav>
+    </div>
+    <footer class="nav-footer" id="footer">
+        <section class="sitemap"><a href="https://developers.libra.org/" class="nav-home"><img
+              src="libra-logomark-white.png" alt="Libra" /></a>
+          <div class="footerSection">
+            <h5>Learn About Libra</h5><a href="welcome-to-libra.htm">Welcome to Libra</a><a
+              href="libra-protocol.htm">Libra Protocol</a><a href="the-libra-blockchain-paper.htm">Libra Blockchain</a><a
+              href="life-of-a-transaction.htm">Life of a Transaction</a>
+            <p></p>
+            <h5>Try Libra Core </h5><a href="my-first-transaction.htm">My First Transaction</a><a
+              href="move-overview.htm">Getting Started With Move</a>
+          </div>
+          <div class="footerSection">
+            <h5>Policies</h5><a href="privacy-policy.htm">Privacy Policy</a><a href="terms-of-use.htm">Terms of Use</a><a
+              href="cookies-policy.htm">Cookies Policy</a><a href="code-of-conduct.htm">Code of Conduct</a>
+            <p></p>
+            <h5>Community</h5><a href="https://community.libra.org/">Developer Forum</a><a
+              href="https://developers.libra.org/newsletter_form">Newsletter</a>
+          </div>
+          <div class="footerSection">
+            <h5>Libra开发者社区</h5>
+            <img style="width:150px" src='qr_violas.png'>
+            <h5>备注”Libra“加群<h5>
+          </div>
+        </section>
+        <section class="copyright"> © Violas Association</section>
+      </footer>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script>
+    document.addEventListener('keyup', function (e) {
+      if (e.target !== document.body) {
+        return;
+      }
+      // keyCode for '/' (slash)
+      if (e.keyCode === 191) {
+        const search = document.getElementById('search_input_react');
+        search && search.focus();
+      }
+    });
+  </script>
+  <script>
+    var search = docsearch({
+
+      apiKey: '0d48ee629d39ddc4916eeef7755a0c4c',
+      indexName: 'libra',
+      inputSelector: '#search_input_react'
+    });
+  </script>
+</body>
+
+</html>

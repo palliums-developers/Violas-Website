@@ -1,0 +1,764 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrap{
+    width: 100%;
+    height:auto;
+}
+
+header{
+    width: 100%;
+    /* height: 913px; */
+    display: flex;
+    flex-direction: column;
+    background: url('../img/编组 4@2x.png') no-repeat;
+    background-size: 100% 100%;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 99;
+}
+.default{
+    width: 100%;
+    background: rgba(44, 9, 108, 1);
+    overflow: hidden;
+}
+.default header{
+    height: 913px;
+}
+
+.header .head{
+    width: 1300px;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.navList{
+  display: flex;
+}
+
+.logo img{
+    width: 173px;
+    height: 55px;
+}
+.navList{
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    margin-left:70px;
+    margin-right:200px;
+}
+.navList li{
+    font-size:20px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    margin-left: 77px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.navList li:last-child{
+    position: relative;
+}
+.navList li:last-child .select{
+    width: 145px;
+    height: 116px;
+    position: relative;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    /* display: none; */
+ }
+.navList li:last-child .select .bg{
+    position: absolute;
+    top: 0;
+}
+.navList li:last-child .select>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:15px;
+}
+.navList li:last-child .select>div span{
+    width: 100%;
+    height: 50px;
+    font-size:23px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(44,9,108,1);
+    line-height:50px;
+    text-align: center;
+    letter-spacing:1px;
+    border-radius:5px;
+}
+.navList li:last-child .select .bg img{
+   width: 145px;
+   height: 116px;
+}
+.navList li.active{
+    color:rgba(62, 209, 246, 1);
+}
+
+.descr{
+  display: flex;
+}
+.descr span{
+    color: #FFF;
+    margin-right: 38px;
+    cursor: pointer;
+}
+.descr span:nth-child(1){
+   width: 100px;
+   height: 31px;
+   border: 1px solid #FFF;
+   border-radius:3px;
+   line-height: 31px;
+   text-align: center;
+   font-size: 14px;
+}
+.descr span:nth-child(2){
+    font-size: 22px;
+ }
+.default .headContent{
+     width:1300px;
+     flex: 1;
+     position: relative;
+     margin: 0 auto;
+ }
+ .default .headContent .headLogo{
+  position: absolute;
+  right:-100px;
+  bottom:0;
+  width: 1000px;
+  /* height: 913px; */
+}
+.default .headContent .headLogo img{
+   width: 100%;
+   height: auto;
+}
+.default .headContent .headTalk{
+    position: absolute;
+    left:-2%;
+    bottom: 300px;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+}
+.default .headContent .headTalk p{
+    display: flex;
+    align-items: center;
+}
+.default .headContent .headTalk p:nth-child(1) label{
+    font-size:71px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+}
+.default .headContent .headTalk p:nth-child(1) img{
+    width: 316px;
+    height: 86px;
+    margin-left: 20px;
+}
+.default .headContent .headTalk p:nth-child(2){
+    margin-top: 56px;
+}
+.default .headContent .headTalk p:nth-child(2) label{
+    font-size:40px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(249,249,249,1);
+}
+.default .headContent .headTalk p:nth-child(2) img{
+    width: 76px;
+    height: 76px;
+    margin-left: 20px;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+.vision .head{
+    width: 1118px;
+    height: 61px;
+    margin: 140px auto;
+    position: relative;
+    display: flex;;
+    align-items: center;
+ }
+.vision .head .bg{
+   width: 1118px;
+   height: 61px;
+}
+.vision .head .bg img{
+    width: 100%;
+ }
+.vision .head p{
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+    top: 0;
+    font-size: 40px;
+    color: rgba(248, 248, 248, 1);
+    font-weight: 400;
+ }
+.vision .headDescr{
+   width: 530px;
+   height: 496px;
+   margin: 0 auto;
+   display: flex;
+   position: relative;
+   justify-content: center;
+ }
+.vision .headDescr .bg img{
+    width: 490px;
+    height: 490px;
+  }
+.vision .headDescr p{
+    font-size:53px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,.8);
+    position: absolute;
+    left: 0;
+    top: 160px;
+    text-align: center;
+    line-height: 90px;
+}
+.vision .headIntroduce{
+    width:454px;
+    height: 315px;
+    display: flex;
+    margin: 100px auto;
+    position: relative;
+}
+.vision .headIntroduce .icon{
+   position: absolute;
+   top: -40px;
+   left: -10px;
+}
+.vision .headIntroduce .icon img{
+    width: 119px;
+    height: 80px;
+     
+}
+.vision .headIntroduce p{
+    width: 454px;
+    font-size:30px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,1);
+    text-align: center;
+    line-height:84px;
+}
+
+ .forWorld .head{
+    width: 1205px;
+    height: 61px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;;
+    align-items: center;
+    margin-top: 240px;
+ }
+.forWorld .head .bg{
+   width: 1205px;
+   height: 61px;
+}
+.forWorld .head .bg img{
+    width: 100%;
+ }
+.forWorld .head p{
+    position: absolute;
+    left: 50%;
+    margin-left:-160px;
+    top: 0;
+    font-size: 40px;
+    color: rgba(248, 248, 248, 1);
+    font-weight: 400;
+ }
+ .forWorld>p{
+     width: 1128px;
+    font-size:30px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,1);
+    line-height:63px;
+    text-align: center;
+    margin:120px auto;
+ }
+.forWorldDescr{
+    width: 71%;
+    margin: 0 auto;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+.forWorldDescr .eachDescr{
+    width:370px;
+    position: relative;
+    margin-right: 25px;
+}
+.forWorldDescr .eachDescrs{
+    width:370px;
+    height:593px;
+    background:linear-gradient(180deg,rgba(255,255,255,1) 0%,RGBA(158, 146, 250, 1)100%);
+    border-radius:20px;
+    position: relative;
+    z-index: 10;
+    padding: 88px 25px 0 35px;
+    box-sizing: border-box;
+}
+.eachDescrs h3{
+    font-size:30px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(44,9,108,1);
+}
+.eachDescrs i img{
+    display: inline-block;
+    width: 64px;
+    height: 4px;
+}
+.eachDescrs p{
+    font-size:23px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(44,9,108,1);
+    margin-top: 20px;
+    line-height:48px;
+}
+.forWorldDescr .eachDescr .logo1,
+.forWorldDescr .eachDescr .logo2,
+.forWorldDescr .eachDescr .logo3,
+.forWorldDescr .eachDescr .logo4
+{
+    position: absolute;
+}
+.forWorldDescr .eachDescr .logo1{
+    left: 40px;
+    top: -125px;
+}
+.forWorldDescr .eachDescr .logo2{
+    left: 110px;
+    top: -105px;
+    z-index: 11;
+}
+.forWorldDescr .eachDescr .logo3{
+    left:-12px;
+    bottom:20px;
+}
+.forWorldDescr .eachDescr .logo4{
+    right:10px;
+    bottom:-15px;
+    z-index: 11;
+}
+.forWorldDescr .eachDescr .logo1 img{
+    width: 233px;
+    height:178px;
+    
+}
+.forWorldDescr .eachDescr .logo2 img{
+    width: 205px;
+    height:173px;
+    
+}
+.forWorldDescr .eachDescr .logo3 img{
+    width: 203px;
+    height:135px;
+    
+}
+.forWorldDescr .eachDescr .logo4 img{
+    width: 236px;
+    height:194px;
+    
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo1 img{
+    width: 237px;
+    height:199px;
+    
+}
+.forWorldDescr .eachDescr:nth-child(3) .logo1 img{
+    width: 251px;
+    height:199px;
+    
+}
+.forWorldDescr .eachDescr:nth-child(4) .logo1 img{
+    width: 251px;
+    height:225px;
+    
+}
+.forWorldDescr .eachDescr:nth-child(4) .logo1{
+    top: -150px;
+}
+.whitePaper {
+    width: 1300px;
+    /* height: 716px; */
+    position: relative;
+    margin: 0 auto;
+    margin-top: 240px;
+    /* overflow: hidden; */
+}
+.whitePaper .bg{
+    width: 1210px;
+    height: 716px;
+    position: absolute;
+    right: -22%;
+}
+.whitePaper .bg img{
+   width: 100%;
+}
+.whitePaper .content{
+    display: flex;;
+}
+.whitePaper .content .hLogo{
+    margin-left: 5%;
+    position: relative;
+    z-index: 9;
+}
+.whitePaper .content .hLogo img{
+    width: 635px;
+    height: 635px;
+}
+.whitePaper .content .con{
+    margin-top: 17%;
+    margin-left: 10%;
+}
+.whitePaper .content .con h3{
+    font-size:53px;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    color:rgba(248,248,248,1);
+}
+.whitePaper .content .con p{
+    font-size:40px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,1);
+    display: flex;
+    margin-top: 80px;
+}
+.whitePaper .content .con p i img{
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.deepIntroduce .head{
+    width: 1032px;
+    height: 61px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;;
+    align-items: center;
+    margin-top: 140px;
+ }
+.deepIntroduce .head .bg{
+   width: 1032px;
+   height: 61px;
+}
+.deepIntroduce .head .bg img{
+    width: 100%;
+ }
+.deepIntroduce .head p{
+    position: absolute;
+    left: 50%;
+    margin-left:-85px;
+    top: 0;
+    font-size: 40px;
+    color: rgba(248, 248, 248, 1);
+    font-weight: 400;
+    letter-spacing:4px;
+ }
+.deepIntroduce>.content{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;;
+    margin-top: 94px;
+    display: flex;
+    justify-content: center;
+}
+.deepIntroduce>.content .deepDescr,.deepIntroduce>.content .deepDescr1{
+    width: 546px;
+    height: 723px;
+    background:linear-gradient(210deg,rgba(75,25,159,0.31) 0%,rgba(161, 63, 197, 1) 100%);
+    border-radius:20px;
+    margin-right:29px;
+}
+
+.deepIntroduce>.content .deepDescr h3,.deepIntroduce>.content .deepDescr1 h3{
+    font-size:45px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(249,249,249,1);
+    margin-top: 56px;
+    margin-left: 43px;
+    margin-bottom: 80px;
+}
+.deepIntroduce>.content .deepDescr1 h3{
+    margin-bottom: 30px;
+}
+.deepIntroduce>.content .deepDescr1 h4{
+    width: 483px;
+    font-size:30px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    margin-left: 43px;
+    line-height:67px;
+}
+.deepIntroduce>.content .deepDescr>div{
+    width: 100%;
+    text-align: center;
+}
+.deepIntroduce>.content .deepDescr>div img{
+    width: 293px;
+    height: 251px;
+    
+}
+.deepIntroduce>.content .deepDescr1{
+    display: none;
+}
+
+.deepIntroduce>.content .deepDescr p,.deepIntroduce>.content .deepDescr1 p{
+    width: 161px;
+    font-size:38px;
+    font-family:PingFangSC-Light,PingFang SC;
+    font-weight:300;
+    color:rgba(249,249,249,1);
+    line-height:55px;
+    letter-spacing:2px;
+    border-bottom:2px solid #FFF;
+    margin-top: 160px;
+    margin-left:330px;
+}
+.deepIntroduce>.content .deepDescr1 p{
+    margin-top: 330px;
+}
+.association {
+    width: 1300px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 240px;
+    /* overflow: hidden; */
+}
+.deepIntroduce>.association .bg{
+    position: absolute;
+    left:-25%;
+}
+.deepIntroduce>.association .bg img{
+    width: 1225px;
+    height: 764px;
+}
+.deepIntroduce>.association .content{
+    display: flex;;
+}
+.deepIntroduce>.association .content .hLogo{
+    margin-left:15%;
+    margin-top: -5%;
+    position: relative;
+    z-index: 9;
+}
+
+.deepIntroduce>.association .content .hLogo img{
+    width: 654px;
+    height: 667px;
+}
+.deepIntroduce>.whitePaper .content .hLogo{
+    margin-top:-100px;
+
+}
+.deepIntroduce>.whitePaper .content .hLogo img{
+    width: 654px;
+    height: 711px;
+}
+
+.deepIntroduce>.association .content .con{
+    /* height: 500px; */
+    margin-left: 6%;
+    margin-top: 200px;
+}
+.deepIntroduce>.association .content .con h3{
+    font-size:53px;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    color:rgba(248,248,248,1);
+}
+.deepIntroduce>.association .content .con p{
+    font-size:40px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,1);
+    display: flex;
+    margin-top: 80px;
+}
+.deepIntroduce>.association .content .con span{
+    font-size:30px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    margin-top: 30px;
+    display: inline-block;
+}
+.deepIntroduce>.association .content .con p i img{
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+footer{
+    width: 100%;
+    height:464px;
+    background: url('../img/编组 44@3x.png')no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+footer h2{
+    height: 56px;
+    font-size:40px;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    margin: 134px 0 19px 362px;
+}
+footer>div{
+    display: flex;
+    align-items: center;
+    margin-left:309px ;
+    
+}
+footer>div i img{
+    width:36px;
+    height:29px;
+}
+footer>div label{
+    font-size:32px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,1);
+    margin-left: 17px;
+}
+footer>p{
+    width: 100%;
+    font-size:25px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    text-align: center;
+    margin-top: 154px;
+}
+
+@media (max-width:1600px){
+    .forWorldDescr .eachDescr {
+        width: 330px;
+    }
+    .forWorldDescr .eachDescrs {
+        width: 330px;
+        height: 563px;
+        padding: 88px 20px 0 25px;
+        box-sizing: border-box;
+    }
+    .forWorldDescr .eachDescrs h3{
+        font-size: 27px;
+    }
+    .forWorldDescr .eachDescrs p{
+        font-size: 22px;
+        line-height: 41px;
+    }
+    .forWorldDescr .eachDescr .logo1{
+        top: -110px;
+        left:30px;
+    }
+    .forWorldDescr .eachDescr .logo2{
+        left: 93px;
+        top: -95px;
+    }
+    .forWorldDescr .eachDescr .logo1 img{
+        width: 213px;
+        height: 158px;
+        
+    }
+    .forWorldDescr .eachDescr .logo2 img{
+        width: 185px;
+        height: 153px;
+    }
+    .forWorldDescr .eachDescr:nth-child(2) .logo1 img{
+        width: 217px;
+        height:179px;
+        
+    }
+    .forWorldDescr .eachDescr:nth-child(3) .logo1 img{
+        width: 231px;
+        height:179px;
+        
+    }
+    .forWorldDescr .eachDescr:nth-child(4) .logo1 img{
+        width: 231px;
+        height:205px;
+        
+    }
+    .forWorldDescr .eachDescr:nth-child(4) .logo1{
+        top: -140px;
+    }
+}
+@media (max-width:1700px){
+    footer h2{
+        margin-left: 220px;
+    }
+    footer>div{
+       
+        margin-left:170px ;
+        
+    }
+}
+
+@media (max-width:1500px){
+    .forWorldDescr .eachDescr {
+        width: 300px;
+    }
+    .forWorldDescr .eachDescrs {
+        width: 300px;
+    }
+    .default .headContent .headTalk{
+        left: 10px;
+    }
+    .default .headContent .headTalk p:nth-child(1) label{
+        font-size:66px;
+    }
+    .default .headContent .headTalk p:nth-child(1) img{
+        width: 310px;
+        height: 80px;
+    }
+    /* .default .headContent .headTalk p:nth-child(2){
+        margin-top: 56px;
+    } */
+    .default .headContent .headTalk p:nth-child(2) label{
+        font-size:36px;
+    }
+    .default .headContent .headTalk p:nth-child(2) img{
+        width: 70px;
+        height: 70px;
+        /* margin-left: 20px; */
+    }
+}
+@media (max-width:1400px){
+     .forWorldDescr .eachDescr {
+        margin-right: 15px;
+    }
+}
+@media (max-width:1300px){
+    .default{
+        width: 1300px;
+        overflow: hidden;
+    }
+}

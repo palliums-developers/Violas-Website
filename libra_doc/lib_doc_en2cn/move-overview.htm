@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Getting Started With Move · Libra</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content="Docusaurus" />
+  <meta name="description"
+    content="Move is a new programming language developed to provide a safe and programmable foundation for the Libra Blockchain. An account in the Libra Blockchain is a container for an arbitrary number of Move resources and Move modules. Every transaction submitted to the Libra Blockchain uses a transaction script written in Move to encode its logic. The transaction script can call procedures declared by a module to update the global state of the blockchain." />
+  <meta name="docsearch:language" content="en" />
+  <meta property="og:title" content="Getting Started With Move · Libra" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://developers.libra.org/" />
+  <meta property="og:description"
+    content="Move is a new programming language developed to provide a safe and programmable foundation for the Libra Blockchain. An account in the Libra Blockchain is a container for an arbitrary number of Move resources and Move modules. Every transaction submitted to the Libra Blockchain uses a transaction script written in Move to encode its logic. The transaction script can call procedures declared by a module to update the global state of the blockchain." />
+  <meta property="og:image" content="https://developers.libra.org/img/libra.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://developers.libra.org/img/libra.png" />
+  <link rel="shortcut icon" href="libra.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+  <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Libra Blog ATOM Feed" />
+  <link rel="alternate" type="application/rss+xml" href="feed.xml" title="Libra Blog RSS Feed" />
+  <script type="text/javascript" src="buttons.js"></script>
+  <script type="text/javascript" src="code_block_buttons.js"></script>
+  <script type="text/javascript" src="cookie_banner.js"></script>
+  <script type="text/javascript" src="disable_adblock.js"></script>
+  <script type="text/javascript" src="segment.analytics.min.js"></script>
+  <script type="text/javascript" src="segment.js"></script>
+  <script type="text/javascript" src="clipboardjs.2.0.0.min.js"></script>
+  <script type="text/javascript" src="forms.js"></script>
+  <script src="scrollSpy.js"></script>
+  <link rel="stylesheet" href="main.css" />
+  <script src="codetabs.js"></script>
+</head>
+
+<body class="sideNavVisible separateOnPageNav">
+  <div class="fixedHeaderContainer">
+    <div class="headerWrapper wrapper">
+      <header><a href="https://developers.libra.org/"><img class="logo" src="libra-nav-logo.png" alt="Libra" />
+          <h2 class="headerTitleWithLogo">Libra</h2>
+        </a>
+        <div class="navigationWrapper navigationSlider">
+          <nav class="slidingNav">
+            <ul class="nav-site nav-site-internal">
+              <li class=""><a href="https://violas.io/">主页</a></li>
+              <li class="siteNavGroupActive"><a href="welcome-to-libra.htm" target="_self">文档</a></li>
+              <li class=""><a href="https://community.libra.org" target="_self">Libra 社区</a></li>
+              <li class=""><a href="blog_2.html" target="_self">Libra Blog</a></li>
+              <li class=""><a href="https://libra.org" target="_self">libra 官网</a></li>
+              <li class=""><a href="https://github.com/libra/libra" target="_self">Libra GitHub</a></li>
+              <li class=""><a href="../lib_doc_en/move-overview.htm">中/EN</a></li>
+              <li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react"
+                  placeholder="Search" title="Search" /></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <div class="hamburger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                </div>
+                <h2><i>›</i><span>学习 Libra</span></h2>
+                <div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div>
+              </div>
+              <div class="navGroups">
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习 Libra</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="welcome-to-libra.htm">欢迎</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="libra-protocol.htm">Libra 协议: 核心概念</a></li>
+                    <li class="navListItem"><a class="navItem" href="life-of-a-transaction.htm">交易的生命周期</a></li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">技术论文</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="the-libra-blockchain-paper.htm">Libra 区块链</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="move-paper.htm">Move: 一种可编程资源的语言</a></li>
+                        <li class="navListItem"><a class="navItem"
+                            href="state-machine-replication-paper.htm">Libra区块链中状态机的复制</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习Libra核心</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="my-first-transaction.htm">我的第一笔交易</a>
+                    </li>
+                    <li class="navListItem navListItemActive"><a class="navItem" href="move-overview.htm">Move概述</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="run-local-network.htm">在本地网络上运行</a></li>
+                    <li class="navListItem"><a class="navItem" href="run-move-locally.htm">本地运行Move程序</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">社区</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-open-source-paper.htm">Libra开源</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="contributing.htm">贡献指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="coding-guidelines.htm">代码指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="security.htm">报告漏洞</a></li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Libra 协议实现</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-core-overview.htm">Libra Core概述</a>
+                    </li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">READMEs</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="admission-control.htm">准入控制 admission
+                            control</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="bytecode-verifier.htm">字节码验证器 Bytecode
+                            Verifier</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="consensus.htm">共识组件 Consensus</a></li>
+                        <li class="navListItem"><a class="navItem" href="crypto.htm">加密组件 Crypto</a></li>
+                        <li class="navListItem"><a class="navItem" href="execution.htm">执行组件 Execution</a></li>
+                        <li class="navListItem"><a class="navItem" href="mempool.htm">内存池 Mempool</a></li>
+                        <li class="navListItem"><a class="navItem" href="ir-to-bytecode.htm">Move IR 编译器</a></li>
+                        <li class="navListItem"><a class="navItem" href="move-language.htm">Move 语言</a></li>
+                        <li class="navListItem"><a class="navItem" href="network.htm">网络组件 Network</a></li>
+                        <li class="navListItem"><a class="navItem" href="storage.htm">存储组件 Storage</a></li>
+                        <li class="navListItem"><a class="navItem" href="vm.htm">虚拟机 Virtual Machine</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">参考引用</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-cli.htm">Libra命令行工具</a></li>
+                    <li class="navListItem"><a class="navItem" href="glossary.htm">词汇表</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory) {
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')) {
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function () {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function (event) {
+                var el = event.target;
+                while (el !== headings) {
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else {
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function (event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader"><a class="edit-page-link button"
+                href="https://github.com/lbc-team/libra-docs/edit/lbc/docs/move-overview.md" target="_blank"
+                rel="noreferrer noopener">编辑</a>
+              <h1 class="postHeaderTitle">Move概述</h1>
+            </header>
+            <article>
+              <div><span>
+                  <p>Move是一种新的编程语言，为 Libra 区块链提供安全、可编程的基础。 Libra区块链中的帐户作为容器，包含了任意数量的Move资源和Move模块。 提交给
+                    Libra 区块链的每个交易都使用 Move 编写的交易脚本来实现其逻辑。 交易脚本可以通过调用模块声明的过程（procedures）来更新区块链的全局状态。
+                  </p>
+                  <blockquote>
+                    <p>译者注：Move 的过程（procedure）可以理解为其他语言的的函数。</p>
+                  </blockquote>
+                  <p>在本指南的第一部分中，我们从上层的角度介绍 Move语言的主要功能：</p>
+                  <ol>
+                    <li><a href="#可编程的move交易脚本">可编程的Move交易脚本</a></li>
+                    <li><a href="#可组合智能合约的move模块">可组合智能合约的Move模块</a></li>
+                    <li><a href="#move的一等资源">Move的一等资源</a></li>
+                  </ol>
+                  <p>有兴趣的读者，可以进一步于都<a href="move-paper.htm">Move技术手册</a> 了解有关该语言的各种细节。
+                  </p>
+                  <p>在本指南的第二部分中，我们将“深入”并向您展示如何在<a href="#move中间表示层-ir">Move中间表示层</a>中编写自己的Move程序.
+                    初始版本的testnet测试网络不支持自定义Move程序，但这些功能可以在本地使用。</p>
+                  <h2><a class="anchor" aria-hidden="true" id="move的主要特性"></a><a href="#move的主要特性" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>Move的主要特性</h2>
+                  <h3><a class="anchor" aria-hidden="true" id="可编程的move交易脚本"></a><a href="#可编程的move交易脚本"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>可编程的Move交易脚本</h3>
+                  <ul>
+                    <li>每一个Libra区块链上交易都包含 <strong>Move交易脚本</strong>
+                      用来对交易逻辑的编码，同时验证器据此验证客户端的行为（例如，将Libra币从Alice的帐户移动到Bob的帐户）。</li>
+                    <li>交易脚本通过调用一个或者多个<a href="#可组合智能合约的move模块">Move模块</a>的过程和Libra区块链全局存储中发布的 <a
+                        href="#move的一等资源">Move资源</a> 进行交互。</li>
+                    <li>交易脚本不存储在区块链的全局状态中，其他的交易脚本也无法调用它，这是一次性程序。</li>
+                    <li>我们在<a href="#编写交易脚本">编写交易脚本</a> 中提供了几个交易脚本示例。</li>
+                  </ul>
+                  <h3><a class="anchor" aria-hidden="true" id="可组合智能合约的move模块"></a><a href="#可组合智能合约的move模块"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>可组合智能合约的Move模块</h3>
+                  <p>Move模块（Modules）定义了更新 Libra 区块链全局状态的规则。 这些模块与其他区块链系统中与智能合约相同。 模块声明可以在用户帐户下发布的 <a
+                      href="#move的一等资源">资源</a> 类型。Libra 区块链中的每个帐户都是一个容器，可以容纳任意数量的资源和模块。</p>
+                  <ul>
+                    <li>模块声明两种结构类型（包括资源，这是一种特殊的结构）和过程。</li>
+                    <li>Move模块的过程定义了创建，访问和销毁它声明的类型的规则。</li>
+                    <li>模块可重复使用。 在一个模块中声明的结构类型可以使用在另一个模块中，并且在一个模块中声明的过程可以在另一个模块中声明的公共过程中调用。
+                      模块可以调用其他Move模块中声明的过程。 交易脚本可以调用已发布模块的任何公共过程。</li>
+                    <li>最终，Libra用户将能够在自己的帐户下发布模块。</li>
+                  </ul>
+                  <h3><a class="anchor" aria-hidden="true" id="move的一等资源"></a><a href="#move的一等资源" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>Move的一等资源</h3>
+                  <ul>
+                    <li>Move的关键功能是能自定义资源类型。 资源类型通过编码具有丰富可编程性和安全性。</li>
+                    <li>资源是语言中的普通类型值。 它们可以存储为数据结构，作为参数传递给过程，从过程返回，等等。</li>
+                    <li>Move的系统为资源提供特殊的安全性保证。 Move资源永远不会被复制，重用或丢弃。 资源类型只能由定义类型的模块创建或销毁。 这些保证由<a
+                        href="glossary.htm#move-虚拟机-mvm">Move虚拟机</a>
+                      通过字节码静态验证，Move虚拟机将拒绝运行未通过字节码验证的程序代码。</li>
+                    <li>Libra货币实现为名为 <code>LibraCoin.T</code> 的资源类型。 <code>LibraCoin.T</code>
+                      在语言中没有特殊的地位; 每个Move资源都享有相同的保护。</li>
+                  </ul>
+                  <h2><a class="anchor" aria-hidden="true" id="move-底层"></a><a href="#move-底层" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>Move: 底层</h2>
+                  <h3><a class="anchor" aria-hidden="true" id="move中间表示层ir"></a><a href="#move中间表示层ir"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>Move中间表示层(IR)</h3>
+                  <p>本节介绍如何在Move中间表示层（IR：intermediate representation）中编写 <a href="#编写交易脚本">交易脚本</a>和<a
+                      href="#编写模块">模块</a> 我们提醒读者，IR是即将推出的Move语言的早期（且不稳定） (详见 <a href="#未来的开发者体验">未来开发体验</a> 更新相关详细信息).
+                    Move
+                    IR是一个覆盖于Move字节码之上的轻量语法层，用于测试字节码验证器和虚拟机，它对开发人员不是特别友好。开发人员可基于它编写高级别的可读代码，但又足够底层可以直接编译Move字节码。尽管如此，我们还是对Move语言感到兴奋，并希望开发人员能够尝试一下IR，尽管它还存在一些不足之处。
+                  </p>
+                  <p>我们将继续介绍重要评论的Move IR的细节。 我们鼓励读者通过在本地编译，运行和修改示例来跟随这些示例。
+                    <code>libra/language/README.md</code> 和
+                    <code>libra/language/ir_to_bytecode/README.md</code> 下的README文件解释了如何执行此操作。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="编写交易脚本"></a><a href="#编写交易脚本" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>编写交易脚本</h3>
+                  <p>正如我们在 <a href="#可编程的move交易脚本">启用可编程Move交易脚本</a> 中所描述的, 用户编写交易脚本以请求更新Libra
+                    区块链的全局存储。 几乎任何交易脚本中都会出现两个重要的构建块 <code>LibraAccount.T</code> 和
+                    <code>LibraCoin.T</code> 。 <code>LibraAccount</code> 是模块的名称, <code>T</code>
+                    是该模块声明的资源的名称。这是Move中常见的命名规则; 模块声明的“main”类型通常命名为 <code>T</code>.</p>
+                  <p>当我们说用户 &quot;在Libra区块链上有一个地址为 <code>0xff</code> 开头的帐号&quot; 时, 我们的意思是地址
+                    <code>0xff</code> 拥有 <code>LibraAccount.T</code> 资源的实例。 每个非空地址都有一个
+                    <code>LibraAccount.T</code> 资源。 此资源存储帐户数据，例如序列号，身份验证密钥和余额。
+                    在Libra区块链上想要与帐户有任何交互都必须通过从 <code>LibraAccount.T</code> 资源读取数据或调用
+                    <code>LibraAccount</code> 模块来实现.</p>
+                  <p>账户余额是 <code>LibraCoin.T</code> 类型的资源. 正如我们在 <a href="#move的一等资源">Move的一等资源</a>
+                    中所解释的那样，这是Libra
+                    Coin类型。 与任何其他Move资源一样，此类型是语言中的“一等公民”。 <code>LibraCoin.T</code>
+                    类型的资源可以存储在程序变量中，在程序之间传递，等等。</p>
+                  <p>我们鼓励感兴趣的读者在 <code>libra/language/stdlib/modules/</code> 目录下的
+                    <code>LibraAccount</code> 和 <code>LibraCoin</code> 模块中检查这两个关键资源的Move IR定义。</p>
+                  <p>现在让我们看看程序员如何在交易脚本中与这些模块和资源进行交互。</p>
+                  <pre><code class="hljs css language-move"><span class="hljs-comment">// Simple peer-peer payment example.</span>
+
+<span class="hljs-comment">// Use LibraAccount module published on the blockchain at account address</span>
+<span class="hljs-comment">// 0x0...0 (with 64 zeroes). 0x0 is shorthand that the IR pads out to</span>
+<span class="hljs-comment">// 256 bits (64 digits) by adding leading zeroes.</span>
+<span class="hljs-keyword">import</span> <span class="hljs-number">0x0</span>.<span class="hljs-type">LibraAccount</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-number">0x0</span>.<span class="hljs-type">LibraCoin</span>;
+main(payee: <span class="hljs-built_in">address</span>, amount: <span class="hljs-built_in">u64</span>) {
+<span class="hljs-comment">// The bytecode (and consequently, the IR) has typed locals.  The scope of</span>
+<span class="hljs-comment">// each local is the entire procedure. All local variable declarations must</span>
+<span class="hljs-comment">// be at the beginning of the procedure. Declaration and initialization of</span>
+<span class="hljs-comment">// variables are separate operations, but the bytecode verifier will prevent</span>
+<span class="hljs-comment">// any attempt to use an uninitialized variable.</span>
+<span class="hljs-keyword">let</span> coin: <span class="hljs-type">R#LibraCoin</span>.<span class="hljs-type">T</span>;
+<span class="hljs-comment">// The R# part of the type above is one of two *kind annotation* R# and V#</span>
+<span class="hljs-comment">// (shorthand for "Resource" and "unrestricted Value"). These annotations</span>
+<span class="hljs-comment">// must match the kind of the type declaration (e.g., does the LibraCoin</span>
+<span class="hljs-comment">// module declare `resource T` or `struct T`?).</span>
+
+<span class="hljs-comment">// Acquire a LibraCoin.T resource with value `amount` from the sender's</span>
+<span class="hljs-comment">// account.  This will fail if the sender's balance is less than `amount`.</span>
+coin = <span class="hljs-type">LibraAccount</span>.withdraw_from_sender(<span class="hljs-keyword">move</span>(amount));
+<span class="hljs-comment">// Move the LibraCoin.T resource into the account of `payee`. If there is no</span>
+<span class="hljs-comment">// account at the address `payee`, this step will fail</span>
+<span class="hljs-type">LibraAccount</span>.deposit(<span class="hljs-keyword">move</span>(payee), <span class="hljs-keyword">move</span>(coin));
+
+<span class="hljs-comment">// Every procedure must end in a `return`. The IR compiler is very literal:</span>
+<span class="hljs-comment">// it directly translates the source it is given. It will not do fancy</span>
+<span class="hljs-comment">// things like inserting missing `return`s.</span>
+<span class="hljs-keyword">return</span>;
+}
+</code></pre>
+                  <p>这个交易脚本有一个不好的地方 — 如果 <code>收款人</code> 地址下没有帐户，它将失败。 我们将通过修改脚本来为 <code>收款人</code>
+                    创建帐户（如果账户不存在）来解决此问题。</p>
+                  <pre><code class="hljs css language-move"><span class="hljs-comment">// A small variant of the peer-peer payment example that creates a fresh</span>
+<span class="hljs-comment">// account if one does not already exist.</span>
+
+<span class="hljs-keyword">import</span> <span class="hljs-number">0x0</span>.<span class="hljs-type">LibraAccount</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-number">0x0</span>.<span class="hljs-type">LibraCoin</span>;
+main(payee: <span class="hljs-built_in">address</span>, amount: <span class="hljs-built_in">u64</span>) {
+<span class="hljs-keyword">let</span> coin: <span class="hljs-type">R#LibraCoin</span>.<span class="hljs-type">T</span>;
+<span class="hljs-keyword">let</span> account_exists: <span class="hljs-built_in">bool</span>;
+
+<span class="hljs-comment">// Acquire a LibraCoin.T resource with value `amount` from the sender's</span>
+<span class="hljs-comment">// account.  This will fail if the sender's balance is less than `amount`.</span>
+coin = <span class="hljs-type">LibraAccount</span>.withdraw_from_sender(<span class="hljs-keyword">move</span>(amount));
+
+account_exists = <span class="hljs-type">LibraAccount</span>.exists(<span class="hljs-keyword">copy</span>(payee));
+
+<span class="hljs-keyword">if</span> (!<span class="hljs-keyword">move</span>(account_exists)) {
+  <span class="hljs-comment">// Creates a fresh account at the address `payee` by publishing a</span>
+  <span class="hljs-comment">// LibraAccount.T resource under this address. If theres is already a</span>
+  <span class="hljs-comment">// LibraAccount.T resource under the address, this will fail.</span>
+  <span class="hljs-built_in">create_account</span>(<span class="hljs-keyword">copy</span>(payee));
+}
+
+<span class="hljs-type">LibraAccount</span>.deposit(<span class="hljs-keyword">move</span>(payee), <span class="hljs-keyword">move</span>(coin));
+<span class="hljs-keyword">return</span>;
+}
+</code></pre>
+                  <p>让我们看一个更复杂的例子。 在此示例中，我们将使用交易脚本面向多个接收人。</p>
+                  <pre><code class="hljs css language-move"><span class="hljs-comment">// Multiple payee example. This is written in a slightly verbose way to</span>
+<span class="hljs-comment">// emphasize the ability to split a `LibraCoin.T` resource. The more concise</span>
+<span class="hljs-comment">// way would be to use multiple calls to `LibraAccount.withdraw_from_sender`.</span>
+
+<span class="hljs-keyword">import</span> <span class="hljs-number">0x0</span>.<span class="hljs-type">LibraAccount</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-number">0x0</span>.<span class="hljs-type">LibraCoin</span>;
+main(payee1: <span class="hljs-built_in">address</span>, amount1: <span class="hljs-built_in">u64</span>, payee2: <span class="hljs-built_in">address</span>, amount2: <span class="hljs-built_in">u64</span>) {
+<span class="hljs-keyword">let</span> coin1: <span class="hljs-type">R#LibraCoin</span>.<span class="hljs-type">T</span>;
+<span class="hljs-keyword">let</span> coin2: <span class="hljs-type">R#LibraCoin</span>.<span class="hljs-type">T</span>;
+<span class="hljs-keyword">let</span> total: <span class="hljs-built_in">u64</span>;
+
+total = <span class="hljs-keyword">move</span>(amount1) + <span class="hljs-keyword">copy</span>(amount2);
+coin1 = <span class="hljs-type">LibraAccount</span>.withdraw_from_sender(<span class="hljs-keyword">move</span>(total));
+<span class="hljs-comment">// This mutates `coin1`, which now has value `amount1`.</span>
+<span class="hljs-comment">// `coin2` has value `amount2`.</span>
+coin2 = <span class="hljs-type">LibraCoin</span>.withdraw(&amp;<span class="hljs-keyword">mut</span> coin1, <span class="hljs-keyword">move</span>(amount2));
+
+<span class="hljs-comment">// Perform the payments</span>
+<span class="hljs-type">LibraAccount</span>.deposit(<span class="hljs-keyword">move</span>(payee1), <span class="hljs-keyword">move</span>(coin1));
+<span class="hljs-type">LibraAccount</span>.deposit(<span class="hljs-keyword">move</span>(payee2), <span class="hljs-keyword">move</span>(coin2));
+<span class="hljs-keyword">return</span>;
+}
+</code></pre>
+                  <p>这就结束了我们对交易脚本的“浏览”。 有关更多示例，包括初始testnet中支持的交易脚本，请参阅
+                    <code>libra/language/stdlib/transaction_scripts</code>.</p>
+                  <h3><a class="anchor" aria-hidden="true" id="编写模块"></a><a href="#编写模块" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>编写模块</h3>
+                  <p>我们现在将注意力转向编写自己的Move模块，而不是仅仅重用现有的 <code>LibraAccount</code> 和
+                    <code>LibraCoin</code> 模块。 考虑这种情况：
+                    Bob将在未来的某个时间点在地址<em>a</em>创建一个帐户。
+                    Alice希望向Bob“指定”一些资金，这样一旦Bob的账户创建好了，她就可以把这些资金转到他的账户中。但她也希望，如果Bob从未创建过账户，她也能收回自己的资金。
+                  </p>
+                  <p>为了解决Alice的这个问题，我们将编写一个模块 <code>EarmarkedLibraCoin</code> ：</p>
+                  <ul>
+                    <li>声明一个新的资源类型 <code>EarmarkedLibraCoin.T</code> 包含Libra Coin和接收人地址。</li>
+                    <li>允许Alice创建这样的类型并在她的帐户下发布它（<code>create</code>过程）。</li>
+                    <li>允许Bob声明资源（<code>claim_for_recipient</code>过程）。</li>
+                    <li>允许任何拥有 <code>EarmarkedLibraCoin.T</code>
+                      的人销毁它并获得之前“指定”（质押）资金（<code>unwrap</code>程序）。</li>
+                  </ul>
+                  <pre><code class="hljs css language-move"><span class="hljs-comment">// A module for earmarking a coin for a specific recipient</span>
+<span class="hljs-keyword">module</span> <span class="hljs-type">EarmarkedLibraCoin</span> {
+<span class="hljs-keyword">import</span> <span class="hljs-number">0x0</span>.<span class="hljs-type">LibraCoin</span>;
+
+<span class="hljs-comment">// A wrapper containing a Libra coin and the address of the recipient the</span>
+<span class="hljs-comment">// coin is earmarked for.</span>
+<span class="hljs-struct"><span class="hljs-keyword">resource</span> T {</span>
+  coin: <span class="hljs-type">R#LibraCoin</span>.<span class="hljs-type">T</span>,
+  recipient: <span class="hljs-built_in">address</span>
+}
+
+<span class="hljs-comment">// Create a new earmarked coin with the given `recipient`.</span>
+<span class="hljs-comment">// Publish the coin under the transaction sender's account address.</span>
+<span class="hljs-keyword">public</span> create(coin: <span class="hljs-type">R#LibraCoin</span>.<span class="hljs-type">T</span>, recipient: <span class="hljs-built_in">address</span>) {
+  <span class="hljs-keyword">let</span> t: <span class="hljs-type">R#Self</span>.<span class="hljs-type">T</span>;
+
+  <span class="hljs-comment">// Construct or "pack" a new resource of type T. Only procedures of the</span>
+  <span class="hljs-comment">// `EarmarkedCoin` module can create an `EarmarkedCoin.T`.</span>
+  t = <span class="hljs-type">T</span> {
+    coin: <span class="hljs-keyword">move</span>(coin),
+    recipient: <span class="hljs-keyword">move</span>(recipient),
+  };
+
+  <span class="hljs-comment">// Publish the earmarked coin under the transaction sender's account</span>
+  <span class="hljs-comment">// address. Each account can contain at most one resource of a given type; </span>
+  <span class="hljs-comment">// this call will fail if the sender already has a resource of this type.</span>
+  <span class="hljs-built_in">move_to_sender</span>&lt;<span class="hljs-type">T</span>&gt;(<span class="hljs-keyword">move</span>(t));
+  <span class="hljs-keyword">return</span>;
+}
+
+<span class="hljs-comment">// Allow the transaction sender to claim a coin that was earmarked for her.</span>
+<span class="hljs-keyword">public</span> claim_for_recipient(earmarked_coin_address: <span class="hljs-built_in">address</span>): <span class="hljs-type">R#Self</span>.<span class="hljs-type">T</span> {
+  <span class="hljs-keyword">let</span> t: <span class="hljs-type">R#Self</span>.<span class="hljs-type">T</span>;
+  <span class="hljs-keyword">let</span> t_ref: &amp;<span class="hljs-type">R#Self</span>.<span class="hljs-type">T</span>;
+  <span class="hljs-keyword">let</span> sender: <span class="hljs-built_in">address</span>;
+
+  <span class="hljs-comment">// Remove the earmarked coin resource published under `earmarked_coin_address`.</span>
+  <span class="hljs-comment">// If there is resource of type T published under the address, this will fail.</span>
+  t = <span class="hljs-built_in">move_from</span>&lt;<span class="hljs-type">T</span>&gt;(<span class="hljs-keyword">move</span>(earmarked_coin_address));
+
+  t_ref = &amp;t;
+  <span class="hljs-comment">// This is a builtin that returns the address of the transaction sender.</span>
+  sender = <span class="hljs-built_in">get_txn_sender</span>();
+  <span class="hljs-comment">// Ensure that the transaction sender is the recipient. If this assertion</span>
+  <span class="hljs-comment">// fails, the transaction will fail and none of its effects (e.g.,</span>
+  <span class="hljs-comment">// removing the earmarked coin) will be committed.  99 is an error code</span>
+  <span class="hljs-comment">// that will be emitted in the transaction output if the assertion fails.</span>
+  <span class="hljs-built_in">assert</span>(*(&amp;<span class="hljs-keyword">move</span>(t_ref).recipient) == <span class="hljs-keyword">move</span>(sender), <span class="hljs-number">99</span>);
+
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">move</span>(t);
+}
+
+<span class="hljs-comment">// Allow the creator of the earmarked coin to reclaim it.</span>
+<span class="hljs-keyword">public</span> claim_for_creator(): <span class="hljs-type">R#Self</span>.<span class="hljs-type">T</span> {
+  <span class="hljs-keyword">let</span> t: <span class="hljs-type">R#Self</span>.<span class="hljs-type">T</span>;
+  <span class="hljs-keyword">let</span> coin: <span class="hljs-type">R#LibraCoin</span>.<span class="hljs-type">T</span>;
+  <span class="hljs-keyword">let</span> recipient: <span class="hljs-built_in">address</span>;
+  <span class="hljs-keyword">let</span> sender: <span class="hljs-built_in">address</span>;
+
+  sender = <span class="hljs-built_in">get_txn_sender</span>();
+  <span class="hljs-comment">// This will fail if no resource of type T under the sender's address.</span>
+  t = <span class="hljs-built_in">move_from</span>&lt;<span class="hljs-type">T</span>&gt;(<span class="hljs-keyword">move</span>(sender));
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">move</span>(t);
+}
+
+<span class="hljs-comment">// Extract the Libra coin from its wrapper and return it to the caller.</span>
+<span class="hljs-keyword">public</span> unwrap(t: <span class="hljs-type">R#Self</span>.<span class="hljs-type">T</span>): <span class="hljs-type">R#LibraCoin</span>.<span class="hljs-type">T</span> {
+  <span class="hljs-keyword">let</span> coin: <span class="hljs-type">R#LibraCoin</span>.<span class="hljs-type">T</span>;
+  <span class="hljs-keyword">let</span> recipient: <span class="hljs-built_in">address</span>;
+
+  <span class="hljs-comment">// This "unpacks" a resource type by destroying the outer resource, but</span>
+  <span class="hljs-comment">// returning its contents. Only the module that declares a resource type</span>
+  <span class="hljs-comment">// can unpack it.</span>
+  <span class="hljs-type">T</span> { coin, recipient } = <span class="hljs-keyword">move</span>(t);
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">move</span>(coin);
+}
+
+}
+</code></pre>
+                  <p>Alice可以通过创建一个交易脚本为Bob创建一个专用币，该脚本包括Bob的地址<em>a</em>和同时在她拥有的
+                    <code>LibraCoin.T</code> 上调用<code>create</code>。
+                    一旦<em>a</em>创建，Bob就可以通过从<em>a</em>发送交易来获得币。
+                    这将调用<code>claim_for_recipient</code>，将结果传递给<code>unwrap</code>，并将返回的<code>LibraCoin</code>
+                    的结果存储。
+                    如果Bob花费太长时间在<em>a</em>下创建一个帐户，这时候Alice想要收回她的资金，她可以通过使用<code>claim_for_creator</code>然后使用<code>unwrap</code>来实现。
+                  </p>
+                  <p>细心的读者可能已经注意到，该模块中的代码与<code>LibraCoin.T</code>的内部结构无关。
+                    它可以很容易地使用程序泛型来编写（例如，<code>resource T &lt;AnyResource：R&gt; {coin：AnyResource，...}</code>）。
+                    我们目前正致力于为Move添加对这种参数多态的支持。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="未来的开发者体验"></a><a href="#未来的开发者体验" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>未来的开发者体验</h3>
+                  <p>在不久的将来，IR将稳定下来，编译和验证程序的用户体检将更好。 此外，将跟踪来自IR源的位置信息并将其传递给验证程序，使得错误消息更易于调试。
+                    但是，IR将继续作为测试Move字节码的工具。 它意味着是底层字节码的语义更加透明。
+                    为了进行有效的测试，IR编译器会生成一些错误的代码，这些代码将被字节码验证程序拒绝或在运行时在编译器中失败。 友好的用户源语言会做出不同的选择;
+                    它应该拒绝编译将在后续步骤中失败的代码。</p>
+                  <p>将来，我们将拥有更高级别的Move源语言。 该源语言旨在安全轻松地表达常见的Move惯用语法和编程模式。 由于Move是一种新语言，而Libra
+                    区块链是一种新的编程环境，我们对应该支持的惯用语法和模式的理解仍在不断发展。 Move源语言还处于开发的早期阶段，我们还没有发布它的时间表。</p>
+                </span></div>
+            </article>
+          </div>
+          <div class="docs-prevnext"><a class="docs-prev button" href="my-first-transaction.htm"><span
+                class="arrow-prev">←
+              </span><span>我的第一笔交易</span></a><a class="docs-next button"
+              href="run-local-network.htm"><span>在本地网络上运行</span><span class="arrow-next">
+                →</span></a></div>
+        </div>
+      </div>
+      <nav class="onPageNav">
+        <ul class="toc-headings">
+          <li><a href="#move的主要特性">Move的主要特性</a>
+            <ul class="toc-headings">
+              <li><a href="#可编程的move交易脚本">可编程的Move交易脚本</a></li>
+              <li><a href="#可组合智能合约的move模块">可组合智能合约的Move模块</a></li>
+              <li><a href="#move的一等资源">Move的一等资源</a></li>
+            </ul>
+          </li>
+          <li><a href="#move-底层">Move: 底层</a>
+            <ul class="toc-headings">
+              <li><a href="#move中间表示层ir">Move中间表示层(IR)</a></li>
+              <li><a href="#编写交易脚本">编写交易脚本</a></li>
+              <li><a href="#编写模块">编写模块</a></li>
+              <li><a href="#未来的开发者体验">未来的开发者体验</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <footer class="nav-footer" id="footer">
+        <section class="sitemap"><a href="https://developers.libra.org/" class="nav-home"><img
+              src="libra-logomark-white.png" alt="Libra" /></a>
+          <div class="footerSection">
+            <h5>Learn About Libra</h5><a href="welcome-to-libra.htm">Welcome to Libra</a><a
+              href="libra-protocol.htm">Libra Protocol</a><a href="the-libra-blockchain-paper.htm">Libra Blockchain</a><a
+              href="life-of-a-transaction.htm">Life of a Transaction</a>
+            <p></p>
+            <h5>Try Libra Core </h5><a href="my-first-transaction.htm">My First Transaction</a><a
+              href="move-overview.htm">Getting Started With Move</a>
+          </div>
+          <div class="footerSection">
+            <h5>Policies</h5><a href="privacy-policy.htm">Privacy Policy</a><a href="terms-of-use.htm">Terms of Use</a><a
+              href="cookies-policy.htm">Cookies Policy</a><a href="code-of-conduct.htm">Code of Conduct</a>
+            <p></p>
+            <h5>Community</h5><a href="https://community.libra.org/">Developer Forum</a><a
+              href="https://developers.libra.org/newsletter_form">Newsletter</a>
+          </div>
+          <div class="footerSection">
+            <h5>Libra开发者社区</h5>
+            <img style="width:150px" src='qr_violas.png'>
+            <h5>备注”Libra“加群<h5>
+          </div>
+        </section>
+        <section class="copyright"> © Violas Association</section>
+      </footer>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script>
+    document.addEventListener('keyup', function (e) {
+      if (e.target !== document.body) {
+        return;
+      }
+      // keyCode for '/' (slash)
+      if (e.keyCode === 191) {
+        const search = document.getElementById('search_input_react');
+        search && search.focus();
+      }
+    });
+  </script>
+  <script>
+    var search = docsearch({
+
+      apiKey: '0d48ee629d39ddc4916eeef7755a0c4c',
+      indexName: 'libra',
+      inputSelector: '#search_input_react'
+    });
+  </script>
+</body>
+
+</html>

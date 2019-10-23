@@ -1,0 +1,507 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrap{
+    width: 100%;
+    height:auto;
+}
+.associations{
+    width: 100%;
+    background: rgba(44, 9, 108, 1);
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    /* height: 913px; */
+    display: flex;
+    flex-direction: column;
+    background: url('../img/编组 4@2x.png') no-repeat;
+    background-size: 100% 100%;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 99;
+}
+.header .head{
+    width: 1300px;
+    height:100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.navList{
+  display: flex;
+}
+
+.logo img{
+    width: 173px;
+    height: 55px;
+}
+.navList{
+    flex: 1;
+    height: 100%;
+    align-items: center;
+    margin-left:70px;
+    margin-right:200px;
+}
+.navList li{
+    font-size:20px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    margin-left: 77px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.navList li:last-child{
+    position: relative;
+}
+.navList li:last-child .select{
+    width: 145px;
+    height: 116px;
+    position: relative;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    /* display: none; */
+ }
+.navList li:last-child .select .bg{
+    position: absolute;
+    top: 0;
+}
+.navList li:last-child .select>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:15px;
+}
+.navList li:last-child .select>div span{
+    width: 100%;
+    height: 50px;
+    font-size:23px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(44,9,108,1);
+    line-height:50px;
+    text-align: center;
+    letter-spacing:1px;
+    border-radius:5px;
+}
+.navList li:last-child .select .bg img{
+   width: 145px;
+   height: 116px;
+}
+.navList li.active{
+    color:rgba(62, 209, 246, 1);
+}
+
+.descr{
+  display: flex;
+}
+.descr span{
+    color: #FFF;
+    margin-right: 38px;
+    cursor: pointer;
+}
+.descr span:nth-child(1){
+   width: 100px;
+   height: 31px;
+   border: 1px solid #FFF;
+   border-radius:3px;
+   line-height: 31px;
+   text-align: center;
+   font-size: 14px;
+}
+.descr span:nth-child(2){
+    font-size: 22px;
+ }
+header{
+    height: 732px;
+}
+.headContent{
+    width:1300px;
+    flex: 1;
+    position: relative;
+    margin: 0 auto;
+    display: flex;;
+    justify-content: space-between;
+}
+.headContent .headTalk{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.headContent .headTalk p img{
+    width: 405px;
+    height: 75px;
+}
+.headContent .headTalk p{
+    width:681px;
+    /* height:204px; */
+    font-size:30px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(249,249,249,1);
+    line-height:60px;
+    margin-top: 20px;
+}
+.headContent .headLogo img{
+    width: 582px;
+    height:598px;
+}
+.headContent .headLogo{
+    width: 582px;
+    height:598px;
+    position: absolute;
+    right:-30px;
+    top:20px;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+.vision .head,.mebers .head{
+    width: 1118px;
+    height: 61px;
+    margin: 130px auto;
+    position: relative;
+    display: flex;;
+    align-items: center;
+ }
+.vision .head .bg,.mebers .head .bg{
+   width: 1118px;
+   height: 61px;
+}
+.vision .head .bg img,.mebers .head .bg img{
+    width: 100%;
+ }
+.vision .head p,.mebers .head p{
+    position: absolute;
+    left: 47%;
+    margin-left: -120px;
+    top: 0;
+    font-size: 40px;
+    color: rgba(248, 248, 248, 1);
+    font-weight: 400;
+ }
+ .mebers .head p{
+     left: 53.5%;
+     top: 5px;
+ }
+.vision .headDescr{
+   width: 707px;
+   height: 496px;
+   margin: 0 auto;
+   display: flex;
+   position: relative;
+   justify-content: center;
+ }
+.vision .headDescr .bg img{
+    width: 496x;
+    height: 496px;
+  }
+.vision .headDescr h3{
+    font-size:53px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,1);
+    position: absolute;
+    left:50%;
+    margin-left: -80px;
+    top: 140px;
+}
+.vision .headDescr p{
+    font-size:30px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,.8);
+    position: absolute;
+    left: 20px;
+    top: 230px;
+    text-align: center;
+    line-height: 64px;
+}
+.forWorldDescr{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 250px;
+    display: flex;;
+    justify-content: center;
+}
+.forWorldDescr .eachDescr{
+    width:546px;
+    position: relative;
+    margin-left: 25px;
+}
+.forWorldDescr .eachDescrs{
+    width:546px;
+    height:437px;
+    background:linear-gradient(180deg,rgba(255,255,255,1) 0%,RGBA(158, 146, 250, 1)100%);
+    border-radius:20px;
+    position: relative;
+    z-index: 10;
+    padding: 79px 25px 0 35px;
+    box-sizing: border-box;
+}
+.eachDescrs h3{
+    font-size:30px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(44,9,108,1);
+}
+.eachDescrs i img{
+    display: inline-block;
+    width: 64px;
+    height: 4px;
+}
+.eachDescrs p{
+    font-size:24px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(44,9,108,1);
+    margin-top: 20px;
+    line-height:48px;
+}
+.forWorldDescr .eachDescr .logo1,
+.forWorldDescr .eachDescr .logo2,
+.forWorldDescr .eachDescr .logo3
+{
+    position: absolute;
+}
+.forWorldDescr .eachDescr .logo1{
+    left:50%;
+    margin-left: -27%;
+    top: -125px;
+}
+.forWorldDescr .eachDescr .logo2{
+    left:50%;
+    margin-left: -13%;
+    top: -105px;
+    z-index: 11;
+}
+.forWorldDescr .eachDescr .logo3{
+    left:-15px;
+    bottom:-20px;
+}
+
+.forWorldDescr .eachDescr .logo1 img{
+    width: 233px;
+    height:178px;
+    
+}
+.forWorldDescr .eachDescr .logo2 img{
+    width: 205px;
+    height:173px;
+    
+}
+.forWorldDescr .eachDescr .logo3 img{
+    width: 303px;
+    height:180px;
+    
+}
+
+.forWorldDescr .eachDescr:nth-child(2) .logo1 img{
+    width: 251px;
+    height:225px;
+    
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo1{
+   top: -150px;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo2{
+    top: -100px;
+ }
+ .forWorldDescr .eachDescr:nth-child(2) .logo3{
+    left:47%;
+ }
+ .whitePaper {
+    width: 1300px;
+    /* height: 716px; */
+    position: relative;
+    margin: 0 auto;
+    margin-top: 240px;
+}
+.whitePaper .bg{
+    position: absolute;
+    right: -30%;
+}
+.whitePaper .bg img{
+    width: 1210px;
+    height: 716px;
+}
+.whitePaper .content{
+    display: flex;
+}
+.whitePaper .content .hLogo{
+    margin-left: 12%;
+    position: relative;
+    z-index: 9;
+}
+.whitePaper .content .hLogo img{
+    width: 653px;
+    height: 639px;
+}
+.whitePaper .content .con{
+    margin-top: 17%;
+    margin-left: 9%;
+}
+.whitePaper .content .con h3{
+    font-size:53px;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    color:rgba(248,248,248,1);
+    display: flex;;
+}
+.whitePaper .content .con h3 i{
+   margin-top: -25px; 
+   margin-left: 15px;
+}
+.whitePaper .content .con h3 i img{
+  width: 37px;
+  height: 51px;
+  
+}
+.whitePaper .content .con p{
+    width: 400px;
+    font-size:30px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,1);
+    line-height: 76px;
+    margin-top:50px;
+}
+.whitePaper .content .con p i img{
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.association {
+    width: 1300px;
+    /* height: 716px; */
+    position: relative;
+    margin: 0 auto;
+    margin-top: 240px;
+    margin-bottom: 200px;
+}
+.association .bg{
+    position: absolute;
+    left:-25%;
+}
+.association .bg img{
+    width: 1225px;
+    height: 764px;
+}
+.association .content{
+    display: flex;;
+}
+.association .content .hLogo{
+    margin-left:5%;
+    margin-top: -5%;
+    position: relative;
+    z-index: 9;
+}
+
+.association .content .hLogo img{
+    width: 654px;
+    height: 667px;
+}
+
+.association .content .con{
+    /* height: 500px; */
+    margin-left: 4%;
+    margin-top: 200px;
+}
+.association .content .con h3{
+    font-size:53px;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    color:rgba(248,248,248,1);
+    display: flex;;
+}
+.association .content .con p{
+    width: 467px;
+    font-size:30px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,1);
+    line-height:76px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.association .content .con h3 i{
+    margin-right: 15px;
+    margin-top:-25px;
+}
+.association .content .con h3 i img{
+  width: 37px;
+  height: 51px;
+  
+}
+footer{
+    width: 100%;
+    height:464px;
+    background: url('../img/编组 44@3x.png')no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+footer h2{
+    height: 56px;
+    font-size:40px;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    margin: 134px 0 19px 362px;
+}
+footer>div{
+    display: flex;
+    align-items: center;
+    margin-left:309px ;
+    
+}
+footer>div i img{
+    width:36px;
+    height:29px;
+}
+footer>div label{
+    font-size:32px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(248,248,248,1);
+    margin-left: 17px;
+}
+footer>p{
+    width: 100%;
+    font-size:25px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    text-align: center;
+    margin-top: 154px;
+}
+@media (max-width:1700px){
+    footer h2{
+        margin-left: 220px;
+    }
+    footer>div{
+       
+        margin-left:170px ;
+        
+    }
+}
+@media (max-width:1300px){
+    .associations{
+        width: 1300px;
+    }
+}

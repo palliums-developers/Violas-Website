@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./css/index.css">s -->
+    <link rel="stylesheet" href="./css/association.css">
+    <title>violas</title>
+</head>
+<body>
+    <div id="root">
+      <div class="wrap associations">
+        <header>
+            <div class="header">
+                <div class="head">
+                    <div class="logo">
+                      <img src="./img/编组 25@3x.png"/>
+                    </div>
+                    <ul class="navList">
+                      <li>首页</li>
+                      <li class="active">协会</li>
+                      <li>合作伙伴</li>
+                      <li>wiki</li>
+                      <li>
+                          <p id="docu">文档</p>
+                          <div class="select">
+                            <div class="bg"><img src="./img/路径复制 3@2x.png" alt=""></div>
+                            <div class="list">
+                                <span>Violas</span>
+                                <span>libra</span>
+                            </div>
+                          </div>
+                      </li>
+                    </ul>
+                    <div class="descr">
+                     <span id="whitePaper">白皮书</span>
+                     <span>EN</span>
+                   </div>
+                 </div>
+            </div>
+            <div class="headContent">
+                <div class="headTalk">
+                  <p><img src="./img/编组 6@2x.png"/></p>
+                  <p>Violas协会是一个全球化的多元化会员制组织，致力于建设、治理和发展Violas生态，以推动Violas愿景的实现</p>
+                </div> 
+                <div class="headLogo">
+                   <img src="./img/bg@2x.png"/>
+                </div>
+             </div>
+        </header>
+        <section>
+            <div class="vision">
+                <div class="head">
+                  <div class="bg"><img src="./img/编组 29@3x.png"/></div>
+                  <p>Violas的权利定制</p>
+                </div>
+                <div class="headDescr">
+                  <div class="bg"><img src="./img/编组 32@3x.png"/></div>
+                  <h3>两院制</h3>
+                  <p>参议院与众议院的权利将参照美国两院的权利制定&nbsp;  
+                    两者将形成分权和制衡的关系</p>
+                </div>
+                <div class="forWorldDescr">
+                    <div class="eachDescr">
+                      <div class="logo1"><img src="./img/编组 13@2x.png"/></div>
+                      <div class="logo2"><img src="./img/编组 9@2x.png"/></div>
+                      <div class="eachDescrs">
+                        <h3>参议院</h3><i><img src="./img/矩形复制 53@2x.png"/></i>
+                        <p>参议院的成员数量与Violas节点数量相同，并且随节点数量变化而变化。</p>
+                      </div>
+                      <div class="logo3"><img src="./img/矩形复制 52@3x.png"/></div>
+                    </div>
+                    <div class="eachDescr">
+                        <div class="logo1"><img src="./img/编组 16@2x.png"/></div>
+                        <div class="logo2"><img src="./img/编组 9@2x.png"/></div>
+                        <div class="eachDescrs">
+                          <h3>众议院</h3><i><img src="./img/矩形复制 53@2x.png"/></i>
+                          <p>众议院的成员数量与参议院成员数量成1:5（暂定）的关系。每个节点至少有一个众议院名额。其他名额由各节点社群活跃人数、稳定币经济体量以及总经济体量等要素决定。</p>
+                        </div>
+                        <div class="logo3"><img src="./img/矩形复制 51@3x.png"/></div>
+                    </div>
+                  </div>
+              </div>
+              <div class="mebers">
+                  <div class="head">
+                      <div class="bg"><img src="./img/编组 29复制@3x.png"/></div>
+                      <p>两院成员</p>
+                  </div>
+                  <div class="whitePaper">
+                      <div class="bg"><img src="./img/路径 13复制 2@3x.png" alt=""></div>
+                      <div class="content">
+                        <div class="hLogo"><img src="./img/编组@2x.png" alt=""></div>
+                        <div class="con">
+                          <h3>节点运营者<i><img src="./img/编组 5复制 3@2x.png" alt=""></i></h3>
+                          <p>天然获得协会成员身份，这些成员组成协会的“参议院”。</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="association">
+                      <div class="bg"><img src="./img/路径 13复制 5@3x.png" alt=""></div>
+                      <div class="content">
+                        <div class="con">
+                              <h3><i><img src="./img/编组 12@2x.png" alt=""></i>节点参与者</h3>
+                              <p>投资了某个节点，或者是某个节点支持的稳定币或应用运营者，需要通过该节点社群选举当选，这些成员组成协会的“众议院”。</p>
+                        </div>
+                        <div class="hLogo"><img src="./img/编组 14@2x.png" alt=""></div>
+                      </div>
+                  </div>
+              </div>
+        </section>
+        <footer>
+            <h2>联系我们</h2>
+            <div><i><img src="./img/形状 2@2x.png" alt=""></i><label for="">violas_blockchain@violas.io</label></div>
+            <p>版权所有@Violas</p>
+         </footer>
+     </div>
+    </div>
+</body>
+<script>
+   let text = document.querySelectorAll('ul li')
+   let navlist = document.querySelector('.navList');
+   let selects = document.querySelector('.navList .select');
+   let docum = document.querySelector('.navList #docu');
+   let lists = document.querySelectorAll('.select .list span');
+   selects.style.display = 'none'
+   docum.onclick = function(){
+      if(selects.style.display == 'none'){
+         docum.style.color = "rgba(62, 209, 246, 1)"
+         selects.style.display = 'block'
+      }else{
+        selects.style.display = 'none'
+        docum.style.color = "#FFF"
+      }
+   }
+   for (var i = 0; i < lists.length; i++) {
+    lists[i].onclick = function () {
+      if(this.innerHTML == 'Violas'){
+          
+      }else if(this.innerHTML == 'libra'){
+          window.location = 'libra_doc/lib_doc_en2cn/welcome-to-libra.htm';
+      }
+      for (var i = 0; i < lists.length; i++) {
+      lists[i].style.background = '#FFF';
+      this.style.background = 'rgba(169, 67, 206, .16)';
+      }
+    }
+   }
+   for (var i = 0; i < text.length; i++) {
+       text[i].onclick = function () {
+         if(this.innerHTML == '首页'){
+           window.location = 'index.html';
+         }else if(this.innerHTML == '协会'){
+           window.location = 'association.html';
+         }else if(this.innerHTML == '合作伙伴'){
+           window.location = 'partner.html';
+         }else if(this.innerHTML == 'wiki'){
+           window.location = 'https://www.wttf.org';
+         }
+        for (var i = 0; i < text.length; i++) {
+         text[i].className = '';
+         this.className = 'active'
+        }
+       }  
+   }
+   let wPaper = document.getElementById('whitePaper')
+    wPaper.onclick = function () {
+      wPaper.style.cssText ="background:#FFF;color:rgba(44, 9, 108, 1)";
+      window.location = 'whitePaper.html';
+    }
+    window.onscroll = function(){
+    let topScroll =document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
+    let bignav  = document.querySelector(".header");//获取到导航栏id
+     if(topScroll > 0){  //当滚动距离大于250px时执行下面的东西
+      bignav.style.position = 'fixed';
+      bignav.style.top = '0';
+      bignav.style.zIndex = '9999';
+      bignav.style.background = 'rgba(44, 9, 108, 1)';
+     }else{//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+        bignav.style.position = 'static';
+        bignav.style.background = '0';
+      }
+   }
+   
+</script>
+</html>
