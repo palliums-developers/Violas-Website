@@ -23,6 +23,7 @@ header{
     height: 100px;
     position: relative;
     z-index: 99;
+    /* background-image: linear-gradient(to right , #9c3ec9, #4a189f); */
 }
 .default{
     width: 100%;
@@ -40,12 +41,14 @@ header{
     display: flex;
     align-items: center;
     justify-content:space-around;
+    
 }
 .navList{
   display: flex;
 }
 
 .logo img{
+    margin-left: 20px;
     width: 173px;
     height: 55px;
 }
@@ -144,6 +147,7 @@ header{
 .default .headContent .headLogo img{
    width: 100%;
    height: auto;
+   margin-bottom: -10px;
 }
 .default .headContent .headTalk{
     position: absolute;
@@ -730,14 +734,14 @@ footer>p{
         width: 300px;
     }
     .default .headContent .headTalk{
-        left: 10px;
+        left: 20px;
     }
     .default .headContent .headTalk p:nth-child(1) label{
-        font-size:66px;
+        font-size:60px;
     }
     .default .headContent .headTalk p:nth-child(1) img{
-        width: 310px;
-        height: 80px;
+        width: 260px;
+        height: 70px;
     }
     /* .default .headContent .headTalk p:nth-child(2){
         margin-top: 56px;

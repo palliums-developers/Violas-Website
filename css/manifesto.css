@@ -41,6 +41,7 @@ header{
 }
 
 .logo img{
+    margin-left: 20px;
     width: 173px;
     height: 55px;
 }
@@ -175,7 +176,7 @@ section{
 }
 .thrAgo .bg{
     position: absolute;
-    left:-30%;
+    left:-20%;
 }
 .thrAgo .bg img{
    width: 1114px;
@@ -185,6 +186,7 @@ section{
     position: absolute;
     top: 0;
     display: flex;
+    left: 10%;
 }
 .thrAgo .bgContent .logo{
     margin-left:100px;
@@ -223,7 +225,7 @@ section{
 }
 .tenAgo .bg{
     position: absolute;
-    right: -28%;
+    right: -25%;
 }
 .tenAgo .bg img{
    width: 1114px;
@@ -232,7 +234,7 @@ section{
 .tenAgo .bgContent{
     position: absolute;
     top: 0;
-    left: 13%;
+    left: 10%;
     display: flex;
     /* margin-left: 400px; */
 }
