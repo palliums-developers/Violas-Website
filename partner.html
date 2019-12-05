@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/partner.css">
-    <title>violas</title>
+    <link rel="icon" href="./img/hLogo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/hLogo.ico" type="image/x-icon">
+    <title>Violas</title>
 </head>
 <body>
     <div id="root">
@@ -20,7 +22,7 @@
                         <li>首页</li>
                         <li>协会</li>
                         <li class="active">合作伙伴</li>
-                        <li>wiki</li>
+                        <li>WIKI</li>
                         <li>
                             <p id="docu">文档</p>
                             <div class="select">
@@ -42,8 +44,8 @@
                   <div class="headTalk">
                     <p><img src="./img/par.png"/></p>
                     <div>
-                      <p>加入<span>Violas </span>协会</p>
-                      <p>与violas合作</p>
+                      <p>加入<span> Violas </span>协会</p>
+                      <p>与 Violas 合作</p>
                     </div>
                   </div> 
                   <div class="headLogo">
@@ -197,9 +199,10 @@
            window.location = 'association.html';
          }else if(this.innerHTML == '合作伙伴'){
            window.location = 'partner.html';
-         }else if(this.innerHTML == 'wiki'){
-           window.location = 'https://www.wttf.org';
          }
+        //  else if(this.innerHTML == 'wiki'){
+        //    window.location = 'https://www.wttf.org';
+        //  }
         for (var i = 0; i < text.length; i++) {
          text[i].className = '';
          this.className = 'active'

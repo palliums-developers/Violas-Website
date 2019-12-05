@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <link rel="stylesheet" href="./css/index.css">s -->
     <link rel="stylesheet" href="./css/association.css">
-    <title>violas</title>
+    <link rel="icon" href="./img/hLogo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/hLogo.ico" type="image/x-icon">
+    <title>Violas</title>
 </head>
 <body>
     <div id="root">
@@ -21,7 +23,7 @@
                       <li>首页</li>
                       <li class="active">协会</li>
                       <li>合作伙伴</li>
-                      <li>wiki</li>
+                      <li>WIKI</li>
                       <li>
                           <p id="docu">文档</p>
                           <div class="select">
@@ -155,9 +157,10 @@
            window.location = 'association.html';
          }else if(this.innerHTML == '合作伙伴'){
            window.location = 'partner.html';
-         }else if(this.innerHTML == 'wiki'){
-           window.location = 'https://www.wttf.org';
          }
+        //  else if(this.innerHTML == 'wiki'){
+        //    window.location = 'https://www.wttf.org';
+        //  }
         for (var i = 0; i < text.length; i++) {
          text[i].className = '';
          this.className = 'active'

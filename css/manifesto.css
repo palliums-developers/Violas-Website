@@ -12,7 +12,6 @@
 .manifesto{
     width: 100%;
     background: rgba(44, 9, 108, 1);
-    overflow: hidden;
 }
 header{
     width: 100%;
@@ -29,7 +28,7 @@ header{
     z-index: 99;
 }
 .header .head{
-    width: 1300px;
+    width: 1200px;
     height:100%;
     margin: 0 auto;
     display: flex;
@@ -41,6 +40,7 @@ header{
 }
 
 .logo img{
+    margin-left: 50px;
     width: 173px;
     height: 55px;
 }
@@ -125,7 +125,7 @@ header{
  }
 
  .headContent{
-    width:1300px;
+    width:1200px;
     flex: 1;
     position: relative;
     margin: 0 auto;
@@ -167,7 +167,7 @@ section{
     width: 100%;
 }
 .thrAgo{
-    width: 1300px;
+    width: 1200px;
     height: 764px;
     position: relative;
     margin: 0 auto;
@@ -175,7 +175,7 @@ section{
 }
 .thrAgo .bg{
     position: absolute;
-    left:-30%;
+    left:-20%;
 }
 .thrAgo .bg img{
    width: 1114px;
@@ -185,6 +185,7 @@ section{
     position: absolute;
     top: 0;
     display: flex;
+    left: 10%;
 }
 .thrAgo .bgContent .logo{
     margin-left:100px;
@@ -215,7 +216,7 @@ section{
     margin-bottom: 30px;
 }
 .tenAgo{
-    width: 1300px;
+    width: 1200px;
     height: 764px;
     position: relative;
     margin: 0 auto;
@@ -223,7 +224,7 @@ section{
 }
 .tenAgo .bg{
     position: absolute;
-    right: -28%;
+    right: -25%;
 }
 .tenAgo .bg img{
    width: 1114px;
@@ -232,9 +233,9 @@ section{
 .tenAgo .bgContent{
     position: absolute;
     top: 0;
-    left: 13%;
+    left: 10%;
     display: flex;
-    /* margin-left: 400px; */
+    margin-left:-180px;
 }
 .tenAgo .bgContent .logo{
     margin-left:-50px;
@@ -270,7 +271,7 @@ section{
 }
 .listDescr{
     width: 1270px;
-    height: 2146px;
+    /* height: 2146px; */
     margin:200px auto ;
     position: relative;
 }
@@ -375,6 +376,138 @@ footer>p{
     text-align: center;
     margin-top: 154px;
 }
+@media (max-width:1600px){
+    header{
+        height: 535px;
+    } 
+    .navList{
+        margin-left: 40px;
+        margin-right: 150px;
+    }  
+    .navList li{
+        font-size:17px;
+        margin-left: 63px;
+    }
+    .headContent .headLogo img{
+        width:395px;
+        height: 308px;
+    }
+    .headContent .headTalk{
+        margin-top: 120px;
+        margin-left: 130px;
+      }
+      .headContent .headTalk p img{
+        width: 337px;
+        height:76px;
+      }
+      .headContent .headTalk p{
+        width:333px;
+        height:95px;
+        font-size:25px;
+        line-height:55px;
+      }
+      .thrAgo{
+          margin-top: 150px;
+      }
+      .thrAgo .bgContent>.content h3{
+        font-size:44px;
+      }
+      .thrAgo .bgContent>.content ul li{
+        font-size:25px;
+      }
+      .thrAgo .bg{
+          left: -5%;
+      }
+      .thrAgo .bg img{
+          width: 928px;
+      }
+      .thrAgo .bgContent .logo img{
+          width: 560px;
+          height: 592px;
+      }
+      .thrAgo .bgContent{
+          top: 5%;
+          left: 19%;
+      }
+      .thrAgo .bgContent .logo{
+        margin-left: 20px;
+        margin-top: -50px;
+      }
+      .tenAgo{
+        margin-top: 150px;
+    }
+      .tenAgo .bg{
+          right: -15%;
+      }
+      .tenAgo .bg img{
+          width: 976px;
+          height: 664px;
+      }
+      .tenAgo .bgContent{
+          margin-left:-100px;
+      }
+      .tenAgo .bgContent .logo{
+        margin-top:20px;
+      }
+      .tenAgo .bgContent .logo img{
+          width: 560px;
+          height: 582px;
+      }
+      .tenAgo .bgContent>.content h3{
+        font-size:44px;
+      }
+      .tenAgo .bgContent>.content ul li{
+        font-size:25px;
+      }
+      .listDescr{
+        width: 1058px; 
+      }
+      .listDescr .listContent .who img{
+          width: 439px;
+          height: 124px;
+      }
+      .listDescr .bg img{
+          width: 1058px;
+      }
+      .listDescr .listContent{
+          width: 996px;
+          margin-left: -500px;
+      }
+      .listDescr .listContent h3{
+        width:878px;
+        height:317px;
+        font-size:29px;
+        line-height:63px;
+      }
+      .listDescr .listContent p{
+        width:878px;
+        font-size:29px;
+        line-height:63px;
+        margin-bottom: 70px;
+      }
+      .listDescr .listContent .who h2{
+          font-size: 44px;
+          top: 27px;
+      }
+    footer{
+        height: 386px;
+    }
+    footer h2{
+        font-size:33px;
+    }
+    footer>div i img {
+        width: 30px;
+        height: 24px;
+        margin-top: 4px;
+    }
+    footer>div label{
+        font-size:27px;
+    }
+    footer>p{
+        font-size:21px;
+        margin-top:90px;
+    }
+}
 @media (max-width:1700px){
     footer h2{
         margin-left: 220px;
@@ -385,25 +518,183 @@ footer>p{
         
     }
 }
-@media (max-width:1500px){
-    .listDescr{
-        width: 1200px;
-    }
-    .listDescr .bg img {
-        width: 1200px;
-    }
-    .listDescr .listContent{
-        width: 1100px;
-        margin-left: -550px;
-    }
-    .listDescr .listContent h3,.listDescr .listContent p {
-        width: 1000px;
-        font-size: 32px;
-        line-height: 60px;
-    }
-}
-@media (max-width:1300px){
+
+@media (max-width:1200px){
     .manifesto{
-        width: 1300px;
+        width: 1200px;
+    }
+    .navList{
+        /* margin-left: 30px; */
+        margin-right: 50px;
+    }  
+    .navList li{
+        font-size:13px;
+        margin-left: 48px;
+    }
+    header{
+        height: 451px;
+    }
+    .logo img{
+        margin-left: 120px;
+        width: 110px;
+        height: 33px;
+    }
+    .descr{
+       margin-right:200px;
+    }
+    .descr span:nth-child(1){
+        width: 62px;
+        height: 19px;
+        font-size:9px;
+        line-height: 19px;
+    }
+    .descr span:nth-child(2){
+        font-size: 14px;
+    }
+    .headContent .headLogo img{
+        width:296px;
+        height: 231px;
+    }
+    .headContent .headTalk{
+        margin-top: 80px;
+        margin-left:220px;
+      }
+      .headContent .headLogo{
+          top: 90px;
+      }
+      .headContent .headTalk p img{
+        width: 253px;
+        height:57px;
+      }
+      .headContent .headTalk p{
+        width:325px;
+        font-size:19px;
+        font-size:25px;
+        line-height:41px;
+      }
+      .thrAgo{
+          margin-top: 120px;
+          height: 696px;
+      }
+      .thrAgo .bgContent>.content{
+          margin-left: 110px;
+      }
+      .thrAgo .bgContent>.content h3{
+        font-size:33px;
+      }
+      .thrAgo .bgContent>.content ul li{
+        font-size:19px;
+      }
+      .thrAgo .bg{
+          left:2%;
+      }
+      .thrAgo .bg img{
+          width: 696px;
+          height: 564px;
+      }
+      .thrAgo .bgContent .logo img{
+          width: 420px;
+          height: 444px;
+      }
+      .thrAgo .bgContent{
+          top: 5%;
+          left: 15%;
+      }
+      .thrAgo .bgContent .logo{
+        margin-left: -130px;
+        margin-top: -50px;
+      }
+      .tenAgo{
+        margin-top:-20px;
+        height: 664px;
+    }
+      .tenAgo .bg{
+          right: -10%;
+      }
+      .tenAgo .bg img{
+          /* width: 802px; */
+          height: 659px;
+      }
+      .tenAgo .bgContent{
+          margin-left: -80px;
+      }
+      .tenAgo .bgContent .logo{
+        margin-top: 60px;
+      }
+      .tenAgo .bgContent .logo img{
+          width: 420px;
+          height: 436px;
+      }
+      .tenAgo .bgContent>.content{
+          margin-left: 10px;
+      }
+      .tenAgo .bgContent>.content h3{
+        font-size:33px;
+        margin-bottom: 40px;
+        margin-left: 200px;
+      }
+      .tenAgo .bgContent>.content ul li{
+        font-size:19px;
+      }
+      .listDescr{
+        width: 793px; 
+        margin: 50px auto;
+      }
+      .listDescr .listContent .who{
+        width: 329px;
+        height: 93px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+      }
+      .listDescr .listContent .who img{
+          width: 329px;
+          height: 93px;
+      }
+      .listDescr .bg img{
+          width: 793px;
+          height: 1441px;
+      }
+      .listDescr .listContent{
+          width: 747px;
+          height: 1383px;
+          margin-left: -375px;
+      }
+      .listDescr .listContent h3{
+        width:659px;
+        height:238px;
+        font-size:22px;
+        line-height:48px;
+        margin-top: 35px;
+      }
+      .listDescr .listContent p{
+        width:659px;
+        height:183px;
+        font-size:22px;
+        line-height:48px;
+        margin-bottom: 0;
+      }
+      .listDescr .listContent .who h2{
+          font-size: 33px;
+          top:5px;
+          margin-left: -113px;
+      }
+    footer{
+        height: 290px;
+    }
+    footer h2{
+        font-size:25px;
+        margin: 84px 0 15px 206px;
+    }
+    footer>div i img {
+        width: 22px;
+        height: 18px;
+        margin-top: 4px;
+    }
+    footer>div label{
+        font-size:20px;
+    }
+    footer>p{
+        font-size:16px;
+        margin-top:70px;
     }
 }

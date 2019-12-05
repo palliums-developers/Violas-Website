@@ -29,7 +29,7 @@ header{
     z-index: 99;
 }
 .header .head{
-    width: 1300px;
+    width: 1200px;
     height:100%;
     margin: 0 auto;
     display: flex;
@@ -41,6 +41,7 @@ header{
 }
 
 .logo img{
+    margin-left:50px;
     width: 173px;
     height: 55px;
 }
@@ -124,7 +125,7 @@ header{
     font-size: 22px;
  }
  .headContent{
-    width:1300px;
+    width:1200px;
     flex: 1;
     position: relative;
     margin: 0 auto;
@@ -134,7 +135,7 @@ header{
 .headContent .headTalk{
     display: flex;
     margin-top: 150px;
-    margin-left:10px;
+    margin-left:30px;
 }
 
 .headContent .headTalk p{
@@ -159,7 +160,7 @@ header{
     width: 572px;
     height:622px;
     position: absolute;
-    right:30px;
+    right:-100px;
     top:0;
     display: flex;
 }
@@ -328,7 +329,8 @@ header{
     height: 742px;
     margin: 0 auto;
     /* position: relative; */
-    display: flex;;
+    display: flex;
+    justify-content: center;
 }
 .publisher .center{
     width: 308px;
@@ -388,7 +390,7 @@ header{
     color:rgba(248,248,248,1);
     line-height:50px;
     margin-top:25px ;
-    margin-left:-60px;
+    margin-left:-35px;
 }
 .publisher .left .lContent2{
     position: absolute;
@@ -412,7 +414,7 @@ header{
     color:rgba(248,248,248,1);
     line-height:50px;
     margin-top:25px ;
-    margin-left:-60px;
+    margin-left:-35px;
 }
 .publisher .right .lContent1{
     position: absolute;
@@ -463,7 +465,7 @@ header{
     color:rgba(248,248,248,1);
     line-height:50px;
     margin-top:10px ;
-    margin-left:-110px;
+    margin-left:-130px;
 }
  footer{
     width: 100%;
@@ -478,6 +480,7 @@ header{
     width: 1200px;
     margin: 250px auto;
     display: flex;
+    justify-content: center;
 }
 .forWorldDescrs .eachDescr{
     position: relative;
@@ -595,6 +598,221 @@ footer>p{
     text-align: center;
     margin-top: 154px;
 }
+@media (max-width:1600px){
+    header {
+        height: 610px;
+    }
+    .navList{
+        margin-left: 40px;
+        margin-right: 150px;
+    } 
+    .navList li{
+        font-size:17px;
+        margin-left: 63px;
+    }
+    .headContent .headLogo{
+        top: -15px;
+    } 
+    .headContent .headLogo img {
+        width: 478px;
+        height: 518px;
+    }
+    .headContent .headTalk{
+        margin-top: 130px;
+    }
+    .headContent .headTalk p img{
+         width: 135px;
+         height: 176px;
+    }
+    .headContent .headTalk>div p{
+        font-size: 47px;
+    }
+    .mebers .head{
+        width: 930px;
+        height: 51px;
+        margin: 110px auto;
+    }
+    .mebers .head{
+        margin-bottom: 50px;
+    }
+    .mebers .head .bg{
+        width: 930px;
+        height: 51px;
+    }
+    .vision .head p{
+        font-size: 33px;
+        margin-left: -105px;
+        top:2px;
+    }
+    .mebers .head p{
+        font-size: 33px;
+        margin-left: -100px;
+        top:2px;
+    }
+    .forWorldDescr .eachDescr{
+        width:455px;
+    }
+    .forWorldDescr .eachDescrs{
+        width:455px;
+        height:364px;
+        padding: 66px 20px 0 25px;
+        box-sizing: border-box;
+    }
+    .forWorldDescr .eachDescrs h3{
+        font-size: 25px;
+    }
+    .forWorldDescr .eachDescrs p{
+        font-size: 21px;
+        line-height: 42px;
+    }
+    .forWorldDescr .eachDescr:nth-child(2) .logo3{
+        left: 37%;
+    }
+    .service{
+        width:1098px;
+        height:262px;
+        margin: 220px auto;
+    }
+    .service .logo img{
+        width: 317px;
+        height:272px;
+    }
+    .service h2{
+        font-size:38px;
+        margin: 38px 0 32px 48px;
+    }
+    .service p{
+        font-size:23px;
+        margin-left: 48px;
+        margin-bottom: 20px;
+    }
+    .publisher .center .cLogo img{
+        width: 257px;
+        height: 257px;
+    }
+    .publisher .center p{
+        font-size: 32px;
+    }
+    .publisher .left .lLogo img, .publisher .right .rLogo img{
+        width: 410px;
+        height: 681px;
+    }
+    .publisher .left{
+        left: 80px;
+    }
+    .publisher .right{
+        left: -80px;
+    }
+    .publisher .left .lContent1>div img{
+        width: 103px;
+        height: 85px;
+    }
+    .publisher .left .lContent1 p{
+        width:333px;
+        height:125px;
+        font-size:17px;
+        line-height:42px;
+    }
+    .publisher .left .lContent1>div{
+        /* margin-top: -50px; */
+        margin-left: 40px;
+    }
+    .publisher .left .lContent2>div img{
+        width: 97px;
+        height: 82px;
+    }
+    .publisher .left .lContent2>div{
+        margin-left: 40px;
+    }
+    .publisher .left .lContent2{
+        bottom: 110px;
+    }
+    .publisher .left .lContent2 p{
+        width:333px;
+        height:119px;
+        font-size:17px;
+        line-height:42px;
+    }
+    .publisher .right .lContent1>div{
+        margin-left: -25px;
+    }
+    .publisher .right .lContent1>div img{
+        width:87px;
+        height:95px;
+    }
+    .publisher .right .lContent1 p{
+        width:198px;
+        height:84px;
+        font-size:17px;
+        line-height:42px;
+    }
+    .publisher .right .lContent2>div{
+        margin-left: -20px;
+        margin-bottom: 25px;
+    }
+    .publisher .right .lContent2{
+        bottom: 80px;
+    }
+    .publisher .right .lContent2>div img{
+        width: 111px;
+        height: 97px;
+    }
+    .publisher .right .lContent2 p{
+        width:331px;
+        height:155px;
+        font-size:17px;
+        line-height:38px;
+    }
+    .forWorldDescrs {
+        margin: 200px auto;
+    }
+    .forWorldDescrs .eachDescrs{
+        width:317px;
+        height:341px;
+        padding: 73px 25px 0 35px;
+        box-sizing: border-box;
+    }
+    .forWorldDescrs .eachDescr .logo1 img{
+        width: 209px;
+        height: 187px;
+    }
+    .forWorldDescrs .eachDescr .logo2 img{
+        width: 195px;
+        height: 157px;
+    }
+    .forWorldDescrs .eachDescr .logo1{
+        top: -125px;
+    }
+    .forWorldDescrs .eachDescr .logo2{
+        left: 100px;
+        top: -90px;
+    }
+    .eachDescrs h3{
+        font-size:25px;
+    }
+    .eachDescrs p{
+        font-size:21px;
+        line-height:42px;
+    }
+    footer{
+        height: 386px;
+    }
+    footer h2{
+        font-size:33px;
+    }
+    footer>div i img {
+        width: 30px;
+        height: 24px;
+        margin-top: 4px;
+    }
+    footer>div label{
+        font-size:27px;
+    }
+    footer>p{
+        font-size:21px;
+        margin-top:90px;
+    }
+}
 @media (max-width:1700px){
     footer h2{
         margin-left: 220px;
@@ -605,8 +823,280 @@ footer>p{
         
     }
 }
-@media (max-width:1300px){
+@media (max-width:1200px){
     .partner{
-        width: 1300px;
+        width: 1200px;
+    }
+    header{
+        height: 478px;
+    }
+    .navList{
+        /* margin-left: 30px; */
+        margin-right: 50px;
+    }  
+    .navList li{
+        font-size:13px;
+        margin-left: 48px;
+    }
+    .logo img{
+        margin-left: 120px;
+        width: 110px;
+        height: 33px;
+    }
+    .descr{
+       margin-right:200px;
+    }
+    .descr span:nth-child(1){
+        width: 62px;
+        height: 19px;
+        font-size:9px;
+        line-height: 19px;
+    }
+    .descr span:nth-child(2){
+        font-size: 14px;
+    }
+    .headContent .headLogo{
+        right: 30px;
+    } 
+    .headContent .headLogo img {
+        width: 357px;
+        height: 389px;
+    }
+    .headContent .headTalk{
+        margin-top: 100px;
+        margin-left: 130px;
+    }
+    .headContent .headTalk>div {
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    .headContent .headTalk p img{
+         width: 101px;
+         height: 132px;
+    }
+    .headContent .headTalk>div p{
+        font-size: 36px;
+    }
+    .mebers .head{
+        width: 699px;
+        height: 38px;
+        margin: 90px auto;
+    }
+    .mebers .head{
+        margin-bottom: 50px;
+    }
+    .mebers .head .bg{
+        width: 699px;
+        height: 38px;
+    }
+    .vision .head p{
+        font-size:25px;
+        margin-left: -65px;
+    }
+    .mebers .head p{
+        font-size:25px;
+        margin-left: -75px;
+    }
+    .forWorldDescr{
+        margin-top: 180px;
+    }
+    .forWorldDescr .eachDescr{
+        width:341px;
+        margin-left: 20px;
+    }
+    .forWorldDescr .eachDescrs{
+        width:341px;
+        height:273px;
+        padding: 50px 18px 0 20px;
+        box-sizing: border-box;
+    }
+    .forWorldDescr .eachDescrs h3{
+        font-size: 19px;
+        line-height: 28px;
+    }
+    .forWorldDescr .eachDescrs p{
+        font-size: 16px;
+        line-height: 31px;
+        margin-top: 15px;
+    }
+    .eachDescrs i img{
+        width:40px;
+        height:3px; 
+    }
+    .forWorldDescr .eachDescr .logo1 img{
+        width: 174px;
+        height: 160px;
+    }
+    .forWorldDescr .eachDescr .logo1{
+        top: -110px;
+        margin-left:-28.5% ;
+    }
+    .forWorldDescr .eachDescr:nth-child(2) .logo1{
+        top:-105px;
+    }
+    .forWorldDescr .eachDescr:nth-child(2) .logo1 img{
+        width: 174px;
+        height: 151px;
+    }
+    .forWorldDescr .eachDescr:nth-child(2) .logo3{
+        left: 16%;
+    }
+    .forWorldDescr .eachDescr .logo2{
+        /* margin-left: -14%; */
+        top: -78px;
+    }
+    .forWorldDescr .eachDescr .logo2 img{
+        width: 146px;
+        height: 129px;
+    }
+    .forWorldDescr .eachDescr:nth-child(2) .logo2{
+        top: -75px;
+    }
+    .service{
+        width:823px;
+        height:196px;
+        margin: 180px auto;
+    }
+    .service .logo img{
+        width: 237px;
+        height:204px;
+        right: 30px;
+    }
+    .service h2{
+        font-size:28px;
+        margin: 29px 0 30px 36px;
+    }
+    .service p{
+        font-size:18px;
+        margin-left: 36px;
+        /* margin-bottom: 15px; */
+    }
+    .publisher{
+        height: 502px;
+    }
+    .publisher .center{
+        margin-top: 79px;
+    }
+    .publisher .center .cLogo img{
+        width: 190px;
+        height: 190px;
+    }
+    .publisher .center p{
+        font-size: 23px;
+    }
+    .publisher .left .lLogo img, .publisher .right .rLogo img{
+        width: 308px;
+        height: 464px;
+    }
+    .publisher .left .lContent1>div img{
+        width: 87px;
+        height: 64px;
+    }
+    .publisher .left .lContent1 p{
+        width:236px;
+        font-size:13px;
+        line-height:31px;
+        margin-top: 15px;
+    }
+    .publisher .left .lContent1>div{
+        margin-top: -30px;
+        margin-left: 20px;
+    }
+    .publisher .left .lContent2>div img{
+        width: 73px;
+        height: 61px;
+    }
+    .publisher .left .lContent2>div{
+        margin-left: 40px;
+    }
+    .publisher .left .lContent2{
+        bottom: 40px;
+    }
+    .publisher .left .lContent2 p{
+        width:236px;
+        font-size:13px;
+        line-height:31px;
+        margin-top: 15px;
+    }
+    .publisher .right .lContent1>div{
+        margin-left: -25px;
+    }
+    .publisher .right .lContent1>div img{
+        width:66px;
+        height:71px;
+    }
+    .publisher .right .lContent1{
+        left: 220px;
+        top: 20px;
+    }
+    .publisher .right .lContent1 p{
+        width:148px;
+        font-size:13px;
+        line-height:31px;
+    }
+    .publisher .right .lContent2>div{
+        margin-left: -45px;
+        margin-bottom:5px;
+    }
+    .publisher .right .lContent2{
+        bottom:20px;
+        left: 240px;
+    }
+    .publisher .right .lContent2>div img{
+        width: 83px;
+        height: 72px;
+    }
+    .publisher .right .lContent2 p{
+        width:226px;
+        font-size:13px;
+        line-height:29px;
+    }
+    .forWorldDescrs .eachDescrs{
+        width:248px;
+        height:266px;
+        padding: 45px 20px 0 25px;
+        box-sizing: border-box;
+    }
+    .forWorldDescrs .eachDescr .logo1 img{
+        width: 157px;
+        height: 141px;
+    }
+    .forWorldDescrs .eachDescr .logo2 img{
+        width: 146px;
+        height: 117px;
+    }
+    .forWorldDescrs .eachDescr .logo1{
+        top: -95px;
+    }
+    .forWorldDescrs .eachDescr .logo2{
+        left: 85px;
+        top: -70px;
+    }
+    .eachDescrs h3{
+        font-size:19px;
+    }
+    .eachDescrs p{
+        font-size:16px;
+        line-height:31px;
+        margin-top: 10px;
+    }
+    footer{
+        height: 290px;
+    }
+    footer h2{
+        font-size:25px;
+        margin: 84px 0 15px 206px;
+    }
+    footer>div i img {
+        width: 22px;
+        height: 18px;
+        margin-top: 4px;
+    }
+    footer>div label{
+        font-size:20px;
+    }
+    footer>p{
+        font-size:16px;
+        margin-top:70px;
     }
 }
