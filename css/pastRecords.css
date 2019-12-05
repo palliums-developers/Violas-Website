@@ -1,501 +1,542 @@
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-.wrap{
-    width: 100%;
-    height:auto;
+.wrap {
+  width: 100%;
+  height: auto;
 }
-.pastRecords{
-    width: 100%;
-    background: rgba(44, 9, 108, 1);
-    overflow: hidden;
+.pastRecords {
+  width: 100%;
+  background: rgba(44, 9, 108, 1);
+  overflow: hidden;
 }
-header{
-    width: 100%;
-    height: 642px;
-    display: flex;
-    flex-direction: column;
-    background: url('../img/编组 4@2x.png') no-repeat;
-    background-size: 100% 100%;
+header {
+  width: 100%;
+  height: 642px;
+  display: flex;
+  flex-direction: column;
+  background: url("../img/编组 4@2x.png") no-repeat;
+  background-size: 100% 100%;
 }
-.header{
-    width: 100%;
-    height: 100px;
-    position: relative;
-    z-index: 99;
+.header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 99;
 }
-.header .head{
+.header .head {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navList {
+  display: flex;
+}
+
+.logo img {
+  margin-left: 280px;
+  width: 173px;
+  height: 55px;
+}
+.navList {
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 200px;
+}
+.navList li {
+  font-size: 20px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 77px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.navList li:last-child {
+  position: relative;
+}
+.navList li:last-child .select {
+  width: 145px;
+  height: 116px;
+  position: relative;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  /* display: none; */
+}
+.navList li:last-child .select .bg {
+  position: absolute;
+  top: 0;
+}
+.navList li:last-child .select > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+}
+.navList li:last-child .select > div span {
+  width: 100%;
+  height: 50px;
+  font-size: 23px;
+  font-family:"黑体";
+  font-weight: 500;
+  color: #413C49;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.navList li:last-child .select .bg img {
+  width: 145px;
+  height: 116px;
+}
+.navList li.active {
+  color: rgba(62, 209, 246, 1);
+}
+
+.descr {
+  display: flex;
+}
+.descr span {
+  color: #fff;
+  margin-right: 38px;
+  cursor: pointer;
+}
+.descr span:nth-child(1) {
+  width: 100px;
+  height: 31px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 14px;
+}
+.descr span:nth-child(2) {
+  font-size: 22px;
+}
+
+.headContent {
+  width: 1200px;
+  flex: 1;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.headContent .headTalk {
+  margin-top: 150px;
+  margin-left: 100px;
+}
+.headContent .headTalk p img {
+  width: 466px;
+  height: 85px;
+}
+.headContent .headTalk p {
+  width: 409px;
+  font-size: 30px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(249, 249, 249, 1);
+  line-height: 66px;
+  letter-spacing: 2px;
+}
+.headContent .headTalk p:nth-child(2) {
+  /* margin-left: 20px; */
+}
+.headContent .headLogo img {
+  width: 474px;
+  height: 373px;
+}
+.headContent .headLogo {
+  width: 474px;
+  height: 373px;
+  position: absolute;
+  right: 130px;
+  top: 100px;
+}
+.listDescr {
+  width: 1270px;
+  /* height: 4921px; */
+  margin: 200px auto;
+  position: relative;
+}
+.listDescr .bg img {
+  width: 1270px;
+  height: 4921px;
+}
+.listDescr .listContent {
+  width: 1196px;
+  height: 4862px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    RGBA(173, 163, 250, 1) 100%
+  );
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+.listDescr .listContent .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.listDescr .listContent .title h3 {
+  width: 1087px;
+  font-size: 34px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: #413C49;
+  line-height: 76px;
+  margin-top: 75px;
+  margin-bottom: 120px;
+}
+.listDescr .listContent .title > div img {
+  width: 677px;
+  height: 313px;
+}
+.listDescr .listContent .who {
+  width: 626px;
+  height: 149px;
+  margin: 0 auto;
+  position: relative;
+  /* margin-top: 105px; */
+  margin-bottom: 60px;
+}
+.listDescr .listContent .who h2 {
+  font-size: 53px;
+  font-family:"黑体";
+  font-weight: 600;
+  color: #110B1B;
+  line-height: 80px;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  margin-left: -250px;
+  white-space: nowrap;
+}
+.listDescr .listContent .who img {
+  width: 626px;
+  height: 149px;
+}
+.listDescr .listContent p {
+  width: 1054px;
+  font-size: 34px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: #413C49;
+  line-height: 76px;
+  margin-bottom: 100px;
+}
+
+footer {
+  width: 100%;
+  height: 464px;
+  background: url("../img/编组 44@3x.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+footer h2 {
+  height: 56px;
+  font-size: 40px;
+  font-family:"黑体";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  margin: 134px 0 19px 362px;
+}
+footer > div {
+  display: flex;
+  align-items: center;
+  margin-left: 309px;
+}
+footer > div i img {
+  width: 36px;
+  height: 29px;
+}
+footer > div label {
+  font-size: 32px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  margin-left: 17px;
+}
+footer > p {
+  width: 100%;
+  font-size: 25px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-top: 154px;
+}
+@media (max-width: 1600px) {
+  header {
+    height: 535px;
+  }
+  .navList {
+    margin-left: 40px;
+    margin-right: 150px;
+  }
+  .navList li {
+    font-size: 17px;
+    margin-left: 63px;
+  }
+  .navList li:last-child .select {
+    width: 105px;
+    height: 96px;
+  }
+  .navList li:last-child .select .bg img{
+    width: 105px;
+    height: 96px;
+  }
+
+  .navList li:last-child .select > div span {
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .headContent .headLogo {
+    right: 60px;
+  }
+  .headContent .headLogo img {
+    width: 395px;
+    height: 311px;
+  }
+  .headContent .headTalk {
+    margin-top: 120px;
+    margin-left: 130px;
+  }
+  .headContent .headTalk p img {
+    width: 337px;
+    height: 63px;
+  }
+  .headContent .headTalk p {
+    width: 333px;
+    font-size: 25px;
+    line-height: 55px;
+  }
+  .listDescr {
+    width: 1058px;
+  }
+  .listDescr .listContent .who{
+    width: 439px;
+    height: 124px;
+  }
+  .listDescr .listContent .who img {
+    width: 439px;
+    height: 124px;
+  }
+  .listDescr .bg img {
+    width: 1058px;
+    height: 4100px;
+  }
+  .listDescr .listContent {
+    width: 996px;
+    height: 4052px;
+    margin-left: -500px;
+  }
+  .listDescr .listContent .title h3 {
+    width: 906px;
+    font-size: 28px;
+    line-height: 63px;
+    margin-bottom: 90px;
+  }
+  .listDescr .listContent .title > div img {
+    width: 564.17px;
+    height: 260.83px;
+  }
+  .listDescr .listContent p {
+    width: 878px;
+    font-size: 28px;
+    line-height: 63px;
+    margin-bottom: 50px;
+  }
+  .listDescr .listContent .who h2 {
+    font-size: 44px;
+    top: 27px;
+    margin-left: -200px;
+  }
+  footer {
+    height: 386px;
+  }
+  footer h2 {
+    font-size: 33px;
+  }
+  footer > div i img {
+    width: 30px;
+    height: 24px;
+    margin-top: 4px;
+  }
+  footer > div label {
+    font-size: 27px;
+  }
+  footer > p {
+    font-size: 21px;
+    margin-top: 90px;
+  }
+}
+@media (max-width: 1700px) {
+  footer h2 {
+    margin-left: 220px;
+  }
+  footer > div {
+    margin-left: 170px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pastRecords {
     width: 1200px;
-    height:100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-}
-.navList{
-  display: flex;
-}
+  }
+  header {
+    height: 451px;
+  }
+  .header {
+    height: 80px;
+  }
+  .navList {
+    margin-right: 50px;
+  }
+  .navList li {
+    font-size: 13px;
+    margin-left: 48px;
+  }
+  .navList li:last-child .select {
+    width: 95px;
+    height: 96px;
+    left: -10px;
+  }
+  .navList li:last-child .select .bg img{
+    width: 95px;
+    height: 86px;
+  }
 
-.logo img{
-    margin-left: 50px;
-    width: 173px;
-    height: 55px;
-}
-.navList{
-    flex: 1;
-    height: 100%;
-    align-items: center;
-    margin-left:70px;
-    margin-right:200px;
-}
-.navList li{
-    font-size:20px;
-    font-family:PingFangSC-Regular;
-    font-weight:400;
-    color:rgba(255,255,255,1);
-    margin-left: 77px;
-    cursor: pointer;
-    white-space: nowrap;
-}
-.navList li:last-child{
-    position: relative;
-}
-.navList li:last-child .select{
-    width: 145px;
-    height: 116px;
-    position: relative;
-    position: absolute;
-    top: 30px;
-    left: -20px;
-    /* display: none; */
- }
-.navList li:last-child .select .bg{
-    position: absolute;
-    top: 0;
-}
-.navList li:last-child .select>div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top:15px;
-}
-.navList li:last-child .select>div span{
-    width: 100%;
-    height: 50px;
-    font-size:23px;
-    font-family:PingFangSC-Medium,PingFang SC;
-    font-weight:500;
-    color:rgba(44,9,108,1);
-    line-height:50px;
-    text-align: center;
-    letter-spacing:1px;
-    border-radius:5px;
-}
-.navList li:last-child .select .bg img{
-   width: 145px;
-   height: 116px;
-}
-.navList li.active{
-    color:rgba(62, 209, 246, 1);
-}
-
-.descr{
-  display: flex;
-}
-.descr span{
-    color: #FFF;
-    margin-right: 38px;
-    cursor: pointer;
-}
-.descr span:nth-child(1){
-   width: 100px;
-   height: 31px;
-   border: 1px solid #FFF;
-   border-radius:3px;
-   line-height: 31px;
-   text-align: center;
-   font-size: 14px;
-}
-.descr span:nth-child(2){
-    font-size: 22px;
- }
-
- .headContent{
-    width:1200px;
-    flex: 1;
-    position: relative;
-    margin: 0 auto;
-    display: flex;;
-    justify-content: space-between;
-}
-.headContent .headTalk{
-    margin-top: 150px;
-    margin-left: 100px;
-}
-.headContent .headTalk p img{
-    width: 466px;
-    height: 85px;
-}
-.headContent .headTalk p{
-    width:409px;
-    font-size:30px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(249,249,249,1);
-    line-height:66px;
-    letter-spacing:2px;
-    
-}
-.headContent .headTalk p:nth-child(2){
-    margin-left: 20px;
-}
-.headContent .headLogo img{
-    width: 474px;
-    height:373px;
-}
-.headContent .headLogo{
-    width: 474px;
-    height:373px;
-    position: absolute;
-    right:130px;
-    top:100px;
-}
-.listDescr{
-    width: 1270px;
-    /* height: 4921px; */
-    margin:200px auto ;
-    position: relative;
-}
-.listDescr .bg img{
-    width: 1270px;
-    height: 4921px;
-}
-.listDescr .listContent{
-    width: 1196px;
-    height: 4862px;
-    background:linear-gradient(180deg,rgba(255,255,255,1) 0%,RGBA(173, 163, 250, 1) 100%);;
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    margin-left: -600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius:20px;
-}
-.listDescr .listContent .title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.listDescr .listContent .title h3{
-    width:1087px;
-    font-size:34px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(44,9,108,1);
-    line-height:76px;
-    margin-top: 75px;
-    margin-bottom: 120px;
-}
-.listDescr .listContent .title>div img{
-   width: 677px;
-   height: 313px;
-}
-.listDescr .listContent .who{
-    width: 626px;
-    height: 149px;
-    margin: 0 auto;
-    position: relative;
-    /* margin-top: 105px; */
-    margin-bottom: 60px;
-}
-.listDescr .listContent .who h2{
-    font-size:53px;
-    font-family:PingFangSC-Semibold,PingFang SC;
-    font-weight:600;
-    color:rgba(44,9,108,1);
-    line-height:80px;
-    letter-spacing:4px;
-    position: absolute;
-    top: 35px;
-    left: 50%;
-    margin-left: -250px;
-    white-space: nowrap;
-}
-.listDescr .listContent .who img{
-    width: 626px;
-    height: 149px;
-}
-.listDescr .listContent p{
-    width: 1054px;
-    font-size:34px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(44,9,108,1);
-    line-height:76px;
-    margin-bottom: 100px;
-    
-}
-
-footer{
-    width: 100%;
-    height:464px;
-    background: url('../img/编组 44@3x.png')no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
+  .navList li:last-child .select > div span {
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .logo img {
+    margin-left: 120px;
+    width: 110px;
+    height: 33px;
+  }
+  .descr {
+    margin-right: 200px;
+  }
+  .descr span:nth-child(1) {
+    width: 62px;
+    height: 19px;
+    font-size: 9px;
+    line-height: 19px;
+  }
+  .descr span:nth-child(2) {
+    font-size: 14px;
+  }
+  .headContent .headLogo {
+    right: 130px;
+    top: 90px;
+  }
+  .headContent .headLogo img {
+    width: 296px;
+    height: 233px;
+  }
+  .headContent .headTalk {
     margin-top: 100px;
-}
-footer h2{
-    height: 56px;
-    font-size:40px;
-    font-family:PingFangSC-Semibold,PingFang SC;
-    font-weight:600;
-    color:rgba(255,255,255,1);
-    margin: 134px 0 19px 362px;
-}
-footer>div{
-    display: flex;
-    align-items: center;
-    margin-left:309px ;
-    
-}
-footer>div i img{
-    width:36px;
-    height:29px;
-}
-footer>div label{
-    font-size:32px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(248,248,248,1);
-    margin-left: 17px;
-}
-footer>p{
-    width: 100%;
-    font-size:25px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(255,255,255,1);
-    text-align: center;
-    margin-top: 154px;
-}
-@media (max-width:1600px){
-    header{
-        height: 535px;
-    } 
-    .navList{
-        margin-left: 40px;
-        margin-right: 150px;
-    }  
-    .navList li{
-        font-size:17px;
-        margin-left: 63px;
-    }
-    .headContent .headLogo{
-        right: 60px;
-    }
-    .headContent .headLogo img{
-        width: 395px;
-        height: 311px;
-    }
-    .headContent .headTalk{
-        margin-top: 120px;
-        margin-left: 130px;
-      }
-      .headContent .headTalk p img{
-        width: 337px;
-        height:63px;
-      }
-      .headContent .headTalk p{
-        width:333px;
-        font-size:25px;
-        line-height:55px;
-      }
-      .listDescr{
-        width: 1058px; 
-      }
-      .listDescr .listContent .who img{
-          width: 439px;
-          height: 124px;
-      }
-      .listDescr .bg img{
-          width: 1058px;
-          height: 4100px;
-      }
-      .listDescr .listContent{
-          width: 996px;
-          height: 4052px;
-          margin-left: -500px;
-      }
-      .listDescr .listContent .title  h3{
-        width:906px;
-        font-size:28px;
-        line-height:63px;
-        margin-bottom: 90px;
-      }
-      .listDescr .listContent .title>div img{
-          width: 564.17px;
-          height: 260.83px;
-      }
-      .listDescr .listContent p{
-        width:878px;
-        font-size:28px;
-        line-height:63px;
-        margin-bottom: 50px;
-      }
-      .listDescr .listContent .who h2{
-          font-size: 44px;
-          top: 27px;
-      }
-      footer{
-        height: 386px;
-      }
-      footer h2{
-          font-size:33px;
-      }
-      footer>div i img {
-          width: 30px;
-          height: 24px;
-          margin-top: 4px;
-      }
-      footer>div label{
-          font-size:27px;
-      }
-      footer>p{
-          font-size:21px;
-          margin-top:90px;
-      }
-}
-@media (max-width:1700px){
-    footer h2{
-        margin-left: 220px;
-    }
-    footer>div{
-       
-        margin-left:170px ;
-        
-    }
-}
-
-@media (max-width:1200px){
-    .pastRecords{
-        width: 1200px;
-    }
-    header{
-        height: 451px;
-    }
-    .navList{
-        margin-right: 50px;
-    }  
-    .navList li{
-        font-size:13px;
-        margin-left: 48px;
-    }
-    .logo img{
-        margin-left: 120px;
-        width: 110px;
-        height: 33px;
-    }
-    .descr{
-       margin-right:200px;
-    }
-    .descr span:nth-child(1){
-        width: 62px;
-        height: 19px;
-        font-size:9px;
-        line-height: 19px;
-    }
-    .descr span:nth-child(2){
-        font-size: 14px;
-    }
-    .headContent .headLogo{
-        right: 130px;
-        top: 90px;
-    }
-    .headContent .headLogo img{
-        width: 296px;
-        height: 233px;
-    }
-    .headContent .headTalk{
-        margin-top: 100px;
-        margin-left: 200px;
-      }
-    .headContent .headTalk p img{
-        width: 253px;
-        height:47px;
-      }
-      .headContent .headTalk p{
-        width:283px;
-        font-size:19px;
-        line-height:41px;
-      }
-      .listDescr{
-        width: 793px; 
-        margin: 100px auto;
-      }
-      .listDescr .listContent .who img{
-          width: 391px;
-          height: 93px;
-      }
-      .listDescr .bg img{
-          width: 793px;
-          height: 3085px;
-      }
-      .listDescr .listContent{
-          width: 747px;
-          height: 3039px;
-          margin-left: -375px;
-      }
-      .listDescr .listContent .title  h3{
-        width:679px;
-        font-size:21px;
-        line-height:48px;
-        margin-bottom: 75px;
-      }
-      .listDescr .listContent .title>div img{
-          width: 423px;
-          height: 196px;
-      }
-      .listDescr .listContent p{
-        width:659px;
-        font-size:22px;
-        line-height:48px;
-        margin-bottom: 30px;
-      }
-      .listDescr .listContent .who{
-        width: 423px;
-        height: 196px;
-        margin-bottom: 30px;
-      }
-      .listDescr .listContent .who h2{
-        font-size:33px; 
-        margin-left: -195px;
-        top: 8px;
-      }
-        footer{
-            height: 290px;
-        }
-        footer h2{
-            font-size:25px;
-            margin: 84px 0 15px 206px;
-        }
-        footer>div i img {
-            width: 22px;
-            height: 18px;
-            margin-top: 4px;
-        }
-        footer>div label{
-            font-size:20px;
-        }
-        footer>p{
-            font-size:16px;
-            margin-top:70px;
-        }
+    margin-left: 200px;
+  }
+  .headContent .headTalk p img {
+    width: 253px;
+    height: 47px;
+  }
+  .headContent .headTalk p {
+    width: 283px;
+    font-size: 19px;
+    line-height: 41px;
+  }
+  .listDescr {
+    width: 793px;
+    margin: 100px auto;
+  }
+  .listDescr .listContent .who{
+    width: 391px;
+    height: 93px;
+  }
+  .listDescr .listContent .who img {
+    width: 391px;
+    height: 93px;
+  }
+  .listDescr .bg img {
+    width: 793px;
+    height: 3085px;
+  }
+  .listDescr .listContent {
+    width: 747px;
+    height: 3039px;
+    margin-left: -375px;
+  }
+  .listDescr .listContent .title h3 {
+    width: 679px;
+    font-size: 21px;
+    line-height: 48px;
+    margin-bottom: 75px;
+  }
+  .listDescr .listContent .title > div img {
+    width: 423px;
+    height: 196px;
+  }
+  .listDescr .listContent p {
+    width: 659px;
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: 30px;
+  }
+  .listDescr .listContent .who {
+    width: 423px;
+    height: 196px;
+    margin-bottom: 30px;
+  }
+  .listDescr .listContent .who h2 {
+    font-size: 33px;
+    margin-left: -180px;
+    top: 8px;
+  }
+  footer {
+    height: 290px;
+  }
+  footer h2 {
+    font-size: 25px;
+    margin: 84px 0 15px 206px;
+  }
+  footer > div i img {
+    width: 22px;
+    height: 18px;
+    margin-top: 4px;
+  }
+  footer > div label {
+    font-size: 20px;
+  }
+  footer > p {
+    font-size: 16px;
+    margin-top: 70px;
+  }
 }

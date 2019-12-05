@@ -167,7 +167,8 @@
                       </p>
                       <p>
                         <span>第三，Violas将会具有很高的安全性。</span>为确保交易数据的安全可靠，Violas除了使用梅克尔树存储数据之外，还将定期（比如每24小时）在比特币链上存证交易数据，保证交易数据不会回溯和被篡改。同时，Violas的智能合约也将采用更安全的MOVE编程语言，确保用户资产的安全。</br></br>
-                       <span> 第四，Violas将会构建完善的治理机制。</span>初始时，Violas的治理将由协会主导。但经过一定时间发展后，治理模式将向更加分散化的方向演进，构建建设、运营、使用等多个利益相关方共同治理的模式，形成各利益方自由提案，群体共识决策的治理机制。
+                        <span>
+                          第四，Violas将会构建完善的治理机制。</span>初始时，Violas的治理将由协会主导。但经过一定时间发展后，治理模式将向更加分散化的方向演进，构建建设、运营、使用等多个利益相关方共同治理的模式，形成各利益方自由提案，群体共识决策的治理机制。
                       </p>
                       <p>
                         <span>Violas希望</span>&nbsp;
@@ -407,6 +408,8 @@
   window.onscroll = function () {
     let topScroll = document.documentElement.scrollTop;
     // console.log(topScroll);
+    let client_width = document.body.clientWidth;
+    // console.log(client_width)
     let bignav = document.querySelector(".header");//获取到导航栏id
     if (topScroll > 0) {  //当滚动距离大于250px时执行下面的东西
       bignav.style.position = 'fixed';
@@ -420,12 +423,19 @@
     if (topScroll > 795) {
       document.querySelector('.onPageNav').style.position = "fixed";
       document.querySelector('.onPageNav').style.top = 0;
-      document.querySelector('.introduction0').style.marginLeft = "240px";
-
+      if (client_width > 1188) {
+        document.querySelector('.introduction0').style.marginLeft = "200px";
+      } else {
+        document.querySelector('.introduction0').style.marginLeft = "170px";
+      }
     } else {
       document.querySelector('.introduction0').style.marginLeft = "0px";
       document.querySelector('.introduction1').style.overflow = "hidden";
       document.querySelector('.onPageNav').style.position = "static";
+    }
+    if(client_width<=1188&&topScroll>10412){
+      document.querySelector('.onPageNav').style.position = "static";
+      document.querySelector('.introduction0').style.marginLeft = "0px";
     }
     if (topScroll > 16180) {
       document.querySelector('.onPageNav').style.position = "static";

@@ -9,11 +9,13 @@
   width: 100%;
   height: auto;
 }
+
 .whitepaper {
   width: 100%;
   background: rgba(44, 9, 108, 1);
   overflow: hidden;
 }
+
 header {
   width: 100%;
   height: 642px;
@@ -22,12 +24,14 @@ header {
   background: url("../img/编组 4@2x.png") no-repeat;
   background-size: 100% 100%;
 }
+
 .header {
   width: 100%;
   height: 100px;
   position: relative;
   z-index: 99;
 }
+
 .header .head {
   width: 1200px;
   height: 100%;
@@ -38,10 +42,11 @@ header {
 }
 
 .logo img {
-  margin-left: 50px;
+  margin-left: 280px;
   width: 173px;
   height: 55px;
 }
+
 .navList {
   display: flex;
   flex: 1;
@@ -50,9 +55,10 @@ header {
   margin-left: 70px;
   margin-right: 200px;
 }
+
 .navList li {
   font-size: 20px;
-  font-family: PingFangSC-Regular;
+  font-family: "黑体";
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   margin-left: 77px;
@@ -60,62 +66,74 @@ header {
   white-space: nowrap;
   list-style: none;
 }
+
 .navList li.active {
   color: rgba(62, 209, 246, 1);
 }
+
 .onPageNav {
   display: block;
   margin-bottom: 10px;
   position: sticky;
-  height:100%;
-  width:200px;
+  height: 100%;
+  width: 200px;
   /* flex: 0 0 240px; */
   /* overflow-y: auto; */
   /* max-height: calc(100vh - 90px); */
-  margin-top:200px;
+  margin-top: 200px;
 }
+
 .onPageNav::-webkit-scrollbar {
   width: 7px;
 }
+
 .onPageNav::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 10px;
 }
+
 .onPageNav::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 10px;
 }
+
 .onPageNav::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
 .onPageNav a {
   color: #717171;
 }
+
 .onPageNav a.active {
-    font-size:20px;
-    font-family:PingFangSC-Medium,PingFang SC;
-    font-weight:600;
-    color:rgba(44,9,108,1);
+  font-size: 20px;
+  font-family:"黑体";
+  font-weight: 600;
+  color: #110B1B;
 }
+
 .onPageNav ul {
   margin-left: 10px;
   list-style: none;
 }
+
 .onPageNav ul li {
   height: 60px;
   font-size: 20px;
-  font-family: PingFangSC-Regular,PingFang SC;
+  font-family: "黑体";
   font-weight: 400;
-  color: rgba(44, 9, 108, .5);
+  color: #A09DA4;
 }
 
-.onPageNav .toc-headings{
-   padding: 10px 0 2px 15px;
+.onPageNav .toc-headings {
+  padding: 10px 0 2px 15px;
 }
-.navList li:last-child{
+
+.navList li:last-child {
   position: relative;
 }
-.navList li:last-child .select{
+
+.navList li:last-child .select {
   width: 145px;
   height: 116px;
   position: relative;
@@ -124,41 +142,48 @@ header {
   left: -20px;
   /* display: none; */
 }
-.navList li:last-child .select .bg{
+
+.navList li:last-child .select .bg {
   position: absolute;
   top: 0;
 }
-.navList li:last-child .select>div{
+
+.navList li:last-child .select > div {
   width: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
-  top:15px;
+  top: 15px;
 }
-.navList li:last-child .select>div span{
+
+.navList li:last-child .select > div span {
   width: 100%;
   height: 50px;
-  font-size:23px;
-  font-family:PingFangSC-Medium,PingFang SC;
-  font-weight:500;
-  color:rgba(44,9,108,1);
-  line-height:50px;
+  font-size: 23px;
+  font-family:"黑体";
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
+  line-height: 50px;
   text-align: center;
-  letter-spacing:1px;
-  border-radius:5px;
+  letter-spacing: 1px;
+  border-radius: 5px;
 }
-.navList li:last-child .select .bg img{
- width: 145px;
- height: 116px;
+
+.navList li:last-child .select .bg img {
+  width: 145px;
+  height: 116px;
 }
+
 .descr {
   display: flex;
 }
+
 .descr span {
   color: #fff;
   margin-right: 38px;
   cursor: pointer;
 }
+
 .descr span:nth-child(1) {
   width: 100px;
   height: 31px;
@@ -168,6 +193,7 @@ header {
   text-align: center;
   font-size: 14px;
 }
+
 .descr span:nth-child(2) {
   font-size: 22px;
 }
@@ -180,27 +206,32 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 .headContent .headTalk {
   margin-top: 150px;
   margin-left: 100px;
 }
+
 .headContent .headTalk p img {
   width: 466px;
   height: 85px;
 }
+
 .headContent .headTalk p {
   width: 509px;
   font-size: 30px;
-  font-family: PingFangSC-Regular, PingFang SC;
+  font-family: "黑体";
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
   line-height: 66px;
   letter-spacing: 2px;
 }
+
 .headContent .headLogo img {
   width: 453px;
   height: 455px;
 }
+
 .headContent .headLogo {
   width: 582px;
   height: 598px;
@@ -208,9 +239,11 @@ header {
   right: -100px;
   top: 50px;
 }
+
 section {
   width: 100%;
 }
+
 .introduction {
   width: 1270px;
   /* height: 16966px; */
@@ -218,12 +251,13 @@ section {
   position: relative;
   /* display: flex;
   align-items: center; */
-
 }
+
 .introduction > .bg img {
   width: 1270px;
   height: 16210px;
 }
+
 .introductionContent {
   width: 1200px;
   height: auto;
@@ -234,9 +268,11 @@ section {
   margin-left: -600px;
   display: flex;
 }
-.introduction0{
+
+.introduction0 {
   flex: 1;
 }
+
 .introduction1 {
   /* width: 80%; */
   height: 2430px;
@@ -244,41 +280,52 @@ section {
   /* right:0; */
   overflow: hidden;
 }
+
 .introduction2 {
   height: 3480px;
 }
+
 .introduction3 {
   height: 2990px;
 }
+
 .introduction4 {
   height: 1323px;
 }
+
 .introduction5 {
   height: 2076px;
 }
+
 .introduction6 {
   height: 1554px;
 }
+
 .introduction7 {
   height: 1269px;
 }
+
 .introduction8 {
   height: 958px;
 }
+
 .introduction1 > .bg {
   /* width: 1200px; */
   /* height: 440px; */
 }
+
 .introduction1 > .bg img {
   width: 1001px;
   height: 440px;
 }
+
 .introduction1Descr {
   display: flex;
   position: absolute;
   top: 0;
   width: 100%;
 }
+
 .introduction1Descr .descrLeft {
   width: 180px;
   display: flex;
@@ -286,17 +333,20 @@ section {
   margin-top: 230px;
   margin-left: 0px;
 }
+
 .introduction1Descr .descrLeft a {
   height: 80px;
   font-size: 20px;
-  font-family: PingFangSC-Regular, PingFang SC;
+  font-family: "黑体";
   font-weight: 400;
   color: rgba(44, 9, 108, 0.5);
 }
+
 .introduction1Descr .descrLeft a.active {
   font-weight: 500;
   color: rgba(44, 9, 108, 1);
 }
+
 .introduction1Descr .descrRight {
   display: block;
   /* flex: 1; */
@@ -309,81 +359,95 @@ section {
   /* margin-left: 80px; */
   right: 0px;
 }
+
 .introduction1Descr .descrRight .intro > div img {
   width: 860px;
   height: 884px;
 }
+
 .introduction1Descr .descrRight .intro > div p {
   margin-bottom: 20px;
   line-height: 55px;
 }
+
 .introduction1Descr .descrRight h4 {
   font-size: 20px;
-  font-family: PingFangSC-Regular, PingFang SC;
+  font-family: "黑体";
   font-weight: 400;
-  color: rgba(44, 9, 108, 1);
+  color: #110B1B;
 }
+
 .introduction1Descr .descrRight h2 {
   font-size: 53px;
-  font-family: PingFangSC-Semibold, PingFang SC;
+  font-family: "黑体";
   font-weight: 600;
-  color: rgba(44, 9, 108, 1);
+  color: #110B1B;
   margin-top: 20px;
   margin-bottom: 40px;
   border-bottom: 7px solid;
-  border-block-color: #B147D3;
+  border-block-color: #b147d3;
   line-height: 90px;
   white-space: nowrap;
   width: 23px;
 }
+
 .introduction1Descr .descrRight h3 {
   font-size: 40px;
-  font-family: PingFangSC-Regular, PingFang SC;
+  font-family: "黑体";
   font-weight: 400;
-  color: rgba(44, 9, 108, 1);
+  color: #110B1B;
   margin-bottom: 25px;
 }
+
 .introduction1Descr .descrRight p {
   font-size: 25px;
-  font-family: PingFangSC-Regular, PingFang SC;
+  font-family: "黑体";
   font-weight: 400;
-  color: rgba(44, 9, 108, 0.8);
+  color: #413C49;
   line-height: 60px;
   margin-bottom: 40px;
 }
+
 .introduction1Descr .descrRight p > span,
 .introduction1Descr .descrRight .state > span {
   font-size: 25px;
-  font-family: PingFangSC-Semibold, PingFang SC;
+  font-family: "黑体";
   font-weight: 600;
-  color: rgba(44, 9, 108, 0.8);
+  color: #110B1B;
 }
+
 .introduction1Descr .descrRight .state {
   display: flex;
   flex-direction: column;
 }
+
 .introduction1Descr .descrRight .state > span {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .introduction1Descr .descrRight .state > div p {
   line-height: 50px;
   margin-bottom: 20px;
 }
+
 .introduction1Descr .descrRight ul li {
   font-size: 25px;
-  font-family: PingFangSC-Regular, PingFang SC;
+  font-family: "黑体";
   font-weight: 400;
-  color: rgba(44, 9, 108, 0.8);
+  color: #413C49;
   margin-top: 30px;
   margin-left: 30px;
 }
+
 .introduction6 .descrRight p {
   margin-bottom: 10px;
 }
+
 .introduction6 .descrRight .state {
   margin-bottom: 10px;
 }
+
 footer {
   width: 100%;
   height: 464px;
@@ -393,279 +457,411 @@ footer {
   flex-direction: column;
   margin-top: 100px;
 }
+
 footer h2 {
   height: 56px;
   font-size: 40px;
-  font-family: PingFangSC-Semibold, PingFang SC;
+  font-family:"黑体";
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
   margin: 134px 0 19px 362px;
 }
+
 footer > div {
   display: flex;
   align-items: center;
   margin-left: 309px;
 }
+
 footer > div i img {
   width: 36px;
   height: 29px;
 }
+
 footer > div label {
   font-size: 32px;
-  font-family: PingFangSC-Regular, PingFang SC;
+  font-family: "黑体";
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
   margin-left: 17px;
 }
+
 footer > p {
   width: 100%;
   font-size: 25px;
-  font-family: PingFangSC-Regular, PingFang SC;
+  font-family: "黑体";
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   text-align: center;
   margin-top: 154px;
 }
-@media (max-width:1600px){
-  header{
+
+@media (max-width: 1600px) {
+  header {
     height: 535px;
   }
-  .navList{
+
+  .navList {
     margin-left: 40px;
     margin-right: 150px;
-  }  
-  .navList li{
-      font-size:17px;
-      margin-left: 63px;
   }
-  .headContent .headLogo{
+
+  .navList li {
+    font-size: 17px;
+    margin-left: 63px;
+  }
+ .navList li:last-child .select {
+    width: 105px;
+    height: 96px;
+  }
+  .navList li:last-child .select .bg img{
+    width: 105px;
+    height: 96px;
+  }
+
+  .navList li:last-child .select > div span {
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .headContent .headLogo {
     width: 377px;
     height: 379px;
     right: 100px;
   }
-  .headContent .headLogo img{
+
+  .headContent .headLogo img {
     width: 377px;
     height: 379px;
   }
-  .headContent .headTalk{
+
+  .headContent .headTalk {
     margin-top: 120px;
     margin-left: 130px;
   }
-  .headContent .headTalk p img{
+
+  .headContent .headTalk p img {
     width: 375px;
-    height:63px;
+    height: 63px;
   }
-  .headContent .headTalk p{
-    width:424px;
+
+  .headContent .headTalk p {
+    width: 424px;
     /* height:100px; */
-    font-size:25px;
-    line-height:55px;
+    font-size: 25px;
+    line-height: 55px;
   }
-  .introduction{
+
+  .introduction {
     width: 1058px;
   }
-  .introduction > .bg img{
+
+  .introduction > .bg img {
     width: 1058px;
   }
-  .introductionContent{
+
+  .introductionContent {
     width: 1001px;
     margin-left: -500px;
   }
-  .onPageNav{
+
+  .onPageNav {
     /* width: 180px; */
   }
-  .onPageNav a{
-    font-size:17px;
-  }
-  .onPageNav a.active{
-    font-size:17px;
-  }
-  .introduction1Descr .descrRight h4{
+
+  .onPageNav a {
     font-size: 17px;
   }
-  .introduction1Descr .descrRight h2{
-    font-size:44px;
+
+  .onPageNav a.active {
+    font-size: 17px;
   }
-  .introduction1Descr .descrRight p{
+
+  .introduction1Descr .descrRight h4 {
+    font-size: 17px;
+  }
+
+  .introduction1Descr .descrRight h2 {
+    font-size: 44px;
+  }
+
+  .introduction1Descr .descrRight p {
     font-size: 21px;
-    line-height:50px;
+    line-height: 50px;
   }
-  .introduction1Descr .descrRight h3{
-    font-size:33px;
+
+  .introduction1Descr .descrRight h3 {
+    font-size: 33px;
     margin-bottom: 20px;
   }
-  .introduction1Descr .descrRight .state p:nth-child(5),.introduction1Descr .descrRight .state p:nth-child(6){
-    font-size:21px!important;
-    line-height:38px;
+
+  .introduction1Descr .descrRight .state p:nth-child(5),
+  .introduction1Descr .descrRight .state p:nth-child(6) {
+    font-size: 21px !important;
+    line-height: 38px;
   }
-  .introduction1Descr .descrRight ul li{
-    font-size:21px;
-    
-  }
-  .introduction1Descr .descrRight p > span, .introduction1Descr .descrRight .state > span{
+
+  .introduction1Descr .descrRight ul li {
     font-size: 21px;
   }
-  .introduction1Descr .descrRight .intro > div img{
-    width:719px;
+
+  .introduction1Descr .descrRight p > span,
+  .introduction1Descr .descrRight .state > span {
+    font-size: 21px;
+  }
+
+  .introduction1Descr .descrRight .intro > div img {
+    width: 719px;
     height: 734px;
   }
-  footer{
+
+  footer {
     height: 386px;
   }
-  footer h2{
-      font-size:33px;
+
+  footer h2 {
+    font-size: 33px;
   }
-  footer>div i img {
-      width: 30px;
-      height: 24px;
-      margin-top: 4px;
+
+  footer > div i img {
+    width: 30px;
+    height: 24px;
+    margin-top: 4px;
   }
-  footer>div label{
-      font-size:27px;
+
+  footer > div label {
+    font-size: 27px;
   }
-  footer>p{
-      font-size:21px;
-      margin-top:90px;
-  }
-}
-@media (max-width:1700px){
-  footer h2{
-      margin-left: 220px;
-  }
-  footer>div{
-     
-      margin-left:170px ;
-      
+
+  footer > p {
+    font-size: 21px;
+    margin-top: 90px;
   }
 }
+
+@media (max-width: 1700px) {
+  footer h2 {
+    margin-left: 220px;
+  }
+
+  footer > div {
+    margin-left: 170px;
+  }
+}
+
 @media (max-width: 1200px) {
   .whitepaper {
     width: 1200px;
   }
-  header{
+
+  header {
     height: 441px;
   }
-  .navList{
+
+  .header {
+    height: 80px;
+  }
+
+  .navList {
     /* margin-left: 30px; */
     margin-right: 50px;
-  }  
-  .navList li{
-      font-size:13px;
-      margin-left: 48px;
   }
-  .logo img{
-      margin-left: 120px;
-      width: 110px;
-      height: 33px;
+
+  .navList li {
+    font-size: 13px;
+    margin-left: 48px;
   }
-  .descr{
-    margin-right:200px;
+  .navList li:last-child .select {
+    width: 95px;
+    height: 96px;
+    left: -10px;
   }
-  .descr span:nth-child(1){
-      width: 62px;
-      height: 19px;
-      font-size:9px;
-      line-height: 19px;
+  .navList li:last-child .select .bg img{
+    width: 95px;
+    height: 86px;
   }
-  .descr span:nth-child(2){
-      font-size: 14px;
+
+  .navList li:last-child .select > div span {
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
   }
-  .headContent .headLogo{
+  .logo img {
+    margin-left: 120px;
+    width: 110px;
+    height: 33px;
+  }
+
+  .descr {
+    margin-right: 200px;
+  }
+
+  .descr span:nth-child(1) {
+    width: 62px;
+    height: 19px;
+    font-size: 9px;
+    line-height: 19px;
+  }
+
+  .descr span:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .headContent .headLogo {
     width: 283px;
     height: 284px;
     right: 330px;
     top: -50px;
   }
-  .headContent .headLogo img{
+
+  .headContent .headLogo img {
     width: 377px;
     height: 379px;
   }
-  .headContent .headTalk{
+
+  .headContent .headTalk {
     margin-top: 70px;
     margin-left: 150px;
   }
-  .headContent .headTalk p img{
+
+  .headContent .headTalk p img {
     width: 281px;
-    height:47px;
+    height: 47px;
   }
-  .headContent .headTalk p{
-    width:408px;
-    font-size:25px;
-    line-height:45px;
+
+  .headContent .headTalk p {
+    width: 408px;
+    font-size: 25px;
+    line-height: 45px;
     margin-top: 10px;
   }
-  .introduction{
+
+  .introduction {
     width: 793px;
   }
-  .introduction > .bg img{
+
+  .introduction > .bg img {
     width: 793px;
+    height: 10550px;
   }
-  .introductionContent{
+
+  .introductionContent {
     width: 751px;
     margin-left: -375px;
   }
-  .onPageNav{
+
+  .onPageNav {
     width: 170px;
   }
-  .onPageNav a{
-    font-size:13px;
+
+  .onPageNav a {
+    font-size: 13px;
   }
-  .onPageNav a.active{
-    font-size:13px;
+
+  .onPageNav a.active {
+    font-size: 13px;
   }
-  .introduction0{
+
+  .introduction0 {
     /* margin-left: 200px!important; */
     padding-right: 10px;
     box-sizing: border-box;
   }
-  .introduction1Descr .descrRight h4{
-    font-size:13px;
+
+  .introduction1 {
+    height: 1400px;
   }
-  .introduction1Descr .descrRight h2{
-    font-size:33px;
+
+  .introduction2 {
+    height: 2000px;
+  }
+
+  .introduction3 {
+    height: 2000px;
+  }
+
+  .introduction4 {
+    height: 1000px;
+  }
+
+  .introduction5 {
+    height: 1300px;
+  }
+
+  .introduction6 {
+    height: 1300px;
+  }
+
+  .introduction7 {
+    height: 1000px;
+  }
+
+  .introduction8 {
+    height: 500px;
+  }
+
+  .introduction1Descr .descrRight h4 {
+    font-size: 13px;
+  }
+
+  .introduction1Descr .descrRight h2 {
+    font-size: 33px;
     line-height: 60px;
   }
-  .introduction1Descr .descrRight p{
-    font-size:16px;
-    line-height:28px;
+
+  .introduction1Descr .descrRight p {
+    font-size: 16px;
+    line-height: 28px;
     margin-bottom: 10px;
   }
-  .introduction1Descr .descrRight .state p:nth-child(5),.introduction1Descr .descrRight .state p:nth-child(6){
-    font-size:16px!important;
-    line-height:38px;
+
+  .introduction1Descr .descrRight .state p:nth-child(5),
+  .introduction1Descr .descrRight .state p:nth-child(6) {
+    font-size: 16px !important;
+    line-height: 38px;
   }
-  .introduction1Descr .descrRight h3{
-    font-size:25px;
+
+  .introduction1Descr .descrRight h3 {
+    font-size: 25px;
     margin-bottom: 15px;
   }
-  .introduction1Descr .descrRight ul li{
-    font-size:16px;
-    
-  }
-  .introduction1Descr .descrRight p > span, .introduction1Descr .descrRight .state > span{
+
+  .introduction1Descr .descrRight ul li {
     font-size: 16px;
   }
-  .introduction1Descr .descrRight .intro > div img{
-    width:539px;
-    height:551px;
+
+  .introduction1Descr .descrRight p > span,
+  .introduction1Descr .descrRight .state > span {
+    font-size: 16px;
   }
-  footer{
-      height: 290px;
+
+  .introduction1Descr .descrRight .intro > div img {
+    width: 539px;
+    height: 551px;
   }
-  footer h2{
-      font-size:25px;
-      margin: 84px 0 15px 206px;
+
+  footer {
+    height: 290px;
   }
-  footer>div i img {
-      width: 22px;
-      height: 18px;
-      margin-top: 4px;
+
+  footer h2 {
+    font-size: 25px;
+    margin: 84px 0 15px 206px;
   }
-  footer>div label{
-      font-size:20px;
+
+  footer > div i img {
+    width: 22px;
+    height: 18px;
+    margin-top: 4px;
   }
-  footer>p{
-      font-size:16px;
-      margin-top:70px;
+
+  footer > div label {
+    font-size: 20px;
+  }
+
+  footer > p {
+    font-size: 16px;
+    margin-top: 70px;
   }
 }

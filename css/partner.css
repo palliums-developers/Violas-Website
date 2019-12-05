@@ -1,278 +1,278 @@
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-.wrap{
-    width: 100%;
-    height:auto;
+.wrap {
+  width: 100%;
+  height: auto;
 }
-.partner{
-    width: 100%;
-    background: rgba(44, 9, 108, 1);
-    overflow: hidden;
+.partner {
+  width: 100%;
+  background: rgba(44, 9, 108, 1);
+  overflow: hidden;
 }
-header{
-    width: 100%;
-    height: 732px;
-    display: flex;
-    flex-direction: column;
-    background: url('../img/编组 4@2x.png') no-repeat;
-    background-size: 100% 100%;
+header {
+  width: 100%;
+  height: 732px;
+  display: flex;
+  flex-direction: column;
+  background: url("../img/编组 4@2x.png") no-repeat;
+  background-size: 100% 100%;
 }
-.header{
-    width: 100%;
-    height: 100px;
-    position: relative;
-    z-index: 99;
+.header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 99;
 }
-.header .head{
-    width: 1200px;
-    height:100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
+.header .head {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.navList{
+.navList {
   display: flex;
 }
 
-.logo img{
-    margin-left:50px;
-    width: 173px;
-    height: 55px;
+.logo img {
+  margin-left: 150px;
+  width: 173px;
+  height: 55px;
 }
-.navList{
-    flex: 1;
-    height: 100%;
-    align-items: center;
-    margin-left:70px;
-    margin-right:200px;
+.navList {
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 200px;
 }
-.navList li{
-    font-size:20px;
-    font-family:PingFangSC-Regular;
-    font-weight:400;
-    color:rgba(255,255,255,1);
-    margin-left: 77px;
-    cursor: pointer;
-    white-space: nowrap;
+.navList li {
+  font-size: 20px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 77px;
+  cursor: pointer;
+  white-space: nowrap;
 }
-.navList li:last-child{
-    position: relative;
+.navList li:last-child {
+  position: relative;
 }
-.navList li:last-child .select{
-    width: 145px;
-    height: 116px;
-    position: relative;
-    position: absolute;
-    top: 30px;
-    left: -20px;
-    /* display: none; */
- }
-.navList li:last-child .select .bg{
-    position: absolute;
-    top: 0;
+.navList li:last-child .select {
+  width: 145px;
+  height: 116px;
+  position: relative;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  /* display: none; */
 }
-.navList li:last-child .select>div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top:15px;
+.navList li:last-child .select .bg {
+  position: absolute;
+  top: 0;
 }
-.navList li:last-child .select>div span{
-    width: 100%;
-    height: 50px;
-    font-size:23px;
-    font-family:PingFangSC-Medium,PingFang SC;
-    font-weight:500;
-    color:rgba(44,9,108,1);
-    line-height:50px;
-    text-align: center;
-    letter-spacing:1px;
-    border-radius:5px;
+.navList li:last-child .select > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
 }
-.navList li:last-child .select .bg img{
-   width: 145px;
-   height: 116px;
+.navList li:last-child .select > div span {
+  width: 100%;
+  height: 50px;
+  font-size: 23px;
+  font-family: "黑体";
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 5px;
 }
-.navList li.active{
-    color:rgba(62, 209, 246, 1);
+.navList li:last-child .select .bg img {
+  width: 145px;
+  height: 116px;
+}
+.navList li.active {
+  color: rgba(62, 209, 246, 1);
 }
 
-.descr{
+.descr {
   display: flex;
 }
-.descr span{
-    color: #FFF;
-    margin-right: 38px;
-    cursor: pointer;
+.descr span {
+  color: #fff;
+  margin-right: 38px;
+  cursor: pointer;
 }
-.descr span:nth-child(1){
-   width: 100px;
-   height: 31px;
-   border: 1px solid #FFF;
-   border-radius:3px;
-   line-height: 31px;
-   text-align: center;
-   font-size: 14px;
+.descr span:nth-child(1) {
+  width: 100px;
+  height: 31px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 14px;
 }
-.descr span:nth-child(2){
-    font-size: 22px;
- }
- .headContent{
-    width:1200px;
-    flex: 1;
-    position: relative;
-    margin: 0 auto;
-    display: flex;;
-    justify-content: space-between;
+.descr span:nth-child(2) {
+  font-size: 22px;
 }
-.headContent .headTalk{
-    display: flex;
-    margin-top: 150px;
-    margin-left:30px;
+.headContent {
+  width: 1200px;
+  flex: 1;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
-
-.headContent .headTalk p{
-    font-size:57px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(255,255,255,1);
-    margin-top: 15px;
-}
-.headContent .headTalk>div{
-    margin-left: 45px;
-    margin-top: 20px;
-}
-.headContent .headTalk p>span{
-    color: rgba(82, 220, 255, 1);
-}
-.headContent .headLogo img{
-    width: 572px;
-    height:622px;
-}
-.headContent .headLogo{
-    width: 572px;
-    height:622px;
-    position: absolute;
-    right:-100px;
-    top:0;
-    display: flex;
-}
-.mebers .head{
-    width: 1118px;
-    height: 61px;
-    margin: 130px auto;
-    position: relative;
-    display: flex;;
-    align-items: center;
- }
-
-.mebers .head .bg{
-   width: 1118px;
-   height: 61px;
+.headContent .headTalk {
+  display: flex;
+  margin-top: 150px;
+  margin-left: 30px;
 }
 
-.mebers .head .bg img{
-    width: 100%;
- }
+.headContent .headTalk p {
+  font-size: 57px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 15px;
+}
+.headContent .headTalk > div {
+  margin-left: 45px;
+  margin-top: 20px;
+}
+.headContent .headTalk p > span {
+  color: rgba(82, 220, 255, 1);
+}
+.headContent .headLogo img {
+  width: 572px;
+  height: 622px;
+}
+.headContent .headLogo {
+  width: 572px;
+  height: 622px;
+  position: absolute;
+  right: -100px;
+  top: 0;
+  display: flex;
+}
+.mebers .head {
+  width: 1118px;
+  height: 61px;
+  margin: 130px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
 
-.mebers .head p{
-    position: absolute;
-    left: 47%;
-    margin-left: -120px;
-    top: 0;
-    font-size: 40px;
-    color: rgba(248, 248, 248, 1);
-    font-weight: 400;
- }
+.mebers .head .bg {
+  width: 1118px;
+  height: 61px;
+}
 
- .mebers .head p{
-     left: 53.5%;
-     top: 5px;
- }
- .forWorldDescr{
-    width: 1200px;
-    margin: 0 auto;
-    margin-top: 250px;
-    display: flex;;
-    justify-content: center;
+.mebers .head .bg img {
+  width: 100%;
 }
-.forWorldDescr .eachDescr{
-    width:546px;
-    position: relative;
-    margin-left: 25px;
+
+.mebers .head p {
+  position: absolute;
+  left: 47%;
+  margin-left: -120px;
+  top: 0;
+  font-size: 40px;
+  color: rgba(248, 248, 248, 1);
+  font-weight: 400;
 }
-.forWorldDescr .eachDescrs{
-    width:546px;
-    height:437px;
-    background:linear-gradient(180deg,rgba(255,255,255,1) 0%,RGBA(158, 146, 250, 1)100%);
-    border-radius:20px;
-    position: relative;
-    z-index: 10;
-    padding: 79px 25px 0 35px;
-    box-sizing: border-box;
+
+.mebers .head p {
+  left: 53.5%;
+  top: 5px;
 }
-.eachDescrs h3{
-    font-size:30px;
-    font-family:PingFangSC-Medium,PingFang SC;
-    font-weight:500;
-    color:rgba(44,9,108,1);
+.forWorldDescr {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
 }
-.eachDescrs i img{
-    display: inline-block;
-    width: 64px;
-    height: 4px;
+.forWorldDescr .eachDescr {
+  width: 546px;
+  position: relative;
+  margin-left: 25px;
 }
-.eachDescrs p{
-    font-size:24px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(44,9,108,1);
-    margin-top: 20px;
-    line-height:48px;
+.forWorldDescr .eachDescrs {
+  width: 546px;
+  height: 437px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    RGBA(158, 146, 250, 1) 100%
+  );
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  padding: 79px 25px 0 35px;
+  box-sizing: border-box;
+}
+.eachDescrs h3 {
+  font-size: 30px;
+  font-family:"黑体";
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
+}
+.eachDescrs i img {
+  display: inline-block;
+  width: 64px;
+  height: 4px;
+}
+.eachDescrs p {
+  font-size: 24px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
+  margin-top: 20px;
+  line-height: 48px;
 }
 .forWorldDescr .eachDescr .logo1,
 .forWorldDescr .eachDescr .logo2,
-.forWorldDescr .eachDescr .logo3
-{
-    position: absolute;
+.forWorldDescr .eachDescr .logo3 {
+  position: absolute;
 }
-.forWorldDescr .eachDescr .logo1{
-    left:50%;
-    margin-left: -27%;
-    top: -160px;
+.forWorldDescr .eachDescr .logo1 {
+  left: 50%;
+  margin-left: -27%;
+  top: -160px;
 }
-.forWorldDescr .eachDescr .logo2{
-    left:50%;
-    margin-left: -14.5%;
-    top: -105px;
-    z-index: 11;
+.forWorldDescr .eachDescr .logo2 {
+  left: 50%;
+  margin-left: -14.5%;
+  top: -105px;
+  z-index: 11;
 }
-.forWorldDescr .eachDescr .logo3{
-    left:-15px;
-    bottom:-20px;
+.forWorldDescr .eachDescr .logo3 {
+  left: -15px;
+  bottom: -20px;
 }
 
-.forWorldDescr .eachDescr .logo1 img{
-    width: 251px;
-    height:225px;
-    
+.forWorldDescr .eachDescr .logo1 img {
+  width: 251px;
+  height: 225px;
 }
-.forWorldDescr .eachDescr .logo2 img{
-    width: 205px;
-    height:173px;
-    
+.forWorldDescr .eachDescr .logo2 img {
+  width: 205px;
+  height: 173px;
 }
-.forWorldDescr .eachDescr .logo3 img{
-    width: 303px;
-    height:180px;
-    
+.forWorldDescr .eachDescr .logo3 img {
+  width: 303px;
+  height: 180px;
 }
 
 /* .forWorldDescr .eachDescr:nth-child(2) .logo1 img{
@@ -280,823 +280,856 @@ header{
     height:225px;
     
 } */
-.forWorldDescr .eachDescr:nth-child(2) .logo1{
-   top: -150px;
+.forWorldDescr .eachDescr:nth-child(2) .logo1 {
+  top: -150px;
 }
-.forWorldDescr .eachDescr:nth-child(2) .logo2{
-    top: -100px;
- }
- .forWorldDescr .eachDescr:nth-child(2) .logo3{
-    left:47%;
- }
- .service{
-     width: 1317px;
-     height: 314px;
-     background:linear-gradient(180deg,RGBA(53, 13, 123, 1) 0%,RGBA(62, 144, 194, 1) 100%);
-     border-radius:20px;
-     margin: 300px auto;
-     position: relative;
-     display: flex;;
-     flex-direction: column;
- }
- .service .logo img{
-     width: 380px;
-     height: 326px;
-     position: absolute;
-     top: -39%;
-     right: 40px;
- }
- .service h2{
-    font-size:45px;
-    font-family:PingFangSC-Medium,PingFang SC;
-    font-weight:500;
-    color:rgba(255,255,255,1);
-    margin: 46px 0 39px 58px;
-
- }
- .service p{
-    width:1000px;
-    font-size:28px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(255,255,255,1);
-    letter-spacing:1px;
-    margin-left:58px ;
-    margin-bottom: 30px;
- }
-.publisher{
-    width: 1200px;
-    height: 742px;
-    margin: 0 auto;
-    /* position: relative; */
-    display: flex;
-    justify-content: center;
+.forWorldDescr .eachDescr:nth-child(2) .logo2 {
+  top: -100px;
 }
-.publisher .center{
-    width: 308px;
-    height: 308px;
-    position: relative;
-    display: flex;;
-    align-items: center;
-    justify-content: center;
-    margin-top:209px
+.forWorldDescr .eachDescr:nth-child(2) .logo3 {
+  left: 47%;
 }
-.publisher .center p{
-    font-size:36px;
-    font-family:PingFangSC-Medium,PingFang SC;
-    font-weight:500;
-    color:rgba(255,255,255,1);
-    line-height:50px;
-    letter-spacing:2px;
-    white-space: nowrap;
+.service {
+  width: 1317px;
+  height: 314px;
+  background: linear-gradient(
+    180deg,
+    RGBA(53, 13, 123, 1) 0%,
+    RGBA(62, 144, 194, 1) 100%
+  );
+  border-radius: 20px;
+  margin: 300px auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
-.publisher .center .cLogo{
-     position: absolute;
+.service .logo img {
+  width: 380px;
+  height: 326px;
+  position: absolute;
+  top: -39%;
+  right: 40px;
 }
-.publisher .center .cLogo img{
-    width: 308px;
-    height: 308px;
-
+.service h2 {
+  font-size: 45px;
+  font-family: "黑体";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  margin: 46px 0 39px 58px;
+}
+.service p {
+  width: 1000px;
+  font-size: 28px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 1px;
+  margin-left: 58px;
+  margin-bottom: 30px;
+}
+.publisher {
+  width: 1200px;
+  height: 742px;
+  margin: 0 auto;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+}
+.publisher .center {
+  width: 308px;
+  height: 308px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 209px;
+}
+.publisher .center p {
+  font-size: 36px;
+  font-family:"黑体";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 50px;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+.publisher .center .cLogo {
+  position: absolute;
+}
+.publisher .center .cLogo img {
+  width: 308px;
+  height: 308px;
 }
 .publisher .left .lLogo img,
-.publisher .right .rLogo img{
-   width: 489px;
-   height: 742px;
+.publisher .right .rLogo img {
+  width: 489px;
+  height: 742px;
 }
 .publisher .left,
-.publisher .right{
-   position: relative;
+.publisher .right {
+  position: relative;
 }
-.publisher .left .lContent1{
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
+.publisher .left .lContent1 {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
 }
-.publisher .left .lContent1>div{
-    margin-top: -50px;
-    margin-left: 20px;
+.publisher .left .lContent1 > div {
+  margin-top: -50px;
+  margin-left: 20px;
 }
-.publisher .left .lContent1>div img{
-     width: 124px;
-     height: 102px;
+.publisher .left .lContent1 > div img {
+  width: 124px;
+  height: 102px;
 }
-.publisher .left .lContent1 p{
-    width:363px;
-    /* height:150px; */
-    font-size:20px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(248,248,248,1);
-    line-height:50px;
-    margin-top:25px ;
-    margin-left:-35px;
+.publisher .left .lContent1 p {
+  width: 363px;
+  /* height:150px; */
+  font-size: 20px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 50px;
+  margin-top: 25px;
+  margin-left: -35px;
 }
-.publisher .left .lContent2{
-    position: absolute;
-    bottom:50px;
-    display: flex;
-    flex-direction: column;
+.publisher .left .lContent2 {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
-.publisher .left .lContent2>div{
-    margin-left: 20px;
+.publisher .left .lContent2 > div {
+  margin-left: 20px;
 }
-.publisher .left .lContent2>div img{
-     width: 124px;
-     height: 102px;
+.publisher .left .lContent2 > div img {
+  width: 124px;
+  height: 102px;
 }
-.publisher .left .lContent2 p{
-    width:363px;
-    /* height:150px; */
-    font-size:20px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(248,248,248,1);
-    line-height:50px;
-    margin-top:25px ;
-    margin-left:-35px;
+.publisher .left .lContent2 p {
+  width: 363px;
+  /* height:150px; */
+  font-size: 20px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 50px;
+  margin-top: 25px;
+  margin-left: -35px;
 }
-.publisher .right .lContent1{
-    position: absolute;
-    top: 0;
-    left:290px;
-    display: flex;
-    flex-direction: column;
+.publisher .right .lContent1 {
+  position: absolute;
+  top: 0;
+  left: 290px;
+  display: flex;
+  flex-direction: column;
 }
-.publisher .right .lContent1>div{
-    margin-top: -50px;
-    margin-left: 20px;
+.publisher .right .lContent1 > div {
+  margin-top: -50px;
+  margin-left: 20px;
 }
-.publisher .right .lContent1>div img{
-     width: 105px;
-     height: 114px;
+.publisher .right .lContent1 > div img {
+  width: 105px;
+  height: 114px;
 }
-.publisher .right .lContent1 p{
-    width:237px;
-    /* height:150px; */
-    font-size:20px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(248,248,248,1);
-    line-height:50px;
-    margin-top:25px ;
-    margin-left:-50px;
+.publisher .right .lContent1 p {
+  width: 237px;
+  /* height:150px; */
+  font-size: 20px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 50px;
+  margin-top: 25px;
+  margin-left: -50px;
 }
-.publisher .right .lContent2{
-    position: absolute;
-    bottom:30px;
-    left:290px;
-    display: flex;
-    flex-direction: column;
+.publisher .right .lContent2 {
+  position: absolute;
+  bottom: 30px;
+  left: 290px;
+  display: flex;
+  flex-direction: column;
 }
-.publisher .right .lContent2>div{
-    margin-left: 20px;
+.publisher .right .lContent2 > div {
+  margin-left: 20px;
 }
-.publisher .right .lContent2>div img{
-     width: 124px;
-     height: 102px;
+.publisher .right .lContent2 > div img {
+  width: 124px;
+  height: 102px;
 }
-.publisher .right .lContent2 p{
-    width:363px;
-    /* height:150px; */
-    font-size:20px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(248,248,248,1);
-    line-height:50px;
-    margin-top:10px ;
-    margin-left:-130px;
+.publisher .right .lContent2 p {
+  width: 363px;
+  /* height:150px; */
+  font-size: 20px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 50px;
+  margin-top: 10px;
+  margin-left: -130px;
 }
- footer{
-    width: 100%;
-    height:464px;
-    background: url('../img/编组 44@3x.png')no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
+footer {
+  width: 100%;
+  height: 464px;
+  background: url("../img/编组 44@3x.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
-.forWorldDescrs{
-    width: 1200px;
-    margin: 250px auto;
-    display: flex;
-    justify-content: center;
+.forWorldDescrs {
+  width: 1200px;
+  margin: 250px auto;
+  display: flex;
+  justify-content: center;
 }
-.forWorldDescrs .eachDescr{
-    position: relative;
-    margin-left: 25px;
+.forWorldDescrs .eachDescr {
+  position: relative;
+  margin-left: 25px;
 }
-.forWorldDescrs .eachDescrs{
-    width:380px;
-    height:409px;
-    background:linear-gradient(180deg,rgba(255,255,255,1) 0%,RGBA(158, 146, 250, 1)100%);
-    border-radius:20px;
-    position: relative;
-    z-index: 10;
-    padding: 88px 25px 0 35px;
-    box-sizing: border-box;
+.forWorldDescrs .eachDescrs {
+  width: 380px;
+  height: 409px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    RGBA(158, 146, 250, 1) 100%
+  );
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  padding: 88px 25px 0 35px;
+  box-sizing: border-box;
 }
-.eachDescrs h3{
-    font-size:30px;
-    font-family:PingFangSC-Medium,PingFang SC;
-    font-weight:500;
-    color:rgba(44,9,108,1);
+.eachDescrs h3 {
+  font-size: 30px;
+  font-family:"黑体";
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
 }
-.eachDescrs i img{
-    display: inline-block;
-    width: 64px;
-    height: 4px;
+.eachDescrs i img {
+  display: inline-block;
+  width: 64px;
+  height: 4px;
 }
-.eachDescrs p{
-    font-size:24px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(44,9,108,1);
-    margin-top: 20px;
-    line-height:48px;
+.eachDescrs p {
+  font-size: 24px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
+  margin-top: 20px;
+  line-height: 48px;
 }
 .forWorldDescrs .eachDescr .logo1,
 .forWorldDescrs .eachDescr .logo2,
 .forWorldDescrs .eachDescr .logo3,
-.forWorldDescrs .eachDescr .logo4
-{
-    position: absolute;
+.forWorldDescrs .eachDescr .logo4 {
+  position: absolute;
 }
-.forWorldDescrs .eachDescr .logo1{
-    left: 40px;
-    top: -150px;
+.forWorldDescrs .eachDescr .logo1 {
+  left: 40px;
+  top: -150px;
 }
-.forWorldDescrs .eachDescr .logo2{
-    left: 110px;
-    top: -105px;
-    z-index: 11;
+.forWorldDescrs .eachDescr .logo2 {
+  left: 110px;
+  top: -105px;
+  z-index: 11;
 }
-.forWorldDescrs .eachDescr .logo3{
-    left:-12px;
-    bottom:17px;
+.forWorldDescrs .eachDescr .logo3 {
+  left: -12px;
+  bottom: 17px;
 }
-.forWorldDescrs .eachDescr .logo4{
-    right:10px;
-    bottom:-15px;
-    z-index: 11;
+.forWorldDescrs .eachDescr .logo4 {
+  right: 10px;
+  bottom: -15px;
+  z-index: 11;
 }
-.forWorldDescrs .eachDescr .logo1 img{
-    width: 251px;
-    height:225px;
-    
+.forWorldDescrs .eachDescr .logo1 img {
+  width: 251px;
+  height: 225px;
 }
-.forWorldDescrs .eachDescr .logo2 img{
-    width: 205px;
-    height:173px;
-    
+.forWorldDescrs .eachDescr .logo2 img {
+  width: 205px;
+  height: 173px;
 }
-.forWorldDescrs .eachDescr .logo3 img{
-    width: 203px;
-    height:135px;
-    
+.forWorldDescrs .eachDescr .logo3 img {
+  width: 203px;
+  height: 135px;
 }
-.forWorldDescrs .eachDescr .logo4 img{
-    width: 236px;
-    height:194px;
-    
+.forWorldDescrs .eachDescr .logo4 img {
+  width: 236px;
+  height: 194px;
 }
 
-.forWorldDescrs .eachDescr:nth-child(4) .logo1{
-    top: -150px;
+.forWorldDescrs .eachDescr:nth-child(4) .logo1 {
+  top: -150px;
 }
-footer h2{
-    height: 56px;
-    font-size:40px;
-    font-family:PingFangSC-Semibold,PingFang SC;
-    font-weight:600;
-    color:rgba(255,255,255,1);
-    margin: 134px 0 19px 362px;
+footer h2 {
+  height: 56px;
+  font-size: 40px;
+  font-family:"黑体";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  margin: 134px 0 19px 362px;
 }
-footer>div{
-    display: flex;
-    align-items: center;
-    margin-left:309px ;
-    
+footer > div {
+  display: flex;
+  align-items: center;
+  margin-left: 309px;
 }
-footer>div i img{
-    width:36px;
-    height:29px;
+footer > div i img {
+  width: 36px;
+  height: 29px;
 }
-footer>div label{
-    font-size:32px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(248,248,248,1);
-    margin-left: 17px;
+footer > div label {
+  font-size: 32px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  margin-left: 17px;
 }
-footer>p{
-    width: 100%;
-    font-size:25px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(255,255,255,1);
-    text-align: center;
-    margin-top: 154px;
+footer > p {
+  width: 100%;
+  font-size: 25px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-top: 154px;
 }
-@media (max-width:1600px){
-    header {
-        height: 610px;
-    }
-    .navList{
-        margin-left: 40px;
-        margin-right: 150px;
-    } 
-    .navList li{
-        font-size:17px;
-        margin-left: 63px;
-    }
-    .headContent .headLogo{
-        top: -15px;
-    } 
-    .headContent .headLogo img {
-        width: 478px;
-        height: 518px;
-    }
-    .headContent .headTalk{
-        margin-top: 130px;
-    }
-    .headContent .headTalk p img{
-         width: 135px;
-         height: 176px;
-    }
-    .headContent .headTalk>div p{
-        font-size: 47px;
-    }
-    .mebers .head{
-        width: 930px;
-        height: 51px;
-        margin: 110px auto;
-    }
-    .mebers .head{
-        margin-bottom: 50px;
-    }
-    .mebers .head .bg{
-        width: 930px;
-        height: 51px;
-    }
-    .vision .head p{
-        font-size: 33px;
-        margin-left: -105px;
-        top:2px;
-    }
-    .mebers .head p{
-        font-size: 33px;
-        margin-left: -100px;
-        top:2px;
-    }
-    .forWorldDescr .eachDescr{
-        width:455px;
-    }
-    .forWorldDescr .eachDescrs{
-        width:455px;
-        height:364px;
-        padding: 66px 20px 0 25px;
-        box-sizing: border-box;
-    }
-    .forWorldDescr .eachDescrs h3{
-        font-size: 25px;
-    }
-    .forWorldDescr .eachDescrs p{
-        font-size: 21px;
-        line-height: 42px;
-    }
-    .forWorldDescr .eachDescr:nth-child(2) .logo3{
-        left: 37%;
-    }
-    .service{
-        width:1098px;
-        height:262px;
-        margin: 220px auto;
-    }
-    .service .logo img{
-        width: 317px;
-        height:272px;
-    }
-    .service h2{
-        font-size:38px;
-        margin: 38px 0 32px 48px;
-    }
-    .service p{
-        font-size:23px;
-        margin-left: 48px;
-        margin-bottom: 20px;
-    }
-    .publisher .center .cLogo img{
-        width: 257px;
-        height: 257px;
-    }
-    .publisher .center p{
-        font-size: 32px;
-    }
-    .publisher .left .lLogo img, .publisher .right .rLogo img{
-        width: 410px;
-        height: 681px;
-    }
-    .publisher .left{
-        left: 80px;
-    }
-    .publisher .right{
-        left: -80px;
-    }
-    .publisher .left .lContent1>div img{
-        width: 103px;
-        height: 85px;
-    }
-    .publisher .left .lContent1 p{
-        width:333px;
-        height:125px;
-        font-size:17px;
-        line-height:42px;
-    }
-    .publisher .left .lContent1>div{
-        /* margin-top: -50px; */
-        margin-left: 40px;
-    }
-    .publisher .left .lContent2>div img{
-        width: 97px;
-        height: 82px;
-    }
-    .publisher .left .lContent2>div{
-        margin-left: 40px;
-    }
-    .publisher .left .lContent2{
-        bottom: 110px;
-    }
-    .publisher .left .lContent2 p{
-        width:333px;
-        height:119px;
-        font-size:17px;
-        line-height:42px;
-    }
-    .publisher .right .lContent1>div{
-        margin-left: -25px;
-    }
-    .publisher .right .lContent1>div img{
-        width:87px;
-        height:95px;
-    }
-    .publisher .right .lContent1 p{
-        width:198px;
-        height:84px;
-        font-size:17px;
-        line-height:42px;
-    }
-    .publisher .right .lContent2>div{
-        margin-left: -20px;
-        margin-bottom: 25px;
-    }
-    .publisher .right .lContent2{
-        bottom: 80px;
-    }
-    .publisher .right .lContent2>div img{
-        width: 111px;
-        height: 97px;
-    }
-    .publisher .right .lContent2 p{
-        width:331px;
-        height:155px;
-        font-size:17px;
-        line-height:38px;
-    }
-    .forWorldDescrs {
-        margin: 200px auto;
-    }
-    .forWorldDescrs .eachDescrs{
-        width:317px;
-        height:341px;
-        padding: 73px 25px 0 35px;
-        box-sizing: border-box;
-    }
-    .forWorldDescrs .eachDescr .logo1 img{
-        width: 209px;
-        height: 187px;
-    }
-    .forWorldDescrs .eachDescr .logo2 img{
-        width: 195px;
-        height: 157px;
-    }
-    .forWorldDescrs .eachDescr .logo1{
-        top: -125px;
-    }
-    .forWorldDescrs .eachDescr .logo2{
-        left: 100px;
-        top: -90px;
-    }
-    .eachDescrs h3{
-        font-size:25px;
-    }
-    .eachDescrs p{
-        font-size:21px;
-        line-height:42px;
-    }
-    footer{
-        height: 386px;
-    }
-    footer h2{
-        font-size:33px;
-    }
-    footer>div i img {
-        width: 30px;
-        height: 24px;
-        margin-top: 4px;
-    }
-    footer>div label{
-        font-size:27px;
-    }
-    footer>p{
-        font-size:21px;
-        margin-top:90px;
-    }
+@media (max-width: 1600px) {
+  header {
+    height: 610px;
+  }
+  .navList {
+    margin-left: 40px;
+    margin-right: 150px;
+  }
+  .navList li {
+    font-size: 17px;
+    margin-left: 63px;
+  }
+  .navList li:last-child .select {
+    width: 105px;
+    height: 96px;
+  }
+  .navList li:last-child .select .bg img{
+    width: 105px;
+    height: 96px;
+  }
+
+  .navList li:last-child .select > div span {
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .headContent .headLogo {
+    top: -15px;
+  }
+  .headContent .headLogo img {
+    width: 478px;
+    height: 518px;
+  }
+  .headContent .headTalk {
+    margin-top: 130px;
+  }
+  .headContent .headTalk p img {
+    width: 135px;
+    height: 176px;
+  }
+  .headContent .headTalk > div p {
+    font-size: 47px;
+  }
+  .mebers .head {
+    width: 930px;
+    height: 51px;
+    margin: 110px auto;
+  }
+  .mebers .head {
+    margin-bottom: 50px;
+  }
+  .mebers .head .bg {
+    width: 930px;
+    height: 51px;
+  }
+  .vision .head p {
+    font-size: 33px;
+    margin-left: -105px;
+    top: 2px;
+  }
+  .mebers .head p {
+    font-size: 33px;
+    margin-left: -100px;
+    top: 2px;
+  }
+  .forWorldDescr .eachDescr {
+    width: 455px;
+  }
+  .forWorldDescr .eachDescrs {
+    width: 455px;
+    height: 364px;
+    padding: 66px 20px 0 25px;
+    box-sizing: border-box;
+  }
+  .forWorldDescr .eachDescrs h3 {
+    font-size: 25px;
+  }
+  .forWorldDescr .eachDescrs p {
+    font-size: 21px;
+    line-height: 42px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo3 {
+    left: 37%;
+  }
+  .service {
+    width: 1098px;
+    height: 262px;
+    margin: 220px auto;
+  }
+  .service .logo img {
+    width: 317px;
+    height: 272px;
+  }
+  .service h2 {
+    font-size: 38px;
+    margin: 38px 0 32px 48px;
+  }
+  .service p {
+    font-size: 23px;
+    margin-left: 48px;
+    margin-bottom: 20px;
+  }
+  .publisher .center .cLogo img {
+    width: 257px;
+    height: 257px;
+  }
+  .publisher .center p {
+    font-size: 32px;
+  }
+  .publisher .left .lLogo img,
+  .publisher .right .rLogo img {
+    width: 410px;
+    height: 681px;
+  }
+  .publisher .left {
+    left: 80px;
+  }
+  .publisher .right {
+    left: -80px;
+  }
+  .publisher .left .lContent1 > div img {
+    width: 103px;
+    height: 85px;
+  }
+  .publisher .left .lContent1 p {
+    width: 333px;
+    height: 125px;
+    font-size: 17px;
+    line-height: 42px;
+  }
+  .publisher .left .lContent1 > div {
+    /* margin-top: -50px; */
+    margin-left: 40px;
+  }
+  .publisher .left .lContent2 > div img {
+    width: 97px;
+    height: 82px;
+  }
+  .publisher .left .lContent2 > div {
+    margin-left: 40px;
+  }
+  .publisher .left .lContent2 {
+    bottom: 110px;
+  }
+  .publisher .left .lContent2 p {
+    width: 333px;
+    height: 119px;
+    font-size: 17px;
+    line-height: 42px;
+  }
+  .publisher .right .lContent1 > div {
+    margin-left: -25px;
+  }
+  .publisher .right .lContent1 > div img {
+    width: 87px;
+    height: 95px;
+  }
+  .publisher .right .lContent1 p {
+    width: 198px;
+    height: 84px;
+    font-size: 17px;
+    line-height: 42px;
+  }
+  .publisher .right .lContent2 > div {
+    margin-left: -20px;
+    margin-bottom: 25px;
+  }
+  .publisher .right .lContent2 {
+    bottom: 80px;
+  }
+  .publisher .right .lContent2 > div img {
+    width: 111px;
+    height: 97px;
+  }
+  .publisher .right .lContent2 p {
+    width: 331px;
+    height: 155px;
+    font-size: 17px;
+    line-height: 38px;
+  }
+  .forWorldDescrs {
+    margin: 200px auto;
+  }
+  .forWorldDescrs .eachDescrs {
+    width: 317px;
+    height: 341px;
+    padding: 73px 25px 0 35px;
+    box-sizing: border-box;
+  }
+  .forWorldDescrs .eachDescr .logo1 img {
+    width: 209px;
+    height: 187px;
+  }
+  .forWorldDescrs .eachDescr .logo2 img {
+    width: 195px;
+    height: 157px;
+  }
+  .forWorldDescrs .eachDescr .logo1 {
+    top: -125px;
+  }
+  .forWorldDescrs .eachDescr .logo2 {
+    left: 100px;
+    top: -90px;
+  }
+  .eachDescrs h3 {
+    font-size: 25px;
+  }
+  .eachDescrs p {
+    font-size: 21px;
+    line-height: 42px;
+  }
+  footer {
+    height: 386px;
+  }
+  footer h2 {
+    font-size: 33px;
+  }
+  footer > div i img {
+    width: 30px;
+    height: 24px;
+    margin-top: 4px;
+  }
+  footer > div label {
+    font-size: 27px;
+  }
+  footer > p {
+    font-size: 21px;
+    margin-top: 90px;
+  }
 }
-@media (max-width:1700px){
-    footer h2{
-        margin-left: 220px;
-    }
-    footer>div{
-       
-        margin-left:170px ;
-        
-    }
+@media (max-width: 1700px) {
+  footer h2 {
+    margin-left: 220px;
+  }
+  footer > div {
+    margin-left: 170px;
+  }
 }
-@media (max-width:1200px){
-    .partner{
-        width: 1200px;
-    }
-    header{
-        height: 478px;
-    }
-    .navList{
-        /* margin-left: 30px; */
-        margin-right: 50px;
-    }  
-    .navList li{
-        font-size:13px;
-        margin-left: 48px;
-    }
-    .logo img{
-        margin-left: 120px;
-        width: 110px;
-        height: 33px;
-    }
-    .descr{
-       margin-right:200px;
-    }
-    .descr span:nth-child(1){
-        width: 62px;
-        height: 19px;
-        font-size:9px;
-        line-height: 19px;
-    }
-    .descr span:nth-child(2){
-        font-size: 14px;
-    }
-    .headContent .headLogo{
-        right: 30px;
-    } 
-    .headContent .headLogo img {
-        width: 357px;
-        height: 389px;
-    }
-    .headContent .headTalk{
-        margin-top: 100px;
-        margin-left: 130px;
-    }
-    .headContent .headTalk>div {
-        margin-left: 25px;
-        margin-top: 10px;
-    }
-    .headContent .headTalk p img{
-         width: 101px;
-         height: 132px;
-    }
-    .headContent .headTalk>div p{
-        font-size: 36px;
-    }
-    .mebers .head{
-        width: 699px;
-        height: 38px;
-        margin: 90px auto;
-    }
-    .mebers .head{
-        margin-bottom: 50px;
-    }
-    .mebers .head .bg{
-        width: 699px;
-        height: 38px;
-    }
-    .vision .head p{
-        font-size:25px;
-        margin-left: -65px;
-    }
-    .mebers .head p{
-        font-size:25px;
-        margin-left: -75px;
-    }
-    .forWorldDescr{
-        margin-top: 180px;
-    }
-    .forWorldDescr .eachDescr{
-        width:341px;
-        margin-left: 20px;
-    }
-    .forWorldDescr .eachDescrs{
-        width:341px;
-        height:273px;
-        padding: 50px 18px 0 20px;
-        box-sizing: border-box;
-    }
-    .forWorldDescr .eachDescrs h3{
-        font-size: 19px;
-        line-height: 28px;
-    }
-    .forWorldDescr .eachDescrs p{
-        font-size: 16px;
-        line-height: 31px;
-        margin-top: 15px;
-    }
-    .eachDescrs i img{
-        width:40px;
-        height:3px; 
-    }
-    .forWorldDescr .eachDescr .logo1 img{
-        width: 174px;
-        height: 160px;
-    }
-    .forWorldDescr .eachDescr .logo1{
-        top: -110px;
-        margin-left:-28.5% ;
-    }
-    .forWorldDescr .eachDescr:nth-child(2) .logo1{
-        top:-105px;
-    }
-    .forWorldDescr .eachDescr:nth-child(2) .logo1 img{
-        width: 174px;
-        height: 151px;
-    }
-    .forWorldDescr .eachDescr:nth-child(2) .logo3{
-        left: 16%;
-    }
-    .forWorldDescr .eachDescr .logo2{
-        /* margin-left: -14%; */
-        top: -78px;
-    }
-    .forWorldDescr .eachDescr .logo2 img{
-        width: 146px;
-        height: 129px;
-    }
-    .forWorldDescr .eachDescr:nth-child(2) .logo2{
-        top: -75px;
-    }
-    .service{
-        width:823px;
-        height:196px;
-        margin: 180px auto;
-    }
-    .service .logo img{
-        width: 237px;
-        height:204px;
-        right: 30px;
-    }
-    .service h2{
-        font-size:28px;
-        margin: 29px 0 30px 36px;
-    }
-    .service p{
-        font-size:18px;
-        margin-left: 36px;
-        /* margin-bottom: 15px; */
-    }
-    .publisher{
-        height: 502px;
-    }
-    .publisher .center{
-        margin-top: 79px;
-    }
-    .publisher .center .cLogo img{
-        width: 190px;
-        height: 190px;
-    }
-    .publisher .center p{
-        font-size: 23px;
-    }
-    .publisher .left .lLogo img, .publisher .right .rLogo img{
-        width: 308px;
-        height: 464px;
-    }
-    .publisher .left .lContent1>div img{
-        width: 87px;
-        height: 64px;
-    }
-    .publisher .left .lContent1 p{
-        width:236px;
-        font-size:13px;
-        line-height:31px;
-        margin-top: 15px;
-    }
-    .publisher .left .lContent1>div{
-        margin-top: -30px;
-        margin-left: 20px;
-    }
-    .publisher .left .lContent2>div img{
-        width: 73px;
-        height: 61px;
-    }
-    .publisher .left .lContent2>div{
-        margin-left: 40px;
-    }
-    .publisher .left .lContent2{
-        bottom: 40px;
-    }
-    .publisher .left .lContent2 p{
-        width:236px;
-        font-size:13px;
-        line-height:31px;
-        margin-top: 15px;
-    }
-    .publisher .right .lContent1>div{
-        margin-left: -25px;
-    }
-    .publisher .right .lContent1>div img{
-        width:66px;
-        height:71px;
-    }
-    .publisher .right .lContent1{
-        left: 220px;
-        top: 20px;
-    }
-    .publisher .right .lContent1 p{
-        width:148px;
-        font-size:13px;
-        line-height:31px;
-    }
-    .publisher .right .lContent2>div{
-        margin-left: -45px;
-        margin-bottom:5px;
-    }
-    .publisher .right .lContent2{
-        bottom:20px;
-        left: 240px;
-    }
-    .publisher .right .lContent2>div img{
-        width: 83px;
-        height: 72px;
-    }
-    .publisher .right .lContent2 p{
-        width:226px;
-        font-size:13px;
-        line-height:29px;
-    }
-    .forWorldDescrs .eachDescrs{
-        width:248px;
-        height:266px;
-        padding: 45px 20px 0 25px;
-        box-sizing: border-box;
-    }
-    .forWorldDescrs .eachDescr .logo1 img{
-        width: 157px;
-        height: 141px;
-    }
-    .forWorldDescrs .eachDescr .logo2 img{
-        width: 146px;
-        height: 117px;
-    }
-    .forWorldDescrs .eachDescr .logo1{
-        top: -95px;
-    }
-    .forWorldDescrs .eachDescr .logo2{
-        left: 85px;
-        top: -70px;
-    }
-    .eachDescrs h3{
-        font-size:19px;
-    }
-    .eachDescrs p{
-        font-size:16px;
-        line-height:31px;
-        margin-top: 10px;
-    }
-    footer{
-        height: 290px;
-    }
-    footer h2{
-        font-size:25px;
-        margin: 84px 0 15px 206px;
-    }
-    footer>div i img {
-        width: 22px;
-        height: 18px;
-        margin-top: 4px;
-    }
-    footer>div label{
-        font-size:20px;
-    }
-    footer>p{
-        font-size:16px;
-        margin-top:70px;
-    }
+@media (max-width: 1200px) {
+  .partner {
+    width: 1200px;
+  }
+  header {
+    height: 478px;
+  }
+  .header {
+    height: 80px;
+  }
+  .navList {
+    /* margin-left: 30px; */
+    margin-right: 50px;
+  }
+  .navList li {
+    font-size: 13px;
+    margin-left: 48px;
+  }
+  .navList li:last-child .select {
+    width: 95px;
+    height: 96px;
+    left: -10px;
+  }
+  .navList li:last-child .select .bg img{
+    width: 95px;
+    height: 86px;
+  }
+
+  .navList li:last-child .select > div span {
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .logo img {
+    margin-left: 120px;
+    width: 110px;
+    height: 33px;
+  }
+  .descr {
+    margin-right: 200px;
+  }
+  .descr span:nth-child(1) {
+    width: 62px;
+    height: 19px;
+    font-size: 9px;
+    line-height: 19px;
+  }
+  .descr span:nth-child(2) {
+    font-size: 14px;
+  }
+  .headContent .headLogo {
+    right: 30px;
+  }
+  .headContent .headLogo img {
+    width: 357px;
+    height: 389px;
+  }
+  .headContent .headTalk {
+    margin-top: 100px;
+    margin-left: 130px;
+  }
+  .headContent .headTalk > div {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  .headContent .headTalk p img {
+    width: 101px;
+    height: 132px;
+  }
+  .headContent .headTalk > div p {
+    font-size: 36px;
+  }
+  .mebers .head {
+    width: 699px;
+    height: 38px;
+    margin: 90px auto;
+  }
+  .mebers .head {
+    margin-bottom: 50px;
+  }
+  .mebers .head .bg {
+    width: 699px;
+    height: 38px;
+  }
+  .vision .head p {
+    font-size: 25px;
+    margin-left: -65px;
+  }
+  .mebers .head p {
+    font-size: 25px;
+    margin-left: -75px;
+  }
+  .forWorldDescr {
+    margin-top: 180px;
+  }
+  .forWorldDescr .eachDescr {
+    width: 341px;
+    margin-left: 20px;
+  }
+  .forWorldDescr .eachDescrs {
+    width: 341px;
+    height: 273px;
+    padding: 50px 18px 0 20px;
+    box-sizing: border-box;
+  }
+  .forWorldDescr .eachDescrs h3 {
+    font-size: 19px;
+    line-height: 28px;
+  }
+  .forWorldDescr .eachDescrs p {
+    font-size: 16px;
+    line-height: 31px;
+    margin-top: 15px;
+  }
+  .eachDescrs i img {
+    width: 40px;
+    height: 3px;
+  }
+  .forWorldDescr .eachDescr .logo1 img {
+    width: 174px;
+    height: 160px;
+  }
+  .forWorldDescr .eachDescr .logo1 {
+    top: -110px;
+    margin-left: -28.5%;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo1 {
+    top: -105px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo1 img {
+    width: 174px;
+    height: 151px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo3 {
+    left: 16%;
+  }
+  .forWorldDescr .eachDescr .logo2 {
+    /* margin-left: -14%; */
+    top: -78px;
+  }
+  .forWorldDescr .eachDescr .logo2 img {
+    width: 146px;
+    height: 129px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo2 {
+    top: -75px;
+  }
+  .service {
+    width: 823px;
+    height: 196px;
+    margin: 180px auto;
+  }
+  .service .logo img {
+    width: 237px;
+    height: 204px;
+    right: 30px;
+  }
+  .service h2 {
+    font-size: 28px;
+    margin: 29px 0 30px 36px;
+  }
+  .service p {
+    font-size: 18px;
+    margin-left: 36px;
+    /* margin-bottom: 15px; */
+  }
+  .publisher {
+    height: 502px;
+  }
+  .publisher .center {
+    margin-top: 79px;
+  }
+  .publisher .center .cLogo img {
+    width: 190px;
+    height: 190px;
+  }
+  .publisher .center p {
+    font-size: 23px;
+  }
+  .publisher .left .lLogo img,
+  .publisher .right .rLogo img {
+    width: 308px;
+    height: 464px;
+  }
+  .publisher .left .lContent1 > div img {
+    width: 87px;
+    height: 64px;
+  }
+  .publisher .left .lContent1 p {
+    width: 236px;
+    font-size: 13px;
+    line-height: 31px;
+    margin-top: 15px;
+  }
+  .publisher .left .lContent1 > div {
+    margin-top: -30px;
+    margin-left: 20px;
+  }
+  .publisher .left .lContent2 > div img {
+    width: 73px;
+    height: 61px;
+  }
+  .publisher .left .lContent2 > div {
+    margin-left: 40px;
+  }
+  .publisher .left .lContent2 {
+    bottom: 40px;
+  }
+  .publisher .left .lContent2 p {
+    width: 236px;
+    font-size: 13px;
+    line-height: 31px;
+    margin-top: 15px;
+  }
+  .publisher .right .lContent1 > div {
+    margin-left: -25px;
+  }
+  .publisher .right .lContent1 > div img {
+    width: 66px;
+    height: 71px;
+  }
+  .publisher .right .lContent1 {
+    left: 220px;
+    top: 20px;
+  }
+  .publisher .right .lContent1 p {
+    width: 148px;
+    font-size: 13px;
+    line-height: 31px;
+  }
+  .publisher .right .lContent2 > div {
+    margin-left: -45px;
+    margin-bottom: 5px;
+  }
+  .publisher .right .lContent2 {
+    bottom: 20px;
+    left: 240px;
+  }
+  .publisher .right .lContent2 > div img {
+    width: 83px;
+    height: 72px;
+  }
+  .publisher .right .lContent2 p {
+    width: 226px;
+    font-size: 13px;
+    line-height: 29px;
+  }
+  .forWorldDescrs .eachDescrs {
+    width: 248px;
+    height: 266px;
+    padding: 45px 20px 0 25px;
+    box-sizing: border-box;
+  }
+  .forWorldDescrs .eachDescr .logo1 img {
+    width: 157px;
+    height: 141px;
+  }
+  .forWorldDescrs .eachDescr .logo2 img {
+    width: 146px;
+    height: 117px;
+  }
+  .forWorldDescrs .eachDescr .logo1 {
+    top: -95px;
+  }
+  .forWorldDescrs .eachDescr .logo2 {
+    left: 85px;
+    top: -70px;
+  }
+  .eachDescrs h3 {
+    font-size: 19px;
+  }
+  .eachDescrs p {
+    font-size: 16px;
+    line-height: 31px;
+    margin-top: 10px;
+  }
+  footer {
+    height: 290px;
+  }
+  footer h2 {
+    font-size: 25px;
+    margin: 84px 0 15px 206px;
+  }
+  footer > div i img {
+    width: 22px;
+    height: 18px;
+    margin-top: 4px;
+  }
+  footer > div label {
+    font-size: 20px;
+  }
+  footer > p {
+    font-size: 16px;
+    margin-top: 70px;
+  }
 }
