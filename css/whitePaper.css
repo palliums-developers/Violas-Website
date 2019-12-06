@@ -558,13 +558,44 @@ footer > p {
 
   .introduction > .bg img {
     width: 1058px;
+    height:13160px;
   }
 
   .introductionContent {
     width: 1001px;
     margin-left: -500px;
   }
+  .introduction1 {
+    height: 2050px;
+  }
 
+  .introduction2 {
+    height: 2700px;
+  }
+
+  .introduction3 {
+    height: 2600px;
+  }
+
+  .introduction4 {
+    height: 1100px;
+  }
+
+  .introduction5 {
+    height: 1600px;
+  }
+
+  .introduction6 {
+    height: 1400px;
+  }
+
+  .introduction7 {
+    height: 1150px;
+  }
+
+  .introduction8 {
+    height: 500px;
+  }
   .onPageNav {
     /* width: 180px; */
   }
@@ -659,9 +690,12 @@ footer > p {
   }
 
   .header {
+    width: 1200px;
     height: 60px;
   }
-
+  .header .head{
+    width:1020px;
+  }
   .navList {
     /* margin-left: 30px; */
     margin-right: 50px;
@@ -694,7 +728,7 @@ footer > p {
   }
 
   .descr {
-    margin-right: 200px;
+    margin-right: 100px;
   }
 
   .descr span:nth-child(1) {
@@ -712,7 +746,7 @@ footer > p {
     width: 283px;
     height: 284px;
     right: 330px;
-    top: -50px;
+    top: -20px;
   }
 
   .headContent .headLogo img {
@@ -722,7 +756,7 @@ footer > p {
 
   .headContent .headTalk {
     margin-top: 70px;
-    margin-left: 150px;
+    margin-left: 210px;
   }
 
   .headContent .headTalk p img {
@@ -731,8 +765,8 @@ footer > p {
   }
 
   .headContent .headTalk p {
-    width: 408px;
-    font-size: 25px;
+    width: 340px;
+    font-size: 20px;
     line-height: 45px;
     margin-top: 10px;
   }
