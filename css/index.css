@@ -1015,7 +1015,7 @@ footer > p {
     overflow: hidden;
   }
   .header {
-    height: 80px;
+    height: 60px;
   }
   .navList {
     /* margin-left: 30px; */
@@ -1072,6 +1072,7 @@ footer > p {
   }
   .default .headContent .headTalk p:nth-child(1) label {
     font-size: 33px;
+    font-family: '黑体';
   }
   .default .headContent .headTalk p:nth-child(1) img {
     width: 197px;
@@ -1082,6 +1083,7 @@ footer > p {
   }
   .default .headContent .headTalk p:nth-child(2) label {
     font-size: 25px;
+    font-family: '黑体';
   }
   .default .headContent .headTalk p:nth-child(2) img {
     width: 47px;

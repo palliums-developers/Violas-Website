@@ -255,7 +255,7 @@ section {
 
 .introduction > .bg img {
   width: 1270px;
-  height: 16210px;
+  height: 15770px;
 }
 
 .introductionContent {
@@ -275,14 +275,14 @@ section {
 
 .introduction1 {
   /* width: 80%; */
-  height: 2430px;
+  height: 2300px;
   position: relative;
   /* right:0; */
   overflow: hidden;
 }
 
 .introduction2 {
-  height: 3480px;
+  height: 3250px;
 }
 
 .introduction3 {
@@ -659,7 +659,7 @@ footer > p {
   }
 
   .header {
-    height: 80px;
+    height: 60px;
   }
 
   .navList {
@@ -743,7 +743,7 @@ footer > p {
 
   .introduction > .bg img {
     width: 793px;
-    height: 10550px;
+    height: 10150px;
   }
 
   .introductionContent {
@@ -770,11 +770,11 @@ footer > p {
   }
 
   .introduction1 {
-    height: 1400px;
+    height: 1300px;
   }
 
   .introduction2 {
-    height: 2000px;
+    height: 1900px;
   }
 
   .introduction3 {
@@ -782,7 +782,7 @@ footer > p {
   }
 
   .introduction4 {
-    height: 1000px;
+    height: 900px;
   }
 
   .introduction5 {
@@ -790,7 +790,7 @@ footer > p {
   }
 
   .introduction6 {
-    height: 1300px;
+    height: 1200px;
   }
 
   .introduction7 {
