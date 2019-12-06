@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/whitePaper.css">
-  <link rel="icon" href="./img/hLogo.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="./img/hLogo.ico" type="image/x-icon">
+  <link rel="icon" href="./img/hLogo.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="./img/hLogo.ico" type="image/x-icon" />
   <script src="js/scrollSpy.js"></script>
   <title>Violas</title>
 </head>
@@ -407,7 +407,7 @@
   }
   window.onscroll = function () {
     let topScroll = document.documentElement.scrollTop;
-    // console.log(topScroll);
+    console.log(topScroll);
     let client_width = document.body.clientWidth;
     // console.log(client_width)
     let bignav = document.querySelector(".header");//获取到导航栏id
@@ -420,24 +420,32 @@
       bignav.style.position = 'static';
       bignav.style.background = '0';
     }
-    if (topScroll > 795) {
+    if (topScroll > 795 && client_width > 1188) {
       document.querySelector('.onPageNav').style.position = "fixed";
       document.querySelector('.onPageNav').style.top = 0;
       if (client_width > 1188) {
-        document.querySelector('.introduction0').style.marginLeft = "200px";
+        document.querySelector('.introduction0').style.marginLeft = "250px";
+      } else {
+        document.querySelector('.introduction0').style.marginLeft = "170px";
+      }
+    } else if (topScroll > 690 && client_width <= 1188) {
+      document.querySelector('.onPageNav').style.position = "fixed";
+      document.querySelector('.onPageNav').style.top = "-100px";
+      if (client_width > 1188) {
+        document.querySelector('.introduction0').style.marginLeft = "250px";
       } else {
         document.querySelector('.introduction0').style.marginLeft = "170px";
       }
     } else {
-      document.querySelector('.introduction0').style.marginLeft = "0px";
+      document.querySelector('.introduction0').style.marginLeft = "50px";
       document.querySelector('.introduction1').style.overflow = "hidden";
       document.querySelector('.onPageNav').style.position = "static";
     }
-    if(client_width>1188&&client_width<=1600&&topScroll>13111){
+    if (client_width > 1188 && client_width <= 1600 && topScroll > 13111) {
       document.querySelector('.onPageNav').style.position = "static";
       document.querySelector('.introduction0').style.marginLeft = "0px";
     }
-    if(client_width<=1188&&topScroll>10007){
+    if (client_width <= 1188 && topScroll > 10007) {
       document.querySelector('.onPageNav').style.position = "static";
       document.querySelector('.introduction0').style.marginLeft = "0px";
     }
