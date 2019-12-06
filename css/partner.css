@@ -134,8 +134,9 @@ header {
 }
 .headContent .headTalk {
   display: flex;
-  margin-top: 150px;
-  margin-left: 30px;
+  position: absolute;
+  left: -35px;
+  bottom:200px;
 }
 
 .headContent .headTalk p {
@@ -146,7 +147,7 @@ header {
   margin-top: 15px;
 }
 .headContent .headTalk > div {
-  margin-left: 45px;
+  margin-left: 40px;
   margin-top: 20px;
 }
 .headContent .headTalk p > span {
@@ -160,8 +161,8 @@ header {
   width: 572px;
   height: 622px;
   position: absolute;
-  right: -100px;
-  top: 0;
+  right: -50px;
+  bottom: 10px;
   display: flex;
 }
 .mebers .head {
@@ -634,15 +635,17 @@ footer > p {
     font-size: 20px;
   }
   .headContent .headLogo {
-    top: -15px;
+    width: 478px;
+    height: 518px;
+    right: 70px;
   }
   .headContent .headLogo img {
     width: 478px;
     height: 518px;
   }
   .headContent .headTalk {
-    margin-top: 130px;
-    margin-left: 135px;
+    left:70px;
+    bottom: 200px;
   }
   .headContent .headTalk p img {
     width: 135px;
@@ -854,6 +857,7 @@ footer > p {
     height: 478px;
   }
   .header {
+    width: 1200px;
     height: 60px;
   }
   .navList {
@@ -886,7 +890,7 @@ footer > p {
     height: 33px;
   }
   .descr {
-    margin-right: 200px;
+    margin-right: 100px;
   }
   .descr span:nth-child(1) {
     width: 62px;
@@ -898,15 +902,17 @@ footer > p {
     font-size: 14px;
   }
   .headContent .headLogo {
-    right: 30px;
+    width: 357px;
+    height: 389px;
+    right: 200px;
   }
   .headContent .headLogo img {
     width: 357px;
     height: 389px;
   }
   .headContent .headTalk {
-    margin-top: 100px;
-    margin-left: 130px;
+      left: 220px;
+      bottom: 120px;
   }
   .headContent .headTalk > div {
     margin-left: 25px;

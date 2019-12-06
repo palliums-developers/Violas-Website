@@ -133,8 +133,9 @@ header {
   justify-content: space-between;
 }
 .headContent .headTalk {
-  margin-top: 150px;
-  margin-left: 100px;
+  position: absolute;
+  left: 100px;
+  bottom: 150px;
 }
 .headContent .headTalk p img {
   width: 405px;
@@ -160,8 +161,8 @@ header {
   width: 474px;
   height: 369px;
   position: absolute;
-  right: 100px;
-  top: 100px;
+  right: 40px;
+  bottom: 50px;
 }
 section {
   width: 100%;
@@ -246,7 +247,7 @@ section {
   height: 711px;
 }
 .tenAgo .bgContent > .content {
-  width: 309px;
+  width: 329px;
   margin-top: 100px;
   margin-left:120px;
 }
@@ -414,6 +415,11 @@ footer > p {
   .descr span:nth-child(2) {
     font-size: 20px;
   }
+  .headContent .headLogo{
+    width: 395px;
+    height: 308px;
+    right:120px ;
+  }
   .headContent .headLogo img {
     width: 395px;
     height: 308px;
@@ -485,6 +491,9 @@ footer > p {
   }
   .tenAgo .bgContent > .content h3 {
     font-size: 44px;
+  }
+  .tenAgo .bgContent > .content ul{
+    margin-right: 55px;
   }
   .tenAgo .bgContent > .content ul li {
     font-size: 25px;
@@ -580,7 +589,10 @@ footer > p {
     font-size: 18px;
   }
   header {
-    height: 451px;
+    height: 401px;
+  }
+  .header{
+    width: 1200px;
   }
   .logo img {
     margin-left: 120px;
@@ -588,7 +600,7 @@ footer > p {
     height: 33px;
   }
   .descr {
-    margin-right: 200px;
+    margin-right: 100px;
   }
   .descr span:nth-child(1) {
     width: 62px;
@@ -604,11 +616,15 @@ footer > p {
     height: 231px;
   }
   .headContent .headTalk {
-    margin-top: 80px;
-    margin-left: 220px;
+    /* margin-top: 80px;
+    margin-left: 220px; */
+    left: 150px;
+    bottom: 100px;
   }
   .headContent .headLogo {
-    top: 90px;
+    width: 296px;
+    height: 231px;
+    right: 230px;
   }
   .headContent .headTalk p img {
     width: 253px;
@@ -679,7 +695,7 @@ footer > p {
   .tenAgo .bgContent > .content h3 {
     font-size: 33px;
     margin-bottom: 40px;
-    margin-left: 200px;
+    margin-left: 170px;
   }
   .tenAgo .bgContent > .content ul li {
     font-size: 19px;

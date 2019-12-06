@@ -134,12 +134,14 @@ header {
   justify-content: space-between;
 }
 .headContent .headTalk {
-  margin-top: 150px;
-  margin-left: 100px;
+  position: absolute;
+  left:60px;
+  bottom: 150px;
 }
 .headContent .headTalk p img {
   width: 466px;
   height: 85px;
+  margin-left: -10px;
 }
 .headContent .headTalk p {
   width: 409px;
@@ -161,8 +163,8 @@ header {
   width: 474px;
   height: 373px;
   position: absolute;
-  right: 130px;
-  top: 100px;
+  right: 100px;
+  bottom: 50px;
 }
 .listDescr {
   width: 1270px;
@@ -320,15 +322,16 @@ footer > p {
     margin-left: 20px;
   }
   .headContent .headLogo {
-    right: 60px;
+    width: 395px;
+    height: 311px;
+    right: 200px;
   }
   .headContent .headLogo img {
     width: 395px;
     height: 311px;
   }
   .headContent .headTalk {
-    margin-top: 120px;
-    margin-left: 130px;
+    left:150px ;
   }
   .headContent .headTalk p img {
     width: 337px;
@@ -413,10 +416,11 @@ footer > p {
     width: 1200px;
   }
   header {
-    height: 451px;
+    height: 401px;
   }
   .header {
-    height: 600px;
+    width: 1200px;
+    height: 60px;
   }
   .navList {
     margin-right: 50px;
@@ -450,7 +454,7 @@ footer > p {
     height: 33px;
   }
   .descr {
-    margin-right: 200px;
+    margin-right: 100px;
   }
   .descr span:nth-child(1) {
     width: 62px;
@@ -462,16 +466,18 @@ footer > p {
     font-size: 14px;
   }
   .headContent .headLogo {
-    right: 130px;
-    top: 90px;
+    width: 296px;
+    height: 233px;
+    right: 260px;
+    /* top: 90px; */
   }
   .headContent .headLogo img {
     width: 296px;
     height: 233px;
   }
   .headContent .headTalk {
-    margin-top: 100px;
-    margin-left: 200px;
+   left: 280px;
+   bottom: 100px;
   }
   .headContent .headTalk p img {
     width: 253px;

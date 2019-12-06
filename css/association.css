@@ -136,8 +136,11 @@ header {
   justify-content: space-between;
 }
 .headContent .headTalk {
-  margin-top: 100px;
-  margin-left: 30px;
+  /* margin-top:100px;
+  margin-left:-30px; */
+  position: absolute;
+  left: -30px;
+  bottom:220px;
 }
 .headContent .headTalk p img {
   width: 405px;
@@ -162,7 +165,7 @@ header {
   height: 598px;
   position: absolute;
   right: -30px;
-  top: 20px;
+  bottom: 20px;
 }
 section {
   width: 100%;
@@ -529,14 +532,14 @@ footer > p {
     font-size: 20px;
   }
   .headContent .headTalk {
-    margin-left: 135px;
-    margin-top: 60px;
+    left: 70px;
+    bottom: 150px;
   }
   .headContent .headLogo {
     width: 485px;
     height: 498px;
-    right: -20px;
-    top: -5px;
+    right: 70px;
+    bottom: 10px;
   }
   .headContent .headLogo img {
     width: 485px;
@@ -721,6 +724,7 @@ footer > p {
     height: 479px;
   }
   .header {
+    width: 1200px;
     height: 60px;
   }
   .navList {
@@ -753,7 +757,7 @@ footer > p {
     height: 33px;
   }
   .descr {
-    margin-right: 200px;
+    margin-right: 100px;
   }
   .descr span:nth-child(1) {
     width: 62px;
@@ -765,14 +769,14 @@ footer > p {
     font-size: 14px;
   }
   .headContent .headTalk {
-    margin-left: 130px;
-    margin-top: 20px;
+    left: 220px;
+    /* bottom: 150px; */
   }
   .headContent .headLogo {
     width: 364px;
     height: 374px;
-    right: 230px;
-    top: -5px;
+    right: 200px;
+    bottom: 5px;
   }
   .headContent .headLogo img {
     width: 364px;

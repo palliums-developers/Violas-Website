@@ -138,7 +138,7 @@ header {
 }
 .default .headContent .headLogo {
   position: absolute;
-  right: -280px;
+  right: -200px;
   bottom: 0;
   width: 1000px;
   /* height: 913px; */
@@ -150,8 +150,8 @@ header {
 }
 .default .headContent .headTalk {
   position: absolute;
-  left: 2%;
-  bottom: 300px;
+  left:-3%;
+  bottom: 250px;
   z-index: 99;
   display: flex;
   flex-direction: column;
@@ -160,19 +160,24 @@ header {
   display: flex;
   align-items: center;
 }
+.default .headContent .headTalk p:nth-child(1){
+  display: flex;
+  flex-direction: column;
+}
 .default .headContent .headTalk p:nth-child(1) label {
   font-size: 71px;
   font-family: "黑体";
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
+  margin-left: -10px;
 }
 .default .headContent .headTalk p:nth-child(1) img {
   width: 316px;
   height: 86px;
-  margin-left: 20px;
+  margin-top: 20px;
 }
 .default .headContent .headTalk p:nth-child(2) {
-  margin-top: 56px;
+  margin-top: 46px;
 }
 .default .headContent .headTalk p:nth-child(2) label {
   font-size: 40px;
@@ -714,7 +719,8 @@ footer > p {
     height: 760px;
   }
   .default .headContent .headTalk {
-    left: 150px;
+    left: 70px;
+    bottom: 300px;
   }
   .default .headContent .headTalk p:nth-child(1) {
     align-items: flex-start;
@@ -729,6 +735,7 @@ footer > p {
   }
   .default .headContent .headTalk p:nth-child(1) label {
     font-size: 44px;
+    margin-left: 0;
   }
   .default .headContent .headTalk p:nth-child(2) {
     margin-top: 25px;
@@ -1024,9 +1031,6 @@ footer > p {
     width: 1200px;
     height: 60px;
   }
-  .header .head{
-    width:1050px;
-  }
   .navList {
     /* margin-left: 30px; */
     margin-right: 50px;
@@ -1077,7 +1081,7 @@ footer > p {
     height: 571px;
   }
   .default .headContent .headTalk {
-    left: 200px;
+    left: 225px;
     bottom: 210px;
   }
   .default .headContent .headTalk p:nth-child(1) label {
