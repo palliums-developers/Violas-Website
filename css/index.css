@@ -1021,7 +1021,11 @@ footer > p {
     overflow: hidden;
   }
   .header {
+    width: 1200px;
     height: 60px;
+  }
+  .header .head{
+    width:1050px;
   }
   .navList {
     /* margin-left: 30px; */
@@ -1053,7 +1057,7 @@ footer > p {
     height: 33px;
   }
   .descr {
-    margin-right: 200px;
+    margin-right: 100px;
   }
   .descr span:nth-child(1) {
     width: 62px;

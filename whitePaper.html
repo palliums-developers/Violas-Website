@@ -433,6 +433,10 @@
       document.querySelector('.introduction1').style.overflow = "hidden";
       document.querySelector('.onPageNav').style.position = "static";
     }
+    if(client_width>1188&&client_width<=1600&&topScroll>13111){
+      document.querySelector('.onPageNav').style.position = "static";
+      document.querySelector('.introduction0').style.marginLeft = "0px";
+    }
     if(client_width<=1188&&topScroll>10007){
       document.querySelector('.onPageNav').style.position = "static";
       document.querySelector('.introduction0').style.marginLeft = "0px";
