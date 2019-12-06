@@ -41,7 +41,7 @@ header {
 }
 
 .logo img {
-  margin-left: 280px;
+  /* margin-left: 150px; */
   width: 173px;
   height: 55px;
 }
@@ -313,6 +313,12 @@ footer > p {
     font-size: 20px;
     line-height: 40px;
   }
+  .header .head {
+     width: 1000px;
+  }
+  .logo img{
+    margin-left: 20px;
+  }
   .headContent .headLogo {
     right: 60px;
   }
@@ -434,6 +440,9 @@ footer > p {
     height: 35px;
     line-height: 35px;
     font-size: 18px;
+  }
+  .descr span:nth-child(2) {
+    font-size: 20px;
   }
   .logo img {
     margin-left: 120px;

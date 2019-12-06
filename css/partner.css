@@ -41,7 +41,7 @@ header {
 }
 
 .logo img {
-  margin-left: 150px;
+  /* margin-left: 150px; */
   width: 173px;
   height: 55px;
 }
@@ -602,6 +602,9 @@ footer > p {
   header {
     height: 610px;
   }
+  .header .head{
+    width: 1000px;
+  }
   .navList {
     margin-left: 40px;
     margin-right: 150px;
@@ -624,6 +627,12 @@ footer > p {
     font-size: 20px;
     line-height: 40px;
   }
+  .logo img{
+    margin-left: 20px;
+  }
+  .descr span:nth-child(2) {
+    font-size: 20px;
+  }
   .headContent .headLogo {
     top: -15px;
   }
@@ -633,6 +642,7 @@ footer > p {
   }
   .headContent .headTalk {
     margin-top: 130px;
+    margin-left: 135px;
   }
   .headContent .headTalk p img {
     width: 135px;

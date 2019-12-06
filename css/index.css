@@ -47,7 +47,7 @@ header {
 }
 
 .logo img {
-  margin-left: 150px;
+  /* margin-left: 150px; */
   width: 173px;
   height: 55px;
 }
@@ -424,7 +424,7 @@ section {
   display: flex;
 }
 .whitePaper .content .hLogo {
-  margin-left: 5%;
+  margin-left: -2%;
   position: relative;
   z-index: 9;
 }
@@ -593,7 +593,7 @@ section {
 
 .deepIntroduce > .association .content .con {
   /* height: 500px; */
-  margin-left: 6%;
+  margin-left: 10%;
   margin-top: 200px;
 }
 .deepIntroduce > .association .content .con h3 {
@@ -671,6 +671,9 @@ footer > p {
 }
 
 @media (max-width: 1600px) {
+  .header .head{
+    width: 1000px;
+  }
   .navList {
     margin-left: 40px;
     margin-right: 150px;
@@ -692,6 +695,9 @@ footer > p {
     height: 40px;
     font-size: 20px;
     line-height: 40px;
+  }
+  .logo img{
+    margin-left: 20px;
   }
   .descr span:nth-child(2) {
     font-size: 20px;
@@ -852,7 +858,7 @@ footer > p {
     top: -125px;
   }
   .whitePaper .content .hLogo {
-    margin-left: 10%;
+    margin-left: 5%;
   }
   .whitePaper .content .hLogo img {
     width: 544px;
@@ -928,7 +934,7 @@ footer > p {
     margin-top: -2%;
   }
   .deepIntroduce > .association .content .con {
-    margin-left: 13%;
+    margin-left: 20%;
     margin-top: 200px;
   }
   .deepIntroduce > .association .content .hLogo img {

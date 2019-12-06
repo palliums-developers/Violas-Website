@@ -40,7 +40,7 @@ header {
 }
 
 .logo img {
-  margin-left: 280px;
+  /* margin-left: 150px; */
   width: 173px;
   height: 55px;
 }
@@ -183,7 +183,7 @@ section {
 }
 .thrAgo .bgContent {
   position: absolute;
-  top: 0;
+  top:20px;
   display: flex;
   left: 10%;
 }
@@ -247,8 +247,8 @@ section {
 }
 .tenAgo .bgContent > .content {
   width: 309px;
-  margin-top: 90px;
-  margin-left: 70px;
+  margin-top: 100px;
+  margin-left:120px;
 }
 .tenAgo .bgContent > .content h3 {
   font-size: 53px;
@@ -383,6 +383,9 @@ footer > p {
   header {
     height: 535px;
   }
+  .header .head {
+   width: 1000px;
+  }
   .navList {
     margin-left: 40px;
     margin-right: 150px;
@@ -404,6 +407,12 @@ footer > p {
     height: 40px;
     font-size: 20px;
     line-height: 40px;
+  }
+  .logo img{
+    margin-left: 20px;
+  }
+  .descr span:nth-child(2) {
+    font-size: 20px;
   }
   .headContent .headLogo img {
     width: 395px;
@@ -447,7 +456,7 @@ footer > p {
     left: 19%;
   }
   .thrAgo .bgContent .logo {
-    margin-left: 20px;
+    margin-left: -20px;
     margin-top: -50px;
   }
   .tenAgo {
@@ -464,11 +473,15 @@ footer > p {
     margin-left: -100px;
   }
   .tenAgo .bgContent .logo {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: -10px;
   }
   .tenAgo .bgContent .logo img {
     width: 560px;
     height: 582px;
+  }
+  .tenAgo .bgContent > .content{
+     margin-left: 70px;
   }
   .tenAgo .bgContent > .content h3 {
     font-size: 44px;
@@ -478,6 +491,7 @@ footer > p {
   }
   .listDescr {
     width: 1058px;
+    margin: 100px auto;
   }
   .listDescr .listContent .who img {
     width: 439px;
