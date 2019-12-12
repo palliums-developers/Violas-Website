@@ -376,7 +376,11 @@
   let selects = document.querySelector('.navList .select');
   let docum = document.querySelector('.navList #docu');
   let lists = document.querySelectorAll('.select .list span');
+  let curLogo = document.querySelector('.logo');
   selects.style.display = 'none'
+  curLogo.onclick = function () {
+    window.location = 'index.html'
+  }
   let wPaper = document.getElementById('whitePaper');
   wPaper.onclick = function () {
     wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";

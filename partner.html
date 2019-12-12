@@ -167,7 +167,11 @@
    let selects = document.querySelector('.navList .select');
    let docum = document.querySelector('.navList #docu');
    let lists = document.querySelectorAll('.select .list span');
-   selects.style.display = 'none'
+   let curLogo = document.querySelector('.logo');
+    selects.style.display = 'none'
+    curLogo.onclick = function () {
+      window.location = 'index.html'
+    }
    docum.onclick = function(){
       if(selects.style.display == 'none'){
          docum.style.color = "rgba(62, 209, 246, 1)"
