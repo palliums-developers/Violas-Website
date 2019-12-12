@@ -30,14 +30,15 @@
             </ul>
             <div class="descr">
               <span id="whitePaper">White Paper</span>
-              <a href="../ja/index.html"><span>日本語</span></a>
-              <a href="../ko/index.html"><span>한국어 </span></a>
+              <!-- <a href="../ja/index.html"><span>日本語</span></a>
+              <a href="../ko/index.html"><span>한국어 </span></a> -->
             </div>
           </div>
         </div>
         <div class="headContent">
           <div class="headTalk">
-            <p><img src="../img/white.png" /></p>
+            <!-- <p><img src="../img/white.png" /></p> -->
+            <h2>Violas White Paper</h2>
             <p>Violas' mission is to build a global financial ecosystem that allows governments and organizations to
               create their own stablecoins backed by their local fiat currency. This ecosystem will exist on top of
               Libra technology, allowing it to reach billions of people for use in daily transactions as well as
@@ -59,15 +60,15 @@
           <div class="introductionContent">
             <nav class="onPageNav">
               <ul class="toc-headings">
-                <li><a href="whitePaper.html#Sharing">01 Sharing </a></li>
-                <li><a href="whitePaper.html#Concerns and Challenges">02 Concerns and Challenges  </a></li>
-                <li><a href="whitePaper.html#Introducing">03 Introducing</a></li>
-                <li><a href="whitePaper.html#Violas Blockchain">04 Violas Blockchain</a></li>
-                <li><a href="whitePaper.html#Wallet, SDK and API">05 Wallet, SDK and API</a></li>
-                <li><a href="whitePaper.html#Currencies and Reserves">06 Currencies and Reserves</a></li>
-                <li><a href="whitePaper.html#Association">07 Association</a></li>
-                <li><a href="whitePaper.html#Involved">08 Involved</a></li>
-                <li><a href="whitePaper.html#Conclusion">09 Conclusion</a></li>
+                <li><a href="whitePaper.html#Sharing">1 Sharing</a></li>
+                <li><a href="whitePaper.html#Concerns and Challenges">2 Concerns</a></li>
+                <li><a href="whitePaper.html#Introducing">3 Introducing</a></li>
+                <li><a href="whitePaper.html#Violas Blockchain">4 Blockchain</a></li>
+                <li><a href="whitePaper.html#Wallet, SDK and API">5 Wallet</a></li>
+                <li><a href="whitePaper.html#Currencies and Reserves">6 Currencies</a></li>
+                <li><a href="whitePaper.html#Association">7 Association</a></li>
+                <li><a href="whitePaper.html#Involved">8 Involved</a></li>
+                <li><a href="whitePaper.html#Conclusion">9 Conclusion</a></li>
               </ul>
             </nav>
             <div class="introduction0">
@@ -403,34 +404,34 @@
       document.querySelector('.onPageNav').style.position = "fixed";
       document.querySelector('.onPageNav').style.top = 0;
       if (client_width > 1188) {
-        document.querySelector('.introduction0').style.marginLeft = "250px";
+        document.querySelector('.introduction0').style.marginLeft = "205px";
       } else {
         document.querySelector('.introduction0').style.marginLeft = "170px";
       }
-    } else if (topScroll > 690 && client_width <= 1188) {
+    } else if (topScroll > 650 && client_width <= 1188) {
       document.querySelector('.onPageNav').style.position = "fixed";
       document.querySelector('.onPageNav').style.top = "-100px";
       if (client_width > 1188) {
-        document.querySelector('.introduction0').style.marginLeft = "250px";
+        document.querySelector('.introduction0').style.marginLeft = "205px";
       } else {
-        document.querySelector('.introduction0').style.marginLeft = "170px";
+        document.querySelector('.introduction0').style.marginLeft = "175px";
       }
     } else {
-      document.querySelector('.introduction0').style.marginLeft = "50px";
+      document.querySelector('.introduction0').style.marginLeft = "5px";
       document.querySelector('.introduction1').style.overflow = "hidden";
       document.querySelector('.onPageNav').style.position = "static";
     }
-    if (client_width > 1188 && client_width <= 1600 && topScroll > 13111) {
+    if (client_width > 1188 && client_width <= 1600 && topScroll > 14447) {
       document.querySelector('.onPageNav').style.position = "static";
-      document.querySelector('.introduction0').style.marginLeft = "0px";
+      document.querySelector('.introduction0').style.marginLeft = "5px";
     }
-    if (client_width <= 1188 && topScroll > 10083) {
+    if (client_width <= 1188 && topScroll > 9800) {
       document.querySelector('.onPageNav').style.position = "static";
-      document.querySelector('.introduction0').style.marginLeft = "0px";
+      document.querySelector('.introduction0').style.marginLeft = "5px";
     }
     if (topScroll > 17010) {
       document.querySelector('.onPageNav').style.position = "static";
-      document.querySelector('.introduction0').style.marginLeft = "0px";
+      document.querySelector('.introduction0').style.marginLeft = "5px";
     }
   }
   let text = document.querySelectorAll('.head > ul > li');
