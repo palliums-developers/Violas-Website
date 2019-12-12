@@ -1,0 +1,982 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Times New Roman";
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+}
+.associations {
+  width: 100%;
+  background: rgba(44, 9, 108, 1);
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  /* height: 913px; */
+  display: flex;
+  flex-direction: column;
+  background: url("../img/编组 4@2x.png") no-repeat;
+  background-size: 100% 100%;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 99;
+}
+.header .head {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navList {
+  display: flex;
+}
+
+.logo img {
+  /* margin-left: 150px; */
+  width: 173px;
+  height: 55px;
+}
+.navList {
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  margin-left: 120px;
+  margin-right: 60px;
+}
+.navList li {
+  font-size: 20px;
+  /* font-family: "黑体"; */
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 30px;
+  /* margin-top: 15px; */
+  cursor: pointer;
+  white-space: nowrap;
+}
+.navList li:last-child {
+  position: relative;
+}
+.navList li:last-child .select {
+  width: 145px;
+  height: 116px;
+  position: relative;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  /* display: none; */
+}
+.navList li:last-child .select .bg {
+  position: absolute;
+  top: 0;
+}
+.navList li:last-child .select > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+}
+.navList li:last-child .select > div span {
+  width: 100%;
+  height: 50px;
+  font-size: 23px;
+  /* font-family: "黑体"; */
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.navList li:last-child .select .bg img {
+  width: 145px;
+  height: 116px;
+}
+.navList li.active {
+  color: rgba(62, 209, 246, 1);
+}
+
+.descr {
+  display: flex;
+  white-space: nowrap;
+}
+.descr span {
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.descr span:nth-child(1) {
+  /* width: 100px;
+  height: 31px; */
+  border: 1px solid #fff;
+  border-radius: 3px;
+  /* line-height: 31px; */
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.descr span:nth-child(2) {
+  font-size: 18px;
+}
+header {
+  height: 732px;
+}
+.headContent {
+  width: 1200px;
+  flex: 1;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.headContent .headTalk {
+  /* margin-top:100px;
+  margin-left:-30px; */
+  position: absolute;
+  left: -30px;
+  bottom:220px;
+}
+.headContent .headTalk p img {
+  width: 405px;
+  height: 75px;
+}
+.headContent .headTalk p {
+  width: 681px;
+  /* height:204px; */
+  font-size: 30px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(249, 249, 249, 1);
+  line-height: 60px;
+  margin-top: 20px;
+}
+.headContent .headLogo img {
+  width: 582px;
+  height: 598px;
+}
+.headContent .headLogo {
+  width: 582px;
+  height: 598px;
+  position: absolute;
+  right: -30px;
+  bottom: 20px;
+}
+section {
+  width: 100%;
+  height: auto;
+}
+.vision .head,
+.mebers .head {
+  width: 1118px;
+  height: 61px;
+  margin: 130px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.vision .head .bg,
+.mebers .head .bg {
+  width: 1118px;
+  height: 61px;
+}
+.vision .head .bg img,
+.mebers .head .bg img {
+  width: 100%;
+}
+.vision .head p,
+.mebers .head p {
+  position: absolute;
+  left: 47%;
+  margin-left: -120px;
+  top: 0;
+  font-size: 40px;
+  color: rgba(248, 248, 248, 1);
+  font-weight: 400;
+}
+.mebers .head p {
+  left: 53.5%;
+  top: 5px;
+}
+.vision .headDescr {
+  width: 707px;
+  height: 496px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.vision .headDescr .bg img {
+  width: 496x;
+  height: 496px;
+}
+.vision .headDescr h3 {
+  font-size: 53px;
+  font-family:"黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  top: 140px;
+}
+.vision .headDescr p {
+  font-size: 30px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 0.8);
+  position: absolute;
+  left: 20px;
+  top: 230px;
+  text-align: center;
+  line-height: 64px;
+}
+.forWorldDescr {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+}
+.forWorldDescr .eachDescr {
+  width: 546px;
+  position: relative;
+  margin-left: 25px;
+}
+.forWorldDescr .eachDescrs {
+  width: 546px;
+  height: 437px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    RGBA(158, 146, 250, 1) 100%
+  );
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  padding: 79px 25px 0 35px;
+  box-sizing: border-box;
+}
+.eachDescrs h3 {
+  font-size: 30px;
+  font-family: "黑体";
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
+  line-height: 45px;
+}
+.eachDescrs i {
+  display: flex;
+}
+.eachDescrs i img {
+  width: 64px;
+  height: 4px;
+}
+.eachDescrs p {
+  font-size: 24px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
+  margin-top: 20px;
+  line-height: 48px;
+}
+.forWorldDescr .eachDescr .logo1,
+.forWorldDescr .eachDescr .logo2,
+.forWorldDescr .eachDescr .logo3 {
+  position: absolute;
+}
+.forWorldDescr .eachDescr .logo1 {
+  left: 50%;
+  margin-left: -27%;
+  top: -125px;
+}
+.forWorldDescr .eachDescr .logo2 {
+  left: 50%;
+  margin-left: -13%;
+  top: -105px;
+  z-index: 11;
+}
+.forWorldDescr .eachDescr .logo3 {
+  left: -15px;
+  bottom: -20px;
+}
+
+.forWorldDescr .eachDescr .logo1 img {
+  width: 233px;
+  height: 178px;
+}
+.forWorldDescr .eachDescr .logo2 img {
+  width: 205px;
+  height: 173px;
+}
+.forWorldDescr .eachDescr .logo3 img {
+  width: 303px;
+  height: 180px;
+}
+
+.forWorldDescr .eachDescr:nth-child(2) .logo1 img {
+  width: 251px;
+  height: 225px;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo1 {
+  top: -150px;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo2 {
+  top: -100px;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo3 {
+  left: 47%;
+}
+.whitePaper {
+  width: 1200px;
+  /* height: 716px; */
+  position: relative;
+  margin: 0 auto;
+  margin-top: 240px;
+}
+.whitePaper .bg {
+  position: absolute;
+  right: -30%;
+}
+.whitePaper .bg img {
+  width: 1210px;
+  height: 716px;
+}
+.whitePaper .content {
+  display: flex;
+}
+.whitePaper .content .hLogo {
+  margin-left:2%;
+  position: relative;
+  z-index: 9;
+}
+.whitePaper .content .hLogo img {
+  width: 653px;
+  height: 639px;
+}
+.whitePaper .content .con {
+  margin-top: 17%;
+  margin-left: 9%;
+}
+.whitePaper .content .con h3 {
+  font-size: 53px;
+  font-family: "黑体";
+  font-weight: 600;
+  color: rgba(248, 248, 248, 1);
+  display: flex;
+}
+.whitePaper .content .con h3 i {
+  margin-top: -25px;
+  margin-left: 15px;
+}
+.whitePaper .content .con h3 i img {
+  width: 37px;
+  height: 51px;
+}
+.whitePaper .content .con p {
+  width: 400px;
+  font-size: 30px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 76px;
+  margin-top: 50px;
+}
+.whitePaper .content .con p i img {
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.association {
+  width: 1300px;
+  /* height: 716px; */
+  position: relative;
+  margin: 0 auto;
+  margin-top: 240px;
+  margin-bottom: 200px;
+}
+.association .bg {
+  position: absolute;
+  left: -25%;
+}
+.association .bg img {
+  width: 1225px;
+  height: 764px;
+}
+.association .content {
+  display: flex;
+}
+.association .content .hLogo {
+  margin-left: 5%;
+  margin-top: -5%;
+  position: relative;
+  z-index: 9;
+}
+
+.association .content .hLogo img {
+  width: 654px;
+  height: 667px;
+}
+
+.association .content .con {
+  /* height: 500px; */
+  margin-left: 4%;
+  margin-top: 200px;
+}
+.association .content .con h3 {
+  font-size: 53px;
+  font-family:"黑体";
+  font-weight: 600;
+  color: rgba(248, 248, 248, 1);
+  display: flex;
+}
+.association .content .con p {
+  width: 467px;
+  font-size: 30px;
+  font-family:"黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 76px;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.association .content .con h3 i {
+  margin-right: 15px;
+  margin-top: -25px;
+}
+.association .content .con h3 i img {
+  width: 37px;
+  height: 51px;
+}
+footer {
+  width: 100%;
+  height: 464px;
+  background: url("../img/编组 44@3x.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+footer h2 {
+  height: 56px;
+  font-size: 40px;
+  font-family:"黑体";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  margin: 134px 0 19px 362px;
+}
+footer > div {
+  display: flex;
+  align-items: center;
+  margin-left: 309px;
+}
+footer > div i img {
+  width: 36px;
+  height: 29px;
+}
+footer > div label {
+  font-size: 32px;
+  font-family:"黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  margin-left: 17px;
+}
+footer > p {
+  width: 100%;
+  font-size: 25px;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-top: 154px;
+}
+@media (max-width: 1600px) {
+  header {
+    height: 610px;
+  }
+  .header .head{
+    width: 1000px;
+  }
+  .navList {
+    margin-left: 40px;
+    margin-right: 90px;
+  }
+  .navList li {
+    font-size: 20px;
+    margin-left: 63px;
+  }
+  .navList li:last-child .select {
+    width: 105px;
+    height: 96px;
+  }
+  .navList li:last-child .select .bg img{
+    width: 105px;
+    height: 96px;
+  }
+
+  .navList li:last-child .select > div span {
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .logo img{
+    margin-left: 55px;
+    width: 165px;
+    height: 48px;
+  }
+  .descr span:nth-child(2) {
+    font-size: 20px;
+  }
+  .headContent .headTalk {
+    left: 70px;
+    bottom: 150px;
+  }
+  .headContent .headLogo {
+    width: 485px;
+    height: 498px;
+    right: 70px;
+    bottom: 10px;
+  }
+  .headContent .headLogo img {
+    width: 485px;
+    height: 498px;
+  }
+  .headContent .headTalk p img {
+    width: 338px;
+    height: 63px;
+  }
+  .headContent .headTalk p {
+    width: 568px;
+    font-size: 25px;
+  }
+  .vision .head,
+  .mebers .head {
+    width: 930px;
+    height: 51px;
+    margin: 110px auto;
+  }
+  .mebers .head {
+    margin-bottom: 50px;
+  }
+  .vision .head .bg,
+  .mebers .head .bg {
+    width: 930px;
+    height: 51px;
+  }
+  .vision .head p {
+    font-size: 33px;
+    margin-left: -105px;
+    top: 2px;
+  }
+  .mebers .head p {
+    font-size: 33px;
+    margin-left: -100px;
+    top: 2px;
+  }
+  .vision .headDescr {
+    width: 413px;
+    height: 413px;
+    margin-bottom: -10px;
+  }
+  .vision .headDescr .bg img {
+    width: 413px;
+    height: 413px;
+  }
+  .vision .headDescr h3 {
+    font-size: 44px;
+    margin-left: -70px;
+    top: 100px;
+  }
+  .vision .headDescr p {
+    width: 589px;
+    font-size: 25px;
+    line-height: 53px;
+    left: -80px;
+    top: 180px;
+  }
+  .forWorldDescr .eachDescr {
+    width: 455px;
+  }
+  .forWorldDescr .eachDescrs {
+    width: 455px;
+    height: 364px;
+    padding: 40px 20px 0 25px;
+    box-sizing: border-box;
+  }
+  .forWorldDescr .eachDescrs h3 {
+    font-size: 25px;
+  }
+  .forWorldDescr .eachDescrs p {
+    font-size: 21px;
+    line-height: 42px;
+    margin-top: 15px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo3 {
+    left: 37%;
+  }
+  .whitePaper {
+    margin-top: 140px;
+  }
+  .whitePaper .content .hLogo {
+    margin-left: 5%;
+  }
+  .whitePaper .content .hLogo img {
+    width: 544px;
+    height: 532px;
+  }
+  .whitePaper .bg {
+    right: -15%;
+  }
+  .whitePaper .bg img {
+    width: 1000px;
+    height: 746px;
+  }
+  .whitePaper .content .con{
+    
+    margin-left: 11%;
+  }
+  .whitePaper .content .con h3 {
+    font-size: 44px;
+    line-height: 35px;
+  }
+  .eachDescrs i img {
+    width: 53px;
+    height: 3px;
+  }
+  .whitePaper .content .con h3 i img {
+    width: 30px;
+    height: 42px;
+  }
+  .whitePaper .content .con p {
+    width: 333px;
+    font-size: 25px;
+    line-height: 63px;
+    margin-top: 30px;
+  }
+  .association .content .hLogo {
+    margin-left: 7%;
+    margin-top: -2%;
+  }
+  .association .content .hLogo img {
+    width: 544px;
+    height: 536px;
+  }
+  .association .bg {
+    margin-left: 15%;
+  }
+  .association .bg img {
+    width: 1024px;
+    height: 695px;
+  }
+  .association .content .con {
+    margin-left: 12%;
+  }
+  .association .content .con h3 {
+    font-size: 44px;
+  }
+  .association .content .con h3 i img {
+    width: 30px;
+    height: 42px;
+  }
+  .association .content .con p {
+    width: 389px;
+    font-size: 25px;
+    line-height: 63px;
+    margin-top: 30px;
+  }
+  footer {
+    height: 386px;
+  }
+  footer h2 {
+    font-size: 33px;
+  }
+  footer > div i img {
+    width: 30px;
+    height: 24px;
+    margin-top: 4px;
+  }
+  footer > div label {
+    font-size: 27px;
+  }
+  footer > p {
+    font-size: 21px;
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 1700px) {
+  footer h2 {
+    margin-left: 220px;
+  }
+  footer > div {
+    margin-left: 170px;
+  }
+}
+@media (max-width: 1200px) {
+  .associations {
+    width: 1200px;
+  }
+  header {
+    height: 479px;
+  }
+  .header {
+    width: 1200px;
+    height: 60px;
+  }
+  .navList {
+    /* margin-left: 30px; */
+    margin-right: 50px;
+  }
+  .navList li {
+    font-size: 13px;
+    margin-left: 48px;
+  }
+  .navList li:last-child .select {
+    width: 95px;
+    height: 96px;
+    left: -10px;
+  }
+  .navList li:last-child .select .bg img{
+    width: 95px;
+    height: 86px;
+  }
+
+  .navList li:last-child .select > div span {
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .logo img {
+    margin-left: 120px;
+    width: 110px;
+    height: 33px;
+  }
+  .descr {
+    margin-right: 100px;
+  }
+  .descr span:nth-child(1) {
+    font-size: 12px;
+  }
+  .descr span:nth-child(2) {
+    font-size: 14px;
+  }
+  .headContent .headTalk {
+    left: 220px;
+    /* bottom: 150px; */
+  }
+  .headContent .headLogo {
+    width: 364px;
+    height: 374px;
+    right: 200px;
+    bottom: 5px;
+  }
+  .headContent .headLogo img {
+    width: 364px;
+    height: 374px;
+  }
+  .headContent .headTalk p img {
+    width: 253px;
+    height: 47px;
+  }
+  .headContent .headTalk p {
+    width: 428px;
+    font-size: 19px;
+    line-height: 41px;
+  }
+  .vision .head,
+  .mebers .head {
+    width: 699px;
+    height: 38px;
+    margin: 80px auto;
+  }
+  .mebers .head {
+    margin-bottom: 40px;
+  }
+  .vision .head .bg,
+  .mebers .head .bg {
+    width: 699px;
+    height: 38px;
+  }
+  .vision .head p {
+    font-size: 25px;
+    margin-left: -80px;
+  }
+  .mebers .head p {
+    font-size: 25px;
+    margin-left: -75px;
+  }
+  .vision .headDescr {
+    width: 310px;
+    height: 310px;
+    margin-bottom: -10px;
+  }
+  .vision .headDescr .bg img {
+    width: 310px;
+    height: 310px;
+  }
+  .vision .headDescr h3 {
+    font-size: 33px;
+    margin-left: -60px;
+    top: 90px;
+  }
+  .vision .headDescr p {
+    width: 442px;
+    font-size: 19px;
+    line-height: 40px;
+    left: -65px;
+    top: 140px;
+  }
+  .forWorldDescr {
+    margin-top: 180px;
+  }
+  .forWorldDescr .eachDescr {
+    width: 341px;
+    margin-left: 20px;
+  }
+  .forWorldDescr .eachDescrs {
+    width: 341px;
+    height: 273px;
+    padding: 50px 18px 0 20px;
+    box-sizing: border-box;
+  }
+  .forWorldDescr .eachDescrs h3 {
+    font-size: 19px;
+    line-height: 28px;
+  }
+  .forWorldDescr .eachDescrs p {
+    font-size: 16px;
+    line-height: 31px;
+    margin-top: 15px;
+  }
+  .eachDescrs i img {
+    width: 40px;
+    height: 3px;
+  }
+  .forWorldDescr .eachDescr .logo1 img {
+    width: 174px;
+    height: 134px;
+  }
+  .forWorldDescr .eachDescr .logo1 {
+    top: -90px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo1 {
+    top: -100px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo1 img {
+    width: 174px;
+    height: 151px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo3 {
+    left: 16%;
+  }
+  .forWorldDescr .eachDescr .logo2 {
+    top: -82px;
+  }
+  .forWorldDescr .eachDescr .logo2 img {
+    width: 156px;
+    height: 129px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo2 {
+    top: -70px;
+  }
+  .whitePaper {
+    margin-top: 140px;
+  }
+  .whitePaper .content .hLogo {
+    margin-left: 14%;
+    margin-top: 4%;
+  }
+  .whitePaper .content .hLogo img {
+    width: 408px;
+    height: 399px;
+  }
+  .whitePaper .bg {
+    right: 4%;
+  }
+  .whitePaper .bg img {
+    width: 751px;
+    height: 560px;
+  }
+  .whitePaper .content .con {
+    margin-top: 13%;
+  }
+  .whitePaper .content .con h3 {
+    font-size: 33px;
+  }
+  .whitePaper .content .con h3 i img {
+    width: 23px;
+    height: 32px;
+  }
+  .whitePaper .content .con p {
+    width: 250px;
+    font-size: 19px;
+    line-height: 48px;
+    margin-top: 30px;
+  }
+  .association {
+    margin-top: 200px;
+  }
+  .association .content .hLogo {
+    margin-left: 5%;
+    margin-top: 0;
+  }
+  .association .content .hLogo img {
+    width: 408px;
+    height: 402px;
+  }
+  .association .bg {
+    margin-left: 23%;
+  }
+  .association .bg img {
+    width: 768px;
+    height: 521px;
+  }
+  .association .content .con {
+    margin-left: 12%;
+    margin-top: 150px;
+  }
+  .association .content .con h3 {
+    font-size: 33px;
+  }
+  .association .content .con h3 i img {
+    width: 23px;
+    height: 32px;
+  }
+  .association .content .con p {
+    width: 292px;
+    font-size: 19px;
+    line-height: 48px;
+    margin-top: 20px;
+  }
+  footer {
+    height: 290px;
+  }
+  footer h2 {
+    font-size: 25px;
+    margin: 84px 0 15px 206px;
+  }
+  footer > div i img {
+    width: 22px;
+    height: 18px;
+    margin-top: 4px;
+  }
+  footer > div label {
+    font-size: 20px;
+  }
+  footer > p {
+    font-size: 16px;
+    margin-top: 70px;
+  }
+}

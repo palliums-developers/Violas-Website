@@ -3,6 +3,8 @@
   margin: 0;
   /* list-style: none; */
   text-decoration: none;
+  font-family: "Times New Roman";
+
 }
 
 .wrap {
@@ -58,7 +60,7 @@ header {
 
 .navList li {
   font-size: 20px;
-  font-family: "黑体";
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   margin-left: 77px;
@@ -107,7 +109,7 @@ header {
 
 .onPageNav a.active {
   font-size: 20px;
-  font-family:"黑体";
+  /* font-family:"黑体"; */
   font-weight: 600;
   color: #110B1B;
 }
@@ -119,8 +121,8 @@ header {
 
 .onPageNav ul li {
   height: 60px;
-  font-size: 20px;
-  font-family: "黑体";
+  font-size: 19px;
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: #A09DA4;
 }
@@ -160,7 +162,7 @@ header {
   width: 100%;
   height: 50px;
   font-size: 23px;
-  font-family:"黑体";
+  /* font-family:"黑体"; */
   font-weight: 500;
   color: rgba(44, 9, 108, 1);
   line-height: 50px;
@@ -176,6 +178,7 @@ header {
 
 .descr {
   display: flex;
+  white-space: nowrap;
 }
 
 .descr span {
@@ -210,7 +213,7 @@ header {
 .headContent .headTalk {
   position: absolute;
   left: 50px;
-  bottom:150px;
+  bottom:50px;
 }
 
 .headContent .headTalk p img {
@@ -220,11 +223,11 @@ header {
 
 .headContent .headTalk p {
   width: 509px;
-  font-size: 30px;
-  font-family: "黑体";
+  font-size: 20px;
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
-  line-height: 66px;
+  line-height: 25px;
   letter-spacing: 2px;
 }
 
@@ -247,7 +250,7 @@ section {
 
 .introduction {
   width: 1270px;
-  /* height: 16966px; */
+  height: 17000px;
   margin: 119px auto;
   position: relative;
   /* display: flex;
@@ -256,12 +259,12 @@ section {
 
 .introduction > .bg img {
   width: 1270px;
-  height: 15770px;
+  height: 17060px;
 }
 
 .introductionContent {
   width: 1200px;
-  height: auto;
+  height: 17000px;
   background: #fff;
   position: absolute;
   top: 28px;
@@ -276,38 +279,42 @@ section {
 
 .introduction1 {
   /* width: 80%; */
-  height: 2300px;
+  height: 1800px;
   position: relative;
   /* right:0; */
   overflow: hidden;
 }
 
 .introduction2 {
-  height: 3250px;
+  height: 2000px;
 }
 
 .introduction3 {
-  height: 2990px;
+  height: 3650px;
 }
 
 .introduction4 {
-  height: 1323px;
+  height: 2700px;
 }
 
 .introduction5 {
-  height: 2076px;
+  height: 2080px;
 }
 
 .introduction6 {
-  height: 1554px;
+  height: 1550px;
 }
 
 .introduction7 {
-  height: 1269px;
+  height: 1270px;
 }
 
 .introduction8 {
-  height: 958px;
+  height: 950px;
+}
+
+.introduction9 {
+  height: 1500px;
 }
 
 .introduction1 > .bg {
@@ -338,7 +345,7 @@ section {
 .introduction1Descr .descrLeft a {
   height: 80px;
   font-size: 20px;
-  font-family: "黑体";
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(44, 9, 108, 0.5);
 }
@@ -373,14 +380,14 @@ section {
 
 .introduction1Descr .descrRight h4 {
   font-size: 20px;
-  font-family: "黑体";
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: #110B1B;
 }
 
 .introduction1Descr .descrRight h2 {
-  font-size: 53px;
-  font-family: "黑体";
+  font-size: 40px;
+  /* font-family: "黑体"; */
   font-weight: 600;
   color: #110B1B;
   margin-top: 20px;
@@ -393,8 +400,8 @@ section {
 }
 
 .introduction1Descr .descrRight h3 {
-  font-size: 40px;
-  font-family: "黑体";
+  font-size: 35px;
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: #110B1B;
   margin-bottom: 25px;
@@ -402,7 +409,7 @@ section {
 
 .introduction1Descr .descrRight p {
   font-size: 25px;
-  font-family: "黑体";
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: #413C49;
   line-height: 60px;
@@ -412,7 +419,7 @@ section {
 .introduction1Descr .descrRight p > span,
 .introduction1Descr .descrRight .state > span {
   font-size: 25px;
-  font-family: "黑体";
+  /* font-family: "黑体"; */
   font-weight: 600;
   color: #110B1B;
 }
@@ -434,7 +441,7 @@ section {
 
 .introduction1Descr .descrRight ul li {
   font-size: 25px;
-  font-family: "黑体";
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: #413C49;
   margin-top: 30px;
@@ -462,7 +469,7 @@ footer {
 footer h2 {
   height: 56px;
   font-size: 40px;
-  font-family:"黑体";
+  /* font-family:"黑体"; */
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
   margin: 134px 0 19px 362px;
@@ -481,7 +488,7 @@ footer > div i img {
 
 footer > div label {
   font-size: 32px;
-  font-family: "黑体";
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
   margin-left: 17px;
@@ -490,7 +497,7 @@ footer > div label {
 footer > p {
   width: 100%;
   font-size: 25px;
-  font-family: "黑体";
+  /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   text-align: center;
