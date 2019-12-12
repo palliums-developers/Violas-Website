@@ -1,0 +1,1570 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Times New Roman";
+  /* width:1600px; */
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  /* height: 913px; */
+  display: flex;
+  flex-direction: column;
+  background: url("../img/编组 4@2x.png") no-repeat;
+  background-size: 100% 100%;
+}
+.header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 99;
+  /* background-image: linear-gradient(to right , #9c3ec9, #4a189f); */
+}
+.default {
+  /* width: 1600px; */
+  width: 100%;
+  background: rgba(44, 9, 108, 1);
+  overflow: hidden;
+}
+.default header {
+  height: 913px;
+}
+
+.header .head {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navList {
+  display: flex;
+}
+
+.logo img {
+  /* margin-left: 150px; */
+  width: 173px;
+  height: 55px;
+}
+.navList {
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  margin-left: 120px;
+  margin-right: 60px;
+}
+.navList li {
+  font-size: 20px;
+  /* font-family: "黑体"; */
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.navList li:last-child {
+  position: relative;
+}
+.navList li:last-child .select {
+  width: 145px;
+  height: 116px;
+  position: relative;
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  /* display: none; */
+}
+.navList li:last-child .select .bg {
+  position: absolute;
+  top: 0;
+}
+.navList li:last-child .select > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15px;
+}
+.navList li:last-child .select > div span {
+  width: 100%;
+  height: 50px;
+  font-size: 23px;
+  /* font-family: "黑体"; */
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.navList li:last-child .select .bg img {
+  width: 145px;
+  height: 116px;
+}
+.navList li.active {
+  color: rgba(62, 209, 246, 1);
+}
+
+.descr {
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+  top: 8px;
+}
+.descr span {
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.descr span:nth-child(1) {
+  width: 100px;
+  height: 31px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  line-height: 31px;
+  text-align: center;
+  font-size: 17px;
+}
+.descr span:nth-child(2) {
+  font-size: 18px;
+}
+.default .headContent {
+  width: 1200px;
+  flex: 1;
+  position: relative;
+  margin: 0 auto;
+}
+.default .headContent .headLogo {
+  position: absolute;
+  right: -25%;
+  /* right: -300px; */
+  bottom: 0;
+  width: 1142px;
+  height: 913px;
+}
+.default .headContent .headLogo img {
+  width: 100%;
+  height: 100%;
+}
+.default .headContent .headTalk {
+  position: absolute;
+  /* left:-3%; */
+  bottom: 350px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+}
+.welcome {
+  position: relative;
+  right: 32px;
+}
+.default .headContent .headTalk p {
+  display: flex;
+  align-items: center;
+}
+.default .headContent .headTalk p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.default .headContent .headTalk p:nth-child(1) label {
+  font-size: 60px;
+  /* font-family: "Times New Roman"; */
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-left: -10px;
+}
+.default .headContent .headTalk p:nth-child(1) img {
+  width: 316px;
+  height: 86px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+.default .headContent .headTalk p:nth-child(2) {
+  margin-top: 46px;
+}
+.default .headContent .headTalk p:nth-child(2) label {
+  font-size: 35px;
+  /* font-family: "黑体"; */
+  font-weight: 500;
+  color: rgba(249, 249, 249, 1);
+}
+.default .headContent .headTalk p:nth-child(2) img {
+  width: 76px;
+  height: 76px;
+  margin-left: 20px;
+}
+section {
+  width: 100%;
+  height: auto;
+}
+.vision .head {
+  width: 1180px;
+  height: 61px;
+  margin: 140px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.vision .head .bg {
+  /* width: 1200px; */
+  height: 61px;
+}
+.vision .head .bg img {
+  position: absolute;
+}
+.vision .head .bg .img_left {
+  /* width: 100%; */
+  left: 0px;
+}
+.vision .head .bg .img_right {
+  /* width: 100%; */
+  right: 0px;
+}
+.vision .head p {
+  position: absolute;
+  left: 560px;
+  margin-left: -120px;
+  top: 6px;
+  font-size: 40px;
+  color: rgba(248, 248, 248, 1);
+  font-weight: 400;
+}
+.vision .headDescr {
+  width: 840px;
+  height: 496px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.vision .headDescr .bg img {
+  width: 496px;
+  height: 496px;
+}
+.vision .headDescr p {
+  /* width:536px; */
+  font-size: 30px;
+  /* font-family: "黑体"; */
+  /* font-weight: 400; */
+  color: rgba(248, 248, 248, 0.8);
+  position: absolute;
+  /* left: 0; */
+  top: 150px;
+  text-align: center;
+  line-height: 60px;
+}
+.vision .headIntroduce {
+  width: 747px;
+  /* height: 315px; */
+  display: flex;
+  margin: 100px auto;
+  position: relative;
+}
+.vision .headIntroduce .icon {
+  position: absolute;
+  top: -40px;
+  left: -10px;
+}
+.vision .headIntroduce .icon img {
+  width: 119px;
+  height: 80px;
+}
+.vision .headIntroduce p {
+  width: 747px;
+  font-size: 30px;
+  /* font-family: "黑体"; */
+  /* font-weight: 400; */
+  color: rgba(248, 248, 248, 1);
+  text-align: center;
+  line-height: 84px;
+}
+
+.forWorld .head {
+  width: 1205px;
+  height: 61px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 240px;
+}
+.forWorld .head .bg {
+  width: 1205px;
+  height: 61px;
+}
+.forWorld .head .bg img {
+  /* width: 100%; */
+  position: absolute;
+}
+.forWorld .head .bg .img_left {
+  /* width: 100%; */
+  left: 0;
+}
+.forWorld .head .bg .img_right {
+  /* width: 100%; */
+  right: 0;
+}
+.forWorld .head p {
+  position: absolute;
+  left: 575px;
+  margin-left: -160px;
+  top: 12px;
+  font-size: 32px;
+  color: rgba(248, 248, 248, 1);
+  font-weight: 400;
+}
+.forWorld > p {
+  width: 1100px;
+  font-size: 25px;
+  /* font-family: "黑体"; */
+  /* font-weight: 400; */
+  color: rgba(248, 248, 248, 1);
+  line-height: 63px;
+  text-align: center;
+  margin: 120px auto;
+}
+.forWorldDescr {
+  width: 1200px;
+  height: 1500px;
+  margin: 0 auto;
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* .forWorldDescr ul{
+  list-style: none;
+  width: 1400px;
+  height:1500px;
+  float: left;
+
+}
+.forWorldDescr ul li{
+  float: left;
+} */
+.forWorldDescr > div {
+  display: flex;
+}
+.forWorldDescr .eachDescr {
+  width: 370px;
+  height: 600px;
+  position: relative;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 200px;
+}
+.forWorldDescr .eachDescr:last-child {
+  margin-right: 0;
+}
+.forWorldDescr .eachDescrs {
+  width: 370px;
+  height: 593px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    RGBA(158, 146, 250, 1) 100%
+  );
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  padding: 88px 25px 0 35px;
+  box-sizing: border-box;
+}
+.eachDescrs h3 {
+  font-size: 32px;
+  /* font-family: "黑体"; */
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
+  line-height: 45px;
+}
+.eachDescrs i {
+  display: flex;
+}
+.eachDescrs i img {
+  width: 64px;
+  height: 4px;
+}
+.eachDescrs p {
+  font-size: 25px;
+  /* font-family: "黑体"; */
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
+  margin-top: 20px;
+  line-height: 48px;
+}
+.forWorldDescr .eachDescr .logo1,
+.forWorldDescr .eachDescr .logo2,
+.forWorldDescr .eachDescr .logo3,
+.forWorldDescr .eachDescr .logo4 {
+  position: absolute;
+}
+.forWorldDescr .eachDescr .logo1 {
+  left: 40px;
+  top: -125px;
+}
+.forWorldDescr .eachDescr .logo2 {
+  left: 110px;
+  top: -105px;
+  z-index: 11;
+}
+.forWorldDescr .eachDescr .logo3 {
+  left: -12px;
+  bottom: 20px;
+}
+.forWorldDescr .eachDescr .logo4 {
+  right: 10px;
+  bottom: -15px;
+  z-index: 11;
+}
+.forWorldDescr .eachDescr .logo1 img {
+  width: 237px;
+  height: 213px;
+}
+.forWorldDescr .eachDescr .logo2 img {
+  width: 205px;
+  height: 173px;
+}
+.forWorldDescr .eachDescr .logo3 img {
+  width: 203px;
+  height: 135px;
+}
+.forWorldDescr .eachDescr .logo4 img {
+  width: 236px;
+  height: 194px;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo1 img {
+  width: 237px;
+  height: 199px;
+}
+.forWorldDescr .eachDescr:nth-child(3) .logo1 img {
+  width: 237px;
+  height: 199px;
+}
+.forWorldDescr .eachDescr:nth-child(4) .logo1 img {
+  width: 251px;
+  height: 225px;
+}
+.forWorldDescr .eachDescr:nth-child(4) .logo1 {
+  top: -150px;
+}
+.whitePaper {
+  width: 1200px;
+  /* height: 716px; */
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+  /* overflow: hidden; */
+}
+.whitePaper .bg {
+  width: 1210px;
+  height: 716px;
+  position: absolute;
+  right: -22%;
+}
+.whitePaper .bg img {
+  width: 100%;
+}
+.whitePaper .content {
+  display: flex;
+}
+.whitePaper .content .hLogo {
+  margin-left: -2%;
+  position: relative;
+  z-index: 9;
+}
+.whitePaper .content .hLogo img {
+  width: 635px;
+  height: 635px;
+}
+.whitePaper .content .con {
+  margin-top: 200px;
+  margin-left: 120px;
+}
+.whitePaper .content .con h3 {
+  font-size: 32px;
+  /* font-family: "黑体"; */
+  font-weight: 600;
+  color: rgba(248, 248, 248, 1);
+  white-space: nowrap;
+}
+.whitePaper .content .con p {
+  font-size: 22px;
+  /* font-family: "黑体"; */
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  display: flex;
+  margin-top: 80px;
+}
+.whitePaper .content .con p i img {
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  margin-top: -5px;
+}
+.deepIntroduce .head {
+  width: 1080px;
+  height: 61px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 140px;
+}
+.deepIntroduce .head .bg {
+  /* width: 1180px; */
+  height: 61px;
+}
+.deepIntroduce .head .bg img {
+  /* width: 100%; */
+  position: absolute;
+}
+.deepIntroduce .head .bg .img_left {
+  /* width: 100%; */
+  left: 0px;
+}
+.deepIntroduce .head .bg .img_right {
+  /* width: 100%; */
+  right: 0px;
+}
+.deepIntroduce .head p {
+  position: absolute;
+  left: 490px;
+  margin-left: -85px;
+  top: 10px;
+  font-size: 32px;
+  color: rgba(248, 248, 248, 1);
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.deepIntroduce > .content {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background:linear-gradient(210deg,rgba(75,25,159,0.31) 0%,rgba(216,89,232,1) 100%); */
+}
+.deepIntroduce > .content > div {
+  display: flex;
+}
+.deepIntroduce > .content .deepDescr,
+.deepIntroduce > .content .deepDescr1 {
+  /* width: 1440px;
+  height: 800px;
+  background: linear-gradient(
+    210deg,
+    rgba(75, 25, 159, 0.31) 0%,
+    rgba(161, 63, 197, 1) 100%
+  );
+  border-radius: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 50px; */
+  width: 1200px;
+  height: 593px;
+  background: linear-gradient(
+    210deg,
+    rgba(75, 25, 159, 0.31) 0%,
+    rgba(216, 89, 232, 1) 100%
+  );
+  background-image: url("../img/Rectangle复制\ 3@2x.png");
+  border-radius: 20px;
+}
+
+.deepIntroduce > .content .deepDescr h3,
+.deepIntroduce > .content .deepDescr1 h3 {
+  width: 600px;
+  height: 32px;
+  font-size: 32px;
+  font-weight: 500;
+  color: rgba(249, 249, 249, 1);
+  line-height: 32px;
+  margin-top: 40px;
+  margin-left: 100px;
+  /* margin-bottom: 80px; */
+}
+.deepIntroduce > .content .deepDescr1 h3 {
+  margin-bottom: 30px;
+  /* width:600px;
+  position: absolute;
+  left:20px; */
+}
+.deepIntroduce > .content .deepDescr1 h4 {
+  /* width: 10670px;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 40px;
+  padding: 0px 10px; */
+  width: 1000px;
+  /* height: 220px; */
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 44px;
+  margin: 0 auto;
+}
+.deepIntroduce > .content .deepDescr > div {
+  width: 100%;
+  text-align: center;
+}
+.deepIntroduce > .content .deepDescr > div img {
+  width: 293px;
+  height: 251px;
+}
+.deepIntroduce > .content .deepDescr1 {
+  display: none;
+}
+
+.deepIntroduce > .content .deepDescr p,
+.deepIntroduce > .content .deepDescr1 p {
+  width: 161px;
+  font-size: 20px;
+  /* font-family: "黑体"; */
+  font-weight: 300;
+  color: rgba(249, 249, 249, 1);
+  line-height: 55px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #fff;
+  /* margin-top: 210px;  */
+  position: absolute;
+  top: 700px;
+  margin-left: 1230px;
+}
+/* .deepIntroduce > .content .deepDescr1 p {
+  margin-top: 210px;
+} */
+.association {
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 240px;
+  /* overflow: hidden; */
+}
+.deepIntroduce > .association .bg {
+  position: absolute;
+  left: -25%;
+}
+.deepIntroduce > .association .bg img {
+  width: 1225px;
+  height: 764px;
+}
+.deepIntroduce > .association .content {
+  display: flex;
+}
+.deepIntroduce > .association .content .hLogo {
+  margin-left: 15%;
+  margin-top: -5%;
+  position: relative;
+  z-index: 9;
+}
+
+.deepIntroduce > .association .content .hLogo img {
+  width: 654px;
+  height: 667px;
+}
+.deepIntroduce > .whitePaper .content .hLogo {
+  margin-top: -100px;
+}
+.deepIntroduce > .whitePaper .content .hLogo img {
+  width: 654px;
+  height: 711px;
+}
+
+.deepIntroduce > .association .content .con {
+  /* height: 500px; */
+  margin-left: 10%;
+  margin-top: 200px;
+}
+.deepIntroduce > .association .content .con h3 {
+  font-size: 32px;
+  /* font-family: "黑体"; */
+  font-weight: 600;
+  color: rgba(248, 248, 248, 1);
+  white-space: nowrap;
+}
+.deepIntroduce > .association .content .con p {
+  font-size: 22px;
+  /* font-family: "黑体"; */
+  font-weight: 500;
+  color: rgba(248, 248, 248, 1);
+  display: flex;
+  margin-top: 80px;
+  white-space: nowrap;
+}
+.deepIntroduce > .association .content .con span {
+  font-size: 22px;
+  /* font-family: "黑体"; */
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 30px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.deepIntroduce > .association .content .con p i img {
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  margin-top: -5px;
+}
+footer {
+  width: 100%;
+  height: 464px;
+  background: url("../img/编组 44@3x.png") no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+footer h2 {
+  height: 56px;
+  font-size: 22px;
+  /* font-family: "黑体"; */
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  margin: 134px 0 5px 362px;
+}
+footer > div {
+  display: flex;
+  align-items: center;
+  margin-left: 309px;
+}
+footer > div i img {
+  margin-top: 4px;
+  width: 27px;
+  height: 22px;
+}
+footer > div label {
+  font-size: 22px;
+  /* font-family: "黑体"; */
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  margin-left: 17px;
+}
+footer > p {
+  width: 100%;
+  font-size: 25px;
+  /* font-family: "黑体"; */
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-top: 154px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  background: #fff;
+  flex-direction: column;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; */
+}
+.swiper-pagination-position {
+  left: 520px !important;
+}
+.left-arrow {
+  width: 266px;
+  height: 593px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+.left-arrow img {
+  width: 47px;
+  height: 47px;
+  position: relative;
+  left: 20px;
+}
+.right-arrow {
+  width: 266px;
+  height: 593px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  /* background:linear-gradient(#350D7B,#2C096C);
+  opacity:0.8; */
+  /* z-index: 0; */
+}
+.right-arrow img {
+  width: 47px;
+  height: 47px;
+  position: relative;
+  right: -200px;
+}
+@media (max-width: 1600px) {
+  .header .head {
+    width: 1000px;
+  }
+  .navList {
+    margin-left: 40px;
+    margin-right: 100px;
+  }
+  .navList li {
+    font-size: 20px;
+    margin-left: 63px;
+  }
+  .navList li:last-child .select {
+    width: 105px;
+    height: 96px;
+  }
+  .navList li:last-child .select .bg img {
+    width: 105px;
+    height: 96px;
+  }
+
+  .navList li:last-child .select > div span {
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .logo img {
+    margin-left: 55px;
+  }
+  .descr span:nth-child(2) {
+    font-size: 20px;
+  }
+  .default header {
+    height: 860px;
+  }
+  /* .default .headContent{
+        height: 760px;
+    } */
+  .default .headContent .headLogo {
+    right: -150px;
+    /* width: 980px;
+    height: 760px; */
+  }
+  .default .headContent .headTalk {
+    left: 70px;
+    bottom: 300px;
+  }
+  .default .headContent .headTalk p:nth-child(1) {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .default .headContent .headTalk p:nth-child(1) img {
+    width: 256px;
+    height: 63px;
+    margin-left: -1px;
+    margin-top: 15px;
+  }
+  .default .headContent .headTalk p:nth-child(1) label {
+    font-size: 44px;
+    margin-left: 0;
+  }
+  .default .headContent .headTalk p:nth-child(2) {
+    margin-top: 25px;
+    position: relative;
+    right: 32px;
+  }
+  .default .headContent .headTalk p:nth-child(2) label {
+    font-size: 34px;
+  }
+  .default .headContent .headTalk p:nth-child(2) img {
+    width: 63px;
+    height: 63px;
+    /* margin-left: 20px; */
+  }
+  .vision .head {
+    width: 930px;
+    height: 51px;
+    margin: 110px auto;
+  }
+  .vision .head .bg {
+    width: 930px;
+    height: 51px;
+  }
+  .vision .head .bg img {
+    width: 331px;
+  }
+  .vision .head p {
+    font-size: 33px;
+    margin-left: -220px;
+    top: 2px;
+  }
+  .vision .headDescr {
+    width: 413px;
+    height: 413px;
+    margin-bottom: -10px;
+  }
+  .vision .headDescr .bg img {
+    width: 413px;
+    height: 413px;
+  }
+  .vision .headDescr p {
+    width: 849px;
+    height: 201px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 67px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 100px;
+  }
+  .vision .headIntroduce .icon {
+    left: 25px;
+    top: -35px;
+  }
+  .vision .headIntroduce .icon img {
+    width: 99px;
+    height: 67px;
+  }
+  .forWorld .head {
+    margin-top: 180px;
+    width: 1050px;
+    height: 51px;
+  }
+  .forWorld .head .bg {
+    width: 1050px;
+    height: 51px;
+  }
+  .forWorld .head .bg img {
+    width: 331px;
+    height: 48px;
+  }
+  .forWorld .head p {
+    font-size: 32px;
+    /* margin-left: -135px; */
+    position: absolute;
+    left: 500px;
+    top: 3px;
+  }
+  .forWorld > p {
+    width: 1110px;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 100px auto;
+    line-height: 63px;
+  }
+  .vision .headIntroduce p {
+    font-size: 25px;
+    line-height: 70px;
+  }
+  .forWorldDescr .eachDescr {
+    /* width: 310px;
+    margin-right: 22px; */
+  }
+  .forWorldDescr .eachDescr:last-child {
+    margin-right: 0;
+  }
+  .forWorldDescr .eachDescrs {
+    /* width: 317px;
+    height: 494px; */
+    padding: 73px 15px 0 20px;
+    box-sizing: border-box;
+  }
+  .eachDescrs i img {
+    width: 53px;
+    height: 3px;
+  }
+  .forWorldDescr .eachDescrs h3 {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+  .forWorldDescr .eachDescrs p {
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 400;
+  }
+  .forWorldDescr .eachDescr .logo1 {
+    top: -105px;
+  }
+  .forWorldDescr .eachDescr .logo2 {
+    left: 97px;
+    top: -88px;
+  }
+  .forWorldDescr .eachDescr .logo1 img {
+    width: 194px;
+    height: 148px;
+  }
+  .forWorldDescr .eachDescr .logo2 img {
+    width: 171px;
+    height: 144px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo1 img {
+    width: 197px;
+    height: 166px;
+  }
+  .forWorldDescr .eachDescr:nth-child(3) .logo1 img {
+    width: 209px;
+    height: 166px;
+  }
+  .forWorldDescr .eachDescr:nth-child(4) .logo1 img {
+    width: 209px;
+    height: 187px;
+  }
+  .forWorldDescr .eachDescr:nth-child(4) .logo1 {
+    top: -125px;
+  }
+  .whitePaper .content .hLogo {
+    margin-left: 5%;
+  }
+  .whitePaper .content .hLogo img {
+    width: 544px;
+    height: 544px;
+  }
+  .whitePaper .bg {
+    width: 1000px;
+    right: -12%;
+  }
+  .whitePaper .content .con {
+    margin-top: 180px;
+    /* margin-left: 10%; */
+  }
+  .whitePaper .content .con h3 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .whitePaper .content .con p {
+    font-size: 22px;
+    margin-top: 60px;
+    font-weight: 500;
+  }
+  .whitePaper .content .con p i img {
+    width: 32px;
+    height: 32px;
+    margin-top: -3px;
+  }
+  .deepIntroduce .head {
+    width: 950px;
+    height: 50px;
+  }
+  .deepIntroduce .head .bg {
+    width: 860px;
+    height: 50px;
+  }
+  .deepIntroduce .head .bg img {
+    width: 331px;
+    height: 48px;
+  }
+  .deepIntroduce .head p {
+    font-size: 33px;
+    margin-left: -72px;
+    position: absolute;
+    left: 410px;
+    top: 2px;
+  }
+  .deepIntroduce > .content .deepDescr,
+  .deepIntroduce > .content .deepDescr1 {
+    /* width: 455px; */
+    /* height: 603px; */
+    /* margin-right: 20px; */
+  }
+  .deepIntroduce > .content .deepDescr h3,
+  .deepIntroduce > .content .deepDescr1 h3 {
+    font-size: 38px;
+    margin-top: 46px;
+    margin-bottom: 67px;
+  }
+  .deepIntroduce > .content .deepDescr > div img {
+    width: 244px;
+    height: 209px;
+  }
+  .deepIntroduce > .content .deepDescr p,
+  .deepIntroduce > .content .deepDescr1 p {
+    /* width: 134px;
+    height: 44px;
+    font-size: 31px;
+    margin-top: 126px;
+    margin-left: 286px;
+    line-height: 44px; */
+  }
+  .deepIntroduce > .content .deepDescr1 h4 {
+    /* width: 400px; */
+    /* font-size: 15px; */
+  }
+  .deepIntroduce > .content .deepDescr1 p {
+    /* margin-top: 209px; */
+  }
+  .deepIntroduce > .association .content .hLogo {
+    margin-left: 10%;
+    margin-top: -2%;
+  }
+  .deepIntroduce > .association .content .con {
+    margin-left: 20%;
+    margin-top: 200px;
+  }
+  .deepIntroduce > .association .content .hLogo img {
+    width: 545px;
+    height: 556px;
+  }
+  .deepIntroduce > .association .bg {
+    left: -10%;
+  }
+  .deepIntroduce > .association .bg img {
+    width: 1021px;
+  }
+  .deepIntroduce > .association .content .con h3 {
+    font-size: 32px;
+  }
+  .deepIntroduce > .association .content .con span {
+    font-size: 22px;
+  }
+  .deepIntroduce > .association .content .con p {
+    font-size: 22px;
+    margin-top: 66px;
+  }
+  .deepIntroduce > .association .content .con p i img {
+    width: 32px;
+    height: 32px;
+    margin-top: -2px;
+  }
+  .deepIntroduce > .whitePaper .content .hLogo img {
+    width: 545px;
+    height: 593px;
+  }
+
+  footer {
+    height: 386px;
+  }
+  footer h2 {
+    font-size: 32px;
+  }
+  footer > div i img {
+    width: 30px;
+    height: 24px;
+    margin-top: 4px;
+  }
+  footer > div label {
+    font-size: 22px;
+  }
+  footer > p {
+    font-size: 21px;
+    margin-top: 90px;
+  }
+}
+/* @media (max-width: 1700px) {
+  footer h2 {
+    margin-left: 220px;
+  }
+  footer > div {
+    margin-left: 170px;
+  }
+} */
+
+@media (max-width: 1200px) {
+  .default {
+    width: 1200px;
+    overflow: hidden;
+  }
+  .header {
+    width: 1200px;
+    height: 60px;
+  }
+  .navList {
+    margin-left: 60px;
+    margin-right: 80px;
+  }
+  .navList li {
+    font-size: 17px;
+    margin-left: 48px;
+    margin-top: 4px;
+  }
+  .navList li:last-child .select {
+    width: 95px;
+    height: 96px;
+    left: -10px;
+  }
+  .navList li:last-child .select .bg img {
+    width: 95px;
+    height: 86px;
+  }
+
+  .navList li:last-child .select > div span {
+    width: 95px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+  }
+  .logo img {
+    margin-left: 80px;
+    width: 110px;
+    height: 33px;
+  }
+  .descr {
+    margin-right: 100px;
+  }
+  .descr span:nth-child(1) {
+    width: 62px;
+    height: 19px;
+    font-size: 12px;
+    line-height: 19px;
+    position: relative;
+    bottom: 5px;
+  }
+  .descr span:nth-child(2) {
+    font-size: 14px;
+  }
+  .default header {
+    height: 670px;
+  }
+  .default .headContent .headLogo {
+    right: -50px;
+    height: 670px;
+    width: 890px;
+  }
+  .default .headContent .headTalk {
+    left: 150px;
+    bottom: 210px;
+    /* position: relative;
+    right:20px; */
+  }
+  .default .headContent .headTalk p:nth-child(1) label {
+    font-size: 33px;
+    font-family: "黑体";
+  }
+  .default .headContent .headTalk p:nth-child(1) img {
+    width: 197px;
+    height: 54px;
+  }
+  .default .headContent .headTalk p:nth-child(2) {
+    margin-top: 25px;
+  }
+  .default .headContent .headTalk p:nth-child(2) label {
+    font-size: 25px;
+    font-family: "黑体";
+  }
+  .default .headContent .headTalk p:nth-child(2) img {
+    width: 47px;
+    height: 47px;
+    margin-left: 10px;
+  }
+  .vision .head {
+    width: 750px;
+    height: 38px;
+    margin: 95px auto;
+  }
+  .vision .head .bg {
+    width: 699px;
+    height: 38px;
+  }
+  .vision .head .bg img {
+    width: 283px;
+  }
+  .vision .head p {
+    font-size: 25px;
+    margin-left: -283px;
+    margin-top: 2px;
+  }
+  .vision .headDescr {
+    width: 310px;
+    height: 310px;
+    /* margin-bottom: -10px; */
+  }
+  .vision .headDescr .bg img {
+    width: 310px;
+    height: 310px;
+  }
+  .vision .headDescr p {
+    width: 727px;
+    font-size: 26px;
+    line-height: 50px;
+    top: 80px;
+  }
+  .vision .headIntroduce {
+    margin: 70px auto;
+  }
+  .vision .headIntroduce .icon {
+    left: 180px;
+    top: -20px;
+  }
+  .vision .headIntroduce .icon img {
+    width: 74px;
+    height: 50px;
+  }
+  .forWorld .head {
+    margin-top: 140px;
+    width: 880px;
+    height: 38px;
+  }
+  .forWorld .head .bg {
+    width: 753px;
+    height: 38px;
+  }
+  .forWorld .head .bg img {
+    width: 283px;
+  }
+  .forWorld .head p {
+    font-size: 27px;
+    margin-left: -220px;
+    margin-top: 2px;
+  }
+  .forWorld > p {
+    width: 950px;
+    font-size: 21px;
+    margin: 70px auto;
+    line-height: 39px;
+  }
+  .forWorldDescr {
+    margin-top: 200px;
+    padding: 20px;
+  }
+  .vision .headIntroduce p {
+    font-size: 26px;
+    line-height: 50px;
+  }
+  .forWorldDescr .eachDescr {
+    width: 340px;
+    margin-bottom: 100px;
+    margin-left: 27px;
+  }
+  .forWorldDescr .eachDescrs {
+    width: 320px;
+    height: 508px;
+    padding: 55px 15px 0 20px;
+    box-sizing: border-box;
+  }
+  .forWorldDescr .eachDescrs h3 {
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: 500;
+  }
+  .forWorldDescr .eachDescrs p {
+    font-size: 21px;
+    line-height: 43px;
+    margin-top: 17px;
+  }
+  .eachDescrs i img {
+    width: 40px;
+    height: 3px;
+  }
+  .forWorldDescr .eachDescr .logo1 {
+    top: -80px;
+  }
+  .forWorldDescr .eachDescr .logo2 {
+    left: 85px;
+    top: -65px;
+  }
+  .forWorldDescr .eachDescr .logo3 {
+    left: -12px;
+    bottom: 100px;
+  }
+  .forWorldDescr .eachDescr .logo4 {
+    right: 30px;
+    bottom: 80px;
+    /* z-index: 11; */
+  }
+  .forWorldDescr .eachDescr .logo1 img {
+    width: 146px;
+    height: 111px;
+  }
+  .forWorldDescr .eachDescr .logo2 img {
+    width: 128px;
+    height: 108px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo1 img {
+    width: 148px;
+    height: 124px;
+  }
+  .forWorldDescr .eachDescr:nth-child(3) .logo1 img {
+    width: 157px;
+    height: 124px;
+  }
+  .forWorldDescr .eachDescr:nth-child(4) .logo1 img {
+    width: 157px;
+    height: 141px;
+  }
+  .forWorldDescr .eachDescr:nth-child(4) .logo1 {
+    top: -95px;
+  }
+  .whitePaper {
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  .whitePaper .content .hLogo {
+    margin-left: 100px;
+  }
+  .whitePaper .content .hLogo img {
+    width: 408px;
+    height: 408px;
+  }
+  .whitePaper .bg {
+    width: 756px;
+    right: 0;
+  }
+  .whitePaper .content .con {
+    margin-top: 12%;
+    margin-left: 70px;
+  }
+  .whitePaper .content .con h3 {
+    font-size: 33px;
+  }
+  .whitePaper .content .con p {
+    font-size: 25px;
+    margin-top: 40px;
+  }
+  .whitePaper .content .con p i img {
+    width: 24px;
+    height: 24px;
+    margin-top: 2px;
+  }
+  .deepIntroduce .head {
+    width: 900px;
+    height: 38px;
+  }
+  .deepIntroduce .head .bg {
+    width: 645px;
+    height: 38px;
+  }
+  .deepIntroduce .head p {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 34px;
+    top: 5px;
+    left: 400px;
+  }
+  .deepIntroduce > .content {
+    width: 1000px;
+  }
+  .deepIntroduce > .content .deepDescr,
+  .deepIntroduce > .content .deepDescr1 {
+    width: 1000px;
+  }
+  .deepIntroduce > .content .deepDescr1 h4 {
+    width: 800px;
+  }
+  .swiper-pagination-position {
+    left: 420px !important;
+  }
+  .deepIntroduce > .association .content .con {
+    margin-left: 100px;
+  }
+  .deepIntroduce > .association .content .hLogo {
+    margin-left: 50px;
+  }
+  .whitePaper .content {
+    margin-top: 200px;
+  }
+  footer > div {
+    margin-left: 167px;
+  }
+  /* .deepIntroduce > .content .deepDescr,
+  .deepIntroduce > .content .deepDescr1 {
+    width: 341px;
+    height: 452px;
+    margin-right: 18px;
+  }
+  .deepIntroduce > .content .deepDescr h3,
+  .deepIntroduce > .content .deepDescr1 h3 {
+    font-size: 28px;
+    margin-top: 35px;
+    margin-bottom: 51px;
+    margin-left: 27px;
+  }
+  .deepIntroduce > .content .deepDescr > div img {
+    width: 183px;
+    height: 157px;
+  }
+  .deepIntroduce > .content .deepDescr p,
+  .deepIntroduce > .content .deepDescr1 p {
+    width: 105px;
+    height: 33px;
+    font-size: 24px;
+    margin-top: 106px;
+    margin-left: 206px;
+    line-height: 33px;
+  }
+  .deepIntroduce > .content .deepDescr1 h4 {
+    width: 310px;
+    font-size: 24px;
+    margin-left: 27px;
+    line-height: 50px;
+  }
+  .deepIntroduce > .content .deepDescr1 p {
+    margin-top: 119px;
+  }
+  .deepIntroduce > .association .content .hLogo {
+    margin-left: 10%;
+    margin-top: -2%;
+  }
+  .deepIntroduce > .association .content .con {
+    margin-left: 18%;
+    margin-top: 170px;
+  }
+  .deepIntroduce > .association .content .hLogo img {
+    width: 409px;
+    height: 417px;
+  }
+  .deepIntroduce > .association .bg {
+    left: -2%;
+  }
+  .deepIntroduce > .association .bg img {
+    width: 766px;
+    height: 477px;
+  }
+  .deepIntroduce > .association .content .con h3 {
+    font-size: 33px;
+  }
+  .deepIntroduce > .association .content .con span {
+    font-size: 19px;
+    margin-top: 20px;
+  }
+  .deepIntroduce > .association .content .con p {
+    font-size: 25px;
+    margin-top: 46px;
+  }
+  .deepIntroduce > .association .content .con p i img {
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+  }
+  .deepIntroduce > .whitePaper .content .hLogo img {
+    width: 409px;
+    height: 444px;
+  }
+  .deepIntroduce > .whitePaper .content .con {
+    margin-left: 13%;
+  } */
+  footer {
+    height: 290px;
+  }
+  footer h2 {
+    font-size: 25px;
+    margin: 84px 0 15px 206px;
+  }
+  footer > div i img {
+    width: 22px;
+    height: 18px;
+    margin-top: 4px;
+  }
+  footer > div label {
+    font-size: 20px;
+  }
+  footer > p {
+    font-size: 16px;
+    margin-top: 70px;
+  }
+}
