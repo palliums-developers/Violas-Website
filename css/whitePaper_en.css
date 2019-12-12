@@ -4,7 +4,8 @@
   /* list-style: none; */
   text-decoration: none;
   font-family: "Times New Roman";
-
+  /* font-family: "SimHei "; */
+  /* font-family: Tahoma; */
 }
 
 .wrap {
@@ -44,7 +45,7 @@ header {
 }
 
 .logo img {
-  /* margin-left: 150px; */
+  margin-left: 150px;
   width: 173px;
   height: 55px;
 }
@@ -55,7 +56,7 @@ header {
   height: 100%;
   align-items: center;
   margin-left: 70px;
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 .navList li {
@@ -105,12 +106,17 @@ header {
 
 .onPageNav a {
   color: #717171;
+  font-size: 22px;
 }
 
 .onPageNav a.active {
   font-size: 20px;
   /* font-family:"黑体"; */
   font-weight: 600;
+  color: #110B1B;
+}
+
+.onPageNav a:hover{
   color: #110B1B;
 }
 
@@ -179,6 +185,7 @@ header {
 .descr {
   display: flex;
   white-space: nowrap;
+  margin-right: 50px;
 }
 
 .descr span {
@@ -212,7 +219,7 @@ header {
 
 .headContent .headTalk {
   position: absolute;
-  left: 50px;
+  left: 0px;
   bottom:50px;
 }
 
@@ -220,15 +227,22 @@ header {
   width: 466px;
   height: 85px;
 }
-
+.headContent .headTalk h2{
+  font: 32px;
+  font-weight: 600;
+  color:rgba(255,255,255,1);
+  line-height: 32px;
+  margin-bottom: 20px;
+}
 .headContent .headTalk p {
-  width: 509px;
+  width: 650px;
   font-size: 20px;
   /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
-  line-height: 25px;
+  line-height: 28px;
   letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
 .headContent .headLogo img {
@@ -240,7 +254,7 @@ header {
   width: 562px;
   height: 578px;
   position: absolute;
-  right: 50px;
+  right: -65px;
   bottom: 0;
 }
 
@@ -535,7 +549,7 @@ footer > p {
     line-height: 40px;
   }
   .logo img{
-    margin-left: 20px;
+    margin-left: 40px;
   }
   .descr span:nth-child(2) {
     font-size: 20px;
@@ -543,18 +557,18 @@ footer > p {
   .headContent .headLogo {
     width: 377px;
     height: 379px;
-    right: 150px;
+    right: 0px;
     bottom: 20px;
   }
 
   .headContent .headLogo img {
-    width: 377px;
-    height: 379px;
+    width: 341px;
+    height: 341px;
   }
 
   .headContent .headTalk {
-      left: 150px;
-      bottom: 110px;
+      left: 0px;
+      bottom: 100px;
   }
 
   .headContent .headTalk p img {
@@ -563,43 +577,47 @@ footer > p {
   }
 
   .headContent .headTalk p {
-    width: 424px;
+    /* width: 424px; */
     /* height:100px; */
-    font-size: 25px;
-    line-height: 55px;
+    font-size: 20px;
+    line-height: 20px;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
   }
 
   .introduction {
     width: 1058px;
+    height:14500px;
   }
 
   .introduction > .bg img {
     width: 1058px;
-    height:13600px;
+    height:14550px;
   }
 
   .introductionContent {
     width: 1001px;
     margin-left: -500px;
+    height:14500px;
   }
   .introduction1 {
-    height: 2050px;
+    height: 1600px;
   }
 
   .introduction2 {
-    height: 2800px;
+    height: 1750px;
   }
 
   .introduction3 {
-    height: 2600px;
+    height: 3100px;
   }
 
   .introduction4 {
-    height: 1100px;
+    height: 2200px;
   }
 
   .introduction5 {
-    height: 1750px;
+    height: 1800px;
   }
 
   .introduction6 {
@@ -613,12 +631,15 @@ footer > p {
   .introduction8 {
     height: 700px;
   }
+  .introduction9{
+    height:500px;
+  }
   .onPageNav {
     /* width: 180px; */
   }
 
   .onPageNav a {
-    font-size: 17px;
+    font-size: 22px;
   }
 
   .onPageNav a.active {
@@ -630,7 +651,7 @@ footer > p {
   }
 
   .introduction1Descr .descrRight h2 {
-    font-size: 44px;
+    font-size: 35px;
   }
 
   .introduction1Descr .descrRight p {
@@ -639,7 +660,7 @@ footer > p {
   }
 
   .introduction1Descr .descrRight h3 {
-    font-size: 33px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
 
@@ -760,80 +781,87 @@ footer > p {
   }
 
   .headContent .headLogo {
-    width: 283px;
-    height: 284px;
-    right: 280px;
+    width: 300px;
+    height: 300px;
+    right: 100px;
     /* bottom:100px; */
   }
 
   .headContent .headLogo img {
-    width: 283px;
-    height: 284px;
+    width: 300px;
+    height: 300px;
   }
 
   .headContent .headTalk {
-    left: 270px;
-    bottom: 80px;
+    width: 600px;
+    bottom: 20px;
+    left:195px;
   }
-
+  .headContent .headTalk h2{
+    font-size: 27px;
+  }
   .headContent .headTalk p img {
     width: 281px;
     height: 47px;
   }
 
   .headContent .headTalk p {
-    width: 340px;
-    font-size: 20px;
-    line-height: 45px;
+    width: 600px;
+    font-size: 15px;
+    line-height: 20px;
     margin-top: 10px;
   }
 
   .introduction {
     width: 793px;
+    height:9800px;
   }
 
   .introduction > .bg img {
     width: 793px;
-    height: 10150px;
+    height: 9850px;
   }
 
   .introductionContent {
     width: 751px;
     margin-left: -375px;
+    height:9800px;
   }
 
   .onPageNav {
     width: 170px;
   }
-
+  .onPageNav ul li{
+    height: 40px;
+  }
   .onPageNav a {
-    font-size: 13px;
+    font-size: 20px;
   }
 
   .onPageNav a.active {
     font-size: 13px;
   }
 
-  .introduction0 {
-    /* margin-left: 200px!important; */
+  .introduction .introductionContent .introduction0 {
+    margin-left: 5px;
     padding-right: 10px;
     box-sizing: border-box;
   }
 
   .introduction1 {
-    height: 1300px;
+    height: 1100px;
   }
 
   .introduction2 {
-    height: 1900px;
+    height: 1100px;
   }
 
   .introduction3 {
-    height: 2000px;
+    height: 2050px;
   }
 
   .introduction4 {
-    height: 900px;
+    height: 1450px;
   }
 
   .introduction5 {
@@ -841,23 +869,25 @@ footer > p {
   }
 
   .introduction6 {
-    height: 1200px;
+    height: 900px;
   }
 
   .introduction7 {
-    height: 1000px;
+    height: 700px;
   }
 
   .introduction8 {
     height: 500px;
   }
-
+  .introduction9 {
+    height: 600px;
+  }
   .introduction1Descr .descrRight h4 {
     font-size: 13px;
   }
 
   .introduction1Descr .descrRight h2 {
-    font-size: 33px;
+    font-size: 30px;
     line-height: 60px;
   }
 
