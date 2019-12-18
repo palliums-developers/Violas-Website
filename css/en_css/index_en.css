@@ -120,6 +120,13 @@ header {
   /* position: relative;
   top: 8px; */
 }
+.descr a {
+  color: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+  top: 7px;
+}
 .descr span {
   color: #fff;
   margin-right: 20px;
@@ -146,10 +153,10 @@ header {
   margin: 0 auto;
 }
 .default .headContent .headLogo {
-  position: absolute;
+  position: relative;
   right: -25%;
   /* right: -300px; */
-  bottom: 0;
+  bottom: 100px;
   width: 1142px;
   height: 913px;
 }
@@ -411,25 +418,25 @@ section {
   position: absolute;
 }
 
-.forWorldDescr>div:nth-child(1) .eachDescr .logo1 {
+.forWorldDescr > div:nth-child(1) .eachDescr .logo1 {
   left: 40px;
   top: -125px;
 }
-.forWorldDescr>div:nth-child(1) .eachDescr .logo2 {
+.forWorldDescr > div:nth-child(1) .eachDescr .logo2 {
   left: 110px;
   top: -105px;
   z-index: 11;
 }
-.forWorldDescr>div:nth-child(2) .eachDescr .logo1 {
+.forWorldDescr > div:nth-child(2) .eachDescr .logo1 {
   left: 40px;
   top: -150px;
 }
-.forWorldDescr>div:nth-child(2) .eachDescr .logo2 {
+.forWorldDescr > div:nth-child(2) .eachDescr .logo2 {
   left: 110px;
   top: -105px;
   z-index: 11;
 }
-.forWorldDescr  .eachDescr .logo3 {
+.forWorldDescr .eachDescr .logo3 {
   left: -12px;
   bottom: 20px;
 }
@@ -451,22 +458,22 @@ section {
   width: 236px;
   height: 194px;
 }
-.forWorldDescr>div:nth-child(1) .eachDescr:nth-child(1) .logo1 img {
+.forWorldDescr > div:nth-child(1) .eachDescr:nth-child(1) .logo1 img {
   width: 233px;
   height: 178px;
 }
-.forWorldDescr>div:nth-child(1) .eachDescr:nth-child(2) .logo1 img {
+.forWorldDescr > div:nth-child(1) .eachDescr:nth-child(2) .logo1 img {
   width: 237px;
   height: 199px;
 }
-.forWorldDescr>div:nth-child(1) .eachDescr:nth-child(3) .logo1 img {
+.forWorldDescr > div:nth-child(1) .eachDescr:nth-child(3) .logo1 img {
   width: 251px;
   height: 199px;
 }
 .forWorldDescr .eachDescr:nth-child(4) .logo1 {
   top: -150px;
 }
-.forWorldDescr>div:nth-child(2) .eachDescr .logo1 img {
+.forWorldDescr > div:nth-child(2) .eachDescr .logo1 img {
   width: 251px;
   height: 225px;
 }
@@ -474,7 +481,7 @@ section {
   width: 1200px;
   /* height: 716px; */
   position: relative;
-  margin:200px auto;
+  margin: 200px auto;
   /* margin-top: 100px;s */
   /* overflow: hidden; */
 }
@@ -871,15 +878,15 @@ footer > p {
     font-size: 20px;
   }
   .default header {
-    height: 860px;
+    height: 768px;
   }
-  /* .default .headContent{
-        height: 760px;
-    } */
+  .default .headContent {
+    height: 600px;
+  }
   .default .headContent .headLogo {
-    right: -250px;
-    /* width: 1144px;
-    height:913px; */
+    right: -150px;
+    width: 1000px;
+    height: 768px;
   }
   .default .headContent .headTalk {
     left: 70px;
@@ -1182,14 +1189,6 @@ footer > p {
     margin-top: 90px;
   }
 }
-/* @media (max-width: 1700px) {
-  footer h2 {
-    margin-left: 220px;
-  }
-  footer > div {
-    margin-left: 170px;
-  }
-} */
 
 @media (max-width: 1200px) {
   .default {
@@ -1316,7 +1315,7 @@ footer > p {
     width: 74px;
     height: 50px;
   }
-  .forWorldDescr > div{
+  .forWorldDescr > div {
     margin-top: 100px;
   }
   .forWorld .head {
@@ -1375,10 +1374,10 @@ footer > p {
     width: 40px;
     height: 3px;
   }
-  .forWorldDescr>div:nth-child(1) .eachDescr .logo1 {
+  .forWorldDescr > div:nth-child(1) .eachDescr .logo1 {
     top: -105px;
   }
-  .forWorldDescr>div:nth-child(1) .eachDescr .logo2 {
+  .forWorldDescr > div:nth-child(1) .eachDescr .logo2 {
     left: 100px;
     top: -90px;
   }
@@ -1391,7 +1390,7 @@ footer > p {
     bottom: 80px;
     /* z-index: 11; */
   }
-  .forWorldDescr>div:nth-child(1) .eachDescr .logo1 img {
+  .forWorldDescr > div:nth-child(1) .eachDescr .logo1 img {
     width: 146px;
     height: 111px;
   }
@@ -1399,26 +1398,26 @@ footer > p {
     width: 175px;
     height: 148px;
   }
-  .forWorldDescr>div:nth-child(1) .eachDescr:nth-child(1) .logo1 img {
+  .forWorldDescr > div:nth-child(1) .eachDescr:nth-child(1) .logo1 img {
     width: 199px;
     height: 152px;
   }
-  .forWorldDescr>div:nth-child(1) .eachDescr:nth-child(2) .logo1 img {
+  .forWorldDescr > div:nth-child(1) .eachDescr:nth-child(2) .logo1 img {
     width: 203px;
     height: 170px;
   }
-  .forWorldDescr>div:nth-child(1) .eachDescr:nth-child(3) .logo1 img {
+  .forWorldDescr > div:nth-child(1) .eachDescr:nth-child(3) .logo1 img {
     width: 215px;
     height: 170px;
   }
-  .forWorldDescr>div:nth-child(2) .eachDescr .logo1 {
+  .forWorldDescr > div:nth-child(2) .eachDescr .logo1 {
     top: -130px;
   }
-  .forWorldDescr>div:nth-child(2) .eachDescr .logo2 {
+  .forWorldDescr > div:nth-child(2) .eachDescr .logo2 {
     left: 100px;
     top: -90px;
   }
-  .forWorldDescr>div:nth-child(2) .eachDescr .logo1 img {
+  .forWorldDescr > div:nth-child(2) .eachDescr .logo1 img {
     width: 215px;
     height: 192px;
   }
@@ -1427,8 +1426,7 @@ footer > p {
     margin-top: 0px;
     margin-bottom: 100px;
   } */
-  .forWorld .whitePaper{
-    
+  .forWorld .whitePaper {
     margin-top: 0px;
   }
 
@@ -1501,7 +1499,7 @@ footer > p {
     margin-left: 167px;
   }
   .deepIntroduce > .association .content .hLogo {
-    margin-left:5%;
+    margin-left: 5%;
     margin-top: -1%;
   }
   .deepIntroduce > .association .content .con {
@@ -1511,7 +1509,7 @@ footer > p {
   .deepIntroduce > .association .content .hLogo img {
     width: 409px;
     height: 417px;
-  } 
+  }
   .deepIntroduce > .association .bg {
     left: -1%;
   }
@@ -1560,5 +1558,30 @@ footer > p {
   footer > p {
     font-size: 16px;
     margin-top: 70px;
+  }
+}
+.hide_show_header_mob {
+  display: none;
+}
+@media (max-width: 800px) {
+  .hide_show_header_mob {
+    display: flex;
+  }
+  .hide_show_header_mob .bmd-layout-header .phone_head{
+    width: 100%;
+  }
+  .phone_list{
+    height:100%;
+    background-color: #4B199F;
+    color: #fff;
+  }
+  .phone_list ul{
+    list-style: none;
+  }
+  .phone_list li{
+    float: left;
+  }
+  .hide_show_header_pc {
+    display: none;
   }
 }
