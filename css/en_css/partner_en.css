@@ -3,21 +3,20 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "Times New Roman";
 }
 
 .wrap {
   width: 100%;
   height: auto;
 }
-.associations {
+.partner {
   width: 100%;
   background: rgba(44, 9, 108, 1);
   overflow: hidden;
 }
 header {
   width: 100%;
-  /* height: 913rem; */
+  height: 7.32rem;
   display: flex;
   flex-direction: column;
   background: url("../img/编组 4@2x.png") no-repeat;
@@ -35,7 +34,7 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .navList {
   display: flex;
@@ -74,12 +73,12 @@ header {
   position: relative;
 }
 .navList li:last-child .select {
-  width: 145rem;
-  height: 116rem;
+  width: 145px;
+  height: 116px;
   position: relative;
   position: absolute;
-  top: 30rem;
-  left: -20rem;
+  top: 30px;
+  left: -20px;
   display: none;
 }
 .navList li:last-child .select .bg {
@@ -91,25 +90,23 @@ header {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 15rem;
+  top: 15px;
 }
 .navList li:last-child .select > div span {
   width: 100%;
-  height: 50rem;
-  font-size: 23rem;
+  height: 50px;
+  font-size: 23px;
+  font-family: "黑体";
   font-weight: 500;
   color: rgba(44, 9, 108, 1);
-  line-height: 50rem;
+  line-height: 50px;
   text-align: center;
-  letter-spacing: 1rem;
-  border-radius: 5rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
 }
 .navList li:last-child .select .bg img {
-  width: 145rem;
-  height: 116rem;
-}
-.navList li.active {
-  color: rgba(62, 209, 246, 1);
+  width: 145px;
+  height: 116px;
 } */
 
 .descr {
@@ -146,9 +143,6 @@ header {
   top: 7rem; */
   font-size: 0.14rem;
 }
-header {
-  height: 7.32rem;
-}
 .headContent {
   width: 12rem;
   flex: 1;
@@ -158,117 +152,71 @@ header {
   justify-content: space-between;
 }
 .headContent .headTalk {
-  /* margin-top:100rem;
-  margin-left:-30rem; */
+  display: flex;
   position: absolute;
-  left: 0;
-  bottom:2.20rem;
+  left: -0.35rem;
+  bottom:2rem;
 }
-.headContent .headTalk p img {
-  width: 4.05rem;
-  height: 0.75rem;
-}
+
 .headContent .headTalk p {
-  width: 6.81rem;
-  /* height:204rem; */
-  font-size: 0.30rem;
+  font-size: 0.57rem;
   font-weight: 400;
-  color: rgba(249, 249, 249, 1);
-  line-height: 0.6rem;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 0.15rem;
+}
+.headContent .headTalk > div {
+  margin-left: 0.40rem;
   margin-top: 0.20rem;
 }
+.headContent .headTalk p > span {
+  color: rgba(82, 220, 255, 1);
+}
 .headContent .headLogo img {
-  width: 5.82rem;
-  height: 5.98rem;
+  width: 5.72rem;
+  height: 6.22rem;
 }
 .headContent .headLogo {
-  width: 5.82rem;
-  height: 5.98rem;
+  width: 5.72rem;
+  height: 6.22rem;
   position: absolute;
-  right: -0.30rem;
-  bottom: 0..20rem;
+  right: -0.50rem;
+  bottom: 0.10rem;
+  display: flex;
 }
-section {
-  width: 100%;
-  height: auto;
-}
-.vision .head {
-  width: 18rem;
+.mebers .head {
+  width: 11.18rem;
   height: 0.61rem;
   margin: 1.30rem auto;
   position: relative;
   display: flex;
   align-items: center;
 }
-.vision .head .bg
-{
-  width: 18rem;
-  height: 0.61rem;
-}
-.mebers .head{
-   width: 15rem;
-   height: 0.51rem;
-  margin: 1.30rem auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
+
 .mebers .head .bg {
-   width: 15rem;
-   height: 0.51rem;
+  width: 11.18rem;
+  height: 0.61rem;
 }
-.vision .head .bg img,
+
 .mebers .head .bg img {
   width: 100%;
 }
-.vision .head p,
+
 .mebers .head p {
   position: absolute;
-  left: 50%;
-  margin-left: -2.7rem;
-  top:0.15rem;
+  left: 47%;
+  margin-left: -1.20rem;
+  top: 0;
   font-size: 0.40rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
 }
+
 .mebers .head p {
-  margin-left: -1rem;
-  top:0.2rem;
-}
-.vision .headDescr {
-  width: 7.07rem;
-  height: 4.96rem;
-  margin: 0 auto;
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-.vision .headDescr .bg img {
-  width: 4.96rem;
-  height: 4.96rem;
-}
-.vision .headDescr h3 {
-  font-size: 0.53rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  position: absolute;
-  left: 50%;
-  margin-left: -3rem;
-  top: 1.40rem;
-  word-break: break-all;
-}
-.vision .headDescr p {
-  font-size: 0.30rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 0.8);
-  position: absolute;
-  left: 0.20rem;
-  top: 2.30rem;
-  text-align: center;
-  line-height: 0.64rem;
+  left: 53.5%;
+  top: 0.05rem;
 }
 .forWorldDescr {
-  width: 12rem;
+  width: 12.00rem;
   margin: 0 auto;
   margin-top: 2.50rem;
   display: flex;
@@ -287,7 +235,7 @@ section {
     rgba(255, 255, 255, 1) 0%,
     RGBA(158, 146, 250, 1) 100%
   );
-  border-radius: 0.20rem;
+  border-radius: 20px;
   position: relative;
   z-index: 10;
   padding: 0.79rem 0.25rem 0 0.35rem;
@@ -295,19 +243,18 @@ section {
 }
 .eachDescrs h3 {
   font-size: 0.30rem;
+  font-family:"黑体";
   font-weight: 500;
   color: rgba(44, 9, 108, 1);
-  line-height: 0.45rem;
-}
-.eachDescrs i {
-  display: flex;
 }
 .eachDescrs i img {
+  display: inline-block;
   width: 0.64rem;
   height: 0.04rem;
 }
 .eachDescrs p {
   font-size: 0.24rem;
+  font-family: "黑体";
   font-weight: 400;
   color: rgba(44, 9, 108, 1);
   margin-top: 0.20rem;
@@ -321,22 +268,22 @@ section {
 .forWorldDescr .eachDescr .logo1 {
   left: 50%;
   margin-left: -27%;
-  top: -1.25rem;
+  top: -1.60rem;
 }
 .forWorldDescr .eachDescr .logo2 {
   left: 50%;
-  margin-left: -13%;
+  margin-left: -14.5%;
   top: -1.05rem;
   z-index: 11;
 }
 .forWorldDescr .eachDescr .logo3 {
   left: -0.15rem;
-  bottom: -0.10rem;
+  bottom: -0.20rem;
 }
 
 .forWorldDescr .eachDescr .logo1 img {
-  width: 2.33rem;
-  height: 1.78rem;
+  width: 2.51rem;
+  height: 2.25rem;
 }
 .forWorldDescr .eachDescr .logo2 img {
   width: 2.05rem;
@@ -347,138 +294,287 @@ section {
   height: 1.80rem;
 }
 
-.forWorldDescr .eachDescr:nth-child(2) .logo1 img {
-  width: 2.51rem;
-  height: 2.25rem;
-}
+/* .forWorldDescr .eachDescr:nth-child(2) .logo1 img{
+    width: 251rem;
+    height:225rem;
+    
+} */
 .forWorldDescr .eachDescr:nth-child(2) .logo1 {
   top: -1.50rem;
 }
 .forWorldDescr .eachDescr:nth-child(2) .logo2 {
-  top: -1rem;
+  top: -1.00rem;
 }
 .forWorldDescr .eachDescr:nth-child(2) .logo3 {
   left: 47%;
 }
-.whitePaper {
-  width: 12rem;
-  /* height: 7.16rem; */
+.service {
+  width: 13.17rem;
+  height: 3.14rem;
+  background: linear-gradient(
+    180deg,
+    RGBA(53, 13, 123, 1) 0%,
+    RGBA(62, 144, 194, 1) 100%
+  );
+  border-radius: 20px;
+  margin: 3rem auto;
   position: relative;
-  margin: 0 auto;
-  margin-top: 2.40rem;
+  display: flex;
+  flex-direction: column;
 }
-.whitePaper .bg {
+.service .logo img {
+  width: 3.80rem;
+  height: 3.26rem;
   position: absolute;
-  right:-20%;
+  top: -39%;
+  right: 0.40rem;
 }
-.whitePaper .bg img {
-  width: 12.10rem;
-  height: 7.16rem;
+.service h2 {
+  font-size: 0.45rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  margin: 0.46rem 0 0.39rem 0.58rem;
 }
-.whitePaper .content {
+.service p {
+  width: 10rem;
+  font-size: 0.28rem;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 1px;
+  margin-left: 0.58rem;
+  margin-bottom: 0.30rem;
+}
+.publisher {
+  width: 12rem;
+  height: 7.42rem;
+  margin: 0 auto;
+  /* position: relative; */
   display: flex;
+  justify-content: center;
 }
-.whitePaper .content .hLogo {
-  margin-left:2%;
+.publisher .center {
+  width: 3.08rem;
+  height: 3.08rem;
   position: relative;
-  z-index: 9;
-}
-.whitePaper .content .hLogo img {
-  width: 6.53rem;
-  height: 6.39rem;
-}
-.whitePaper .content .con {
-  margin-top: 17%;
-  margin-left: 9%;
-}
-.whitePaper .content .con h3 {
-  font-size: 0.53rem;
-  font-weight: 600;
-  color: rgba(248, 248, 248, 1);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.09rem;
 }
-.whitePaper .content .con h3 i {
-  margin-top: -0.25rem;
-  margin-left: 0.15rem;
+.publisher .center p {
+  font-size: 0.36rem;
+  font-family:"黑体";
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.50rem;
+  letter-spacing: 2px;
+  white-space: nowrap;
 }
-.whitePaper .content .con h3 i img {
-  width: 0.37rem;
-  height: 0.51rem;
+.publisher .center .cLogo {
+  position: absolute;
 }
-.whitePaper .content .con p {
-  width: 4rem;
-  font-size: 0.3rem;
+.publisher .center .cLogo img {
+  width: 3.08rem;
+  height: 3.08rem;
+}
+.publisher .left .lLogo img,
+.publisher .right .rLogo img {
+  width: 4.89rem;
+  height: 7.42rem;
+}
+.publisher .left,
+.publisher .right {
+  position: relative;
+}
+.publisher .left .lContent1 {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.publisher .left .lContent1 > div {
+  margin-top: -0.50rem;
+  margin-left: 0.20rem;
+}
+.publisher .left .lContent1 > div img {
+  width: 1.24rem;
+  height: 1.02rem;
+}
+.publisher .left .lContent1 p {
+  width: 3.63rem;
+  /* height:150rem; */
+  font-size: 0.20rem;
+  font-family: "黑体";
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
-  line-height: 0.76rem;
-  margin-top: 0.50rem;
+  line-height: 0.50rem;
+  margin-top: 0.25rem;
+  margin-left: -0.35rem;
 }
-.whitePaper .content .con p i img {
-  width: 0.38rem;
-  height: 0.38rem;
-  margin-left: 0.15rem;
-  margin-top:0.10rem;
-}
-.association {
-  width: 13rem;
-  /* height: 716rem; */
-  position: relative;
-  margin: 0 auto;
-  margin-top: 2.40rem;
-  margin-bottom: 2.00rem;
-}
-.association .bg {
+.publisher .left .lContent2 {
   position: absolute;
-  left: -25%;
-}
-.association .bg img {
-  width: 12.25rem;
-  height: 7.64rem;
-}
-.association .content {
+  bottom: 0.50rem;
   display: flex;
+  flex-direction: column;
 }
-.association .content .hLogo {
-  margin-left: 5%;
-  margin-top: -5%;
-  position: relative;
-  z-index: 9;
+.publisher .left .lContent2 > div {
+  margin-left: 0.20rem;
 }
-
-.association .content .hLogo img {
-  width: 6.54rem;
-  height: 6.67rem;
+.publisher .left .lContent2 > div img {
+  width: 1.24rem;
+  height: 1.02rem;
 }
-
-.association .content .con {
-  /* height: 500rem; */
-  margin-left: 4%;
-  margin-top: 2.00rem;
-}
-.association .content .con h3 {
-  font-size: 0.53rem;
-  font-weight: 600;
+.publisher .left .lContent2 p {
+  width: 3.63rem;
+  /* height:150rem; */
+  font-size: 0.20rem;
+  font-family: "黑体";
+  font-weight: 400;
   color: rgba(248, 248, 248, 1);
-  display: flex;
+  line-height: 0.50rem;
+  margin-top: 0.25rem;
+  margin-left: -0.35rem;
 }
-.association .content .con p {
-  width: 4.67rem;
+.publisher .right .lContent1 {
+  position: absolute;
+  top: 0;
+  left: 2.90rem;
+  display: flex;
+  flex-direction: column;
+}
+.publisher .right .lContent1 > div {
+  margin-top: -0.50rem;
+  margin-left: 0.20rem;
+}
+.publisher .right .lContent1 > div img {
+  width: 1.05rem;
+  height: 1.14rem;
+}
+.publisher .right .lContent1 p {
+  width: 2.37rem;
+  /* height:150rem; */
+  font-size: 0.20rem;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 0.50rem;
+  margin-top: 0.25rem;
+  margin-left: -0.50rem;
+}
+.publisher .right .lContent2 {
+  position: absolute;
+  bottom: 0.30rem;
+  left: 2.90rem;
+  display: flex;
+  flex-direction: column;
+}
+.publisher .right .lContent2 > div {
+  margin-left: 0.20rem;
+}
+.publisher .right .lContent2 > div img {
+  width: 1.24rem;
+  height: 1.02rem;
+}
+.publisher .right .lContent2 p {
+  width: 3.63rem;
+  /* height:150rem; */
+  font-size: 0.20rem;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 0.50rem;
+  margin-top: 0.10rem;
+  margin-left: -1.30rem;
+}
+.forWorldDescrs {
+  width: 12rem;
+  margin: 2.50rem auto;
+  display: flex;
+  justify-content: center;
+}
+.forWorldDescrs .eachDescr {
+  position: relative;
+  margin-left: 0.25rem;
+}
+.forWorldDescrs .eachDescrs {
+  width: 3.80rem;
+  height: 4.09rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    RGBA(158, 146, 250, 1) 100%
+  );
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  padding: 0.88rem 0.25rem 0 0.35rem;
+  box-sizing: border-box;
+}
+.eachDescrs h3 {
   font-size: 0.30rem;
   font-family:"黑体";
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  line-height: 0.76rem;
+  font-weight: 500;
+  color: rgba(44, 9, 108, 1);
+}
+.eachDescrs i{
   display: flex;
-  margin-top: 0.30rem;
-  margin-left: 0.40rem;
 }
-.association .content .con h3 i {
-  margin-right: 0.15rem;
-  margin-top: -0.25rem;
+.eachDescrs i img {
+  width: 0.64rem;
+  height: 0.04rem;
 }
-.association .content .con h3 i img {
-  width: 0.37rem;
-  height: 0.51rem;
+.eachDescrs p {
+  font-size: 0.24rem;
+  font-family: "黑体";
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
+  margin-top: 0.20rem;
+  line-height: 0.48rem;
+}
+.forWorldDescrs .eachDescr .logo1,
+.forWorldDescrs .eachDescr .logo2,
+.forWorldDescrs .eachDescr .logo3,
+.forWorldDescrs .eachDescr .logo4 {
+  position: absolute;
+}
+.forWorldDescrs .eachDescr .logo1 {
+  left: 0.40rem;
+  top: -1.50rem;
+}
+.forWorldDescrs .eachDescr .logo2 {
+  left: 1.10rem;
+  top: -1.05rem;
+  z-index: 11;
+}
+.forWorldDescrs .eachDescr .logo3 {
+  left: -0.12rem;
+  bottom: 0.17rem;
+}
+.forWorldDescrs .eachDescr .logo4 {
+  right: 0.10rem;
+  bottom: -0.15rem;
+  z-index: 11;
+}
+.forWorldDescrs .eachDescr .logo1 img {
+  width: 2.51rem;
+  height: 2.25rem;
+}
+.forWorldDescrs .eachDescr .logo2 img {
+  width: 2.05rem;
+  height: 1.73rem;
+}
+.forWorldDescrs .eachDescr .logo3 img {
+  width: 2.03rem;
+  height: 1.35rem;
+}
+.forWorldDescrs .eachDescr .logo4 img {
+  width: 2.36rem;
+  height: 1.94rem;
+}
+
+.forWorldDescrs .eachDescr:nth-child(4) .logo1 {
+  top: -1.50rem;
 }
 footer {
   width: 100%;
