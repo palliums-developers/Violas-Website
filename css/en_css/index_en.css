@@ -741,6 +741,7 @@ section {
   display: inline-block;
   /* white-space: nowrap; */
 }
+
 .deepIntroduce > .association .content .con p i img {
   width: 0.38rem;
   height: 0.38rem;
@@ -1138,8 +1139,12 @@ footer > p {
    
    margin-left: -30px;
  }
+ .deepIntroduce > .association .content .con h3{
+   font-size: 14px;
+ }
  .deepIntroduce > .association .content .con span{
    width: 122px;
+   font-size: 10px;
  }
  .deepIntroduce > .association .content .hLogo{
        margin-left:10px;
@@ -1155,6 +1160,10 @@ footer > p {
  .deepIntroduce > .whitePaper .content .hLogo img{
      width: 198px;
      height: 215px;
+ }
+ .deepIntroduce > .association .content .con p{
+   font-size: 12px;
+   line-height: 12px;
  }
  .deepIntroduce > .association .content .con p i img{
    width: 17px;
