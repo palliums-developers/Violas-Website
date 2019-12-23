@@ -899,35 +899,18 @@
     let clientWidth = document.body.clientWidth;
     // console.log(clientWidth)
     let bignav = document.querySelector(".header"); //获取到导航栏id
-    let phone_nav = document.querySelector(".phone_head");
     let navbar = document.querySelector(".navbar");
     if (topScroll > 0 && clientWidth >= 800) {
       bignav.style.position = "fixed";
       bignav.style.zIndex = "9999";
       bignav.style.background = "#2c096c";
     }
-    // else if(topScroll>820){
-    //   bignav.style.position = 'fixed';
-    //   bignav.style.top = '0';
-    //   bignav.style.zIndex = '9999';
-    //   bignav.style.background = '#2c096c';
-    //   bignav.style.backgroundImage = 'linear-gradient(to right , #2C096C, #2C096C);';
-    // }
     else if (topScroll == 0 && clientWidth >= 800) {
       //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
       bignav.style.position = "static";
       bignav.style.zIndex = "9999";
       bignav.style.background = "0";
       // bignav.style.backgroundImage = 'linear-gradient(to right , #9c3ec9, #4a189f);'
-    }
-    if (topScroll > 0 && clientWidth < 800) {
-      phone_nav.style.position = "fixed";
-      phone_nav.style.top = 0;
-      phone_nav.style.zIndex = "9999";
-      phone_nav.style.background = "#2c096c";
-    } else if (topScroll == 0 && clientWidth < 800) {
-      phone_nav.style.position = "static";
-      phone_nav.style.background = "0";
     }
   };
 </script>

@@ -1096,7 +1096,7 @@ footer > p {
   }
   .whitePaper .bg {
     width: 264px;
-    right: 0%;
+    right:-100px;
   }
   .whitePaper .content {
     width: 300px;
@@ -1147,7 +1147,7 @@ footer > p {
     font-size: 14px;
   }
   .deepIntroduce > .association .bg {
-    left: 0%;
+    /* left: 0%; */
   }
   .deepIntroduce > .association .bg img {
     width: 264px;

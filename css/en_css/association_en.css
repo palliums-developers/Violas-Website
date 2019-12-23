@@ -659,7 +659,7 @@ footer > p {
   margin-top: 0;
   display: flex;
   overflow-x: auto;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 
 .forWorldDescr .eachDescr {
