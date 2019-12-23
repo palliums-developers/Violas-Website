@@ -226,8 +226,8 @@ header {
 
 .headContent .headTalk {
   position: absolute;
-  left:-0.7rem;
-  bottom:0.5rem;
+  left:0.1rem;
+  bottom:1rem;
 }
 
 .headContent .headTalk p img {
@@ -242,7 +242,7 @@ header {
   margin-bottom: 0.2rem;
 }
 .headContent .headTalk p {
-  width: 8rem;
+  width: 7.5rem;
   font-size: 0.14rem;
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
