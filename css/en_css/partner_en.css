@@ -3,6 +3,7 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+  font-family: "Times New Roman";
 }
 
 .wrap {
@@ -19,7 +20,7 @@ header {
   height: 7.32rem;
   display: flex;
   flex-direction: column;
-  background: url("../img/编组 4@2x.png") no-repeat;
+  background: url("../../img/编组 4@2x.png") no-repeat;
   background-size: 100% 100%;
 }
 .header {
@@ -69,45 +70,6 @@ header {
 .navList li.active {
   color: rgba(62, 209, 246, 1);
 }
-/* .navList li:last-child {
-  position: relative;
-}
-.navList li:last-child .select {
-  width: 145px;
-  height: 116px;
-  position: relative;
-  position: absolute;
-  top: 30px;
-  left: -20px;
-  display: none;
-}
-.navList li:last-child .select .bg {
-  position: absolute;
-  top: 0;
-}
-.navList li:last-child .select > div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 15px;
-}
-.navList li:last-child .select > div span {
-  width: 100%;
-  height: 50px;
-  font-size: 23px;
-  font-family: "黑体";
-  font-weight: 500;
-  color: rgba(44, 9, 108, 1);
-  line-height: 50px;
-  text-align: center;
-  letter-spacing: 1px;
-  border-radius: 5px;
-}
-.navList li:last-child .select .bg img {
-  width: 145px;
-  height: 116px;
-} */
 
 .descr {
   height: 100%;
@@ -153,9 +115,10 @@ header {
 }
 .headContent .headTalk {
   display: flex;
+  flex-direction: column;
   position: absolute;
-  left: -0.35rem;
-  bottom:2rem;
+  left: 0.1rem;
+  bottom:1.3rem;
 }
 
 .headContent .headTalk p {
@@ -165,7 +128,6 @@ header {
   margin-top: 0.15rem;
 }
 .headContent .headTalk > div {
-  margin-left: 0.40rem;
   margin-top: 0.20rem;
 }
 .headContent .headTalk p > span {
@@ -184,52 +146,58 @@ header {
   display: flex;
 }
 .mebers .head {
-  width: 11.18rem;
+  width: 11.85rem;
   height: 0.61rem;
-  margin: 1.30rem auto;
+  margin: 0 auto;
   position: relative;
   display: flex;
   align-items: center;
+  margin-top: 2.40rem;
 }
-
 .mebers .head .bg {
-  width: 11.18rem;
+  width: 11.8rem;
   height: 0.61rem;
 }
-
 .mebers .head .bg img {
-  width: 100%;
+  /* width: 100%; */
+  position: absolute;
+}
+.mebers .head .bg .img_left {
+  width:3.31rem;
+  height: 0.48rem;
+  left: 0;
+}
+.mebers .head .bg .img_right {
+  width:3.31rem;
+  height: 0.48rem;
+  right: 0;
 }
 
 .mebers .head p {
   position: absolute;
-  left: 47%;
-  margin-left: -1.20rem;
+  left: 50%;
+  margin-left: -2.5rem;
   top: 0;
   font-size: 0.40rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
 }
 
-.mebers .head p {
-  left: 53.5%;
-  top: 0.05rem;
-}
 .forWorldDescr {
   width: 12.00rem;
   margin: 0 auto;
   margin-top: 2.50rem;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .forWorldDescr .eachDescr {
-  width: 5.46rem;
+  width: 6rem;
   position: relative;
   margin-left: 0.25rem;
 }
 .forWorldDescr .eachDescrs {
-  width: 5.46rem;
-  height: 4.37rem;
+  width: 6rem;
+  height: 8.5rem;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
@@ -243,7 +211,6 @@ header {
 }
 .eachDescrs h3 {
   font-size: 0.30rem;
-  font-family:"黑体";
   font-weight: 500;
   color: rgba(44, 9, 108, 1);
 }
@@ -254,7 +221,6 @@ header {
 }
 .eachDescrs p {
   font-size: 0.24rem;
-  font-family: "黑体";
   font-weight: 400;
   color: rgba(44, 9, 108, 1);
   margin-top: 0.20rem;
@@ -306,7 +272,7 @@ header {
   top: -1.00rem;
 }
 .forWorldDescr .eachDescr:nth-child(2) .logo3 {
-  left: 47%;
+  left: 52%;
 }
 .service {
   width: 13.17rem;
@@ -333,17 +299,20 @@ header {
   font-size: 0.45rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
-  margin: 0.46rem 0 0.39rem 0.58rem;
+  margin: 0.3rem 0 0.2rem 0.4rem;
 }
+
 .service p {
   width: 10rem;
   font-size: 0.28rem;
-  font-family: "黑体";
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   letter-spacing: 1px;
-  margin-left: 0.58rem;
+  margin-left: 0.4rem;
   margin-bottom: 0.30rem;
+}
+.service p:nth-child(3){
+  width: 9rem;
 }
 .publisher {
   width: 12rem;
@@ -364,7 +333,6 @@ header {
 }
 .publisher .center p {
   font-size: 0.36rem;
-  font-family:"黑体";
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
   line-height: 0.50rem;
@@ -394,7 +362,7 @@ header {
   flex-direction: column;
 }
 .publisher .left .lContent1 > div {
-  margin-top: -0.50rem;
+  margin-top: -0.75rem;
   margin-left: 0.20rem;
 }
 .publisher .left .lContent1 > div img {
@@ -402,19 +370,18 @@ header {
   height: 1.02rem;
 }
 .publisher .left .lContent1 p {
-  width: 3.63rem;
+  width: 5.63rem;
   /* height:150rem; */
   font-size: 0.20rem;
-  font-family: "黑体";
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
-  line-height: 0.50rem;
-  margin-top: 0.25rem;
-  margin-left: -0.35rem;
+  line-height: 0.40rem;
+  margin-top: 0.2rem;
+  margin-left: -1.5rem;
 }
 .publisher .left .lContent2 {
   position: absolute;
-  bottom: 0.50rem;
+  bottom: 0.20rem;
   display: flex;
   flex-direction: column;
 }
@@ -426,15 +393,14 @@ header {
   height: 1.02rem;
 }
 .publisher .left .lContent2 p {
-  width: 3.63rem;
+  width: 5.5rem;
   /* height:150rem; */
   font-size: 0.20rem;
-  font-family: "黑体";
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
-  line-height: 0.50rem;
+  line-height: 0.40rem;
   margin-top: 0.25rem;
-  margin-left: -0.35rem;
+  margin-left: -1.5rem;
 }
 .publisher .right .lContent1 {
   position: absolute;
@@ -452,19 +418,18 @@ header {
   height: 1.14rem;
 }
 .publisher .right .lContent1 p {
-  width: 2.37rem;
+  width: 3rem;
   /* height:150rem; */
   font-size: 0.20rem;
-  font-family: "黑体";
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
-  line-height: 0.50rem;
+  line-height: 0.40rem;
   margin-top: 0.25rem;
   margin-left: -0.50rem;
 }
 .publisher .right .lContent2 {
   position: absolute;
-  bottom: 0.30rem;
+  bottom: 0.50rem;
   left: 2.90rem;
   display: flex;
   flex-direction: column;
@@ -483,8 +448,8 @@ header {
   font-family: "黑体";
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
-  line-height: 0.50rem;
-  margin-top: 0.10rem;
+  line-height: 0.40rem;
+  margin-top: 0.20rem;
   margin-left: -1.30rem;
 }
 .forWorldDescrs {
@@ -513,7 +478,6 @@ header {
 }
 .eachDescrs h3 {
   font-size: 0.30rem;
-  font-family:"黑体";
   font-weight: 500;
   color: rgba(44, 9, 108, 1);
 }
@@ -665,6 +629,7 @@ footer > p {
     color:rgba(248,248,248,1);
     line-height:14px;
     margin-top: 47px;
+    cursor: pointer;
   }
   .phone_list>span{
     width: 90px;
@@ -707,5 +672,154 @@ footer > p {
     top: 24px;
     left:12px;
     font-weight: 300;
+  }
+}
+@media (max-width:750px){
+  .headContent .headTalk p img{
+   display: none;
+  }
+  .headContent .headTalk{
+     bottom:2rem;
+  }
+  .mebers .head{
+     width: 360px;
+  }
+  .mebers .head .bg .img_left, .mebers .head .bg .img_right {
+    width: 100px;
+    height: 14px;
+  }
+  .mebers .head p{
+    left: 50%;
+    margin-left: -75px;
+  }
+  .mebers .headDescr {
+    width: 150px;
+    height: 150px;
+  }
+  .mebers .headDescr .bg img {
+    width: 148px;
+    height: 148px;
+  }
+  .mebers .headDescr h3{
+    font-size: 13px;
+    top: 2rem;
+    margin-left: -83px;
+  }
+  .mebers .headDescr p {
+    width: 300px;
+    font-size: 12px;
+    top: 3.2rem;
+    line-height: 20px;
+    left: 50%;
+    margin-left: -150px;
+  }
+  .forWorldDescr {
+  width: auto;
+  margin: 0 auto;
+  margin-top: 0;
+  display: flex;
+  overflow-x: auto;
+}
+
+.forWorldDescr .eachDescr {
+  width:320px;
+  /* height:545px; */
+  padding-top: 50px;
+  position: relative;
+  margin-left: 10px;
+}
+.forWorldDescr .eachDescr:last-child {
+  margin-right: 0;
+}
+.forWorldDescr .eachDescrs {
+  width: 320px;
+  height: 545px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    RGBA(158, 146, 250, 1) 100%
+  );
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  padding: 30px 10px 10px 10px;
+  box-sizing: border-box;
+}
+.forWorldDescr .eachDescrs h3 {
+  font-size:14px;
+  line-height:16px;
+}
+.forWorldDescr .eachDescrs i {
+  display: flex;
+}
+.forWorldDescr .eachDescrs i img {
+  width: 19px;
+  height: 1px;
+}
+.forWorldDescr .eachDescrs p {
+  font-size:12px;
+  line-height:22px;
+  margin-top: 10px;
+}
+.forWorldDescr .eachDescr .logo1,
+.forWorldDescr .eachDescr .logo2{
+  display: none;
+}
+.forWorldDescr .eachDescr .logo1 {
+  left: 50%;
+  margin-left:-50px;
+  top:10px;
+}
+.forWorldDescr .eachDescr .logo2 {
+  left: 50%;
+  margin-left: -30px;
+  top: 20px;
+  z-index: 11;
+}
+
+.forWorldDescr .eachDescr .logo1 img {
+  width: 70px;
+  height: 54px;
+}
+.forWorldDescr .eachDescr .logo2 img {
+  width: 62px;
+  height: 52px;
+}
+.forWorldDescr .eachDescr .logo3 img,
+.forWorldDescr .eachDescr .logo4 img{
+   display: none;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo1{
+ top: 5px;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo1 img {
+  width: 72px;
+  height: 64px;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo2 {
+  top:20px;
+}
+.service{
+   width: 320px;
+}
+  footer h2 {
+    margin: 20px 0 10px 25px;
+    font-size:10px;
+  }
+  footer > div{
+    margin-left: 17px;
+  }
+  footer > div i img {
+    width: 10px;
+    height: 8px;
+    margin-top: 2px;
+  }
+  footer > div label {
+    font-size:12px;
+  }
+  footer > p {
+    font-size:8px;
+    /* margin: 20px 0; */
+    margin-bottom: 30px!important;
   }
 }

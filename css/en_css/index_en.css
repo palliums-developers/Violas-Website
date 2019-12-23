@@ -349,9 +349,9 @@ section {
 .forWorldDescr{
     display: block;
   }
-  .forWorldDescr1{
+.forWorldDescr1{
     display: none;
-  }
+}
 .forWorldDescr {
   width: 12rem;
   height: 15rem;
@@ -678,6 +678,7 @@ section {
   position: relative;
   margin: 0 auto;
   margin-top: 2.40rem;
+  margin-bottom: 1rem;
   /* overflow: hidden; */
 }
 .deepIntroduce > .association .bg {
@@ -917,15 +918,15 @@ footer > p {
     bottom:16px;
   }
   .phone_list>.change a{
-    font-size:12px;
+    font-size:14px;
     font-weight:400;
     line-height:11px;
     padding: 0 17px;
     box-sizing: border-box;
   }
-  .phone_list>.change a:not(.ka){
+  /* .phone_list>.change a:not(.ka){
     border-right:1px solid #FFF ;
-  }
+  } */
   .hide_show_header_pc {
     display: none;
   }
@@ -1008,13 +1009,14 @@ footer > p {
   .forWorldDescr{
     display: none;
   }
-  .forWorldDescr1 {
+.forWorldDescr1 {
   width: 375px;
   margin: 0 auto;
   margin-top: 0;
   display: flex;
   overflow-x: auto;
 }
+
 .forWorldDescr1 .eachDescr {
   width:191px;
   padding-top: 50px;

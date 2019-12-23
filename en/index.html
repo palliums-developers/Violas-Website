@@ -82,15 +82,15 @@
         <ul class="list-group phone_list">
           <a>Vision</a>
           <a>Association</a>
-          <a>Partner</a>
+          <a>Partners</a>
           <a>Blockchain Explorer</a>
           <a>Media</a>
           <span id="whitePaper1">White Paper</span>
-          <div class="change">
+          <!-- <div class="change">
             <a>EN</a>
             <a>日本語</a>
             <a class="ka">한국어</a>
-          </div>
+          </div> -->
         </ul>
       </div>
       <section class="bmd-layout-content">
@@ -708,7 +708,7 @@
               </div>
             </div>
           </div>
-          <div class="whitePaper">
+          <!-- <div class="whitePaper">
             <div class="bg">
               <img src="../img/路径 13复制 6@3x.png" alt="" />
             </div>
@@ -723,7 +723,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <footer>
@@ -745,18 +745,6 @@
     let rem = wW * 100 / designSize;
     document.documentElement.style.fontSize = rem + 'px';
   }
-
-  //  function init1() {
-
-  //     let designSize = 750; // 设计图尺寸
-
-  //     let html = document.documentElement;
-
-  //     let wW = html.clientWidth;// 窗口宽度
-  //     let rem = wW * 100 / designSize;
-
-  //     document.documentElement.style.fontSize = rem + 'px';
-  //   }
   init();
   window.onresize = function () {
     init();
@@ -770,50 +758,28 @@
       el: ".swiper-pagination"
     }
   });
-  let text = document.querySelectorAll("ul li");
-  let navlist = document.querySelector(".navList");
-  // let docum = document.querySelector('.navList #docu');
-  // docum.onclick = function () {
-  //   if (selects.style.display == 'none') {
-  //     docum.style.color = "rgba(62, 209, 246, 1)"
-  //     selects.style.display = 'block'
-  //   } else {
-  //     selects.style.display = 'none'
-  //     docum.style.color = "#FFF"
-  //   }
-  // }
-  // for (var i = 0; i < lists.length; i++) {
-  //   lists[i].onclick = function () {
-  //     if (this.innerHTML == 'Violas') {
-  //       selects.style.display = 'none'
-  //     } else if (this.innerHTML == 'libra') {
-  //       window.location = 'libra_doc/lib_doc_en2cn/welcome-to-libra.htm';
-  //       selects.style.display = 'none'
-  //     }
-  //     for (var i = 0; i < lists.length; i++) {
-  //       lists[i].style.background = '#FFF';
-  //       this.style.background = 'rgba(169, 67, 206, .16)';
-  //     }
-  //   }
-  // }
-  for (var i = 0; i < text.length; i++) {
-    text[i].onclick = function () {
-      if (this.innerHTML == "Home") {
-        window.location = "index.html";
-      } else if (this.innerHTML == "Association") {
-        window.location = "association.html";
-      } else if (this.innerHTML == "Partners") {
-        window.location = "partner.html";
-      }
-      // else if(this.innerHTML == 'wiki'){
-      //   window.location = 'https://www.wttf.org';
-      // }
+  let navlists = document.querySelectorAll('ul li');
+  let phoneListA = document.querySelectorAll('.phone_list a');
+    function nav(text) {
       for (var i = 0; i < text.length; i++) {
-        text[i].className = "";
-        this.className = "active";
+        text[i].onclick = function () {
+          if (this.innerHTML == 'Association') {
+            window.location = 'association.html';
+          } else if (this.innerHTML == 'Partners') {
+            window.location = 'partner.html';
+          }
+          //  else if(this.innerHTML == 'wiki'){
+          //    window.location = 'https://www.wttf.org';
+          //  }
+          for (var i = 0; i < text.length; i++) {
+            text[i].className = '';
+            this.className = 'active'
+          }
+        }
       }
-    };
-  }
+    }
+    nav(navlists);
+    nav(phoneListA);
   let oDiv1 = document.querySelector(".declare");
   let oDiv2 = document.querySelector(".declare1");
   let oHis1 = document.querySelector(".history");
@@ -849,14 +815,11 @@
   };
   wPaper1.onclick = function () {
     wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
-    // window.location = "whitePaper.html";
+    window.location = "whitePaper.html";
   };
   wPaper.onclick = function () {
     wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
     window.location = "whitePaper.html";
-  };
-  oDiv2.onclick = function () {
-    // window.location = 'manifesto.html'
   };
   oDiv1.onmouseover = function () {
     oDiv2.style.display = "block";
@@ -869,16 +832,9 @@
   oHis2.onclick = function () {
     // window.location = 'pastRecords.html'
   };
-  oHis1.onmouseover = function () {
-    oHis2.style.display = "block";
-    oHis1.style.display = "none";
-  };
   oHis2.onmouseout = function () {
     oHis2.style.display = "none";
     oHis1.style.display = "block";
-  };
-  oRes2.onclick = function () {
-    // window.location = 'manifesto.html'
   };
   oRes1.onmouseover = function () {
     oRes2.style.display = "block";
@@ -888,9 +844,7 @@
     oRes2.style.display = "none";
     oRes1.style.display = "block";
   };
-  oBlo2.onclick = function () {
-    // window.location = 'manifesto.html'
-  };
+
   oBlo1.onmouseover = function () {
     oBlo2.style.display = "block";
     oBlo1.style.display = "none";
@@ -898,9 +852,6 @@
   oBlo2.onmouseout = function () {
     oBlo2.style.display = "none";
     oBlo1.style.display = "block";
-  };
-  oAss2.onclick = function () {
-    // window.location = 'manifesto.html'
   };
   oAss1.onmouseover = function () {
     oAss2.style.display = "block";
@@ -910,9 +861,6 @@
     oAss2.style.display = "none";
     oAss1.style.display = "block";
   };
-  oSec2.onclick = function () {
-    // window.location = 'manifesto.html'
-  };
   oSec1.onmouseover = function () {
     oSec2.style.display = "block";
     oSec1.style.display = "none";
@@ -920,9 +868,6 @@
   oSec2.onmouseout = function () {
     oSec2.style.display = "none";
     oSec1.style.display = "block";
-  };
-  oCom2.onclick = function () {
-    // window.location = 'manifesto.html'
   };
   oCom1.onmouseover = function () {
     oCom2.style.display = "block";
@@ -932,9 +877,6 @@
     oCom2.style.display = "none";
     oCom1.style.display = "block";
   };
-  oPro2.onclick = function () {
-    // window.location = 'manifesto.html'
-  };
   oPro1.onmouseover = function () {
     oPro2.style.display = "block";
     oPro1.style.display = "none";
@@ -942,9 +884,6 @@
   oPro2.onmouseout = function () {
     oPro2.style.display = "none";
     oPro1.style.display = "block";
-  };
-  oMem2.onclick = function () {
-    // window.location = 'manifesto.html'
   };
   oMem1.onmouseover = function () {
     oMem2.style.display = "block";
@@ -962,18 +901,7 @@
     let bignav = document.querySelector(".header"); //获取到导航栏id
     let phone_nav = document.querySelector(".phone_head");
     let navbar = document.querySelector(".navbar");
-    // if(topScroll > 0){
-    //   navbar.style.position = "fixed"
-    //   // navbar.style.top = '0';
-    //   navbar.style.zIndex = "9999";
-    //   navbar.style.background = "#2c096c";
-    // } else if (topScroll <= 0) {
-    //   navbar.style.position = "static";
-    //   navbar.style.zIndex = "9999";
-    //   navbar.style.background = "0";
-    // }
     if (topScroll > 0 && clientWidth >= 800) {
-      //当滚动距离大于250px时执行下面的东西
       bignav.style.position = "fixed";
       bignav.style.zIndex = "9999";
       bignav.style.background = "#2c096c";

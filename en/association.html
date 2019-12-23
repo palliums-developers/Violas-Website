@@ -76,25 +76,29 @@
         </header>
       </div>
       <div id="dw-p1" class="bmd-layout-drawer bg-faded">
+        <span class="close">×</span>
         <ul class="list-group phone_list">
           <a>Vision</a>
           <a>Association</a>
-          <a>Partner</a>
+          <a>Partners</a>
           <a>Blockchain Explorer</a>
           <a>Media</a>
           <span id="whitePaper1">White Paper</span>
-          <div class="change">
+          <!-- <div class="change">
             <a>EN</a>
             <a>日本語</a>
             <a class="ka">한국어</a>
-          </div>
+          </div> -->
         </ul>
       </div>
       <section class="bmd-layout-content">
         <div class="vision">
           <div class="head">
-            <div class="bg"><img src="../img/编组 29@3x.png" /></div>
-            <p>Bylaws of The Violas Association</p>
+            <div class="bg">
+              <img class="img_left" src="../img/编组 26.png" />
+              <p>Bylaws of The Violas Association</p>
+              <img class="img_right" src="../img/编组 26复制 4.png" />
+            </div>
           </div>
           <div class="headDescr">
             <div class="bg"><img src="../img/编组 32@3x.png" /></div>
@@ -128,7 +132,7 @@
             </div>
           </div>
         </div>
-        <div class="mebers">
+        <!-- <div class="mebers">
           <div class="head">
             <div class="bg"><img src="../img/编组 29复制@3x.png" /></div>
             <p>两院成员</p>
@@ -153,7 +157,7 @@
               <div class="hLogo"><img src="../img/编组 14@2x.png" alt=""></div>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
       <footer>
         <h2>Contact Us</h2>
@@ -177,10 +181,10 @@
   }
   let text = document.querySelectorAll('ul li')
   let navlist = document.querySelector('.navList');
-  let selects = document.querySelector('.navList .select');
+  // let selects = document.querySelector('.navList .select');
   let docum = document.querySelector('.navList #docu');
   let lists = document.querySelectorAll('.select .list span');
-  selects.style.display = 'none';
+  // selects.style.display = 'none';
   let wPaper1 = document.getElementById("whitePaper1");
 
   let closeBtn = document.querySelector('.close');
@@ -197,49 +201,30 @@
   };
   wPaper1.onclick = function () {
     wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
-    // window.location = "whitePaper.html";
+    window.location = "whitePaper.html";
   };
-  docum.onclick = function () {
-    if (selects.style.display == 'none') {
-      docum.style.color = "rgba(62, 209, 246, 1)"
-      selects.style.display = 'block'
-    } else {
-      selects.style.display = 'none'
-      docum.style.color = "#FFF"
-    }
-  }
-  for (var i = 0; i < lists.length; i++) {
-    lists[i].onclick = function () {
-      if (this.innerHTML == 'Violas') {
-        selects.style.display = 'none'
-      } else if (this.innerHTML == 'libra') {
-        window.location = 'libra_doc/lib_doc_en2cn/welcome-to-libra.htm';
-        selects.style.display = 'none'
-      }
-      for (var i = 0; i < lists.length; i++) {
-        lists[i].style.background = '#FFF';
-        this.style.background = 'rgba(169, 67, 206, .16)';
-      }
-    }
-  }
-  for (var i = 0; i < text.length; i++) {
-    text[i].onclick = function () {
-      if (this.innerHTML == '首页') {
-        window.location = 'index_cn.html';
-      } else if (this.innerHTML == '协会') {
-        window.location = 'association.html';
-      } else if (this.innerHTML == '合作伙伴') {
-        window.location = 'partner.html';
-      }
-      //  else if(this.innerHTML == 'wiki'){
-      //    window.location = 'https://www.wttf.org';
-      //  }
+  let navlists = document.querySelectorAll('ul li');
+  let phoneListA = document.querySelectorAll('.phone_list a');
+    function nav(text) {
       for (var i = 0; i < text.length; i++) {
-        text[i].className = '';
-        this.className = 'active'
+        text[i].onclick = function () {
+          if (this.innerHTML == 'Association') {
+            window.location = 'association.html';
+          } else if (this.innerHTML == 'Partners') {
+            window.location = 'partner.html';
+          }
+          //  else if(this.innerHTML == 'wiki'){
+          //    window.location = 'https://www.wttf.org';
+          //  }
+          for (var i = 0; i < text.length; i++) {
+            text[i].className = '';
+            this.className = 'active'
+          }
+        }
       }
     }
-  }
+    nav(navlists);
+    nav(phoneListA);
   let wPaper = document.getElementById('whitePaper')
   wPaper.onclick = function () {
     wPaper.style.cssText = "background:#FFF;color:rgba(44, 9, 108, 1)";
