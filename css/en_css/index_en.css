@@ -621,6 +621,7 @@ section {
   line-height: 0.32rem;
   margin-top: 0.4rem;
   margin-left: 1rem;
+  white-space: nowrap;
   /* margin-bottom: 80rem; */
 }
 .deepIntroduce > .content .deepDescr1 h3 {

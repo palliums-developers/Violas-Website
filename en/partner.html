@@ -161,6 +161,37 @@
               </div>
             </div>
           </div>
+          <div class="publisher1">
+            <div class="head">
+              <div class="bg">
+                <img class="img_left" src="../img/编组 26.png" />
+                <p>Issuers of stablecoin offering</p>
+                <img class="img_right" src="../img/编组 26复制 4.png" />
+              </div>
+            </div>
+            <div class="issuers">
+              <div class="issuersCon">
+                <div><img src="../img/编组 442@2x.png" alt=""></div>
+                <p>Issuer of Stablecoin Offering could be an organization or an individual person. The required reserve of assets to
+                  issue
+                  stablecoin must be either local fiat currency or low-risk short-term bonds certified by the association.</p>
+              </div>
+              <div class="issuersCon">
+                <div><img src="../img/编组 132@2x.png" alt=""></div>
+                <p>Issuers of stablecoin offering must guarantee the stable value of reserve assets which may only experience minor
+                  fluctuations, and are obligated to disclose and replenish assets when the reserves are insufficient.</p>
+              </div>
+              <div class="issuersCon">
+                <div><img src="../img/编组 10@2x.png" alt=""></div>
+                <p>The Stablecoin Offering must comply with local laws and regulations.</p>
+              </div>
+              <div class="issuersCon">
+                  <div><img src="../img/编组 452@2x.png" alt=""></div>
+                  <p>Issuers of stablecoin offering can earn interest of reserve asset and revenue generated from the circulation of
+                    stablecoin.</p>
+              </div>
+            </div>
+          </div>
           <div class="service">
             <div class="logo"><img src="../img/编组 24@2x.png" alt=""></div>
             <h2>Application Developer</h2>
@@ -247,6 +278,8 @@
   let wPaper = document.getElementById('whitePaper');
   let wPaper1 = document.getElementById('whitePaper1');
   let closeBtn = document.querySelector('.close');
+  let navbarT = document.querySelector('.navbar-toggler');
+  let bmdLayoutC = document.querySelector('.bmd-layout-container');
   wPaper.onclick = function () {
     wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
     window.location = 'whitePaper.html';
@@ -258,7 +291,7 @@
   closeBtn.onclick = function () {
       let dwp = document.getElementById("dw-p1");
       let bmdLayout = document.querySelector(".bmd-layout-backdrop");
-      bmdLayoutC.setAttribute('class', 'bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap default')
+      bmdLayoutC.setAttribute('class', 'bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap partner')
       navbarT.setAttribute('aria-expanded', false)
       dwp.setAttribute('aria-expanded', false);
       dwp.setAttribute('aria-hidden', true);

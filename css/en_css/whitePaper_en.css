@@ -226,7 +226,7 @@ header {
 
 .headContent .headTalk {
   position: absolute;
-  left: 0;
+  left:-0.7rem;
   bottom:0.5rem;
 }
 
@@ -235,20 +235,20 @@ header {
   height: 0.85rem;
 }
 .headContent .headTalk h2{
-  font-size: 0.32rem;
+  font-size: 0.24rem;
   font-weight: 600;
   color:rgba(255,255,255,1);
   line-height: 0.32rem;
   margin-bottom: 0.2rem;
 }
 .headContent .headTalk p {
-  width: 6.80rem;
-  font-size: 0.20rem;
+  width: 8rem;
+  font-size: 0.14rem;
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
   line-height: 0.28rem;
   letter-spacing: 2px;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.1rem;
 }
 
 .headContent .headLogo img {
@@ -273,8 +273,7 @@ section {
   height: 170rem;
   margin: 1.19rem auto;
   position: relative;
-  /* display: flex;
-  align-items: center; */
+  
 }
 
 .introduction > .bg img {
@@ -612,8 +611,33 @@ footer > p {
   }
 }
 @media(max-width:750px){
+  .bmd-layout-header{
+    height: 340px;
+  }
+  .headContent{
+    width: 350px;
+    flex: 1;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .headContent .headTalk h2{
+    margin: 15px 0;
+  }
+  .headContent .headTalk{
+    width: 350px;
+    left: 0;
+    bottom: 0;
+    top:0;
+  }
   .headContent .headTalk p{
+    width: 350px;
     font-size: 12px;
+    line-height: 15px;
+    
+  }
+  .headContent .headLogo img{
+    display: none;
   }
   footer h2 {
     margin: 20px 0 10px 25px;
