@@ -30,10 +30,13 @@
                 <li>Blockchain Explorer</li>
                 <li>Media</li>
               </ul>
-              <div class="descr">
+              <!-- <div class="descr">
                 <span id="whitePaper">White Paper</span>
                 <a href="../ja/index.html">日本語</a>
                 <a href="../ko/index.html">한국어</a>
+              </div> -->
+              <div class="descr" style="margin-left: 1.5rem;">
+                <span id="whitePaper">White Paper</span>
               </div>
             </div>
           </div>
@@ -579,15 +582,17 @@
       } else {
         document.querySelector('.introduction0').style.marginLeft = "170px";
       }
-    } else if (topScroll > 460 && client_width <= 1200) {
-      document.querySelector('.onPageNav').style.position = "fixed";
-      document.querySelector('.onPageNav').style.top = "0";
-      if (client_width > 1200) {
-        document.querySelector('.introduction0').style.marginLeft = "180px";
-      } else {
-        document.querySelector('.introduction0').style.marginLeft = "110px";
-      }
-    } else if (topScroll > 600 && client_width > 1500) {
+    }
+    // else if (topScroll > 460 && client_width <= 1200) {
+    //   document.querySelector('.onPageNav').style.position = "fixed";
+    //   document.querySelector('.onPageNav').style.top = "0";
+    //   if (client_width > 1200) {
+    //     document.querySelector('.introduction0').style.marginLeft = "180px";
+    //   } else {
+    //     document.querySelector('.introduction0').style.marginLeft = "110px";
+    //   }
+    // }
+    else if (topScroll > 600 && client_width > 1500) {
       document.querySelector('.onPageNav').style.position = "fixed";
       document.querySelector('.onPageNav').style.top = "0";
       if (client_width > 1200) {
@@ -604,10 +609,10 @@
       document.querySelector('.onPageNav').style.position = "static";
       document.querySelector('.introduction0').style.marginLeft = "5px";
     }
-    if (client_width <= 1200 && topScroll > 9800) {
-      document.querySelector('.onPageNav').style.position = "static";
-      document.querySelector('.introduction0').style.marginLeft = "5px";
-    }
+    // if (client_width <= 1200 && topScroll > 9800) {
+    //   document.querySelector('.onPageNav').style.position = "static";
+    //   document.querySelector('.introduction0').style.marginLeft = "5px";
+    // }
     if (topScroll > 17010) {
       document.querySelector('.onPageNav').style.position = "static";
       document.querySelector('.introduction0').style.marginLeft = "5px";
