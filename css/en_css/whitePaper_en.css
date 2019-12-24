@@ -3,11 +3,12 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "Times New Roman";
-  /* font-family: "SimHei "; */
-  /* font-family: Tahoma; */
+  font-size: 16px;
 }
-
+@font-face{
+  font-family: 'Aileron-Thin';
+  src:url('../../font/Aileron-Thin-13.ttf')
+}
 .wrap {
   width: 100%;
   height: auto;
@@ -202,7 +203,7 @@ header {
   line-height:  0.24rem;
   text-align: center;
   font-size: 0.17rem;
-  padding:  0 0.05rem;
+  padding:  0.05rem 0.05rem 0;
   box-sizing: border-box;
 }
 
@@ -270,20 +271,19 @@ section {
 
 .introduction {
   width: 12.70rem;
-  height: 170rem;
+  height: 172rem;
   margin: 1.19rem auto;
   position: relative;
-  
 }
 
 .introduction > .bg img {
   width: 12.70rem;
-  height: 170.60rem;
+  height: 172.60rem;
 }
 
 .introductionContent {
   width: 12rem;
-  height: 170rem;
+  height: 172rem;
   background: #fff;
   position: absolute;
   top: 0.28rem;
@@ -333,7 +333,7 @@ section {
 }
 
 .introduction9 {
-  height: 15rem;
+  height: 12rem;
 }
 
 .introduction1 > .bg {
@@ -503,6 +503,8 @@ footer > div i img {
   margin-top: 0.04rem;
   width: 0.27rem;
   height: 0.22rem;
+  /* width: 1rem;
+  height: 1rem; */
 }
 footer > div label {
   font-size: 0.22rem;
@@ -623,14 +625,14 @@ footer > p {
   .introduction .bg{
     position: relative;
     top: -10px;
-    height:7880px;
+    height:7980px;
   }
   .introduction .bg img{
     width:100%;
     height:100%;
   }
   .introductionContent {
-    height:7850px;
+    height:7950px;
     width:90%;
     left:5%;
     margin:0 auto;
@@ -656,7 +658,7 @@ footer > p {
     line-height:22px;
   }
   .introduction{
-    height:7050px;
+    height:7150px;
   }
   .introduction1{
     height:800px;
@@ -683,7 +685,7 @@ footer > p {
     height: 400px;;
   }
   .introduction9{
-    height: 500px;;
+    height: 600px;;
   }
   .headContent{
     width: 350px;
@@ -693,7 +695,8 @@ footer > p {
     margin: 0 auto;
   }
   .headContent .headTalk h2{
-    margin: 15px 0;
+    margin: 10px 0;
+    font-size: 16px;;
   }
   .headContent .headTalk{
     width: 350px;
@@ -705,6 +708,8 @@ footer > p {
     width: 350px;
     font-size: 12px;
     line-height: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
   }
   .headContent .headLogo img{
     display: none;

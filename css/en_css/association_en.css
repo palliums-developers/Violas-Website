@@ -3,9 +3,12 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
-  font-family: "Times New Roman";
+  /* font-family: "Times New Roman"; */
 }
-
+@font-face{
+  font-family: 'Aileron-Thin';
+  src:url('../../font/Aileron-Thin-13.ttf')
+}
 .wrap {
   width: 100%;
   height: auto;
@@ -134,7 +137,7 @@ header {
   line-height:  0.24rem;
   text-align: center;
   font-size: 0.17rem;
-  padding:  0 0.05rem;
+  padding:  0.05rem 0.05rem 0;
   box-sizing: border-box;
 }
 

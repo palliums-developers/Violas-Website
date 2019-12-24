@@ -486,9 +486,6 @@
             </div>
           </div>
         </div>
-        <div class="introduction1">
-
-        </div>
       </section>
       <footer>
         <h2>Connect us</h2>
@@ -538,32 +535,33 @@
     window.location = 'whitePaper.html';
   }
   let navlists = document.querySelectorAll('ul li');
-    let phoneListA = document.querySelectorAll('.phone_list a');
-    function nav(text) {
-      for (var i = 0; i < text.length; i++) {
-        text[i].onclick = function () {
-          if (this.innerHTML == 'Association') {
-            window.location = 'association.html';
-          } else if (this.innerHTML == 'Partners') {
-            window.location = 'partner.html';
-          }
-          //  else if(this.innerHTML == 'wiki'){
-          //    window.location = 'https://www.wttf.org';
-          //  }
-          for (var i = 0; i < text.length; i++) {
-            text[i].className = '';
-            this.className = 'active'
-          }
+  let phoneListA = document.querySelectorAll('.phone_list a');
+  function nav(text) {
+    for (var i = 0; i < text.length; i++) {
+      text[i].onclick = function () {
+        if (this.innerHTML == 'Association') {
+          window.location = 'association.html';
+        } else if (this.innerHTML == 'Partners') {
+          window.location = 'partner.html';
+        }
+        //  else if(this.innerHTML == 'wiki'){
+        //    window.location = 'https://www.wttf.org';
+        //  }
+        for (var i = 0; i < text.length; i++) {
+          text[i].className = '';
+          this.className = 'active'
         }
       }
     }
-    nav(navlists);
-    nav(phoneListA);
+  }
+  nav(navlists);
+  nav(phoneListA);
   window.onscroll = function () {
     let topScroll = document.documentElement.scrollTop;
     console.log(topScroll);
     let client_width = document.body.clientWidth;
-    // console.log(client_width)
+    console.log((client_width))
+    // console.log((client_width/19.2))
     let bignav = document.querySelector(".header");//获取到导航栏id
     if (topScroll > 0) {  //当滚动距离大于250px时执行下面的东西
       bignav.style.position = 'fixed';
@@ -574,49 +572,29 @@
       bignav.style.position = 'static';
       bignav.style.background = '0';
     }
-    if (topScroll > 480 && client_width > 1200 && client_width < 1500) {
-      document.querySelector('.onPageNav').style.position = "fixed";
-      document.querySelector('.onPageNav').style.top = 0;
-      if (client_width > 1200) {
-        document.querySelector('.introduction0').style.marginLeft = "150px";
-      } else {
-        document.querySelector('.introduction0').style.marginLeft = "170px";
+    if(client_width>750){
+      if(topScroll>(client_width/19.2)*6.9 && topScroll<(client_width/19.2)*172.5){
+        nav_fixed();
+      }else if (topScroll>=(client_width/19.2)*172.5){
+        nav_static();
+      }else{
+        nav_hidden();
       }
     }
-    // else if (topScroll > 460 && client_width <= 1200) {
-    //   document.querySelector('.onPageNav').style.position = "fixed";
-    //   document.querySelector('.onPageNav').style.top = "0";
-    //   if (client_width > 1200) {
-    //     document.querySelector('.introduction0').style.marginLeft = "180px";
-    //   } else {
-    //     document.querySelector('.introduction0').style.marginLeft = "110px";
-    //   }
-    // }
-    else if (topScroll > 600 && client_width > 1500) {
-      document.querySelector('.onPageNav').style.position = "fixed";
-      document.querySelector('.onPageNav').style.top = "0";
-      if (client_width > 1200) {
-        document.querySelector('.introduction0').style.marginLeft = "180px";
-      } else {
-        document.querySelector('.introduction0').style.marginLeft = "110px";
-      }
-    } else {
-      document.querySelector('.introduction0').style.marginLeft = "5px";
-      document.querySelector('.introduction1').style.overflow = "hidden";
-      document.querySelector('.onPageNav').style.position = "static";
-    }
-    if (client_width > 1200 && client_width <= 1600 && topScroll > 14447) {
-      document.querySelector('.onPageNav').style.position = "static";
-      document.querySelector('.introduction0').style.marginLeft = "5px";
-    }
-    // if (client_width <= 1200 && topScroll > 9800) {
-    //   document.querySelector('.onPageNav').style.position = "static";
-    //   document.querySelector('.introduction0').style.marginLeft = "5px";
-    // }
-    if (topScroll > 17010) {
-      document.querySelector('.onPageNav').style.position = "static";
-      document.querySelector('.introduction0').style.marginLeft = "5px";
-    }
+  }
+  function nav_hidden() {
+    document.querySelector('.introduction0').style.marginLeft = "0";
+    document.querySelector('.introduction1').style.overflow = "hidden";
+    document.querySelector('.onPageNav').style.position = "static";
+  }
+  function nav_fixed() {
+    document.querySelector('.onPageNav').style.position = "fixed";
+    document.querySelector('.onPageNav').style.top = 0;
+    document.querySelector('.introduction0').style.marginLeft = "2rem";
+  }
+  function nav_static() {
+    document.querySelector('.onPageNav').style.position = "static";
+    document.querySelector('.introduction0').style.marginLeft = "0";
   }
   let text = document.querySelectorAll('.head > ul > li');
   for (var i = 0; i < text.length; i++) {
