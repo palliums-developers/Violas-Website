@@ -625,14 +625,14 @@ footer > p {
   .introduction .bg{
     position: relative;
     top: -10px;
-    height:7980px;
+    height:7980px; /* white! */
   }
   .introduction .bg img{
     width:100%;
     height:100%;
   }
   .introductionContent {
-    height:7950px;
+    height:7950px; /* white! */
     width:90%;
     left:5%;
     margin:0 auto;
@@ -658,7 +658,7 @@ footer > p {
     line-height:22px;
   }
   .introduction{
-    height:7150px;
+    height:8000px; /* white! */
   }
   .introduction1{
     height:800px;
