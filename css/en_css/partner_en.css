@@ -154,7 +154,7 @@ header {
   display: flex;
 }
 .mebers .head {
-  width: 11.5rem;
+  width: 11.7rem;
   height: 0.61rem;
   margin: 0 auto;
   position: relative;
@@ -184,7 +184,7 @@ header {
 .mebers .head p {
   position: absolute;
   left: 50%;
-  margin-left: -2.2rem;
+  margin-left: -2.45rem;
   top: 0;
   font-size: 0.40rem;
   color: rgba(248, 248, 248, 1);
@@ -378,7 +378,7 @@ header {
   flex-direction: column;
 }
 .publisher .left .lContent1 > div {
-  margin-top: -0.6rem;
+  margin-top: -0.7rem;
   margin-left: 0.20rem;
 }
 .publisher .left .lContent1 > div img {
@@ -386,7 +386,7 @@ header {
   height: 1.02rem;
 }
 .publisher .left .lContent1 p {
-  width: 3.63rem;
+  width: 3.64rem;
   /* height:150rem; */
   font-size: 0.20rem;
   font-weight: 400;
@@ -691,6 +691,10 @@ footer > p {
   }
 }
 @media (max-width:750px){
+  .logo img{
+    width: 60px;
+    height: 16px;
+  }
   .headContent .headTalk p img{
      width: 30px;
      height: 39px;
@@ -706,7 +710,7 @@ footer > p {
     right:-30px;
   }
   .mebers .head,.publisher1 .head{
-     width: 350px;
+     width: 360px;
   }
   .mebers .head .bg .img_left, 
   .mebers .head .bg .img_right,
@@ -718,8 +722,11 @@ footer > p {
   .mebers .head p,
   .publisher1 .head p{
     left: 50%;
-    margin-left: -70px;
+    margin-left: -73px;
   }
+   .publisher1 .head p{
+     margin-left: -76px;
+   }
   .mebers .headDescr,
   .publisher1 .headDescr {
     width: 150px;
@@ -746,16 +753,16 @@ footer > p {
     margin-left: -150px;
   }
   .forWorldDescr {
-  width: auto;
-  margin: 0 auto;
-  margin-top: 0;
-  display: flex;
-  overflow-x: auto;
-}
+    width: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    display: flex;
+    overflow-x: auto;
+  }
 
 .forWorldDescr .eachDescr {
   width:320px;
-  height:530px;
+  height:550px;
   padding-top: 50px;
   position: relative;
   margin-left: 9px;
@@ -765,7 +772,7 @@ footer > p {
 }
 .forWorldDescr .eachDescrs {
   width: 227px;
-  height: 432px;
+  height: 470px;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
@@ -833,7 +840,7 @@ footer > p {
   margin-left: -25px;
 }
 .service{
-   width: 320px;
+   width: 355px;
    height: 184px;
 }
 .service .logo img{
@@ -859,7 +866,7 @@ footer > p {
   width: auto;
 }
 .service:nth-child(6){
-  height: 150px;
+  height: 140px;
 }
 .publisher{
   display: none;
@@ -877,7 +884,7 @@ footer > p {
   
 }
 .issuers .issuersCon{
-   width:43%;
+   width:44%;
    padding-bottom: 20px;
    box-sizing: border-box;
    margin: 0 10px;
@@ -928,5 +935,30 @@ footer > p {
     font-size:8px;
     /* margin: 20px 0; */
     margin-bottom: 30px!important;
+  }
+}
+@media (max-width:321px){
+  .service{
+   width: 320px;
+  }
+  .issuers .issuersCon{
+    width: 43%;
+  }
+  .mebers .head .bg .img_left, 
+  .mebers .head .bg .img_right,
+  .publisher1 .head .bg .img_left,
+  .publisher1 .head .bg .img_right{
+    width: 90px;
+    height: 15px;
+  }
+  .mebers .head, .publisher1 .head {
+    width: 330px;
+    
+  }
+  .publisher1 .head {
+    width: 335px;
+  }
+  footer > p {
+    margin-top:5px!important;
   }
 }

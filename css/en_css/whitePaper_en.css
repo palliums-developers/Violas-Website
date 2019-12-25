@@ -613,6 +613,10 @@ footer > p {
   }
 }
 @media(max-width:750px){
+  .logo img{
+    width: 60px;
+    height: 16px;
+  }
   .bmd-layout-header{
     height: 340px;
   }
@@ -733,5 +737,13 @@ footer > p {
     font-size:8px;
     /* margin: 20px 0; */
     margin-bottom: 30px!important;
+  }
+}
+@media(max-width:321px){
+  .headContent{
+    width: 300px;
+  }
+  .headContent .headTalk p{
+    width: 300px;
   }
 }

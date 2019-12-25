@@ -223,7 +223,7 @@ section {
   height: auto;
 }
 .vision .head {
-  width: 9.8rem;
+  width: 9.5rem;
   height: 0.61rem;
   margin: 1.4rem auto;
   position: relative;
@@ -250,7 +250,7 @@ section {
 .vision .head p {
   position: absolute;
   left: 4.9rem;
-  margin-left: -1.2rem;
+  margin-left: -1.5rem;
   top: 0.05rem;
   font-size: 0.32rem;
   color: rgba(248, 248, 248, 1);
@@ -308,7 +308,7 @@ section {
 }
 
 .forWorld .head {
-  width: 11rem;
+  width: 10.6rem;
   height: 0.61rem;
   margin: 0 auto;
   position: relative;
@@ -337,7 +337,7 @@ section {
 .forWorld .head p {
   position: absolute;
   left: 5rem;
-  margin-left: -1.4rem;
+  margin-left: -1.75rem;
   top: 0.1rem;
   font-size: 0.32rem;
   color: rgba(248, 248, 248, 1);
@@ -541,7 +541,7 @@ section {
   margin-top: -0.05rem;
 }
 .deepIntroduce .head {
-  width: 9.8rem;
+  width: 9.1rem;
   height: 0.61rem;
   margin: 0 auto;
   position: relative;
@@ -570,12 +570,12 @@ section {
 .deepIntroduce .head p {
   position: absolute;
   left: 4.4rem;
-  margin-left: -0.85rem;
+  margin-left: -1rem;
   top: 0.05rem;
   font-size: 0.32rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.01rem;
 }
 .deepIntroduce > .content1 {
   display: none;
@@ -958,8 +958,29 @@ footer > p {
   }
 }
 @media (max-width: 750px) {
+  .default .headContent .headTalk p:nth-child(1) label{
+    font-size: 10px;
+  }
+  .default .headContent .headTalk p:nth-child(1) img{
+    width: 77px;
+    height: 19px;
+  }
+  .default .headContent .headTalk p:nth-child(2) label{
+    font-size: 10px;
+  }
+  .default .headContent .headTalk p:nth-child(2) img{
+    width: 14px;
+    height: 14px;
+  }
+  .default header{
+    height:200px;
+  }
+  .logo img{
+    width: 60px;
+    height: 16px;
+  }
   .vision .head {
-    width: 320px;
+    width: 325px;
   }
   .vision .head .bg .img_left,
   .vision .head .bg .img_right {
@@ -969,8 +990,8 @@ footer > p {
   .vision .head p {
     font-size: 14px;
     left: 50%;
-    margin-left: -55px;
-    /* top: -0.1rem; */
+    margin-left: -60px;
+    top: -0.05rem;
   }
   .vision .headDescr {
     width: 148px;
@@ -989,7 +1010,7 @@ footer > p {
   }
   .vision .headIntroduce .icon {
     top: -1rem;
-    left: -20px;
+    left: -25px;
   }
   .vision .headIntroduce .icon img {
     width: 36px;
@@ -1003,17 +1024,17 @@ footer > p {
     margin-left: -3.5rem;
   }
   .forWorld .head {
-    width: 380px;
+    width: 370px;
   }
   .forWorld .head .bg .img_left,
   .forWorld .head .bg .img_right {
-    width: 110px;
+    width: 100px;
     height: 14px;
   }
   .forWorld .head p {
     left: 50%;
-    margin-left: -80px;
-    margin-top: -5px;
+    margin-left: -90px;
+    margin-top: -3px;
     font-size: 14px;
   }
   .forWorld > p {
@@ -1108,19 +1129,19 @@ footer > p {
   }
   .whitePaper .content {
     width: 300px;
-    margin-left: 20%;
+    margin-left: 17%;
   }
   .whitePaper .content .hLogo img {
     width: 197px;
     height: 197px;
   }
   .whitePaper .content .hLogo {
-    margin-left: -80px;
-    margin-top: -30px;
+    margin-left: -100px;
+    margin-top: -20px;
   }
   .whitePaper .content .con {
-    margin-top: 55px;
-    margin-left: 10px;
+    margin-top: 60px;
+    margin-left: 0;
   }
   .whitePaper .content .con h3 {
     font-size: 14px;
@@ -1136,11 +1157,12 @@ footer > p {
     margin-left: 3px;
   }
   .deepIntroduce .head {
-    width: 320px;
+    width: 310px;
   }
   .deepIntroduce .head .bg .img_left,
   .deepIntroduce .head .bg .img_right {
     width: 110px;
+    height: 14px;
   }
   .deepIntroduce .head .bg .img_left {
     left: -10px;
@@ -1150,19 +1172,19 @@ footer > p {
   }
   .deepIntroduce .head p {
     left: 50%;
-    margin-left: -57px;
+    margin-left: -50px;
     top: -2px;
     font-size: 14px;
   }
   .deepIntroduce > .association .bg {
-    /* left: 0%; */
+    left:-90px;
   }
   .deepIntroduce > .association .bg img {
     width: 264px;
     height: 181px;
   }
   .deepIntroduce > .association .content .con {
-    margin-left: 5%;
+    margin-left: -30px;
     margin-top: 50px;
   }
   .deepIntroduce > .association .content .con h3 {
@@ -1173,7 +1195,8 @@ footer > p {
     font-size: 10px;
   }
   .deepIntroduce > .association .content .hLogo {
-    margin-left: 10px;
+    margin-left: -5px;
+    margin-top:-40px;
   }
   .deepIntroduce > .association .content .hLogo img {
     width: 198px;
@@ -1224,7 +1247,7 @@ footer > p {
     flex-shrink: 0;
     background-image: url("../../img/Rectangle复制\ 3@2x.png");
     background-size: 330px 518px;
-    border-radius: 0.2rem;
+    border-radius: 20px;
   }
 
   .deepIntroduce > .content1 .deepDescr1 h3 {
@@ -1252,7 +1275,11 @@ footer > p {
     color: rgba(228, 213, 238, 1);
     line-height: 20px;
   }
-
+  .vision .headIntroduce{
+    width: 150px;
+    /* margin: 0 auto;
+    justify-content: center; */
+  }
   footer h2 {
     margin: 20px 0 10px 25px;
     font-size: 10px;
@@ -1272,5 +1299,66 @@ footer > p {
     font-size: 8px;
     /* margin: 20px 0; */
     margin-bottom: 30px !important;
+  }
+}
+@media (max-width:415px){
+ .forWorldDescr1{
+   width: 410px;
+ }
+}
+@media (max-width:376px){
+  .whitePaper .content {
+    margin-left: 10%;
+  }
+  .whitePaper .content .hLogo {
+    margin-left: -80px;
+    margin-top: -30px;
+  }
+  .whitePaper .content .con {
+    margin-top: 55px;
+    margin-left: 0;
+  }
+  .deepIntroduce > .association .content .con {
+    margin-left: -30px;
+    margin-top: 50px;
+  }
+  .deepIntroduce > .association .content .hLogo {
+    margin-left: -20px;
+    margin-top:-40px;
+  }
+}
+@media (max-width:321px){
+  .vision .headIntroduce{
+    width: 170px;
+  }
+  .vision .headIntroduce .icon {
+    left: -10px;
+  }
+  .forWorld .head{
+    width: 320px;
+  }
+  .forWorld .head .bg .img_left, .forWorld .head .bg .img_right{
+    width: 75px;
+  }
+  .forWorld > p{
+    width: 320px;
+  }
+  .whitePaper .bg{
+    right: -115px;
+  }
+  .whitePaper .content .hLogo{
+    margin-left: -100px;
+  }
+  .whitePaper .content .con{
+    margin-left: -20px;
+  }
+  .deepIntroduce > .content1 .deepDescr1{
+    width: 310px;
+  }
+  .association{
+    margin-top: 50px;
+  }
+  footer > p {
+    margin-top:5px!important;
   }
 }
