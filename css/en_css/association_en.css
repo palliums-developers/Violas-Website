@@ -180,7 +180,7 @@ header {
   width: 6.81rem;
   /* height:204rem; */
   font-size: 0.3rem;
-  font-weight: 400;
+  font-weight: 100;
   color: rgba(249, 249, 249, 1);
   line-height: 0.6rem;
   margin-top: 0.20rem;
@@ -264,7 +264,7 @@ section {
 }
 .vision .headDescr p {
   font-size: 0.30rem;
-  font-weight: 400;
+  font-weight: 100;
   color: rgba(248, 248, 248, 0.8);
   position: absolute;
   left: 0.20rem;
@@ -313,7 +313,7 @@ section {
 }
 .eachDescrs p {
   font-size: 0.24rem;
-  font-weight: 400;
+  font-weight: 100;
   color: rgba(44, 9, 108, 1);
   margin-top: 0.20rem;
   line-height: 0.48rem;
@@ -469,7 +469,6 @@ section {
 .association .content .con p {
   width: 4.67rem;
   font-size: 0.30rem;
-  font-family:"黑体";
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
   line-height: 0.76rem;
@@ -497,7 +496,6 @@ footer {
 footer h2 {
   height: 0.56rem;
   font-size: 0.22rem;
-  /* font-family: "黑体"; */
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
   margin: 1.34rem 0 0.05rem 3.62rem;

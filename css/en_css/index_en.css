@@ -103,7 +103,6 @@ header {
   width: 100%;
   height: 0.5rem;
   font-size: 0.23rem;
-  /* font-family: "黑体"; */
   font-weight: 500;
   color: rgba(44, 9, 108, 1);
   line-height: 0.5rem;
@@ -209,7 +208,6 @@ header {
 } */
 .default .headContent .headTalk p:nth-child(2) label {
   font-size: 0.32rem;
-  /* font-family: "黑体"; */
   font-weight: 500;
   color: rgba(249, 249, 249, 1);
 }
@@ -269,10 +267,8 @@ section {
   height: 4.96rem;
 }
 .vision .headDescr p {
-  /* width:536rem; */
   font-size: 0.3rem;
-  /* font-family: "黑体"; */
-  /* font-weight: 400; */
+  font-weight: 100;
   color: rgba(248, 248, 248, 0.8);
   position: absolute;
   /* left: 0; */
@@ -300,9 +296,8 @@ section {
 .vision .headIntroduce p {
   width: 7.47rem;
   font-size: 0.3rem;
-  /* font-family: "黑体"; */
-  /* font-weight: 400; */
-  color: rgba(248, 248, 248, 1);
+  font-weight: 100;
+  color: rgba(206, 199, 219, 1);
   text-align: center;
   line-height: 0.84rem;
 }
@@ -346,9 +341,8 @@ section {
 .forWorld > p {
   width: 11rem;
   font-size: 0.25rem;
-  /* font-family: "黑体"; */
-  /* font-weight: 400; */
-  color: rgba(248, 248, 248, 1);
+  font-weight: 100;
+  color: rgba(206, 199, 219, 1);
   line-height: 0.63rem;
   text-align: center;
   margin: 1.2rem auto;
@@ -400,7 +394,6 @@ section {
 }
 .forWorldDescr .eachDescrs h3 {
   font-size: 0.32rem;
-  /* font-family: "黑体"; */
   font-weight: 500;
   color: rgba(44, 9, 108, 1);
   line-height: 0.45rem;
@@ -414,8 +407,7 @@ section {
 }
 .forWorldDescr .eachDescrs p {
   font-size: 0.25rem;
-  /* font-family: "黑体"; */
-  font-weight: 400;
+  font-weight: 100;
   color: rgba(44, 9, 108, 1);
   margin-top: 0.2rem;
   line-height: 0.48rem;
@@ -521,14 +513,12 @@ section {
 }
 .whitePaper .content .con h3 {
   font-size: 0.32rem;
-  /* font-family: "黑体"; */
   font-weight: 600;
   color: rgba(248, 248, 248, 1);
   white-space: nowrap;
 }
 .whitePaper .content .con p {
   font-size: 0.22rem;
-  /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
   display: flex;
@@ -613,7 +603,7 @@ section {
     rgba(75, 25, 159, 0.31) 0%,
     rgba(216, 89, 232, 1) 100%
   );
-  background-image: url("../../img/Rectangle复制 3@2x.png");
+  background-image: url("../../img/编组\ bg@2x.png");
   background-size: 12rem 5.93rem;
   border-radius: 0.2rem;
 }
@@ -647,7 +637,7 @@ section {
   width: 10rem;
   /* height: 220rem; */
   font-size: 0.22rem;
-  font-weight: 400;
+  font-weight: 100;
   color: rgba(255, 255, 255, 1);
   line-height: 0.44rem;
   margin: 0 auto;
@@ -659,6 +649,7 @@ section {
 .deepIntroduce > .content .deepDescr > div img {
   width: 2.93rem;
   height: 2.51rem;
+  margin-top: 0.8rem;
 }
 .deepIntroduce > .content .deepDescr1 {
   display: none;
@@ -668,27 +659,21 @@ section {
 .deepIntroduce > .content .deepDescr1 p {
   width: 1.61rem;
   font-size: 0.2rem;
-  /* font-family: "黑体"; */
   font-weight: 300;
   color: rgba(249, 249, 249, 1);
   line-height: 0.55rem;
   letter-spacing: 0.02rem;
   border-bottom: 2px solid #fff;
-  /* margin-top: 210rem;  */
   position: absolute;
   top: 7rem;
   margin-left: 12.3rem;
 }
-/* .deepIntroduce > .content .deepDescr1 p {
-  margin-top: 210rem;
-} */
 .association {
   width: 12rem;
   position: relative;
   margin: 0 auto;
   margin-top: 2.4rem;
   margin-bottom: 1rem;
-  /* overflow: hidden; */
 }
 .deepIntroduce > .association .bg {
   position: absolute;
@@ -727,14 +712,12 @@ section {
 }
 .deepIntroduce > .association .content .con h3 {
   font-size: 0.32rem;
-  /* font-family: "黑体"; */
   font-weight: 600;
   color: rgba(248, 248, 248, 1);
   white-space: nowrap;
 }
 .deepIntroduce > .association .content .con p {
   font-size: 0.22rem;
-  /* font-family: "黑体"; */
   font-weight: 500;
   color: rgba(248, 248, 248, 1);
   display: flex;
@@ -744,7 +727,6 @@ section {
 .deepIntroduce > .association .content .con span {
   width: 5rem;
   font-size: 0.22rem;
-  /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   margin-top: 0.3rem;
@@ -770,7 +752,6 @@ footer {
 footer h2 {
   height: 0.56rem;
   font-size: 0.22rem;
-  /* font-family: "黑体"; */
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
   margin: 1.34rem 0 0.05rem 3.62rem;
@@ -790,15 +771,12 @@ footer > div i img {
 }
 footer > div label {
   font-size: 0.22rem;
-  /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
   margin-left: 0.17rem;
 }
 footer > p {
-  /* width: 100%; */
   font-size: 0.25rem;
-  /* font-family: "黑体"; */
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   text-align: center;
@@ -813,7 +791,6 @@ footer > p {
   font-size: 0.18rem;
   background: #fff;
   flex-direction: column;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1091,6 +1068,7 @@ footer > p {
     font-size: 12px;
     line-height: 22px;
     margin-top: 10px;
+    font-weight: 100;
   }
   .forWorldDescr1 .eachDescr .logo1,
   .forWorldDescr1 .eachDescr .logo2 {
