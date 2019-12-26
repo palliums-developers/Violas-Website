@@ -10,9 +10,9 @@
   font-family: 'Aileron-Regular';
   src:url('../../font/Aileron-Regular-10.ttf')
 } */
-@font-face{
-  font-family: 'Aileron-Thin';
-  src:url('../../font/Aileron-Thin-13.ttf')
+@font-face {
+  font-family: "Aileron-Thin";
+  src: url("../../font/Aileron-Thin-13.ttf");
 }
 .wrap {
   width: 100%;
@@ -56,7 +56,7 @@ header {
   display: flex;
 }
 .logo img {
-  /* margin-left: 150rem; */
+  margin-bottom: 0.12rem;
   width: 1.73rem;
   height: 0.55rem;
 }
@@ -73,6 +73,7 @@ header {
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   margin-left: 0.4rem;
+  margin-top: 0.1rem;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -123,7 +124,7 @@ header {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  /* margin-right: 2rem; */
+  margin-top: 0.1rem;
   /* position: relative;
   top: 8rem; */
 }
@@ -366,6 +367,7 @@ section {
 .forWorldDescr > div {
   display: flex;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .forWorldDescr .eachDescr {
   width: 3.7rem;
@@ -600,11 +602,12 @@ section {
   height: 5.93rem;
   background: linear-gradient(
     210deg,
-    rgba(75, 25, 159, 0.31) 0%,
+    rgba(75, 25, 159, 0.31) 30%,
     rgba(216, 89, 232, 1) 100%
   );
-  background-image: url("../../img/编组\ bg@2x.png");
+  background-image: url("../../img/bg28@2x.png");
   background-size: 12rem 5.93rem;
+  /* background-image: url("../../img/编组\ bg@2x.png"); */
   border-radius: 0.2rem;
 }
 
@@ -861,17 +864,18 @@ footer > p {
     outline: 0;
   }
   .hide_show_header_mob .bmd-layout-header .phone_head button i {
-    width: 0.43rem;
-    height: 0.4rem;
+    width: 1rem;
+    height: 1rem;
     display: flex;
   }
   .hide_show_header_mob .bmd-layout-header .phone_head button i img {
-    width: 0.43rem;
-    height: 0.4rem;
+    width: 0.6rem;
+    height: 0.6rem;
   }
   .logo img {
     width: 2.1rem;
     height: 0.68rem;
+    z-index: 9999;
   }
   .phone_list {
     height: 100%;
@@ -924,37 +928,46 @@ footer > p {
     left: -2.5rem;
     bottom: 3rem;
   }
-  .bmd-layout-drawer .close {
+  .bmd-layout-drawer .home {
     width: 14px;
     height: 14px;
     color: #fff;
     position: absolute;
     top: 24px;
-    left: 12px;
+    left: 30px;
+    font-weight: 300;
+  }
+  .bmd-layout-drawer .close {
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 200px;
     font-weight: 300;
   }
 }
 @media (max-width: 750px) {
-  .default .headContent .headTalk p:nth-child(1) label{
+  .default .headContent .headTalk p:nth-child(1) label {
     font-size: 10px;
   }
-  .default .headContent .headTalk p:nth-child(1) img{
+  .default .headContent .headTalk p:nth-child(1) img {
     width: 77px;
     height: 19px;
   }
-  .default .headContent .headTalk p:nth-child(2) label{
+  .default .headContent .headTalk p:nth-child(2) label {
     font-size: 10px;
   }
-  .default .headContent .headTalk p:nth-child(2) img{
+  .default .headContent .headTalk p:nth-child(2) img {
     width: 14px;
     height: 14px;
   }
-  .default header{
-    height:200px;
+  .default header {
+    height: 200px;
   }
-  .logo img{
+  .logo img {
     width: 60px;
-    height: 16px;
+    height: 18px;
   }
   .vision .head {
     width: 325px;
@@ -1155,7 +1168,7 @@ footer > p {
     font-size: 14px;
   }
   .deepIntroduce > .association .bg {
-    left:-90px;
+    left: -90px;
   }
   .deepIntroduce > .association .bg img {
     width: 264px;
@@ -1174,7 +1187,7 @@ footer > p {
   }
   .deepIntroduce > .association .content .hLogo {
     margin-left: -5px;
-    margin-top:-40px;
+    margin-top: -40px;
   }
   .deepIntroduce > .association .content .hLogo img {
     width: 198px;
@@ -1253,7 +1266,7 @@ footer > p {
     color: rgba(228, 213, 238, 1);
     line-height: 20px;
   }
-  .vision .headIntroduce{
+  .vision .headIntroduce {
     width: 150px;
     /* margin: 0 auto;
     justify-content: center; */
@@ -1279,12 +1292,12 @@ footer > p {
     margin-bottom: 30px !important;
   }
 }
-@media (max-width:415px){
- .forWorldDescr1{
-   width: 410px;
- }
+@media (max-width: 415px) {
+  .forWorldDescr1 {
+    width: 410px;
+  }
 }
-@media (max-width:376px){
+@media (max-width: 376px) {
   .whitePaper .content {
     margin-left: 10%;
   }
@@ -1302,41 +1315,42 @@ footer > p {
   }
   .deepIntroduce > .association .content .hLogo {
     margin-left: -20px;
-    margin-top:-40px;
+    margin-top: -40px;
   }
 }
-@media (max-width:321px){
-  .vision .headIntroduce{
+@media (max-width: 321px) {
+  .vision .headIntroduce {
     width: 170px;
   }
   .vision .headIntroduce .icon {
     left: -10px;
   }
-  .forWorld .head{
+  .forWorld .head {
     width: 320px;
   }
-  .forWorld .head .bg .img_left, .forWorld .head .bg .img_right{
+  .forWorld .head .bg .img_left,
+  .forWorld .head .bg .img_right {
     width: 75px;
   }
-  .forWorld > p{
+  .forWorld > p {
     width: 320px;
   }
-  .whitePaper .bg{
+  .whitePaper .bg {
     right: -115px;
   }
-  .whitePaper .content .hLogo{
+  .whitePaper .content .hLogo {
     margin-left: -100px;
   }
-  .whitePaper .content .con{
+  .whitePaper .content .con {
     margin-left: -20px;
   }
-  .deepIntroduce > .content1 .deepDescr1{
+  .deepIntroduce > .content1 .deepDescr1 {
     width: 310px;
   }
-  .association{
+  .association {
     margin-top: 50px;
   }
   footer > p {
-    margin-top:5px!important;
+    margin-top: 5px !important;
   }
 }

@@ -5,9 +5,9 @@
   text-decoration: none;
   /* font-family: "Times New Roman"; */
 }
-@font-face{
-  font-family: 'Aileron-Thin';
-  src:url('../../font/Aileron-Thin-13.ttf')
+@font-face {
+  font-family: "Aileron-Thin";
+  src: url("../../font/Aileron-Thin-13.ttf");
 }
 .wrap {
   width: 100%;
@@ -44,12 +44,13 @@ header {
   display: flex;
 }
 
-.logo a{
+.logo a {
   display: flex;
 }
 .logo img {
+  margin-bottom: 0.12rem;
   width: 1.73rem;
-  height:0.55rem;
+  height: 0.55rem;
 }
 
 .navList {
@@ -57,7 +58,7 @@ header {
   flex: 1;
   height: 100%;
   align-items: center;
-  margin-left: 0.70rem;
+  margin-left: 0.7rem;
   margin-right: 1rem;
 }
 
@@ -65,7 +66,8 @@ header {
   font-size: 0.16rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  margin-left: 0.40rem;
+  margin-top: 0.1rem;
+  margin-left: 0.4rem;
   cursor: pointer;
   white-space: nowrap;
 }
@@ -119,6 +121,7 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
+  margin-top: 0.1rem;
   white-space: nowrap;
 }
 
@@ -134,10 +137,10 @@ header {
   display: inline-block;
   border: 1px solid #fff;
   border-radius: 3rem;
-  line-height:  0.24rem;
+  line-height: 0.24rem;
   text-align: center;
   font-size: 0.17rem;
-  padding:  0.05rem 0.05rem 0;
+  padding: 0.05rem 0.05rem 0;
   box-sizing: border-box;
 }
 
@@ -165,12 +168,12 @@ header {
   margin-left:-30rem; */
   position: absolute;
   left: 0;
-  bottom:2.20rem;
+  bottom: 2.2rem;
 }
-.headContent .headTalk h4{
+.headContent .headTalk h4 {
   font-size: 0.45rem;
   font-weight: 500;
-  color: #FFF;
+  color: #fff;
 }
 .headContent .headTalk p img {
   width: 4.05rem;
@@ -183,7 +186,7 @@ header {
   font-weight: 100;
   color: rgba(249, 249, 249, 1);
   line-height: 0.6rem;
-  margin-top: 0.20rem;
+  margin-top: 0.2rem;
 }
 .headContent .headLogo img {
   width: 5.82rem;
@@ -193,8 +196,8 @@ header {
   width: 5.82rem;
   height: 5.98rem;
   position: absolute;
-  right: -0.30rem;
-  bottom: 0.20rem;
+  right: -0.3rem;
+  bottom: 0.2rem;
 }
 section {
   width: 100%;
@@ -203,40 +206,40 @@ section {
 .vision .head {
   width: 12.6rem;
   height: 0.61rem;
-  margin: 1.30rem auto;
+  margin: 1.3rem auto;
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.vision .head .bg{
+.vision .head .bg {
   /* width: 1200rem; */
   height: 0.61rem;
 }
-.vision .head .bg img{
+.vision .head .bg img {
   position: absolute;
 }
-.vision .head .bg .img_left{
-  width:3.31rem;
-  height:0.48rem ;
+.vision .head .bg .img_left {
+  width: 3.31rem;
+  height: 0.48rem;
   left: 0rem;
 }
-.vision .head .bg .img_right{
-  width:3.31rem;
-  height:0.48rem ;
+.vision .head .bg .img_right {
+  width: 3.31rem;
+  height: 0.48rem;
   right: 0rem;
 }
 
-.vision .head .bg img{
+.vision .head .bg img {
   width: 100%;
   height: 100%;
 }
-.vision .head p{
+.vision .head p {
   position: absolute;
   left: 50%;
   margin-left: -2.9rem;
-  top:0.03rem;
-  font-size: 0.40rem;
+  top: 0.03rem;
+  font-size: 0.4rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
 }
@@ -259,23 +262,23 @@ section {
   position: absolute;
   left: 50%;
   margin-left: -3.5rem;
-  top: 1.40rem;
+  top: 1.4rem;
   white-space: nowrap;
 }
 .vision .headDescr p {
-  font-size: 0.30rem;
+  font-size: 0.3rem;
   font-weight: 100;
   color: rgba(248, 248, 248, 0.8);
   position: absolute;
-  left: 0.20rem;
-  top: 2.30rem;
+  left: 0.2rem;
+  top: 2.3rem;
   text-align: center;
   line-height: 0.64rem;
 }
 .forWorldDescr {
   /* width: 12rem; */
   margin: 0 auto;
-  margin-top: 2.50rem;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
 }
@@ -292,14 +295,14 @@ section {
     rgba(255, 255, 255, 1) 0%,
     RGBA(158, 146, 250, 1) 100%
   );
-  border-radius: 0.20rem;
+  border-radius: 0.2rem;
   position: relative;
   z-index: 10;
   padding: 0.79rem 0.25rem 0 0.35rem;
   box-sizing: border-box;
 }
 .eachDescrs h3 {
-  font-size: 0.30rem;
+  font-size: 0.3rem;
   font-weight: 500;
   color: rgba(44, 9, 108, 1);
   line-height: 0.45rem;
@@ -315,7 +318,7 @@ section {
   font-size: 0.24rem;
   font-weight: 100;
   color: rgba(44, 9, 108, 1);
-  margin-top: 0.20rem;
+  margin-top: 0.2rem;
   line-height: 0.48rem;
 }
 .forWorldDescr .eachDescr .logo1,
@@ -336,7 +339,7 @@ section {
 }
 .forWorldDescr .eachDescr .logo3 {
   left: -0.15rem;
-  bottom: -0.10rem;
+  bottom: -0.1rem;
 }
 
 .forWorldDescr .eachDescr .logo1 img {
@@ -349,7 +352,7 @@ section {
 }
 .forWorldDescr .eachDescr .logo3 img {
   width: 3.03rem;
-  height: 1.80rem;
+  height: 1.8rem;
 }
 
 .forWorldDescr .eachDescr:nth-child(2) .logo1 img {
@@ -357,7 +360,7 @@ section {
   height: 2.25rem;
 }
 .forWorldDescr .eachDescr:nth-child(2) .logo1 {
-  top: -1.50rem;
+  top: -1.5rem;
 }
 .forWorldDescr .eachDescr:nth-child(2) .logo2 {
   top: -1rem;
@@ -370,21 +373,21 @@ section {
   /* height: 7.16rem; */
   position: relative;
   margin: 0 auto;
-  margin-top: 2.40rem;
+  margin-top: 2.4rem;
 }
 .whitePaper .bg {
   position: absolute;
-  right:-20%;
+  right: -20%;
 }
 .whitePaper .bg img {
-  width: 12.10rem;
+  width: 12.1rem;
   height: 7.16rem;
 }
 .whitePaper .content {
   display: flex;
 }
 .whitePaper .content .hLogo {
-  margin-left:2%;
+  margin-left: 2%;
   position: relative;
   z-index: 9;
 }
@@ -416,21 +419,21 @@ section {
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
   line-height: 0.76rem;
-  margin-top: 0.50rem;
+  margin-top: 0.5rem;
 }
 .whitePaper .content .con p i img {
   width: 0.38rem;
   height: 0.38rem;
   margin-left: 0.15rem;
-  margin-top:0.10rem;
+  margin-top: 0.1rem;
 }
 .association {
   width: 13rem;
   /* height: 716rem; */
   position: relative;
   margin: 0 auto;
-  margin-top: 2.40rem;
-  margin-bottom: 2.00rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
 }
 .association .bg {
   position: absolute;
@@ -458,7 +461,7 @@ section {
 .association .content .con {
   /* height: 500rem; */
   margin-left: 4%;
-  margin-top: 2.00rem;
+  margin-top: 2rem;
 }
 .association .content .con h3 {
   font-size: 0.53rem;
@@ -468,13 +471,13 @@ section {
 }
 .association .content .con p {
   width: 4.67rem;
-  font-size: 0.30rem;
+  font-size: 0.3rem;
   font-weight: 400;
   color: rgba(248, 248, 248, 1);
   line-height: 0.76rem;
   display: flex;
-  margin-top: 0.30rem;
-  margin-left: 0.40rem;
+  margin-top: 0.3rem;
+  margin-left: 0.4rem;
 }
 .association .content .con h3 i {
   margin-right: 0.15rem;
@@ -505,7 +508,7 @@ footer > div {
   align-items: center;
   margin-left: 3.09rem;
 }
-footer > div i{
+footer > div i {
   display: flex;
 }
 footer > div i img {
@@ -533,32 +536,32 @@ footer > p {
   .hide_show_header_mob {
     display: flex;
   }
-  #dw-p1{
+  #dw-p1 {
     height: 100%;
   }
-  .hide_show_header_mob .bmd-layout-header .phone_head{
+  .hide_show_header_mob .bmd-layout-header .phone_head {
     width: 100%;
   }
-  .hide_show_header_mob .bmd-layout-header .phone_head button{
+  .hide_show_header_mob .bmd-layout-header .phone_head button {
     border: 0;
     outline: 0;
   }
-  .hide_show_header_mob .bmd-layout-header .phone_head button i{
-    width: 0.6rem;
-    height: 0.6rem;
+  .hide_show_header_mob .bmd-layout-header .phone_head button i {
+    width: 1rem;
+    height: 1rem;
     display: flex;
   }
-  .hide_show_header_mob .bmd-layout-header .phone_head button i img{
-    width: 100%;
-    height: 100%;
+  .hide_show_header_mob .bmd-layout-header .phone_head button i img {
+    width: 0.6rem;
+    height: 0.6rem;
   }
-  .logo img{
+  .logo img {
     width: 2.1rem;
     height: 0.68rem;
   }
-  .phone_list{
-    height:100%;
-    background-color: #4B199F;
+  .phone_list {
+    height: 100%;
+    background-color: #4b199f;
     color: #fff;
     padding-top: 40px;
     padding-left: 30px;
@@ -566,88 +569,99 @@ footer > p {
     /* display: flex;
     flex-direction: column; */
   }
-  .phone_list>a,.phone_list>span{
-    font-size:14px;
-    font-weight:400;
-    color:rgba(248,248,248,1);
-    line-height:14px;
+  .phone_list > a,
+  .phone_list > span {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(248, 248, 248, 1);
+    line-height: 14px;
     margin-top: 47px;
   }
-  .phone_list>span{
+  .phone_list > span {
     width: 90px;
     display: inline-block;
     border: 1px solid #fff;
     border-radius: 3px;
     text-align: center;
-    padding:2px;
+    padding: 2px;
     box-sizing: border-box;
   }
-  .phone_list>.change{
+  .phone_list > .change {
     position: absolute;
-    bottom:16px;
+    bottom: 16px;
   }
-  .phone_list>.change a{
-    font-size:12px;
-    font-weight:400;
-    line-height:11px;
+  .phone_list > .change a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11px;
     padding: 0 17px;
     box-sizing: border-box;
   }
-  .phone_list>.change a:not(.ka){
-    border-right:1px solid #FFF ;
+  .phone_list > .change a:not(.ka) {
+    border-right: 1px solid #fff;
   }
   .hide_show_header_pc {
     display: none;
   }
-  .default .headContent .headLogo{
+  .default .headContent .headLogo {
     right: -5px;
   }
-  .default .headContent .headTalk{
-    left:-2.5px ;
+  .default .headContent .headTalk {
+    left: -2.5px;
     bottom: 3px;
   }
-  .bmd-layout-drawer .close{
-    width:14px;
-    height:14px;
-    color: #FFF;
+  .bmd-layout-drawer .home {
+    width: 14px;
+    height: 14px;
+    color: #fff;
     position: absolute;
     top: 24px;
-    left:12px;
+    left: 30px;
+    font-weight: 300;
+  }
+  .bmd-layout-drawer .close {
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 200px;
     font-weight: 300;
   }
 }
-@media (max-width:750px){
-  .logo img{
+@media (max-width: 750px) {
+  .logo img {
     width: 60px;
-    height: 16px;
+    height: 18px;
   }
-  .headContent .headTalk{
+  .headContent .headTalk {
     bottom: 0.8rem;
     left: -50px;
   }
-  .headContent .headTalk p{
+  .headContent .headTalk p {
     width: 200px;
     font-size: 12px;
     margin-top: 10px;
     line-height: 17px;
   }
-  .headContent .headTalk h4{
+  .headContent .headTalk h4 {
     font-size: 14px;
     font-weight: 500;
-    color: #FFF;
+    color: #fff;
   }
-  .headContent .headLogo{
+  .headContent .headLogo {
     right: -2rem;
     bottom: 0;
   }
-  .vision .head{
-     width: 375px;
+  .vision .head {
+    width: 375px;
   }
-  .vision .head .bg .img_left, .vision .head .bg .img_right {
+  .vision .head .bg .img_left,
+  .vision .head .bg .img_right {
     width: 95px;
     height: 14px;
   }
-  .vision .head p{
+  .vision .head p {
     font-size: 12px;
     left: 50%;
     margin-left: -88px;
@@ -660,7 +674,7 @@ footer > p {
     width: 148px;
     height: 148px;
   }
-  .vision .headDescr h3{
+  .vision .headDescr h3 {
     font-size: 12px;
     top: 2rem;
     margin-left: -83px;
@@ -675,98 +689,98 @@ footer > p {
     margin-left: -150px;
   }
   .forWorldDescr {
-  width: auto;
-  margin: 0 auto;
-  margin-top: 0;
-  display: flex;
-  overflow-x: auto;
-  /* justify-content: flex-start; */
-}
+    width: auto;
+    margin: 0 auto;
+    margin-top: 0;
+    display: flex;
+    overflow-x: auto;
+    /* justify-content: flex-start; */
+  }
 
-.forWorldDescr .eachDescr {
-  width:190px;
-  padding-top: 50px;
-  position: relative;
-  margin-left: 5px;
-}
-.forWorldDescr .eachDescr:last-child {
-  margin-right: 0;
-}
-.forWorldDescr .eachDescrs {
-  width: 190px;
-  height: 238px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    RGBA(158, 146, 250, 1) 100%
-  );
-  border-radius: 20px;
-  position: relative;
-  z-index: 10;
-  padding: 30px 10px 10px 10px;
-  box-sizing: border-box;
-}
-.forWorldDescr .eachDescrs h3 {
-  font-size:14px;
-  line-height:16px;
-}
-.forWorldDescr .eachDescrs i {
-  display: flex;
-}
-.forWorldDescr .eachDescrs i img {
-  width: 19px;
-  height: 1px;
-}
-.forWorldDescr .eachDescrs p {
-  font-size:12px;
-  line-height:22px;
-  margin-top: 10px;
-}
-.forWorldDescr .eachDescr .logo1,
-.forWorldDescr .eachDescr .logo2{
-  position: absolute;
-  /* display: flex; */
-  /* z-index: 999; */
-}
-.forWorldDescr .eachDescr .logo1 {
-  left: 50%;
-  margin-left:-50px;
-  top:10px;
-}
-.forWorldDescr .eachDescr .logo2 {
-  left: 50%;
-  margin-left: -30px;
-  top: 20px;
-  z-index: 11;
-}
+  .forWorldDescr .eachDescr {
+    width: 190px;
+    padding-top: 50px;
+    position: relative;
+    margin-left: 5px;
+  }
+  .forWorldDescr .eachDescr:last-child {
+    margin-right: 0;
+  }
+  .forWorldDescr .eachDescrs {
+    width: 190px;
+    height: 238px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      RGBA(158, 146, 250, 1) 100%
+    );
+    border-radius: 20px;
+    position: relative;
+    z-index: 10;
+    padding: 30px 10px 10px 10px;
+    box-sizing: border-box;
+  }
+  .forWorldDescr .eachDescrs h3 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .forWorldDescr .eachDescrs i {
+    display: flex;
+  }
+  .forWorldDescr .eachDescrs i img {
+    width: 19px;
+    height: 1px;
+  }
+  .forWorldDescr .eachDescrs p {
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  .forWorldDescr .eachDescr .logo1,
+  .forWorldDescr .eachDescr .logo2 {
+    position: absolute;
+    /* display: flex; */
+    /* z-index: 999; */
+  }
+  .forWorldDescr .eachDescr .logo1 {
+    left: 50%;
+    margin-left: -50px;
+    top: 10px;
+  }
+  .forWorldDescr .eachDescr .logo2 {
+    left: 50%;
+    margin-left: -30px;
+    top: 20px;
+    z-index: 11;
+  }
 
-.forWorldDescr .eachDescr .logo1 img {
-  width: 70px;
-  height: 54px;
-}
-.forWorldDescr .eachDescr .logo2 img {
-  width: 62px;
-  height: 52px;
-}
-.forWorldDescr .eachDescr .logo3 img,
-.forWorldDescr .eachDescr .logo4 img{
-   display: none;
-}
-.forWorldDescr .eachDescr:nth-child(2) .logo1{
- top: 5px;
-}
-.forWorldDescr .eachDescr:nth-child(2) .logo1 img {
-  width: 72px;
-  height: 64px;
-}
-.forWorldDescr .eachDescr:nth-child(2) .logo2 {
-  top:20px;
-}
+  .forWorldDescr .eachDescr .logo1 img {
+    width: 70px;
+    height: 54px;
+  }
+  .forWorldDescr .eachDescr .logo2 img {
+    width: 62px;
+    height: 52px;
+  }
+  .forWorldDescr .eachDescr .logo3 img,
+  .forWorldDescr .eachDescr .logo4 img {
+    display: none;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo1 {
+    top: 5px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo1 img {
+    width: 72px;
+    height: 64px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) .logo2 {
+    top: 20px;
+  }
   footer h2 {
     margin: 20px 0 10px 25px;
-    font-size:10px;
+    font-size: 10px;
   }
-  footer > div{
+  footer > div {
     margin-left: 17px;
   }
   footer > div i img {
@@ -775,35 +789,36 @@ footer > p {
     margin-top: 2px;
   }
   footer > div label {
-    font-size:12px;
+    font-size: 12px;
   }
   footer > p {
-    font-size:8px;
+    font-size: 8px;
     /* margin: 20px 0; */
-    margin-bottom: 30px!important;
+    margin-bottom: 30px !important;
   }
 }
-@media (max-width:321px){
-  .vision .head .bg .img_left, .vision .head .bg .img_right {
+@media (max-width: 321px) {
+  .vision .head .bg .img_left,
+  .vision .head .bg .img_right {
     width: 70px;
     height: 14px;
   }
-  .vision .head{
+  .vision .head {
     width: 320px;
   }
-  .vision .head p{
+  .vision .head p {
     font-size: 10px;
   }
-  .headContent .headTalk{
+  .headContent .headTalk {
     top: 5px;
   }
-  .headContent .headTalk p{
+  .headContent .headTalk p {
     margin-top: 5px;
   }
-  .forWorldDescr{
+  .forWorldDescr {
     justify-content: flex-start;
   }
   footer > p {
-    margin-top:5px!important;
+    margin-top: 5px !important;
   }
 }
