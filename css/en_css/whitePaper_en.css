@@ -484,7 +484,7 @@ footer h2 {
   font-size: 0.22rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 1);
-  margin: 1.34rem 0 0.05rem 3.62rem;
+  margin: 1.7rem 0 0.05rem 3.62rem;
 }
 footer > div {
   display: flex;
@@ -506,11 +506,11 @@ footer > div label {
   margin-left: 0.17rem;
 }
 footer > p {
-  font-size: 0.25rem;
+  font-size: 0.15rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   text-align: center;
-  margin: 1rem;
+  margin-top: 1.7rem;
 }
 .hide_show_header_mob {
   display: none;
@@ -612,6 +612,24 @@ footer > p {
     position: absolute;
     top: 24px;
     left: 12px;
+    font-weight: 300;
+  }
+  .bmd-layout-drawer .home {
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    font-weight: 300;
+  }
+  .bmd-layout-drawer .close {
+    width: 14px;
+    height: 14px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 200px;
     font-weight: 300;
   }
 }
