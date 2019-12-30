@@ -731,7 +731,8 @@ footer > p {
     height: 15px;
   }
   .mebers .head p,
-  .publisher1 .head p {
+  .publisher1 .head p{
+    font-size: 12px;
     left: 50%;
     margin-left: -73px;
   }
