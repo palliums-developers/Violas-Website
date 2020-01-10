@@ -58,15 +58,15 @@ header {
   flex: 1;
   height: 100%;
   align-items: center;
-  margin-left: 0.7rem;
-  margin-right: 1rem;
+  margin-left: 0.3rem;
+  margin-right: 1.5rem;
 }
 
 .navList li {
   font-size: 0.16rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  margin-top: 0.1rem;
+  /* margin-top: 0.1rem; */
   margin-left: 0.4rem;
   cursor: pointer;
   white-space: nowrap;
@@ -75,53 +75,12 @@ header {
 .navList li.active {
   color: rgba(62, 209, 246, 1);
 }
-/* .navList li:last-child {
-  position: relative;
-}
-.navList li:last-child .select {
-  width: 145rem;
-  height: 116rem;
-  position: relative;
-  position: absolute;
-  top: 30rem;
-  left: -20rem;
-  display: none;
-}
-.navList li:last-child .select .bg {
-  position: absolute;
-  top: 0;
-}
-.navList li:last-child .select > div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 15rem;
-}
-.navList li:last-child .select > div span {
-  width: 100%;
-  height: 50rem;
-  font-size: 23rem;
-  font-weight: 500;
-  color: rgba(44, 9, 108, 1);
-  line-height: 50rem;
-  text-align: center;
-  letter-spacing: 1rem;
-  border-radius: 5rem;
-}
-.navList li:last-child .select .bg img {
-  width: 145rem;
-  height: 116rem;
-}
-.navList li.active {
-  color: rgba(62, 209, 246, 1);
-} */
 
 .descr {
   height: 100%;
   display: flex;
   align-items: center;
-  margin-top: 0.1rem;
+  /* margin-top: 0.1rem; */
   white-space: nowrap;
 }
 

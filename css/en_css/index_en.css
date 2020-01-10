@@ -62,7 +62,7 @@ header {
 }
 .navList {
   display: flex;
-  width: 5.5rem;
+  flex:1;
   height: 100%;
   align-items: center;
   margin-right: 1.5rem;
@@ -73,7 +73,7 @@ header {
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   margin-left: 0.4rem;
-  margin-top: 0.1rem;
+  /* margin-top: 0.1rem; */
   cursor: pointer;
   white-space: nowrap;
 }
@@ -124,7 +124,7 @@ header {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  margin-top: 0.1rem;
+  /* margin-top: 0.1rem; */
   /* position: relative;
   top: 8rem; */
 }

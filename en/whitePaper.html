@@ -542,7 +542,6 @@
     window.location = "whitePaper.html";
   };
   wPaper.onclick = function () {
-    console.log(wPaper)
     wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
     window.location = 'whitePaper.html';
   }
@@ -551,14 +550,14 @@
   function nav(text) {
     for (var i = 0; i < text.length; i++) {
       text[i].onclick = function () {
+        console.log(this.innerHTML)
         if (this.innerHTML == 'Association') {
           window.location = 'association.html';
         } else if (this.innerHTML == 'Partners') {
           window.location = 'partner.html';
+        } else if (this.innerHTML == 'Developers') {
+          window.location = 'developers.html';
         }
-        //  else if(this.innerHTML == 'wiki'){
-        //    window.location = 'https://www.wttf.org';
-        //  }
         for (var i = 0; i < text.length; i++) {
           text[i].className = '';
           this.className = 'active'
@@ -615,6 +614,8 @@
         window.location = "association.html";
       } else if (this.innerHTML == "Partners") {
         window.location = "partner.html";
+      } else if (this.innerHTML == 'Developers') {
+        window.location = 'developers.html';
       }
       for (var i = 0; i < text.length; i++) {
         text[i].className = '';

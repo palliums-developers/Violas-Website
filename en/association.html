@@ -36,7 +36,7 @@
                   <a href="../ja/index.html">日本語</a>
                   <a href="../ko/index.html">한국어</a>
                 </div> -->
-              <div class="descr" style="margin-left: 1.5rem;">
+              <div class="descr">
                 <span id="whitePaper">White Paper</span>
               </div>
             </div>
@@ -218,10 +218,9 @@
           window.location = 'association.html';
         } else if (this.innerHTML == 'Partners') {
           window.location = 'partner.html';
+        } else if (this.innerHTML == 'Developers') {
+          window.location = 'developers.html';
         }
-        //  else if(this.innerHTML == 'wiki'){
-        //    window.location = 'https://www.wttf.org';
-        //  }
         for (var i = 0; i < text.length; i++) {
           text[i].className = '';
           this.className = 'active'
