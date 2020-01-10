@@ -512,6 +512,8 @@ section {
 .whitePaper .content .con {
   margin-top: 2rem;
   margin-left: 1.2rem;
+  position: relative;
+  z-index: 99;
 }
 .whitePaper .content .con h3 {
   font-size: 0.32rem;
@@ -712,6 +714,8 @@ section {
   /* height: 500rem; */
   margin-left: 1.2rem;
   margin-top: 2rem;
+  position: relative;
+  z-index: 99;
 }
 .deepIntroduce > .association .content .con h3 {
   font-size: 0.32rem;
@@ -1133,6 +1137,8 @@ footer > p {
   .whitePaper .content .con {
     margin-top: 60px;
     margin-left: 0;
+    position: relative;
+    z-index: 99;
   }
   .whitePaper .content .con h3 {
     font-size: 14px;

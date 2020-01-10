@@ -216,6 +216,7 @@ section {
     font-size: 0.3rem;
     font-weight:500;
     margin-top: 0.1rem;
+    color: #FFF;
 }
 .violasPayDescr{
    width: 100%;
@@ -259,7 +260,7 @@ section {
     top: 50%;
     margin-top: -0.2rem;
     left: 50%;
-    margin-left: -0.45rem;
+    margin-left: -0.75rem;
     letter-spacing: 2px;
 }
 .downloadPay dl dt img{
@@ -289,6 +290,7 @@ section {
     font-weight:500;
     color: #FFF;
     margin-left: 15px;
+   white-space: nowrap;
 }
 footer {
   width: 100%;

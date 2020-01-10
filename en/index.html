@@ -46,7 +46,7 @@
               <p class="welcome"><label style="letter-spacing: 3px;">Welcome to</label>
                 <img src="../img/编组 31@2x.png" />
               </p>
-              <p><label for="">Download WhitePaper</label><img src="../img/编组 45复制 3@2x.png" /></p>
+              <p class="goWhite"><label for="">WhitePaper</label><img src="../img/编组 45复制 3@2x.png" /></p id="whitePaper">
             </div>
             <div class="headLogo">
               <img src="../img/编组 72@2x.png" />
@@ -350,7 +350,7 @@
               <div class="con">
                 <h3>The Violas White Paper</h3>
                 <!-- <p></p> -->
-                <p>
+                <p class="goWhite1">
                   Read the White Paper<i><img src="../img/编组 45复制@3x.png" /></i>
                 </p>
               </div>
@@ -705,7 +705,7 @@
               <div class="con">
                 <h3>The Violas Association</h3>
                 <span>An independent, not-for-profit organization.</span>
-                <p>
+                <p class="goAssoc">
                   Learn more<i><img src="../img/编组 45复制@3x.png" /></i>
                 </p>
               </div>
@@ -805,7 +805,9 @@
   let oMem2 = document.querySelector(".member1");
   let wPaper = document.getElementById("whitePaper");
   let wPaper1 = document.getElementById("whitePaper1");
-
+  let goWhite = document.querySelector('.goWhite');
+  let goWhite1 = document.querySelector('.goWhite1');
+  let goAssoc = document.querySelector('.goAssoc');
   let closeBtn = document.querySelector('.close');
   let navbarT = document.querySelector('.navbar-toggler');
   let bmdLayoutC = document.querySelector('.bmd-layout-container');
@@ -818,6 +820,16 @@
     dwp.setAttribute('aria-hidden', true);
     bmdLayout.setAttribute('class', 'bmd-layout-backdrop')
   };
+
+  goAssoc.onclick = function () {
+      window.location = "association.html";
+    };
+  goWhite.onclick = function () {
+      window.location = "whitePaper.html";
+  };
+  goWhite1.onclick = function () {
+      window.location = "whitePaper.html";
+    };
   wPaper1.onclick = function () {
     wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
     window.location = "whitePaper.html";
