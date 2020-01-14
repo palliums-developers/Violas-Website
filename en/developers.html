@@ -29,7 +29,7 @@
                                 <li>Partners</li>
                                 <li>Blockchain Explorer</li>
                                 <li>Media</li>
-                                <li>Developers</li>
+                                <li class="active">Developers</li>
                             </ul>
                             <div class="descr">
                                 <span id="whitePaper">White Paper</span>
@@ -63,7 +63,7 @@
                     <a>Partners</a>
                     <a>Blockchain Explorer</a>
                     <a>Media</a>
-                    <a>Developers</a>
+                    <a class="active">Developers</a class="active">
                     <span id="whitePaper1">White Paper</span>
                     <!-- <div class="change">
             <a>EN</a>
@@ -181,6 +181,8 @@
                     window.location = 'developers.html';
                 } else if (this.innerHTML == 'Media') {
                     window.location = 'media.html';
+                } else if (this.innerHTML == 'Vision') {
+                    window.location = 'vision.html';
                 }
                 for (var i = 0; i < text.length; i++) {
                     text[i].className = '';

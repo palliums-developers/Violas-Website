@@ -550,13 +550,16 @@
   function nav(text) {
     for (var i = 0; i < text.length; i++) {
       text[i].onclick = function () {
-        console.log(this.innerHTML)
         if (this.innerHTML == 'Association') {
           window.location = 'association.html';
         } else if (this.innerHTML == 'Partners') {
           window.location = 'partner.html';
         } else if (this.innerHTML == 'Developers') {
           window.location = 'developers.html';
+        } else if (this.innerHTML == 'Media') {
+          window.location = 'media.html';
+        } else if (this.innerHTML == 'Vision') {
+          window.location = 'vision.html';
         }
         for (var i = 0; i < text.length; i++) {
           text[i].className = '';
@@ -618,6 +621,8 @@
         window.location = 'developers.html';
       } else if (this.innerHTML == 'Media') {
         window.location = 'media.html';
+      } else if (this.innerHTML == 'Vision') {
+        window.location = 'vision.html';
       }
       for (var i = 0; i < text.length; i++) {
         text[i].className = '';

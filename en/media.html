@@ -28,7 +28,7 @@
                                 <li>Association</li>
                                 <li>Partners</li>
                                 <li>Blockchain Explorer</li>
-                                <li>Media</li>
+                                <li class="active">Media</li class="active">
                                 <li>Developers</li>
                             </ul>
                             <!-- <div class="descr">
@@ -317,6 +317,8 @@
                     window.location = 'developers.html';
                 } else if (this.innerHTML == 'Media') {
                     window.location = 'media.html';
+                } else if (this.innerHTML == 'Vision') {
+                    window.location = 'vision.html';
                 }
                 for (var i = 0; i < text.length; i++) {
                     text[i].className = '';
@@ -357,6 +359,10 @@
                 window.location = "partner.html";
             } else if (this.innerHTML == 'Developers') {
                 window.location = 'developers.html';
+            } else if (this.innerHTML == 'Media') {
+                window.location = 'media.html';
+            } else if (this.innerHTML == 'Vision') {
+                window.location = 'vision.html';
             }
             for (var i = 0; i < text.length; i++) {
                 text[i].className = '';
