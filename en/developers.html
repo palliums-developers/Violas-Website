@@ -82,22 +82,25 @@
                         </div>
                     </div>
                     <div class="visionContent">
-                       <div class="violasPayDescr">
+                        <div class="violasPayDescr">
                             <p><img src="../img/预览图004 2@2x.png" /></p>
                             <p><img src="../img/预览图001 2@2x.png" /></p>
                             <p><img src="../img/预览图002 2@2x.png" /></p>
                             <p><img src="../img/预览图003 2@2x.png" /></p>
-                       </div>
-                       <div class="downloadPay">
-                         <dl>
-                             <dt><img src="../img/位图备份 3@2x.png"/></dt>
-                             <dd><i><img src="../img/ai-app 2@2x.png"/></i><span>Scan QRcode and download</span></dd>
-                         </dl>
-                        <dl>
-                            <dt><img src="../img/矩形备份 5@2x.png" /><p class="wait">Coming soon</p></dt>
-                            <dd><i><img src="../img/ios 2@2x.png" /></i><span>iOS</span></dd>
-                        </dl>
-                       </div>
+                        </div>
+                        <div class="downloadPay">
+                            <dl>
+                                <dt><img src="../img/位图备份 3@2x.png" /></dt>
+                                <dd><i><img src="../img/ai-app 2@2x.png" /></i><span>Scan QRcode and download</span>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><img src="../img/矩形备份 5@2x.png" />
+                                    <p class="wait">Coming soon</p>
+                                </dt>
+                                <dd><i><img src="../img/ios 2@2x.png" /></i><span>iOS</span></dd>
+                            </dl>
+                        </div>
                     </div>
                 </div>
                 <div class="vision vision1">
@@ -118,7 +121,8 @@
                         <div class="downloadPay">
                             <dl>
                                 <dt><img src="../img/位图备份 3@2x.png" /></dt>
-                                <dd><i><img src="../img/ai-app 2@2x.png" /></i><span>Scan QRcode and download</span></dd>
+                                <dd><i><img src="../img/ai-app 2@2x.png" /></i><span>Scan QRcode and download</span>
+                                </dd>
                             </dl>
                             <dl>
                                 <dt><img src="../img/矩形备份 5@2x.png" />
@@ -138,9 +142,9 @@
                         </div>
                     </div>
                     <div class="vision2Content">
-                      <div class="code"><img src="../img/code.png"/></div>
-                      <a href="https://violas.io/client/violas-client.tar.gz">Download ViolasClient</a>
-                      <a href="https://violas.io/client/ViolasClient.pdf">Download</a>
+                        <div class="code"><img src="../img/code.png" /></div>
+                        <a href="https://violas.io/client/violas-client.tar.gz">Download ViolasClient</a>
+                        <a href="https://violas.io/client/ViolasClient.pdf">Download</a>
                     </div>
                 </div>
             </section>
@@ -167,7 +171,7 @@
     window.onresize = function () {
         init();
     }
-   
+
     let navlists = document.querySelectorAll('ul li');
     let phoneListA = document.querySelectorAll('.phone_list a');
     function nav(text) {
@@ -183,6 +187,8 @@
                     window.location = 'media.html';
                 } else if (this.innerHTML == 'Vision') {
                     window.location = 'vision.html';
+                } else if (this.innerHTML == "Blockchain Explorer") {
+                    window.location = 'https://testnet.violas.io';
                 }
                 for (var i = 0; i < text.length; i++) {
                     text[i].className = '';
@@ -200,20 +206,20 @@
         window.location = 'whitePaper.html';
     }
     wPaper1.onclick = function () {
-            wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
-            window.location = "whitePaper.html";
+        wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
+        window.location = "whitePaper.html";
     };
     let closeBtn = document.querySelector('.close');
     let navbarT = document.querySelector('.navbar-toggler');
     let bmdLayoutC = document.querySelector('.bmd-layout-container');
     closeBtn.onclick = function () {
-            let dwp = document.getElementById("dw-p1");
-            let bmdLayout = document.querySelector(".bmd-layout-backdrop");
-            bmdLayoutC.setAttribute('class', 'bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap developers')
-            navbarT.setAttribute('aria-expanded', false)
-            dwp.setAttribute('aria-expanded', false);
-            dwp.setAttribute('aria-hidden', true);
-            bmdLayout.setAttribute('class', 'bmd-layout-backdrop')
+        let dwp = document.getElementById("dw-p1");
+        let bmdLayout = document.querySelector(".bmd-layout-backdrop");
+        bmdLayoutC.setAttribute('class', 'bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap developers')
+        navbarT.setAttribute('aria-expanded', false)
+        dwp.setAttribute('aria-expanded', false);
+        dwp.setAttribute('aria-hidden', true);
+        bmdLayout.setAttribute('class', 'bmd-layout-backdrop')
     };
     window.onscroll = function () {
         let topScroll = document.documentElement.scrollTop; //滚动的距离,距离顶部的距离
@@ -233,7 +239,7 @@
             bignav.style.zIndex = "9999";
             bignav.style.background = "0";
             // bignav.style.backgroundImage = 'linear-gradient(to right , #9c3ec9, #4a189f);'
-        } 
+        }
     };
 </script>
 <script src="../js/bootstrap-material-design/jquery-3.2.1.slim.min.js"></script>

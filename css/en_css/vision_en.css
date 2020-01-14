@@ -118,7 +118,7 @@ header {
 }
 
 .onPageNav a:hover {
-  color:#4B199F;
+  color: #4b199f;
   font-weight: 600;
   /* color: #110b1b; */
 }
@@ -271,43 +271,48 @@ header {
 section {
   width: 100%;
 }
-.contents{
-      width: 11.6rem;
-      background: #FFF;
-      position: relative;
-      border-radius:20px;
-      background:linear-gradient(rgba(255,255,255,1) 0%,rgba(163,151,255,1) 100%);
-      margin: 1rem auto;
-  }
-  .contents .content{
-      width: 100%;
-      height: 100%;
-      padding:0.5rem 0.34rem 0.3rem 0.36rem;
-      box-sizing: border-box;
-  }
-  .contents .content p{
-      font-size:0.25rem;
-      font-weight:400;
-      color:rgba(17,11,27,1);
-      line-height:0.5rem;
-  }
-  .contents .left,.contents .right{
-      width:3rem;
-      height: 3.94rem;
-      display: flex;
-      position: absolute;
-      bottom: -0.2rem;
-  }
-  .contents .left{
-      left: -0.25rem;
-  }
-  .contents .right{
-      right: 10px;
-  }
-  .contents .left img,.contents .right img{
-      width:100%;
-      height: 100%;
-  }
+.contents {
+  width: 11.6rem;
+  background: #fff;
+  position: relative;
+  border-radius: 20px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 1) 0%,
+    rgba(163, 151, 255, 1) 100%
+  );
+  margin: 1rem auto;
+}
+.contents .content {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0.34rem 0.3rem 0.36rem;
+  box-sizing: border-box;
+}
+.contents .content p {
+  font-size: 0.25rem;
+  font-weight: 400;
+  color: rgba(17, 11, 27, 1);
+  line-height: 0.5rem;
+}
+.contents .left,
+.contents .right {
+  width: 3rem;
+  height: 3.94rem;
+  display: flex;
+  position: absolute;
+  bottom: -0.2rem;
+}
+.contents .left {
+  left: -0.25rem;
+}
+.contents .right {
+  right: 10px;
+}
+.contents .left img,
+.contents .right img {
+  width: 100%;
+  height: 100%;
+}
 
 footer {
   width: 100%;
@@ -397,6 +402,7 @@ footer > p {
     /* display: flex;
     flex-direction: column; */
   }
+
   .phone_list > a,
   .phone_list > span {
     font-size: 14px;
@@ -404,6 +410,9 @@ footer > p {
     color: rgba(248, 248, 248, 1);
     line-height: 14px;
     margin-top: 47px;
+  }
+  .phone_list a.active {
+    color: rgba(248, 248, 248, 0.6)!important;
   }
   .phone_list > span {
     width: 90px;
@@ -487,7 +496,7 @@ footer > p {
   .onPageNav {
     display: none;
   }
-  
+
   .headContent {
     width: 100%;
     flex: 1;
@@ -499,47 +508,47 @@ footer > p {
     width: 209px;
     margin: 5px 0;
     font-size: 14px;
-    line-height:20px;
+    line-height: 20px;
   }
   .headContent .headTalk {
     left: 1rem;
-    top:2px;
+    top: 2px;
   }
   .headContent .headTalk p {
     width: 210px;
     font-size: 10px;
     line-height: 18px;
-    letter-spacing:0;
+    letter-spacing: 0;
   }
   .headContent .headLogo {
-    width:128px;
-    height:99px;
+    width: 128px;
+    height: 99px;
     right: 5px;
   }
-  .headContent .headLogo img{
-    width:128px;
-    height:99px;
+  .headContent .headLogo img {
+    width: 128px;
+    height: 99px;
   }
-  .contents{
-      width: 355px;
-      /* height: 331px; */
-      border-radius: 0;
-      background: #FFF;
+  .contents {
+    width: 355px;
+    /* height: 331px; */
+    border-radius: 0;
+    background: #fff;
   }
-  .contents .content{
-      width: 100%;
-      height: 100%;
-      padding:27px 12px;
-      box-sizing: border-box;
+  .contents .content {
+    width: 100%;
+    height: 100%;
+    padding: 27px 12px;
+    box-sizing: border-box;
   }
-  .contents .content p{
-      font-size:14px;
-      color:rgba(65,60,73,1);
-      line-height:22px;
-      
+  .contents .content p {
+    font-size: 14px;
+    color: rgba(65, 60, 73, 1);
+    line-height: 22px;
   }
-  .contents .left,.contents .right{
-      display: none;
+  .contents .left,
+  .contents .right {
+    display: none;
   }
   footer h2 {
     margin: 20px 0 10px 25px;
@@ -563,21 +572,20 @@ footer > p {
   }
 }
 @media (max-width: 321px) {
-  .headContent .headLogo{
+  .headContent .headLogo {
     right: 0;
   }
   .headContent .headTalk p {
     width: 190px;
   }
-  .contents{
-     width: 310px; 
+  .contents {
+    width: 310px;
   }
-  .contents .content{
-    
-    padding:20px 10px;
+  .contents .content {
+    padding: 20px 10px;
     box-sizing: border-box;
   }
-  .contents h1{
+  .contents h1 {
     white-space: nowrap;
   }
 }

@@ -45,8 +45,9 @@
                         <div class="headTalk">
                             <!-- <p><img src="../img/white.png" /></p> -->
                             <h2>The Vision</h2>
-                            <p>Violas is a global platform that enables the issuance of reserve-backed stablecoins built on top of the Libra and
-                            Bitcoin blockchains.</p>
+                            <p>Violas is a global platform that enables the issuance of reserve-backed stablecoins built
+                                on top of the Libra and
+                                Bitcoin blockchains.</p>
                         </div>
                         <div class="headLogo">
                             <img src="../img/visionbk.png" />
@@ -72,8 +73,9 @@
                         <div class="headTalk">
                             <!-- <p><img src="../img/white.png" /></p> -->
                             <h2>The Vision</h2>
-                            <p>Violas is a global platform that enables the issuance of reserve-backed stablecoins built on top of the Libra and
-                            Bitcoin blockchains.</p>
+                            <p>Violas is a global platform that enables the issuance of reserve-backed stablecoins built
+                                on top of the Libra and
+                                Bitcoin blockchains.</p>
                         </div>
                         <div class="headLogo">
                             <img src="../img/visionbk.png" />
@@ -90,6 +92,7 @@
                     <a>Partners</a>
                     <a>Blockchain Explorer</a>
                     <a>Media</a>
+                    <a>Developers</a>
                     <span id="whitePaper1">White Paper</span>
                     <!-- <div class="change">
             <a>EN</a>
@@ -100,16 +103,21 @@
             </div>
             <section class="bmd-layout-content">
                 <div class="contents">
-                  <div class="content">
-                      <p>Violas is a global platform that enables the issuance of reserve-backed stablecoins built on top of the Libra and
-                    Bitcoin blockchains. Violas enables third-party vendors to issue Libra compatible stablecoins that are pegged to their
-                    local fiat currency at a 1:1 ratio. Users will be able to send, receive, and secure their stablecoins just like the fiat
-                    currency in their bank account, only easier. Most importantly, unlike fiat banking, a user’s stablecoins are protected
-                    by a cryptographic private key that only they have access to. Violas imagines a world of frictionless, secure payments,
-                    built for the modern world.</p>
-                  </div>
-                  <div class="left"><img src="../img/矩形复制 52@2x.png" /></div>
-                  <div class="right"><img src="../img/矩形复制 51@2x.png"/></div>
+                    <div class="content">
+                        <p>Violas is a global platform that enables the issuance of reserve-backed stablecoins built on
+                            top of the Libra and
+                            Bitcoin blockchains. Violas enables third-party vendors to issue Libra compatible
+                            stablecoins that are pegged to their
+                            local fiat currency at a 1:1 ratio. Users will be able to send, receive, and secure their
+                            stablecoins just like the fiat
+                            currency in their bank account, only easier. Most importantly, unlike fiat banking, a user’s
+                            stablecoins are protected
+                            by a cryptographic private key that only they have access to. Violas imagines a world of
+                            frictionless, secure payments,
+                            built for the modern world.</p>
+                    </div>
+                    <div class="left"><img src="../img/矩形复制 52@2x.png" /></div>
+                    <div class="right"><img src="../img/矩形复制 51@2x.png" /></div>
                 </div>
             </section>
             <footer>
@@ -173,6 +181,8 @@
                     window.location = 'media.html';
                 } else if (this.innerHTML == 'Vision') {
                     window.location = 'vision.html';
+                } else if (this.innerHTML == "Blockchain Explorer") {
+                    window.location = 'https://testnet.violas.io';
                 }
                 for (var i = 0; i < text.length; i++) {
                     text[i].className = '';
@@ -204,22 +214,6 @@
         }
     };
 
-    let text = document.querySelectorAll('.head > ul > li');
-    for (var i = 0; i < text.length; i++) {
-        text[i].onclick = function () {
-            if (this.innerHTML == "Association") {
-                window.location = "association.html";
-            } else if (this.innerHTML == "Partners") {
-                window.location = "partner.html";
-            } else if (this.innerHTML == 'Developers') {
-                window.location = 'developers.html';
-            }
-            for (var i = 0; i < text.length; i++) {
-                text[i].className = '';
-                this.className = 'active'
-            }
-        }
-    }
 
 </script>
 <script src="../js/bootstrap-material-design/jquery-3.2.1.slim.min.js"></script>

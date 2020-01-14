@@ -96,14 +96,15 @@
         </header>
       </div>
       <div id="dw-p1" class="bmd-layout-drawer bg-faded">
-        <a class="home" href="index.html"><img src="../img/home 2.png"/></a>
-        <span class="close"><img src="../img/guanbi-2备份 2.png"/></span>
+        <a class="home" href="index.html"><img src="../img/home 2.png" /></a>
+        <span class="close"><img src="../img/guanbi-2备份 2.png" /></span>
         <ul class="list-group phone_list">
           <a>Vision</a>
           <a>Association</a>
           <a>Partners</a>
           <a>Blockchain Explorer</a>
           <a>Media</a>
+          <a>Developers</a>
           <span id="whitePaper1">White Paper</span>
           <!-- <div class="change">
             <a>EN</a>
@@ -135,8 +136,8 @@
                 <div class="introduction1Descr">
                   <a id="Sharing"></a>
                   <div class="descrRight">
-                  </br>
-                  </br></br>
+                    </br>
+                    </br></br>
                     <h4>Part 1</h4>
                     <div class="intro">
                       </br>
@@ -560,6 +561,8 @@
           window.location = 'media.html';
         } else if (this.innerHTML == 'Vision') {
           window.location = 'vision.html';
+        } else if (this.innerHTML == "Blockchain Explorer") {
+          window.location = 'https://testnet.violas.io';
         }
         for (var i = 0; i < text.length; i++) {
           text[i].className = '';
@@ -610,27 +613,6 @@
     document.querySelector('.onPageNav').style.position = "static";
     document.querySelector('.introduction0').style.marginLeft = "0";
   }
-  let text = document.querySelectorAll('.head > ul > li');
-  for (var i = 0; i < text.length; i++) {
-    text[i].onclick = function () {
-      if (this.innerHTML == "Association") {
-        window.location = "association.html";
-      } else if (this.innerHTML == "Partners") {
-        window.location = "partner.html";
-      } else if (this.innerHTML == 'Developers') {
-        window.location = 'developers.html';
-      } else if (this.innerHTML == 'Media') {
-        window.location = 'media.html';
-      } else if (this.innerHTML == 'Vision') {
-        window.location = 'vision.html';
-      }
-      for (var i = 0; i < text.length; i++) {
-        text[i].className = '';
-        this.className = 'active'
-      }
-    }
-  }
-
 </script>
 <script src="../js/bootstrap-material-design/jquery-3.2.1.slim.min.js"></script>
 <script src="../js/bootstrap-material-design/popper.js"></script>

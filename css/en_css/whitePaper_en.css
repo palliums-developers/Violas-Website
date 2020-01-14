@@ -566,6 +566,9 @@ footer > p {
     line-height: 14px;
     margin-top: 47px;
   }
+  .phone_list a.active {
+    color: rgba(248, 248, 248, 0.6)!important;
+  }
   .phone_list > span {
     width: 90px;
     display: inline-block;

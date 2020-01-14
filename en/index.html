@@ -46,7 +46,8 @@
               <p class="welcome"><label style="letter-spacing: 3px;">Welcome to</label>
                 <img src="../img/编组 31@2x.png" />
               </p>
-              <p class="goWhite"><label for="">WhitePaper</label><img src="../img/编组 45复制 3@2x.png" /></p id="whitePaper">
+              <p class="goWhite"><label for="">WhitePaper</label><img src="../img/编组 45复制 3@2x.png" /></p
+                id="whitePaper">
             </div>
             <div class="headLogo">
               <img src="../img/编组 72@2x.png" />
@@ -82,8 +83,8 @@
         </header>
       </div>
       <div id="dw-p1" class="bmd-layout-drawer bg-faded">
-        <a class="home" href="index.html"><img src="../img/home 2.png"/></a>
-        <span class="close"><img src="../img/guanbi-2备份 2.png"/></span>
+        <a class="home" href="index.html"><img src="../img/home 2.png" /></a>
+        <span class="close"><img src="../img/guanbi-2备份 2.png" /></span>
         <ul class="list-group phone_list">
           <a>Vision</a>
           <a>Association</a>
@@ -766,29 +767,31 @@
   });
   let navlists = document.querySelectorAll('ul li');
   let phoneListA = document.querySelectorAll('.phone_list a');
-    function nav(text) {
-      for (var i = 0; i < text.length; i++) {
-        text[i].onclick = function () {
-          if (this.innerHTML == 'Association') {
-            window.location = 'association.html';
-          } else if (this.innerHTML == 'Partners') {
-            window.location = 'partner.html';
-          }else if(this.innerHTML == 'Developers'){
-             window.location = 'developers.html';
-           } else if (this.innerHTML == 'Media') {
-            window.location = 'media.html';
-          } else if (this.innerHTML == 'Vision') {
-            window.location = 'vision.html';
-          }
-          for (var i = 0; i < text.length; i++) {
-            text[i].className = '';
-            this.className = 'active'
-          }
+  function nav(text) {
+    for (var i = 0; i < text.length; i++) {
+      text[i].onclick = function () {
+        if (this.innerHTML == 'Association') {
+          window.location = 'association.html';
+        } else if (this.innerHTML == 'Partners') {
+          window.location = 'partner.html';
+        } else if (this.innerHTML == 'Developers') {
+          window.location = 'developers.html';
+        } else if (this.innerHTML == 'Media') {
+          window.location = 'media.html';
+        } else if (this.innerHTML == 'Vision') {
+          window.location = 'vision.html';
+        } else if (this.innerHTML == "Blockchain Explorer") {
+          window.location = 'https://testnet.violas.io';
+        }
+        for (var i = 0; i < text.length; i++) {
+          text[i].className = '';
+          this.className = 'active'
         }
       }
     }
-    nav(navlists);
-    nav(phoneListA);
+  }
+  nav(navlists);
+  nav(phoneListA);
   let oDiv1 = document.querySelector(".declare");
   let oDiv2 = document.querySelector(".declare1");
   let oHis1 = document.querySelector(".history");
@@ -826,14 +829,14 @@
   };
 
   goAssoc.onclick = function () {
-      window.location = "association.html";
-    };
+    window.location = "association.html";
+  };
   goWhite.onclick = function () {
-      window.location = "whitePaper.html";
+    window.location = "whitePaper.html";
   };
   goWhite1.onclick = function () {
-      window.location = "whitePaper.html";
-    };
+    window.location = "whitePaper.html";
+  };
   wPaper1.onclick = function () {
     wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
     window.location = "whitePaper.html";
@@ -858,9 +861,9 @@
     oHis1.style.display = "block";
   };
   oHis1.onmouseout = function () {
-      oHis1.style.display = "none";
-      oHis2.style.display = "block";
-    };
+    oHis1.style.display = "none";
+    oHis2.style.display = "block";
+  };
   oRes1.onmouseover = function () {
     oRes2.style.display = "block";
     oRes1.style.display = "none";
@@ -938,6 +941,7 @@
       // bignav.style.backgroundImage = 'linear-gradient(to right , #9c3ec9, #4a189f);'
     }
   };
+  console.log(0.1+0.2)
 </script>
 <script src="../js/bootstrap-material-design/jquery-3.2.1.slim.min.js"></script>
 <script src="../js/bootstrap-material-design/popper.js"></script>

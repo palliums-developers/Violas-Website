@@ -88,7 +88,7 @@
         <ul class="list-group phone_list">
           <a>Vision</a>
           <a>Association</a>
-          <a>Partners</a>
+          <a class='active'>Partners</a>
           <a>Blockchain Explorer</a>
           <a>Media</a>
           <a>Developers</a>
@@ -294,6 +294,8 @@
           window.location = 'media.html';
         } else if (this.innerHTML == 'Vision') {
           window.location = 'vision.html';
+        } else if (this.innerHTML == "Blockchain Explorer") {
+          window.location = 'https://testnet.violas.io';
         }
         for (var i = 0; i < text.length; i++) {
           text[i].className = '';
