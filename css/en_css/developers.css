@@ -57,7 +57,7 @@ header {
 }
 .navList {
   display: flex;
-  flex:1;
+  flex: 1;
   height: 100%;
   align-items: center;
   margin-right: 1.5rem;
@@ -99,7 +99,7 @@ header {
   width: 100%;
   height: 0.5rem;
   font-size: 0.23rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(44, 9, 108, 1);
   line-height: 0.5rem;
   text-align: center;
@@ -160,11 +160,11 @@ section {
   display: flex;
   align-items: center;
 }
-.vision1 .head{
-    width: 9.3rem;
+.vision1 .head {
+  width: 9.3rem;
 }
-.vision2 .head{
-    width: 8.7rem;
+.vision2 .head {
+  width: 8.7rem;
 }
 .vision .head .bg {
   /* width: 1200rem; */
@@ -192,105 +192,114 @@ section {
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
 }
-.vision1 .head p{
-   margin-left: -1.4rem;
+.vision1 .head p {
+  margin-left: -1.4rem;
 }
-.visionContent,.vision2Content{
-    width: 12rem;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+.visionContent,
+.vision2Content {
+  width: 12rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-.vision2Content .code{
-    width: 100%;
-    height: 3.7rem;
-    display: flex;
+.vision2Content .code {
+  width: 100%;
+  height: 3.7rem;
+  display: flex;
 }
-.vision2Content .code img{
-    width: 100%;
-    height: 100%;
+.vision2Content .code img {
+  width: 100%;
+  height: 100%;
 }
-.vision2Content a{
-    width: 100%;
-    text-align: right;
-    font-size: 0.3rem;
-    font-weight:500;
-    margin-top: 0.1rem;
-    color: #FFF;
+.vision2Content a {
+  width: 2.5rem;
+  text-align: right;
+  font-size: 0.3rem;
+  font-weight: 400;
+  margin-top: 0.1rem;
+  color: #fff;
+  margin-left: 9.5rem;
 }
-.violasPayDescr{
-   width: 100%;
-   display: flex;
+.vision2Content a:hover{
+  color: #20BBBA;
 }
-.violasPayDescr p{
-    width: 3.7rem;
-    height: 6.2rem;
-    margin-right: 0.08rem;
-    display: flex;
+.vision2Content a img{
+  height: 0.3rem;
+  margin-right:0.15rem;
 }
-.violasPayDescr p:last-child{
-    margin-right: 0;
+.violasPayDescr {
+  width: 100%;
+  display: flex;
 }
-.violasPayDescr p img{
-    width: 100%;
-    height: 100%;
+.violasPayDescr p {
+  width: 3.7rem;
+  height: 6.2rem;
+  margin-right: 0.08rem;
+  display: flex;
 }
-.downloadPay{
-    display: flex;
-    margin-top: 1.5rem;
+.violasPayDescr p:last-child {
+  margin-right: 0;
 }
-.downloadPay dl{
-    width: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 2rem;
+.violasPayDescr p img {
+  width: 100%;
+  height: 100%;
 }
-.downloadPay dl dt{
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    position: relative;
+.downloadPay {
+  display: flex;
+  margin-top: 1.5rem;
 }
-.downloadPay dl p{
-    font-size: 0.24rem;
-    font-weight: 500;
-    color: #FFF;
-    position: absolute;
-    top: 50%;
-    margin-top: -0.2rem;
-    left: 50%;
-    margin-left: -0.75rem;
-    letter-spacing: 2px;
+.downloadPay dl {
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2rem;
 }
-.downloadPay dl dt img{
-    width: 100%;
-    height: 100%;
+.downloadPay dl dt {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  position: relative;
 }
-.downloadPay dl dd{
-    display: flex;
-    align-items: center;
-    margin-top: 0.3rem;
+.downloadPay dl p {
+  font-size: 0.24rem;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.2rem;
+  left: 50%;
+  margin-left: -0.75rem;
+  letter-spacing: 2px;
 }
-.downloadPay dl dd i{
-    width: 0.42rem;
-    height: 0.5rem;
-    display: flex;
+.downloadPay dl dt img {
+  width: 100%;
+  height: 100%;
 }
-.downloadPay dl dd i:nth-child(2){
-    width: 0.42rem;
-    height: 0.46rem;
+.downloadPay dl dd {
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
 }
-.downloadPay dl dd i img{
-    width: 100%;
-    height:100%;
+.downloadPay dl dd i {
+  width: 0.42rem;
+  height: 0.5rem;
+  display: flex;
 }
-.downloadPay dl dd span{
-    font-size: 0.24rem;
-    font-weight:500;
-    color: #FFF;
-    margin-left: 15px;
-   white-space: nowrap;
+.downloadPay dl dd i:nth-child(2) {
+  width: 0.42rem;
+  height: 0.46rem;
+}
+.downloadPay dl dd i img {
+  width: 100%;
+  height: 100%;
+}
+.downloadPay dl dd span {
+  font-size: 0.24rem;
+  font-weight: 400;
+  color: #fff;
+  margin-left: 15px;
+  white-space: nowrap;
 }
 footer {
   width: 100%;
@@ -304,7 +313,7 @@ footer {
 footer h2 {
   height: 0.56rem;
   font-size: 0.22rem;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(255, 255, 255, 1);
   margin: 1.7rem 0 0.05rem 3.62rem;
 }
@@ -445,7 +454,7 @@ footer > p {
     margin-top: 47px;
   }
   .phone_list a.active {
-    color: rgba(248, 248, 248, 0.6)!important;
+    color: rgba(248, 248, 248, 0.6) !important;
   }
   .phone_list > span {
     width: 90px;
@@ -498,126 +507,133 @@ footer > p {
     left: 200px;
     font-weight: 300;
   }
+
 }
 @media (max-width: 750px) {
-    .vision .head {
-        width: 310px;
-    }
-    .vision .head .bg .img_left,
-    .vision .head .bg .img_right {
-        width: 100px;
-        height: 14px;
-    }
-    .vision .head p {
-        font-size: 14px;
-        left: 50%;
-        margin-left: -49px;
-        top: -0.05rem;
-    }
-    .vision1 .head {
-        width: 315px;
-    }
-    .vision2 .head{
-      width: 290px;
-    }
-    .vision1 .head p {
-        margin-left: -52px;
-    }
-    .visionContent, .vision2Content{
-       width: 350px;
-    }
-    .vision2 .head p {
-        margin-left: -38px;
-    }
-    .violasPayDescr p{
-       width: 109px;
-       height: 236px;
-       margin-right: 15px;
-    }
-    .vision0 .violasPayDescr p:nth-child(1){
-        display: none;
-    }
-    .vision1 .violasPayDescr p:nth-child(3){
-        margin-right: 0;
-    }
-    .vision1 .violasPayDescr p:last-child{
-        display: none;
-    }
-    .downloadPay dl{
-       width: 132px;
-       margin-left: 30px;
-    }
-    .downloadPay dl dt{
-       width: 132px;
-       height: 132px;
-    }
-    .downloadPay dl p{
-      font-size:14px;
-      margin-top: -15px;
-      margin-left: -30px;
-    }
-    .downloadPay dl dd{
-      margin-top: 14px;
-    }
-    .downloadPay dl dd i{
-      width: 22px;
-      height: 27px;
-    }
-    .downloadPay dl dd span{
-      font-size: 14px;
-      margin-left:10px;
-    }
-    .logo img {
-      width: 60px;
-      height: 18px;
-    }  
-    .vision2Content .code{
-      width: 100%;
-      height: 116px;
-    }
-    .vision2Content a{
-      font-size: 14px;
-    }
-    footer h2 {
+  .vision .head {
+    width: 310px;
+  }
+  .vision .head .bg .img_left,
+  .vision .head .bg .img_right {
+    width: 100px;
+    height: 14px;
+  }
+  .vision .head p {
+    font-size: 14px;
+    left: 50%;
+    margin-left: -49px;
+    top: -0.05rem;
+  }
+  .vision1 .head {
+    width: 315px;
+  }
+  .vision2 .head {
+    width: 290px;
+  }
+  .vision1 .head p {
+    margin-left: -52px;
+  }
+  .visionContent,
+  .vision2Content {
+    width: 350px;
+  }
+  .vision2 .head p {
+    margin-left: -38px;
+  }
+  .violasPayDescr p {
+    width: 109px;
+    height: 236px;
+    margin-right: 15px;
+  }
+  .vision0 .violasPayDescr p:nth-child(1) {
+    display: none;
+  }
+  .vision1 .violasPayDescr p:nth-child(3) {
+    margin-right: 0;
+  }
+  .vision1 .violasPayDescr p:last-child {
+    display: none;
+  }
+  .downloadPay dl {
+    width: 132px;
+    margin-left: 30px;
+  }
+  .downloadPay dl dt {
+    width: 132px;
+    height: 132px;
+  }
+  .downloadPay dl p {
+    font-size: 14px;
+    margin-top: -15px;
+    margin-left: -30px;
+  }
+  .downloadPay dl dd {
+    margin-top: 14px;
+  }
+  .downloadPay dl dd i {
+    width: 22px;
+    height: 27px;
+  }
+  .downloadPay dl dd span {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .logo img {
+    width: 60px;
+    height: 18px;
+  }
+  .vision2Content .code {
+    width: 100%;
+    height: 116px;
+  }
+  .vision2Content a{
+    font-size: 14px;
+    margin-left: 200px;
+    width: 115px;
+  }
+  footer h2 {
     margin: 20px 0 10px 25px;
     font-size: 10px;
-    }
-    footer > div {
-        margin-left: 17px;
-    }
-    footer > div i img {
-        width: 10px;
-        height: 8px;
-        margin-top: 2px;
-    }
-    footer > div label {
-        font-size: 12px;
-    }
-    footer > p {
-        font-size: 8px;
-        margin: 20px 0;
-        /* margin-bottom: 40px !important; */
-    }
+  }
+  footer > div {
+    margin-left: 17px;
+  }
+  footer > div i img {
+    width: 10px;
+    height: 8px;
+    margin-top: 2px;
+  }
+  footer > div label {
+    font-size: 12px;
+  }
+  footer > p {
+    font-size: 8px;
+    margin: 20px 0;
+    /* margin-bottom: 40px !important; */
+  }
 }
 @media (max-width: 321px) {
-    .visionContent{
-       width: 320px;
-    }
-    .vision2Content{
-       width: 310px;
-    }
-    .violasPayDescr p{
-      width: 105px;
-      height: 216px;
-      margin-right: 10px;
-    }
-    .downloadPay dl{
-      margin-left: 18px;
-    }
-    /* .vision2Content .code{
+  .visionContent {
+    width: 320px;
+  }
+  .vision2Content {
+    width: 310px;
+  }
+  .violasPayDescr p {
+    width: 105px;
+    height: 216px;
+    margin-right: 10px;
+  }
+  .downloadPay dl {
+    margin-left: 18px;
+  }
+  /* .vision2Content .code{
       width: 310px;
     } */
-    footer > p {
-        margin-top: 5px !important;
+    .vision2Content a{
+      margin-left: 180px;
     }
+  footer > p {
+    margin-top: 5px !important;
+  }
 }

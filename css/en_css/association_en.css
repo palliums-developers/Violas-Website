@@ -131,7 +131,7 @@ header {
 }
 .headContent .headTalk h4 {
   font-size: 0.45rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
 }
 .headContent .headTalk p img {
@@ -262,7 +262,7 @@ section {
 }
 .eachDescrs h3 {
   font-size: 0.3rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(44, 9, 108, 1);
   line-height: 0.45rem;
 }
@@ -360,7 +360,7 @@ section {
 }
 .whitePaper .content .con h3 {
   font-size: 0.53rem;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(248, 248, 248, 1);
   display: flex;
 }
@@ -424,7 +424,7 @@ section {
 }
 .association .content .con h3 {
   font-size: 0.53rem;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(248, 248, 248, 1);
   display: flex;
 }
@@ -458,7 +458,7 @@ footer {
 footer h2 {
   height: 0.56rem;
   font-size: 0.22rem;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(255, 255, 255, 1);
   margin: 1.7rem 0 0.05rem 3.62rem;
 }
@@ -608,7 +608,7 @@ footer > p {
   }
   .headContent .headTalk h4 {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     color: #fff;
   }
   .headContent .headLogo {

@@ -104,7 +104,7 @@ header {
   width: 100%;
   height: 0.5rem;
   font-size: 0.23rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(44, 9, 108, 1);
   line-height: 0.5rem;
   text-align: center;
@@ -209,7 +209,7 @@ header {
 } */
 .default .headContent .headTalk p:nth-child(2) label {
   font-size: 0.32rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(249, 249, 249, 1);
 }
 .default .headContent .headTalk p:nth-child(2) img {
@@ -396,7 +396,7 @@ section {
 }
 .forWorldDescr .eachDescrs h3 {
   font-size: 0.32rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(44, 9, 108, 1);
   line-height: 0.45rem;
 }
@@ -517,7 +517,7 @@ section {
 }
 .whitePaper .content .con h3 {
   font-size: 0.32rem;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(248, 248, 248, 1);
   white-space: nowrap;
 }
@@ -618,7 +618,7 @@ section {
   width: 6rem;
   height: 0.32rem;
   font-size: 0.32rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(249, 249, 249, 1);
   line-height: 0.32rem;
   margin-top: 0.4rem;
@@ -719,13 +719,13 @@ section {
 }
 .deepIntroduce > .association .content .con h3 {
   font-size: 0.32rem;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(248, 248, 248, 1);
   white-space: nowrap;
 }
 .deepIntroduce > .association .content .con p {
   font-size: 0.22rem;
-  font-weight: 500;
+  font-weight: 400;
   color: rgba(248, 248, 248, 1);
   display: flex;
   margin-top: 0.8rem;
@@ -759,7 +759,7 @@ footer {
 footer h2 {
   height: 0.56rem;
   font-size: 0.22rem;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(255, 255, 255, 1);
   margin: 1.7rem 0 0.05rem 3.62rem;
 }
