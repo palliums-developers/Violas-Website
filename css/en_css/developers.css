@@ -467,9 +467,9 @@ footer > p {
     padding: 0 17px;
     box-sizing: border-box;
   }
-  /* .phone_list>.change a:not(.ka){
+  .phone_list>.change a:not(.ka){
     border-right:1px solid #FFF ;
-  } */
+  }
   .hide_show_header_pc {
     display: none;
   }
