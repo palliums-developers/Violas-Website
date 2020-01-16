@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/partner.css">
+  <link rel="stylesheet" href="../css/ko_css/partner_ko.css">
+  <link rel="stylesheet" href="../css/bootstrap-material-design.min.css">
   <link rel="icon" href="../img/hLogo.ico" type="image/x-icon">
   <link rel="shortcut icon" href="../img/hLogo.ico" type="image/x-icon">
   <title>Violas</title>
@@ -13,53 +14,100 @@
 
 <body>
   <div id="root">
-    <div class="wrap partner">
-      <header>
-        <div class="header">
-          <div class="head">
-            <div class="logo">
-              <img src="../img/编组 25@3x.png" />
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap partner">
+      <div class="hide_show_header_pc">
+        <header>
+          <div class="header">
+            <div class="head">
+              <div class="logo">
+                <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
+              </div>
+              <ul class="navList">
+                <li>비전</li>
+                <li>Association</li>
+                <li class="active">파트너들</li>
+                <li>블록체인 탐색기</li>
+                <li>미디어</li>
+                <li>개발자</li>
+              </ul>
+              <div class="descr">
+                <span id="whitePaper">백서</span>
+                <a href="../ja/index.html">日本語</a>
+                <a href="../ko/index.html">한국어</a>
+              </div>
+              <!-- <div class="descr" style="margin-left: 1.5rem;">
+                <span id="whitePaper">White Paper</span>
+              </div> -->
             </div>
-            <ul class="navList">
-              <li>首页</li>
-              <li>协会</li>
-              <li class="active">合作伙伴</li>
-              <li>WIKI</li>
-              <li>
-                <p id="docu">文档</p>
-                <div class="select">
-                  <div class="bg"><img src="../img/路径复制 3@2x.png" alt=""></div>
-                  <div class="list">
-                    <span>Violas</span>
-                    <span>libra</span>
-                  </div>
+          </div>
+          <div class="headContent">
+            <div class="headTalk">
+              <p><img src="../img/par.png" /></p>
+              <div>
+                <p><span> Violas </span>에 가입하여 함께합시다.</p>
+                <p>함께합시다</p>
+              </div>
+            </div>
+            <div class="headLogo">
+              <img src="../img/bg25@2x.png" />
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="hide_show_header_mob">
+        <header class="bmd-layout-header">
+          <div class="navbar navbar-light bg-faded phone_head">
+            <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-p1">
+              <i class="material-icons"><img src="../img/phone_nav.png"></img></i>
+            </button>
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <div class="logo">
+                  <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
                 </div>
               </li>
             </ul>
-            <div class="descr">
-              <span id="whitePaper">白皮书</span>
-              <span>EN</span>
+          </div>
+          <div class="headContent">
+            <div class="headTalk">
+              <p><img src="../img/par.png" /></p>
+              <div>
+                <p><span> Violas </span>에 가입하여 함께합시다.</p>
+                <p>함께합시다</p>
+              </div>
+            </div>
+            <div class="headLogo">
+              <img src="../img/bg25@2x.png" />
             </div>
           </div>
-        </div>
-        <div class="headContent">
-          <div class="headTalk">
-            <p><img src="../img/par.png" /></p>
-            <div>
-              <p><span> Violas </span>에 가입하여 함께합시다.</p>
-              <p>与 Violas 合作</p>
-            </div>
+        </header>
+      </div>
+      <div id="dw-p1" class="bmd-layout-drawer bg-faded">
+        <a class="home" href="index.html"><img src="../img/home 2.png" /></a>
+        <span class="close"><img src="../img/guanbi-2备份 2.png" /></span>
+        <ul class="list-group phone_list">
+          <a>비전</a>
+          <a>Association</a>
+          <a class="active">파트너들</a>
+          <a>블록체인 탐색기</a>
+          <a>미디어</a>
+          <a>개발자</a>
+          <span id="whitePaper1">백서</span>
+          <div class="change">
+            <!-- <a>EN</a> -->
+            <a>日本語</a>
+            <a class="ka">한국어</a>
           </div>
-          <div class="headLogo">
-            <img src="../img/bg25@2x.png" />
-          </div>
-        </div>
-      </header>
-      <section>
+        </ul>
+      </div>
+      <section class="bmd-layout-content">
         <div class="mebers">
           <div class="head">
-            <div class="bg"><img src="../img/编组 29复制@3x.png" /></div>
-            <p>협회의 구성원</p>
+            <div class="bg">
+              <img class="img_left" src="../img/编组 26.png" />
+              <p>협회의 구성원</p>
+              <img class="img_right" src="../img/编组 26复制 4.png" />
+            </div>
           </div>
           <div class="forWorldDescr">
             <div class="eachDescr">
@@ -97,12 +145,13 @@
               </div>
               <div class="lContent2">
                 <div><img src="../img/编组 132@2x.png" alt=""></div>
-                <p>디지털 화폐의 발행 수는 준비자산의 안정성을 보장하여야 합니다. 뿐만 아니라 변동의 폭이 적어야 하며, 준비자산의 부족이 있을 경우 이를 보충해주는 의무를 집니다.</p>
+                <p>디지털 화폐의 발행 수는 준비자산의 안정성을 보장하여야 합니다. 뿐만 아니라 변동의 폭이 적어야 하며, 준비자산의 부족이 있을 경우 이를 보충해주는 의무를 집니다.
+                </p>
               </div>
             </div>
             <div class="center">
               <div class="cLogo"><img src="../img/编组 162@2x.png" alt=""></div>
-              <p>稳定币发行方</p>
+              <p>노드 혹은 채널 노드에</p>
             </div>
             <div class="right">
               <div class="rLogo"><img src="../img/编组 11复制 3@2x.png" alt=""></div>
@@ -116,13 +165,41 @@
               </div>
             </div>
           </div>
+          <div class="publisher1">
+            <div class="head">
+              <div class="bg">
+                <img class="img_left" src="../img/编组 26.png" />
+                <p>노드 혹은 채널 노드에</p>
+                <img class="img_right" src="../img/编组 26复制 4.png" />
+              </div>
+            </div>
+            <div class="issuers">
+              <div class="issuersCon">
+                <div><img src="../img/编组 442@2x.png" alt=""></div>
+                <p>노드 혹은 채널 노드에 권한을 가진 그룹이나 개인은 준비자산 위탁관리기관에서 정한 저 위험성 단기채권의 조건에 맞추어, 안정화된 가치의 디지털 화폐를 발행합니다.</p>
+              </div>
+              <div class="issuersCon">
+                <div><img src="../img/编组 132@2x.png" alt=""></div>
+                <p>디지털 화폐의 발행 수는 준비자산의 안정성을 보장하여야 합니다. 뿐만 아니라 변동의 폭이 적어야 하며, 준비자산의 부족이 있을 경우 이를 보충해주는 의무를 집니다.
+                </p>
+              </div>
+              <div class="issuersCon">
+                <div><img src="../img/编组 10@2x.png" alt=""></div>
+                <p>디지털 화폐의 발행 수는 현지의 법률과 법규의 기준에 따릅니다.</p>
+              </div>
+              <div class="issuersCon">
+                <div><img src="../img/编组 452@2x.png" alt=""></div>
+                <p>디지털 화폐의 발행자는 준비자금의 증감과 수익을 향유하며, 유통 중 발생한 수익 또한 향유합니다. (운영자의 구체적인 거래방식에 따라, 스마트 시스템 형식으로 맞춤형 고정 값을 협의하였습니다)</p>
+              </div>
+            </div>
+          </div>
           <div class="service">
             <div class="logo"><img src="../img/编组 24@2x.png" alt=""></div>
             <h2>운영자</h2>
             <p>그룹이나 개인은 각 노드에서 부여되는 권한에 따라, 반드시 현지의 법률과 법규의 기준에 입각하여 운용에 의해 발생하는 수익을 배분하고,</p>
             <p> 협회는 이를 전폭적으로 지지합니다.</p>
           </div>
-          <div class="forWorldDescrs">
+          <!-- <div class="forWorldDescrs">
             <div class="eachDescr">
               <div class="logo1"><img src="../img/编组 48@2x.png" /></div>
               <div class="logo2"><img src="../img/编组 52@2x.png" /></div>
@@ -153,7 +230,7 @@
               <div class="logo4"><img src="../img/矩形复制 51@2x.png" /></div>
               <div class="logo3"><img src="../img/矩形复制 52@2x.png" /></div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <footer>
@@ -165,72 +242,92 @@
   </div>
 </body>
 <script>
-  let text = document.querySelectorAll('ul li')
+  function init() {
+    let designSize = 1920;
+    let html = document.documentElement;
+    let wW = html.clientWidth;// 窗口宽度
+    let rem = wW * 100 / designSize;
+    document.documentElement.style.fontSize = rem + 'px';
+  }
+  init();
+  window.onresize = function () {
+    init();
+  }
+  let navlists = document.querySelectorAll('ul li');
   let navlist = document.querySelector('.navList');
-  let selects = document.querySelector('.navList .select');
-  let docum = document.querySelector('.navList #docu');
-  let lists = document.querySelectorAll('.select .list span');
-  selects.style.display = 'none'
-  docum.onclick = function () {
-    if (selects.style.display == 'none') {
-      docum.style.color = "rgba(62, 209, 246, 1)"
-      selects.style.display = 'block'
-    } else {
-      selects.style.display = 'none'
-      docum.style.color = "#FFF"
-    }
-  }
-  for (var i = 0; i < lists.length; i++) {
-    lists[i].onclick = function () {
-      if (this.innerHTML == 'Violas') {
-        selects.style.display = 'none'
-      } else if (this.innerHTML == 'libra') {
-        window.location = 'libra_doc/lib_doc_en2cn/welcome-to-libra.htm';
-        selects.style.display = 'none'
-      }
-      for (var i = 0; i < lists.length; i++) {
-        lists[i].style.background = '#FFF';
-        this.style.background = 'rgba(169, 67, 206, .16)';
-      }
-    }
-  }
-  for (var i = 0; i < text.length; i++) {
-    text[i].onclick = function () {
-      if (this.innerHTML == '首页') {
-        window.location = 'index_cn.html';
-      } else if (this.innerHTML == '协会') {
-        window.location = 'association.html';
-      } else if (this.innerHTML == '合作伙伴') {
-        window.location = 'partner.html';
-      }
-      //  else if(this.innerHTML == 'wiki'){
-      //    window.location = 'https://www.wttf.org';
-      //  }
+  let phoneListA = document.querySelectorAll('.phone_list a');
+  function nav(text) {
       for (var i = 0; i < text.length; i++) {
-        text[i].className = '';
-        this.className = 'active'
+        text[i].onclick = function () {
+          if (this.innerHTML == 'Association') {
+            window.location = 'association.html';
+          } else if (this.innerHTML == '파트너들') {
+            window.location = 'partner.html';
+          } else if (this.innerHTML == '개발자') {
+            window.location = 'developers.html';
+          } else if (this.innerHTML == '미디어') {
+            window.location = 'media.html';
+          } else if (this.innerHTML == '비전') {
+            window.location = 'vision.html';
+          } else if (this.innerHTML == "블록체인 탐색기") {
+            window.location = 'https://testnet.violas.io';
+          }
+          for (var i = 0; i < text.length; i++) {
+            text[i].className = '';
+            this.className = 'active'
+          }
+        }
       }
     }
-  }
-  let wPaper = document.getElementById('whitePaper')
+  nav(navlists);
+  nav(phoneListA);
+  let wPaper = document.getElementById('whitePaper');
+  let wPaper1 = document.getElementById('whitePaper1');
+  let closeBtn = document.querySelector('.close');
+  let navbarT = document.querySelector('.navbar-toggler');
+  let bmdLayoutC = document.querySelector('.bmd-layout-container');
   wPaper.onclick = function () {
     wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
     window.location = 'whitePaper.html';
   }
-  window.onscroll = function () {
-    let topScroll = document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
-    let bignav = document.querySelector(".header");//获取到导航栏id
-    if (topScroll > 0) {  //当滚动距离大于250px时执行下面的东西
-      bignav.style.position = 'fixed';
-      bignav.style.top = '0';
-      bignav.style.zIndex = '9999';
-      bignav.style.background = 'rgba(44, 9, 108, 1)';
-    } else {//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
-      bignav.style.position = 'static';
-      bignav.style.background = '0';
-    }
+  wPaper1.onclick = function () {
+    wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
+    window.location = 'whitePaper.html';
   }
+  closeBtn.onclick = function () {
+    let dwp = document.getElementById("dw-p1");
+    let bmdLayout = document.querySelector(".bmd-layout-backdrop");
+    bmdLayoutC.setAttribute('class', 'bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap partner')
+    navbarT.setAttribute('aria-expanded', false)
+    dwp.setAttribute('aria-expanded', false);
+    dwp.setAttribute('aria-hidden', true);
+    bmdLayout.setAttribute('class', 'bmd-layout-backdrop')
+  };
+  window.onscroll = function () {
+    let topScroll = document.documentElement.scrollTop; //滚动的距离,距离顶部的距离
+    // console.log(topScroll);
+    let clientWidth = document.body.clientWidth;
+    // console.log(clientWidth)
+    let bignav = document.querySelector(".header"); //获取到导航栏id
+    let navbar = document.querySelector(".navbar");
+    if (topScroll > 0 && clientWidth >= 800) {
+      bignav.style.position = "fixed";
+      bignav.style.zIndex = "9999";
+      bignav.style.background = "#2c096c";
+    }
+    else if (topScroll == 0 && clientWidth >= 800) {
+      //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+      bignav.style.position = "static";
+      bignav.style.zIndex = "9999";
+      bignav.style.background = "0";
+      // bignav.style.backgroundImage = 'linear-gradient(to right , #9c3ec9, #4a189f);'
+    }
+  };
 
 </script>
+<script src="../js/bootstrap-material-design/jquery-3.2.1.slim.min.js"></script>
+<script src="../js/bootstrap-material-design/popper.js"></script>
+<script src="../js/bootstrap-material-design/bootstrap-material-design.js"></script>
+<script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
 
 </html>

@@ -45,7 +45,7 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-around;
 }
 .logo a {
   display: flex;
@@ -60,8 +60,8 @@ header {
   flex: 1;
   height: 100%;
   align-items: center;
-  margin-right: 1.5rem;
-  margin-left: 0.3rem;
+  margin-right: 1rem;
+  margin-left: 0.7rem;
 }
 .navList li {
   font-size: 0.16rem;
@@ -153,7 +153,7 @@ section {
   height: auto;
 }
 .vision .head {
-  width: 9.2rem;
+  width: 9.3rem;
   height: 0.61rem;
   margin: 1.4rem auto;
   position: relative;
@@ -161,10 +161,10 @@ section {
   align-items: center;
 }
 .vision1 .head {
-  width: 9.3rem;
+  width: 9.4rem;
 }
 .vision2 .head {
-  width: 8.7rem;
+  width: 8.6rem;
 }
 .vision .head .bg {
   /* width: 1200rem; */
@@ -186,14 +186,14 @@ section {
 .vision .head p {
   position: absolute;
   left: 4.9rem;
-  margin-left: -1.4rem;
+  margin-left: -1.5rem;
   top: 0.05rem;
   font-size: 0.32rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
 }
 .vision1 .head p {
-  margin-left: -1.4rem;
+  margin-left: -1.5rem;
 }
 .visionContent,
 .vision2Content {
@@ -212,7 +212,6 @@ section {
   height: 100%;
 }
 .vision2Content a {
-  /* width: 2.5rem; */
   font-size: 0.3rem;
   font-weight: 400;
   margin-top: 0.1rem;
@@ -268,7 +267,7 @@ section {
   top: 50%;
   margin-top: -0.2rem;
   left: 50%;
-  margin-left: -0.75rem;
+  margin-left: -0.55rem;
   letter-spacing: 2px;
 }
 .downloadPay dl dt img {
@@ -510,7 +509,7 @@ footer > p {
 }
 @media (max-width: 750px) {
   .vision .head {
-    width: 310px;
+    width: 315px;
   }
   .vision .head .bg .img_left,
   .vision .head .bg .img_right {
@@ -520,17 +519,17 @@ footer > p {
   .vision .head p {
     font-size: 14px;
     left: 50%;
-    margin-left: -49px;
-    top: -0.05rem;
+    margin-left: -55px;
+    top: -0.1rem;
   }
   .vision1 .head {
-    width: 315px;
+    width: 325px;
   }
   .vision2 .head {
     width: 290px;
   }
   .vision1 .head p {
-    margin-left: -52px;
+    margin-left: -60px;
   }
   .visionContent,
   .vision2Content {
@@ -573,9 +572,14 @@ footer > p {
     width: 22px;
     height: 27px;
   }
+  .downloadPay dl dd i img{
+    width: 22px;
+    height: 27px;
+  }
   .downloadPay dl dd span {
     font-size: 14px;
     margin-left: 10px;
+    white-space: pre-wrap;
   }
   .logo img {
     width: 60px;

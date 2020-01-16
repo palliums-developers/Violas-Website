@@ -222,7 +222,7 @@ section {
   height: auto;
 }
 .vision .head {
-  width: 9.5rem;
+  width: 8.5rem;
   height: 0.61rem;
   margin: 1.4rem auto;
   position: relative;
@@ -334,7 +334,7 @@ section {
   position: absolute;
   left: 5rem;
   margin-left: -1.75rem;
-  top: 0.1rem;
+  top: 0;
   font-size: 0.32rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
@@ -535,7 +535,7 @@ section {
   margin-top: -0.05rem;
 }
 .deepIntroduce .head {
-  width: 9.1rem;
+  width: 8.6rem;
   height: 0.61rem;
   margin: 0 auto;
   position: relative;
@@ -565,7 +565,7 @@ section {
   position: absolute;
   left: 4.4rem;
   margin-left: -1rem;
-  top: 0.05rem;
+  top: 0.02rem;
   font-size: 0.32rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
@@ -977,18 +977,18 @@ footer > p {
     height: 18px;
   }
   .vision .head {
-    width: 325px;
+    width: 285px;
   }
   .vision .head .bg .img_left,
   .vision .head .bg .img_right {
     width: 100px;
-    height: 14px;
+    height: 15px;
   }
   .vision .head p {
     font-size: 14px;
     left: 50%;
-    margin-left: -60px;
-    top: -0.05rem;
+    margin-left: -35px;
+    top: -0.06rem;
   }
   .vision .headDescr {
     width: 148px;
@@ -1155,9 +1155,10 @@ footer > p {
     width: 17px;
     height: 17px;
     margin-left: 3px;
+    margin-top: -3px;
   }
   .deepIntroduce .head {
-    width: 310px;
+    width: 285px;
   }
   .deepIntroduce .head .bg .img_left,
   .deepIntroduce .head .bg .img_right {
@@ -1172,7 +1173,7 @@ footer > p {
   }
   .deepIntroduce .head p {
     left: 50%;
-    margin-left: -50px;
+    margin-left: -40px;
     top: -2px;
     font-size: 14px;
   }
@@ -1217,6 +1218,7 @@ footer > p {
   .deepIntroduce > .association .content .con p i img {
     width: 17px;
     height: 17px;
+    margin-top: -3px;
   }
   .association {
     margin-bottom: 50px;

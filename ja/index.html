@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/en_css/index_en.css">
+  <link rel="stylesheet" href="../css/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="../css/ja_css/index_ja.css">
   <link rel="icon" href="../img/hLogo.ico" type="image/x-icon">
   <link rel="shortcut icon" href="../img/hLogo.ico" type="image/x-icon">
   <link rel="stylesheet" href="../swipper/swiper.min.css">
@@ -14,7 +15,8 @@
 
 <body>
   <div id="root">
-    <div class="wrap default">
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap default">
+      <div class="hide_show_header_pc">
       <header>
         <div class="header">
           <div class="head">
@@ -22,12 +24,12 @@
               <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
             </div>
             <ul class="navList">
-              <!-- <li class="active">Home</li> -->
               <li>ビジョン</li>
               <li>アソシエーション</li>
               <li>パートナー</li>
               <li>ブロックチェーン エクスプローラ</li>
               <li>メディア</li>
+              <li>開発者</li>
               <!-- <li>
                 <p id="docu">文档</p>
                 <div class="select">
@@ -41,24 +43,70 @@
             </ul>
             <div class="descr">
               <span id="whitePaper">ホワイトペーパー</span>
-              <!-- <a href="../ja/index.html"><span>日本語</span></a>
-              <a href="../ko/index.html"><span>한국어 </span></a> -->
+              <a href="../ja/index.html">日本語</a>
+              <a href="../ko/index.html">한국어</a>
             </div>
           </div>
         </div>
         <div class="headContent">
           <div class="headTalk">
-            <p class="welcome"><label style="letter-spacing: 6px;">Welcome to</label>
+            <p class="welcome"><label style="letter-spacing: 6px;">へようこそ</label>
               <img src="../img/编组 31@2x.png" />
             </p>
-            <p><label for="">Download WhitePaper</label><img src="../img/编组 45复制 3@2x.png" /></p>
+            <p class="goWhite"><label for="">ホワイトペーパー</label><img src="../img/编组 45复制 3@2x.png" /></p class="goWhite">
           </div>
           <div class="headLogo">
             <img src="../img/编组 72@2x.png" />
           </div>
         </div>
       </header>
-      <section>
+      </div>
+      <div class="hide_show_header_mob">
+        <header class="bmd-layout-header">
+          <div class="navbar navbar-light bg-faded phone_head">
+            <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-p1">
+              <i class="material-icons"><img src="../img/phone_nav.png"></img></i>
+            </button>
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <div class="logo">
+                  <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="headContent">
+            <div class="headTalk">
+              <p class="welcome"><label>へようこそ</label>
+                <img src="../img/编组 31@2x.png" />
+              </p>
+              <p class="goWhite2"><label for="">ホワイトペーパー</label><img src="../img/编组 45复制 3@2x.png" /></p>
+            </div>
+            <div class="headLogo">
+              <img src="../img/编组 72@2x.png" />
+            </div>
+          </div>
+        </header>
+      </div>
+      <div id="dw-p1" class="bmd-layout-drawer bg-faded">
+        <a class="home" href="index.html"><img src="../img/home 2.png" /></a>
+        <span class="close"><img src="../img/guanbi-2备份 2.png" /></span>
+        <ul class="list-group phone_list">
+          <a>Vision</a>
+          <a>Association</a>
+          <a>Partners</a>
+          <a>Blockchain Explorer</a>
+          <a>Media</a>
+          <a>Developers</a>
+          <span id="whitePaper1">White Paper</span>
+          <div class="change">
+            <!-- <a>EN</a> -->
+            <a>日本語</a>
+            <a class="ka">한국어</a>
+          </div>
+        </ul>
+      </div>
+      <section class="bmd-layout-content">
         <div class="vision">
           <div class="head">
             <div class="bg"><img class="img_left" src="../img/编组 26.png" />
@@ -164,7 +212,7 @@
               <div class="con">
                 <h3>ホワイトペーパー</h3>
                 <!-- <p></p> -->
-                <p>ブロックチェーン。現地のデジタル通貨。 アソシエーション。 ホワイトペーパーを読む ->ホワイトペーパーリンクに移動する<i><img src="../img/编组 45复制@3x.png"></i></p>
+                <p class="goWhite1">ホワイトペーパーを読む<i><img src="../img/编组 45复制@3x.png"></i></p>
               </div>
             </div>
           </div>
@@ -278,14 +326,14 @@
             <div class="bg"><img src="../img/路径 13复制 5@3x.png" alt=""></div>
             <div class="content">
               <div class="con">
-                <h3>The Violas Association</h3>
+                <h3>Violas アソシエーション</h3>
                 <span>독립 비 영리 조직</span>
-                <p>더 알아보세요<i><img src="../img/编组 45复制@3x.png"></i></p>
+                <p class="goAssoc">더 알아보세요<i><img src="../img/编组 45复制@3x.png"></i></p>
               </div>
               <div class="hLogo"><img src="../img/编组 43@2x.png" alt=""></div>
             </div>
           </div>
-          <div class="whitePaper">
+          <!-- <div class="whitePaper">
             <div class="bg"><img src="../img/路径 13复制 6@3x.png" alt=""></div>
             <div class="content">
               <div class="hLogo"><img src="../img/编组 5@2x.png" alt=""></div>
@@ -294,221 +342,223 @@
                 <p>더 알아보세요<i><img src="../img/编组 45复制@3x.png"></i></p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
-      </section>
+      </section class="bmd-layout-content">
       <footer>
-        <h2>Connect Us</h2>
+        <h2>お問い合わせ</h2>
         <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas_blockchain@violas.io</label></div>
-        <p>Copyright@Violas</p>
+        <p>無断複写・転載を禁じます＠Violas</p>
       </footer>
     </div>
   </div>
 </body>
 <script src="../swipper/swiper.min.js"></script>
 <script>
-  var swiper = new Swiper('.swiper-container', {
+  function init() {
+    let designSize = 1920;
+    let html = document.documentElement;
+    let wW = html.clientWidth;// 窗口宽度
+    let rem = wW * 100 / designSize;
+    document.documentElement.style.fontSize = rem + 'px';
+  }
+  init();
+  window.onresize = function () {
+    init();
+  }
+  var swiper = new Swiper(".swiper-container", {
     navigation: {
-      nextEl: '.right-arrow',
-      prevEl: '.left-arrow',
+      nextEl: ".right-arrow",
+      prevEl: ".left-arrow"
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination"
     }
   });
-  let text = document.querySelectorAll('ul li');
-  let navlist = document.querySelector('.navList');
-  // let docum = document.querySelector('.navList #docu');
-  // docum.onclick = function () {
-  //   if (selects.style.display == 'none') {
-  //     docum.style.color = "rgba(62, 209, 246, 1)"
-  //     selects.style.display = 'block'
-  //   } else {
-  //     selects.style.display = 'none'
-  //     docum.style.color = "#FFF"
-  //   }
-  // }
-  // for (var i = 0; i < lists.length; i++) {
-  //   lists[i].onclick = function () {
-  //     if (this.innerHTML == 'Violas') {
-  //       selects.style.display = 'none'
-  //     } else if (this.innerHTML == 'libra') {
-  //       window.location = 'libra_doc/lib_doc_en2cn/welcome-to-libra.htm';
-  //       selects.style.display = 'none'
-  //     }
-  //     for (var i = 0; i < lists.length; i++) {
-  //       lists[i].style.background = '#FFF';
-  //       this.style.background = 'rgba(169, 67, 206, .16)';
-  //     }
-  //   }
-  // }
-  for (var i = 0; i < text.length; i++) {
-    text[i].onclick = function () {
-      if (this.innerHTML == 'Home') {
-        window.location = 'index.html';
-      } else if (this.innerHTML == 'Association') {
-        // window.location = 'association.html';
-      } else if (this.innerHTML == 'Partners') {
-        // window.location = 'partner.html';
-      }
-      // else if(this.innerHTML == 'wiki'){
-      //   window.location = 'https://www.wttf.org';
-      // }
-      for (var i = 0; i < text.length; i++) {
-        text[i].className = '';
-        this.className = 'active'
+  let navlists = document.querySelectorAll('ul li');
+  let phoneListA = document.querySelectorAll('.phone_list a');
+  function nav(text) {
+    for (var i = 0; i < text.length; i++) {
+      text[i].onclick = function () {
+        if (this.innerHTML == 'アソシエーション') {
+          window.location = 'association.html';
+        } else if (this.innerHTML == 'パートナー') {
+          window.location = 'partner.html';
+        } else if (this.innerHTML == '開発者') {
+          window.location = 'developers.html';
+        } else if (this.innerHTML == 'メディア') {
+          window.location = 'media.html';
+        } else if (this.innerHTML == 'ビジョン') {
+          window.location = 'vision.html';
+        } else if (this.innerHTML == "ブロックチェーン エクスプローラ") {
+          window.location = 'https://testnet.violas.io';
+        }
+        for (var i = 0; i < text.length; i++) {
+          text[i].className = '';
+          this.className = 'active'
+        }
       }
     }
   }
-  let oDiv1 = document.querySelector('.declare');
-  let oDiv2 = document.querySelector('.declare1');
-  let oHis1 = document.querySelector('.history');
-  let oHis2 = document.querySelector('.history1');
-  let oRes1 = document.querySelector('.reserve');
-  let oRes2 = document.querySelector('.reserve1');
-  let oBlo1 = document.querySelector('.blockchain');
-  let oBlo2 = document.querySelector('.blockchain1');
-  let oAss1 = document.querySelector('.Dassociation');
-  let oAss2 = document.querySelector('.Dassociation1');
-  let oSec1 = document.querySelector('.security');
-  let oSec2 = document.querySelector('.security1');
-  let oCom1 = document.querySelector('.commitment');
-  let oCom2 = document.querySelector('.commitment1');
-  let oPro1 = document.querySelector('.programming');
-  let oPro2 = document.querySelector('.programming1');
-  let oMem1 = document.querySelector('.member');
-  let oMem2 = document.querySelector('.member1');
-  let wPaper = document.getElementById('whitePaper');
+  nav(navlists);
+  nav(phoneListA);
+  let oDiv1 = document.querySelector(".declare");
+  let oDiv2 = document.querySelector(".declare1");
+  let oHis1 = document.querySelector(".history");
+  let oHis2 = document.querySelector(".history1");
+  let oRes1 = document.querySelector(".reserve");
+  let oRes2 = document.querySelector(".reserve1");
+  let oBlo1 = document.querySelector(".blockchain");
+  let oBlo2 = document.querySelector(".blockchain1");
+  let oAss1 = document.querySelector(".Dassociation");
+  let oAss2 = document.querySelector(".Dassociation1");
+  let oSec1 = document.querySelector(".security");
+  let oSec2 = document.querySelector(".security1");
+  let oCom1 = document.querySelector(".commitment");
+  let oCom2 = document.querySelector(".commitment1");
+  let oPro1 = document.querySelector(".programming");
+  let oPro2 = document.querySelector(".programming1");
+  let oMem1 = document.querySelector(".member");
+  let oMem2 = document.querySelector(".member1");
+  let wPaper = document.getElementById("whitePaper");
+  let wPaper1 = document.getElementById("whitePaper1");
+  let goWhite = document.querySelector('.goWhite');
+  let goWhite1 = document.querySelector('.goWhite1');
+  let goWhite2 = document.querySelector('.goWhite2');
+  let goAssoc = document.querySelector('.goAssoc');
+  let closeBtn = document.querySelector('.close');
+  let navbarT = document.querySelector('.navbar-toggler');
+  let bmdLayoutC = document.querySelector('.bmd-layout-container');
+  closeBtn.onclick = function () {
+    let dwp = document.getElementById("dw-p1");
+    let bmdLayout = document.querySelector(".bmd-layout-backdrop");
+    bmdLayoutC.setAttribute('class', 'bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap default')
+    navbarT.setAttribute('aria-expanded', false)
+    dwp.setAttribute('aria-expanded', false);
+    dwp.setAttribute('aria-hidden', true);
+    bmdLayout.setAttribute('class', 'bmd-layout-backdrop')
+  };
+
+  goAssoc.onclick = function () {
+    window.location = "association.html";
+  };
+  goWhite.onclick = function () {
+    window.location = "whitePaper.html";
+  };
+  goWhite1.onclick = function () {
+    window.location = "whitePaper.html";
+  };
+  goWhite2.onclick = function () {
+      window.location = "whitePaper.html";
+    };
+  wPaper1.onclick = function () {
+    wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
+    window.location = "whitePaper.html";
+  };
   wPaper.onclick = function () {
     wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
-    window.location = 'whitePaper.html';
-    console.log('aaaa')
-  }
-  oDiv2.onclick = function () {
-    // window.location = 'manifesto.html'
-  }
+    window.location = "whitePaper.html";
+  };
   oDiv1.onmouseover = function () {
-    oDiv2.style.display = 'block';
-    oDiv1.style.display = 'none';
+    oDiv2.style.display = "block";
+    oDiv1.style.display = "none";
   };
   oDiv2.onmouseout = function () {
-    oDiv2.style.display = 'none';
-    oDiv1.style.display = 'block';
+    oDiv2.style.display = "none";
+    oDiv1.style.display = "block";
   };
   oHis2.onclick = function () {
     // window.location = 'pastRecords.html'
-  }
-  oHis1.onmouseover = function () {
-    oHis2.style.display = 'block';
-    oHis1.style.display = 'none';
   };
   oHis2.onmouseout = function () {
-    oHis2.style.display = 'none';
-    oHis1.style.display = 'block';
+    oHis2.style.display = "none";
+    oHis1.style.display = "block";
   };
-  oRes2.onclick = function () {
-    // window.location = 'manifesto.html'
-  }
+  oHis1.onmouseout = function () {
+    oHis1.style.display = "none";
+    oHis2.style.display = "block";
+  };
   oRes1.onmouseover = function () {
-    oRes2.style.display = 'block';
-    oRes1.style.display = 'none';
+    oRes2.style.display = "block";
+    oRes1.style.display = "none";
   };
   oRes2.onmouseout = function () {
-    oRes2.style.display = 'none';
-    oRes1.style.display = 'block';
+    oRes2.style.display = "none";
+    oRes1.style.display = "block";
   };
-  oBlo2.onclick = function () {
-    // window.location = 'manifesto.html'
-  }
+
   oBlo1.onmouseover = function () {
-    oBlo2.style.display = 'block';
-    oBlo1.style.display = 'none';
+    oBlo2.style.display = "block";
+    oBlo1.style.display = "none";
   };
   oBlo2.onmouseout = function () {
-    oBlo2.style.display = 'none';
-    oBlo1.style.display = 'block';
+    oBlo2.style.display = "none";
+    oBlo1.style.display = "block";
   };
-  oAss2.onclick = function () {
-    // window.location = 'manifesto.html'
-  }
   oAss1.onmouseover = function () {
-    oAss2.style.display = 'block';
-    oAss1.style.display = 'none';
+    oAss2.style.display = "block";
+    oAss1.style.display = "none";
   };
   oAss2.onmouseout = function () {
-    oAss2.style.display = 'none';
-    oAss1.style.display = 'block';
+    oAss2.style.display = "none";
+    oAss1.style.display = "block";
   };
-  oSec2.onclick = function () {
-    // window.location = 'manifesto.html'
-  }
   oSec1.onmouseover = function () {
-    oSec2.style.display = 'block';
-    oSec1.style.display = 'none';
+    oSec2.style.display = "block";
+    oSec1.style.display = "none";
   };
   oSec2.onmouseout = function () {
-    oSec2.style.display = 'none';
-    oSec1.style.display = 'block';
+    oSec2.style.display = "none";
+    oSec1.style.display = "block";
   };
-  oCom2.onclick = function () {
-    // window.location = 'manifesto.html'
-  }
   oCom1.onmouseover = function () {
-    oCom2.style.display = 'block';
-    oCom1.style.display = 'none';
+    oCom2.style.display = "block";
+    oCom1.style.display = "none";
   };
   oCom2.onmouseout = function () {
-    oCom2.style.display = 'none';
-    oCom1.style.display = 'block';
+    oCom2.style.display = "none";
+    oCom1.style.display = "block";
   };
-  oPro2.onclick = function () {
-    // window.location = 'manifesto.html'
-  }
   oPro1.onmouseover = function () {
-    oPro2.style.display = 'block';
-    oPro1.style.display = 'none';
+    oPro2.style.display = "block";
+    oPro1.style.display = "none";
   };
   oPro2.onmouseout = function () {
-    oPro2.style.display = 'none';
-    oPro1.style.display = 'block';
+    oPro2.style.display = "none";
+    oPro1.style.display = "block";
   };
-  oMem2.onclick = function () {
-    // window.location = 'manifesto.html'
-  }
   oMem1.onmouseover = function () {
-    oMem2.style.display = 'block';
-    oMem1.style.display = 'none';
+    oMem2.style.display = "block";
+    oMem1.style.display = "none";
   };
   oMem2.onmouseout = function () {
-    oMem2.style.display = 'none';
-    oMem1.style.display = 'block';
+    oMem2.style.display = "none";
+    oMem1.style.display = "block";
   };
   window.onscroll = function () {
-    let topScroll = document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
+    let topScroll = document.documentElement.scrollTop; //滚动的距离,距离顶部的距离
     // console.log(topScroll);
-    let bignav = document.querySelector(".header");//获取到导航栏id
-    if (topScroll > 0) {  //当滚动距离大于250px时执行下面的东西
-      bignav.style.position = 'fixed';
-      bignav.style.zIndex = '9999';
-      // bignav.style.backgroundImage = 'linear-gradient(to right , #7A88FF, #7AFFAF);';
-      bignav.style.background = '#2c096c';
+    let clientWidth = document.body.clientWidth;
+    // console.log(clientWidth)
+    let bignav = document.querySelector(".header"); //获取到导航栏id
+    let navbar = document.querySelector(".navbar");
+    if (topScroll > 0 && clientWidth >= 800) {
+      bignav.style.position = "fixed";
+      bignav.style.zIndex = "9999";
+      bignav.style.background = "#2c096c";
     }
-    // else if(topScroll>820){
-    //   bignav.style.position = 'fixed';
-    //   bignav.style.top = '0';
-    //   bignav.style.zIndex = '9999';
-    //   // bignav.style.background = '#2c096c';
-    //   // bignav.style.backgroundImage = 'linear-gradient(to right , #2C096C, #2C096C);';
-    // }
-    else {//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
-      bignav.style.position = 'static';
-      bignav.style.background = '0';
+    else if (topScroll == 0 && clientWidth >= 800) {
+      //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+      bignav.style.position = "static";
+      bignav.style.zIndex = "9999";
+      bignav.style.background = "0";
       // bignav.style.backgroundImage = 'linear-gradient(to right , #9c3ec9, #4a189f);'
-      ;
     }
-  }
-
-
+  };
 </script>
+<script src="../js/bootstrap-material-design/jquery-3.2.1.slim.min.js"></script>
+<script src="../js/bootstrap-material-design/popper.js"></script>
+<script src="../js/bootstrap-material-design/bootstrap-material-design.js"></script>
+<script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
 
 </html>

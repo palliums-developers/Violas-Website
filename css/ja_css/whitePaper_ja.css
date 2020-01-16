@@ -14,7 +14,7 @@
   height: auto;
 }
 
-.vision {
+.whitepaper {
   width: 100%;
   background: rgba(44, 9, 108, 1);
   overflow: hidden;
@@ -118,7 +118,7 @@ header {
 }
 
 .onPageNav a:hover {
-  color: #4b199f;
+  color:#4B199F;
   font-weight: 400;
   /* color: #110b1b; */
 }
@@ -229,8 +229,8 @@ header {
 
 .headContent .headTalk {
   position: absolute;
-  left: -0.45rem;
-  bottom: 1.5rem;
+  left: 0.1rem;
+  bottom: 1.3rem;
 }
 
 .headContent .headTalk p img {
@@ -238,80 +238,236 @@ header {
   height: 0.85rem;
 }
 .headContent .headTalk h2 {
-  width: 4.7rem;
-  font-size: 0.32rem;
+  font-size: 0.24rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  line-height: 0.42rem;
-  margin-bottom: 0.4rem;
+  line-height: 0.32rem;
+  margin-bottom: 0.2rem;
 }
 .headContent .headTalk p {
-  width: 7rem;
-  font-size: 0.22rem;
+  width: 7.5rem;
+  font-size: 0.14rem;
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
-  line-height: 0.4rem;
+  line-height: 0.28rem;
   letter-spacing: 2px;
   margin-bottom: 0.1rem;
 }
 
 .headContent .headLogo img {
-  width: 4.74rem;
-  height: 3.69rem;
+  width: 4.53rem;
+  height: 4.55rem;
 }
 
 .headContent .headLogo {
-  width: 4.74rem;
-  /* height: 3.7rem; */
+  width: 4.53rem;
+  height: 4.55rem;
   position: absolute;
   right: 0;
-  bottom: 0.7rem;
+  bottom: 0.2rem;
 }
 
 section {
   width: 100%;
 }
-.contents {
-  width: 11.6rem;
-  background: #fff;
+
+.introduction {
+  width: 12.7rem;
+  height: 172rem;
+  margin: 1.19rem auto;
   position: relative;
-  border-radius: 20px;
-  background: linear-gradient(
-    rgba(255, 255, 255, 1) 0%,
-    rgba(163, 151, 255, 1) 100%
-  );
-  margin: 1rem auto;
 }
-.contents .content {
-  width: 100%;
-  height: 100%;
-  padding: 0.5rem 0.34rem 0.3rem 0.36rem;
-  box-sizing: border-box;
+
+.introduction > .bg img {
+  width: 12.7rem;
+  height: 172.6rem;
 }
-.contents .content p {
-  font-size: 0.25rem;
-  font-weight: 400;
-  color: rgba(17, 11, 27, 1);
-  line-height: 0.5rem;
+
+.introductionContent {
+  width: 12rem;
+  height: 172rem;
+  background: #fff;
+  position: absolute;
+  top: 0.28rem;
+  left: 50%;
+  margin-left: -6rem;
+  display: flex;
 }
-.contents .left,
-.contents .right {
-  width: 3rem;
-  height: 2.6rem;
+
+.introduction0 {
+  flex: 1;
+}
+
+.introduction1 {
+  /* width: 80%; */
+  height: 18rem;
+  position: relative;
+  /* right:0; */
+  overflow: hidden;
+}
+
+.introduction2 {
+  height: 20rem;
+}
+
+.introduction3 {
+  height: 36.5rem;
+}
+
+.introduction4 {
+  height: 27rem;
+}
+
+.introduction5 {
+  height: 20.8rem;
+}
+
+.introduction6 {
+  height: 15.5rem;
+}
+
+.introduction7 {
+  height: 12.7rem;
+}
+
+.introduction8 {
+  height: 9.5rem;
+}
+
+.introduction9 {
+  height: 12rem;
+}
+
+.introduction1 > .bg {
+  /* width: 1200px; */
+  /* height: 440px; */
+}
+
+.introduction1 > .bg img {
+  width: 10.01rem;
+  height: 4.4rem;
+}
+
+.introduction1Descr {
   display: flex;
   position: absolute;
-  bottom: -0.2rem;
-}
-.contents .left {
-  left: -0.25rem;
-}
-.contents .right {
-  right: 10px;
-}
-.contents .left img,
-.contents .right img {
+  top: 0;
   width: 100%;
-  height: 100%;
+}
+
+.introduction1Descr .descrLeft {
+  width: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.3rem;
+  margin-left: 0px;
+}
+
+.introduction1Descr .descrLeft a {
+  height: 0.8rem;
+  font-size: 0.2rem;
+  font-weight: 400;
+  color: rgba(44, 9, 108, 0.5);
+}
+
+.introduction1Descr .descrLeft a.active {
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
+}
+
+.introduction1Descr .descrRight {
+  display: block;
+  /* flex: 1; */
+  /* flex-direction: row; */
+  /* width: 800px; */
+  /* height: 2072px; */
+  /* margin-top: 0.50rem; */
+  padding: 0 0.2rem;
+  box-sizing: border-box;
+  /* margin-left: 80px; */
+  right: 0px;
+}
+
+.introduction1Descr .descrRight .intro > div img {
+  width: 8.6rem;
+  height: 8.84rem;
+}
+
+.introduction1Descr .descrRight .intro > div p {
+  margin-bottom: 0.2rem;
+  line-height: 0.55rem;
+}
+
+.introduction1Descr .descrRight h4 {
+  font-size: 0.2rem;
+  font-weight: 400;
+  color: #110b1b;
+}
+
+.introduction1Descr .descrRight h2 {
+  font-size: 0.4rem;
+  font-weight: 400;
+  color: #110b1b;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 0.07rem solid;
+  border-block-color: #b147d3;
+  line-height: 0.9rem;
+  white-space: nowrap;
+  width: 0.23rem;
+}
+
+.introduction1Descr .descrRight h3 {
+  font-size: 0.35rem;
+  font-weight: 400;
+  color: #110b1b;
+  margin-bottom: 0.25rem;
+}
+
+.introduction1Descr .descrRight p {
+  font-size: 0.25rem;
+  font-weight: 400;
+  color: #413c49;
+  line-height: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.introduction1Descr .descrRight p > span,
+.introduction1Descr .descrRight .state > span {
+  font-size: 0.25rem;
+  font-weight: 400;
+  color: #110b1b;
+}
+
+.introduction1Descr .descrRight .state {
+  display: flex;
+  flex-direction: column;
+}
+
+.introduction1Descr .descrRight .state > span {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.introduction1Descr .descrRight .state > div p {
+  line-height: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.introduction1Descr .descrRight ul li {
+  font-size: 0.25rem;
+  font-weight: 400;
+  color: #413c49;
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
+}
+
+.introduction6 .descrRight p {
+  margin-bottom: 0.1rem;
+}
+
+.introduction6 .descrRight .state {
+  margin-bottom: 0.1rem;
 }
 
 footer {
@@ -361,8 +517,8 @@ footer > p {
 }
 @media (max-width: 1200px) {
   .headContent .headTalk {
-    /* left: -0.3rem; */
-    bottom: 1.6rem;
+    left: -0.3rem;
+    top: 0.3rem;
   }
 }
 @media (max-width: 1000px) {
@@ -402,7 +558,6 @@ footer > p {
     /* display: flex;
     flex-direction: column; */
   }
-
   .phone_list > a,
   .phone_list > span {
     font-size: 14px;
@@ -446,12 +601,8 @@ footer > p {
   .headContent .headTalk {
     left: -2.5rem;
   }
-  .headContent .headTalk h2 {
-    width: 250px;
-    /* left:-2rem; */
-  }
   .headContent .headTalk p {
-    width: 300px;
+    width: 500px;
     /* left:-2rem; */
   }
   .headContent .headLogo {
@@ -491,12 +642,80 @@ footer > p {
     height: 18px;
   }
   .bmd-layout-header {
-    height: 158px;
+    height: 340px;
   }
   .onPageNav {
     display: none;
   }
-
+  .introduction {
+    width: 100%;
+  }
+  .introduction .bg {
+    display: none;
+    position: relative;
+    top: -10px;
+    height: 7980px; /* white! */
+  }
+  .introduction .bg img {
+    width: 100%;
+    height: 100%;
+  }
+  .introductionContent {
+    height: 9000px; /* white! */
+    width: 90%;
+    left: 5%;
+    margin: 0 auto;
+  }
+  .introduction1Descr .descrRight h4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+  .introduction1Descr .descrRight h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .introduction1Descr .descrRight h3 {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .introduction1Descr .descrRight p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .introduction {
+    height: 9000px; /* white! */
+  }
+  .introduction1 {
+    height: 950px;
+  }
+  .introduction2 {
+    height: 1050px;
+  }
+  .introduction3 {
+    height: 2080px;
+  }
+  .introduction4 {
+    height: 1350px;
+  }
+  .introduction5 {
+    height: 1050px;
+  }
+  .introduction6 {
+    height: 850px;
+  }
+  .introduction7 {
+    height: 700px;
+  }
+  .introduction8 {
+    height: 400px;
+  }
+  .introduction9 {
+    height: 600px;
+  }
   .headContent {
     width: 100%;
     flex: 1;
@@ -505,49 +724,24 @@ footer > p {
     margin: 0 auto;
   }
   .headContent .headTalk h2 {
-    width: 209px;
-    margin: 5px 0;
-    font-size: 14px;
-    line-height: 20px;
+    margin: 10px 0;
+    font-size: 16px;
   }
   .headContent .headTalk {
+    width: 100%;
     left: 1rem;
-    top: 2px;
+    bottom: 0;
+    top: 0;
   }
   .headContent .headTalk p {
-    width: 210px;
-    font-size: 10px;
-    line-height: 18px;
-    letter-spacing: 0;
-  }
-  .headContent .headLogo {
-    width: 128px;
-    height: 99px;
-    right: 5px;
+    width: 90%;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
   }
   .headContent .headLogo img {
-    width: 128px;
-    height: 99px;
-  }
-  .contents {
-    width: 355px;
-    /* height: 331px; */
-    border-radius: 0;
-    background: #fff;
-  }
-  .contents .content {
-    width: 100%;
-    height: 100%;
-    padding: 27px 12px;
-    box-sizing: border-box;
-  }
-  .contents .content p {
-    font-size: 14px;
-    color: rgba(65, 60, 73, 1);
-    line-height: 22px;
-  }
-  .contents .left,
-  .contents .right {
     display: none;
   }
   footer h2 {
@@ -567,25 +761,18 @@ footer > p {
   }
   footer > p {
     font-size: 8px;
-    margin: 20px 0;
-    /* margin-bottom: 30px !important; */
+    /* margin: 20px 0; */
+    margin-bottom: 30px !important;
   }
 }
 @media (max-width: 321px) {
-  .headContent .headLogo {
-    right: 0;
+  .headContent {
+    width: 300px;
+  }
+  .headContent .headTalk{
+   left: 8px;
   }
   .headContent .headTalk p {
-    width: 190px;
-  }
-  .contents {
-    width: 310px;
-  }
-  .contents .content {
-    padding: 20px 10px;
-    box-sizing: border-box;
-  }
-  .contents h1 {
-    white-space: nowrap;
+    width: 300px;
   }
 }

@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../css/partner.css">
+  <link rel="stylesheet" href="../css/ja_css/partner_ja.css">
+  <link rel="stylesheet" href="../css/bootstrap-material-design.min.css">
   <link rel="icon" href="../img/hLogo.ico" type="image/x-icon">
   <link rel="shortcut icon" href="../img/hLogo.ico" type="image/x-icon">
   <title>Violas</title>
@@ -13,53 +14,100 @@
 
 <body>
   <div id="root">
-    <div class="wrap partner">
-      <header>
-        <div class="header">
-          <div class="head">
-            <div class="logo">
-              <img src="../img/编组 25@3x.png" />
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap partner">
+      <div class="hide_show_header_pc">
+        <header>
+          <div class="header">
+            <div class="head">
+              <div class="logo">
+                <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
+              </div>
+              <ul class="navList">
+                <li>ビジョン</li>
+                <li>アソシエーション</li>
+                <li class="active">パートナー</li>
+                <li>ブロックチェーン エクスプローラ</li>
+                <li>メディア</li>
+                <li>開発者</li>
+              </ul>
+              <div class="descr">
+                <span id="whitePaper">ホワイトペーパー</span>
+                <a href="../ja/index.html">日本語</a>
+                <a href="../ko/index.html">한국어</a>
+              </div>
+              <!-- <div class="descr" style="margin-left: 1.5rem;">
+                <span id="whitePaper">White Paper</span>
+              </div> -->
             </div>
-            <ul class="navList">
-              <li>首页</li>
-              <li>协会</li>
-              <li class="active">合作伙伴</li>
-              <li>WIKI</li>
-              <li>
-                <p id="docu">文档</p>
-                <div class="select">
-                  <div class="bg"><img src="../img/路径复制 3@2x.png" alt=""></div>
-                  <div class="list">
-                    <span>Violas</span>
-                    <span>libra</span>
-                  </div>
+          </div>
+          <div class="headContent">
+            <div class="headTalk">
+              <p><img src="../img/par.png" /></p>
+              <div>
+                <p><span> Violas </span>の協会メンバー兼</p>
+                <p>パートナー募集中</p>
+              </div>
+            </div>
+            <div class="headLogo">
+              <img src="../img/bg25@2x.png" />
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="hide_show_header_mob">
+        <header class="bmd-layout-header">
+          <div class="navbar navbar-light bg-faded phone_head">
+            <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-p1">
+              <i class="material-icons"><img src="../img/phone_nav.png"></img></i>
+            </button>
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <div class="logo">
+                  <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
                 </div>
               </li>
             </ul>
-            <div class="descr">
-              <span id="whitePaper">白皮书</span>
-              <span>EN</span>
+          </div>
+          <div class="headContent">
+            <div class="headTalk">
+              <p><img src="../img/par.png" /></p>
+              <div>
+                <p><span> Violas </span>の協会メンバー兼</p>
+                <p>パートナー募集中</p>
+              </div>
+            </div>
+            <div class="headLogo">
+              <img src="../img/bg25@2x.png" />
             </div>
           </div>
-        </div>
-        <div class="headContent">
-          <div class="headTalk">
-            <p><img src="../img/par.png" /></p>
-            <div>
-              <p><span> Violas </span>の協会メンバー兼</p>
-              <p>パートナー募集中</p>
-            </div>
+        </header>
+      </div>
+      <div id="dw-p1" class="bmd-layout-drawer bg-faded">
+        <a class="home" href="index.html"><img src="../img/home 2.png" /></a>
+        <span class="close"><img src="../img/guanbi-2备份 2.png" /></span>
+        <ul class="list-group phone_list">
+          <a>ビジョン</a>
+          <a>アソシエーション</a>
+          <a class="active">パートナー</a>
+          <a>ブロックチェーン エクスプローラ</a>
+          <a>メディア</a>
+          <a>開発者</a>
+          <span id="whitePaper1">ホワイトペーパー</span>
+          <div class="change">
+            <!-- <a>EN</a> -->
+            <a>日本語</a>
+            <a class="ka">한국어</a>
           </div>
-          <div class="headLogo">
-            <img src="../img/bg25@2x.png" />
-          </div>
-        </div>
-      </header>
-      <section>
+        </ul>
+      </div>
+      <section class="bmd-layout-content">
         <div class="mebers">
           <div class="head">
-            <div class="bg"><img src="../img/编组 29复制@3x.png" /></div>
-            <p>協会メンバー</p>
+            <div class="bg">
+              <img class="img_left" src="../img/编组 26.png" />
+              <p>協会メンバー</p>
+              <img class="img_right" src="../img/编组 26复制 4.png" />
+            </div>
           </div>
           <div class="forWorldDescr">
             <div class="eachDescr">
@@ -84,24 +132,25 @@
           <div class="service">
             <div class="logo"><img src="../img/编组 30@2x.png" alt=""></div>
             <h2>規定にかなった資産委託サービス機構</h2>
-            <p>現地で資産委託に関して規定上必要なライセンスと、サービス品質に対する相応の評価を得ている機構。</p>
-            <p>トークン発行の準備資産の第三者管理を担い、準備資産管理費からの収益を獲得します。</p>
+            <p>現地で資産委託に関して規定上必要なライセンスと、サービス品質に対する相応の評価</p>
+            <p>を得ている機構。トークン発行の準備資産の第三者管理を担い、準備資産管理費からの収益を獲得します。</p>
           </div>
           <div class="publisher">
             <div class="left">
               <div class="lLogo"><img src="../img/编组 112@2x.png" alt=""></div>
               <div class="lContent1">
                 <div><img src="../img/编组 442@2x.png" alt=""></div>
-                <p>ノード、もしくはノードの授権者または組織は、指定委託機構において各国通貨と低リスクの短期債権により構成された資産を準備した後、価値が安定しているデジタル通貨を発行します</p>
+                <p>ノード、もしくはノードの授権者または組織は、指定委託機構において各国通貨と低リスクの短期債権により構成された資産を準備した後、価値が安定しているデジタル通貨を発行します。</p>
               </div>
               <div class="lContent2">
                 <div><img src="../img/编组 132@2x.png" alt=""></div>
-                <p>デジタル通貨発行側は、準備資産の価値の僅かな変動はあるとしても、安定していることを保障すべきで、もし不足した場合には資産を補填する義務があります。</p>
+                <p>デジタル通貨発行側は、準備資産の価値の僅かな変動はあるとしても、安定していることを保障すべきで、もし不足した場合には資産を補填する義務があります。
+                </p>
               </div>
             </div>
             <div class="center">
               <div class="cLogo"><img src="../img/编组 162@2x.png" alt=""></div>
-              <p>稳定币发行方</p>
+              <p>ノード、もしくはノードの授権者</p>
             </div>
             <div class="right">
               <div class="rLogo"><img src="../img/编组 11复制 3@2x.png" alt=""></div>
@@ -115,43 +164,39 @@
               </div>
             </div>
           </div>
+          <div class="publisher1">
+            <div class="head">
+              <div class="bg">
+                <img class="img_left" src="../img/编组 26.png" />
+                <p>ノード、もしくはノードの授権者</p>
+                <img class="img_right" src="../img/编组 26复制 4.png" />
+              </div>
+            </div>
+            <div class="issuers">
+              <div class="issuersCon">
+                <div><img src="../img/编组 442@2x.png" alt=""></div>
+                <p>ノード、もしくはノードの授権者または組織は、指定委託機構において各国通貨と低リスクの短期債権により構成された資産を準備した後、価値が安定しているデジタル通貨を発行します。</p>
+              </div>
+              <div class="issuersCon">
+                <div><img src="../img/编组 132@2x.png" alt=""></div>
+                <p>デジタル通貨発行側は、準備資産の価値の僅かな変動はあるとしても、安定していることを保障すべきで、もし不足した場合には資産を補填する義務があります。
+                </p>
+              </div>
+              <div class="issuersCon">
+                <div><img src="../img/编组 10@2x.png" alt=""></div>
+                <p>デジタル通貨の発行は現地の法律や規制を遵守すべきです。</p>
+              </div>
+              <div class="issuersCon">
+                <div><img src="../img/编组 452@2x.png" alt=""></div>
+                <p>デジタル通貨発行側は、準備資産の価値の僅かな変動はあるとしても、安定していることを保障すべきで、もし不足した場合には資産を補填する義務があります。</p>
+              </div>
+            </div>
+          </div>
           <div class="service">
             <div class="logo"><img src="../img/编组 24@2x.png" alt=""></div>
             <h2>アプリケーション運営側</h2>
             <p>組織もしくは個人のアプリケーションのリリースは、現地の法律や規制を遵守し、ノードを経由して授権する必要があります。</p>
-            <p> アプリケーション運用側は運営による利益、協会インセンティブを取得します。</p>
-          </div>
-          <div class="forWorldDescrs">
-            <div class="eachDescr">
-              <div class="logo1"><img src="../img/编组 48@2x.png" /></div>
-              <div class="logo2"><img src="../img/编组 52@2x.png" /></div>
-              <div class="eachDescrs">
-                <h3>社群建设者</h3><i><img src="../img/矩形复制 53@2x.png" /></i>
-                <p>通过帮助Violas项目在全球建立社群而享有协会的激励。</p>
-              </div>
-              <div class="logo4"><img src="../img/矩形复制 51@2x.png" /></div>
-              <div class="logo3"><img src="../img/矩形复制 52@2x.png" /></div>
-            </div>
-            <div class="eachDescr">
-              <div class="logo1"><img src="../img/编组 51@2x.png" /></div>
-              <div class="logo2"><img src="../img/编组 52@2x.png" /></div>
-              <div class="eachDescrs">
-                <h3>兼职技术开发者</h3><i><img src="../img/矩形复制 53@2x.png" /></i>
-                <p>为Violas基础设施或应用开发代码或解决技术问题，获得协会激励或者盈利分红。</p>
-              </div>
-              <div class="logo4"><img src="../img/矩形复制 51@2x.png" /></div>
-              <div class="logo3"><img src="../img/矩形复制 52@2x.png" /></div>
-            </div>
-            <div class="eachDescr">
-              <div class="logo1"><img src="../img/编组 53@2x.png" /></div>
-              <div class="logo2"><img src="../img/编组 52@2x.png" /></div>
-              <div class="eachDescrs">
-                <h3>节点投资者</h3><i><img src="../img/矩形复制 53@2x.png" /></i>
-                <p>不同于协会成员，节点投资者相当于购买一部分节点股份，享有治理权利和节点盈利的分红权。</p>
-              </div>
-              <div class="logo4"><img src="../img/矩形复制 51@2x.png" /></div>
-              <div class="logo3"><img src="../img/矩形复制 52@2x.png" /></div>
-            </div>
+            <p>アプリケーション運用側は運営による利益、協会インセンティブを取得します。</p>
           </div>
         </div>
       </section>
@@ -164,72 +209,92 @@
   </div>
 </body>
 <script>
-  let text = document.querySelectorAll('ul li')
+  function init() {
+    let designSize = 1920;
+    let html = document.documentElement;
+    let wW = html.clientWidth;// 窗口宽度
+    let rem = wW * 100 / designSize;
+    document.documentElement.style.fontSize = rem + 'px';
+  }
+  init();
+  window.onresize = function () {
+    init();
+  }
+  let navlists = document.querySelectorAll('ul li');
   let navlist = document.querySelector('.navList');
-  let selects = document.querySelector('.navList .select');
-  let docum = document.querySelector('.navList #docu');
-  let lists = document.querySelectorAll('.select .list span');
-  selects.style.display = 'none'
-  docum.onclick = function () {
-    if (selects.style.display == 'none') {
-      docum.style.color = "rgba(62, 209, 246, 1)"
-      selects.style.display = 'block'
-    } else {
-      selects.style.display = 'none'
-      docum.style.color = "#FFF"
-    }
-  }
-  for (var i = 0; i < lists.length; i++) {
-    lists[i].onclick = function () {
-      if (this.innerHTML == 'Violas') {
-        selects.style.display = 'none'
-      } else if (this.innerHTML == 'libra') {
-        window.location = 'libra_doc/lib_doc_en2cn/welcome-to-libra.htm';
-        selects.style.display = 'none'
-      }
-      for (var i = 0; i < lists.length; i++) {
-        lists[i].style.background = '#FFF';
-        this.style.background = 'rgba(169, 67, 206, .16)';
-      }
-    }
-  }
-  for (var i = 0; i < text.length; i++) {
-    text[i].onclick = function () {
-      if (this.innerHTML == '首页') {
-        window.location = 'index_cn.html';
-      } else if (this.innerHTML == '协会') {
-        window.location = 'association.html';
-      } else if (this.innerHTML == '合作伙伴') {
-        window.location = 'partner.html';
-      }
-      //  else if(this.innerHTML == 'wiki'){
-      //    window.location = 'https://www.wttf.org';
-      //  }
+  let phoneListA = document.querySelectorAll('.phone_list a');
+  function nav(text) {
       for (var i = 0; i < text.length; i++) {
-        text[i].className = '';
-        this.className = 'active'
+        text[i].onclick = function () {
+          if (this.innerHTML == 'アソシエーション') {
+            window.location = 'association.html';
+          } else if (this.innerHTML == 'パートナー') {
+            window.location = 'partner.html';
+          } else if (this.innerHTML == '開発者') {
+            window.location = 'developers.html';
+          } else if (this.innerHTML == 'メディア') {
+            window.location = 'media.html';
+          } else if (this.innerHTML == 'ビジョン') {
+            window.location = 'vision.html';
+          } else if (this.innerHTML == "ブロックチェーン エクスプローラ") {
+            window.location = 'https://testnet.violas.io';
+          }
+          for (var i = 0; i < text.length; i++) {
+            text[i].className = '';
+            this.className = 'active'
+          }
+        }
       }
     }
-  }
-  let wPaper = document.getElementById('whitePaper')
+  nav(navlists);
+  nav(phoneListA);
+  let wPaper = document.getElementById('whitePaper');
+  let wPaper1 = document.getElementById('whitePaper1');
+  let closeBtn = document.querySelector('.close');
+  let navbarT = document.querySelector('.navbar-toggler');
+  let bmdLayoutC = document.querySelector('.bmd-layout-container');
   wPaper.onclick = function () {
     wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
     window.location = 'whitePaper.html';
   }
-  window.onscroll = function () {
-    let topScroll = document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
-    let bignav = document.querySelector(".header");//获取到导航栏id
-    if (topScroll > 0) {  //当滚动距离大于250px时执行下面的东西
-      bignav.style.position = 'fixed';
-      bignav.style.top = '0';
-      bignav.style.zIndex = '9999';
-      bignav.style.background = 'rgba(44, 9, 108, 1)';
-    } else {//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
-      bignav.style.position = 'static';
-      bignav.style.background = '0';
-    }
+  wPaper1.onclick = function () {
+    wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
+    window.location = 'whitePaper.html';
   }
+  closeBtn.onclick = function () {
+    let dwp = document.getElementById("dw-p1");
+    let bmdLayout = document.querySelector(".bmd-layout-backdrop");
+    bmdLayoutC.setAttribute('class', 'bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay wrap partner')
+    navbarT.setAttribute('aria-expanded', false)
+    dwp.setAttribute('aria-expanded', false);
+    dwp.setAttribute('aria-hidden', true);
+    bmdLayout.setAttribute('class', 'bmd-layout-backdrop')
+  };
+  window.onscroll = function () {
+    let topScroll = document.documentElement.scrollTop; //滚动的距离,距离顶部的距离
+    // console.log(topScroll);
+    let clientWidth = document.body.clientWidth;
+    // console.log(clientWidth)
+    let bignav = document.querySelector(".header"); //获取到导航栏id
+    let navbar = document.querySelector(".navbar");
+    if (topScroll > 0 && clientWidth >= 800) {
+      bignav.style.position = "fixed";
+      bignav.style.zIndex = "9999";
+      bignav.style.background = "#2c096c";
+    }
+    else if (topScroll == 0 && clientWidth >= 800) {
+      //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+      bignav.style.position = "static";
+      bignav.style.zIndex = "9999";
+      bignav.style.background = "0";
+      // bignav.style.backgroundImage = 'linear-gradient(to right , #9c3ec9, #4a189f);'
+    }
+  };
 
 </script>
+<script src="../js/bootstrap-material-design/jquery-3.2.1.slim.min.js"></script>
+<script src="../js/bootstrap-material-design/popper.js"></script>
+<script src="../js/bootstrap-material-design/bootstrap-material-design.js"></script>
+<script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
 
 </html>

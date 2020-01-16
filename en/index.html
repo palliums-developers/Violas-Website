@@ -74,7 +74,7 @@
               <p class="welcome"><label>Welcome to</label>
                 <img src="../img/编组 31@2x.png" />
               </p>
-              <p><label for="">Download WhitePaper</label><img src="../img/编组 45复制 3@2x.png" /></p>
+              <p class="goWhite2"><label for="">WhitePaper</label><img src="../img/编组 45复制 3@2x.png" /></p class="goWhite">
             </div>
             <div class="headLogo">
               <img src="../img/编组 72@2x.png" />
@@ -814,6 +814,7 @@
   let wPaper1 = document.getElementById("whitePaper1");
   let goWhite = document.querySelector('.goWhite');
   let goWhite1 = document.querySelector('.goWhite1');
+  let goWhite2 = document.querySelector('.goWhite2');
   let goAssoc = document.querySelector('.goAssoc');
   let closeBtn = document.querySelector('.close');
   let navbarT = document.querySelector('.navbar-toggler');
@@ -837,6 +838,9 @@
   goWhite1.onclick = function () {
     window.location = "whitePaper.html";
   };
+  goWhite2.onclick = function () {
+      window.location = "whitePaper.html";
+    };
   wPaper1.onclick = function () {
     wPaper1.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
     window.location = "whitePaper.html";

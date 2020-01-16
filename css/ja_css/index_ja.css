@@ -50,7 +50,7 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-around;
 }
 .logo a {
   display: flex;
@@ -65,8 +65,8 @@ header {
   flex:1;
   height: 100%;
   align-items: center;
-  margin-right: 1.5rem;
-  margin-left: 0.3rem;
+  margin-right: 1rem;
+  margin-left: 0.7rem;
 }
 .navList li {
   font-size: 0.16rem;
@@ -222,7 +222,7 @@ section {
   height: auto;
 }
 .vision .head {
-  width: 9.5rem;
+  width: 8.7rem;
   height: 0.61rem;
   margin: 1.4rem auto;
   position: relative;
@@ -287,7 +287,7 @@ section {
 .vision .headIntroduce .icon {
   position: absolute;
   top: -0.4rem;
-  left: 0.7rem;
+  left:0.2rem;
   display: flex;
 }
 .vision .headIntroduce .icon img {
@@ -304,7 +304,7 @@ section {
 }
 
 .forWorld .head {
-  width: 10.6rem;
+  width: 9.7rem;
   height: 0.61rem;
   margin: 0 auto;
   position: relative;
@@ -334,7 +334,7 @@ section {
   position: absolute;
   left: 5rem;
   margin-left: -1.75rem;
-  top: 0.1rem;
+  top: 0;
   font-size: 0.32rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
@@ -535,7 +535,7 @@ section {
   margin-top: -0.05rem;
 }
 .deepIntroduce .head {
-  width: 9.1rem;
+  width: 8.15rem;
   height: 0.61rem;
   margin: 0 auto;
   position: relative;
@@ -565,7 +565,7 @@ section {
   position: absolute;
   left: 4.4rem;
   margin-left: -1rem;
-  top: 0.05rem;
+  /* top: 0.05rem; */
   font-size: 0.32rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
@@ -977,7 +977,7 @@ footer > p {
     height: 18px;
   }
   .vision .head {
-    width: 325px;
+    width: 290px;
   }
   .vision .head .bg .img_left,
   .vision .head .bg .img_right {
@@ -987,8 +987,8 @@ footer > p {
   .vision .head p {
     font-size: 14px;
     left: 50%;
-    margin-left: -60px;
-    top: -0.05rem;
+    margin-left: -40px;
+    top: -0.1rem;
   }
   .vision .headDescr {
     width: 148px;
@@ -1007,7 +1007,7 @@ footer > p {
   }
   .vision .headIntroduce .icon {
     top: -1rem;
-    left: -25px;
+    left: -45px;
   }
   .vision .headIntroduce .icon img {
     width: 36px;
@@ -1021,7 +1021,7 @@ footer > p {
     margin-left: -3.5rem;
   }
   .forWorld .head {
-    width: 370px;
+    width: 330px;
   }
   .forWorld .head .bg .img_left,
   .forWorld .head .bg .img_right {
@@ -1030,7 +1030,7 @@ footer > p {
   }
   .forWorld .head p {
     left: 50%;
-    margin-left: -90px;
+    margin-left: -69px;
     margin-top: -3px;
     font-size: 14px;
   }
@@ -1157,7 +1157,7 @@ footer > p {
     margin-left: 3px;
   }
   .deepIntroduce .head {
-    width: 310px;
+    width: 270px;
   }
   .deepIntroduce .head .bg .img_left,
   .deepIntroduce .head .bg .img_right {
@@ -1172,8 +1172,8 @@ footer > p {
   }
   .deepIntroduce .head p {
     left: 50%;
-    margin-left: -50px;
-    top: -2px;
+    margin-left: -30px;
+    top: -3px;
     font-size: 14px;
   }
   .deepIntroduce > .association .bg {
@@ -1332,10 +1332,10 @@ footer > p {
     width: 170px;
   }
   .vision .headIntroduce .icon {
-    left: -10px;
+    left: -30px;
   }
   .forWorld .head {
-    width: 320px;
+    width: 280px;
   }
   .forWorld .head .bg .img_left,
   .forWorld .head .bg .img_right {

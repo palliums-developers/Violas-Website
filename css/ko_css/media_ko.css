@@ -14,7 +14,7 @@
   height: auto;
 }
 
-.vision {
+.medias {
   width: 100%;
   background: rgba(44, 9, 108, 1);
   overflow: hidden;
@@ -118,7 +118,7 @@ header {
 }
 
 .onPageNav a:hover {
-  color: #4b199f;
+  color:#4B199F;
   font-weight: 400;
   /* color: #110b1b; */
 }
@@ -229,7 +229,7 @@ header {
 
 .headContent .headTalk {
   position: absolute;
-  left: -0.45rem;
+  left: 0;
   bottom: 1.5rem;
 }
 
@@ -246,7 +246,7 @@ header {
   margin-bottom: 0.4rem;
 }
 .headContent .headTalk p {
-  width: 7rem;
+  width: 4.4rem;
   font-size: 0.22rem;
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
@@ -271,49 +271,88 @@ header {
 section {
   width: 100%;
 }
-.contents {
-  width: 11.6rem;
-  background: #fff;
-  position: relative;
-  border-radius: 20px;
-  background: linear-gradient(
-    rgba(255, 255, 255, 1) 0%,
-    rgba(163, 151, 255, 1) 100%
-  );
-  margin: 1rem auto;
+
+.contents{
+    width: 12rem;
+    height: auto;
+    background:#FFFFFF;
+    margin: 1rem auto;
+    padding:0.5rem 0.6rem 0.6rem 0.4rem;
+    box-sizing: border-box;
 }
-.contents .content {
-  width: 100%;
-  height: 100%;
-  padding: 0.5rem 0.34rem 0.3rem 0.36rem;
-  box-sizing: border-box;
-}
-.contents .content p {
-  font-size: 0.25rem;
-  font-weight: 400;
-  color: rgba(17, 11, 27, 1);
-  line-height: 0.5rem;
-}
-.contents .left,
-.contents .right {
-  width: 3rem;
-  height: 2.6rem;
+.contentTitle h2,.content h2{
   display: flex;
-  position: absolute;
-  bottom: -0.2rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
 }
-.contents .left {
-  left: -0.25rem;
+.contentTitle h2 i,.content h2 i{
+  width: 0.12rem;
+  height: 0.12rem;
+  display: flex;
+  margin-right: 0.1rem;
 }
-.contents .right {
-  right: 10px;
-}
-.contents .left img,
-.contents .right img {
+.contentTitle h2 i img,.content h2 i img{
   width: 100%;
   height: 100%;
+}
+.contentTitle h2 label,.content h2 label{
+  font-size:0.3rem;
+  font-weight: 400;
+  color:rgba(17,11,27,1);
+}
+.contentTitle p,.content p{
+    font-size:0.25rem;
+    font-weight:400;
+    color:rgba(17,11,27,1);
+    line-height:0.45rem;
+    margin-left: 0.3rem;
+}
+.content p{
+  color:rgba(17,11,27,.9);
+}
+.content h3{
+  font-size:0.25rem;
+  font-weight:450;
+  color:rgba(17,11,27,1);
+  margin-left: 0.25rem;
+  margin-top: 0.3rem;
+}
+.content ul{
+  margin:0.2rem 0 0.2rem 0.3rem;
+}
+.content ul li{
+  font-size:0.25rem;
+  font-weight:400;
+  color:rgba(17,11,27,.7);
+  line-height:0.5rem;
+}
+.contents h1{
+    width: 100%;
+    text-align: center;
+    font-size:0.3rem;
+    font-weight:400;
+    color:rgba(17,11,27,1);
+    margin: 0.8rem 0;
+}
+.content1 h2{
+    margin-top: 0.7rem;
+    margin-bottom: 0.6rem;
+}
+.content1 ul{
+  margin-left: 0.25rem;
+}
+.content1 ul li,.content2 ul li{
+  color:rgba(17, 11, 27, 0.8);
 }
 
+.content2 ul li::before{
+  content:"•";
+  /* color:rgba(17, 11, 27, 1); */
+  font-size:0.3rem;
+}
+.content2 .note li::before{
+  content:"";
+}
 footer {
   width: 100%;
   height: 4.64rem;
@@ -402,7 +441,6 @@ footer > p {
     /* display: flex;
     flex-direction: column; */
   }
-
   .phone_list > a,
   .phone_list > span {
     font-size: 14px;
@@ -451,7 +489,7 @@ footer > p {
     /* left:-2rem; */
   }
   .headContent .headTalk p {
-    width: 300px;
+    width: 260px;
     /* left:-2rem; */
   }
   .headContent .headLogo {
@@ -496,7 +534,7 @@ footer > p {
   .onPageNav {
     display: none;
   }
-
+  
   .headContent {
     width: 100%;
     flex: 1;
@@ -506,50 +544,77 @@ footer > p {
   }
   .headContent .headTalk h2 {
     width: 209px;
-    margin: 5px 0;
+    margin: 10px 0;
     font-size: 14px;
-    line-height: 20px;
+    line-height:20px;
   }
   .headContent .headTalk {
     left: 1rem;
-    top: 2px;
+    top:10px;
   }
   .headContent .headTalk p {
-    width: 210px;
-    font-size: 10px;
-    line-height: 18px;
-    letter-spacing: 0;
+     width: 209px;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
   }
   .headContent .headLogo {
-    width: 128px;
-    height: 99px;
+    width:128px;
+    height:99px;
     right: 5px;
   }
-  .headContent .headLogo img {
-    width: 128px;
-    height: 99px;
+  .headContent .headLogo img{
+    width:128px;
+    height:99px;
   }
-  .contents {
+  .contents{
     width: 355px;
-    /* height: 331px; */
-    border-radius: 0;
-    background: #fff;
-  }
-  .contents .content {
-    width: 100%;
-    height: 100%;
-    padding: 27px 12px;
+    padding:20px 12px;
     box-sizing: border-box;
   }
-  .contents .content p {
-    font-size: 14px;
-    color: rgba(65, 60, 73, 1);
-    line-height: 22px;
-  }
-  .contents .left,
-  .contents .right {
-    display: none;
-  }
+.contentTitle h2 i,.content h2 i{
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.contentTitle h2 label,.content h2 label{
+  font-size:16px;
+}
+.contentTitle p,.content p{
+    font-size:14px;
+    line-height:22px;
+    margin-left:0;
+}
+.content p{
+  font-weight: 400;
+}
+.content h3{
+  font-size:14px;
+}
+
+.content ul li{
+  font-size:14px;
+  line-height:22px;
+}
+.contents h1{
+    font-size:16px;
+}
+.content1 h2{
+    margin-top: 0.7rem;
+    margin-bottom: 0.6rem;
+}
+.content1 ul{
+  margin-left: 0.25rem;
+}
+.content1 ul li,.content2 ul li{
+  color:rgba(17, 11, 27, 0.8);
+}
+
+.content2 ul li::before{
+  content:"•";
+  /* color:rgba(17, 11, 27, 1); */
+  font-size:15px;
+}
   footer h2 {
     margin: 20px 0 10px 25px;
     font-size: 10px;
@@ -572,20 +637,15 @@ footer > p {
   }
 }
 @media (max-width: 321px) {
-  .headContent .headLogo {
+  .headContent .headLogo{
     right: 0;
   }
-  .headContent .headTalk p {
-    width: 190px;
-  }
-  .contents {
+  .contents{
     width: 310px;
-  }
-  .contents .content {
-    padding: 20px 10px;
+    padding:20px 5px;
     box-sizing: border-box;
   }
-  .contents h1 {
+  .contents h1{
     white-space: nowrap;
   }
 }

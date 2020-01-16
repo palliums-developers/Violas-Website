@@ -163,7 +163,7 @@ section {
   height: auto;
 }
 .vision .head {
-  width: 12.6rem;
+  width: 11.2rem;
   height: 0.61rem;
   margin: 1.3rem auto;
   position: relative;
@@ -196,8 +196,8 @@ section {
 .vision .head p {
   position: absolute;
   left: 50%;
-  margin-left: -2.9rem;
-  top: 0.03rem;
+  margin-left: -2.1rem;
+  top: 0;
   font-size: 0.4rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
@@ -220,7 +220,7 @@ section {
   color: rgba(248, 248, 248, 1);
   position: absolute;
   left: 50%;
-  margin-left: -3.5rem;
+  margin-left: -0.9rem;
   top: 1.4rem;
   white-space: nowrap;
 }

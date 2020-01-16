@@ -212,12 +212,11 @@ section {
   height: 100%;
 }
 .vision2Content a {
-  /* width: 2.5rem; */
   font-size: 0.3rem;
   font-weight: 400;
   margin-top: 0.1rem;
   color: #fff;
-  margin-left: 7.8rem;
+  margin-left: 8.7rem;
 }
 .vision2Content a:hover{
   color: #20BBBA;
@@ -268,7 +267,7 @@ section {
   top: 50%;
   margin-top: -0.2rem;
   left: 50%;
-  margin-left: -0.75rem;
+  margin-left: -0.45rem;
   letter-spacing: 2px;
 }
 .downloadPay dl dt img {
@@ -587,6 +586,7 @@ footer > p {
   }
   .vision2Content a{
     font-size: 14px;
+    margin-left: 190px;
   }
   .vision2Content a img{
     width: 11px;

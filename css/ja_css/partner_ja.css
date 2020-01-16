@@ -13,14 +13,14 @@
   width: 100%;
   height: auto;
 }
-.associations {
+.partner {
   width: 100%;
   background: rgba(44, 9, 108, 1);
   overflow: hidden;
 }
 header {
   width: 100%;
-  /* height: 913rem; */
+  height: 7.32rem;
   display: flex;
   flex-direction: column;
   background: url("../../img/编组 4@2x.png") no-repeat;
@@ -38,7 +38,7 @@ header {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .navList {
   display: flex;
@@ -58,8 +58,8 @@ header {
   flex: 1;
   height: 100%;
   align-items: center;
-  margin-left: 0.3rem;
-  margin-right: 1.5rem;
+  margin-left: 0.7rem;
+  margin-right: 1rem;
 }
 
 .navList li {
@@ -111,9 +111,6 @@ header {
   top: 7rem; */
   font-size: 0.14rem;
 }
-header {
-  height: 7.32rem;
-}
 .headContent {
   width: 12rem;
   flex: 1;
@@ -123,138 +120,101 @@ header {
   justify-content: space-between;
 }
 .headContent .headTalk {
-  /* margin-top:100rem;
-  margin-left:-30rem; */
+  display: flex;
+  /* flex-direction: column;s */
   position: absolute;
-  left: 0;
-  bottom: 2.2rem;
+  left: 0.1rem;
+  bottom: 2.5rem;
 }
-.headContent .headTalk h4 {
-  font-size: 0.45rem;
+
+.headContent .headTalk p {
+  font-size: 0.48rem;
   font-weight: 400;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 0.15rem;
+  margin-right: 0.2rem;
 }
 .headContent .headTalk p img {
-  width: 4.05rem;
-  height: 0.75rem;
+  width: 1.11rem;
+  height: 1.44rem;
 }
-.headContent .headTalk p {
-  width: 6.81rem;
-  /* height:204rem; */
-  font-size: 0.3rem;
-  font-weight: 100;
-  color: rgba(249, 249, 249, 1);
-  line-height: 0.6rem;
-  margin-top: 0.2rem;
+.headContent .headTalk > div {
+  margin-top: 0.1rem;
+}
+.headContent .headTalk p > span {
+  color: rgba(82, 220, 255, 1);
 }
 .headContent .headLogo img {
-  width: 5.82rem;
-  height: 5.98rem;
+  width: 5.72rem;
+  height: 6.22rem;
 }
 .headContent .headLogo {
-  width: 5.82rem;
-  height: 5.98rem;
+  width: 5.72rem;
+  height: 6.22rem;
   position: absolute;
-  right: -0.3rem;
-  bottom: 0.2rem;
+  right: -0.5rem;
+  bottom: 0.1rem;
+  display: flex;
 }
-section {
-  width: 100%;
-  height: auto;
-}
-.vision .head {
-  width: 12.6rem;
+.mebers .head {
+  width: 9.2rem;
   height: 0.61rem;
-  margin: 1.3rem auto;
+  margin: 0 auto;
   position: relative;
   display: flex;
   align-items: center;
+  margin-top: 2.4rem;
 }
-
-.vision .head .bg {
-  /* width: 1200rem; */
+.mebers .head .bg {
+  /* width: 11.8rem; */
   height: 0.61rem;
 }
-.vision .head .bg img {
+.mebers .head .bg img {
+  /* width: 100%; */
   position: absolute;
 }
-.vision .head .bg .img_left {
+.mebers .head .bg .img_left {
   width: 3.31rem;
   height: 0.48rem;
-  left: 0rem;
+  left: 0;
 }
-.vision .head .bg .img_right {
+.mebers .head .bg .img_right {
   width: 3.31rem;
   height: 0.48rem;
-  right: 0rem;
+  right: 0;
 }
 
-.vision .head .bg img {
-  width: 100%;
-  height: 100%;
-}
-.vision .head p {
+.mebers .head p {
   position: absolute;
   left: 50%;
-  margin-left: -2.9rem;
-  top: 0.03rem;
+  margin-left: -1.2rem;
+  top: -0.05rem;
   font-size: 0.4rem;
   color: rgba(248, 248, 248, 1);
   font-weight: 400;
 }
-.vision .headDescr {
-  width: 7.07rem;
-  height: 4.96rem;
-  margin: 0 auto;
-  display: flex;
-  position: relative;
-  justify-content: center;
-}
-.vision .headDescr .bg img {
-  width: 4.96rem;
-  height: 4.96rem;
-}
-.vision .headDescr h3 {
-  font-size: 0.53rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  position: absolute;
-  left: 50%;
-  margin-left: -3.5rem;
-  top: 1.4rem;
-  white-space: nowrap;
-}
-.vision .headDescr p {
-  font-size: 0.3rem;
-  font-weight: 100;
-  color: rgba(248, 248, 248, 0.8);
-  position: absolute;
-  left: 0.2rem;
-  top: 2.3rem;
-  text-align: center;
-  line-height: 0.64rem;
-}
+
 .forWorldDescr {
-  /* width: 12rem; */
+  width: 12rem;
   margin: 0 auto;
   margin-top: 2.5rem;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .forWorldDescr .eachDescr {
-  width: 5.46rem;
+  width: 6rem;
   position: relative;
   margin-left: 0.25rem;
 }
 .forWorldDescr .eachDescrs {
-  width: 5.46rem;
-  height: 4.37rem;
+  width: 6rem;
+  height: 6rem;
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
     RGBA(158, 146, 250, 1) 100%
   );
-  border-radius: 0.2rem;
+  border-radius: 20px;
   position: relative;
   z-index: 10;
   padding: 0.79rem 0.25rem 0 0.35rem;
@@ -264,7 +224,280 @@ section {
   font-size: 0.3rem;
   font-weight: 400;
   color: rgba(44, 9, 108, 1);
-  line-height: 0.45rem;
+}
+.eachDescrs i img {
+  display: inline-block;
+  width: 0.64rem;
+  height: 0.04rem;
+}
+.eachDescrs p {
+  font-size: 0.24rem;
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
+  margin-top: 0.2rem;
+  line-height: 0.48rem;
+}
+.forWorldDescr .eachDescr .logo1,
+.forWorldDescr .eachDescr .logo2,
+.forWorldDescr .eachDescr .logo3 {
+  position: absolute;
+}
+.forWorldDescr .eachDescr .logo1 {
+  left: 50%;
+  margin-left: -27%;
+  top: -1.6rem;
+}
+.forWorldDescr .eachDescr .logo2 {
+  left: 50%;
+  margin-left: -14.5%;
+  top: -1.05rem;
+  z-index: 11;
+}
+.forWorldDescr .eachDescr .logo3 {
+  left: -0.15rem;
+  bottom: -0.2rem;
+}
+
+.forWorldDescr .eachDescr .logo1 img {
+  width: 2.51rem;
+  height: 2.25rem;
+}
+.forWorldDescr .eachDescr .logo2 img {
+  width: 2.05rem;
+  height: 1.73rem;
+}
+.forWorldDescr .eachDescr .logo3 img {
+  width: 3.03rem;
+  height: 1.8rem;
+}
+
+/* .forWorldDescr .eachDescr:nth-child(2) .logo1 img{
+    width: 251rem;
+    height:225rem;
+    
+} */
+.forWorldDescr .eachDescr:nth-child(2) .logo1 {
+  top: -1.5rem;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo2 {
+  top: -1rem;
+}
+.forWorldDescr .eachDescr:nth-child(2) .logo3 {
+  left: 52%;
+}
+.service {
+  width: 13.17rem;
+  height: 3.14rem;
+  background: linear-gradient(
+    180deg,
+    RGBA(53, 13, 123, 1) 0%,
+    RGBA(62, 144, 194, 1) 100%
+  );
+  border-radius: 20px;
+  margin: 3rem auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.service .logo img {
+  width: 3.8rem;
+  height: 3.26rem;
+  position: absolute;
+  top: -39%;
+  right: 0.3rem;
+}
+.service h2 {
+  font-size: 0.45rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin: 0.3rem 0 0.2rem 0.4rem;
+}
+
+.service p {
+  width: 10rem;
+  font-size: 0.26rem;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 1px;
+  margin-left: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+.service p:nth-child(3) {
+  width: 9rem;
+}
+.publisher1 {
+  display: none;
+}
+.publisher {
+  width: 12rem;
+  height: 7.42rem;
+  margin: 0 auto;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+}
+.publisher .center {
+  width: 3.08rem;
+  height: 3.08rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.09rem;
+}
+.publisher .center p {
+  width: 3.5rem;
+  font-size: 0.36rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 0.5rem;
+  letter-spacing: 2px;
+  /* white-space: nowrap; */
+  text-align: center;
+  position: relative;
+  left: 50%;
+  margin-left: -2.2rem;
+}
+.publisher .center .cLogo {
+  position: absolute;
+}
+.publisher .center .cLogo img {
+  width: 3.08rem;
+  height: 3.08rem;
+}
+.publisher .left .lLogo img,
+.publisher .right .rLogo img {
+  width: 4.89rem;
+  height: 7.42rem;
+}
+.publisher .left,
+.publisher .right {
+  position: relative;
+}
+.publisher .left .lContent1 {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.publisher .left .lContent1 > div {
+  margin-top: -0.9rem;
+  margin-left: 0.2rem;
+}
+.publisher .left .lContent1 > div img {
+  width: 1.24rem;
+  height: 1.02rem;
+}
+.publisher .left .lContent1 p {
+  width: 3.64rem;
+  /* height:150rem; */
+  font-size: 0.2rem;
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 0.3rem;
+  margin-top: 0.2rem;
+  margin-left: -0.5rem;
+}
+.publisher .left .lContent2 {
+  position: absolute;
+  bottom: 0.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.publisher .left .lContent2 > div {
+  margin-left: 0.2rem;
+}
+.publisher .left .lContent2 > div img {
+  width: 1.24rem;
+  height: 1.02rem;
+}
+.publisher .left .lContent2 p {
+  width: 3.63rem;
+  /* height:150rem; */
+  font-size: 0.2rem;
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 0.3rem;
+  margin-top: 0.25rem;
+  margin-left: -0.5rem;
+}
+.publisher .right .lContent1 {
+  position: absolute;
+  top: 0;
+  left: 2.9rem;
+  display: flex;
+  flex-direction: column;
+}
+.publisher .right .lContent1 > div {
+  margin-top: -0.5rem;
+  margin-left: 0.2rem;
+}
+.publisher .right .lContent1 > div img {
+  width: 1.05rem;
+  height: 1.14rem;
+}
+.publisher .right .lContent1 p {
+  width: 3.54rem;
+  /* height:150rem; */
+  font-size: 0.2rem;
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 0.3rem;
+  margin-top: 0.25rem;
+  margin-left: -1rem;
+}
+.publisher .right .lContent2 {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 2.9rem;
+  display: flex;
+  flex-direction: column;
+}
+.publisher .right .lContent2 > div {
+  margin-left: 0.2rem;
+}
+.publisher .right .lContent2 > div img {
+  width: 1.24rem;
+  height: 1.02rem;
+}
+.publisher .right .lContent2 p {
+  width: 3.61rem;
+  /* height:150rem; */
+  font-size: 0.2rem;
+  font-weight: 400;
+  color: rgba(248, 248, 248, 1);
+  line-height: 0.3rem;
+  margin-top: 0.2rem;
+  margin-left: -1.3rem;
+}
+.forWorldDescrs {
+  width: 12rem;
+  margin: 2.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+.forWorldDescrs .eachDescr {
+  position: relative;
+  margin-left: 0.25rem;
+}
+.forWorldDescrs .eachDescrs {
+  width: 3.8rem;
+  height: 4.09rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    RGBA(158, 146, 250, 1) 100%
+  );
+  border-radius: 20px;
+  position: relative;
+  z-index: 10;
+  padding: 0.88rem 0.25rem 0 0.35rem;
+  box-sizing: border-box;
+}
+.eachDescrs h3 {
+  font-size: 0.3rem;
+  font-weight: 400;
+  color: rgba(44, 9, 108, 1);
 }
 .eachDescrs i {
   display: flex;
@@ -280,171 +513,49 @@ section {
   margin-top: 0.2rem;
   line-height: 0.48rem;
 }
-.forWorldDescr .eachDescr .logo1,
-.forWorldDescr .eachDescr .logo2,
-.forWorldDescr .eachDescr .logo3 {
+.forWorldDescrs .eachDescr .logo1,
+.forWorldDescrs .eachDescr .logo2,
+.forWorldDescrs .eachDescr .logo3,
+.forWorldDescrs .eachDescr .logo4 {
   position: absolute;
 }
-.forWorldDescr .eachDescr .logo1 {
-  left: 50%;
-  margin-left: -27%;
-  top: -1.25rem;
+.forWorldDescrs .eachDescr .logo1 {
+  left: 0.4rem;
+  top: -1.5rem;
 }
-.forWorldDescr .eachDescr .logo2 {
-  left: 50%;
-  margin-left: -13%;
+.forWorldDescrs .eachDescr .logo2 {
+  left: 1.1rem;
   top: -1.05rem;
   z-index: 11;
 }
-.forWorldDescr .eachDescr .logo3 {
-  left: -0.15rem;
-  bottom: -0.1rem;
+.forWorldDescrs .eachDescr .logo3 {
+  left: -0.12rem;
+  bottom: 0.17rem;
 }
-
-.forWorldDescr .eachDescr .logo1 img {
-  width: 2.33rem;
-  height: 1.78rem;
+.forWorldDescrs .eachDescr .logo4 {
+  right: 0.1rem;
+  bottom: -0.15rem;
+  z-index: 11;
 }
-.forWorldDescr .eachDescr .logo2 img {
-  width: 2.05rem;
-  height: 1.73rem;
-}
-.forWorldDescr .eachDescr .logo3 img {
-  width: 3.03rem;
-  height: 1.8rem;
-}
-
-.forWorldDescr .eachDescr:nth-child(2) .logo1 img {
+.forWorldDescrs .eachDescr .logo1 img {
   width: 2.51rem;
   height: 2.25rem;
 }
-.forWorldDescr .eachDescr:nth-child(2) .logo1 {
+.forWorldDescrs .eachDescr .logo2 img {
+  width: 2.05rem;
+  height: 1.73rem;
+}
+.forWorldDescrs .eachDescr .logo3 img {
+  width: 2.03rem;
+  height: 1.35rem;
+}
+.forWorldDescrs .eachDescr .logo4 img {
+  width: 2.36rem;
+  height: 1.94rem;
+}
+
+.forWorldDescrs .eachDescr:nth-child(4) .logo1 {
   top: -1.5rem;
-}
-.forWorldDescr .eachDescr:nth-child(2) .logo2 {
-  top: -1rem;
-}
-.forWorldDescr .eachDescr:nth-child(2) .logo3 {
-  left: 47%;
-}
-.whitePaper {
-  width: 12rem;
-  /* height: 7.16rem; */
-  position: relative;
-  margin: 0 auto;
-  margin-top: 2.4rem;
-}
-.whitePaper .bg {
-  position: absolute;
-  right: -20%;
-}
-.whitePaper .bg img {
-  width: 12.1rem;
-  height: 7.16rem;
-}
-.whitePaper .content {
-  display: flex;
-}
-.whitePaper .content .hLogo {
-  margin-left: 2%;
-  position: relative;
-  z-index: 9;
-}
-.whitePaper .content .hLogo img {
-  width: 6.53rem;
-  height: 6.39rem;
-}
-.whitePaper .content .con {
-  margin-top: 17%;
-  margin-left: 9%;
-}
-.whitePaper .content .con h3 {
-  font-size: 0.53rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  display: flex;
-}
-.whitePaper .content .con h3 i {
-  margin-top: -0.25rem;
-  margin-left: 0.15rem;
-}
-.whitePaper .content .con h3 i img {
-  width: 0.37rem;
-  height: 0.51rem;
-}
-.whitePaper .content .con p {
-  width: 4rem;
-  font-size: 0.3rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  line-height: 0.76rem;
-  margin-top: 0.5rem;
-}
-.whitePaper .content .con p i img {
-  width: 0.38rem;
-  height: 0.38rem;
-  margin-left: 0.15rem;
-  margin-top: 0.1rem;
-}
-.association {
-  width: 13rem;
-  /* height: 716rem; */
-  position: relative;
-  margin: 0 auto;
-  margin-top: 2.4rem;
-  margin-bottom: 2rem;
-}
-.association .bg {
-  position: absolute;
-  left: -25%;
-}
-.association .bg img {
-  width: 12.25rem;
-  height: 7.64rem;
-}
-.association .content {
-  display: flex;
-}
-.association .content .hLogo {
-  margin-left: 5%;
-  margin-top: -5%;
-  position: relative;
-  z-index: 9;
-}
-
-.association .content .hLogo img {
-  width: 6.54rem;
-  height: 6.67rem;
-}
-
-.association .content .con {
-  /* height: 500rem; */
-  margin-left: 4%;
-  margin-top: 2rem;
-}
-.association .content .con h3 {
-  font-size: 0.53rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  display: flex;
-}
-.association .content .con p {
-  width: 4.67rem;
-  font-size: 0.3rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  line-height: 0.76rem;
-  display: flex;
-  margin-top: 0.3rem;
-  margin-left: 0.4rem;
-}
-.association .content .con h3 i {
-  margin-right: 0.15rem;
-  margin-top: -0.25rem;
-}
-.association .content .con h3 i img {
-  width: 0.37rem;
-  height: 0.51rem;
 }
 footer {
   width: 100%;
@@ -535,6 +646,7 @@ footer > p {
     color: rgba(248, 248, 248, 1);
     line-height: 14px;
     margin-top: 47px;
+    cursor: pointer;
   }
   .phone_list a.active {
     color: rgba(248, 248, 248, 0.6)!important;
@@ -596,53 +708,62 @@ footer > p {
     width: 60px;
     height: 18px;
   }
+  .headContent .headTalk p img {
+    width: 30px;
+    height: 39px;
+  }
   .headContent .headTalk {
-    bottom: 0.8rem;
     left: -50px;
+    bottom: 2rem;
   }
   .headContent .headTalk p {
-    width: 200px;
-    font-size: 12px;
-    margin-top: 10px;
-    line-height: 17px;
-  }
-  .headContent .headTalk h4 {
     font-size: 14px;
-    font-weight: 400;
-    color: #fff;
   }
   .headContent .headLogo {
-    right: -2rem;
-    bottom: 0;
+    right: -30px;
   }
-  .vision .head {
-    width: 375px;
+  .mebers .head{
+    width: 285px;
   }
-  .vision .head .bg .img_left,
-  .vision .head .bg .img_right {
-    width: 95px;
-    height: 14px;
+  .publisher1 .head {
+    width: 385px;
   }
-  .vision .head p {
+  .mebers .head .bg .img_left,
+  .mebers .head .bg .img_right,
+  .publisher1 .head .bg .img_left,
+  .publisher1 .head .bg .img_right {
+    width: 100px;
+    height: 15px;
+  }
+  .mebers .head p{
     font-size: 12px;
     left: 50%;
-    margin-left: -88px;
+    margin-left: -35px;
   }
-  .vision .headDescr {
+  .publisher1 .head p{
+    font-size: 12px;
+    left: 50%;
+    margin-left: -91px;
+  }
+  
+  .mebers .headDescr,
+  .publisher1 .headDescr {
     width: 150px;
     height: 150px;
   }
-  .vision .headDescr .bg img {
+  .mebers .headDescr .bg img,
+  .publisher1 .headDescr .bg img {
     width: 148px;
     height: 148px;
   }
-  .vision .headDescr h3 {
-    font-size: 12px;
+  .mebers .headDescr h3,
+  .publisher1 .headDescr h3 {
+    font-size: 13px;
     top: 2rem;
     margin-left: -83px;
-    white-space: nowrap;
   }
-  .vision .headDescr p {
+  .mebers .headDescr p,
+  .publisher1 .headDescr p {
     width: 300px;
     font-size: 12px;
     top: 3.2rem;
@@ -656,21 +777,21 @@ footer > p {
     margin-top: 0;
     display: flex;
     overflow-x: auto;
-    /* justify-content: flex-start; */
   }
 
   .forWorldDescr .eachDescr {
-    width: 190px;
+    width: 320px;
+    height: 450px;
     padding-top: 50px;
     position: relative;
-    margin-left: 5px;
+    margin-left: 9px;
   }
   .forWorldDescr .eachDescr:last-child {
     margin-right: 0;
   }
   .forWorldDescr .eachDescrs {
-    width: 190px;
-    height: 238px;
+    width: 227px;
+    height: 350px;
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
@@ -681,6 +802,7 @@ footer > p {
     z-index: 10;
     padding: 30px 10px 10px 10px;
     box-sizing: border-box;
+    margin-top: 30px;
   }
   .forWorldDescr .eachDescrs h3 {
     font-size: 14px;
@@ -690,8 +812,7 @@ footer > p {
     display: flex;
   }
   .forWorldDescr .eachDescrs i img {
-    width: 19px;
-    height: 1px;
+    display: none;
   }
   .forWorldDescr .eachDescrs p {
     font-size: 12px;
@@ -701,42 +822,118 @@ footer > p {
   .forWorldDescr .eachDescr .logo1,
   .forWorldDescr .eachDescr .logo2 {
     position: absolute;
-    /* display: flex; */
-    /* z-index: 999; */
   }
   .forWorldDescr .eachDescr .logo1 {
     left: 50%;
     margin-left: -50px;
-    top: 10px;
+    top: 20px;
   }
   .forWorldDescr .eachDescr .logo2 {
     left: 50%;
-    margin-left: -30px;
-    top: 20px;
+    margin-left: -20px;
+    top: 40px;
     z-index: 11;
   }
 
   .forWorldDescr .eachDescr .logo1 img {
-    width: 70px;
-    height: 54px;
+    width: 99px;
+    height: 88px;
   }
   .forWorldDescr .eachDescr .logo2 img {
-    width: 62px;
-    height: 52px;
+    width: 92px;
+    height: 74px;
   }
   .forWorldDescr .eachDescr .logo3 img,
   .forWorldDescr .eachDescr .logo4 img {
     display: none;
   }
   .forWorldDescr .eachDescr:nth-child(2) .logo1 {
-    top: 5px;
+    top: 20px;
   }
   .forWorldDescr .eachDescr:nth-child(2) .logo1 img {
-    width: 72px;
-    height: 64px;
+    width: 94px;
+    height: 88px;
   }
   .forWorldDescr .eachDescr:nth-child(2) .logo2 {
-    top: 20px;
+    top: 38px;
+    margin-left: -25px;
+  }
+  .service {
+    width: 355px;
+    height: 184px;
+  }
+  .service .logo img {
+    width: 102px;
+    height: 87px;
+    top: -40px;
+  }
+  .service h2 {
+    width: 204px;
+    font-size: 14px;
+    margin: 13px 0;
+    margin-left: 8px;
+    line-height: 20px;
+  }
+  .service p {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  .service p:nth-child(3) {
+    width: auto;
+  }
+  .service p:nth-child(4) {
+    width: auto;
+  }
+  .service:nth-child(6) {
+    height: 140px;
+  }
+  .publisher {
+    display: none;
+  }
+  .publisher1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .publisher1 .head {
+    margin-top: 0;
+  }
+  .issuers {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .issuers .issuersCon {
+    width: 44%;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    margin: 0 10px;
+    border-bottom: 1px solid rgba(212, 205, 225, 0.5);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .issuers .issuersCon p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 11px;
+    font-weight: 100;
+  }
+  .issuers .issuersCon:nth-child(1) > div img {
+    width: 36px;
+    height: 30px;
+  }
+  .issuers .issuersCon:nth-child(2) > div img {
+    width: 36px;
+    height: 30px;
+  }
+  .issuers .issuersCon:nth-child(3) > div img {
+    width: 36px;
+    height: 39px;
+  }
+  .issuers .issuersCon:nth-child(4) > div img {
+    width: 40px;
+    height: 35px;
   }
   footer h2 {
     margin: 20px 0 10px 25px;
@@ -755,30 +952,24 @@ footer > p {
   }
   footer > p {
     font-size: 8px;
-    /* margin: 20px 0; */
-    margin-bottom: 30px !important;
+    margin: 20px 0;
+    /* margin-bottom: 30px !important; */
   }
 }
 @media (max-width: 321px) {
-  .vision .head .bg .img_left,
-  .vision .head .bg .img_right {
-    width: 70px;
-    height: 14px;
-  }
-  .vision .head {
+  .service {
     width: 320px;
   }
-  .vision .head p {
-    font-size: 10px;
+  .issuers .issuersCon {
+    width: 43%;
   }
-  .headContent .headTalk {
-    top: 5px;
+  .publisher1 .head .bg .img_left,
+  .publisher1 .head .bg .img_right {
+    width: 75px;
+    height: 15px;
   }
-  .headContent .headTalk p {
-    margin-top: 5px;
-  }
-  .forWorldDescr {
-    justify-content: flex-start;
+  .publisher1 .head {
+    width: 330px;
   }
   footer > p {
     margin-top: 5px !important;
