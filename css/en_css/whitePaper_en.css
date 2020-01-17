@@ -588,6 +588,7 @@ footer > p {
     line-height: 11px;
     padding: 0 17px;
     box-sizing: border-box;
+    color: #FFF;
   }
   .phone_list > .change a:not(.ka) {
     border-right: 1px solid #fff;
@@ -761,8 +762,8 @@ footer > p {
   }
   footer > p {
     font-size: 8px;
-    /* margin: 20px 0; */
-    margin-bottom: 30px !important;
+    margin: 20px 0;
+    /* margin-bottom: 30px !important; */
   }
 }
 @media (max-width: 321px) {
@@ -774,5 +775,8 @@ footer > p {
   }
   .headContent .headTalk p {
     width: 300px;
+  }
+  footer > p {
+    margin-top: 5px;
   }
 }

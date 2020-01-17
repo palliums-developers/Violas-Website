@@ -921,10 +921,11 @@ footer > p {
     line-height: 11px;
     padding: 0 17px;
     box-sizing: border-box;
+    color: #FFF;
   }
-  /* .phone_list>.change a:not(.ka){
+  .phone_list>.change a:not(.en){
     border-right:1px solid #FFF ;
-  } */
+  }
   .hide_show_header_pc {
     display: none;
   }

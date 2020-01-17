@@ -670,15 +670,16 @@ footer > p {
     line-height: 11px;
     padding: 0 17px;
     box-sizing: border-box;
+    color: #FFF;
   }
-  .phone_list > .change a:not(.ka) {
+  .phone_list > .change a:not(.en) {
     border-right: 1px solid #fff;
   }
   .hide_show_header_pc {
     display: none;
   }
   .default .headContent .headLogo {
-    right: -10px;
+    right: -15px;
   }
   .default .headContent .headTalk {
     left: -2.5px;
@@ -720,7 +721,8 @@ footer > p {
     font-size: 14px;
   }
   .headContent .headLogo {
-    right: -40px;
+    right: -45px;
+    bottom: 0;
   }
   .mebers .head{
     width: 290px;
@@ -958,6 +960,9 @@ footer > p {
 @media (max-width: 321px) {
   .service {
     width: 320px;
+  }
+  .headContent .headLogo{
+    right: -50px;
   }
   .issuers .issuersCon {
     width: 43%;

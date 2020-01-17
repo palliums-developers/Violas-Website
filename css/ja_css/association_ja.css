@@ -559,8 +559,9 @@ footer > p {
     line-height: 11px;
     padding: 0 17px;
     box-sizing: border-box;
+    color: #FFF;
   }
-  .phone_list > .change a:not(.ka) {
+  .phone_list > .change a:not(.en) {
     border-right: 1px solid #fff;
   }
   .hide_show_header_pc {
@@ -598,14 +599,14 @@ footer > p {
     height: 18px;
   }
   .headContent .headTalk {
-    bottom: 0.8rem;
+    bottom: 0.3rem;
     left: -50px;
   }
   .headContent .headTalk p {
-    width: 200px;
+    width: 220px;
     font-size: 12px;
-    margin-top: 10px;
-    line-height: 17px;
+    margin-top: 5px;
+    line-height: 15px;
   }
   .headContent .headTalk h4 {
     font-size: 14px;
@@ -613,11 +614,11 @@ footer > p {
     color: #fff;
   }
   .headContent .headLogo {
-    right: -2rem;
+    right: -2.5rem;
     bottom: 0;
   }
   .vision .head {
-    width: 375px;
+    width: 290px;
   }
   .vision .head .bg .img_left,
   .vision .head .bg .img_right {
@@ -627,7 +628,8 @@ footer > p {
   .vision .head p {
     font-size: 12px;
     left: 50%;
-    margin-left: -88px;
+    margin-left: -47px;
+    top: -1px;
   }
   .vision .headDescr {
     width: 150px;
@@ -640,16 +642,16 @@ footer > p {
   .vision .headDescr h3 {
     font-size: 12px;
     top: 2rem;
-    margin-left: -83px;
+    margin-left: -25px;
     white-space: nowrap;
   }
   .vision .headDescr p {
-    width: 300px;
+    width: 250px;
     font-size: 12px;
     top: 3.2rem;
     line-height: 20px;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -125px;
   }
   .forWorldDescr {
     width: auto;
@@ -756,27 +758,23 @@ footer > p {
   }
   footer > p {
     font-size: 8px;
-    /* margin: 20px 0; */
-    margin-bottom: 30px !important;
+    margin: 20px 0;
+    /* margin-bottom: 30px !important; */
   }
 }
 @media (max-width: 321px) {
-  .vision .head .bg .img_left,
-  .vision .head .bg .img_right {
-    width: 70px;
-    height: 14px;
-  }
-  .vision .head {
-    width: 320px;
-  }
   .vision .head p {
     font-size: 10px;
   }
+  .headContent .headLogo{
+    right: -3.8rem;
+  }
   .headContent .headTalk {
-    top: 5px;
+    top: -5px;
   }
   .headContent .headTalk p {
-    margin-top: 5px;
+    font-size: 10px;
+    line-height: 13px;
   }
   .forWorldDescr {
     justify-content: flex-start;

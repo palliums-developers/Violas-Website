@@ -471,6 +471,7 @@ footer > p {
     line-height: 11px;
     padding: 0 17px;
     box-sizing: border-box;
+    color: #FFF;
   }
   .phone_list > .change a:not(.ka) {
     border-right: 1px solid #fff;
@@ -647,5 +648,8 @@ footer > p {
   }
   .contents h1{
     white-space: nowrap;
+  }
+  footer > p {
+    margin-top: 5px;
   }
 }

@@ -921,10 +921,11 @@ footer > p {
     line-height: 11px;
     padding: 0 17px;
     box-sizing: border-box;
+    color: #FFF;
   }
-  /* .phone_list>.change a:not(.ka){
+  .phone_list>.change a:not(.ka){
     border-right:1px solid #FFF ;
-  } */
+  }
   .hide_show_header_pc {
     display: none;
   }
@@ -1297,8 +1298,8 @@ footer > p {
   }
   footer > p {
     font-size: 8px;
-    /* margin: 20px 0; */
-    margin-bottom: 30px !important;
+    margin: 20px 0;
+    /* margin-bottom: 30px !important; */
   }
 }
 @media (max-width: 415px) {

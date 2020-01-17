@@ -471,8 +471,9 @@ footer > p {
     line-height: 11px;
     padding: 0 17px;
     box-sizing: border-box;
+    color: #FFF;
   }
-  .phone_list > .change a:not(.ka) {
+  .phone_list > .change a:not(.en) {
     border-right: 1px solid #fff;
   }
   .hide_show_header_pc {
@@ -645,7 +646,13 @@ footer > p {
     padding:20px 5px;
     box-sizing: border-box;
   }
+  .headContent .headTalk p{
+    width: 190px;
+  }
   .contents h1{
     white-space: nowrap;
+  }
+  footer > p {
+    margin-top:5px;
   }
 }
