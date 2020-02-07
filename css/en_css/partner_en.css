@@ -768,13 +768,14 @@ footer > p {
   }
   .forWorldDescr .eachDescrs {
     width: 290px;
-    height: 510px;
+    height: 480px;
     background: url('../../img/矩形复制 77@2x.png') no-repeat;
     background-size: 100% 100%;
     border-radius: 20px;
     position: relative;
+    top:30px;
     z-index: 10;
-    padding: 60px 35px 10px 35px;
+    padding: 30px 35px 10px 35px;
     box-sizing: border-box;
     margin-top: 2px;
   }
