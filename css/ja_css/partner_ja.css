@@ -77,9 +77,9 @@ header {
   width: 100%;
   height: 100%;
 }
-.navList li:hover{
+/* .navList li:hover{
   color: #4A189F;
-}
+} */
 .navList li:hover i{
   display: block;
   width: 20px;
@@ -89,7 +89,7 @@ header {
   left: 0;
   top: 10px;
 }
-.navList li.active {
+/* .navList li.active {
   color: #4A189F;
 }
 .navList li i.activeI {
@@ -100,7 +100,7 @@ header {
   position: absolute;
   left: 0;
   top: 10px;
-}
+} */
 
 .descr {
   height: 100%;
@@ -683,15 +683,18 @@ footer > p {
     margin-top: 5px;
   }
   .headContent .headTalk p img {
-    width: 30px;
-    height: 39px;
+    width: 35px;
+    height: 44px;
   }
   .headContent .headTalk {
     left: -50px;
     bottom: 2.5rem;
   }
-  .headContent .headTalk p {
+  .headContent .headTalk p:nth-child(1){
     font-size: 14px;
+  }
+  .headContent .headTalk p:nth-child(2){
+    font-size: 15px;
   }
   .headContent .headLogo {
     right: -80px;
@@ -838,7 +841,7 @@ footer > p {
   .service .logo img {
     width: 102px;
     height: 87px;
-    top: -20px;
+    top: -35px;
   }
   .service h2 {
     width: 204px;
@@ -899,6 +902,13 @@ footer > p {
     margin-top: 11px;
     font-weight: 100;
   }
+  .issuers .issuersCon:nth-child(1) p{
+    margin-top: 20px;
+  }
+  .issuers .issuersCon:nth-child(3) p{
+    margin-top: 15px;
+
+  }
   .issuers .issuersCon:nth-child(1) > div img {
     width: 36px;
     height: 30px;
@@ -916,7 +926,7 @@ footer > p {
     height: 35px;
   }
   footer h2 {
-    margin: 20px 0 10px 30px;
+    margin: 28px 0 10px 30px;
     font-size: 10px;
   }
   footer > div {
@@ -932,7 +942,8 @@ footer > p {
   }
   footer > p {
     font-size: 8px;
-    margin: 20px 0;
+    margin-top: 10px;
+    /* margin: 20px 0; */
     /* margin-bottom: 30px !important; */
   }
 }
@@ -947,6 +958,12 @@ footer > p {
   .service p:nth-child(3){
     width: 290px;
   }
+  .headContent .headTalk p:nth-child(1){
+    font-size: 12px;
+  }
+  .headContent .headTalk p:nth-child(2){
+    font-size: 14px;
+  }
   .mebers .head .bg i, .publisher1 .head .bg i{
     margin-top: 8px;
   }
@@ -960,6 +977,10 @@ footer > p {
   }
   .publisher1 .head {
     width: 330px;
+  }
+  footer h2 {
+    margin: 20px 0 10px 30px;
+    font-size: 10px;
   }
   footer > p {
     margin-top: 5px !important;

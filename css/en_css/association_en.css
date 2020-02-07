@@ -79,15 +79,15 @@ header {
   width: 100%;
   height: 100%;
 }
-.navList li.active {
+/* .navList li.active {
   color: #4A189F;
-}
-.navList li:hover{
-  /* width: 10px; */
+} */
+/* .navList li:hover{
+  width: 10px;
   color: #4A189F;
-  /* border-bottom: 2px solid #4A189F; */
+  border-bottom: 2px solid #4A189F;
  
-}
+} */
 .navList li:hover i{
   display: block;
   width: 20px;
@@ -97,7 +97,7 @@ header {
   left: 0;
   top: 9px;
 }
-.navList li i.activeI {
+/* .navList li i.activeI {
   display: block;
   width: 20px;
   height: 2px;
@@ -105,7 +105,7 @@ header {
   position: absolute;
   left: 0;
   top: 8px;
-}
+} */
 .descr {
   height: 100%;
   display: flex;
@@ -647,7 +647,7 @@ footer > p {
   }
   .vision {
     width: 355px;
-    margin-top: -10px;
+    margin-top: -5px;
   }
   .vision .head p {
     font-size: 12px;
@@ -765,7 +765,7 @@ footer > p {
     top: 20px;
   }
   footer h2 {
-    margin: 20px 0 10px 30px;
+    margin: 28px 0 10px 30px;
     font-size: 10px;
   }
   footer > div {
@@ -781,7 +781,8 @@ footer > p {
   }
   footer > p {
     font-size: 8px;
-    margin: 20px 0;
+    margin-top: 10px;
+    /* margin: 20px 0; */
     /* margin-bottom: 30px !important; */
   }
 }
@@ -818,6 +819,10 @@ footer > p {
   .forWorldDescr {
     width: 320px;
     justify-content: flex-start;
+  }
+  footer h2 {
+    margin: 20px 0 10px 30px;
+    font-size: 10px;
   }
   footer > p {
     margin-top: 5px !important;

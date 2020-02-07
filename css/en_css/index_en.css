@@ -79,12 +79,12 @@ header {
   white-space: nowrap;
   position: relative;
 }
-.navList li:hover{
-  /* width: 10px; */
+/* .navList li:hover{
+  width: 10px;
   color: #4A189F;
-  /* border-bottom: 2px solid #4A189F; */
+  border-bottom: 2px solid #4A189F;
  
-}
+} */
 .navList li i{
   display: none;
 }
@@ -1040,11 +1040,11 @@ footer > p {
   }
   .default .headContent .headTalk p:nth-child(2) label {
     font-size: 10px;
-    margin-left: -25px;
+    margin-left: -32px;
     top: 10px;
   }
   .default .headContent .headTalk p:nth-child(2){
-    width: 80px;
+    width: 95px;
     height: 25px;
     /* border-radius: 20px; */
   }
@@ -1054,13 +1054,14 @@ footer > p {
     border-radius: 20px;
   }
   .default .headContent .headTalk{
-    bottom: 90px;
+    bottom: 100px;
   }
   section>div{
     width: 355px;
+    margin-top: -50px;
   }
   .logo img {
-    width: 70px;
+    width: 60px;
     height: 18px;
   }
   
@@ -1376,7 +1377,7 @@ footer > p {
   }
 
   footer h2 {
-    margin: 20px 0 10px 30px;
+    margin: 28px 0 10px 30px;
     font-size: 10px;
   }
   footer > div {
@@ -1392,7 +1393,8 @@ footer > p {
   }
   footer > p {
     font-size: 8px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    margin-top: 10px;
     /* margin-bottom: 30px !important; */
   }
 }
@@ -1441,6 +1443,10 @@ footer > p {
   }
   .association {
     margin-top: 50px;
+  }
+  footer h2 {
+    margin: 20px 0 10px 30px;
+    font-size: 10px;
   }
   footer > p {
     margin-top: 5px !important;
