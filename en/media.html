@@ -24,12 +24,12 @@
                                 <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
                             </div>
                             <ul class="navList">
-                                <li>Vision</li>
-                                <li>Association</li>
-                                <li>Partners</li>
-                                <li>Blockchain Explorer</li>
-                                <li class="active">Media</li class="active">
-                                <li>Developers</li>
+                                <li>Vision<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>Association<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>Partners<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>Blockchain Explorer<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li class="active">Media<i class="activeI"><img src="../img/矩形2@2x.png" alt=""></i class="activeI"></li class="active">
+                                <li>Developers<i><img src="../img/矩形2@2x.png" alt=""></i></li>
                             </ul>
                             <div class="descr">
                                 <span id="whitePaper">White Paper</span>
@@ -153,6 +153,7 @@
                             unable to because of these limitations. The hash algorithm used by Libra, SHA3-256, requires
                             OpenSSL 1.1.1 version
                             (TLSv1.3) and its support in Python 3.7.x is still in a nascent stage.</p>
+                    <div class="content content1">
                     </div>
                     <div class="content content1">
                         <h2><i><img src="../img/sq.png" /></i><label>Highlights</label></h2>
@@ -256,7 +257,7 @@
                             ease of use and ease of
                             integration of the Violas platform with existing third-party vendors. Please submit
                             suggestions on the following topics
-                            to violas.team@gmail.com</p>
+                            to violas.team@violas.io</p>
                         <ul>
                             <li> Creative integration with a messaging App without authorization from the messaging App
                                 vendor</li>
@@ -270,7 +271,7 @@
                         </ul>
                         <p>We are also actively soliciting white-label partners from the global community to integrate
                             Violas’ templates with
-                            existing third-party vendors. If interested, contact violas.team@gmail.com regarding
+                            existing third-party vendors. If interested, contact violas.team@violas.io regarding
                             the following topics.</p>
                         <ul>
                             <li> Local messaging app vendors to add Libra compatible stablecoins for their local
@@ -314,7 +315,7 @@
             </section>
             <footer>
                 <h2>Connect us</h2>
-                <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@gmail.com</label></div>
+                <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@violas.io</label></div>
                 <p>copyright@Violas</p>
             </footer>
         </div>
@@ -355,7 +356,7 @@
         window.location = "whitePaper.html";
     };
     wPaper.onclick = function () {
-        wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
+        wPaper.style.cssText += "background:#4A189F;color:#FFF;border:1px solid #4A189F";
         window.location = 'whitePaper.html';
     }
     let navlists = document.querySelectorAll('ul li');
@@ -363,17 +364,17 @@
     function nav(text) {
         for (var i = 0; i < text.length; i++) {
             text[i].onclick = function () {
-                if (this.innerHTML == 'Association') {
+                if (this.innerText == 'Association') {
                     window.location = 'association.html';
-                } else if (this.innerHTML == 'Partners') {
+                } else if (this.innerText == 'Partners') {
                     window.location = 'partner.html';
-                } else if (this.innerHTML == 'Developers') {
+                } else if (this.innerText == 'Developers') {
                     window.location = 'developers.html';
-                } else if (this.innerHTML == 'Media') {
+                } else if (this.innerText == 'Media') {
                     window.location = 'media.html';
-                } else if (this.innerHTML == 'Vision') {
+                } else if (this.innerText == 'Vision') {
                     window.location = 'vision.html';
-                } else if (this.innerHTML == "Blockchain Explorer") {
+                } else if (this.innerText == "Blockchain Explorer") {
                     window.location = 'https://testnet.violas.io';
                 }
                 for (var i = 0; i < text.length; i++) {
@@ -395,10 +396,13 @@
         if (topScroll > 0 && clientWidth >= 800) {
             bignav.style.position = "fixed";
             bignav.style.zIndex = "9999";
-            bignav.style.background = "#2c096c";
+            bignav.style.background = "#FFF";
+            bignav.style.boxShadow = '0 5px 5px #CCC'
+
         }
         else if (topScroll == 0 && clientWidth >= 800) {
             //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+            bignav.style.boxShadow = 'none'
             bignav.style.position = "static";
             bignav.style.zIndex = "9999";
             bignav.style.background = "0";

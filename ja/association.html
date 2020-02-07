@@ -24,12 +24,12 @@
                 <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
               </div>
               <ul class="navList">
-                <li>ビジョン</li>
-                <li class="active">アソシエーション</li>
-                <li>パートナー</li>
-                <li>ブロックチェーン エクスプローラ</li>
-                <li>メディア</li>
-                <li>開発者</li>
+                <li>ビジョン<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li class="active">アソシエーション<i class="activeI"><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li>パートナー<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li>ブロックチェーン エクスプローラ<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li>メディア<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li>開発者<i><img src="../img/矩形2@2x.png" alt=""></i></li>
               </ul>
               <div class="descr">
                 <span id="whitePaper">ホワイトペーパー</span>
@@ -99,14 +99,16 @@
         <div class="vision">
           <div class="head">
             <div class="bg">
-              <img class="img_left" src="../img/编组 26.png" />
+              <!-- <img class="img_left" src="../img/编组 26.png" /> -->
               <p>Violasの権利制定</p>
-              <img class="img_right" src="../img/编组 26复制 4.png" />
+              <i><img src="../img/下划线 3@2x.png" alt=""></i>
+
+              <!-- <img class="img_right" src="../img/编组 26复制 4.png" /> -->
             </div>
           </div>
           <div class="headDescr">
-            <div class="bg"><img src="../img/编组 32@3x.png" /></div>
-            <h3>両院制</h3>
+            <!-- <div class="bg"><img src="../img/编组 32@3x.png" /></div> -->
+            <!-- <h3>両院制</h3> -->
             <p>アメリカ議会の権利制定を参考に、参議院と衆議院の両院制を取り入れています。
             両者は分権均衡関係にあります。
             </p>
@@ -120,7 +122,7 @@
                 <p>Violasバリデーターノードは「Violas Senate（Violas上院）」のメンバーであると同時に、その代表者たちは「Violas State（Violas州）」の立法部門および「Violas House of
                 Representatives（Violas下院）」のメンバーも兼ねる。</p>
               </div>
-              <div class="logo3"><img src="../img/矩形复制 52@3x.png" /></div>
+              <!-- <div class="logo3"><img src="../img/矩形复制 52@3x.png" /></div> -->
             </div>
             <div class="eachDescr">
               <div class="logo1"><img src="../img/编组 16@2x.png" /></div>
@@ -129,7 +131,7 @@
                 <h3>Violasの代表者</h3><i><img src="../img/矩形复制 53@2x.png" /></i>
                 <p>Violasの代表者は「Violas State」内で利用可能なステーブルコインの発行者たちにより投票で選出される。「Violas State」内における代表者の割合は「Violas State」エコシステムの規模に比例する。</p>
               </div>
-              <div class="logo3"><img src="../img/矩形复制 51@3x.png" /></div>
+              <!-- <div class="logo3"><img src="../img/矩形复制 51@3x.png" /></div> -->
             </div>
           </div>
         </div>
@@ -162,7 +164,7 @@
       </section>
       <footer>
         <h2>お問い合わせ</h2>
-        <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@gmail.com</label></div>
+        <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@violas.io</label></div>
         <p>無断複写・転載を禁じます＠Violas</p>
       </footer>
     </div>
@@ -209,17 +211,17 @@
   function nav(text) {
       for (var i = 0; i < text.length; i++) {
         text[i].onclick = function () {
-          if (this.innerHTML == 'アソシエーション') {
+          if (this.innerText == 'アソシエーション') {
             window.location = 'association.html';
-          } else if (this.innerHTML == 'パートナー') {
+          } else if (this.innerText == 'パートナー') {
             window.location = 'partner.html';
-          } else if (this.innerHTML == '開発者') {
+          } else if (this.innerText == '開発者') {
             window.location = 'developers.html';
-          } else if (this.innerHTML == 'メディア') {
+          } else if (this.innerText == 'メディア') {
             window.location = 'media.html';
-          } else if (this.innerHTML == 'ビジョン') {
+          } else if (this.innerText == 'ビジョン') {
             window.location = 'vision.html';
-          } else if (this.innerHTML == "ブロックチェーン エクスプローラ") {
+          } else if (this.innerText == "ブロックチェーン エクスプローラ") {
             window.location = 'https://testnet.violas.io';
           }
           for (var i = 0; i < text.length; i++) {
@@ -233,7 +235,7 @@
   nav(phoneListA);
   let wPaper = document.getElementById('whitePaper')
   wPaper.onclick = function () {
-    wPaper.style.cssText = "background:#FFF;color:rgba(44, 9, 108, 1)";
+    wPaper.style.cssText = "background:#4A189F;color:#FFF;border:1px solid #4A189F";
     window.location = 'whitePaper.html';
   }
   window.onscroll = function () {
@@ -243,10 +245,14 @@
       bignav.style.position = 'fixed';
       bignav.style.top = '0';
       bignav.style.zIndex = '9999';
-      bignav.style.background = 'rgba(44, 9, 108, 1)';
+      bignav.style.background = '#FFF';
+      bignav.style.boxShadow = '0 5px 5px #CCC'
+
     } else {//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
       bignav.style.position = 'static';
       bignav.style.background = '0';
+      bignav.style.boxShadow = 'none'
+
     }
   }
 

@@ -24,8 +24,6 @@ header {
   /* height: 913rem; */
   display: flex;
   flex-direction: column;
-  background: url("../../img/编组 4@2x.png") no-repeat;
-  background-size: 100% 100%;
 }
 .header {
   width: 100%;
@@ -37,11 +35,10 @@ header {
 .default {
   /* width: 1600rem; */
   width: 100%;
-  background: rgba(44, 9, 108, 1);
   overflow-x: hidden;
 }
 .default header {
-  height: 9.13rem;
+  height: 10.56rem;
 }
 
 .header .head {
@@ -57,8 +54,8 @@ header {
 }
 .logo img {
   margin-bottom: 0.12rem;
-  width: 1.73rem;
-  height: 0.55rem;
+  width: 1.63rem;
+  height: 0.43rem;
 }
 .navList {
   display: flex;
@@ -71,11 +68,37 @@ header {
 .navList li {
   font-size: 0.16rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: #382F44;
   margin-left: 0.4rem;
   /* margin-top: 0.1rem; */
   cursor: pointer;
   white-space: nowrap;
+  position: relative;
+}
+.navList li i{
+  display: none;
+}
+.navList li i img{
+  width: 100%;
+  height: 100%;
+}
+.navList li.active {
+  color: #4A189F;
+}
+.navList li:hover{
+  /* width: 10px; */
+  color: #4A189F;
+  /* border-bottom: 2px solid #4A189F; */
+ 
+}
+.navList li:hover i{
+  display: block;
+  width: 20px;
+  height: 2px;
+  color: #4A189F;
+  position: absolute;
+  left: 0;
+  top: 10px;
 }
 .navList li:last-child {
   position: relative;
@@ -114,9 +137,6 @@ header {
 .navList li:last-child .select .bg img {
   width: 1.45rem;
   height: 1.16rem;
-}
-.navList li.active {
-  color: rgba(62, 209, 246, 1);
 }
 
 .descr {
@@ -163,10 +183,10 @@ header {
   margin: 0 auto;
 }
 .default .headContent .headLogo {
-  width: 11.44rem;
-  height: 9.13rem;
+  width: 11.82rem;
+  height: 10.56rem;
   position: absolute;
-  right: -1.9rem;
+  right: -3.8rem;
   bottom: 0;
   display: flex;
 }
@@ -177,7 +197,7 @@ header {
 .default .headContent .headTalk {
   position: absolute;
   left: 0;
-  bottom: 4rem;
+  bottom: 5.5rem;
   z-index: 99;
   display: flex;
   flex-direction: column;
@@ -196,72 +216,103 @@ header {
   font-size: 0.22rem;
   /* font-family: "Times New Roman"; */
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: #938E9A;
+
 }
-.default .headContent .headTalk p:nth-child(1) img {
+.default .headContent .headTalk p:nth-child(1) span{
+  font-size:0.72rem;
+  font-weight:600;
+  color:rgba(253,36,142,1);
+  margin-top: 0.1rem;
+
+}
+.default .headContent .headTalk p:nth-child(2){
   width: 2rem;
   height: 0.54rem;
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
+  position: relative;
+  margin-top: 0.4rem
 }
 /* .default .headContent .headTalk p:nth-child(2) {
   margin-top: 46rem;
 } */
 .default .headContent .headTalk p:nth-child(2) label {
-  font-size: 0.32rem;
+  font-size: 0.24rem;
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  margin-left: -0.75rem;
+  top: 0.15rem;
+  white-space: nowrap;
 }
 .default .headContent .headTalk p:nth-child(2) img {
-  width: 0.47rem;
-  height: 0.47rem;
-  margin-left: 0.2rem;
+  width: 1rem;
+  height: 0.58rem;
+  border-radius: 1rem;
+
 }
 section {
   width: 100%;
   height: auto;
+  background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(240,240,247,1) 74%,rgba(234,235,244,0) 100%);
+
+}
+section>div{
+  width: 12rem;
+  height: auto;
+  margin: 1rem auto;
+  background: #FFF;
+  margin-top: -4rem;
+}
+.vision{
+  padding-top:0.05rem;
+  box-sizing: border-box;
 }
 .vision .head {
   width: 8.5rem;
   height: 0.61rem;
-  margin: 1.4rem auto;
+  margin: 1rem auto;
   position: relative;
   display: flex;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 .vision .head .bg {
   /* width: 1200rem; */
   height: 0.61rem;
 }
-.vision .head .bg img {
+.vision .head .bg p{
+  color: #382F44;
+  white-space: nowrap;
+}
+.vision .head .bg i{
   position: absolute;
+  top: 0.5rem;
+  width: 0.73rem;
+  height: 0.04rem;
+  left: 50%;
+  margin-left: -0.45rem;
+  display: flex;
 }
-.vision .head .bg .img_left {
-  width: 3.31rem;
-  height: 0.48rem;
-  left: 0rem;
+.vision .head .bg img {
+  width: 100%;
+  height: 100%;
 }
-.vision .head .bg .img_right {
-  width: 3.31rem;
-  height: 0.48rem;
-  right: 0rem;
-}
+
 .vision .head p {
   position: absolute;
   left: 4.9rem;
   margin-left: -1.5rem;
   top: 0.05rem;
   font-size: 0.32rem;
-  color: rgba(248, 248, 248, 1);
-  font-weight: 400;
+  font-weight: 600;
 }
 .vision .headDescr {
   width: 8.4rem;
-  height: 4.96rem;
+  /* height: 4.96rem; */
   margin: 0 auto;
   display: flex;
-  position: relative;
-  justify-content: center;
 }
 .vision .headDescr .bg img {
   width: 4.96rem;
@@ -270,10 +321,7 @@ section {
 .vision .headDescr p {
   font-size: 0.3rem;
   font-weight: 100;
-  color: rgba(248, 248, 248, 0.8);
-  position: absolute;
-  /* left: 0; */
-  top: 1.5rem;
+  color: rgba(56, 47, 68, .79);
   text-align: center;
   line-height: 0.6rem;
 }
@@ -281,7 +329,7 @@ section {
   width: 7.47rem;
   /* height: 315rem; */
   display: flex;
-  margin: 1rem auto;
+  margin: 0 auto;
   position: relative;
 }
 .vision .headIntroduce .icon {
@@ -298,7 +346,7 @@ section {
   width: 7.47rem;
   font-size: 0.3rem;
   font-weight: 100;
-  color: rgba(206, 199, 219, 1);
+  color: rgba(56, 47, 68, .79);
   text-align: center;
   line-height: 0.84rem;
 }
@@ -310,7 +358,7 @@ section {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 2.4rem;
+  margin-top: 1rem;
 }
 .forWorld .head .bg {
   /* width: 11rem; */
@@ -320,33 +368,37 @@ section {
   /* width: 100%; */
   position: absolute;
 }
-.forWorld .head .bg .img_left {
-  width: 3.31rem;
-  height: 0.48rem;
-  left: -10px;
+.forWorld .head .bg i{
+  position: absolute;
+  top: 0.6rem;
+  width: 0.73rem;
+  height: 0.04rem;
+  left: 50%;
+  margin-left: -0.45rem;
 }
-.forWorld .head .bg .img_right {
-  width: 3.31rem;
-  height: 0.48rem;
-  right: -10px;
+.forWorld .head .bg img {
+  width: 100%;
+  height: 100%;
 }
+
 .forWorld .head p {
   position: absolute;
   left: 5rem;
   margin-left: -1.75rem;
   top: 0;
   font-size: 0.32rem;
-  color: rgba(248, 248, 248, 1);
-  font-weight: 400;
+  color: #382F44;
+  font-weight: 600;
 }
 .forWorld > p {
   width: 11rem;
   font-size: 0.25rem;
   font-weight: 100;
-  color: rgba(206, 199, 219, 1);
+  color: rgba(56, 47, 68, .79);
   line-height: 0.63rem;
   text-align: center;
   margin: 1.2rem auto;
+  margin-top:0.5rem;
 }
 .forWorldDescr {
   display: block;
@@ -383,11 +435,8 @@ section {
 .forWorldDescr .eachDescrs {
   width: 3.7rem;
   height: 5.93rem;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    RGBA(158, 146, 250, 1) 100%
-  );
+  background:url('../../img/矩形复制\ 64@2x.png') no-repeat;
+  background-size: 100% 100%;
   border-radius: 0.2rem;
   position: relative;
   z-index: 10;
@@ -395,9 +444,9 @@ section {
   box-sizing: border-box;
 }
 .forWorldDescr .eachDescrs h3 {
-  font-size: 0.32rem;
+  font-size: 0.3rem;
   font-weight: 400;
-  color: rgba(44, 9, 108, 1);
+  color: rgba(56, 47, 68, 1);
   line-height: 0.45rem;
 }
 .forWorldDescr .eachDescrs i {
@@ -408,9 +457,9 @@ section {
   height: 0.04rem;
 }
 .forWorldDescr .eachDescrs p {
-  font-size: 0.25rem;
+  font-size: 0.23rem;
   font-weight: 100;
-  color: rgba(44, 9, 108, 1);
+  color: rgba(114, 107, 121, 1);
   margin-top: 0.2rem;
   line-height: 0.48rem;
 }
@@ -423,11 +472,11 @@ section {
 
 .forWorldDescr > div:nth-child(1) .eachDescr .logo1 {
   left: 0.4rem;
-  top: -1.25rem;
+  top: -1.45rem;
 }
 .forWorldDescr > div:nth-child(1) .eachDescr .logo2 {
   left: 1.1rem;
-  top: -1.05rem;
+  top: -1rem;
   z-index: 11;
 }
 .forWorldDescr > div:nth-child(2) .eachDescr .logo1 {
@@ -436,7 +485,7 @@ section {
 }
 .forWorldDescr > div:nth-child(2) .eachDescr .logo2 {
   left: 1.1rem;
-  top: -1.05rem;
+  top: -1rem;
   z-index: 11;
 }
 .forWorldDescr .eachDescr .logo3 {
@@ -461,22 +510,11 @@ section {
   width: 2.36rem;
   height: 1.94rem;
 }
-.forWorldDescr > div:nth-child(1) .eachDescr:nth-child(1) .logo1 img {
-  width: 2.33rem;
-  height: 1.78rem;
-}
-.forWorldDescr > div:nth-child(1) .eachDescr:nth-child(2) .logo1 img {
-  width: 2.37rem;
-  height: 1.99rem;
-}
-.forWorldDescr > div:nth-child(1) .eachDescr:nth-child(3) .logo1 img {
-  width: 2.51rem;
-  height: 1.99rem;
-}
+
 .forWorldDescr .eachDescr:nth-child(4) .logo1 {
   top: -1.5rem;
 }
-.forWorldDescr > div:nth-child(2) .eachDescr .logo1 img {
+.forWorldDescr > div .eachDescr .logo1 img {
   width: 2.51rem;
   height: 2.25rem;
 }
@@ -484,7 +522,7 @@ section {
   width: 12rem;
   /* height: 716rem; */
   position: relative;
-  margin: 2rem auto;
+  margin: 0 auto;
   /* margin-top: 100rem;s */
   /* overflow: hidden; */
 }
@@ -501,30 +539,30 @@ section {
   display: flex;
 }
 .whitePaper .content .hLogo {
-  margin-left: -2%;
+  margin-left: -3.7rem;
   position: relative;
   z-index: 9;
 }
 .whitePaper .content .hLogo img {
-  width: 6.35rem;
-  height: 6.35rem;
+  width: 10.91rem;
+  height: 12.85rem;
 }
 .whitePaper .content .con {
-  margin-top: 2rem;
-  margin-left: 1.2rem;
+  margin-top: 4.5rem;
+  margin-left: 0.7rem;
   position: relative;
   z-index: 99;
 }
 .whitePaper .content .con h3 {
-  font-size: 0.32rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
+  font-size: 0.38rem;
+  font-weight: 600;
+  color: rgba(91, 78, 97, 1);
   white-space: nowrap;
 }
 .whitePaper .content .con p {
-  font-size: 0.22rem;
+  font-size: 0.24rem;
   font-weight: 400;
-  color: rgba(248, 248, 248, 1);
+  color: rgba(91, 78, 97, 1);
   display: flex;
   margin-top: 0.8rem;
 }
@@ -551,16 +589,7 @@ section {
   /* width: 100%; */
   position: absolute;
 }
-.deepIntroduce .head .bg .img_left {
-  width: 3.31rem;
-  height: 0.48rem;
-  left: 0rem;
-}
-.deepIntroduce .head .bg .img_right {
-  width: 3.31rem;
-  height: 0.48rem;
-  right: 0rem;
-}
+
 .deepIntroduce .head p {
   position: absolute;
   left: 4.4rem;
@@ -621,8 +650,8 @@ section {
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
   line-height: 0.32rem;
-  margin-top: 0.4rem;
-  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
   white-space: nowrap;
   /* margin-bottom: 80rem; */
 }
@@ -699,8 +728,8 @@ section {
 }
 
 .deepIntroduce > .association .content .hLogo img {
-  width: 6.54rem;
-  height: 6.67rem;
+  width: 10.38rem;
+  height: 12.31rem;
 }
 .deepIntroduce > .whitePaper .content .hLogo {
   margin-top: -1rem;
@@ -716,27 +745,29 @@ section {
   margin-top: 2rem;
   position: relative;
   z-index: 99;
+  display: flex;
+  flex-direction: column;
 }
 .deepIntroduce > .association .content .con h3 {
-  font-size: 0.32rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
+  font-size: 0.38rem;
+  font-weight: 600;
+  color: rgba(91, 78, 97, 1);
   white-space: nowrap;
 }
 .deepIntroduce > .association .content .con p {
-  font-size: 0.22rem;
+  font-size: 0.24rem;
   font-weight: 400;
-  color: rgba(248, 248, 248, 1);
+  color: rgba(91, 78, 97, 1);
   display: flex;
-  margin-top: 0.8rem;
+  margin-top: 0.5rem;
   white-space: nowrap;
 }
 .deepIntroduce > .association .content .con span {
   width: 5rem;
-  font-size: 0.22rem;
+  font-size: 0.24rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  margin-top: 0.3rem;
+  color: rgba(91, 78, 97, 1);
+  margin-top: 0.5rem;
   display: inline-block;
   /* white-space: nowrap; */
 }
@@ -857,6 +888,10 @@ footer > p {
   .hide_show_header_mob {
     display: flex;
   }
+  .logo img {
+    width: 90px;
+    height: 25px;
+  }
   #dw-p1 {
     height: 100%;
   }
@@ -875,11 +910,6 @@ footer > p {
   .hide_show_header_mob .bmd-layout-header .phone_head button i img {
     width: 0.6rem;
     height: 0.6rem;
-  }
-  .logo img {
-    width: 2.1rem;
-    height: 0.68rem;
-    z-index: 9999;
   }
   .phone_list {
     height: 100%;
@@ -934,7 +964,7 @@ footer > p {
   }
   .default .headContent .headTalk {
     left: -2.5rem;
-    bottom: 3rem;
+    bottom: 5.5rem;
   }
   .bmd-layout-drawer .home {
     width: 14px;
@@ -959,31 +989,45 @@ footer > p {
   .default .headContent .headTalk p:nth-child(1) label {
     font-size: 10px;
   }
+  .default .headContent .headTalk p:nth-child(1) span{
+    font-size: 24px;
+
+  }
   .default .headContent .headTalk p:nth-child(1) img {
     width: 77px;
     height: 19px;
   }
+  .default .headContent .headTalk p:nth-child(2){
+    margin-top: 10px;
+  }
   .default .headContent .headTalk p:nth-child(2) label {
     font-size: 10px;
+    margin-left: -5px;
+    top: 0;
   }
   .default .headContent .headTalk p:nth-child(2) img {
-    width: 14px;
-    height: 14px;
+    width: 55px;
+    height: 25px;
+    border-radius: 20px;
   }
-  .default header {
-    height: 200px;
+  .default .headContent .headTalk{
+    bottom: 90px;
+  }
+  section>div{
+    width: 355px;
+    margin-top: -10px;
   }
   .logo img {
-    width: 60px;
+    width: 70px;
     height: 18px;
   }
   .vision .head {
     width: 285px;
   }
-  .vision .head .bg .img_left,
-  .vision .head .bg .img_right {
-    width: 100px;
-    height: 15px;
+  .vision .head .bg i{
+    width: 20px;
+    height: 2px;
+    top: 17px;
   }
   .vision .head p {
     font-size: 14px;
@@ -991,20 +1035,18 @@ footer > p {
     margin-left: -35px;
     top: -0.06rem;
   }
-  .vision .headDescr {
-    width: 148px;
-    height: 148px;
+  .vision .headIntroduce{
+    width: 150px;
   }
-  .vision .headDescr .bg img {
-    width: 148px;
-    height: 148px;
+  .vision .headIntroduce p{
+    width: 150px;
+    line-height: 20px;
   }
   .vision .headDescr p {
     width: 300px;
     font-size: 12px;
-    position: absolute;
-    top: 45px;
     line-height: 20px;
+    margin-top: 3px;
   }
   .vision .headIntroduce .icon {
     top: -1rem;
@@ -1024,10 +1066,11 @@ footer > p {
   .forWorld .head {
     width: 370px;
   }
-  .forWorld .head .bg .img_left,
-  .forWorld .head .bg .img_right {
-    width: 100px;
-    height: 14px;
+  .forWorld .head .bg i{
+    width: 20px;
+    height: 2px;
+    /* top: 0; */
+    margin-top: 5px;
   }
   .forWorld .head p {
     left: 50%;
@@ -1036,7 +1079,7 @@ footer > p {
     font-size: 14px;
   }
   .forWorld > p {
-    width: 344px;
+    width: 310px;
     font-size: 12px;
     line-height: 22px;
   }
@@ -1063,11 +1106,8 @@ footer > p {
   .forWorldDescr1 .eachDescrs {
     width: 191px;
     height: 228px;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      RGBA(158, 146, 250, 1) 100%
-    );
+    background: url('../../img/矩形复制\ 64@2x.png') no-repeat;
+    background-size: 100% 100%;
     border-radius: 20px;
     position: relative;
     z-index: 10;
@@ -1077,6 +1117,7 @@ footer > p {
   .forWorldDescr1 .eachDescrs h3 {
     font-size: 14px;
     line-height: 16px;
+    color: rgba(56, 47, 68, 1);
   }
   .forWorldDescr1 .eachDescrs i {
     display: flex;
@@ -1090,6 +1131,7 @@ footer > p {
     line-height: 22px;
     margin-top: 10px;
     font-weight: 100;
+    color: rgba(56, 47, 68, 1);
   }
   .forWorldDescr1 .eachDescr .logo1,
   .forWorldDescr1 .eachDescr .logo2 {
@@ -1105,7 +1147,7 @@ footer > p {
   .forWorldDescr1 .eachDescr .logo2 {
     left: 50%;
     margin-left: -30px;
-    top: 18px;
+    top: 19px;
     z-index: 11;
   }
 
@@ -1120,7 +1162,7 @@ footer > p {
 
   .forWorldDescr1 .eachDescr:nth-child(1) .logo1 img {
     width: 70px;
-    height: 54px;
+    height: 60px;
   }
   .whitePaper .bg {
     width: 264px;
@@ -1131,12 +1173,13 @@ footer > p {
     margin-left: 17%;
   }
   .whitePaper .content .hLogo img {
-    width: 197px;
-    height: 197px;
+    width: 207px;
+    height: 227px;
   }
   .whitePaper .content .hLogo {
     margin-left: -100px;
     margin-top: -20px;
+    left: -20px;
   }
   .whitePaper .content .con {
     margin-top: 60px;
@@ -1201,8 +1244,8 @@ footer > p {
     margin-top: -40px;
   }
   .deepIntroduce > .association .content .hLogo img {
-    width: 198px;
-    height: 202px;
+    width: 205px;
+    height: 212px;
   }
   .deepIntroduce > .whitePaper .content .hLogo {
     margin-top: -50px;
@@ -1236,15 +1279,10 @@ footer > p {
   }
   .deepIntroduce > .content1 .deepDescr1 {
     width: 330px;
-    height: 518px;
+    height: 478px;
     padding: 0 10px;
     box-sizing: border-box;
     margin-left: 10px;
-    background: linear-gradient(
-      210deg,
-      rgba(75, 25, 159, 0.31) 0%,
-      rgba(216, 89, 232, 1) 100%
-    );
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -1271,6 +1309,7 @@ footer > p {
     font-size: 12px;
     color: rgba(228, 213, 238, 1);
     line-height: 20px;
+    font-weight: 100;
   }
 
   .deepIntroduce > .content1 .deepDescr1 p {
@@ -1278,13 +1317,9 @@ footer > p {
     color: rgba(228, 213, 238, 1);
     line-height: 20px;
   }
-  .vision .headIntroduce {
-    width: 150px;
-    /* margin: 0 auto;
-    justify-content: center; */
-  }
+
   footer h2 {
-    margin: 20px 0 10px 25px;
+    margin: 20px 0 10px 30px;
     font-size: 10px;
   }
   footer > div {
@@ -1300,15 +1335,15 @@ footer > p {
   }
   footer > p {
     font-size: 8px;
-    /* margin: 20px 0; */
-    margin-bottom: 30px !important;
+    margin: 20px 0;
+    /* margin-bottom: 30px !important; */
   }
 }
-@media (max-width: 415px) {
+/* @media (max-width: 415px) {
   .forWorldDescr1 {
     width: 410px;
   }
-}
+} */
 @media (max-width: 376px) {
   .whitePaper .content {
     margin-left: 10%;
@@ -1317,23 +1352,18 @@ footer > p {
     margin-left: -80px;
     margin-top: -30px;
   }
-  .whitePaper .content .con {
-    margin-top: 55px;
-    margin-left: 0;
-  }
-  .deepIntroduce > .association .content .con {
-    margin-left: -30px;
-    margin-top: 50px;
-  }
-  .deepIntroduce > .association .content .hLogo {
-    margin-left: -20px;
-    margin-top: -40px;
-  }
+
 }
 @media (max-width: 321px) {
-  .vision .headIntroduce {
-    width: 170px;
+  section>div {
+    width: 310px;
   }
+  .default .headContent .headTalk{
+    bottom:80px;
+  }
+  /* .vision .headIntroduce {
+    width: 170px;
+  } */
   .vision .headIntroduce .icon {
     left: -10px;
   }
@@ -1344,9 +1374,6 @@ footer > p {
   .forWorld .head .bg .img_right {
     width: 75px;
   }
-  .forWorld > p {
-    width: 320px;
-  }
   .whitePaper .bg {
     right: -115px;
   }
@@ -1354,7 +1381,7 @@ footer > p {
     margin-left: -100px;
   }
   .whitePaper .content .con {
-    margin-left: -20px;
+    /* margin-left: -20px; */
   }
   .deepIntroduce > .content1 .deepDescr1 {
     width: 310px;

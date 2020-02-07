@@ -24,12 +24,12 @@
                                 <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
                             </div>
                             <ul class="navList">
-                                <li class="active">ビジョン</li>
-                                <li>アソシエーション</li>
-                                <li>パートナー</li>
-                                <li>ブロックチェーン エクスプローラ</li>
-                                <li>メディア</li>
-                                <li>開発者</li>
+                                <li class="active">ビジョン<i class="activeI"><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>アソシエーション<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>パートナー<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>ブロックチェーン エクスプローラ<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>メディア<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>開発者<i><img src="../img/矩形2@2x.png" alt=""></i></li>
                             </ul>
                             <div class="descr">
                                 <span id="whitePaper">ホワイトペーパー</span>
@@ -108,7 +108,7 @@
             </section>
             <footer>
                 <h2>お問い合わせ</h2>
-                <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@gmail.com</label></div>
+                <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@violas.io</label></div>
                 <p>無断複写・転載を禁じます＠Violas</p>
             </footer>
         </div>
@@ -157,17 +157,17 @@
     function nav(text) {
             for (var i = 0; i < text.length; i++) {
                 text[i].onclick = function () {
-                    if (this.innerHTML == 'アソシエーション') {
+                    if (this.innerText == 'アソシエーション') {
                         window.location = 'association.html';
-                    } else if (this.innerHTML == 'パートナー') {
+                    } else if (this.innerText == 'パートナー') {
                         window.location = 'partner.html';
-                    } else if (this.innerHTML == '開発者') {
+                    } else if (this.innerText == '開発者') {
                         window.location = 'developers.html';
-                    } else if (this.innerHTML == 'メディア') {
+                    } else if (this.innerText == 'メディア') {
                         window.location = 'media.html';
-                    } else if (this.innerHTML == 'ビジョン') {
+                    } else if (this.innerText == 'ビジョン') {
                         window.location = 'vision.html';
-                    } else if (this.innerHTML == "ブロックチェーン エクスプローラ") {
+                    } else if (this.innerText == "ブロックチェーン エクスプローラ") {
                         window.location = 'https://testnet.violas.io';
                     }
                     for (var i = 0; i < text.length; i++) {
@@ -189,10 +189,13 @@
         if (topScroll > 0 && clientWidth >= 800) {
             bignav.style.position = "fixed";
             bignav.style.zIndex = "9999";
-            bignav.style.background = "#2c096c";
+            bignav.style.background = "#FFF";
+            bignav.style.boxShadow = '0 5px 5px #CCC'
+
         }
         else if (topScroll == 0 && clientWidth >= 800) {
             //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+            bignav.style.boxShadow = 'none'
             bignav.style.position = "static";
             bignav.style.zIndex = "9999";
             bignav.style.background = "0";

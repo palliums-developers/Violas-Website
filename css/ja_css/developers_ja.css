@@ -35,7 +35,6 @@ header {
 .developers {
   /* width: 1600rem; */
   width: 100%;
-  background: rgba(44, 9, 108, 1);
   overflow-x: hidden;
 }
 
@@ -52,8 +51,8 @@ header {
 }
 .logo img {
   margin-bottom: 0.12rem;
-  width: 1.73rem;
-  height: 0.55rem;
+  width: 1.63rem;
+  height: 0.43rem;
 }
 .navList {
   display: flex;
@@ -66,11 +65,43 @@ header {
 .navList li {
   font-size: 0.16rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: #382F44;
   margin-left: 0.4rem;
   /* margin-top: 0.1rem; */
   cursor: pointer;
   white-space: nowrap;
+  position: relative;
+}
+.navList li i{
+  display: none;
+}
+.navList li i img{
+  width: 100%;
+  height: 100%;
+}
+.navList li:hover{
+  color: #4A189F;
+}
+.navList li:hover i{
+  display: block;
+  width: 20px;
+  height: 2px;
+  color: #4A189F;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.navList li.active {
+  color: #4A189F;
+}
+.navList li i.activeI {
+  display: block;
+  width: 20px;
+  height: 2px;
+  color: #4A189F;
+  position: absolute;
+  left: 0;
+  top: 10px;
 }
 .navList li:last-child {
   position: relative;
@@ -110,9 +141,6 @@ header {
   width: 1.45rem;
   height: 1.16rem;
 }
-.navList li.active {
-  color: rgba(62, 209, 246, 1);
-}
 
 .descr {
   height: 100%;
@@ -124,7 +152,7 @@ header {
   top: 8rem; */
 }
 .descr a {
-  color: #fff;
+  color: #382F44;
   margin-left: 0.2rem;
   cursor: pointer;
   /* position: relative;
@@ -132,7 +160,7 @@ header {
   font-size: 0.14rem;
 }
 .descr span {
-  color: #fff;
+  color: #382F44;
   margin-right: 0.2rem;
   cursor: pointer;
 }
@@ -140,7 +168,7 @@ header {
   /* width: 0.92rem; */
   /* height: 0.24rem; */
   display: inline-block;
-  border: 1px solid #fff;
+  border: 1px solid #382F44;
   border-radius: 3rem;
   line-height: 0.25rem;
   text-align: center;
@@ -173,15 +201,17 @@ section {
 .vision .head .bg img {
   position: absolute;
 }
-.vision .head .bg .img_left {
-  width: 3.31rem;
-  height: 0.48rem;
-  left: 0rem;
+.vision .head .bg i{
+  position: absolute;
+  top: 0.5rem;
+  width: 0.73rem;
+  height: 0.04rem;
+  left: 50%;
+  margin-left: -0.45rem;
 }
-.vision .head .bg .img_right {
-  width: 3.31rem;
-  height: 0.48rem;
-  right: 0rem;
+.vision .head .bg img {
+  width: 100%;
+  height: 100%;
 }
 .vision .head p {
   position: absolute;
@@ -189,7 +219,7 @@ section {
   margin-left: -1.5rem;
   top: 0.05rem;
   font-size: 0.32rem;
-  color: rgba(248, 248, 248, 1);
+  color: rgba(56, 47, 68, .79);
   font-weight: 400;
 }
 .vision1 .head p {
@@ -215,11 +245,25 @@ section {
   font-size: 0.3rem;
   font-weight: 400;
   margin-top: 0.1rem;
-  color: #fff;
+  color: rgba(56, 47, 68, .79);
   margin-left: 7.8rem;
+  display: flex;
+  align-items: center;
+}
+.vision2Content a i{
+  width: 0.2rem;
+  height: 0.25rem;
+  display: flex;
+  margin-right:0.15rem;
+  background: url('../../img/xiazai 2@2x.png') no-repeat;
+  background-size: 100% 100%;
 }
 .vision2Content a:hover{
   color: #20BBBA;
+}
+.vision2Content a:hover i{
+  background: url('../../img/xiazai备份@2x.png') no-repeat;
+  background-size: 100% 100%;
 }
 .vision2Content a img{
   height: 0.3rem;
@@ -259,10 +303,14 @@ section {
   display: flex;
   position: relative;
 }
+.downloadPay dl:nth-child(2) dt{
+  border: 1px solid rgba(129, 130, 134, 1);
+
+}
 .downloadPay dl p {
   font-size: 0.24rem;
   font-weight: 400;
-  color: #fff;
+  color: rgba(129, 130, 134, 1);
   position: absolute;
   top: 50%;
   margin-top: -0.2rem;
@@ -275,30 +323,20 @@ section {
   height: 100%;
 }
 .downloadPay dl dd {
+  width: 2.21rem;
+  height: 0.55rem;
   display: flex;
   align-items: center;
   margin-top: 0.3rem;
 }
-.downloadPay dl dd i {
-  width: 0.42rem;
-  height: 0.5rem;
-  display: flex;
-}
-.downloadPay dl dd i:nth-child(2) {
-  width: 0.42rem;
-  height: 0.46rem;
-}
-.downloadPay dl dd i img {
+
+.downloadPay dl dd img {
   width: 100%;
   height: 100%;
+  border-radius: 0.28rem;
+
 }
-.downloadPay dl dd span {
-  font-size: 0.24rem;
-  font-weight: 400;
-  color: #fff;
-  margin-left: 15px;
-  white-space: nowrap;
-}
+
 footer {
   width: 100%;
   height: 4.64rem;
@@ -409,6 +447,14 @@ footer > p {
   .hide_show_header_mob {
     display: flex;
   }
+  .logo img {
+    width: 90px;
+    height: 25px;
+  }
+  .vision .head .bg i{
+    width: 30px;
+    height: 2px;
+  }
   #dw-p1 {
     height: 100%;
   }
@@ -427,11 +473,6 @@ footer > p {
   .hide_show_header_mob .bmd-layout-header .phone_head button i img {
     width: 0.6rem;
     height: 0.6rem;
-  }
-  .logo img {
-    width: 2.1rem;
-    height: 0.68rem;
-    z-index: 9999;
   }
   .phone_list {
     height: 100%;
@@ -509,6 +550,10 @@ footer > p {
 
 }
 @media (max-width: 750px) {
+  .vision .head .bg i{
+    width: 20px;
+    margin-top: 8px;
+  }
   .vision .head {
     width: 315px;
   }
@@ -569,21 +614,26 @@ footer > p {
   .downloadPay dl dd {
     margin-top: 14px;
   }
+  .downloadPay dl dd{
+    width: 100px;
+    height: 25px;
+    border-radius: 40px;
+  }
+  .downloadPay dl dd img{
+    border-radius: 40px;
+  }
   .downloadPay dl dd i {
     width: 22px;
     height: 27px;
   }
-  .downloadPay dl dd i img{
-    width: 22px;
-    height: 27px;
-  }
+
   .downloadPay dl dd span {
     font-size: 14px;
     margin-left: 10px;
     white-space: pre-wrap;
   }
   .logo img {
-    width: 60px;
+    width: 70px;
     height: 18px;
   }
   .vision2Content .code {
@@ -592,13 +642,18 @@ footer > p {
   }
   .vision2Content a{
     font-size: 14px;
+    margin-top: 10px;
   }
   .vision2Content a img{
     width: 11px;
     height: 14px;
   }
+  .vision2Content a i{
+    width: 10px;
+    height: 15px;
+  }
   footer h2 {
-    margin: 20px 0 10px 25px;
+    margin: 20px 0 10px 30px;
     font-size: 10px;
   }
   footer > div {
@@ -633,11 +688,8 @@ footer > p {
   .downloadPay dl {
     margin-left: 18px;
   }
-  /* .vision2Content .code{
-      width: 310px;
-    } */
     .vision2Content a{
-      margin-left: 180px;
+      margin-left: 120px;
     }
   footer > p {
     margin-top: 5px !important;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/en_css/media_en.css">
+    <link rel="stylesheet" href="../css/ja_css/media_ja.css">
     <link rel="stylesheet" href="../css/bootstrap-material-design.min.css">
     <link rel="icon" href="../img/hLogo.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="../img/hLogo.ico" type="image/x-icon" />
@@ -24,12 +24,12 @@
                                 <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
                             </div>
                             <ul class="navList">
-                                <li>ビジョン</li>
-                                <li>アソシエーション</li>
-                                <li>パートナー</li>
-                                <li>ブロックチェーン エクスプローラ</li>
-                                <li class="active">メディア</li>
-                                <li>開発者</li>
+                                <li>ビジョン<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>アソシエーション<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>パートナー<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>ブロックチェーン エクスプローラ<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li class="active">メディア<i class="activeI"><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>開発者<i><img src="../img/矩形2@2x.png" alt=""></i></li>
                             </ul>
                             <div class="descr">
                                 <span id="whitePaper">ホワイトペーパー</span>
@@ -207,7 +207,7 @@
                             <li> ホワイトラベルViolasgovウォレット（サードパーティベンダー向け）</li>
                             <li> ホワイトラベルテンプレート（サードパーティベンダー向け）</li>
                         </ul>
-                        <p>Violasプラットフォームの使いやすさと、既存のサードパーティベンダーとの統合の容易さについて、Violasコミュニティからのフィードバックを熱烈に募集中。次のトピックに関するあなたの提案を、violas.team@gmail.comまで送信してください。</p>
+                        <p>Violasプラットフォームの使いやすさと、既存のサードパーティベンダーとの統合の容易さについて、Violasコミュニティからのフィードバックを熱烈に募集中。次のトピックに関するあなたの提案を、violas.team@violas.ioまで送信してください。</p>
                         <ul>
                             <li> メッセージングアプリのベンダーからの許可の必要性をなくす、メッセージングアプリとの創造的統合</li>
                             <li> シェアリングエコノミーアプリケーションを統合する簡易SDKまたはAPI</li>
@@ -216,7 +216,7 @@
                             <li> 現在のLibra互換ステーブルコインを直接的に統合する簡易SDKまたはAPI</li>
                             <li> www.coinbase.comのような交換所（集権的または分権的を問わず）を介して現在のLibra互換ステーブルコインを統合する簡易SDKまたはAPI</li>
                         </ul>
-                        <p>Violasのテンプレートを既存のサードパーティベンダーと統合するため、グローバルコミュニティからホワイトレーベルのパートナーを積極的に募集しています。必要に応じて、次のトピックについてviolas.team@gmail.comまでお問い合わせください。</p>
+                        <p>Violasのテンプレートを既存のサードパーティベンダーと統合するため、グローバルコミュニティからホワイトレーベルのパートナーを積極的に募集しています。必要に応じて、次のトピックについてviolas.team@violas.ioまでお問い合わせください。</p>
                         <ul>
                             <li> 各地域のメッセージングアプリのベンダーは、Libra互換ステーブルコインを自分たちの地域コミュニティに追加。</li>
                             <li> ライドシェアリング、フードデリバリー、アパートや持ち家のレンタル、自転車シェアリング、オフィスシェアリングなどのシェアリングエコノミーアプリケーションに、Libra互換定額支払いオプションを追加。</li>
@@ -241,7 +241,7 @@
             </section>
             <footer>
                 <h2>お問い合わせ</h2>
-                <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@gmail.com</label></div>
+                <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@violas.io</label></div>
                 <p>無断複写・転載を禁じます＠Violas</p>
             </footer>
         </div>
@@ -282,7 +282,7 @@
         window.location = "whitePaper.html";
     };
     wPaper.onclick = function () {
-        wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
+        wPaper.style.cssText += "background:#4A189F;color:#FFF;border:1px solid #4A189F";
         window.location = 'whitePaper.html';
     }
     let navlists = document.querySelectorAll('ul li');
@@ -290,17 +290,17 @@
     function nav(text) {
             for (var i = 0; i < text.length; i++) {
                 text[i].onclick = function () {
-                    if (this.innerHTML == 'アソシエーション') {
+                    if (this.innerText == 'アソシエーション') {
                         window.location = 'association.html';
-                    } else if (this.innerHTML == 'パートナー') {
+                    } else if (this.innerText == 'パートナー') {
                         window.location = 'partner.html';
-                    } else if (this.innerHTML == '開発者') {
+                    } else if (this.innerText == '開発者') {
                         window.location = 'developers.html';
-                    } else if (this.innerHTML == 'メディア') {
+                    } else if (this.innerText == 'メディア') {
                         window.location = 'media.html';
-                    } else if (this.innerHTML == 'ビジョン') {
+                    } else if (this.innerText == 'ビジョン') {
                         window.location = 'vision.html';
-                    } else if (this.innerHTML == "ブロックチェーン エクスプローラ") {
+                    } else if (this.innerText == "ブロックチェーン エクスプローラ") {
                         window.location = 'https://testnet.violas.io';
                     }
                     for (var i = 0; i < text.length; i++) {
@@ -322,10 +322,13 @@
         if (topScroll > 0 && clientWidth >= 800) {
             bignav.style.position = "fixed";
             bignav.style.zIndex = "9999";
-            bignav.style.background = "#2c096c";
+            bignav.style.background = "#FFF";
+            bignav.style.boxShadow = '0 5px 5px #CCC'
+
         }
         else if (topScroll == 0 && clientWidth >= 800) {
             //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+            bignav.style.boxShadow = 'none'
             bignav.style.position = "static";
             bignav.style.zIndex = "9999";
             bignav.style.background = "0";

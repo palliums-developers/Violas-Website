@@ -16,17 +16,16 @@
 
 .whitepaper {
   width: 100%;
-  background: rgba(44, 9, 108, 1);
+  /* background: rgba(44, 9, 108, 1); */
   overflow: hidden;
 }
 
 header {
   width: 100%;
-  height: 6.42rem;
+  height:8.42rem;
   display: flex;
   flex-direction: column;
-  background: url("../../img/编组 4@2x.png") no-repeat;
-  background-size: 100% 100%;
+
 }
 
 .header {
@@ -49,8 +48,8 @@ header {
 }
 .logo img {
   margin-bottom: 0.12rem;
-  width: 1.73rem;
-  height: 0.55rem;
+  width: 1.63rem;
+  height: 0.43rem;
 }
 
 .navList {
@@ -65,15 +64,45 @@ header {
 .navList li {
   font-size: 0.16rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: #382F44;
   /* margin-top: 0.1rem; */
   margin-left: 0.4rem;
   cursor: pointer;
   white-space: nowrap;
+  position: relative;
 }
 
+.navList li i{
+  display: none;
+}
+.navList li i img{
+  width: 100%;
+  height: 100%;
+}
+.navList li:hover{
+  color: #4A189F;
+
+}
+.navList li:hover i{
+  display: block;
+  width: 20px;
+  height: 2px;
+  color: #4A189F;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
 .navList li.active {
-  color: rgba(62, 209, 246, 1);
+  color: #4A189F;
+}
+.navList li i.activeI {
+  display: block;
+  width: 20px;
+  height: 2px;
+  color: #4A189F;
+  position: absolute;
+  left: 0;
+  top: 8px;
 }
 
 .onPageNav {
@@ -107,18 +136,18 @@ header {
 }
 
 .onPageNav a {
-  color: #717171;
+  color: #ADA6B0;
   font-size: 0.22rem;
 }
 
 .onPageNav a.active {
   font-size: 0.2rem;
   font-weight: 400;
-  color: #110b1b;
+  color: #382F44;
 }
 
 .onPageNav a:hover {
-  color:#4B199F;
+  color:#382F44;
   font-weight: 400;
   /* color: #110b1b; */
 }
@@ -191,7 +220,7 @@ header {
 }
 
 .descr span {
-  color: #fff;
+  color: #382F44;
   margin-right: 0.2rem;
   cursor: pointer;
 }
@@ -200,7 +229,7 @@ header {
   /* width: 100px;
   height: 31px; */
   display: inline-block;
-  border: 1px solid #fff;
+  border: 1px solid #382F44;
   border-radius: 3rem;
   line-height: 0.24rem;
   text-align: center;
@@ -210,7 +239,7 @@ header {
 }
 
 .descr a {
-  color: #fff;
+  color: #382F44;
   margin-left: 0.2rem;
   cursor: pointer;
   /* position: relative;
@@ -229,8 +258,8 @@ header {
 
 .headContent .headTalk {
   position: absolute;
-  left: 0.1rem;
-  bottom: 1rem;
+  left: 0;
+  bottom: 2.2rem;
 }
 
 .headContent .headTalk p img {
@@ -238,44 +267,47 @@ header {
   height: 0.85rem;
 }
 .headContent .headTalk h2 {
-  font-size: 0.24rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  font-size: 0.4rem;
+  font-weight: 500;
+  color: rgba(56, 47, 68, 1);
   line-height: 0.32rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
 }
 .headContent .headTalk p {
-  width: 7.5rem;
-  font-size: 0.14rem;
+  width: 7rem;
+  font-size: 0.17rem;
   font-weight: 400;
-  color: rgba(249, 249, 249, 1);
+  color: rgba(56, 47, 68, 1);
   line-height: 0.28rem;
   letter-spacing: 2px;
-  margin-bottom: 0.1rem;
+  /* margin-bottom: 0.1rem; */
 }
 
 .headContent .headLogo img {
-  width: 4.53rem;
-  height: 4.55rem;
+  width: 9.79rem;
+  height: 8.46rem;
 }
 
 .headContent .headLogo {
-  width: 4.53rem;
-  height: 4.55rem;
+  width: 9.79rem;
+  height: 8.46rem;
   position: absolute;
-  right: 0;
-  bottom: 0.2rem;
+  right: -3.7rem;
+  bottom: 0;
 }
 
 section {
   width: 100%;
+  background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(240,240,247,1) 74%,rgba(234,235,244,0) 100%);
 }
 
 .introduction {
   width: 12.7rem;
   height: 172rem;
   margin: 1.19rem auto;
+  margin-top: -1.5rem;
   position: relative;
+  background: #FFF;
 }
 
 .introduction > .bg img {
@@ -410,8 +442,7 @@ section {
   color: #110b1b;
   margin-top: 0.2rem;
   margin-bottom: 0.4rem;
-  border-bottom: 0.07rem solid;
-  border-block-color: #b147d3;
+  border-bottom: 0.07rem solid #b147d3;
   line-height: 0.9rem;
   white-space: nowrap;
   width: 0.23rem;
@@ -545,8 +576,8 @@ footer > p {
     height: 0.6rem;
   }
   .logo img {
-    width: 2.1rem;
-    height: 0.68rem;
+    width: 90px;
+    height: 25px;
   }
   .phone_list {
     height: 100%;
@@ -596,18 +627,21 @@ footer > p {
   .hide_show_header_pc {
     display: none;
   }
-  .default .headContent .headLogo {
-    right: -5rem;
-  }
+
   .headContent .headTalk {
     left: -2.5rem;
   }
   .headContent .headTalk p {
-    width: 500px;
+    width: 400px;
+    line-height: 15px;
     /* left:-2rem; */
   }
   .headContent .headLogo {
-    right: -2.5rem;
+    right: -3.5rem;
+    bottom: -0.5rem;
+  }
+  .introduction{
+    margin-top: -0.5rem;
   }
   .bmd-layout-drawer .close {
     width: 14px;
@@ -639,7 +673,7 @@ footer > p {
 }
 @media (max-width: 750px) {
   .logo img {
-    width: 60px;
+    width: 70px;
     height: 18px;
   }
   .bmd-layout-header {
@@ -738,7 +772,7 @@ footer > p {
     width: 90%;
     font-size: 12px;
     line-height: 15px;
-    font-weight: 400;
+    font-weight: 200;
     margin-bottom: 10px;
     letter-spacing: 1px;
   }
@@ -746,7 +780,7 @@ footer > p {
     display: none;
   }
   footer h2 {
-    margin: 20px 0 10px 25px;
+    margin: 20px 0 10px 30px;
     font-size: 10px;
   }
   footer > div {

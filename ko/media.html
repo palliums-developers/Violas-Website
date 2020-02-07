@@ -24,12 +24,12 @@
                                 <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
                             </div>
                             <ul class="navList">
-                                <li>비전</li>
-                                <li>협회</li>
-                                <li>파트너들</li>
-                                <li>블록체인 탐색기</li>
-                                <li class="active">미디어</li>
-                                <li>개발자</li>
+                                <li>비전<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>협회<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>파트너들<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li>블록체인 탐색기<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                                <li class="active">미디어<i class="activeI"><img src="../img/矩形2@2x.png" alt=""></i class="activeI"></li>
+                                <li>개발자<i><img src="../img/矩形2@2x.png" alt=""></i></li>
                             </ul>
                             <div class="descr">
                                 <span id="whitePaper">백서</span>
@@ -209,7 +209,7 @@
                             <li> 제3자 공급자 화이트 라벨 템플레이트</li>
                         </ul>
                         <p>우리는 Violas 플랫폼과 기존 제3자 공급자들 간 통합 또는 사용이 쉬운지에 대한 피드백을 Violas 커뮤니티에 적극적으로 요청하고 있다. 아래 주제들에 대한 제안을
-                        violas.team@gmail.com 으로 보내주기 부탁 한다.</p>
+                        violas.team@violas.io 으로 보내주기 부탁 한다.</p>
                         <ul>
                             <li> 메세징 앱 공급자로부터 권한 부여 없이 메세징 앱과 창조적 통합</li>
                             <li> 공유 경제 앱들과 간단한 SDK 또는 API 통합</li>
@@ -219,7 +219,7 @@
                             <li> 중앙 집중이든 분산이든 www.coinbase.com 같은 거래소를 통해 현 Libra 호환 스테이블코인과 간단한 SDK 또는 API 통</li>
                         </ul>
                         <p>우리는 또한 Violas 템플레이트를 기존 제3자 공급자들과 통합하기 위해 글로벌 커뮤니티 화이트 라벨 파트너들을 적극적으로 초청하고 있다. 다음 주제들에 관심 있는
-                        파트너는violas.team@gmail.com 로 연락 부탁 한다.</p>
+                        파트너는violas.team@violas.io 로 연락 부탁 한다.</p>
                         <ul>
                             <li> Libra 호환 스테이블코인을 지역 커뮤니티에 추가할 지역 메세징 앱 공급자</li>
                             <li> Libra 호환 스테이블코인 결제 옵션을 추가할 자동차 타기 공유, 식품 배달, 아파트/주택 렌탈, 자전거 공유, 사무실 공유 등 공유 경제 앱</li>
@@ -245,7 +245,7 @@
             </section>
             <footer>
                 <h2>연락처</h2>
-                <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@gmail.com</label></div>
+                <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@violas.io</label></div>
                 <p>판권소유@Violas</p>
             </footer>
         </div>
@@ -286,7 +286,7 @@
         window.location = "whitePaper.html";
     };
     wPaper.onclick = function () {
-        wPaper.style.cssText += "background:#FFF;color:rgba(44, 9, 108, 1)";
+        wPaper.style.cssText += "background:#4A189F;color:#FFF;border:1px solid #4A189F";
         window.location = 'whitePaper.html';
     }
     let navlists = document.querySelectorAll('ul li');
@@ -294,17 +294,17 @@
     function nav(text) {
             for (var i = 0; i < text.length; i++) {
                 text[i].onclick = function () {
-                    if (this.innerHTML == '협회') {
+                    if (this.innerText == '협회') {
                         window.location = 'association.html';
-                    } else if (this.innerHTML == '파트너들') {
+                    } else if (this.innerText == '파트너들') {
                         window.location = 'partner.html';
-                    } else if (this.innerHTML == '개발자') {
+                    } else if (this.innerText == '개발자') {
                         window.location = 'developers.html';
-                    } else if (this.innerHTML == '미디어') {
+                    } else if (this.innerText == '미디어') {
                         window.location = 'media.html';
-                    } else if (this.innerHTML == '비전') {
+                    } else if (this.innerText == '비전') {
                         window.location = 'vision.html';
-                    } else if (this.innerHTML == "블록체인 탐색기") {
+                    } else if (this.innerText == "블록체인 탐색기") {
                         window.location = 'https://testnet.violas.io';
                     }
                     for (var i = 0; i < text.length; i++) {
@@ -326,10 +326,13 @@
         if (topScroll > 0 && clientWidth >= 800) {
             bignav.style.position = "fixed";
             bignav.style.zIndex = "9999";
-            bignav.style.background = "#2c096c";
+            bignav.style.background = "#FFF";
+            bignav.style.boxShadow = '0 5px 5px #CCC'
+
         }
         else if (topScroll == 0 && clientWidth >= 800) {
             //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+            bignav.style.boxShadow = 'none'
             bignav.style.position = "static";
             bignav.style.zIndex = "9999";
             bignav.style.background = "0";

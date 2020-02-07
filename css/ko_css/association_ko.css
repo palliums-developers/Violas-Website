@@ -15,7 +15,6 @@
 }
 .associations {
   width: 100%;
-  background: rgba(44, 9, 108, 1);
   overflow: hidden;
 }
 header {
@@ -23,8 +22,7 @@ header {
   /* height: 913rem; */
   display: flex;
   flex-direction: column;
-  background: url("../../img/编组 4@2x.png") no-repeat;
-  background-size: 100% 100%;
+
 }
 .header {
   width: 100%;
@@ -49,8 +47,8 @@ header {
 }
 .logo img {
   margin-bottom: 0.12rem;
-  width: 1.73rem;
-  height: 0.55rem;
+  width: 1.63rem;
+  height: 0.43rem;
 }
 
 .navList {
@@ -65,15 +63,44 @@ header {
 .navList li {
   font-size: 0.16rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: #382F44;
   /* margin-top: 0.1rem; */
   margin-left: 0.4rem;
   cursor: pointer;
   white-space: nowrap;
+  position: relative;
 }
 
+.navList li i{
+  display: none;
+}
+.navList li i img{
+  width: 100%;
+  height: 100%;
+}
+.navList li:hover{
+  color: #4A189F;
+}
+.navList li:hover i{
+  display: block;
+  width: 20px;
+  height: 2px;
+  color: #4A189F;
+  position: absolute;
+  left: 0;
+  top:10px;
+}
 .navList li.active {
-  color: rgba(62, 209, 246, 1);
+  color: #4A189F;
+}
+.navList li i.activeI {
+  display: block;
+  width: 20px;
+  height: 2px;
+  color: #4A189F;
+  position: absolute;
+  left: 0;
+  top: 10px;
 }
 
 .descr {
@@ -85,7 +112,7 @@ header {
 }
 
 .descr span {
-  color: #fff;
+  color: #382F44;
   margin-right: 0.2rem;
   cursor: pointer;
 }
@@ -94,7 +121,7 @@ header {
   /* width: 100rem;
   height: 31rem; */
   display: inline-block;
-  border: 1px solid #fff;
+  border: 1px solid #382F44;
   border-radius: 3rem;
   line-height: 0.24rem;
   text-align: center;
@@ -104,7 +131,7 @@ header {
 }
 
 .descr a {
-  color: #fff;
+  color: #382F44;
   margin-left: 0.2rem;
   cursor: pointer;
   /* position: relative;
@@ -112,7 +139,7 @@ header {
   font-size: 0.14rem;
 }
 header {
-  height: 7.32rem;
+  height: 8.32rem;
 }
 .headContent {
   width: 12rem;
@@ -127,12 +154,13 @@ header {
   margin-left:-30rem; */
   position: absolute;
   left: 0;
-  bottom: 2.2rem;
+  bottom: 2.9rem;
 }
 .headContent .headTalk h4 {
   font-size: 0.45rem;
-  font-weight: 400;
-  color: #fff;
+  font-weight: 500;
+  color: rgba(56, 47, 68, 1);
+
 }
 .headContent .headTalk p img {
   width: 4.05rem;
@@ -142,30 +170,40 @@ header {
   width: 6.81rem;
   /* height:204rem; */
   font-size: 0.3rem;
-  font-weight: 100;
-  color: rgba(249, 249, 249, 1);
+  font-weight: 300;
+  color: rgba(56, 47, 68, 1);
   line-height: 0.6rem;
   margin-top: 0.2rem;
 }
 .headContent .headLogo img {
-  width: 5.82rem;
-  height: 5.98rem;
+  width: 10.40rem;
+  height: 8.57rem;
 }
 .headContent .headLogo {
-  width: 5.82rem;
-  height: 5.98rem;
+  width: 10.40rem;
+  height: 8.57rem;
   position: absolute;
-  right: -0.3rem;
-  bottom: 0.2rem;
+  right: -3.7rem;
+  bottom: 0;
 }
 section {
   width: 100%;
   height: auto;
+  background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(240,240,247,1) 74%,rgba(234,235,244,0) 100%);
+
+}
+.vision{
+  width: 12rem;
+  background: #FFF;
+  margin: 0 auto;
+  margin-top: -2rem;
+  padding-top: 0.5rem;
+  box-sizing: border-box;
 }
 .vision .head {
-  width: 11.2rem;
+  /* width: 11.2rem; */
   height: 0.61rem;
-  margin: 1.3rem auto;
+  margin: 0.6rem auto;
   position: relative;
   display: flex;
   align-items: center;
@@ -174,63 +212,42 @@ section {
 .vision .head .bg {
   /* width: 1200rem; */
   height: 0.61rem;
-}
-.vision .head .bg img {
-  position: absolute;
-}
-.vision .head .bg .img_left {
-  width: 3.31rem;
-  height: 0.48rem;
-  left: 0rem;
-}
-.vision .head .bg .img_right {
-  width: 3.31rem;
-  height: 0.48rem;
-  right: 0rem;
-}
+  margin: 0 auto;
 
+}
+.vision .head .bg i{
+  position: absolute;
+  top: 0;
+  width: 0.73rem;
+  height: 0.04rem;
+  left: 50%;
+  margin-left: -0.45rem;
+}
 .vision .head .bg img {
   width: 100%;
   height: 100%;
 }
+
 .vision .head p {
-  position: absolute;
-  left: 50%;
-  margin-left: -2.1rem;
-  top: 0;
   font-size: 0.4rem;
-  color: rgba(248, 248, 248, 1);
-  font-weight: 400;
+  color: rgba(56, 47, 68, 1);
+  font-weight: 600;
 }
 .vision .headDescr {
   width: 7.07rem;
-  height: 4.96rem;
+  /* height: 4.96rem; */
   margin: 0 auto;
   display: flex;
-  position: relative;
-  justify-content: center;
 }
 .vision .headDescr .bg img {
   width: 4.96rem;
   height: 4.96rem;
 }
-.vision .headDescr h3 {
-  font-size: 0.53rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  position: absolute;
-  left: 50%;
-  margin-left: -0.9rem;
-  top: 1.4rem;
-  white-space: nowrap;
-}
+
 .vision .headDescr p {
   font-size: 0.3rem;
-  font-weight: 100;
-  color: rgba(248, 248, 248, 0.8);
-  position: absolute;
-  left: 0.2rem;
-  top: 2.3rem;
+  font-weight: 300;
+  color: rgba(56, 47, 68, 1);
   text-align: center;
   line-height: 0.64rem;
 }
@@ -242,28 +259,29 @@ section {
   justify-content: center;
 }
 .forWorldDescr .eachDescr {
-  width: 5.46rem;
+  width: 6.46rem;
   position: relative;
-  margin-left: 0.25rem;
+  /* margin-left: 0.25rem; */
+}
+.forWorldDescr .eachDescr:nth-child(2){
+  margin-left: -0.8rem;
 }
 .forWorldDescr .eachDescrs {
-  width: 5.46rem;
+  width: 6.46rem;
   height: 4.37rem;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    RGBA(158, 146, 250, 1) 100%
-  );
+  background:url('../../img/矩形复制 77@2x.png') no-repeat;
+  background-size: 100% 100%;
   border-radius: 0.2rem;
   position: relative;
   z-index: 10;
-  padding: 0.79rem 0.25rem 0 0.35rem;
+  padding: 0.79rem 0.8rem 0 0.8rem;
   box-sizing: border-box;
+  margin-top: -0.3rem;
 }
 .eachDescrs h3 {
   font-size: 0.3rem;
   font-weight: 400;
-  color: rgba(44, 9, 108, 1);
+  color: rgba(56, 47, 68, 1);
   line-height: 0.45rem;
 }
 .eachDescrs i {
@@ -275,8 +293,8 @@ section {
 }
 .eachDescrs p {
   font-size: 0.24rem;
-  font-weight: 100;
-  color: rgba(44, 9, 108, 1);
+  font-weight: 300;
+  color: rgba(114, 107, 121, 1);
   margin-top: 0.2rem;
   line-height: 0.48rem;
 }
@@ -292,13 +310,13 @@ section {
 }
 .forWorldDescr .eachDescr .logo2 {
   left: 50%;
-  margin-left: -13%;
+  margin-left: -16%;
   top: -1.05rem;
   z-index: 11;
 }
 .forWorldDescr .eachDescr .logo3 {
-  left: -0.15rem;
-  bottom: -0.1rem;
+  left: 0.35rem;
+  bottom: 0.3rem;
 }
 
 .forWorldDescr .eachDescr .logo1 img {
@@ -515,8 +533,8 @@ footer > p {
     height: 0.6rem;
   }
   .logo img {
-    width: 2.1rem;
-    height: 0.68rem;
+    width: 90px;
+    height: 25px;
   }
   .phone_list {
     height: 100%;
@@ -566,13 +584,14 @@ footer > p {
   .hide_show_header_pc {
     display: none;
   }
-  .default .headContent .headLogo {
-    right: -5px;
+  .headContent .headLogo {
+    right: -160px;
+    bottom: -20px;
   }
-  .default .headContent .headTalk {
+  /* .default .headContent .headTalk {
     left: -2.5px;
     bottom: 3px;
-  }
+  } */
   .bmd-layout-drawer .home {
     width: 14px;
     height: 14px;
@@ -594,48 +613,57 @@ footer > p {
 }
 @media (max-width: 750px) {
   .logo img {
-    width: 60px;
+    width: 70px;
     height: 18px;
   }
   .headContent .headTalk {
-    bottom: 0.3rem;
+    bottom: 0.8rem;
     left: -50px;
   }
   .headContent .headTalk p {
-    width: 210px;
+    width: 190px;
     font-size: 12px;
     margin-top: 5px;
     line-height: 17px;
+    font-weight: 100;
   }
   .headContent .headTalk h4 {
     font-size: 14px;
-    font-weight: 400;
-    color: #fff;
+    font-weight: 600;
   }
   .headContent .headLogo {
+    right: -70px;
+    bottom: -10px;
+  }
+  .headContent .headLogo{
+    width: 210px;
+    height: 177px;
+  }
+  .headContent .headLogo img{
+    width: 210px;
+    height: 177px;
+  }
+  /* .headContent .headLogo {
     right: -2rem;
     bottom: 0;
+  } */
+  .vision {
+    width: 355px;
+    padding-top: 0.01rem;
+    box-sizing: border-box;
+    margin-top: 5px;
   }
-  .vision .head {
-    width: 325px;
-  }
-  .vision .head .bg .img_left,
-  .vision .head .bg .img_right {
-    width: 95px;
-    height: 14px;
-  }
+
   .vision .head p {
     font-size: 12px;
-    left: 50%;
-    margin-left: -63px;
   }
-  .vision .headDescr {
-    width: 150px;
-    height: 150px;
+  .vision .head .bg i{
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
   }
-  .vision .headDescr .bg img {
-    width: 148px;
-    height: 148px;
+  .vision .headDescr{
+    width: 310px;
   }
   .vision .headDescr h3 {
     font-size: 12px;
@@ -644,12 +672,11 @@ footer > p {
     white-space: nowrap;
   }
   .vision .headDescr p {
-    width: 260px;
+    /* width: 260px; */
     font-size: 12px;
-    top: 3.2rem;
+    /* top: 3.2rem; */
     line-height: 20px;
-    left: 50%;
-    margin-left: -130px;
+    font-weight: 100;
   }
   .forWorldDescr {
     width: auto;
@@ -671,17 +698,16 @@ footer > p {
   }
   .forWorldDescr .eachDescrs {
     width: 190px;
-    height: 238px;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      RGBA(158, 146, 250, 1) 100%
-    );
+    height: 245px;
     border-radius: 20px;
     position: relative;
     z-index: 10;
-    padding: 30px 10px 10px 10px;
+    padding: 30px 25px 10px 30px;
     box-sizing: border-box;
+    margin-top: -15px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2){
+    margin-left: -25px;
   }
   .forWorldDescr .eachDescrs h3 {
     font-size: 14px;
@@ -698,6 +724,7 @@ footer > p {
     font-size: 12px;
     line-height: 22px;
     margin-top: 10px;
+    font-weight: 100;
   }
   .forWorldDescr .eachDescr .logo1,
   .forWorldDescr .eachDescr .logo2 {
@@ -707,12 +734,12 @@ footer > p {
   }
   .forWorldDescr .eachDescr .logo1 {
     left: 50%;
-    margin-left: -50px;
+    margin-left: -40px;
     top: 10px;
   }
   .forWorldDescr .eachDescr .logo2 {
     left: 50%;
-    margin-left: -30px;
+    margin-left: -20px;
     top: 20px;
     z-index: 11;
   }
@@ -740,7 +767,7 @@ footer > p {
     top: 20px;
   }
   footer h2 {
-    margin: 20px 0 10px 25px;
+    margin: 20px 0 10px 30px;
     font-size: 10px;
   }
   footer > div {
@@ -761,6 +788,14 @@ footer > p {
   }
 }
 @media (max-width: 321px) {
+  .vision{
+    width: 320px;
+    margin-top: 15px;
+  }
+  .headContent .headLogo {
+    /* right: -70px; */
+    bottom: -40px;
+  }
   .vision .head .bg .img_left,
   .vision .head .bg .img_right {
     width: 80px;
@@ -777,13 +812,13 @@ footer > p {
     left: -45px;
   }
   .headContent .headTalk p {
-    width: 220px;
+    width: 150px;
     margin-top: 5px;
     font-size: 10px;
   }
-  .headContent .headLogo{
-    right: -3.5rem;
-  }
+  .forWorldDescr .eachDescr:nth-child(1){
+    margin-left: -10px;
+ }
   .forWorldDescr {
     justify-content: flex-start;
   }

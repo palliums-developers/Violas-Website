@@ -24,12 +24,12 @@
                 <a href="index.html"><img src="../img/编组 25@3x.png" /></a>
               </div>
               <ul class="navList">
-                <li>Vision</li>
-                <li class="active">Association</li>
-                <li>Partners</li>
-                <li>Blockchain Explorer</li>
-                <li>Media</li>
-                <li>Developers</li>
+                <li>Vision<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li class="active">Association<i class="activeI"><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li>Partners<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li>Blockchain Explorer<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li>Media<i><img src="../img/矩形2@2x.png" alt=""></i></li>
+                <li>Developers<i><img src="../img/矩形2@2x.png" alt=""></i></li>
               </ul>
               <div class="descr">
                   <span id="whitePaper">White Paper</span>
@@ -101,14 +101,13 @@
         <div class="vision">
           <div class="head">
             <div class="bg">
-              <img class="img_left" src="../img/编组 26.png" />
+              <!-- <img class="img_left" src="../img/编组 26.png" /> -->
               <p>Bylaws of The Violas Association</p>
-              <img class="img_right" src="../img/编组 26复制 4.png" />
+              <i><img src="../img/下划线 3@2x.png" alt=""></i>
+              <!-- <img class="img_right" src="../img/编组 26复制 4.png" /> -->
             </div>
           </div>
           <div class="headDescr">
-            <div class="bg"><img src="../img/编组 32@3x.png" /></div>
-            <h3>Governor and Representatives</h3>
             <p>Governor is the executive branch of “Violas State” that manages a validator node of Violas Blockchain
             </p>
           </div>
@@ -122,7 +121,7 @@
                   branch of “Violas
                   State” and member of “Violas House of Representatives”</p>
               </div>
-              <div class="logo3"><img src="../img/矩形复制 52@3x.png" /></div>
+              <!-- <div class="logo3"><img src="../img/矩形复制 52@3x.png" /></div> -->
             </div>
             <div class="eachDescr">
               <div class="logo1"><img src="../img/编组 16@2x.png" /></div>
@@ -134,7 +133,7 @@
                   Representatives among the “Violas States” is proportional to the size of “Violas State” ecosystem.
                 </p>
               </div>
-              <div class="logo3"><img src="../img/矩形复制 51@3x.png" /></div>
+              <!-- <div class="logo3"><img src="../img/矩形复制 51@3x.png" /></div> -->
             </div>
           </div>
         </div>
@@ -167,7 +166,7 @@
       </section>
       <footer>
         <h2>Contact Us</h2>
-        <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@gmail.com</label></div>
+        <div><i><img src="../img/形状 2@2x.png" alt=""></i><label for="">violas.team@violas.io</label></div>
         <p>copyright@Violas</p>
       </footer>
     </div>
@@ -214,17 +213,17 @@
   function nav(text) {
     for (var i = 0; i < text.length; i++) {
       text[i].onclick = function () {
-        if (this.innerHTML == 'Association') {
+        if (this.innerText == 'Association') {
           window.location = 'association.html';
-        } else if (this.innerHTML == 'Partners') {
+        } else if (this.innerText == 'Partners') {
           window.location = 'partner.html';
-        } else if (this.innerHTML == 'Developers') {
+        } else if (this.innerText == 'Developers') {
           window.location = 'developers.html';
-        } else if (this.innerHTML == 'Media') {
+        } else if (this.innerText == 'Media') {
           window.location = 'media.html';
-        } else if (this.innerHTML == 'Vision') {
+        } else if (this.innerText == 'Vision') {
           window.location = 'vision.html';
-        } else if (this.innerHTML == "Blockchain Explorer") {
+        } else if (this.innerText == "Blockchain Explorer") {
           window.location = 'https://testnet.violas.io';
         }
         for (var i = 0; i < text.length; i++) {
@@ -238,7 +237,7 @@
   nav(phoneListA);
   let wPaper = document.getElementById('whitePaper')
   wPaper.onclick = function () {
-    wPaper.style.cssText = "background:#FFF;color:rgba(44, 9, 108, 1)";
+    wPaper.style.cssText += "background:#4A189F;color:#FFF;border:1px solid #4A189F";
     window.location = 'whitePaper.html';
   }
   window.onscroll = function () {
@@ -248,8 +247,10 @@
       bignav.style.position = 'fixed';
       bignav.style.top = '0';
       bignav.style.zIndex = '9999';
-      bignav.style.background = 'rgba(44, 9, 108, 1)';
+      bignav.style.background = '#FFF';
+      bignav.style.boxShadow = '0 5px 5px #CCC'
     } else {//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+      bignav.style.boxShadow = 'none'
       bignav.style.position = 'static';
       bignav.style.background = '0';
     }

@@ -15,16 +15,13 @@
 }
 .partner {
   width: 100%;
-  background: rgba(44, 9, 108, 1);
   overflow: hidden;
 }
 header {
   width: 100%;
-  height: 7.32rem;
+  height: 8.32rem;
   display: flex;
   flex-direction: column;
-  background: url("../../img/编组 4@2x.png") no-repeat;
-  background-size: 100% 100%;
 }
 .header {
   width: 100%;
@@ -49,8 +46,8 @@ header {
 }
 .logo img {
   margin-bottom: 0.12rem;
-  width: 1.73rem;
-  height: 0.55rem;
+  width: 1.63rem;
+  height: 0.43rem;
 }
 
 .navList {
@@ -65,15 +62,44 @@ header {
 .navList li {
   font-size: 0.16rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: #382F44;
   /* margin-top: 0.1rem; */
   margin-left: 0.4rem;
   cursor: pointer;
   white-space: nowrap;
+  position: relative;
 }
 
+.navList li i{
+  display: none;
+}
+.navList li i img{
+  width: 100%;
+  height: 100%;
+}
+.navList li:hover{
+  color: #4A189F;
+}
+.navList li:hover i{
+  display: block;
+  width: 20px;
+  height: 2px;
+  color: #4A189F;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
 .navList li.active {
-  color: rgba(62, 209, 246, 1);
+  color: #4A189F;
+}
+.navList li i.activeI {
+  display: block;
+  width: 20px;
+  height: 2px;
+  color: #4A189F;
+  position: absolute;
+  left: 0;
+  top: 10px;
 }
 
 .descr {
@@ -85,7 +111,7 @@ header {
 }
 
 .descr span {
-  color: #fff;
+  color: #382F44;
   margin-right: 0.2rem;
   cursor: pointer;
 }
@@ -94,7 +120,7 @@ header {
   /* width: 100rem;
   height: 31rem; */
   display: inline-block;
-  border: 1px solid #fff;
+  border: 1px solid #382F44;
   border-radius: 3rem;
   line-height: 0.24rem;
   text-align: center;
@@ -104,7 +130,7 @@ header {
 }
 
 .descr a {
-  color: #fff;
+  color: #382F44;
   margin-left: 0.2rem;
   cursor: pointer;
   /* position: relative;
@@ -124,13 +150,20 @@ header {
   /* flex-direction: column;s */
   position: absolute;
   left: 0.1rem;
-  bottom: 2.5rem;
+  bottom: 4rem;
 }
 
-.headContent .headTalk p {
-  font-size: 0.48rem;
+.headContent .headTalk p:nth-child(1) {
+  font-size: 0.32rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(100, 93, 110, 1);
+  margin-top: 0.15rem;
+  margin-right: 0.2rem;
+}
+.headContent .headTalk p:nth-child(2) {
+  font-size: 0.48rem;
+  font-weight: 600;
+  color: rgba(253, 36, 142, 1);
   margin-top: 0.15rem;
   margin-right: 0.2rem;
 }
@@ -145,53 +178,67 @@ header {
   color: rgba(82, 220, 255, 1);
 }
 .headContent .headLogo img {
-  width: 5.72rem;
-  height: 6.22rem;
+  width: 9.96rem;
+  height: 8.56rem;
 }
 .headContent .headLogo {
-  width: 5.72rem;
-  height: 6.22rem;
+  width: 9.96rem;
+  height: 8.56rem;
   position: absolute;
-  right: -0.5rem;
-  bottom: 0.1rem;
+  right: -3.8rem;
+  bottom: 0;
   display: flex;
 }
+section{
+  width: 100%;
+  background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(240,240,247,1) 74%,rgba(234,235,244,0) 100%);
+}
+.mebers{
+  width: 12rem;
+  margin: 0 auto;
+  background: #FFF;
+  margin-top: -2rem;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
 .mebers .head {
-  width: 9.2rem;
+  /* width: 9.2rem; */
   height: 0.61rem;
   margin: 0 auto;
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 2.4rem;
+  /* margin-top: 2.4rem; */
+  margin-bottom: 0.3rem;
+
 }
 .mebers .head .bg {
   /* width: 11.8rem; */
   height: 0.61rem;
+  margin: 0 auto;
 }
-.mebers .head .bg img {
-  /* width: 100%; */
+
+.mebers .head .bg i,
+.publisher1 .head .bg i{
   position: absolute;
+  top:0.55rem;
+  width: 0.73rem;
+  height: 0.04rem;
+  left: 50%;
+  margin-left: -0.6rem;
+  display: flex;
 }
-.mebers .head .bg .img_left {
-  width: 3.31rem;
-  height: 0.48rem;
-  left: 0;
-}
-.mebers .head .bg .img_right {
-  width: 3.31rem;
-  height: 0.48rem;
-  right: 0;
+.mebers .head .bg img,
+.publisher1 .head .bg img {
+  width: 100%;
+  height: 100%;
 }
 
 .mebers .head p {
-  position: absolute;
-  left: 50%;
-  margin-left: -1.2rem;
-  top: -0.05rem;
+ 
   font-size: 0.4rem;
-  color: rgba(248, 248, 248, 1);
-  font-weight: 400;
+  color: rgba(56, 47, 68, 1);
+  font-weight: 600;
 }
 
 .forWorldDescr {
@@ -208,12 +255,9 @@ header {
 }
 .forWorldDescr .eachDescrs {
   width: 6rem;
-  height: 6rem;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    RGBA(158, 146, 250, 1) 100%
-  );
+  height: 5.5rem;
+  background:linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(255,245,236,1) 52%,rgba(255,213,231,1) 85%,rgba(255,255,255,0) 100%);
+  box-shadow:0px 20px 60px 0px rgba(247,248,251,1);
   border-radius: 20px;
   position: relative;
   z-index: 10;
@@ -221,9 +265,10 @@ header {
   box-sizing: border-box;
 }
 .eachDescrs h3 {
-  font-size: 0.3rem;
-  font-weight: 400;
-  color: rgba(44, 9, 108, 1);
+  font-size: 0.24rem;
+  font-weight: 500;
+  color: rgba(56, 47, 68, 1);
+
 }
 .eachDescrs i img {
   display: inline-block;
@@ -233,7 +278,7 @@ header {
 .eachDescrs p {
   font-size: 0.24rem;
   font-weight: 400;
-  color: rgba(44, 9, 108, 1);
+  color: rgba(114, 107, 121, 1);
   margin-top: 0.2rem;
   line-height: 0.48rem;
 }
@@ -249,7 +294,7 @@ header {
 }
 .forWorldDescr .eachDescr .logo2 {
   left: 50%;
-  margin-left: -14.5%;
+  margin-left: -15%;
   top: -1.05rem;
   z-index: 11;
 }
@@ -286,15 +331,12 @@ header {
   left: 52%;
 }
 .service {
-  width: 13.17rem;
-  height: 3.14rem;
-  background: linear-gradient(
-    180deg,
-    RGBA(53, 13, 123, 1) 0%,
-    RGBA(62, 144, 194, 1) 100%
-  );
-  border-radius: 20px;
-  margin: 3rem auto;
+  width: 14.17rem;
+  height: 3.1rem;
+  background:linear-gradient(236deg,rgba(216,89,232,1) 0%,rgba(75,25,159,1) 100%);
+  border-radius: 5px;
+  margin: 2rem auto;
+  margin-left: -1.1rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -303,173 +345,105 @@ header {
   width: 3.8rem;
   height: 3.26rem;
   position: absolute;
-  top: -39%;
-  right: 0.3rem;
+  top: -0.8rem;
+  right: 0.7rem;
+}
+.service:nth-child(5) .logo img{
+  margin-top: -0.5rem;
 }
 .service h2 {
-  font-size: 0.45rem;
+  font-size: 0.3rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
   margin: 0.3rem 0 0.2rem 0.4rem;
 }
 
 .service p {
-  width: 10rem;
-  font-size: 0.26rem;
-  font-weight: 100;
-  color: rgba(255, 255, 255, 1);
+  width: 8.5rem;
+  font-size: 0.24rem;
+  font-weight: 300;
+  color: #E2D3EF;
   letter-spacing: 1px;
   margin-left: 0.4rem;
   margin-bottom: 0.3rem;
+  line-height: 0.4rem;
 }
 .service p:nth-child(3) {
   width: 9rem;
 }
-.publisher1 {
-  display: none;
-}
-.publisher {
-  width: 12rem;
-  height: 7.42rem;
+.publisher1 .head .bg {
+  /* width: 360px; */
   margin: 0 auto;
-  /* position: relative; */
-  display: flex;
-  justify-content: center;
 }
-.publisher .center {
-  width: 3.08rem;
-  height: 3.08rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2.09rem;
+
+.publisher1 .head p{
+  font-size: 0.32rem;
+  color: rgba(56, 47, 68, 1);
+  font-weight: 600;
+
 }
-.publisher .center p {
-  width: 3.5rem;
-  font-size: 0.36rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  line-height: 0.5rem;
-  letter-spacing: 2px;
-  /* white-space: nowrap; */
-  text-align: center;
-  position: relative;
+.publisher1 .headDescr {
+  width: 150px;
+  height: 150px;
+}
+.publisher1 .headDescr .bg img {
+  width: 148px;
+  height: 148px;
+}
+.publisher1 .headDescr h3 {
+  font-size: 13px;
+  top: 2rem;
+  margin-left: -83px;
+}
+.publisher1 .headDescr p {
+  width: 300px;
+  font-size: 12px;
+  top: 3.2rem;
+  line-height: 20px;
   left: 50%;
-  margin-left: -2.2rem;
+  margin-left: -150px;
 }
-.publisher .center .cLogo {
-  position: absolute;
+.issuers {
+  width: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
-.publisher .center .cLogo img {
-  width: 3.08rem;
-  height: 3.08rem;
-}
-.publisher .left .lLogo img,
-.publisher .right .rLogo img {
-  width: 4.89rem;
-  height: 7.42rem;
-}
-.publisher .left,
-.publisher .right {
-  position: relative;
-}
-.publisher .left .lContent1 {
-  position: absolute;
-  top: 0;
+.issuers .issuersCon {
+  width: 40%;
+  padding-bottom: 0.2rem;
+  box-sizing: border-box;
+  margin: 0 0.5rem;
+  border-bottom: 1px solid rgba(97, 89, 106, .5);
+  margin-top: 0.3rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.publisher .left .lContent1 > div {
-  margin-top: -0.9rem;
-  margin-left: 0.2rem;
+.issuers .issuersCon p {
+  color: rgba(97, 89, 106, 1);
+  font-size: 0.24rem;
+  line-height:0.5rem;
+  margin-top: 0.3rem;
+  font-weight: 300;
 }
-.publisher .left .lContent1 > div img {
-  width: 1.24rem;
-  height: 1.02rem;
+.issuers .issuersCon:nth-child(1) > div img {
+  width: 1.12rem;
+  height: 0.94rem;
 }
-.publisher .left .lContent1 p {
-  width: 3.64rem;
-  /* height:150rem; */
-  font-size: 0.2rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  line-height: 0.3rem;
-  margin-top: 0.2rem;
-  margin-left: -0.5rem;
+.issuers .issuersCon:nth-child(2) > div img {
+  width: 0.96rem;
+  height: 1.04rem;
 }
-.publisher .left .lContent2 {
-  position: absolute;
-  bottom: 0.2rem;
-  display: flex;
-  flex-direction: column;
+.issuers .issuersCon:nth-child(3) > div img {
+  width: 1.01rem;
+  height:0.8rem;
 }
-.publisher .left .lContent2 > div {
-  margin-left: 0.2rem;
+.issuers .issuersCon:nth-child(4) > div img {
+  width: 1.25rem;
+  height: 1.03rem;
 }
-.publisher .left .lContent2 > div img {
-  width: 1.24rem;
-  height: 1.02rem;
-}
-.publisher .left .lContent2 p {
-  width: 3.63rem;
-  /* height:150rem; */
-  font-size: 0.2rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  line-height: 0.3rem;
-  margin-top: 0.25rem;
-  margin-left: -0.5rem;
-}
-.publisher .right .lContent1 {
-  position: absolute;
-  top: 0;
-  left: 2.9rem;
-  display: flex;
-  flex-direction: column;
-}
-.publisher .right .lContent1 > div {
-  margin-top: -0.5rem;
-  margin-left: 0.2rem;
-}
-.publisher .right .lContent1 > div img {
-  width: 1.05rem;
-  height: 1.14rem;
-}
-.publisher .right .lContent1 p {
-  width: 3.54rem;
-  /* height:150rem; */
-  font-size: 0.2rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  line-height: 0.3rem;
-  margin-top: 0.25rem;
-  margin-left: -1rem;
-}
-.publisher .right .lContent2 {
-  position: absolute;
-  bottom: 0.3rem;
-  left: 2.9rem;
-  display: flex;
-  flex-direction: column;
-}
-.publisher .right .lContent2 > div {
-  margin-left: 0.2rem;
-}
-.publisher .right .lContent2 > div img {
-  width: 1.24rem;
-  height: 1.02rem;
-}
-.publisher .right .lContent2 p {
-  width: 3.61rem;
-  /* height:150rem; */
-  font-size: 0.2rem;
-  font-weight: 400;
-  color: rgba(248, 248, 248, 1);
-  line-height: 0.3rem;
-  margin-top: 0.2rem;
-  margin-left: -1.3rem;
-}
+
 .forWorldDescrs {
   width: 12rem;
   margin: 2.5rem auto;
@@ -494,25 +468,16 @@ header {
   padding: 0.88rem 0.25rem 0 0.35rem;
   box-sizing: border-box;
 }
-.eachDescrs h3 {
-  font-size: 0.3rem;
-  font-weight: 400;
-  color: rgba(44, 9, 108, 1);
-}
+
 .eachDescrs i {
   display: flex;
+  margin-top: 8px;
 }
 .eachDescrs i img {
   width: 0.64rem;
   height: 0.04rem;
 }
-.eachDescrs p {
-  font-size: 0.24rem;
-  font-weight: 100;
-  color: rgba(44, 9, 108, 1);
-  margin-top: 0.2rem;
-  line-height: 0.48rem;
-}
+
 .forWorldDescrs .eachDescr .logo1,
 .forWorldDescrs .eachDescr .logo2,
 .forWorldDescrs .eachDescr .logo3,
@@ -626,8 +591,8 @@ footer > p {
     height: 0.6rem;
   }
   .logo img {
-    width: 2.1rem;
-    height: 0.68rem;
+    width: 90px;
+    height: 25px;
   }
   .phone_list {
     height: 100%;
@@ -678,13 +643,7 @@ footer > p {
   .hide_show_header_pc {
     display: none;
   }
-  .default .headContent .headLogo {
-    right: -5px;
-  }
-  .default .headContent .headTalk {
-    left: -2.5px;
-    bottom: 3px;
-  }
+
   .bmd-layout-drawer .home {
     width: 14px;
     height: 14px;
@@ -703,11 +662,25 @@ footer > p {
     left: 200px;
     font-weight: 300;
   }
+  .headContent .headLogo{
+    bottom: -0.5rem;
+  }
 }
 @media (max-width: 750px) {
   .logo img {
-    width: 60px;
+    width: 70px;
     height: 18px;
+  }
+  .mebers{
+    width: 355px;
+    margin-top:-12px;
+    padding-top: 1px;
+    box-sizing: border-box;
+  }
+  .mebers .head .bg i, .publisher1 .head .bg i{
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
   }
   .headContent .headTalk p img {
     width: 30px;
@@ -715,13 +688,14 @@ footer > p {
   }
   .headContent .headTalk {
     left: -50px;
-    bottom: 2rem;
+    bottom: 2.5rem;
   }
   .headContent .headTalk p {
     font-size: 14px;
   }
   .headContent .headLogo {
-    right: -30px;
+    right: -80px;
+    bottom: -15px;
   }
   .mebers .head{
     width: 285px;
@@ -738,25 +712,11 @@ footer > p {
   }
   .mebers .head p{
     font-size: 12px;
-    left: 50%;
-    margin-left: -35px;
   }
   .publisher1 .head p{
     font-size: 12px;
-    left: 50%;
-    margin-left: -91px;
   }
-  
-  .mebers .headDescr,
-  .publisher1 .headDescr {
-    width: 150px;
-    height: 150px;
-  }
-  .mebers .headDescr .bg img,
-  .publisher1 .headDescr .bg img {
-    width: 148px;
-    height: 148px;
-  }
+
   .mebers .headDescr h3,
   .publisher1 .headDescr h3 {
     font-size: 13px;
@@ -782,28 +742,29 @@ footer > p {
 
   .forWorldDescr .eachDescr {
     width: 320px;
-    height: 450px;
+    /* height: 565px; */
     padding-top: 50px;
     position: relative;
-    margin-left: 9px;
+    margin-left: -25px;
+  }
+  .forWorldDescr .eachDescr:nth-child(2) {
+
+    margin-left: -35px;
   }
   .forWorldDescr .eachDescr:last-child {
     margin-right: 0;
   }
   .forWorldDescr .eachDescrs {
-    width: 227px;
-    height: 350px;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      RGBA(158, 146, 250, 1) 100%
-    );
+    width: 290px;
+    height: 510px;
+    background: url('../../img/矩形复制 77@2x.png') no-repeat;
+    background-size: 100% 100%;
     border-radius: 20px;
     position: relative;
     z-index: 10;
-    padding: 30px 10px 10px 10px;
+    padding: 60px 35px 10px 35px;
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-top: -5px;
   }
   .forWorldDescr .eachDescrs h3 {
     font-size: 14px;
@@ -831,7 +792,7 @@ footer > p {
   }
   .forWorldDescr .eachDescr .logo2 {
     left: 50%;
-    margin-left: -20px;
+    margin-left: -22px;
     top: 40px;
     z-index: 11;
   }
@@ -859,28 +820,46 @@ footer > p {
     top: 38px;
     margin-left: -25px;
   }
+  .eachDescrs i img{
+    width: 20px;
+    height: 2px;
+  }
   .service {
-    width: 355px;
-    height: 184px;
+    width: 375px;
+    height: 146px;
+    margin-left: -10px;
+  }
+  .service:nth-child(5){
+    margin-top:70px;
+  }
+  .service:nth-child(5) .logo img{
+    margin-top: -20px;
   }
   .service .logo img {
     width: 102px;
     height: 87px;
-    top: -40px;
+    top: -20px;
   }
   .service h2 {
     width: 204px;
     font-size: 14px;
-    margin: 13px 0;
-    margin-left: 8px;
-    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    line-height: 15px;
+    line-height: 15px;
   }
   .service p {
+    width: 350px;
     font-size: 12px;
-    margin-left: 8px;
+    margin-left: 15px;
+    line-height: 15px;
+    letter-spacing: 0;
+    margin-bottom: 0;
+    font-weight: 100;
   }
   .service p:nth-child(3) {
-    width: auto;
+    width: 340px;
   }
   .service p:nth-child(4) {
     width: auto;
@@ -899,6 +878,7 @@ footer > p {
     margin-top: 0;
   }
   .issuers {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
@@ -914,7 +894,6 @@ footer > p {
     align-items: center;
   }
   .issuers .issuersCon p {
-    color: #fff;
     font-size: 12px;
     line-height: 18px;
     margin-top: 11px;
@@ -926,18 +905,18 @@ footer > p {
   }
   .issuers .issuersCon:nth-child(2) > div img {
     width: 36px;
-    height: 30px;
+    height: 39px;
   }
   .issuers .issuersCon:nth-child(3) > div img {
     width: 36px;
-    height: 39px;
+    height: 30px;
   }
   .issuers .issuersCon:nth-child(4) > div img {
     width: 40px;
     height: 35px;
   }
   footer h2 {
-    margin: 20px 0 10px 25px;
+    margin: 20px 0 10px 30px;
     font-size: 10px;
   }
   footer > div {
@@ -958,8 +937,18 @@ footer > p {
   }
 }
 @media (max-width: 321px) {
+  .mebers{
+    width: 320px;
+  }
   .service {
     width: 320px;
+    margin-left: 0;
+  }
+  .service p:nth-child(3){
+    width: 290px;
+  }
+  .mebers .head .bg i, .publisher1 .head .bg i{
+    margin-top: 8px;
   }
   .issuers .issuersCon {
     width: 43%;
