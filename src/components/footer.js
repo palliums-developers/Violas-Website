@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import { NavLink } from 'react-router-dom'
 
-class Footer extends Component{
-  render(){
+class Footer extends Component {
+  render() {
     return (
         <footer>
            <div className="footerNav">
@@ -34,7 +34,6 @@ class Footer extends Component{
         </footer>
     );
   }
-  
 }
 
 export default Footer;

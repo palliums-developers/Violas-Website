@@ -1,9 +1,8 @@
 import React,{Component} from 'react';
 import Swiper from 'swiper/js/swiper.js';
 import 'swiper/css/swiper.min.css';
-
-import '../style/scss-en/home.scss';
-class HomeEN extends Component{
+import './style/home.scss';
+class Home extends Component{
   componentDidMount(){
     var mySwiper = new Swiper('.swiper-container', {
       slidesPerView:3.3,
@@ -232,4 +231,4 @@ class HomeEN extends Component{
   
 }
 
-export default HomeEN;
+export default Home;

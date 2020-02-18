@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
-import Header from '../../components/header';
-import Footer from '../../components/footer';
-import '../style/scss-en/whitePaper.scss';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import './style/whitePaper.scss';
 
 class WhitePaperEN extends Component{
   render(){
