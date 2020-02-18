@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RouterConfig from './router/routerConfig'
-import "lib-flexible"
+import RouterConfig from './router/routerConfig';
+import "lib-flexible";
 import './index.scss';
-import intl from 'react-intl-universal'
-import EN from './locales/index-en'
+import intl from 'react-intl-universal';
+import EN from './locales/en';
 
 let lang = (navigator.languages && navigator.languages[0]) || navigator.language
 intl.init({
@@ -13,6 +13,5 @@ intl.init({
     EN
   }
 })
-
 ReactDOM.render(<RouterConfig></RouterConfig>, document.getElementById('root'));
 

@@ -1,11 +1,11 @@
 import App from "../view/app";
-import HomeEN from "../view/en/home-en";
-import VisionEN from "../view/en/vision-en";
-import AssociationEN from "../view/en/association-en";
-import MediaEN from "../view/en/media-en";
-import DevelopersEN from "../view/en/developers-en";
-import PartnerEN from "../view/en/partner-en";
-import WhitePaperEN from "../view/en/whitePaper-en";
+import Home from "../view/home";
+import Vision from "../view/vision";
+import Association from "../view/association";
+import Media from "../view/media";
+import Developers from "../view/developers";
+import Partner from "../view/partner";
+import WhitePaper from "../view/whitePaper";
 
 const routes = [
     //首页
@@ -14,36 +14,36 @@ const routes = [
         component: App,
         children:[
             {
-                path: "/app/home-en",
-                component: HomeEN
+                path: "/app/home",
+                component: Home
             },
             {
-                path: "/app/vision-en",
-                component: VisionEN
+                path: "/app/vision",
+                component: Vision
             },
             {
-                path: "/app/association-en",
-                component: AssociationEN
+                path: "/app/association",
+                component: Association
             },
             {
-                path: "/app/media-en",
-                component: MediaEN
+                path: "/app/media",
+                component: Media
             },
             {
-                path: "/app/developers-en",
-                component: DevelopersEN
+                path: "/app/developers",
+                component: Developers
             },
             {
-                path: "/app/partner-en",
-                component: PartnerEN
+                path: "/app/partner",
+                component: Partner
             },
             {
-                path: "/app/whiteParper-en",
-                component: WhitePaperEN
+                path: "/app/whiteParper",
+                component: WhitePaper
             },
             {
                 path: "/app",
-                redirect: "/app/home-en"
+                redirect: "/app/home"
             }
         ]
     },
