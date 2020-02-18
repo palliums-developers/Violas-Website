@@ -1,11 +1,48 @@
 .home{
   width: 100%;
-  .headtalk{
+  .headContent{
     width: 100%;
     height: 726px;
-    background: url('/img/IMG_7794.jpg')no-repeat;
+    background: url('/img/IMG_7794.jpg')no-repeat,url('/img/蒙版 3@2x.png') no-repeat;
     background-size: cover;
     background-position: 50%;
+    .inset{
+      width: 100%;
+      height: 392px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .headTalk{
+      width: 1400px;
+      height: 200px;
+      margin: 0 auto;
+      p:nth-child(1){
+        font-size:72px;
+        font-weight:400;
+        color:#FFF;
+        line-height:72px;
+        margin-bottom: 100px;
+        margin-top: -100px;
+      }
+      p:nth-child(2){
+        display: flex;
+        align-items: center;
+        label{
+          color: #FFF;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 32px;
+          letter-spacing: 2px;
+          margin-right: 31px;
+        }
+        img{
+          width: 117px;
+          height: 117px;
+        }
+      }
+    }
   }
 }
 
