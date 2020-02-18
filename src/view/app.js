@@ -2,17 +2,15 @@ import React,{Component} from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import RouterView from '../router/routerView';
-import './app.sass';
+import './app.scss';
 
 class App extends Component{
   render(){
     let { routes } = this.props;
     return (
-      <div className="App">
+      <div className="app">
         <Header></Header>
-        <div>
-          <RouterView routes={routes}></RouterView>
-        </div>
+        <RouterView routes={routes}></RouterView>
         <Footer>底部</Footer>
       </div>
     );
