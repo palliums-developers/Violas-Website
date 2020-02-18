@@ -37,15 +37,16 @@ const routes = [
                 path: "/app/partner-en",
                 component: PartnerEN
             },
-            {
-                path: "/app/whiteParper-en",
-                component: WhitePaperEN
-            },
+            
             {
                 path: "/app",
                 redirect: "/app/home-en"
             }
         ]
+    },
+    {
+        path: "/whiteParper-en",
+        component: WhitePaperEN
     },
     {
         path: "/",
