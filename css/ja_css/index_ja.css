@@ -299,7 +299,7 @@ section>div{
 .vision .head p {
   position: absolute;
   left: 4.9rem;
-  margin-left: -1.5rem;
+  margin-left: -1.6rem;
   top: 0.05rem;
   font-size: 0.32rem;
   color: #382F44;
@@ -321,6 +321,12 @@ section>div{
   color: rgba(56, 47, 68, .79);
   text-align: center;
   line-height: 0.6rem;
+}
+.visionOne .headDescr{
+  width: 7rem;
+}
+.visionOne .head{
+  width: 7.9rem;
 }
 .vision .headIntroduce {
   width: 7.47rem;
@@ -377,7 +383,7 @@ section>div{
 .forWorld .head p {
   position: absolute;
   left: 5rem;
-  margin-left: -1.75rem;
+  margin-left: -2.35rem;
   top: 0;
   font-size: 0.32rem;
   font-weight: 600;
@@ -1053,6 +1059,9 @@ footer > p {
     margin-left: -40px;
     top: -0.1rem;
     font-weight: 600;
+  }
+  .visionOne .head p{
+    margin-left: -20px;
   }
   .vision .headDescr {
     width: 300px;

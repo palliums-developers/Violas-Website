@@ -299,7 +299,9 @@ section>div{
   width: 100%;
   height: 100%;
 }
-
+.visionOne .head{
+  width: 7.9rem;
+}
 .vision .head p {
   position: absolute;
   left: 4.9rem;
@@ -313,6 +315,9 @@ section>div{
   /* height: 4.96rem; */
   margin: 0 auto;
   display: flex;
+}
+.visionOne .headDescr{
+  width: 7rem;
 }
 .vision .headDescr .bg img {
   width: 4.96rem;
@@ -384,7 +389,7 @@ section>div{
 .forWorld .head p {
   position: absolute;
   left: 5rem;
-  margin-left: -1.75rem;
+  margin-left: -2.4rem;
   top: 0;
   font-size: 0.32rem;
   color: #382F44;
@@ -1034,6 +1039,9 @@ footer > p {
     left: 50%;
     margin-left: -35px;
     top: -0.06rem;
+  }
+  .visionOne .head p{
+    margin-left: -20px;
   }
   .vision .headIntroduce{
     width: 150px;
