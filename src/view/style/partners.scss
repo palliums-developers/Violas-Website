@@ -1,0 +1,210 @@
+.partners {
+  width: 100%;
+  .headContent {
+    width: 100%;
+    height: 726px;
+    background: url("/img/geneva-670479.jpg") no-repeat,
+      url("/img/蒙版 3@2x.png") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    .headContent1 {
+      height: 392px;
+      background: linear-gradient(
+        180deg,
+        rgba(17, 0, 37, 1) 0%,
+        rgba(4, 4, 6, 0) 100%
+      );
+      opacity: 0.44;
+    }
+    .inset {
+      width: 100%;
+      height: 392px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .headTalk {
+      width: 1440px;
+      height: 200px;
+      margin: 0 auto;
+      position: relative;
+      top: -200px;
+      display: flex;
+      .headTalk2 {
+        padding-left: 30px;
+        h1 {
+          width: 1000px;
+          color: white;
+          font-size: 72px;
+          font-weight: 100px;
+        }
+        h2 {
+          width: 1000px;
+          color: white;
+          font-size: 46px;
+          font-weight: 100px;
+        }
+      }
+      img {
+        width: 127px;
+        height: 168px;
+      }
+    }
+  }
+  .section {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 80px 50px;
+    background-color: white;
+    position: relative;
+    top: -200px;
+    .section1 {
+      display: flex;
+      .section11 {
+        width: 550px;
+        img {
+          width: 165px;
+          height: 165px;
+        }
+        p img {
+          width: 7px;
+          height: 27px;
+          margin-right: 20px;
+          position: relative;
+          top: 5px;
+        }
+        p:nth-child(2) {
+          font-size: 30px;
+          font-weight: 600;
+          color: rgba(56, 47, 68, 1);
+          line-height: 38px;
+        }
+        p:nth-child(3) {
+          font-size: 24px;
+          font-weight: 300;
+          color: rgba(93, 86, 102, 1);
+          line-height: 32px;
+        }
+      }
+    }
+    .section2 {
+      display: flex;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      .section21 {
+        width: 965px;
+        p:nth-child(1) {
+          font-size: 38px;
+          font-weight: 600;
+          color: rgba(56, 47, 68, 1);
+          line-height: 38px;
+          margin: 50px 0px;
+        }
+        p:nth-child(2) {
+          font-size: 24px;
+          font-weight: 300;
+          color: rgba(93, 86, 102, 1);
+          line-height: 32px;
+        }
+      }
+      .section22 {
+        width: 307px;
+        height: 268px;
+        position: absolute;
+        right: 0px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .section3 {
+      width: 1440px;
+      height: 785px;
+      padding: 50px;
+      background: rgba(45, 45, 100, 1);
+      display: flex;
+      flex-direction: column;
+      .section31 {
+        width: 1440px;
+        margin:100px 0px;
+        p {
+          font-size: 30px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 1);
+          line-height: 32px;
+          img {
+            width: 7px;
+            height: 27px;
+            margin-right: 20px;
+            position: relative;
+            top: 5px;
+          }
+        }
+      }
+      .section32 {
+        width: 1440px;
+        display: flex;
+        flex-direction: row;
+        .section321 {
+          width: 294px;
+          margin: 20px 20px;
+          img {
+            width: 128px;
+            height: 128px;
+            position: relative;
+            top:-50px;
+            left:80px;
+          }
+          p {
+            width: 280px;
+            height: 300px;
+            font-size: 24px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 1);
+            line-height: 32px;
+          }
+        }
+        .section322 {
+          width: 1px;
+          height: 405px;
+          background-color: white;
+          margin: 20px 20px;
+          position: relative;
+          top:70px;
+        }
+      }
+    }
+    .section4 {
+      margin-top: 200px;
+      display: flex;
+      flex-direction: row;
+      .section41{
+        width: 301px;
+        height: 316px;
+        margin-right: 100px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .section42{
+        width: 965px;
+        p:nth-child(1) {
+          font-size: 38px;
+          font-weight: 600;
+          color: rgba(56, 47, 68, 1);
+          line-height: 38px;
+          margin: 50px 0px;
+        }
+        p:nth-child(2) {
+          font-size: 24px;
+          font-weight: 300;
+          color: rgba(93, 86, 102, 1);
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}

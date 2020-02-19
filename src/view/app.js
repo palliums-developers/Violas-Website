@@ -28,7 +28,7 @@ class App extends Component{
       <div className="app">
         <Header></Header>
         <RouterView routes={routes}></RouterView>
-        <Footer>底部</Footer>
+        <Footer></Footer>
       </div>
     );
   }

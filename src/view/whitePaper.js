@@ -110,11 +110,6 @@ class WhitePaper extends Component{
   //   }
     
   // }
-  headScroll = (e) => {
-    console.log('111')
-    console.log(document.documentElement.scrollTop)
-    // this.refs.bodyBox.scrollTop;
-  }
   selectMenu = (index) => {
     let flagList = this.refs.body.querySelectorAll('.introduction')
     console.log(flagList)
@@ -153,7 +148,7 @@ class WhitePaper extends Component{
             </ul>
             <div className="descr">
               <span id="whitePaper" onClick={()=>{
-                this.props.history.push('/whiteParper-en')
+                this.props.history.push('/whiteParper')
               }}>White Paper</span>
               <a>日本語</a>
               <a>한국어</a>
