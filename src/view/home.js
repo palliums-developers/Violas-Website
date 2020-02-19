@@ -13,6 +13,7 @@ class Home extends Component {
     this.onMouseLeave = this.onMouseLeave.bind(this);
   }
   componentWillMount() {
+    localStorage.setItem('whiteBg', 'header');
     intl.options.currentLocale = localStorage.getItem("local");
   }
   componentDidMount() {
