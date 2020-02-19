@@ -1,5 +1,9 @@
 .whitePaper{
   // position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
     .header {
         width: 100%;
         height: 100px;
@@ -73,14 +77,18 @@
               span:hover{
                 background:#FFF;
                 color: #501BA2;
-                box-shadow:3px 3px 10px #501BA2;
+                box-shadow:3px 3px 10px rgb(148, 86, 240);
               }
           }
         }
       }
     section{
       width: 1400px;
+      flex: 1;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
       .headTalk{
         width:100%;
         height: 543px;
@@ -148,6 +156,69 @@
             width: 100%;
             height: 100%;
           }
+        }
+      }
+      .wrapper {
+        width: 100%;
+        display: flex;
+        flex: 1;
+        .wrapHead{
+          width: 15%;
+          margin-top: 300px;
+          li{
+            color: rgba(93, 86, 102, 1);
+            font-size:16px;
+            font-weight:500;
+            line-height:54px;
+          }
+        }
+        .post{
+          position: static;
+        }
+        .pos{
+          position: fixed;
+          top: -100px;
+        }
+        .local{
+          width: 70%;
+          // height: 900px;
+          overflow: hidden;
+          // position: static;
+          .introduction{
+            h4{
+              font-size:20px;
+              font-weight:400;
+              color:rgba(93,86,102,1);
+              line-height:32px;
+              margin-top: 100px;
+            }
+            h2{
+              font-size:40px;
+              font-weight:500;
+              color:rgba(93,86,102,1);
+              // line-height:32px;
+              margin-bottom: 70px;
+              margin-top: 30px;
+            }
+            h3{
+              font-size: 24px;
+              font-weight:500;
+              color:rgba(93,86,102,1);
+              line-height:32px;
+              margin: 30px 0;
+            }
+            p{
+              font-size: 24px;
+              color: rgba(93, 86, 102, 1);
+              font-size: 300;
+              line-height: 32px;
+            }
+          }
+        }
+        .poss{
+          // height: 937px;
+          margin-left: 200px;
+          overflow: hidden;
         }
       }
     }
