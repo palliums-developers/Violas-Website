@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Footer from '../components/footer';
 import BScroll from 'better-scroll';
+import intl from 'react-intl-universal';
 import axios from 'axios';
 import './style/whitePaper.scss';
 
@@ -139,12 +140,12 @@ class WhitePaper extends Component{
               <a href="index.html"><img src="/img/编组 252@2x.png" /></a>
             </div>
             <ul className="navList">
-              <li>Vision</li>
-              <li>Association</li>
-              <li>Partners</li>
-              <li>Blockchain Explorer</li>
-              <li>Media</li>
-              <li>Developers</li>
+              <li id="vision" onClick={()=>{this.props.history.push('./vision')}}>{intl.get('header.vision')}</li>
+              <li id="association" onClick={()=>{this.props.history.push('./association')}}>{intl.get('header.association')}</li>
+              <li id="partners" onClick={()=>{this.props.history.push('./partners')}}>{intl.get('header.partners')}</li>
+              <li>{intl.get('header.blockchain explorer')}</li>
+              <li id="media" onClick={()=>{this.props.history.push('./media')}}>{intl.get('header.media')}</li>
+              <li id="developers" onClick={()=>{this.props.history.push('./developers')}}>{intl.get('header.developers')}</li>
             </ul>
             <div className="descr">
               <span id="whitePaper" onClick={()=>{
