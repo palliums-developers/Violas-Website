@@ -4,7 +4,7 @@ import Vision from "../view/vision";
 import Association from "../view/association";
 import Media from "../view/media";
 import Developers from "../view/developers";
-import Partner from "../view/partner";
+import Partners from "../view/partners";
 import WhitePaper from "../view/whitePaper";
 
 const routes = [
@@ -34,10 +34,9 @@ const routes = [
                 component: Developers
             },
             {
-                path: "/app/partner",
-                component: Partner
+                path: "/app/partners",
+                component: Partners
             },
-            
             {
                 path: "/app",
                 redirect: "/app/home"

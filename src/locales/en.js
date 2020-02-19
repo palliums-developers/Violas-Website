@@ -4,7 +4,7 @@ import Footer from './en/footer';
 import Header from './en/header';
 import Home from './en/home';
 import Media from './en/media';
-import Partner from './en/partner';
+import Partners from './en/partners';
 import Vision from './en/vision';
 import WhitePaper from './en/whitepaper';
 
@@ -15,7 +15,7 @@ export default{
     header:Header,
     home:Home,
     media:Media,
-    partner:Partner,
+    partners:Partners,
     vision:Vision,
     whitepaper:WhitePaper
 }

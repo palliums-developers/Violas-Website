@@ -3,7 +3,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import './style/whitePaper.scss';
 
-class WhitePaperEN extends Component{
+class WhitePaper extends Component{
   render(){
     return (
         <div className="whitePaper">
@@ -48,4 +48,4 @@ Our goal is to enable a world where there is not merely one global digital curre
   
 }
 
-export default WhitePaperEN;
+export default WhitePaper;

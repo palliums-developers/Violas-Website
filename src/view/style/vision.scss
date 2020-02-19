@@ -1,0 +1,63 @@
+.vision {
+  width: 100%;
+  .headContent {
+    width: 100%;
+    height: 726px;
+    background: url("/img/IMG_77861.jpg") no-repeat,
+      url("/img/蒙版 3@2x.png") no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    .headContent1 {
+      height: 392px;
+      background: linear-gradient(
+        180deg,
+        rgba(17, 0, 37, 1) 0%,
+        rgba(4, 4, 6, 0) 100%
+      );
+      opacity: 0.44;
+    }
+    .inset {
+      width: 100%;
+      height: 392px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .headTalk {
+      width: 1400px;
+      height: 200px;
+      margin: 0 auto;
+      h1 {
+        color: white;
+        position: relative;
+        top: -150px;
+        left: 0px;
+        font-size: 72px;
+        font-weight: 100px;
+      }
+      h2 {
+        color: white;
+        position: relative;
+        top: -150px;
+        left: 0px;
+        font-size: 46px;
+        font-weight: 100px;
+      }
+    }
+  }
+  .section {
+    width: 1350px;
+    margin: 0 auto;
+    padding: 80px 50px;
+    background-color: white;
+    position: relative;
+    top: -200px;
+    p {
+      font-size: 24px;
+      font-weight: 300;
+      color: rgba(56, 47, 68, 1);
+      line-height: 32px;
+    }
+  }
+}

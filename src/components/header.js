@@ -4,7 +4,6 @@ import intl from 'react-intl-universal';
 class Header extends Component {
   componentWillMount() {
     intl.options.currentLocale = localStorage.getItem("local");
-    console.log(intl.options)
   }
   twoLanguages(lang) {
     switch (lang) {
@@ -24,12 +23,12 @@ class Header extends Component {
             <a href="index.html"><img src="/img/编组 25@2x.png" /></a>
           </div>
           <ul className="navList">
-            <li>{intl.get('header.vision')}</li>
-            <li>{intl.get('header.association')}</li>
-            <li>{intl.get('header.partners')}</li>
+            <li id="vision" onClick={()=>{this.props.history.push('./vision')}}>{intl.get('header.vision')}</li>
+            <li id="association" onClick={()=>{this.props.history.push('./association')}}>{intl.get('header.association')}</li>
+            <li id="partners" onClick={()=>{this.props.history.push('./partners')}}>{intl.get('header.partners')}</li>
             <li>{intl.get('header.blockchain explorer')}</li>
-            <li>{intl.get('header.media')}</li>
-            <li>{intl.get('header.developers')}</li>
+            <li id="media" onClick={()=>{this.props.history.push('./media')}}>{intl.get('header.media')}</li>
+            <li id="developers" onClick={()=>{this.props.history.push('./developers')}}>{intl.get('header.developers')}</li>
           </ul>
           <div className="descr">
             <span id="whitePaper" onClick={()=>{

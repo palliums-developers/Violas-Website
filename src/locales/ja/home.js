@@ -38,8 +38,8 @@ export default {
     'Move Programming Language1':'The Violas blockchain uses the native programming language of Libra, Move, as the programming language to develop Move Smart Contracts and Transaction Scripts. It will use the Move language, verifier, and VM without any modification. Move currently provides the best balance between the safety and flexibility of “Smart Contracts”, separating the resources (money) from the coding (logic operations).',
     'How to Become a Founding Member':'How to Become a Founding Member',
     'How to Become a Founding Member1':'Members of the Violas Association are validator nodes that operate the Violas blockchain and will consist of diverse businesses, nonprofit organizations, and academic institutions.',
-    'The Violas Association0':'The Violas Association',
-    'An independent':'An independent, not-for-profit organization.',
+    'The Violas Association':'The Violas Association',
+    'An independent, not-for-profit organization.':'An independent, not-for-profit organization.',
     'Learn More':'Learn More',
     'Get To Know Violas':'Get To Know Violas...'
 }
