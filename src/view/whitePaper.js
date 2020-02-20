@@ -51,6 +51,7 @@ class WhitePaper extends Component{
             <div className="content">
                <h3>{intl.get('whitepaper.Violas White Paper')}</h3>
                <p>{intl.get('whitepaper.Violas White Paper1')}</p>
+               <p>{intl.get('whitepaper.Violas White Paper2')}</p>
                <span>滚动阅读</span>
             </div>
             <div className="bg2"><img src="/img/矩形复制 44@2x.png"/></div>

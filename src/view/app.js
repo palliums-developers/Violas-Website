@@ -22,6 +22,7 @@ class App extends Component{
     localStorage.setItem('local', lang);
     intl.options.currentLocale = localStorage.getItem("local");
   }
+
   render(){
     let { routes } = this.props;
     return (

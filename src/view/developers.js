@@ -5,9 +5,10 @@ import intl from 'react-intl-universal';
 import "./style/developers.scss";
 
 class Developers extends Component {
-   componentWillMount() {
-    intl.options.currentLocale = localStorage.getItem("local");
-   }
+  componentWillMount(){
+    localStorage.setItem('whiteBg', 'header1');
+    intl.options.currentLocale = localStorage.getItem('local');
+  }
   render() {
     return (
       <div className="developers">

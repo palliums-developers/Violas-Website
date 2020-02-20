@@ -1,8 +1,8 @@
 export default{
-    'ViolasPay APP':'ViolasPay APP',
-    'Coming soon':'Coming soon',
-    'ViolasSSO APP':'ViolasSSO APP',
+    'ViolasPay APP':'ViolasPay  アプリ',
+    'Coming soon':'近日公開',
+    'ViolasSSO APP':'ViolasSSO  アプリ',
     'ViolasClient':'ViolasClient',
-    'Violas Client':'Violas Client',
-    'ViolasClient.pdf':'ViolasClient.pdf'
+    'Violas Client':'ViolasClientをダウンロード',
+    'ViolasClient.pdf':'詳細PDFをダウンロード'
 }
