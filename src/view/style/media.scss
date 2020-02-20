@@ -27,31 +27,30 @@
     .headTalk {
       width: 1400px;
       height: 200px;
-      margin: 0 auto;
+      margin: 0 auto; 
+      margin-top: -230px;
+      position: relative;
+      z-index: 99;
       h1 {
-        width: 1000px;
+        width: 1300px;
         color: white;
-        position: relative;
-        top: -160px;
-        left: 0px;
+        // margin-top: ;
         font-size: 72px;
         font-weight: 100;
         margin-bottom: 30px;
       }
       h2 {
         color: white;
-        position: relative;
-        top: -150px;
-        left: 0px;
+
         font-size: 30px;
-        font-weight: 100px;
+        font-weight: 400;
       }
     }
   }
   .section {
-    width: 1350px;
+    width: 1300px;
     margin: 0 auto;
-    padding: 80px 50px;
+    padding: 70px 50px;
     background-color: white;
     position: relative;
     top: -185px;
@@ -98,6 +97,99 @@
     }
   }
 }
+@media (max-width:1600px){
+  .media {
+    .headContent {
+      height: 608px;
+      .inset {
+        height: 326px;
+      }
+      .headTalk {
+        width: 1200px;
+        margin-top: -200px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        h1 {
+          width: 1200px;
+          font-size: 55px;
+          font-weight: 60px;
+        }
+        h2 {
+          font-size: 27px;
+        }
+      }
+    }
+    .section {
+      width: 1050px;
+      padding: 30px 50px;
+      margin-top: -150px;
+      .black{
+        margin:30px 0px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: -15px;
+        img{
+          width: 6px;
+          height: 15px;
+          margin-right: 8px;
+        }
+      }
+      .black1{
+        margin-left: 0;
+      }
+      .title{
+        // width: 500px;
+        // height: 70px;
+        line-height: 24px;
+        font-size: 20px;
+      }
+      p {
+        // width: 1360px;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      li{
+        // width: 1360px;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+}
+@media (max-width:1200px){
+  .media {
+    .headContent {
+      height: 452px;
+      .inset {
+        height: 245px;
+      }
+      .headTalk {
+        width: 989px;
+        margin-top: -280px;
+        padding-left: 15px;
+        box-sizing: border-box;
+        h1 {
+          width: 989px;
+          font-size: 54px;
+          font-weight: 60px;
+          margin-bottom: 20px;
+        }
+        h2 {
+          font-size: 27px;
+        }
+      }
+    }
+    .section {
+      width: 860px;
+      padding: 20px 50px;
+      margin-top: -100px;
+      p {
+        font-size: 20px;
+        line-height: 27px;
+      }
+    }
+  }
+}
 @media (max-width: 1024px) {
   .media {
     .headContent {
@@ -133,6 +225,7 @@
       padding: 0;
       width: 90%;
       top:0;
+      margin-top: 0px;
       .black{
         width: 100%;
         font-size: 14px;

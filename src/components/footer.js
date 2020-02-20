@@ -38,7 +38,7 @@ class Footer extends Component {
         </div>
         <div className="email">
           <p>{intl.get('footer.Copyright')}</p>
-          <p>{intl.get('footer.Connect Us')}</p>
+          {/* <p>{intl.get('footer.Connect Us')}</p> */}
           <p><img src="/img/形状 2@2x.png" />{intl.get('footer.email')}</p>
           <p>{this.twoLanguages(intl.options.currentLocale)}</p>
         </div>

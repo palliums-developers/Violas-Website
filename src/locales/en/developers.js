@@ -4,5 +4,5 @@ export default{
     'ViolasSSO APP':'ViolasSSO APP',
     'ViolasClient':'ViolasClient',
     'Violas Client':'Violas Client',
-    'ViolasClient.pdf':'ViolasClient.pdf'
+    'ViolasClient pdf':'ViolasClient.pdf'
 }

@@ -36,9 +36,9 @@ class Media extends Component {
           <li>{intl.get('media.Overview12')}</li>
           <p>{intl.get('media.Overview13')}</p>
           <div className="black"><img src='/img/矩形 3@2x.png' />{intl.get('media.Highlights')}</div>
-          <div className="black">{intl.get('media.Violas mainnet features')}</div>
+          <div className="black black1">{intl.get('media.Violas mainnet features')}</div>
           <p>{intl.get('media.Violas mainnet features1')}</p>
-          <div className="black">{intl.get('media.Violaspay')}</div>
+          <div className="black black1">{intl.get('media.Violaspay')}</div>
           <li>{intl.get('media.Violaspay1')}</li>
           <li>{intl.get('media.Violaspay2')}</li>
           <li>{intl.get('media.Violaspay3')}</li>
@@ -50,7 +50,7 @@ class Media extends Component {
           <li>{intl.get('media.Violaspay9')}</li>
           <li>{intl.get('media.Violaspay10')}</li>
           <li>{intl.get('media.Violaspay11')}</li>
-          <div className="black">{intl.get('media.Violassso')}</div>
+          <div className=" black1">{intl.get('media.Violassso')}</div>
           <li>{intl.get('media.Violassso1')}</li>
           <li>{intl.get('media.Violassso2')}</li>
           <li>{intl.get('media.Violassso3')}</li>
@@ -59,7 +59,7 @@ class Media extends Component {
           <li>{intl.get('media.Violassso6')}</li>
           <li>{intl.get('media.Violassso7')}</li>
           <li>{intl.get('media.Violassso8')}</li>
-          <div className="black">{intl.get('media.Violasgov')}</div>
+          <div className="black black1">{intl.get('media.Violasgov')}</div>
           <li>{intl.get('media.Violasgov1')}</li>
           <li>{intl.get('media.Violasgov2')}</li>
           <li>{intl.get('media.Violasgov3')}</li>
@@ -73,7 +73,7 @@ class Media extends Component {
           <li>{intl.get('media.Violasgov11')}</li>
           <li>{intl.get('media.Violasgov12')}</li>
           <li>{intl.get('media.Violasgov13')}</li>
-          <div className="black">{intl.get('media.Violas Client')}</div>
+          <div className="black black1">{intl.get('media.Violas Client')}</div>
           <li>{intl.get('media.Violas Client1')}</li>
           <li>{intl.get('media.Violas Client2')}</li>
           <li>{intl.get('media.Violas Client3')}</li>

@@ -29,10 +29,7 @@ const routes = [
                 path: "/app/media",
                 component: Media
             },
-            {
-                path: "/app/developers",
-                component: Developers
-            },
+            
             {
                 path: "/app/partners",
                 component: Partners
@@ -42,6 +39,10 @@ const routes = [
                 redirect: "/app/home"
             }
         ]
+    },
+    {
+        path: "/developers",
+        component: Developers
     },
     {
         path: "/whiteParper",
