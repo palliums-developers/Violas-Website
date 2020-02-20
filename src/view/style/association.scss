@@ -83,10 +83,10 @@
       display: flex;
       flex-direction: column;
       margin-right: 100px;
-      img{
-          width: 165px;
-          height: 165px;
-          margin: 0 auto;
+      img {
+        width: 165px;
+        height: 165px;
+        margin: 0 auto;
       }
       p img {
         width: 7px;
@@ -108,6 +108,89 @@
         font-weight: 300;
         color: rgba(93, 86, 102, 1);
         line-height: 32px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .association {
+    .headContent .headTalk {
+      width: 100%;
+      h1 {
+        // top:-100px;
+        width: 200px;
+        left: 10px;
+        font-size: 40px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 1);
+        line-height: 50px;
+      }
+      h2 {
+        // top:-100px;
+        left: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        line-height: 33px;
+      }
+    }
+    .section {
+      width: 100%;
+      padding: 20px 0;
+      .title {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(56, 47, 68, 1);
+        line-height: 15px;
+        img {
+          left: 10px;
+          width: 3px;
+          height: 12px;
+          top: 2px;
+        }
+      }
+      .title1 {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(80, 27, 162, 1);
+        line-height: 28px;
+      }
+      .title2 {
+        margin-top: 50px;
+        flex-direction: column;
+      }
+      .title3 {
+        width: 90%;
+        height: 250px;
+        margin: 0 auto;
+        // flex-direction: row;
+        img {
+          width: 73px;
+          height: 73px;
+        }
+        p:nth-child(2) {
+          position: relative;
+          left: -10px;
+          margin: 20px 0;
+          font-size: 18px;
+          font-weight: 600;
+          color: rgba(56, 47, 68, 1);
+          line-height: 17px;
+          img {
+            left: 10px;
+            width: 3px;
+            height: 12px;
+            top: 2px;
+          }
+        }
+        p:nth-child(3) {
+          font-size: 14px;
+          font-weight: 300;
+          color: rgba(93, 86, 102, 1);
+          line-height: 22px;
+        }
       }
     }
   }

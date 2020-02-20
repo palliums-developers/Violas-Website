@@ -33,11 +33,11 @@ class Partners extends Component {
             </div>
           </div>
           <div className="section2">
+            <div className="section22"><img src='/img/编组 35@2x.png' /></div>
             <div className="section21">
               <p>{intl.get('partners.Custodial Services for Compliant Assets')}</p>
               <p>{intl.get('partners.Custodial Services for Compliant Assets1')}</p>
             </div>
-            <div className="section22"><img src='/img/编组 35@2x.png' /></div>
           </div>
           <div className="section3">
             <div className="section31">
