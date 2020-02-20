@@ -255,7 +255,7 @@
     .banner {
       // width: 1300px;
       margin: 0 auto;
-      margin-left: 310px;
+      margin-left: 16%;
       position: relative;
       h2 {
         font-size: 32px;
@@ -511,6 +511,9 @@
             margin: 32px 0;
           }
         }
+        dl:last-child{
+          margin-right: 0;
+        }
       }
       .icon{
         display: flex;
@@ -538,6 +541,9 @@
             margin-top: 22px;
           }
         }
+        dl:last-child{
+          margin-right: 0;
+        }
       }
     }
   }
@@ -547,10 +553,6 @@
     .headContent {
       width: 100%;
       height: 608px;
-      background: url("/img/IMG_7794.jpg") no-repeat,
-        url("/img/蒙版 3@2x.png") no-repeat;
-      background-size: cover;
-      background-position: 50%;
       .inset {
         width: 100%;
         height: 326px;
@@ -663,32 +665,27 @@
         }
       }
       .goWhitepaper {
-        width: 1200px;
+        width: 1100px;
         height: 400px;
         margin: 170px auto;
         .img {
           img:nth-child(1) {
-            width: 480px;
-            height: 389px;
-            position: absolute;
-            bottom: 0;
+            width: 400px;
+            height: 324px;
           }
           img:nth-child(2) {
-            width: 389px;
-            height: 498px;
-            position: absolute;
-            bottom: 0;
-            left: 37px;
+            width: 324px;
+            height: 415px;
+            left: 30px;
           }
           img:nth-child(3) {
-            width: 384px;
-            height: 553px;
-            position: absolute;
-            bottom: 0;
-            left: 80px;
+            width: 320px;
+            height: 460px;
+            left: 60px;
           }
         }
         .title {
+          margin-top: 50px;
           h3 {
             font-size: 47px;
             line-height: 47px;
@@ -719,7 +716,7 @@
       }
       .banner {
         // width: 1300px;
-        margin-left: 240px;
+        margin-left: 15%;
         h2 {
           font-size: 27px;
           line-height: 27px;
@@ -737,6 +734,349 @@
                 margin-top: 34px;
                 margin-bottom: 110px;
                 margin-left: 18px;
+              }
+              p:last-child {
+                width: 126px;
+                font-size: 24px;
+                font-weight: 300;
+                color: rgba(249, 249, 249, 1);
+                line-height: 30px;
+                border-bottom: 1px solid rgba(249, 249, 249, 1);
+                margin-top: 200px;
+                margin-left: 200px;
+              }
+            }
+            .swiper-slide:nth-child(1) {
+              .img {
+                width: 174px;
+                height: 180px;
+              }
+            }
+            .swiper-slide:nth-child(2) {
+              .img {
+                width: 178px;
+                height: 173px;
+              }
+            }
+            .swiper-slide:nth-child(3) {
+              .img {
+                width: 186px;
+                height: 198px;
+              }
+            }
+            .swiper-slide:nth-child(4) {
+              .img {
+                width: 174px;
+                height: 180px;
+              }
+            }
+            .swiper-slide:nth-child(5) {
+              .img {
+                width: 184px;
+                height: 161px;
+              }
+            }
+            .swiper-slide:nth-child(6) {
+              .img {
+                width: 168px;
+                height: 179px;
+              }
+            }
+            .swiper-slide:nth-child(7) {
+              .img {
+                width: 167px;
+                height: 166px;
+              }
+            }
+            .swiper-slide:nth-child(8) {
+              .img {
+                width: 172px;
+                height: 146px;
+              }
+            }
+            .swiper-slide:nth-child(9) {
+              .img {
+                width: 163px;
+                height: 168px;
+              }
+            }
+          }
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+          top: 18px;
+          width: 27px;
+          height: 23px;
+        }
+      }
+      .goAssociation {
+        height: 661px;
+        .content {
+          width: 1200px;
+          margin-top: 170px;
+          .img {
+            img:nth-child(1) {
+              width: 309px;
+              height: 560px;
+            }
+            img:nth-child(2) {
+              width: 435px;
+              height: 653px;
+            }
+          }
+          .title {
+            margin-top: 171px;
+            h3 {
+              font-size: 47px;
+              line-height: 47px;
+            }
+            h4 {
+              font-size: 20px;
+              line-height: 27px;
+            }
+            p {
+              margin-top: 46px;
+              span {
+                font-size: 27px;
+                line-height: 27px;
+              }
+              .sq {
+                width: 98px;
+                height: 98px;
+                img:nth-child(2) {
+                  width: 33px;
+                  height: 29px;
+                  position: absolute;
+                  top: 50%;
+                  margin-top: -16px;
+                  left: 50%;
+                  margin-left: -16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .personDescr{
+        width: 1150px;
+        margin-top: 168px;
+        h2{
+          font-size:25px;
+          line-height:27px;
+          margin-bottom: 30px;
+        }
+        .person{
+          dl{
+            margin-right: 53px;
+            dt{
+              width: 336px;
+              height: 484px;
+            }
+            dd{
+              font-size:25px;
+              line-height:20px;
+              margin: 27px 0;
+            }
+          }
+        }
+        .icon{
+          dl{
+            margin-right: 52px;
+            dt{
+              width: 532px;
+              height: 159px;
+            }
+            dd{
+              font-size:20px;
+              line-height:25px;
+              margin-top: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1200px){
+  .home {
+    .headContent {
+      height: 452px;
+      .inset {
+        height: 245px;
+      }
+      .headTalk {
+        width: 989px;
+        padding-left: 15px;
+        box-sizing: border-box;
+        p:nth-child(1) {
+          font-size: 45px;
+          line-height:45px;
+          margin-bottom: 37px;
+          margin-top: -60px;
+        }
+        p:nth-child(2) {
+          label {
+            font-size: 20px;
+            line-height: 20px;
+            margin-right: 19px;
+            letter-spacing: 1;
+          }
+          img {
+            width: 73px;
+            height: 73px;
+          }
+        }
+      }
+    }
+    section {
+      .mission {
+        width: 939px;
+        margin: 121px auto;
+        h4 {
+          font-size: 19px;
+          line-height: 20px;
+        }
+        p:nth-child(2) {
+          font-size:29px;
+          line-height: 34px;
+          margin-top: 33px;
+          margin-bottom: 40px;
+        }
+        p:nth-child(3) {
+          width: 471px;
+          font-size: 19px;
+          line-height: 24px;
+        }
+      }
+      .missionImg {
+        width: 930px;
+        height: 430px;
+        margin-bottom: 123px;
+        .leftImg {
+          width: 502px;
+          height: 376px;
+        }
+        .rightImg {
+          width: 490px;
+          height: 365px;
+          img{
+            width: 100%;
+            height: 1000px;
+          }
+        }
+      }
+      .forReal {
+        width: 989px;
+        h2 {
+          font-size: 35px;
+          line-height: 35px;
+          margin-top: 116px;
+          margin-bottom: 37px;
+        }
+        h4 {
+          width: 723px;
+          font-size: 15px;
+          line-height:20px;
+          margin-bottom: 111px;
+        }
+        .forRealContent {
+          dl {
+            width: 28%;
+            margin-bottom: 116px;
+            dt {
+              width: 99px;
+              height: 99px;
+            }
+            dd {
+              h3 {
+                font-size:24px;
+                line-height: 24px;
+                margin-top: 29px;
+                margin-bottom: 23px;
+                s {
+                  width: 4px;
+                  height: 17px;
+                  margin-right: 4px;
+                }
+              }
+              p {
+                font-size: 15px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+      .goWhitepaper {
+        width:939px;
+        height: 300px;
+        margin: 110px auto;
+        padding-left: 50px;
+        .img {
+          img:nth-child(1) {
+            width: 300px;
+            height: 243px;
+          }
+          img:nth-child(2) {
+            width: 243px;
+            height: 311px;
+            left: 27px;
+          }
+          img:nth-child(3) {
+            width: 240px;
+            height: 345px;
+            left: 50px;
+          }
+        }
+        .title {
+          h3 {
+            font-size: 35px;
+            line-height: 35px;
+          }
+          p {
+            margin-top: 84px;
+            span {
+              font-size: 20px;
+              line-height: 20px;
+            }
+            .sq {
+              width: 73px;
+              height: 73px;
+              margin-left: 12px;
+            
+              img:nth-child(2) {
+                width: 24px;
+                height: 20px;
+                top: 50%;
+                margin-top: -12px;
+                left: 50%;
+                margin-left: -12px;
+              }
+            }
+          }
+        }
+      }
+      .banner {
+        // width: 1300px;
+        margin-left: 12%;
+        h2 {
+          font-size: 20px;
+          line-height: 20px;
+        }
+        .swiper-container {
+          margin-top: 20px;
+          .swiper-wrapper {
+            .swiper-slide {
+              width: 227px !important;
+              height: 414px;
+              margin-right: 39px !important;
+              h3 {
+                font-size: 18px;
+                line-height: 20px;
+                margin-top: 26px;
+                margin-bottom: 11083px;
+                margin-left: 13px;
               }
               p:last-child {
                 width: 126px;
@@ -813,47 +1153,47 @@
         }
       }
       .goAssociation {
-        height: 661px;
+        height: 492px;
         .content {
-          width: 1200px;
-          margin-top: 170px;
+          width: 959px;
           .img {
             img:nth-child(1) {
-              width: 309px;
-              height: 560px;
+              width: 232px;
+              height: 420px;
             }
             img:nth-child(2) {
-              width: 435px;
-              height: 653px;
+              width: 327px;
+              height: 490px;
             }
           }
           .title {
-            margin-top: 171px;
+            margin-top: 128px;
+            margin-right: 20px;
             h3 {
-              font-size: 47px;
-              line-height: 47px;
+              font-size: 35px;
+              line-height: 35px;
             }
             h4 {
-              font-size: 20px;
-              line-height: 27px;
+              font-size: 15px;
+              line-height: 20px;
             }
             p {
-              margin-top: 46px;
+              margin-top: 34px;
               span {
-                font-size: 27px;
-                line-height: 27px;
+                font-size: 20px;
+                line-height: 20px;
               }
               .sq {
-                width: 98px;
-                height: 98px;
+                width: 73px;
+                height: 73px;
                 img:nth-child(2) {
-                  width: 33px;
-                  height: 29px;
+                  width: 23px;
+                  height: 19px;
                   position: absolute;
                   top: 50%;
-                  margin-top: -16px;
+                  margin-top: -12px;
                   left: 50%;
-                  margin-left: -16px;
+                  margin-left: -12px;
                 }
               }
             }
@@ -861,61 +1201,38 @@
         }
       }
       .personDescr{
-        width: 1300px;
-        margin: 0 auto;
-        margin-top: 198px;
+        width: 909px;
+        margin-top: 124px;
         h2{
-          font-size:30px;
-          font-weight:400;
-          color:rgba(56,47,68,1);
-          line-height:32px;
-          margin-bottom: 36px;
+          font-size:18px;
+          line-height:20px;
+          margin-bottom: 21px;
         }
         .person{
-          display: flex;
           dl{
-            margin-right: 64px;
+            margin-right: 41px;
             dt{
-              width: 404px;
-              height: 581px;
-              img{
-                width: 100%;
-                height: 100%;
-              }
+              width: 252px;
+              height: 363px;
             }
             dd{
-              font-size:30px;
-              font-weight:600;
-              color:rgba(56,47,68,1);
-              line-height:24px;
-              margin: 32px 0;
+              font-size:18px;
+              line-height:15px;
+              margin: 20px 0;
             }
           }
         }
         .icon{
-          display: flex;
-          margin-top: 150px;
           dl{
-            margin-right: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            margin-right: 39px;
             dt{
-              width: 639px;
-              height: 191px;
-              img{
-                width: 100%;
-                height: 100%;
-              }
+              width: 399px;
+              height: 119px;
             }
             dd{
-              display: flex;
-              font-size:24px;
-              font-weight:600;
-              color:rgba(32,9,255,1);
-              line-height:40px;
-              border-bottom: 1px solid rgba(32,9,255,1);
-              margin-top: 22px;
+              font-size:15px;
+              line-height:19px;
+              margin-top: 14px;
             }
           }
         }
@@ -923,3 +1240,8 @@
     }
   }
 }
+
+
+
+
+

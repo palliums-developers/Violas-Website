@@ -223,7 +223,7 @@ class Home extends Component {
                 <h3>{intl.get('home.The Violas Association0')}</h3>
                 <h4>{intl.get('home.An independent')}</h4>
                 <p>
-                  <span>{intl.get('home.Learn more')}</span>
+                  <span>{intl.get('home.Learn More')}</span>
                   <div className="sq">
                     <img src="/img/编组 18@2x.png" />
                     <img src="/img/编组 20@2x.png" />
