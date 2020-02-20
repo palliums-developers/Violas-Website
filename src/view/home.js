@@ -224,7 +224,7 @@ class Home extends Component {
                 <h3>{intl.get('home.The Violas Association0')}</h3>
                 <h4>{intl.get('home.An independent')}</h4>
                 <p>
-                  <span>{intl.get('home.Learn more')}</span>
+                  <span>{intl.get('home.Learn More')}</span>
                   <div className="sq">
                     <img src="/img/编组 18@2x.png" />
                     <img src="/img/编组 20@2x.png" />
@@ -234,31 +234,31 @@ class Home extends Component {
             </div>
           </div>
           <div className="personDescr">
-             <h2>Academic Institution  Product Business Partner</h2>
-             <div className="person">
-               <dl>
-                 <dt><img src="/img/编组 52@2x.png"/></dt>
-                 <dd>Hans-Arno Jacobsen</dd>
-               </dl>
-               <dl>
-                 <dt><img src="/img/编组 55@2x.png"/></dt>
-                 <dd>Mr. Riccardo Conti</dd>
-               </dl>
-               <dl>
-                 <dt><img src="/img/编组 56@2x.png"/></dt>
-                 <dd>Dr. Mark Hale</dd>
-               </dl>
-             </div>
-             <div className="icon">
-               <dl>
-                 <dt><img src="/img/编组 45@2x.png"/></dt>
-                 <dd><a href="https://www.ece.utoronto.ca/people/jacobsen-h-a/">https://www.ece.utoronto.ca/people/jacobsen-h-a/</a></dd>
-               </dl>
-               <dl>
-                 <dt><img src="/img/编组 47@2x.png"/></dt>
-                 <dd><a href="https://facepay.io/">https://facepay.io/</a></dd>
-               </dl>
-             </div>
+            <h2>Academic Institution  Product Business Partner</h2>
+            <div className="person">
+              <dl>
+                <dt><img src="/img/编组 52@2x.png" /></dt>
+                <dd>Hans-Arno Jacobsen</dd>
+              </dl>
+              <dl>
+                <dt><img src="/img/编组 55@2x.png" /></dt>
+                <dd>Mr. Riccardo Conti</dd>
+              </dl>
+              <dl>
+                <dt><img src="/img/编组 56@2x.png" /></dt>
+                <dd>Dr. Mark Hale</dd>
+              </dl>
+            </div>
+            <div className="icon">
+              <dl>
+                <dt><img src="/img/编组 45@2x.png" /></dt>
+                <dd><a href="https://www.ece.utoronto.ca/people/jacobsen-h-a/">https://www.ece.utoronto.ca/people/jacobsen-h-a/</a></dd>
+              </dl>
+              <dl>
+                <dt><img src="/img/编组 47@2x.png" /></dt>
+                <dd><a href="https://facepay.io/">https://facepay.io/</a></dd>
+              </dl>
+            </div>
           </div>
         </section>
       </div>

@@ -1,5 +1,5 @@
 export default {
-    'The Vision': 'The Vision',
-    'The Vision1': 'Violas is a global platform that enables the issuance of reserve-backed stablecoins built on top of the Libra and Bitcoin blockchains.',
-    'The Vision2': 'Violas is a global platform that enables the issuance of reserve-backed stablecoins built on top of the Libra and Bitcoin blockchains. Violas enables third-party vendors to issue Libra compatible stablecoins that are pegged to their local fiat currency at a 1:1 ratio. Users will be able to send, receive, and secure their stablecoins just like the fiat currency in their bank account, only easier. Most importantly, unlike fiat banking, a user’s stablecoins are protected by a cryptographic private key that only they have access to. Violas imagines a world of frictionless, secure payments, built for the modern world.'
+    'The Vision': 'ビジョン',
+    'The Vision1': 'Violasは準備金に裏付けされたステーブルコインの発行を可能にするグローバルプラットフォームで、Libraおよびビットコインのブロックチェーン上に構築されています。',
+    'The Vision2': 'Violasは準備金に裏付けされたステーブルコインの発行を可能にするグローバルプラットフォームで、Libraおよびビットコインのブロックチェーン上に構築されています。Violasを利用することで、サードパーティベンダー側で、現地の法定通貨と1:1比率でペッグされたLibra互換のステーブルコインを発行できるようになります。ユーザー側にも、銀行に預金している法定通貨を使うのと同じように、ステーブルコインの送金、受取、保管を簡単に行えるというメリットがあります。もっとも魅力的なのは、法定通貨の銀行預金とは異なり、ユーザーのステーブルコインが自分自身しかアクセスできない暗号化された秘密鍵で保護されるという点です。Violasはこの特性に示される通り、現代社会に向けて「煩雑さをできる限り払拭した安全な決済」を提供することを目的としています。'
 }
