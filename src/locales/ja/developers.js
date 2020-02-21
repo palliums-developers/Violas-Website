@@ -4,5 +4,5 @@ export default{
     'ViolasSSO APP':'ViolasSSO  アプリ',
     'ViolasClient':'ViolasClient',
     'Violas Client':'ViolasClientをダウンロード',
-    'ViolasClient.pdf':'詳細PDFをダウンロード'
+    'ViolasClient pdf':'詳細PDFをダウンロード'
 }

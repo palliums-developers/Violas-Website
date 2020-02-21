@@ -50,7 +50,9 @@ class Home extends Component {
           <div className="headTalk">
             <p>{intl.get('home.Welcome to Violas')}</p>
             <p>
-              <label>{intl.get('home.whitePaper')}</label>
+              <label  onClick={() => {
+                this.props.history.push('/whiteParper')
+              }}>{intl.get('home.whitePaper')}</label>
               <img src="/img/编组 45复制 3@2x.png" />
             </p>
           </div>
@@ -141,7 +143,9 @@ class Home extends Component {
             <div className="title">
               <h3>{intl.get('home.The Violas White Paper')}</h3>
               <p>
-                <span>{intl.get('home.Read the White Paper')}</span>
+                <span onClick={() => {
+                  this.props.history.push('/whiteParper')
+                }}>{intl.get('home.Read the White Paper')}</span>
                 <div className="sq">
                   <img src="/img/编组 18@2x.png" />
                   <img src="/img/编组 20@2x.png" />
@@ -231,7 +235,7 @@ class Home extends Component {
               <div className="title">
                 <h3>{intl.get('home.The Violas Association0')}</h3>
                 <h4>{intl.get('home.An independent')}</h4>
-                <p>
+                <p onClick={() => { this.props.history.push('/app/association') }}>
                   <span>{intl.get('home.Learn More')}</span>
                   <div className="sq">
                     <img src="/img/编组 18@2x.png" />

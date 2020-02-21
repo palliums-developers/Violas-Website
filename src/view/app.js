@@ -65,6 +65,7 @@ class App extends Component {
     })
   }
   render() {
+    intl.options.currentLocale = localStorage.getItem('local');
     let { routes } = this.props;
     const sidebar = (<List>
       <SideBar getChange={this.getChange}></SideBar>

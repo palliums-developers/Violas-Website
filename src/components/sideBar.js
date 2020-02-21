@@ -35,15 +35,15 @@ class SideBar extends Component {
          <a class="home" href="index.html"><img src="../img/home 2.png" /></a>
          <span class="close" onClick={()=>this.onOpenChange()}><img src="../img/guanbi-2备份 2.png" /></span>
          <ul class="list-group phone_list">
-           <a onClick={() => { this.props.history.push('/app/vision') }}>Vision</a>
-           <a onClick={() => { this.props.history.push('/app/association') }}>Association</a>
-           <a onClick={() => { this.props.history.push('/app/partners') }}>Partners</a>
-           <a>Blockchain Explorer</a>
-           <a onClick={()=>{this.props.history.push('/app/media')}}>Media</a>
-           <a onClick={()=>{this.props.history.push('/developers')}}>Developers</a>
+           <a onClick={() => { this.props.history.push('/app/vision') }}>{intl.get('header.vision')}</a>
+           <a onClick={() => { this.props.history.push('/app/association') }}>{intl.get('header.association')}</a>
+           <a onClick={() => { this.props.history.push('/app/partners') }}>{intl.get('header.partners')}</a>
+           <a>{intl.get('header.blockchain explorer')}</a>
+           <a onClick={()=>{this.props.history.push('/app/media')}}>{intl.get('header.media')}</a>
+           <a onClick={()=>{this.props.history.push('/developers')}}>{intl.get('header.developers')}</a>
            <span id="whitePaper1" onClick={() => {
              this.props.history.push('/whiteParper')
-           }}>White Paper</span>
+           }}>{intl.get('header.white paper')}</span>
            <div class="change">
              {/* <!-- <a>EN</a> --> */}
              <a href="../ja/index.html">日本語</a>
