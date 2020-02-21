@@ -158,7 +158,6 @@
     }
   }
 
- 
   footer {
     width: 100%;
     margin-top: 200px;
@@ -405,51 +404,48 @@
         width: 100%;
       }
     }
-    .header1 {
-      // display: none;
-    }
     .am-navbar {
       width: 100%;
-      background:0;
+      background: 0;
       position: absolute;
       top: 0;
       z-index: 9;
-      .am-navbar-left{
-        img{
+      .am-navbar-left {
+        img {
           width: 36px;
           height: 36px;
         }
       }
-      .am-navbar-right{
-        img{
-          width:27px;
-          height:21px;
+      .am-navbar-right {
+        img {
+          width: 27px;
+          height: 21px;
         }
       }
     }
     .my-drawer {
       position: relative;
       -webkit-overflow-scrolling: touch;
-      .am-drawer-content{
+      .am-drawer-content {
         position: static;
       }
-      .am-drawer-sidebar{
+      .am-drawer-sidebar {
         height: 100%;
-        .am-list{
+        .am-list {
           width: 240px;
           height: 100%;
-          .am-list-body{
+          .am-list-body {
             height: 100%;
           }
+        }
       }
-    } 
     }
     .my-drawer .am-drawer-sidebar {
       background-color: #fff;
       -webkit-overflow-scrolling: touch;
       z-index: 999;
     }
-    .am-drawer.am-drawer-right .am-drawer-draghandle{
+    .am-drawer.am-drawer-right .am-drawer-draghandle {
       width: 0;
     }
     #dw-p1 {
@@ -474,7 +470,7 @@
       margin-top: 47px;
     }
     .phone_list a.active {
-      color: rgba(248, 248, 248, 0.6)!important;
+      color: rgba(248, 248, 248, 0.6) !important;
     }
     .phone_list > span {
       width: 90px;
@@ -495,8 +491,8 @@
       line-height: 11px;
       padding: 0 17px;
       box-sizing: border-box;
-      color: #FFF;
-      border-right: 1px solid #FFF;
+      color: #fff;
+      border-right: 1px solid #fff;
     }
     .phone_list > .change a:last-child {
       border-right: 0;
@@ -547,8 +543,27 @@
       .email {
         width: 100%;
         padding: 0;
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        p:nth-child(1){
+          width: 100%;
+          position: relative;
+          top:60px;
+          justify-content: center;
+        }
         p:nth-child(2) {
-          margin-left: 0;
+          width: 60%;
+          justify-content: center;
+          margin-left: 10px;
+        }
+        p:nth-child(3){
+          margin-right: 20px;
+          width: 30%;
+          span{
+            padding: 2px 10px;
+
+          }
         }
       }
     }

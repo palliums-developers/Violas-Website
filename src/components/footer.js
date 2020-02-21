@@ -3,16 +3,16 @@ import { NavLink } from 'react-router-dom';
 import intl from 'react-intl-universal';
 class Footer extends Component {
   componentWillMount() {
-    intl.options.currentLocale = localStorage.getItem("local");
+    // intl.options.currentLocale = localStorage.getItem("local");
   }
   goEN() {
-    return <span onClick={() => { localStorage.setItem('local', 'EN') }}>{intl.get('header.en')}</span>
+    return <span onClick={() => { localStorage.setItem('local', 'EN'); this.forceUpdate(); }}>{intl.get('header.en')}</span>
   }
   goKO() {
-    return <span onClick={() => { localStorage.setItem('local', 'KO') }}>{intl.get('header.ko')}</span>
+    return <span onClick={() => { localStorage.setItem('local', 'KO'); this.forceUpdate(); }}>{intl.get('header.ko')}</span>
   }
   goJA() {
-    return <span onClick={() => { localStorage.setItem('local', 'JA') }}>{intl.get('header.ja')}</span>
+    return <span onClick={() => { localStorage.setItem('local', 'JA'); this.forceUpdate(); }}>{intl.get('header.ja')}</span>
   }
   twoLanguages(lang) {
     switch (lang) {
@@ -49,7 +49,7 @@ class Footer extends Component {
           <p>{intl.get('footer.Copyright')}</p>
           {/* <p>{intl.get('footer.Connect Us')}</p> */}
           <p><img src="/img/形状 2@2x.png" />{intl.get('footer.email')}</p>
-          <p>{this.twoLanguages(intl.options.currentLocale)}</p>
+          <p>{this.twoLanguages(localStorage.getItem("local"))}</p>
         </div>
       </footer>
     );

@@ -23,13 +23,13 @@ class Header extends Component {
     });
   }
   goEN() {
-    return <a onClick={() => { localStorage.setItem('local', 'EN') }}>{intl.get('header.en')}</a>
+    return <a onClick={() => { localStorage.setItem('local', 'EN'); this.forceUpdate(); }}>{intl.get('header.en')}</a>
   }
   goKO() {
-    return <a onClick={() => { localStorage.setItem('local', 'KO') }}>{intl.get('header.ko')}</a>
+    return <a onClick={() => { localStorage.setItem('local', 'KO'); this.forceUpdate(); }}>{intl.get('header.ko')}</a>
   }
   goJA() {
-    return <a onClick={() => { localStorage.setItem('local', 'JA') }}>{intl.get('header.ja')}</a>
+    return <a onClick={() => { localStorage.setItem('local', 'JA'); this.forceUpdate(); }}>{intl.get('header.ja')}</a>
   }
   twoLanguages(lang) {
     switch (lang) {
@@ -50,6 +50,7 @@ class Header extends Component {
         clWidth: e.target.innerWidth
       })
     });
+    console.log('header')
   }
   render() {
     return (

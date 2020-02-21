@@ -122,7 +122,7 @@
     .section {
       width: 1050px;
       padding: 30px 50px;
-      margin-top: -150px;
+      // margin-top: -150px;
       .black{
         margin:30px 0px;
         font-size: 20px;
@@ -144,12 +144,12 @@
         font-size: 20px;
       }
       p {
-        // width: 1360px;
+        width: 100%;
         font-size: 20px;
         line-height: 28px;
       }
       li{
-        // width: 1360px;
+        width: 100%;
         font-size: 20px;
         line-height: 28px;
       }
@@ -182,7 +182,7 @@
     .section {
       width: 860px;
       padding: 20px 50px;
-      margin-top: -100px;
+      margin-top: 100px;
       p {
         font-size: 20px;
         line-height: 27px;
