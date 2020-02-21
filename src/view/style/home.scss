@@ -272,7 +272,7 @@
         margin-top: 32px;
         .swiper-wrapper {
           .swiper-slide {
-            width: 363px!important;
+            width: 363px !important;
             height: 662px;
             margin-right: 60px !important;
             .img {
@@ -292,11 +292,11 @@
               margin-bottom: 130px;
               margin-left: 20px;
             }
-            p{
+            p {
               width: 325px;
               font-size: 18px;
               line-height: 20px;
-              color: #FFF;
+              color: #fff;
               margin-left: 20px;
               margin-top: -100px;
             }
@@ -307,13 +307,13 @@
               width: 194px;
               height: 200px;
             }
-            p{
+            p {
               display: none;
             }
-            .img:hover{
+            .img:hover {
               display: none;
             }
-            .img:hover~p{
+            .img:hover ~ p {
               display: block;
             }
           }
@@ -323,13 +323,13 @@
               width: 198px;
               height: 193px;
             }
-            p{
+            p {
               display: none;
             }
-            .img:hover{
+            .img:hover {
               display: none;
             }
-            .img:hover~p{
+            .img:hover ~ p {
               display: block;
             }
           }
@@ -339,13 +339,13 @@
               width: 206px;
               height: 218px;
             }
-            p{
+            p {
               display: none;
             }
-            .img:hover{
+            .img:hover {
               display: none;
             }
-            .img:hover~p{
+            .img:hover ~ p {
               display: block;
             }
           }
@@ -355,13 +355,13 @@
               width: 194px;
               height: 200px;
             }
-            p{
+            p {
               display: none;
             }
-            .img:hover{
+            .img:hover {
               display: none;
             }
-            .img:hover~p{
+            .img:hover ~ p {
               display: block;
             }
           }
@@ -371,13 +371,13 @@
               width: 204px;
               height: 181px;
             }
-            p{
+            p {
               display: none;
             }
-            .img:hover{
+            .img:hover {
               display: none;
             }
-            .img:hover~p{
+            .img:hover ~ p {
               display: block;
             }
           }
@@ -387,13 +387,13 @@
               width: 188px;
               height: 199px;
             }
-            p{
+            p {
               display: none;
             }
-            .img:hover{
+            .img:hover {
               display: none;
             }
-            .img:hover~p{
+            .img:hover ~ p {
               display: block;
             }
           }
@@ -403,13 +403,13 @@
               width: 187px;
               height: 186px;
             }
-            p{
+            p {
               display: none;
             }
-            .img:hover{
+            .img:hover {
               display: none;
             }
-            .img:hover~p{
+            .img:hover ~ p {
               display: block;
             }
           }
@@ -419,13 +419,13 @@
               width: 192px;
               height: 166px;
             }
-            p{
+            p {
               display: none;
             }
-            .img:hover{
+            .img:hover {
               display: none;
             }
-            .img:hover~p{
+            .img:hover ~ p {
               display: block;
             }
           }
@@ -435,13 +435,13 @@
               width: 183px;
               height: 188px;
             }
-            p{
+            p {
               display: none;
             }
-            .img:hover{
+            .img:hover {
               display: none;
             }
-            .img:hover~p{
+            .img:hover ~ p {
               display: block;
             }
           }
@@ -817,11 +817,11 @@
               h3 {
                 font-size: 23px;
                 line-height: 27px;
-                margin-top:24px;
+                margin-top: 24px;
                 margin-bottom: 110px;
                 margin-left: 18px;
               }
-              p{
+              p {
                 width: 270px;
                 font-size: 15px;
                 line-height: 17px;
@@ -1044,7 +1044,7 @@
           height: 365px;
           img {
             width: 100%;
-            height: 1000px;
+            height: 100%;
           }
         }
       }
@@ -1160,7 +1160,7 @@
                 margin-bottom: 70px;
                 margin-left: 13px;
               }
-              p{
+              p {
                 width: 205px;
                 font-size: 11px;
                 line-height: 12px;
@@ -1344,11 +1344,6 @@
         width: 90%;
         padding: 0 20px;
         margin-bottom: 90px;
-        .leftImg,
-        .rightImg {
-          // width: 70%;
-          height: 70%;
-        }
       }
       .forReal {
         width: 100%;
@@ -1397,7 +1392,7 @@
               img:nth-child(2) {
                 width: 20px;
                 height: 20px;
-                margin:0;
+                margin: 0;
                 top: 10px;
                 left: 10px;
               }
@@ -1591,7 +1586,7 @@
     .content {
       .img {
         img:nth-child(1) {
-          width: 192px;
+          width: 220px;
           height: 349px;
           position: relative;
           top: 1rem;
@@ -1610,13 +1605,23 @@
     }
   }
 }
+@media (max-width: 660px) {
+  .home section .missionImg .leftImg {
+    width: 70%;
+    height: 70%;
+  }
+  .home section .missionImg .rightImg{
+    width: 70%;
+    height:70%;
+  }
+}
 @media (max-width: 520px) {
   .home section .goWhitepaper {
     height: 260px;
     .img {
       width: 137px;
       height: 160px;
-      margin-top:20px;
+      margin-top: 20px;
       img:nth-child(1) {
         width: 137px;
         height: 111px;
@@ -1649,7 +1654,7 @@
       }
       p {
         span {
-          width:100px;
+          width: 100px;
           font-size: 14px;
           font-weight: 300;
           color: rgba(93, 86, 102, 1);
@@ -1703,6 +1708,13 @@
 @media (max-width: 470px) {
   .home section .missionImg {
     height: 300px;
+    padding:0;
+    .leftImg{
+      height:60%;
+    }
+    .rightImg{
+      height: 60%;
+    }
   }
   .home section .forReal h4 {
     width: 300px;
@@ -1737,10 +1749,14 @@
         img:nth-child(1) {
           top: 1.5rem;
           left: 0.7rem;
+          // top:100px;
+          // left:100px;
         }
         img:nth-child(2) {
           left: 1.2rem;
-          top: -12.5rem;
+          top: -11.5rem;
+          // top:200px;
+          // left:200px;
         }
       }
     }
