@@ -44,6 +44,8 @@ class App extends Component {
     })
   }
   componentDidMount() {
+    let lang = localStorage.getItem('local');
+    console.log(lang)
     window.addEventListener('resize', (e) => {
       this.setState({
         clWidth: e.target.innerWidth

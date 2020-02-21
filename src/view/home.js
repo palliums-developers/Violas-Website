@@ -31,7 +31,7 @@ class Home extends Component {
       }
     });
     window.addEventListener('scroll',(e)=>{
-     console.log(window.scrollY)
+    //  console.log(window.scrollY)
     })
   }
   onMouseEnter() {
