@@ -50,9 +50,9 @@ class Header extends Component {
         clWidth: e.target.innerWidth
       })
     });
-    console.log('header')
   }
   render() {
+    intl.options.currentLocale = localStorage.getItem('local');
     return (
       this.state.clWidth > 1024 ?
         <header className="header">
