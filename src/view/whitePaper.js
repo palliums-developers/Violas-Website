@@ -65,15 +65,15 @@ class WhitePaper extends Component {
               <div className="wrapHead">
                 {/* className={this.state.scrollY > 780 ? 'pos wrapHead' : 'wrapHead'} */}
                 <Anchor class="toHeadings">
-                  <Link href={'#' + intl.get('whitepaper.Part 1')} title={intl.get('whitepaper.1 Sharing')}></Link>
-                  <Link href={'#' + intl.get('whitepaper.Part 2')} title={intl.get('whitepaper.2 Concerns')}></Link>
-                  <Link href={'#' + intl.get('whitepaper.Part 3')} title={intl.get('whitepaper.3 Introducing')}></Link>
-                  <Link href={'#' + intl.get('whitepaper.Part 4')} title={intl.get('whitepaper.4 Blockchain')}></Link>
-                  <Link href={'#' + intl.get('whitepaper.Part 5')} title={intl.get('whitepaper.5 Wallet')}></Link>
-                  <Link href={'#' + intl.get('whitepaper.Part 6')} title={intl.get('whitepaper.6 currencies')}></Link>
-                  <Link href={'#' + intl.get('whitepaper.Part 7')} title={intl.get('whitepaper.7 Association')}></Link>
-                  <Link href={'#' + intl.get('whitepaper.Part 8')} title={intl.get('whitepaper.8 Involved')}></Link>
-                  <Link href={'#' + intl.get('whitepaper.Part 9')} title={intl.get('whitepaper.9 Conclusion')}></Link>
+                  <Link href={'#' + intl.get('whitepaper.Part 1')} title={intl.get('whitepaper.1')}></Link>
+                  <Link href={'#' + intl.get('whitepaper.Part 2')} title={intl.get('whitepaper.2')}></Link>
+                  <Link href={'#' + intl.get('whitepaper.Part 3')} title={intl.get('whitepaper.3')}></Link>
+                  <Link href={'#' + intl.get('whitepaper.Part 4')} title={intl.get('whitepaper.4')}></Link>
+                  <Link href={'#' + intl.get('whitepaper.Part 5')} title={intl.get('whitepaper.5')}></Link>
+                  <Link href={'#' + intl.get('whitepaper.Part 6')} title={intl.get('whitepaper.6')}></Link>
+                  <Link href={'#' + intl.get('whitepaper.Part 7')} title={intl.get('whitepaper.7')}></Link>
+                  <Link href={'#' + intl.get('whitepaper.Part 8')} title={intl.get('whitepaper.8')}></Link>
+                  <Link href={'#' + intl.get('whitepaper.Part 9')} title={intl.get('whitepaper.9')}></Link>
 
                 </Anchor>
               </div>

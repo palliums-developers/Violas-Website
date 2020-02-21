@@ -48,7 +48,7 @@ export default {
     'Part 43': '4.3 BFT 컨센서스',
     'Part 431': 'Violas는 허가를 받는 확인 노드와 LibraBFT 컨센서스 프로토콜로 시작할 것이다. Violas 블록체인이 진화하면서, Violas는 LibraBFT 컨센서스 프로토콜이 Violas 블록체인의 미래 필요에 맞도록 수정할 수도 있다. 미래에, Violas는 자체 ViolasBFT컨센서스 프로토콜을 개발할 예정이다.',
     'Part 44': '4.4 Violas 데이터 구조',
-    'Part 4.41': 'Violas는 Libra 데이터 구조와 Rust로 쓴 코드베이스로 시작할 것이다. 가까운 시일 안에, Violas 블록체인은 특히 “주” 기반 Sharding과 Layer 2 직접 결제 채널 부분에서 Libra 데이터 구조와 코드베이스로부터 Violas 데이터 구조로 분기 (가지치기) 해서 나올 것이다. 이렇게 하면, Violas 블록체인의 TPS가 백만이 넘게 되고, 거래 시간도 1초를 유지할 수 있을 것이다.',
+    'Part 441': 'Violas는 Libra 데이터 구조와 Rust로 쓴 코드베이스로 시작할 것이다. 가까운 시일 안에, Violas 블록체인은 특히 “주” 기반 Sharding과 Layer 2 직접 결제 채널 부분에서 Libra 데이터 구조와 코드베이스로부터 Violas 데이터 구조로 분기 (가지치기) 해서 나올 것이다. 이렇게 하면, Violas 블록체인의 TPS가 백만이 넘게 되고, 거래 시간도 1초를 유지할 수 있을 것이다.',
     'Part 5': '제5부',
     'Part 50': '5. Violas 지갑, SDK, API',
     'Part 501': 'Violas는 공식 Violas 지갑 말고는 네이티브 앱이 없다. Violas는 제3자 앱을 위한 Violas SDK 개발과 제3자 개발자들에게 API를 제공하는 데 초점을 맞출 것이다.',

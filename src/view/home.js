@@ -71,7 +71,7 @@ class Home extends Component {
               <img src="/img/IMG_7788.jpg" />
             </div>
             <div className="rightImg">
-              <img src="/img/IMG_7760.jpg" />
+              <img src="/img/IMG_77601.jpg" />
             </div>
           </div>
           <div className="forReal">
