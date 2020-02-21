@@ -72,10 +72,10 @@ class App extends Component{
           position="right"
         >
           <RouterView routes={routes}></RouterView>
+          <Footer></Footer>
         </Drawer>
         }
 
-        <Footer></Footer>
       </div>
     );
   }

@@ -352,11 +352,12 @@ class WhitePaper extends Component{
                   </div>
                 </div>
         </section>
+        <Footer></Footer>
         </Drawer>
         
         }
         
-        {/* <Footer></Footer> */}
+        
         </div>
     );
   }

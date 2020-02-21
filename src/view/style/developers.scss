@@ -524,10 +524,10 @@
   .developers{
     .am-navbar {
       width: 100%;
-      background:0;
       position: absolute;
       top: 0;
       z-index: 9;
+      background: #FFF;
       .am-navbar-left{
         img{
           width: 36px;
@@ -544,6 +544,9 @@
     .my-drawer {
       position: relative;
       -webkit-overflow-scrolling: touch;
+      // .am-drawer-content{
+      //   position: static;
+      // }
       .am-drawer-sidebar{
         height: 100%;
         .am-list{
@@ -737,6 +740,39 @@
           width: 10px;
           height: 15px;
         }
+    }
+    footer {
+      .footerNav {
+        width: 90%;
+        padding: 0;
+        flex-direction: column;
+        margin: 20px auto;
+        .logo {
+          width: 24px;
+          height: 24px;
+          margin-bottom: 20px;
+        }
+        .nav div {
+          margin-left: 0;
+          width: 33.3%;
+          a {
+            font-size: 14px;
+            font-weight: 300;
+            color: rgba(80, 27, 162, 1);
+            line-height: 13px;
+          }
+        }
+        // .nav div:nth-child(3){
+        //   margin-right: 0;
+        // }
+      }
+      .email {
+        width: 100%;
+        padding: 0;
+        p:nth-child(2) {
+          margin-left: 0;
+        }
+      }
     }
   }
   
