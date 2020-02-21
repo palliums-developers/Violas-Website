@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 import intl from 'react-intl-universal';
 import { NavBar, Icon } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css'
-class Header extends Component {
+class Header1 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,6 +19,7 @@ class Header extends Component {
   }
   onOpenChange = (...args) => {
     this.setState({ open: true },()=>{
+      console.log(this.state.open)
       this.props.getChange(this.state.open)
     });
   }
@@ -53,29 +54,30 @@ class Header extends Component {
   }
   render() {
     return (
-      this.state.clWidth > 1024 ? <header className={localStorage.getItem('whiteBg')}>
+      this.state.clWidth > 1024 ? <header className="header">
       <div className="head">
         <div className="logo">
-          <a href="home">{localStorage.getItem('whiteBg') === "header" ? <img src="/img/编组 25@2x.png" /> : <img src="/img/编组 252@2x.png" />}</a>
+          <a href="index.html"><img src="/img/编组 252@2x.png" /></a>
         </div>
         <ul className="navList">
-          <li id="vision" onClick={() => { this.props.history.push('./vision') }}>{intl.get('header.vision')}</li>
-          <li id="association" onClick={() => { this.props.history.push('./association') }}>{intl.get('header.association')}</li>
-          <li id="partners" onClick={() => { this.props.history.push('./partners') }}>{intl.get('header.partners')}</li>
+          <li id="vision" onClick={()=>{this.props.history.push('/app/vision')}}>{intl.get('header.vision')}</li>
+          <li id="association" onClick={()=>{this.props.history.push('/app/association')}}>{intl.get('header.association')}</li>
+          <li id="partners" onClick={()=>{this.props.history.push('/app/partners')}}>{intl.get('header.partners')}</li>
           <li>{intl.get('header.blockchain explorer')}</li>
-          <li id="media" onClick={()=>{this.props.history.push('./media')}}>{intl.get('header.media')}</li>
+          <li id="media" onClick={()=>{this.props.history.push('/app/media')}}>{intl.get('header.media')}</li>
           <li id="developers" onClick={()=>{this.props.history.push('/developers')}}>{intl.get('header.developers')}</li>
         </ul>
         <div className="descr">
-          <span id="whitePaper" onClick={() => {
+          <span id="whitePaper" onClick={()=>{
             this.props.history.push('/whiteParper')
-          }}>{intl.get('header.white paper')}</span>
-          {this.twoLanguages(localStorage.getItem("local"))}
+          }}>White Paper</span>
+          <a>日本語</a>
+          <a>한국어</a>
         </div>
-      </div>
-    </header> : <NavBar leftContent={<img onClick={()=>{this.props.history.push('/app')}} src="/img/编组 74复制 4@2x.png"/>} rightContent={<img src="/img/编组 212@2x.png" onClick={this.onOpenChange} />}>
+        </div>
+    </header> : <NavBar leftContent={<img onClick={()=>{this.props.history.push('/app')}} src="/img/编组 74复制 3@2x.png"/>} rightContent={<img src="/img/phone_nav.png" onClick={this.onOpenChange} />}>
     </NavBar>
     );
   }
 }
-export default withRouter(Header);
+export default withRouter(Header1);
