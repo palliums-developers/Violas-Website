@@ -515,7 +515,7 @@
             margin: 32px 0;
           }
         }
-        dl:last-child{
+        dl:last-child {
           margin-right: 0;
         }
       }
@@ -545,7 +545,7 @@
             margin-top: 22px;
           }
         }
-        dl:last-child{
+        dl:last-child {
           margin-right: 0;
         }
       }
@@ -864,38 +864,38 @@
           }
         }
       }
-      .personDescr{
+      .personDescr {
         width: 1150px;
         margin-top: 168px;
-        h2{
-          font-size:25px;
-          line-height:27px;
+        h2 {
+          font-size: 25px;
+          line-height: 27px;
           margin-bottom: 30px;
         }
-        .person{
-          dl{
+        .person {
+          dl {
             margin-right: 53px;
-            dt{
+            dt {
               width: 336px;
               height: 484px;
             }
-            dd{
-              font-size:25px;
-              line-height:20px;
+            dd {
+              font-size: 25px;
+              line-height: 20px;
               margin: 27px 0;
             }
           }
         }
-        .icon{
-          dl{
+        .icon {
+          dl {
             margin-right: 52px;
-            dt{
+            dt {
               width: 532px;
               height: 159px;
             }
-            dd{
-              font-size:20px;
-              line-height:25px;
+            dd {
+              font-size: 20px;
+              line-height: 25px;
               margin-top: 18px;
             }
           }
@@ -905,7 +905,7 @@
   }
 }
 
-@media (max-width:1200px){
+@media (max-width: 1200px) {
   .home {
     .headContent {
       height: 452px;
@@ -918,7 +918,7 @@
         box-sizing: border-box;
         p:nth-child(1) {
           font-size: 45px;
-          line-height:45px;
+          line-height: 45px;
           margin-bottom: 37px;
           margin-top: -60px;
         }
@@ -945,7 +945,7 @@
           line-height: 20px;
         }
         p:nth-child(2) {
-          font-size:29px;
+          font-size: 29px;
           line-height: 34px;
           margin-top: 33px;
           margin-bottom: 40px;
@@ -967,7 +967,7 @@
         .rightImg {
           width: 490px;
           height: 365px;
-          img{
+          img {
             width: 100%;
             height: 1000px;
           }
@@ -984,7 +984,7 @@
         h4 {
           width: 723px;
           font-size: 15px;
-          line-height:20px;
+          line-height: 20px;
           margin-bottom: 111px;
         }
         .forRealContent {
@@ -997,7 +997,7 @@
             }
             dd {
               h3 {
-                font-size:24px;
+                font-size: 24px;
                 line-height: 24px;
                 margin-top: 29px;
                 margin-bottom: 23px;
@@ -1016,7 +1016,7 @@
         }
       }
       .goWhitepaper {
-        width:939px;
+        width: 939px;
         height: 300px;
         margin: 110px auto;
         padding-left: 50px;
@@ -1051,7 +1051,7 @@
               width: 73px;
               height: 73px;
               margin-left: 12px;
-            
+
               img:nth-child(2) {
                 width: 24px;
                 height: 20px;
@@ -1207,38 +1207,38 @@
           }
         }
       }
-      .personDescr{
+      .personDescr {
         width: 909px;
         margin-top: 124px;
-        h2{
-          font-size:18px;
-          line-height:20px;
+        h2 {
+          font-size: 18px;
+          line-height: 20px;
           margin-bottom: 21px;
         }
-        .person{
-          dl{
+        .person {
+          dl {
             margin-right: 41px;
-            dt{
+            dt {
               width: 252px;
               height: 363px;
             }
-            dd{
-              font-size:18px;
-              line-height:15px;
+            dd {
+              font-size: 18px;
+              line-height: 15px;
               margin: 20px 0;
             }
           }
         }
-        .icon{
-          dl{
+        .icon {
+          dl {
             margin-right: 39px;
-            dt{
+            dt {
               width: 399px;
               height: 119px;
             }
-            dd{
-              font-size:15px;
-              line-height:19px;
+            dd {
+              font-size: 15px;
+              line-height: 19px;
               margin-top: 14px;
             }
           }
@@ -1306,7 +1306,8 @@
       .goWhitepaper {
         width: 100%;
         height: 330px;
-        margin-bottom: 50px;
+        margin: 0px;
+        padding: 0;
         .title {
           position: relative;
           left: 20px;
@@ -1324,8 +1325,9 @@
               img:nth-child(2) {
                 width: 20px;
                 height: 20px;
-                top: 24px;
-                left: 24px;
+                margin:0;
+                top: 10px;
+                left: 10px;
               }
             }
           }
@@ -1355,6 +1357,11 @@
       }
       .banner {
         margin-left: 20px;
+        margin-top: 40px;
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: none;
+        }
         .swiper-container .swiper-wrapper .swiper-slide {
           width: 335px;
           height: 428px;
@@ -1371,14 +1378,15 @@
             text-align: center;
             margin-top: 20px;
             h3 {
-              // font-size: 20px;
+              font-size: 20px;
               font-weight: 500;
               color: rgba(56, 47, 68, 1);
               line-height: 28px;
             }
             h4 {
-              // font-size: 12px;
+              font-size: 12px;
               font-weight: 400;
+              margin-top: 10px;
               color: rgba(93, 86, 102, 1);
               line-height: 12px;
             }
@@ -1392,8 +1400,9 @@
                 img:nth-child(2) {
                   width: 23px;
                   height: 23px;
-                  top: 23px;
-                  left: 23px;
+                  // margin: 0;
+                  top: 20px;
+                  left: 20px;
                 }
               }
               span {
@@ -1423,25 +1432,32 @@
       }
       .personDescr {
         width: 100%;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
+        h2 {
+          font-size: 14px;
+          margin: 0 auto;
+        }
         .person {
           display: flex;
           flex-direction: column;
-          dl {
-            width:335px;
-            height:550px;
-            margin:20px auto;
-            dd{
-              margin:0;
+          dl,
+          dl:last-child {
+            width: 320px;
+            height: 480px;
+            margin: 20px auto;
+            dd {
+              margin: 0;
               position: relative;
-              bottom: 80px;
+              bottom: -100px;
+              font-size: 24px;
             }
             dt {
               width: 100%;
-              img{
-                width:335px;
-                height:481px;
+              img {
+                width: 320px;
+                height: 460px;
               }
             }
           }
@@ -1450,14 +1466,15 @@
           display: flex;
           flex-direction: column;
           margin-top: 50px;
-          dl{
-            width:90%;
-            margin:20px auto;
-            dt{
-              width:100%;
-              height:100%;
+          dl,
+          dl:last-child {
+            width: 90%;
+            margin: 20px auto;
+            dt {
+              width: 100%;
+              height: 100%;
             }
-            dd{
+            dd {
               font-size: 12px;
             }
           }
