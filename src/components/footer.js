@@ -25,6 +25,7 @@ class Footer extends Component {
     }
   }
   render() {
+    intl.options.currentLocale = localStorage.getItem('local');
     return (
       <footer>
         <div className="footerNav">
