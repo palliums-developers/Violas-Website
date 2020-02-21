@@ -5,14 +5,23 @@ class Footer extends Component {
   componentWillMount() {
     intl.options.currentLocale = localStorage.getItem("local");
   }
+  goEN() {
+    return <span onClick={() => { localStorage.setItem('local', 'EN') }}>{intl.get('header.en')}</span>
+  }
+  goKO() {
+    return <span onClick={() => { localStorage.setItem('local', 'KO') }}>{intl.get('header.ko')}</span>
+  }
+  goJA() {
+    return <span onClick={() => { localStorage.setItem('local', 'JA') }}>{intl.get('header.ja')}</span>
+  }
   twoLanguages(lang) {
     switch (lang) {
       case 'EN':
-        return <><span>{intl.get('header.ja')}</span><span>{intl.get('header.ko')}</span></>
+        return <>{this.goJA()}{this.goKO()}</>
       case 'JA':
-        return <><span>{intl.get('header.en')}</span><span>{intl.get('header.ko')}</span></>
+        return <>{this.goEN()}{this.goKO()}</>
       case 'KO':
-        return <><span>{intl.get('header.ja')}</span><span>{intl.get('header.en')}</span></>
+        return <>{this.goEN()}{this.goJA()}</>
     }
   }
   render() {
