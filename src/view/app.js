@@ -13,17 +13,23 @@ class App extends Component {
     super(props);
     this.state = {
       clWidth: null,
-      open: false,
+      open: false
     }
   }
   componentWillMount() {
-    let currentLocale = intl.options.currentLocale;
-    let lang = localStorage.getItem('local') ? localStorage.getItem('local') : currentLocale;
+    // let currentLocale = intl.options.currentLocale;
+    let lang = localStorage.getItem('local');
     switch (lang) {
       case 'ja':
         lang = 'JA';
         break;
+      case 'JA':
+        lang = 'JA';
+        break;
       case 'ko':
+        lang = 'KO';
+        break;
+      case 'KO':
         lang = 'KO';
         break;
       default:
@@ -31,20 +37,22 @@ class App extends Component {
         break;
     }
     localStorage.setItem('local', lang);
+    // this.setState({language:lang});
     intl.options.currentLocale = localStorage.getItem("local");
     this.setState({
       clWidth: document.body.clientWidth
     })
   }
   componentDidMount() {
-    // this.setState({
-    //   open:this.props.opens
-    // })
     window.addEventListener('resize', (e) => {
       this.setState({
         clWidth: e.target.innerWidth
       })
     });
+    // if(localStorage.getItem("local")!==this.state.language){
+    //   this.setState({language:localStorage.getItem("local")});
+    //   this.forceUpdate();
+    // }
   }
   onOpenChange = (...args) => {
     this.setState({ open: !this.state.open });
@@ -75,7 +83,6 @@ class App extends Component {
             <RouterView routes={routes}></RouterView>
           </Drawer>
         }
-
         <Footer></Footer>
       </div>
     );
