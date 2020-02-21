@@ -7,29 +7,29 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clWidth:null,
+      clWidth: null,
       open: false,
     }
   }
   componentWillMount() {
     intl.options.currentLocale = localStorage.getItem("local");
     this.setState({
-      clWidth:document.body.clientWidth
+      clWidth: document.body.clientWidth
     })
   }
   onOpenChange = (...args) => {
-    this.setState({ open: true },()=>{
+    this.setState({ open: true }, () => {
       this.props.getChange(this.state.open)
     });
   }
   goEN() {
-    return <a onClick={()=>{localStorage.setItem('local','EN')}}>{intl.get('header.en')}</a>
+    return <a onClick={() => { localStorage.setItem('local', 'EN') }}>{intl.get('header.en')}</a>
   }
   goKO() {
-    return <a onClick={()=>{localStorage.setItem('local','KO')}}>{intl.get('header.ko')}</a>
+    return <a onClick={() => { localStorage.setItem('local', 'KO') }}>{intl.get('header.ko')}</a>
   }
   goJA() {
-    return <a onClick={()=>{localStorage.setItem('local','JA')}}>{intl.get('header.ja')}</a>
+    return <a onClick={() => { localStorage.setItem('local', 'JA') }}>{intl.get('header.ja')}</a>
   }
   twoLanguages(lang) {
     switch (lang) {
@@ -41,40 +41,42 @@ class Header extends Component {
         return <>{this.goJA()}{this.goEN()}</>
     }
   }
-  componentDidMount(){
+  componentDidMount() {
     // this.setState({
     //   open:this.props.opens
     // })
-    window.addEventListener('resize', (e)=>{
+    window.addEventListener('resize', (e) => {
       this.setState({
-        clWidth:e.target.innerWidth
+        clWidth: e.target.innerWidth
       })
     });
   }
   render() {
     return (
-      this.state.clWidth > 1024 ? <header className={localStorage.getItem('whiteBg')}>
-      <div className="head">
-        <div className="logo">
-          <a href="home">{localStorage.getItem('whiteBg') === "header" ? <img src="/img/编组 25@2x.png" /> : <img src="/img/编组 252@2x.png" />}</a>
-        </div>
-        <ul className="navList">
-          <li id="vision" onClick={() => { this.props.history.push('./vision') }}>{intl.get('header.vision')}</li>
-          <li id="association" onClick={() => { this.props.history.push('./association') }}>{intl.get('header.association')}</li>
-          <li id="partners" onClick={() => { this.props.history.push('./partners') }}>{intl.get('header.partners')}</li>
-          <li>{intl.get('header.blockchain explorer')}</li>
-          <li id="media" onClick={()=>{this.props.history.push('./media')}}>{intl.get('header.media')}</li>
-          <li id="developers" onClick={()=>{this.props.history.push('/developers')}}>{intl.get('header.developers')}</li>
-        </ul>
-        <div className="descr">
-          <span id="whitePaper" onClick={() => {
-            this.props.history.push('/whiteParper')
-          }}>{intl.get('header.white paper')}</span>
-          {this.twoLanguages(localStorage.getItem("local"))}
-        </div>
-      </div>
-    </header> : <NavBar leftContent={<img onClick={()=>{this.props.history.push('/app')}} src="/img/编组 74复制 4@2x.png"/>} rightContent={<img src="/img/编组 212@2x.png" onClick={this.onOpenChange} />}>
-    </NavBar>
+      this.state.clWidth > 1024 ?
+        <header className="header">
+          <div className="head">
+            <div className="logo">
+              {/* <a href="home">{localStorage.getItem('whiteBg') === "header" ? <img src="/img/编组 25@2x.png" /> : <img src="/img/编组 252@2x.png" />}</a> */}
+              <img onClick={() => { this.props.history.push('/app/home') }} src="/img/编组 25@2x.png" />
+            </div>
+            <ul className="navList">
+              <li id="vision" onClick={() => { this.props.history.push('./vision') }}>{intl.get('header.vision')}</li>
+              <li id="association" onClick={() => { this.props.history.push('./association') }}>{intl.get('header.association')}</li>
+              <li id="partners" onClick={() => { this.props.history.push('./partners') }}>{intl.get('header.partners')}</li>
+              <li>{intl.get('header.blockchain explorer')}</li>
+              <li id="media" onClick={() => { this.props.history.push('./media') }}>{intl.get('header.media')}</li>
+              <li id="developers" onClick={() => { this.props.history.push('/developers') }}>{intl.get('header.developers')}</li>
+            </ul>
+            <div className="descr">
+              <span id="whitePaper" onClick={() => {
+                this.props.history.push('/whiteParper')
+              }}>{intl.get('header.white paper')}</span>
+              {this.twoLanguages(localStorage.getItem("local"))}
+            </div>
+          </div>
+        </header> : <NavBar leftContent={<img onClick={() => { this.props.history.push('/app/home') }} src="/img/编组 74复制 4@2x.png" />} rightContent={<img src="/img/编组 212@2x.png" onClick={this.onOpenChange} />}>
+        </NavBar>
     );
   }
 }

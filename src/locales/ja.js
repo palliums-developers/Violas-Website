@@ -4,7 +4,7 @@ import Footer from './ja/footer';
 import Header from './ja/header';
 import Home from './ja/home';
 import Media from './ja/media';
-import Partner from './ja/partner';
+import Partners from './ja/partners';
 import Vision from './ja/vision';
 import WhitePaper from './ja/whitepaper';
 
@@ -15,7 +15,7 @@ export default{
     header:Header,
     home:Home,
     media:Media,
-    partner:Partner,
+    partners:Partners,
     vision:Vision,
     whitepaper:WhitePaper
 }

@@ -4,7 +4,7 @@ import Footer from './ko/footer';
 import Header from './ko/header';
 import Home from './ko/home';
 import Media from './ko/media';
-import Partner from './ko/partner';
+import Partners from './ko/partners';
 import Vision from './ko/vision';
 import WhitePaper from './ko/whitepaper';
 
@@ -15,7 +15,7 @@ export default{
     header:Header,
     home:Home,
     media:Media,
-    partner:Partner,
+    partners:Partners,
     vision:Vision,
     whitepaper:WhitePaper
 }

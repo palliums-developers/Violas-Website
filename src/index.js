@@ -5,12 +5,14 @@ import "lib-flexible";
 import './index.scss';
 import intl from 'react-intl-universal';
 import EN from './locales/en';
+import KO from './locales/ko';
+import JA from './locales/ja';
 
 let lang = (navigator.languages && navigator.languages[0]) || navigator.language
 intl.init({
   currentLocale: lang.split('-')[0],
   locales: {
-    EN
+    EN, KO, JA
   }
 })
 ReactDOM.render(<RouterConfig></RouterConfig>, document.getElementById('root'));
