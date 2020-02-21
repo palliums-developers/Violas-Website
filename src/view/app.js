@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import RouterView from '../router/routerView';
@@ -8,16 +8,17 @@ import { Drawer, List, NavBar, Icon } from 'antd-mobile';
 import SideBar from '../components/sideBar'
 import 'antd-mobile/dist/antd-mobile.css'
 
-class App extends Component{
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clWidth:null,
+      clWidth: null,
       open: false,
     }
   }
-  componentWillMount(){
-    let lang = intl.options.currentLocale
+  componentWillMount() {
+    let currentLocale = intl.options.currentLocale;
+    let lang = localStorage.getItem('local') ? localStorage.getItem('local') : currentLocale;
     switch (lang) {
       case 'ja':
         lang = 'JA';
@@ -26,34 +27,34 @@ class App extends Component{
         lang = 'KO';
         break;
       default:
-        lang='EN';
+        lang = 'EN';
         break;
     }
     localStorage.setItem('local', lang);
     intl.options.currentLocale = localStorage.getItem("local");
     this.setState({
-      clWidth:document.body.clientWidth
+      clWidth: document.body.clientWidth
     })
   }
-  componentDidMount(){
+  componentDidMount() {
     // this.setState({
     //   open:this.props.opens
     // })
-    window.addEventListener('resize', (e)=>{
+    window.addEventListener('resize', (e) => {
       this.setState({
-        clWidth:e.target.innerWidth
+        clWidth: e.target.innerWidth
       })
     });
   }
   onOpenChange = (...args) => {
     this.setState({ open: !this.state.open });
   }
-  getChange=(open)=>{
+  getChange = (open) => {
     this.setState({
-      open:open
+      open: open
     })
   }
-  render(){
+  render() {
     let { routes } = this.props;
     const sidebar = (<List>
       <SideBar getChange={this.getChange}></SideBar>
@@ -63,16 +64,16 @@ class App extends Component{
         <Header getChange={this.getChange} opens={this.state.open}></Header>
         {
           this.state.clWidth > 1024 ? <RouterView routes={routes}></RouterView> : <Drawer
-          className="my-drawer"
-          style={{ minHeight: document.documentElement.clientHeight }}
-          enableDragHandle
-          sidebar={sidebar}
-          open={this.state.open}
-          onOpenChange={this.onOpenChange}
-          position="right"
-        >
-          <RouterView routes={routes}></RouterView>
-        </Drawer>
+            className="my-drawer"
+            style={{ minHeight: document.documentElement.clientHeight }}
+            enableDragHandle
+            sidebar={sidebar}
+            open={this.state.open}
+            onOpenChange={this.onOpenChange}
+            position="right"
+          >
+            <RouterView routes={routes}></RouterView>
+          </Drawer>
         }
 
         <Footer></Footer>
