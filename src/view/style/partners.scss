@@ -67,7 +67,7 @@
         display: flex;
         flex-direction: column;
         margin-right: 100px;
-        img {
+        >img {
           width: 165px;
           height: 165px;
           margin: 0 auto;
@@ -76,11 +76,11 @@
           width: 7px;
           height: 27px;
           margin-right: 20px;
-          position: relative;
-          top: 5px;
+          margin-top: 5px;
         }
         p:nth-child(2) {
           display: flex;
+          // align-items: center;
           font-size: 30px;
           font-weight: 600;
           color: rgba(56, 47, 68, 1);
@@ -511,6 +511,7 @@
         .headTalk2 {
           padding: 0;
           width: 90%;
+          margin-top: -300px;
           h1 {
             position: relative;
             width: 100%;
@@ -546,9 +547,10 @@
             width: 100%;
             margin-top: 20px;
             margin-right: 0;
-            img {
+            >img {
               width: 73px;
               height: 73px;
+              margin: 0;
             }
             p:nth-child(2) {
               margin: 20px 0;
@@ -557,11 +559,10 @@
               color: rgba(56, 47, 68, 1);
               line-height: 15px;
               img {
-                left: -4px;
                 width: 3px;
                 height: 12px;
-                top: 2px;
-                margin-right: 0;
+                margin-right: 5px;
+                margin-top: 2px;
               }
             }
             p:nth-child(3) {
@@ -583,6 +584,7 @@
               color: rgba(56, 47, 68, 1);
               line-height: 24px;
               margin: 20px 0;
+              margin-top: 50px;
             }
             p:nth-child(2) {
               font-size: 14px;
@@ -592,24 +594,28 @@
             }
           }
           .section22 {
+            width: 200px;
+            height: 168px;
             position: relative;
-            right: -1rem;
+            right: 0;
           }
         }
         .section3 {
           width: 100%;
-          height: 1200px;
+          height: 1100px;
           padding: 0;
           margin: 0;
           .section31 {
             width: 100%;
-            margin: 50px 20px;
+            margin: 50px  0 0 20px;
           }
           .section32 {
             width: 100%;
             flex-direction: column;
             .section321 {
               width: 90%;
+              align-items: flex-start;
+              margin-left: 20px;
               img {
                 width: 73px;
                 height: 73px;
@@ -618,11 +624,13 @@
               }
               p {
                 width: 100%;
-                height: 140px;
+                height: auto;
+                margin-bottom: 50px;
                 font-size: 14px;
                 font-weight: 300;
                 color: rgba(255, 255, 255, 1);
                 line-height: 22px;
+                margin-top: 0;
               }
             }
             .section322 {
@@ -633,6 +641,11 @@
         .section4 {
           margin-top: 50px;
           flex-direction: column;
+          .section41{
+            width: 191px;
+            height: 206px;
+            margin: 0 auto;
+          }
           .section42 {
             width: 100%;
             p:nth-child(1) {
@@ -640,6 +653,7 @@
               font-weight: 600;
               color: rgba(56, 47, 68, 1);
               line-height: 24px;
+              margin-top: 60px;
             }
             p:nth-child(2) {
               font-size: 14px;

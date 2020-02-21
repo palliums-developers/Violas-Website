@@ -72,16 +72,17 @@ class App extends Component {
         <Header getChange={this.getChange} opens={this.state.open}></Header>
         {
           this.state.clWidth > 1024 ? <RouterView routes={routes}></RouterView> : <Drawer
-            className="my-drawer"
-            style={{ minHeight: document.documentElement.clientHeight }}
-            enableDragHandle
-            sidebar={sidebar}
-            open={this.state.open}
-            onOpenChange={this.onOpenChange}
-            position="right"
-          >
-            <RouterView routes={routes}></RouterView>
-          </Drawer>
+          className="my-drawer"
+          style={{ minHeight: document.documentElement.clientHeight }}
+          enableDragHandle
+          sidebar={sidebar}
+          open={this.state.open}
+          onOpenChange={this.onOpenChange}
+          position="right"
+        >
+          <RouterView routes={routes}></RouterView>
+          {/* <Footer></Footer> */}
+        </Drawer>
         }
         <Footer></Footer>
       </div>

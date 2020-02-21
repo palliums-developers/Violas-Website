@@ -349,13 +349,14 @@ class WhitePaper extends Component {
                     </div>
                   </div>
                 </div>
-              </section>
-            </Drawer>
-
+        </section>
+        <Footer></Footer>
+        </Drawer>
+        
         }
-
-        {/* <Footer></Footer> */}
-      </div>
+        
+        
+        </div>
     );
   }
 

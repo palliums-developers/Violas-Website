@@ -14,7 +14,7 @@ class Home extends Component {
   }
   componentWillMount() {
     // localStorage.setItem('whiteBg', 'header');
-    // intl.options.currentLocale = localStorage.getItem("local");
+    intl.options.currentLocale = localStorage.getItem("local");
   }
   componentDidMount() {
     var mySwiper = new Swiper(".swiper-container", {

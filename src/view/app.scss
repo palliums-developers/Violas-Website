@@ -426,6 +426,9 @@
     .my-drawer {
       position: relative;
       -webkit-overflow-scrolling: touch;
+      .am-drawer-content{
+        position: static;
+      }
       .am-drawer-sidebar{
         height: 100%;
         .am-list{

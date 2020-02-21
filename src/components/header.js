@@ -26,7 +26,7 @@ class Header extends Component {
     return <a onClick={() => { localStorage.setItem('local', 'EN'); this.forceUpdate(); }}>{intl.get('header.en')}</a>
   }
   goKO() {
-    return <a onClick={() => { localStorage.setItem('local', 'KO'); this.forceUpdate();}}>{intl.get('header.ko')}</a>
+    return <a onClick={() => { localStorage.setItem('local', 'KO'); this.forceUpdate(); }}>{intl.get('header.ko')}</a>
   }
   goJA() {
     return <a onClick={() => { localStorage.setItem('local', 'JA'); this.forceUpdate(); }}>{intl.get('header.ja')}</a>
