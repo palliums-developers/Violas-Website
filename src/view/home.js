@@ -30,6 +30,9 @@ class Home extends Component {
         prevEl: ".swiper-button-prev"
       }
     });
+    window.addEventListener('scroll',(e)=>{
+     console.log(window.scrollY)
+    })
   }
   onMouseEnter() {
     this.setState({ detail: true });
@@ -47,7 +50,7 @@ class Home extends Component {
           <div className="headTalk">
             <p>{intl.get('home.Welcome to Violas')}</p>
             <p>
-              <label for="">{intl.get('home.whitePaper')}</label>
+              <label>{intl.get('home.whitePaper')}</label>
               <img src="/img/编组 45复制 3@2x.png" />
             </p>
           </div>

@@ -31,11 +31,15 @@
         li {
           font-size: 16px;
           font-weight: 500;
+          // line-height: 17px;
           color: #fff;
           margin-left: 55px;
           cursor: pointer;
           white-space: nowrap;
           position: relative;
+        }
+        li:hover{
+          border-bottom: 1px solid #FFF;
         }
         .active {
           color: #4a189f;

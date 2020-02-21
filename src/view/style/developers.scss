@@ -39,6 +39,9 @@
                   white-space: nowrap;
                   position: relative;
                 }
+                li:hover{
+                  border-bottom: 1px solid #4A189F;
+                }
               .active {
                   color: #4A189F;
               }
