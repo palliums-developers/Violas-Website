@@ -219,14 +219,14 @@
           border-right: 0;
         }
       }
-      p:nth-child(2){
+      p:nth-child(2) {
         margin-left: 300px;
       }
     }
   }
 }
-@media (max-width:1600px){
-  .app{
+@media (max-width: 1600px) {
+  .app {
     .header {
       height: 80px;
       .head {
@@ -234,10 +234,10 @@
         height: 100%;
         .logo {
           margin-left: 20px;
-            img {
-                width: 132px;
-                height: 43px;
-            }
+          img {
+            width: 132px;
+            height: 43px;
+          }
         }
         .navList {
           margin-right: 0;
@@ -311,100 +311,130 @@
   }
 }
 
-@media (max-width:1200px){
-  .app{
+@media (max-width: 1200px) {
+  .app {
     .header {
       height: 60px;
       .head {
         width: 989px;
-        .logo{
+        .logo {
           margin-left: 15px;
-            img {
-                width: 107px;
-                height: 33px;
-            }
+          img {
+            width: 107px;
+            height: 33px;
+          }
         }
         .navList {
-            margin-right:15px;
-            // margin-left:30px;
-            li {
-                font-size: 10px;
-                margin-left: 33px;
-              }   
+          margin-right: 15px;
+          // margin-left:30px;
+          li {
+            font-size: 10px;
+            margin-left: 33px;
+          }
         }
         .descr {
           margin-right: 10px;
-            a {
-                margin-left: 18px;
-                font-size: 10px;
-            }
-            span {
-                margin-right: 0;
-            }
-            span:nth-child(1) {
-                font-size: 10px;
-                padding: 6px 13px;
-                box-sizing: border-box;
-              }
-        }
-      }
-    }
-  footer{
-    margin-top: 100px;
-    
-    .footerNav{
-      width: 989px;
-      margin-bottom: 98px;
-      .logo{
-        width: 33px;
-        height: 32px;
-      }
-      .nav{
-        div{
-          margin-left: 151px;
-          a{
-            font-size:18px;
-            line-height:18px;   
-            margin-bottom: 24px;       
+          a {
+            margin-left: 18px;
+            font-size: 10px;
+          }
+          span {
+            margin-right: 0;
+          }
+          span:nth-child(1) {
+            font-size: 10px;
+            padding: 6px 13px;
+            box-sizing: border-box;
           }
         }
       }
     }
-    .email{
-      width: 989px;
-      margin-bottom: 28px;
-      p{
-        font-size:12px;
-        line-height:12px;
-        img{
-          width: 10px;
-          height: 8px;
-          margin-right:5px;
+    footer {
+      margin-top: 100px;
+      .footerNav {
+        width: 989px;
+        margin-bottom: 98px;
+        .logo {
+          width: 33px;
+          height: 32px;
         }
-        span{
-          padding: 0 15px;
-          box-sizing: border-box;
-          font-size:10px;
-          line-height:10px;
+        .nav {
+          div {
+            margin-left: 151px;
+            a {
+              font-size: 18px;
+              line-height: 18px;
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+      .email {
+        width: 989px;
+        margin-bottom: 28px;
+        p {
+          font-size: 12px;
+          line-height: 12px;
+          img {
+            width: 10px;
+            height: 8px;
+            margin-right: 5px;
+          }
+          span {
+            padding: 0 15px;
+            box-sizing: border-box;
+            font-size: 10px;
+            line-height: 10px;
+          }
         }
       }
     }
   }
 }
+@media (max-width: 1024px) {
+  .app {
+    .header {
+      // display: none;
+      .head {
+        width: 100%;
+      }
+    }
+    .header1 {
+      // display: none;
+    }
+    footer {
+      // display: none;
+      .footerNav {
+        width: 90%;
+        padding: 0;
+        flex-direction: column;
+        margin: 20px auto;
+        .logo {
+          width: 24px;
+          height: 24px;
+          margin-bottom: 20px;
+        }
+        .nav div {
+          margin-left: 0;
+          width: 33.3%;
+          a {
+            font-size: 14px;
+            font-weight: 300;
+            color: rgba(80, 27, 162, 1);
+            line-height: 13px;
+          }
+        }
+        // .nav div:nth-child(3){
+        //   margin-right: 0;
+        // }
+      }
+      .email {
+        width: 100%;
+        padding: 0;
+        p:nth-child(2) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
-// @media(max-width:1024px){
-//   .app{
-//     .header{
-//       display:none;
-//       .head{
-//         width: 100%;
-//       }
-//     }
-//     .header1{
-//       display:none;
-//     }
-//     footer{
-//       display:none;
-//     }
-//   }
-// }
