@@ -151,63 +151,68 @@ class Home extends Component {
             <h2>{intl.get('home.Get To Know Violas')}</h2>
             <div className="swiper-container">
               <div className="swiper-wrapper">
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <h3>{intl.get('home.Violas’ Manifesto')}</h3>
-                  {
-                    this.state.detail ?
-                      <p>{intl.get('home.Violas’ Manifesto1')}</p> :
-                      <div className="img">
-                        <img src="/img/编组 32@2x.png" />
-                      </div>
-                  }
+                  <div className="img">
+                    <img src="/img/编组 32@2x.png" />
+                  </div>
+                  <p>{intl.get('home.Violas’ Manifesto1')}</p>
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <h3>{intl.get('home.Violas’ Influences')}</h3>
                   <div className="img">
                     <img src="/img/编组 44@2x.png" />
                   </div>
+                  <p>{intl.get('home.Violas’ Influences1')}</p>
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <h3>{intl.get('home.The Violas Reserve')}</h3>
                   <div className="img">
                     <img src="/img/编组 30@2x.png" />
                   </div>
+                  <p>{intl.get('home.The Violas Reserve1')}</p>
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <h3>{intl.get('home.The Violas blockchain')}</h3>
                   <div className="img">
                     <img src="/img/编组 21@2x.png" />
                   </div>
+                  <p>{intl.get('home.The Violas blockchain1')}</p>
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <h3>{intl.get('home.The Violas Association')}</h3>
                   <div className="img">
                     <img src="/img/编组 132@2x.png" />
                   </div>
+                  <p>{intl.get('home.The Violas Association1')}</p>
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <h3>{intl.get('home.Security & Privacy on the Violas Network')}</h3>
                   <div className="img">
                     <img src="/img/编组 15@2x.png" />
                   </div>
+                  <p>{intl.get('home.Security & Privacy on the Violas Network1')}</p>
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <h3>{intl.get('home.Commitment to Compliance & Consumer Protection')}</h3>
                   <div className="img">
                     <img src="/img/编组 10@2x.png" />
                   </div>
+                  <p>{intl.get('home.Commitment to Compliance & Consumer Protection1')}</p>
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <h3>{intl.get('home.Move Programming Language')}</h3>
                   <div className="img">
                     <img src="/img/编组 11@x.png" />
                   </div>
+                  <p>{intl.get('home.Move Programming Language1')}</p>
                 </div>
-                <div class="swiper-slide">
+                <div className="swiper-slide">
                   <h3>{intl.get('home.How to Become a Founding Member')}</h3>
                   <div className="img">
                     <img src="/img/编组 12@2x.png" />
                   </div>
+                  <p>{intl.get('home.How to Become a Founding Member1')}</p>
                 </div>
               </div>
             </div>
