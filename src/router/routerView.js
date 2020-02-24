@@ -19,10 +19,8 @@ class RouterView extends Component {
                         }
                     }).concat(redirectRouter)
                 }
-
             </Switch>
         )
     }
 }
-
 export default RouterView;

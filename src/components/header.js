@@ -9,7 +9,9 @@ class Header extends Component {
     this.state = {
       clWidth: null,
       open: false,
-      getChange: false
+      getChange: false,
+      scrollDirection: 'stop',
+      preScroll: 0
     }
   }
   componentWillMount() {
@@ -48,12 +50,29 @@ class Header extends Component {
         clWidth: e.target.innerWidth
       })
     });
+    window.addEventListener('scroll', this.handleScroll)
+  }
+  handleScroll = (e) => {
+    if (window.scrollY == this.state.preScroll) {
+      this.setState({ scrollDirection: 'stop' });
+    } else if (window.scrollY > this.state.preScroll) {
+      this.setState({ scrollDirection: 'down', preScroll: window.scrollY })
+    } else if (window.scrollY < this.state.preScroll) {
+      this.setState({ scrollDirection: 'up', preScroll: window.scrollY })
+    }
+  }
+  scrollHeader=()=>{
+    if(this.state.scrollDirection=='up'&&window.scrollY>608){
+    return {position:"fixed",background:"white",color:"black"}
+    }else{
+      return {position:"absolute"}
+    }
   }
   render() {
     intl.options.currentLocale = localStorage.getItem('local');
     return (
       this.state.clWidth > 1024 ?
-        <header className="header">
+        <header className="header" style={this.scrollHeader()}>
           <div className="head">
             <div className="logo">
               {/* <a href="home">{localStorage.getItem('whiteBg') === "header" ? <img src="/img/编组 25@2x.png" /> : <img src="/img/编组 252@2x.png" />}</a> */}

@@ -62,6 +62,11 @@ class App extends Component {
       open: open
     })
   }
+  getChange1 = (open) => {
+    this.setState({
+      open: false
+    })
+  }
   render() {
     intl.options.currentLocale = localStorage.getItem('local');
     let { routes } = this.props;
@@ -70,7 +75,7 @@ class App extends Component {
     </List>);
     return (
       <div className="app">
-        <Header getChange={this.getChange} opens={this.state.open}></Header>
+        <Header getChange={this.getChange} ></Header>
         {
           this.state.clWidth > 1024 ? <RouterView routes={routes}></RouterView> : <Drawer
             className="my-drawer"
@@ -85,7 +90,7 @@ class App extends Component {
             {/* <Footer></Footer> */}
           </Drawer>
         }
-        <Footer getChange={this.getChange} opens={this.state.open}></Footer>
+        <Footer getChange={this.getChange1} ></Footer>
       </div>
     );
   }
