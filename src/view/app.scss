@@ -5,7 +5,6 @@
     height: 100px;
     position: absolute;
     z-index: 999;
-    color:#fff;
     .head {
       width: 1400px;
       height: 100%;
@@ -33,7 +32,7 @@
           font-size: 16px;
           font-weight: 500;
           // line-height: 17px;
-          // color: #fff;
+          color: #fff;
           margin-left: 55px;
           cursor: pointer;
           white-space: nowrap;
@@ -52,7 +51,7 @@
         align-items: center;
         white-space: nowrap;
         a {
-          // color: #fff;
+          color: #fff;
           margin-left: 20px;
           cursor: pointer;
           font-weight: 400;
@@ -65,7 +64,7 @@
         }
         span:nth-child(1) {
           display: inline-block;
-          // background: #fff;
+          background: #fff;
           border-radius: 3rem;
           //   line-height: 0.25rem;
           text-align: center;
@@ -76,7 +75,7 @@
         }
         span:hover {
           background: #501ba2;
-          // color: #fff;
+          color: #fff;
         }
       }
     }
@@ -235,7 +234,6 @@
   .app {
     .header {
       height: 80px;
-      color: #fff;
       .head {
         width: 1200px;
         height: 100%;
