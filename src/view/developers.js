@@ -5,7 +5,6 @@ import intl from 'react-intl-universal';
 import "./style/developers.scss";
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
 import SideBar from '../components/sideBar'
-
 import 'antd-mobile/dist/antd-mobile.css';
 
 class Developers extends Component {
@@ -205,7 +204,7 @@ class Developers extends Component {
                             </section>
                         </Drawer>
                 }
-                <Footer></Footer>
+                <Footer  getChange={this.getChange} opens={this.state.open}></Footer>
             </div>
         );
     }

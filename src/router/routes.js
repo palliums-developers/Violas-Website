@@ -12,7 +12,7 @@ const routes = [
     {
         path: "/app",
         component: App,
-        children:[
+        children: [
             {
                 path: "/app/home",
                 component: Home
@@ -29,7 +29,6 @@ const routes = [
                 path: "/app/media",
                 component: Media
             },
-            
             {
                 path: "/app/partners",
                 component: Partners

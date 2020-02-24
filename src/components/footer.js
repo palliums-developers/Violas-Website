@@ -2,17 +2,28 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import intl from 'react-intl-universal';
 class Footer extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      open:false
+    }
+  }
   componentWillMount() {
     // intl.options.currentLocale = localStorage.getItem("local");
   }
+  onOpenChange = (...args) => {
+    this.setState({ open: true }, () => {
+      this.props.getChange(this.state.open)
+    });
+  }
   goEN() {
-    return <span onClick={() => { localStorage.setItem('local', 'EN'); this.forceUpdate(); }}>{intl.get('header.en')}</span>
+    return <span onClick={() => { localStorage.setItem('local', 'EN'); this.onOpenChange(); }}>{intl.get('header.en')}</span>
   }
   goKO() {
-    return <span onClick={() => { localStorage.setItem('local', 'KO'); this.forceUpdate(); }}>{intl.get('header.ko')}</span>
+    return <span onClick={() => { localStorage.setItem('local', 'KO'); this.onOpenChange(); }}>{intl.get('header.ko')}</span>
   }
   goJA() {
-    return <span onClick={() => { localStorage.setItem('local', 'JA'); this.forceUpdate(); }}>{intl.get('header.ja')}</span>
+    return <span onClick={() => { localStorage.setItem('local', 'JA'); this.onOpenChange(); }}>{intl.get('header.ja')}</span>
   }
   twoLanguages(lang) {
     switch (lang) {

@@ -13,7 +13,7 @@ class App extends Component {
     super(props);
     this.state = {
       clWidth: null,
-      open: false
+      open: false,
     }
   }
   componentWillMount() {
@@ -44,8 +44,6 @@ class App extends Component {
     })
   }
   componentDidMount() {
-    let lang = localStorage.getItem('local');
-    console.log(lang)
     window.addEventListener('resize', (e) => {
       this.setState({
         clWidth: e.target.innerWidth
@@ -75,19 +73,19 @@ class App extends Component {
         <Header getChange={this.getChange} opens={this.state.open}></Header>
         {
           this.state.clWidth > 1024 ? <RouterView routes={routes}></RouterView> : <Drawer
-          className="my-drawer"
-          style={{ minHeight: document.documentElement.clientHeight }}
-          enableDragHandle
-          sidebar={sidebar}
-          open={this.state.open}
-          onOpenChange={this.onOpenChange}
-          position="right"
-        >
-          <RouterView routes={routes}></RouterView>
-          {/* <Footer></Footer> */}
-        </Drawer>
+            className="my-drawer"
+            style={{ minHeight: document.documentElement.clientHeight }}
+            enableDragHandle
+            sidebar={sidebar}
+            open={this.state.open}
+            onOpenChange={this.onOpenChange}
+            position="right"
+          >
+            <RouterView routes={routes}></RouterView>
+            {/* <Footer></Footer> */}
+          </Drawer>
         }
-        <Footer></Footer>
+        <Footer getChange={this.getChange} opens={this.state.open}></Footer>
       </div>
     );
   }
