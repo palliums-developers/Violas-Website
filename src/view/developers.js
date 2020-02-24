@@ -202,9 +202,14 @@ class Developers extends Component {
                                     </div>
                                 </div>
                             </section>
+                            {
+                                this.state.clWidth <= 1024 ? <Footer getChange={this.getChange} opens={this.state.open}></Footer> : null
+                            }
                         </Drawer>
                 }
-                <Footer  getChange={this.getChange} opens={this.state.open}></Footer>
+                {
+                    this.state.clWidth > 1024 ? <Footer getChange={this.getChange} opens={this.state.open}></Footer> : null
+                }
             </div>
         );
     }

@@ -5,8 +5,9 @@ import RouterView from '../router/routerView';
 import './app.scss';
 import intl from 'react-intl-universal';
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
-import SideBar from '../components/sideBar'
-import 'antd-mobile/dist/antd-mobile.css'
+import SideBar from '../components/sideBar';
+import 'antd-mobile/dist/antd-mobile.css';
+import 'animate.css';
 
 class App extends Component {
   constructor(props) {

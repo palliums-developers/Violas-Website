@@ -47,7 +47,7 @@ class Home extends Component {
           <div className="inset">
             <img src="/img/矩形 6@2x.png" />
           </div>
-          <div className="headTalk">
+          <div className="headTalk animated fadeInUp">
             <p>{intl.get('home.Welcome to Violas')}</p>
             <p>
               <label  onClick={() => {
