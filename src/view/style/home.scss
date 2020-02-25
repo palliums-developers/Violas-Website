@@ -3,8 +3,7 @@
   .headContent {
     width: 100%;
     height: 726px;
-    background: url("/img/IMG_7794.jpg") no-repeat,
-      url("/img/蒙版 3@2x.png") no-repeat;
+    background: url("/img/蒙版 3@2x.png") no-repeat,url("/img/IMG_7794.jpg") no-repeat;
     background-size: cover;
     background-position: 50%;
     .inset {
@@ -275,12 +274,15 @@
             width: 363px !important;
             height: 662px;
             margin-right: 60px !important;
+            display: flex;
+            flex-direction: column;
             .img {
               display: flex;
               margin: 0 auto;
-              img {
-                width: 100%;
-                height: 100%;
+              width: 100%;
+              flex: 1;
+              img{
+                margin: 0 auto;
               }
             }
             h3 {
@@ -303,7 +305,7 @@
           }
           .swiper-slide:nth-child(1) {
             background: #60419e;
-            .img {
+            img {
               width: 194px;
               height: 200px;
             }
@@ -319,7 +321,7 @@
           }
           .swiper-slide:nth-child(2) {
             background: #2e2c64;
-            .img {
+            img {
               width: 198px;
               height: 193px;
             }
@@ -335,7 +337,7 @@
           }
           .swiper-slide:nth-child(3) {
             background: #3e697b;
-            .img {
+            img {
               width: 206px;
               height: 218px;
             }
@@ -351,7 +353,7 @@
           }
           .swiper-slide:nth-child(4) {
             background: #62409e;
-            .img {
+            img {
               width: 194px;
               height: 200px;
             }
@@ -367,7 +369,7 @@
           }
           .swiper-slide:nth-child(5) {
             background: #2d2d64;
-            .img {
+            img {
               width: 204px;
               height: 181px;
             }
@@ -383,7 +385,7 @@
           }
           .swiper-slide:nth-child(6) {
             background: #3d6a79;
-            .img {
+            img {
               width: 188px;
               height: 199px;
             }
@@ -399,7 +401,7 @@
           }
           .swiper-slide:nth-child(7) {
             background: #6041a0;
-            .img {
+            img {
               width: 187px;
               height: 186px;
             }
@@ -415,7 +417,7 @@
           }
           .swiper-slide:nth-child(8) {
             background: #2e2c64;
-            .img {
+            img {
               width: 192px;
               height: 166px;
             }
@@ -431,7 +433,7 @@
           }
           .swiper-slide:nth-child(9) {
             background: #3e697b;
-            .img {
+            img {
               width: 183px;
               height: 188px;
             }
@@ -618,9 +620,9 @@
             display: flex;
             font-size: 24px;
             font-weight: 600;
-            color: rgba(32, 9, 255, 1);
+            color: rgba(32, 9, 255, 1)!important;
             line-height: 40px;
-            border-bottom: 1px solid rgba(32, 9, 255, 1);
+            border-bottom: 1px solid rgba(32, 9, 255, 1)!important;
             margin-top: 22px;
           }
         }

@@ -89,8 +89,13 @@ class App extends Component {
           >
             <RouterView routes={routes}></RouterView>
             {/* <Footer getChange={this.getChange} opens={this.state.open}></Footer> */}
-            <Footer getChange={this.getChange1} ></Footer>
+            {
+              this.state.clWidth <= 1024 ? <Footer getChange={this.getChange1} ></Footer> : null
+            }
           </Drawer>
+        }
+        {
+              this.state.clWidth > 1024 ? <Footer getChange={this.getChange1} ></Footer> : null
         }
       </div>
     );

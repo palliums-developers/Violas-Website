@@ -3,8 +3,7 @@
   .headContent {
     width: 100%;
     height: 726px;
-    background: url("/img/IMG_77841.jpg") no-repeat,
-      url("/img/蒙版 3@2x.png") no-repeat;
+    background:url("/img/蒙版 3@2x.png") no-repeat,url("/img/IMG_77841.jpg") no-repeat;
     background-size: cover;
     background-position: 50%;
     .headContent1 {
@@ -36,7 +35,7 @@
         color: white;
         // margin-top: ;
         font-size: 72px;
-        font-weight: 100;
+        font-weight: 600;
         margin-bottom: 30px;
       }
       h2 {
@@ -48,7 +47,7 @@
     }
   }
   .section {
-    width: 1300px;
+    width: 1400px;
     margin: 0 auto;
     padding: 70px 50px;
     background-color: white;
@@ -58,16 +57,22 @@
       margin: 30px 0px;
       font-size: 24px;
       color: #382f44;
-      line-height: 32px;
+      // line-height:18px;
       font-weight: 600;
+      display: flex;
+      align-items: center;
+      margin-left: -20px;
       img {
         width: 7px;
-        height: 27px;
-        // margin-right: 20px;
-        position: relative;
-        top: 5px;
-        left: -20px;
+        height: 14px;
+        margin-right: 15px;
+        margin-top: 2px;
       }
+    }
+    .black1{
+      margin-left: 0;
+      margin: 20px 0;
+      font-weight: 400;
     }
     .title {
       // width: 500px;
@@ -120,18 +125,18 @@
       }
     }
     .section {
-      width: 1050px;
+      width: 1150px;
       padding: 30px 50px;
       // margin-top: -150px;
       .black{
-        margin:30px 0px;
+        margin:25px 0px;
         font-size: 20px;
         line-height: 24px;
         margin-left: -15px;
         img{
           width: 6px;
-          height: 15px;
-          margin-right: 8px;
+          height: 14px;
+          margin-right: 10px;
         }
       }
       .black1{

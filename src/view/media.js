@@ -50,7 +50,7 @@ class Media extends Component {
           <li>{intl.get('media.Violaspay9')}</li>
           <li>{intl.get('media.Violaspay10')}</li>
           <li>{intl.get('media.Violaspay11')}</li>
-          <div className=" black1">{intl.get('media.Violassso')}</div>
+          <div className="black black1">{intl.get('media.Violassso')}</div>
           <li>{intl.get('media.Violassso1')}</li>
           <li>{intl.get('media.Violassso2')}</li>
           <li>{intl.get('media.Violassso3')}</li>
