@@ -68,7 +68,7 @@ class Header extends Component {
     // return {position:"fixed",background:"white",color:"black"}
       // return 'className="header1" style={position:"fixed"}'
       className_temp='header1';
-      style_temp={position:"fixed", background:"white", zIndex:"1"};
+      style_temp={position:"fixed", background:"white", zIndex:"999"};
     }else{
       // return {position:"absolute"}
       // return 'className="header"'
@@ -109,7 +109,7 @@ class Header extends Component {
               {this.twoLanguages(localStorage.getItem("local"))}
             </div>
           </div>
-        </header> : <NavBar leftContent={<img onClick={() => { this.props.history.push('/app/home') }} src="/img/编组 74复制 4@2x.png" />} rightContent={<img src="/img/编组 212@2x.png" onClick={this.onOpenChange} />}>
+        </header> : <NavBar leftContent={<img onClick={() => { this.props.history.push('/home') }} src="/img/编组 74复制 4@2x.png" />} rightContent={<img src="/img/编组 212@2x.png" onClick={this.onOpenChange} />}>
         </NavBar>
     );
   }

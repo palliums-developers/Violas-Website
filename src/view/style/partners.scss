@@ -3,8 +3,7 @@
   .headContent {
     width: 100%;
     height: 726px;
-    background: url("/img/geneva-670479.jpg") no-repeat,
-      url("/img/蒙版 3@2x.png") no-repeat;
+    background:url("/img/蒙版 3@2x.png") no-repeat,url("/img/geneva-670479.jpg") no-repeat;
     background-size: cover;
     background-position: 50%;
     .headContent1 {
@@ -42,7 +41,7 @@
           font-weight: 600;
         }
         h2 {
-          // width: 1000px;
+          width: 1000px;
           color: white;
           font-size: 46px;
           font-weight: 400;
@@ -143,7 +142,7 @@
       margin-left: -50px;
       .section31 {
         width: 1440px;
-        margin: 100px 0px;
+        // margin: 100px 0px;
         p {
           font-size: 30px;
           font-weight: 400;
@@ -165,16 +164,16 @@
         margin-top: 60px;
         .section321 {
           width: 294px;
-          margin: 20px 20px;
+          // margin: 20px 20px;
           display: flex;
           flex-direction: column;
           align-items: center;
           img {
             width: 128px;
             height: 128px;
-            position: relative;
-            top: -50px;
-            left: 80px;
+            // position: relative;
+            // top: -50px;
+            // left: 80px;
           }
           p {
             width: 280px;
@@ -504,28 +503,23 @@
       }
     }
   }
-  @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     .partners {
       .headContent .headTalk {
         width: 100%;
+        margin-top: -150px;
         .headTalk2 {
           padding: 0;
           width: 90%;
-          margin-top: -300px;
+          // margin-top: -300px;
           h1 {
-            position: relative;
             width: 100%;
-            left: 10px;
-            top: 300px;
             font-size: 40px;
             font-weight: 600;
             color: rgba(255, 255, 255, 1);
             line-height: 50px;
           }
           h2 {
-            position: relative;
-            top: 300px;
-            left: 10px;
             font-size: 20px;
             font-weight: 400;
             color: rgba(255, 255, 255, 1);
@@ -612,6 +606,7 @@
           .section32 {
             width: 100%;
             flex-direction: column;
+            margin-top: 10px;
             .section321 {
               width: 90%;
               align-items: flex-start;
@@ -630,7 +625,7 @@
                 font-weight: 300;
                 color: rgba(255, 255, 255, 1);
                 line-height: 22px;
-                margin-top: 0;
+                margin-top: 20px;
               }
             }
             .section322 {
