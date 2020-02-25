@@ -41,13 +41,18 @@ class WhitePaper extends Component {
       open: open
     })
   }
+  getChange1 = (open) => {
+    this.setState({
+      open: false
+    })
+  }
   render() {
     const sidebar = (<List>
       <SideBar getChange={this.getChange}></SideBar>
     </List>);
     return (
       <div className="whitePaper">
-        <Header1 getChange={this.getChange} opens={this.state.open}></Header1>
+        <Header1 getChange={this.getChange1} ></Header1>
         {
           this.state.clWidth > 1024 ?
             <section>
@@ -346,12 +351,12 @@ class WhitePaper extends Component {
                 </div>
               </section>
               {
-                this.state.clWidth <= 1024 ? <Footer getChange={this.getChange} opens={this.state.open}></Footer> : null
+                this.state.clWidth <= 1024 ? <Footer getChange={this.getChange1}></Footer> : null
               }
             </Drawer>
         }
         {
-          this.state.clWidth > 1024 ? <Footer getChange={this.getChange} opens={this.state.open}></Footer> : null
+          this.state.clWidth > 1024 ? <Footer getChange={this.getChange1}></Footer> : null
         }
       </div>
     );
