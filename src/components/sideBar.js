@@ -42,7 +42,9 @@ class SideBar extends Component {
     intl.options.currentLocale = localStorage.getItem('local');
     return (
       <div id="dw-p1" class="bmd-layout-drawer bg-faded">
-        <a class="home" href="index.html"><img src="../img/home 2.png" /></a>
+        <a class="home"  onClick={() => {
+            this.props.history.push('/home')
+          }}><img src="../img/home 2.png" /></a>
         <span class="close" onClick={() => this.onOpenChange()}><img src="../img/guanbi-2备份 2.png" /></span>
         <ul class="list-group phone_list">
           <a onClick={() => { this.props.history.push('/app/vision') }}>{intl.get('header.vision')}</a>
