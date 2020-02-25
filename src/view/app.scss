@@ -398,6 +398,9 @@
 }
 @media (max-width: 1024px) {
   .app {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
     .header {
       // display: none;
       .head {
@@ -424,9 +427,11 @@
       }
     }
     .my-drawer {
+      height: 100%;
       position: relative;
       -webkit-overflow-scrolling: touch;
       .am-drawer-content {
+        height: 100%;
         position: static;
       }
       .am-drawer-sidebar {
@@ -438,6 +443,9 @@
             height: 100%;
           }
         }
+      }
+      .am-drawer-overlay{
+        max-height: 667px;
       }
     }
     .my-drawer .am-drawer-sidebar {
