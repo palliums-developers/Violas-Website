@@ -394,6 +394,7 @@
             img {
               width: 188px;
               height: 199px;
+              margin-top: -30px;
             }
             p {
               display: none;
@@ -410,6 +411,7 @@
             img {
               width: 187px;
               height: 186px;
+              margin-top: -50px;
             }
             p {
               display: none;
@@ -426,6 +428,7 @@
             img {
               width: 192px;
               height: 166px;
+              margin-top: -20px;
             }
             p {
               display: none;
@@ -442,6 +445,7 @@
             img {
               width: 183px;
               height: 188px;
+              margin-top: -20px;
             }
             p {
               display: none;
@@ -1439,6 +1443,10 @@
         .swiper-button-next,
         .swiper-button-prev {
           display: none;
+        }
+        .swiper-wrapper{
+          overflow: auto;
+
         }
         .swiper-container .swiper-wrapper .swiper-slide {
           width: 335px;
