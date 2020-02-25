@@ -229,7 +229,7 @@ class Home extends Component {
           <div className="goAssociation">
             <div className="content">
               <div className="img">
-                <img src="/img/IMG_7795.jpg" />
+                <img src="/img/IMG_77951.jpg" />
                 <img src="/img/IMG_7769.jpg" />
               </div>
               <div className="title">

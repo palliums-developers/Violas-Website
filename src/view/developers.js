@@ -12,6 +12,8 @@ class Developers extends Component {
         super(props);
         this.state = {
             open: false,
+            scrollDirection: 'stop',
+            preScroll: 0
         }
     }
     componentWillMount() {
@@ -30,6 +32,7 @@ class Developers extends Component {
                 clWidth: e.target.innerWidth
             })
         });
+        window.addEventListener('scroll', this.handleScroll)
     }
     onOpenChange = (...args) => {
         this.setState({ open: !this.state.open });
@@ -39,13 +42,33 @@ class Developers extends Component {
             open: open
         })
     }
+    getChange1 = (open) => {
+        this.setState({
+            open: false
+        })
+    }
+    handleScroll = (e) => {
+        if (window.scrollY == this.state.preScroll || window.scrollY <= 80) {
+            this.setState({ scrollDirection: 'stop' });
+        } else if (window.scrollY > this.state.preScroll) {
+            this.setState({ scrollDirection: 'down', preScroll: window.scrollY })
+        } else if (window.scrollY < this.state.preScroll) {
+            this.setState({ scrollDirection: 'up', preScroll: window.scrollY })
+        }
+    }
+    fixedHeader=()=>{
+        let temp={};
+        this.state.scrollDirection=='up'?temp= {position:"fixed", background:"white", zIndex:"999"}:temp={};
+        //{position:"fixed", background:"white", zIndex:"999"}
+        return temp;
+    }
     render() {
         const sidebar = (<List>
             <SideBar getChange={this.getChange}></SideBar>
         </List>);
         return (
             <div className="developers">
-                <Header1 getChange={this.getChange} opens={this.state.open}></Header1>
+                <Header1 getChange={this.getChange} opens={this.state.open} style={this.fixedHeader()}></Header1>
                 {
                     this.state.clWidth > 1024 ? <section>
                         <div className="vision vision0">
@@ -203,12 +226,12 @@ class Developers extends Component {
                                 </div>
                             </section>
                             {
-                                this.state.clWidth <= 1024 ? <Footer getChange={this.getChange} opens={this.state.open}></Footer> : null
+                                this.state.clWidth <= 1024 ? <Footer getChange={this.getChange1}></Footer> : null
                             }
                         </Drawer>
                 }
                 {
-                    this.state.clWidth > 1024 ? <Footer getChange={this.getChange} opens={this.state.open}></Footer> : null
+                    this.state.clWidth > 1024 ? <Footer getChange={this.getChange1}></Footer> : null
                 }
             </div>
         );

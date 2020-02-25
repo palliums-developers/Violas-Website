@@ -96,7 +96,6 @@ class App extends Component {
         {
           this.state.clWidth > 1024 ? <Footer getChange={this.getChange1} ></Footer> : null
         }
-        
       </div>
     );
   }
