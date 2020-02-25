@@ -1102,10 +1102,10 @@
         }
       }
       .goWhitepaper {
-        width: 939px;
-        height: 300px;
-        margin: 110px auto;
-        padding-left: 50px;
+        width: 989px;
+        height: 600px;
+        // margin: 110px auto;
+        // padding-left: 50px;
         .img {
           img:nth-child(1) {
             width: 300px;
@@ -1123,6 +1123,7 @@
           }
         }
         .title {
+          top:160px;
           h3 {
             font-size: 35px;
             line-height: 35px;
