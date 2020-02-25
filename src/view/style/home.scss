@@ -506,14 +506,14 @@
         .img {
           position: relative;
           img:nth-child(1) {
-            width: 372px;
+            // width: 440px;
             height: 672px;
             position: absolute;
             bottom: 0;
             z-index: 2;
           }
           img:nth-child(2) {
-            width: 523px;
+            // width: 523px;
             height: 785px;
             position: absolute;
             bottom: 0;
@@ -909,11 +909,11 @@
           margin-top: 170px;
           .img {
             img:nth-child(1) {
-              width: 309px;
+              // width: 309px;
               height: 560px;
             }
             img:nth-child(2) {
-              width: 435px;
+              // width: 435px;
               height: 653px;
             }
           }
@@ -1249,11 +1249,11 @@
           width: 959px;
           .img {
             img:nth-child(1) {
-              width: 232px;
+              // width: 270px;
               height: 420px;
             }
             img:nth-child(2) {
-              width: 327px;
+              // width: 327px;
               height: 490px;
             }
           }
