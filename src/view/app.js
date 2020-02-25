@@ -89,9 +89,9 @@ class App extends Component {
           >
             <RouterView routes={routes}></RouterView>
             {/* <Footer getChange={this.getChange} opens={this.state.open}></Footer> */}
-            <Footer getChange={this.getChange1} ></Footer>
           </Drawer>
         }
+        <Footer getChange={this.getChange1} ></Footer>
       </div>
     );
   }
