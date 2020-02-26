@@ -109,7 +109,7 @@ class Header extends Component {
               {this.twoLanguages(localStorage.getItem("local"))}
             </div>
           </div>
-        </header> : <NavBar leftContent={<img onClick={() => { this.props.history.push('/home') }} src="/img/编组 74复制 4@2x.png" />} rightContent={<img src="/img/编组 212@2x.png" onClick={this.onOpenChange} />}>
+        </header> : <NavBar style={this.scrollHeader('style')} leftContent={<img onClick={() => { this.props.history.push('/home') }} src="/img/编组 74复制 4@2x.png" />} rightContent={<img src="/img/编组 212@2x.png" onClick={this.onOpenChange} />}>
         </NavBar>
     );
   }

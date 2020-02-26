@@ -6,10 +6,9 @@ import BScroll from 'better-scroll';
 import intl from 'react-intl-universal';
 import { Anchor } from 'antd';
 import 'antd/dist/antd.css';
-import axios from 'axios';
 import './style/whitePaper.scss';
 import { Drawer, List, NavBar, Icon } from 'antd-mobile';
-import SideBar from '../components/sideBar'
+import SideBar from '../components/sideBar';
 import 'antd-mobile/dist/antd-mobile.css';
 const { Link } = Anchor;
 
@@ -18,6 +17,7 @@ class WhitePaper extends Component {
     super(props)
     this.state = {
       open: false,
+      mobileOpen: false
     }
   }
   componentWillMount() {
@@ -46,13 +46,19 @@ class WhitePaper extends Component {
       open: false
     })
   }
+  clickMobileNav=()=>{
+    this.setState({mobileOpen:!this.state.mobileOpen})
+  }
+  clickMobileNavClose=()=>{
+    this.setState({mobileOpen:false})
+  }
   render() {
     const sidebar = (<List>
       <SideBar getChange={this.getChange}></SideBar>
     </List>);
     return (
       <div className="whitePaper">
-        <Header1 getChange={this.getChange1} ></Header1>
+        <Header1 getChange={this.getChange} ></Header1>
         {
           this.state.clWidth > 1024 ?
             <section>
@@ -69,7 +75,7 @@ class WhitePaper extends Component {
               <div className="wrapper">
                 <div className="wrapHead">
                   {/* className={this.state.scrollY > 780 ? 'pos wrapHead' : 'wrapHead'} */}
-                  <Anchor class="toHeadings">
+                  <Anchor class="toHeadings" bounds="10px">
                     <Link href={'#' + intl.get('whitepaper.Part 1')} title={intl.get('whitepaper.1')}></Link>
                     <Link href={'#' + intl.get('whitepaper.Part 2')} title={intl.get('whitepaper.2')}></Link>
                     <Link href={'#' + intl.get('whitepaper.Part 3')} title={intl.get('whitepaper.3')}></Link>
@@ -208,7 +214,24 @@ class WhitePaper extends Component {
               position="right"
             >
               <section>
-                <div className="headTalk">
+                <div className="mobileNav">
+                  {
+                    !this.state.mobileOpen?
+                  <div className="mobileNavPart"><p onClick={()=>this.clickMobileNav()}>Part</p></div>:
+                  <div className="mobileNavList" >
+                    <a href={'#' + intl.get('whitepaper.Part 1')} onClick={()=>this.clickMobileNav()}>{intl.get('whitepaper.1')}</a>
+                    <a href={'#' + intl.get('whitepaper.Part 2')} onClick={()=>this.clickMobileNav()}>{intl.get('whitepaper.2')}</a>
+                    <a href={'#' + intl.get('whitepaper.Part 3')} onClick={()=>this.clickMobileNav()}>{intl.get('whitepaper.3')}</a>
+                    <a href={'#' + intl.get('whitepaper.Part 4')} onClick={()=>this.clickMobileNav()}>{intl.get('whitepaper.4')}</a>
+                    <a href={'#' + intl.get('whitepaper.Part 5')} onClick={()=>this.clickMobileNav()}>{intl.get('whitepaper.5')}</a>
+                    <a href={'#' + intl.get('whitepaper.Part 6')} onClick={()=>this.clickMobileNav()}>{intl.get('whitepaper.6')}</a>
+                    <a href={'#' + intl.get('whitepaper.Part 7')} onClick={()=>this.clickMobileNav()}>{intl.get('whitepaper.7')}</a>
+                    <a href={'#' + intl.get('whitepaper.Part 8')} onClick={()=>this.clickMobileNav()}>{intl.get('whitepaper.8')}</a>
+                    <a href={'#' + intl.get('whitepaper.Part 9')} onClick={()=>this.clickMobileNav()}>{intl.get('whitepaper.9')}</a>
+                  </div>
+                  }
+                </div>
+                <div className="headTalk" onClick={()=>this.clickMobileNavClose()}>
                   <div className="bg1"><img src="/img/矩形 3@2x.png" /></div>
                   <div className="content">
                     <h3>{intl.get('whitepaper.Violas White Paper')}</h3>
@@ -218,7 +241,7 @@ class WhitePaper extends Component {
                   </div>
                   <div className="bg2"><img src="/img/矩形复制 44@2x.png" /></div>
                 </div>
-                <div className="wrapper">
+                <div className="wrapper" onClick={()=>this.clickMobileNavClose()}>
                   <div className="wrapHead">
                     {/* className={this.state.scrollY > 780 ? 'pos wrapHead' : 'wrapHead'} */}
                     <Anchor class="toHeadings">
@@ -233,7 +256,7 @@ class WhitePaper extends Component {
                       <Link href={'#' + intl.get('whitepaper.Part 9')} title={intl.get('whitepaper.9 Conclusion')}></Link>
                     </Anchor>
                   </div>
-                  <div className="local">
+                  <div className="local" onClick={()=>this.clickMobileNavClose()}>
                     <div id={intl.get('whitepaper.Part 1')} className="introduction introduction1">
                       <h4>{intl.get('whitepaper.Part 1')}</h4>
                       <div class="state">

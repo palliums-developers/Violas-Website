@@ -9,6 +9,8 @@ class Header1 extends Component {
     this.state = {
       clWidth: null,
       open: false,
+      scrollDirection: 'stop',
+      preScroll: 0
     }
   }
   componentWillMount() {
@@ -51,11 +53,28 @@ class Header1 extends Component {
         clWidth: e.target.innerWidth
       })
     });
+    window.addEventListener('scroll', this.handleScroll)
+  }
+  handleScroll = (e) => {
+    if (window.scrollY == this.state.preScroll || window.scrollY <= 80) {
+      this.setState({ scrollDirection: 'stop' });
+    } else if (window.scrollY > this.state.preScroll) {
+      this.setState({ scrollDirection: 'down', preScroll: window.scrollY })
+    } else if (window.scrollY < this.state.preScroll) {
+      this.setState({ scrollDirection: 'up', preScroll: window.scrollY })
+    }
+  }
+  fixedHeader = () => {
+    let temp = {};
+    this.state.scrollDirection == 'up' ? temp = { position: "fixed", background: "white", zIndex: "999" } : temp = {};
+    //{position:"fixed", background:"white", zIndex:"999"}
+    // console.log(temp)
+    return temp;
   }
   render() {
     intl.options.currentLocale = localStorage.getItem('local');
     return (
-      this.state.clWidth > 1024 ? <header className="header">
+      this.state.clWidth > 1024 ? <header className="header" style={this.fixedHeader()} >
         <div className="head">
           <div className="logo">
             <a href="index.html"><img src="/img/编组 252@2x.png" /></a>
