@@ -329,12 +329,7 @@
             p {
               display: none;
             }
-            .img:hover {
-              display: none;
-            }
-            .img:hover ~ p {
-              display: block;
-            }
+
           }
           .swiper-slide:nth-child(2) {
             background: #2e2c64;
@@ -345,12 +340,12 @@
             p {
               display: none;
             }
-            .img:hover {
-              display: none;
-            }
-            .img:hover ~ p {
-              display: block;
-            }
+            // .img:hover {
+            //   display: none;
+            // }
+            // .img:hover ~ p {
+            //   display: block;
+            // }
           }
           .swiper-slide:nth-child(3) {
             background: #3e697b;
@@ -360,12 +355,6 @@
             }
             p {
               display: none;
-            }
-            .img:hover {
-              display: none;
-            }
-            .img:hover ~ p {
-              display: block;
             }
           }
           .swiper-slide:nth-child(4) {
@@ -377,12 +366,6 @@
             p {
               display: none;
             }
-            .img:hover {
-              display: none;
-            }
-            .img:hover ~ p {
-              display: block;
-            }
           }
           .swiper-slide:nth-child(5) {
             background: #2d2d64;
@@ -392,12 +375,6 @@
             }
             p {
               display: none;
-            }
-            .img:hover {
-              display: none;
-            }
-            .img:hover ~ p {
-              display: block;
             }
           }
           .swiper-slide:nth-child(6) {
@@ -410,12 +387,6 @@
             p {
               display: none;
             }
-            .img:hover {
-              display: none;
-            }
-            .img:hover ~ p {
-              display: block;
-            }
           }
           .swiper-slide:nth-child(7) {
             background: #6041a0;
@@ -426,12 +397,6 @@
             }
             p {
               display: none;
-            }
-            .img:hover {
-              display: none;
-            }
-            .img:hover ~ p {
-              display: block;
             }
           }
           .swiper-slide:nth-child(8) {
@@ -444,12 +409,6 @@
             p {
               display: none;
             }
-            .img:hover {
-              display: none;
-            }
-            .img:hover ~ p {
-              display: block;
-            }
           }
           .swiper-slide:nth-child(9) {
             background: #3e697b;
@@ -460,12 +419,6 @@
             }
             p {
               display: none;
-            }
-            .img:hover {
-              display: none;
-            }
-            .img:hover ~ p {
-              display: block;
             }
           }
         }
