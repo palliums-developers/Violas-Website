@@ -144,7 +144,7 @@
           flex-direction: column;
           align-items: center;
           margin-left: 50px;
-          margin-bottom: 170px;
+          // margin-bottom: 170px!important;
           // justify-content: center;
           dt {
             width: 165px;
@@ -183,6 +183,12 @@
             }
           }
         }
+        dl:nth-child(1),dl:nth-child(2),dl:nth-child(3){
+          margin-top: 90px;
+        }
+        dl:nth-child(4),dl:nth-child(5),dl:nth-child(6){
+          margin-top: 100px;
+        }
       }
     }
     .goWhitepaper {
@@ -193,6 +199,7 @@
       justify-content: space-between;
       background: rgba(249, 249, 249, 1);
       margin-bottom: 150px;
+      margin-top: 50px;
       .img {
         position: relative;
         bottom: 80px;
@@ -742,7 +749,7 @@
         .forRealContent {
           dl {
             width: 28.5%;
-            margin-bottom: 150px;
+            // margin-bottom: 150px!important;
             dt {
               width: 133px;
               height: 133px;
@@ -767,6 +774,12 @@
               }
             }
           }
+          dl:nth-child(1),dl:nth-child(2),dl:nth-child(3){
+            margin-top:40px;
+          }
+          dl:nth-child(4),dl:nth-child(5),dl:nth-child(6){
+            margin-top: 50px;
+          }
         }
       }
       .goWhitepaper {
@@ -775,6 +788,8 @@
         // width: 1200px;
         // height: 500px;
         // margin: 0px auto;
+        margin-top: 30px;
+        margin-bottom: 90px;
         .img {
           img:nth-child(1) {
             width: 400px;
@@ -1109,12 +1124,18 @@
               }
             }
           }
+          dl:nth-child(1),dl:nth-child(2),dl:nth-child(3){
+            margin-top: 20px;
+          }
+          dl:nth-child(4),dl:nth-child(5),dl:nth-child(6){
+            margin-top: 40px;
+          }
         }
       }
       .goWhitepaper {
         width: 989px;
         height: 500px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         // margin: 110px auto;
         // padding-left: 50px;
         .img {
