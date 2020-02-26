@@ -115,7 +115,7 @@
       background: rgba(249, 249, 249, 1);
       h2 {
         position: relative;
-        top:75px;
+        top: 75px;
         font-size: 56px;
         font-weight: 600;
         color: rgba(56, 47, 68, 1);
@@ -126,7 +126,7 @@
       }
       h4 {
         position: relative;
-        top:50px;
+        top: 50px;
         width: 1150px;
         font-size: 24px;
         font-weight: 300;
@@ -514,7 +514,7 @@
             height: 672px;
             position: absolute;
             bottom: 0;
-            left:0;
+            left: 0;
             z-index: 2;
           }
           img:nth-child(2) {
@@ -522,7 +522,7 @@
             height: 785px;
             position: absolute;
             bottom: 0;
-            left:67px;
+            left: 67px;
             z-index: 1;
             margin-bottom: 100px;
             margin-left: 70px;
@@ -635,10 +635,9 @@
             display: flex;
             font-size: 24px;
             font-weight: 600;
-            
-            
+
             margin-top: 22px;
-            a{
+            a {
               color: rgba(32, 9, 255, 1) !important;
               line-height: 30px;
               border-bottom: 1px solid rgba(32, 9, 255, 1) !important;
@@ -728,7 +727,7 @@
         width: 1200px;
         h2 {
           position: relative;
-          top:50px;
+          top: 50px;
           font-size: 47px;
           line-height: 47px;
           margin-top: 150px;
@@ -1135,7 +1134,7 @@
           }
         }
         .title {
-          top:160px;
+          top: 160px;
           h3 {
             font-size: 35px;
             line-height: 35px;
@@ -1458,9 +1457,8 @@
         .swiper-button-prev {
           display: none;
         }
-        .swiper-wrapper{
+        .swiper-wrapper {
           overflow: auto;
-
         }
         .swiper-container .swiper-wrapper .swiper-slide {
           width: 335px;
@@ -1580,7 +1578,7 @@
             }
             dd {
               font-size: 12px;
-              a{
+              a {
                 line-height: 20px;
               }
             }
@@ -1622,7 +1620,7 @@
   .home section .goAssociation {
     height: 623px;
     .content {
-      .title{
+      .title {
         margin-bottom: 60px;
       }
       .img {
@@ -1719,7 +1717,7 @@
     .title {
       width: 180px;
       top: 0px;
-      right:-40px;
+      right: -40px;
       h3 {
         font-weight: 500;
         color: rgba(56, 47, 68, 1);
@@ -1819,7 +1817,7 @@
         }
       }
       .img {
-        height:500px;
+        height: 500px;
         img:nth-child(1) {
           left: 1rem;
         }
@@ -1831,20 +1829,20 @@
     }
   }
 }
-@media(max-width:370px){
+@media (max-width: 370px) {
   .home section .goWhitepaper {
-    .title{
-      top:-20px;
-      h3{
+    .title {
+      top: -20px;
+      h3 {
         width: 100px;
         font-size: 17px;
       }
-      p{
-        width:100px;
-        span{
-          width:60px;
+      p {
+        width: 100px;
+        span {
+          width: 60px;
         }
-        .sq{
+        .sq {
           margin-left: 0px;
           // width: 30px;
           // height: 30px;
