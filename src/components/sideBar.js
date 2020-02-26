@@ -41,12 +41,12 @@ class SideBar extends Component {
   render() {
     intl.options.currentLocale = localStorage.getItem('local');
     return (
-      <div id="dw-p1" class="bmd-layout-drawer bg-faded">
-        <a class="home"  onClick={() => {
+      <div id="dw-p1" className="bmd-layout-drawer bg-faded">
+        <a className="home"  onClick={() => {
             this.props.history.push('/home')
           }}><img src="../img/home 2.png" /></a>
-        <span class="close" onClick={() => this.onOpenChange()}><img src="../img/guanbi-2备份 2.png" /></span>
-        <ul class="list-group phone_list">
+        <span className="close" onClick={() => this.onOpenChange()}><img src="../img/guanbi-2备份 2.png" /></span>
+        <ul className="list-group phone_list">
           <a onClick={() => { this.props.history.push('/app/vision') }}>{intl.get('header.vision')}</a>
           <a onClick={() => { this.props.history.push('/app/association') }}>{intl.get('header.association')}</a>
           <a onClick={() => { this.props.history.push('/app/partners') }}>{intl.get('header.partners')}</a>
@@ -56,7 +56,7 @@ class SideBar extends Component {
           <span id="whitePaper1" onClick={() => {
             this.props.history.push('/whiteParper')
           }}>{intl.get('header.white paper')}</span>
-          <div class="change">
+          <div className="change">
           {this.twoLanguages(localStorage.getItem("local"))}
           </div>
         </ul>

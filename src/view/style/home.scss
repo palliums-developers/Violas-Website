@@ -503,10 +503,10 @@
         width: 1400px;
         // height: 400px;
         height: 100%;
-        margin: 170px auto;
+        margin: 198px auto;
         display: flex;
         justify-content: space-between;
-        margin-top: 220px;
+        margin-top: 260px;
         .img {
           position: relative;
           img:nth-child(1) {
@@ -514,6 +514,7 @@
             height: 672px;
             position: absolute;
             bottom: 0;
+            left:0;
             z-index: 2;
           }
           img:nth-child(2) {
@@ -521,7 +522,7 @@
             height: 785px;
             position: absolute;
             bottom: 0;
-            left: 37px;
+            left:67px;
             z-index: 1;
             margin-bottom: 100px;
             margin-left: 70px;
@@ -916,7 +917,7 @@
         height: 661px;
         .content {
           width: 1200px;
-          margin-top: 170px;
+          margin-top: 220px;
           .img {
             img:nth-child(1) {
               // width: 309px;
@@ -1113,7 +1114,8 @@
       }
       .goWhitepaper {
         width: 989px;
-        height: 600px;
+        height: 500px;
+        margin-bottom: 100px;
         // margin: 110px auto;
         // padding-left: 50px;
         .img {
