@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink,withRouter } from 'react-router-dom';
 import intl from 'react-intl-universal';
 class Footer extends Component {
   constructor(props){
@@ -40,7 +40,7 @@ class Footer extends Component {
     return (
       <footer>
         <div className="footerNav">
-          <div className="logo"><img onClick={() => { this.props.history.push('/app/home')}} src="/img/编组 74复制 3@2x.png" /></div>
+          <div className="logo" onClick={() => { this.props.history.push('/app')}}><img src="/img/编组 74复制 3@2x.png" /></div>
           <div className="nav">
             <div>
               <NavLink to="/app/vision">{intl.get('header.vision')}</NavLink>
@@ -68,4 +68,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default withRouter(Footer);

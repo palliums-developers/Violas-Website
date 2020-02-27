@@ -1428,8 +1428,12 @@
         .swiper-button-prev {
           display: none;
         }
+        .swiper-container{
+          
+        }
         .swiper-wrapper {
-          overflow: auto;
+          // width: 2000px;
+          // overflow: auto;
         }
         .swiper-container .swiper-wrapper .swiper-slide {
           width: 335px;
