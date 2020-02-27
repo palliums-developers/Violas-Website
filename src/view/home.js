@@ -7,7 +7,25 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      detail: false
+      detail: false,
+      display:'flex',
+      display1:'none',
+      display2:'flex',
+      display21:'none',
+      display3:'flex',
+      display31:'none',
+      display4:'flex',
+      display41:'none',
+      display5:'flex',
+      display51:'none',
+      display6:'flex',
+      display61:'none',
+      display7:'flex',
+      display71:'none',
+      display8:'flex',
+      display81:'none',
+      display9:'flex',
+      display91:'none'
     }
     this.onMouseEnter = this.onMouseEnter.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
@@ -39,6 +57,114 @@ class Home extends Component {
   }
   onMouseLeave() {
     this.setState({ detail: false });
+  }
+  handleMouseOver = () => {
+    this.setState({
+      display:'none',
+      display1:'flex',
+    })
+  }
+  handleMouseOut = () =>{
+    this.setState({
+      display:'flex',
+      display1:'none',
+    })
+  }
+  handleMouseOver2 = () => {
+    this.setState({
+      display2:'none',
+      display21:'flex'
+    })
+  }
+  handleMouseOut2 = () =>{
+    this.setState({
+      display2:'flex',
+      display21:'none'
+    })
+  }
+  handleMouseOver3 = () => {
+    this.setState({
+      display3:'none',
+      display31:'flex'
+    })
+  }
+  handleMouseOut3 = () =>{
+    this.setState({
+      display3:'flex',
+      display31:'none'
+    })
+  }
+  handleMouseOver4 = () => {
+    this.setState({
+      display4:'none',
+      display41:'flex'
+    })
+  }
+  handleMouseOut4 = () =>{
+    this.setState({
+      display4:'flex',
+      display41:'none'
+    })
+  }
+  handleMouseOver5 = () => {
+    this.setState({
+      display5:'none',
+      display51:'flex'
+    })
+  }
+  handleMouseOut5 = () =>{
+    this.setState({
+      display5:'flex',
+      display51:'none'
+    })
+  }
+  handleMouseOver6 = () => {
+    this.setState({
+      display6:'none',
+      display61:'flex'
+    })
+  }
+  handleMouseOut6 = () =>{
+    this.setState({
+      display6:'flex',
+      display61:'none'
+    })
+  }
+  handleMouseOver7 = () => {
+    this.setState({
+      display7:'none',
+      display71:'flex'
+    })
+  }
+  handleMouseOut7 = () =>{
+    this.setState({
+      display7:'flex',
+      display71:'none'
+    })
+  }
+  handleMouseOver8 = () => {
+    this.setState({
+      display8:'none',
+      display81:'flex'
+    })
+  }
+  handleMouseOut8 = () =>{
+    this.setState({
+      display8:'flex',
+      display81:'none'
+    })
+  }
+  handleMouseOver9 = () => {
+    this.setState({
+      display9:'none',
+      display91:'flex'
+    })
+  }
+  handleMouseOut9 = () =>{
+    this.setState({
+      display9:'flex',
+      display91:'none'
+    })
   }
   render() {
     return (
@@ -158,68 +284,68 @@ class Home extends Component {
             <h2>{intl.get('home.Get To Know Violas')}</h2>
             <div className="swiper-container">
               <div className="swiper-wrapper">
-                <div className="swiper-slide">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver()} onMouseOut={()=>this.handleMouseOut()}>
                   <h3>{intl.get('home.Violas’ Manifesto')}</h3>
-                  <div className="img">
+                  <div className="img" style={{display:this.state.display}}>
                     <img src="/img/编组 32@2x.png" />
                   </div>
-                  <p>{intl.get('home.Violas’ Manifesto1')}</p>
+                  <p style={{display:this.state.display1}}>{intl.get('home.Violas’ Manifesto1')}</p>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver2()} onMouseOut={()=>this.handleMouseOut2()}>
                   <h3>{intl.get('home.Violas’ Influences')}</h3>
-                  <div className="img">
+                  <div className="img" style={{display:this.state.display2}}>
                     <img src="/img/编组 44@2x.png" />
                   </div>
-                  <p>{intl.get('home.Violas’ Influences1')}</p>
+                  <p style={{display:this.state.display21}}>{intl.get('home.Violas’ Influences1')}</p>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver3()} onMouseOut={()=>this.handleMouseOut3()}>
                   <h3>{intl.get('home.The Violas Reserve')}</h3>
-                  <div className="img">
+                  <div className="img" style={{display:this.state.display3}}>
                     <img src="/img/编组 30@2x.png" />
                   </div>
-                  <p>{intl.get('home.The Violas Reserve1')}</p>
+                  <p style={{display:this.state.display31}}>{intl.get('home.The Violas Reserve1')}</p>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver4()} onMouseOut={()=>this.handleMouseOut4()}>
                   <h3>{intl.get('home.The Violas blockchain')}</h3>
-                  <div className="img">
+                  <div className="img" style={{display:this.state.display4}}>
                     <img src="/img/编组 21@2x.png" />
                   </div>
-                  <p>{intl.get('home.The Violas blockchain1')}</p>
+                  <p style={{display:this.state.display41}}>{intl.get('home.The Violas blockchain1')}</p>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver5()} onMouseOut={()=>this.handleMouseOut5()}>
                   <h3>{intl.get('home.The Violas Association')}</h3>
-                  <div className="img">
+                  <div className="img" style={{display:this.state.display5}}>
                     <img src="/img/编组 132@2x.png" />
                   </div>
-                  <p>{intl.get('home.The Violas Association1')}</p>
+                  <p style={{display:this.state.display51}}>{intl.get('home.The Violas Association1')}</p>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver6()} onMouseOut={()=>this.handleMouseOut6()}>
                   <h3>{intl.get('home.Security & Privacy on the Violas Network')}</h3>
-                  <div className="img">
+                  <div className="img" style={{display:this.state.display6}}>
                     <img src="/img/编组 15@2x.png" />
                   </div>
-                  <p>{intl.get('home.Security & Privacy on the Violas Network1')}</p>
+                  <p style={{display:this.state.display61}}>{intl.get('home.Security & Privacy on the Violas Network1')}</p>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver7()} onMouseOut={()=>this.handleMouseOut7()}>
                   <h3>{intl.get('home.Commitment to Compliance & Consumer Protection')}</h3>
-                  <div className="img">
+                  <div className="img" style={{display:this.state.display7}}>
                     <img src="/img/编组 10@2x.png" />
                   </div>
-                  <p>{intl.get('home.Commitment to Compliance & Consumer Protection1')}</p>
+                  <p style={{display:this.state.display71}}>{intl.get('home.Commitment to Compliance & Consumer Protection1')}</p>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver8()} onMouseOut={()=>this.handleMouseOut8()}>
                   <h3>{intl.get('home.Move Programming Language')}</h3>
-                  <div className="img">
+                  <div className="img" style={{display:this.state.display8}}>
                     <img src="/img/编组 11@x.png" />
                   </div>
-                  <p>{intl.get('home.Move Programming Language1')}</p>
+                  <p style={{display:this.state.display81}}>{intl.get('home.Move Programming Language1')}</p>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver9()} onMouseOut={()=>this.handleMouseOut9()}>
                   <h3>{intl.get('home.How to Become a Founding Member')}</h3>
-                  <div className="img">
+                  <div className="img" style={{display:this.state.display9}}>
                     <img src="/img/编组 12@2x.png" />
                   </div>
-                  <p>{intl.get('home.How to Become a Founding Member1')}</p>
+                  <p style={{display:this.state.display91}}>{intl.get('home.How to Become a Founding Member1')}</p>
                 </div>
               </div>
             </div>
