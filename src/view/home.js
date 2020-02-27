@@ -35,7 +35,7 @@ class Home extends Component {
     intl.options.currentLocale = localStorage.getItem("local");
   }
   componentDidMount() {
-    var mySwiper = new Swiper(".swiper-container", {
+    var mySwiper = new Swiper(".swiper-container1", {
       slidesPerView: 3.3,
       spaceBetween: 20,
       freeMode: true,
@@ -46,6 +46,15 @@ class Home extends Component {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
+      }
+    });
+    var mySwiper1 = new Swiper(".swiper-container2", {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
       }
     });
     window.addEventListener('scroll',(e)=>{
@@ -282,7 +291,74 @@ class Home extends Component {
 
           <div className="banner">
             <h2>{intl.get('home.Get To Know Violas')}</h2>
-            <div className="swiper-container">
+            <div className="swiper-container swiper-container1">
+              <div className="swiper-wrapper">
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver()} onMouseOut={()=>this.handleMouseOut()}>
+                  <h3>{intl.get('home.Violas’ Manifesto')}</h3>
+                  <div className="img" style={{display:this.state.display}}>
+                    <img src="/img/编组 32@2x.png" />
+                  </div>
+                  <p style={{display:this.state.display1}}>{intl.get('home.Violas’ Manifesto1')}</p>
+                </div>
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver2()} onMouseOut={()=>this.handleMouseOut2()}>
+                  <h3>{intl.get('home.Violas’ Influences')}</h3>
+                  <div className="img" style={{display:this.state.display2}}>
+                    <img src="/img/编组 44@2x.png" />
+                  </div>
+                  <p style={{display:this.state.display21}}>{intl.get('home.Violas’ Influences1')}</p>
+                </div>
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver3()} onMouseOut={()=>this.handleMouseOut3()}>
+                  <h3>{intl.get('home.The Violas Reserve')}</h3>
+                  <div className="img" style={{display:this.state.display3}}>
+                    <img src="/img/编组 30@2x.png" />
+                  </div>
+                  <p style={{display:this.state.display31}}>{intl.get('home.The Violas Reserve1')}</p>
+                </div>
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver4()} onMouseOut={()=>this.handleMouseOut4()}>
+                  <h3>{intl.get('home.The Violas blockchain')}</h3>
+                  <div className="img" style={{display:this.state.display4}}>
+                    <img src="/img/编组 21@2x.png" />
+                  </div>
+                  <p style={{display:this.state.display41}}>{intl.get('home.The Violas blockchain1')}</p>
+                </div>
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver5()} onMouseOut={()=>this.handleMouseOut5()}>
+                  <h3>{intl.get('home.The Violas Association')}</h3>
+                  <div className="img" style={{display:this.state.display5}}>
+                    <img src="/img/编组 132@2x.png" />
+                  </div>
+                  <p style={{display:this.state.display51}}>{intl.get('home.The Violas Association1')}</p>
+                </div>
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver6()} onMouseOut={()=>this.handleMouseOut6()}>
+                  <h3>{intl.get('home.Security & Privacy on the Violas Network')}</h3>
+                  <div className="img" style={{display:this.state.display6}}>
+                    <img src="/img/编组 15@2x.png" />
+                  </div>
+                  <p style={{display:this.state.display61}}>{intl.get('home.Security & Privacy on the Violas Network1')}</p>
+                </div>
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver7()} onMouseOut={()=>this.handleMouseOut7()}>
+                  <h3>{intl.get('home.Commitment to Compliance & Consumer Protection')}</h3>
+                  <div className="img" style={{display:this.state.display7}}>
+                    <img src="/img/编组 10@2x.png" />
+                  </div>
+                  <p style={{display:this.state.display71}}>{intl.get('home.Commitment to Compliance & Consumer Protection1')}</p>
+                </div>
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver8()} onMouseOut={()=>this.handleMouseOut8()}>
+                  <h3>{intl.get('home.Move Programming Language')}</h3>
+                  <div className="img" style={{display:this.state.display8}}>
+                    <img src="/img/编组 11@x.png" />
+                  </div>
+                  <p style={{display:this.state.display81}}>{intl.get('home.Move Programming Language1')}</p>
+                </div>
+                <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver9()} onMouseOut={()=>this.handleMouseOut9()}>
+                  <h3>{intl.get('home.How to Become a Founding Member')}</h3>
+                  <div className="img" style={{display:this.state.display9}}>
+                    <img src="/img/编组 12@2x.png" />
+                  </div>
+                  <p style={{display:this.state.display91}}>{intl.get('home.How to Become a Founding Member1')}</p>
+                </div>
+              </div>
+            </div>
+            <div className="swiper-container swiper-container2">
               <div className="swiper-wrapper">
                 <div className="swiper-slide" onMouseOver={()=>this.handleMouseOver()} onMouseOut={()=>this.handleMouseOut()}>
                   <h3>{intl.get('home.Violas’ Manifesto')}</h3>

@@ -424,6 +424,12 @@
           }
         }
       }
+      .swiper-container1{
+        display: flex;
+      }
+      .swiper-container2{
+        display: none;
+     }
       .swiper-button-next,
       .swiper-button-prev {
         top: 18px;
@@ -1428,13 +1434,7 @@
         .swiper-button-prev {
           display: none;
         }
-        .swiper-container{
-          
-        }
-        .swiper-wrapper {
-          // width: 2000px;
-          // overflow: auto;
-        }
+        
         .swiper-container .swiper-wrapper .swiper-slide {
           width: 335px;
           height: 428px;
@@ -1802,6 +1802,15 @@
         }
       }
     }
+  }
+}
+@media (max-width:400px){
+  .home section .banner .swiper-container1{
+    display: none;
+    
+  }
+  .home section .banner .swiper-container2{
+     display: flex;
   }
 }
 @media (max-width: 370px) {
