@@ -37,6 +37,9 @@
           cursor: pointer;
           white-space: nowrap;
           position: relative;
+          a{
+            color:#fff;
+          }
         }
         li:hover{
           border-bottom: 1px solid #FFF;
@@ -116,6 +119,9 @@
           cursor: pointer;
           white-space: nowrap;
           position: relative;
+          a{
+            color:#4a189f;
+          }
         }
         .active {
           color: #4a189f;

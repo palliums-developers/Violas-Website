@@ -40,20 +40,20 @@ class Footer extends Component {
     return (
       <footer>
         <div className="footerNav">
-          <div className="logo"><img src="/img/编组 74复制 3@2x.png" /></div>
+          <div className="logo"><img onClick={() => { this.props.history.push('/app/home')}} src="/img/编组 74复制 3@2x.png" /></div>
           <div className="nav">
             <div>
-              <NavLink to="/app">{intl.get('header.vision')}</NavLink>
-              <NavLink to="/app">{intl.get('header.association')}</NavLink>
-              <NavLink to="/app">{intl.get('header.partners')}</NavLink>
+              <NavLink to="/app/vision">{intl.get('header.vision')}</NavLink>
+              <NavLink to="/app/association">{intl.get('header.association')}</NavLink>
+              <NavLink to="/app/partners">{intl.get('header.partners')}</NavLink>
             </div>
             <div>
-              <NavLink to="/app">{intl.get('header.blockchain explorer')}</NavLink>
-              <NavLink to="/app">{intl.get('header.media')}</NavLink>
-              <NavLink to="/app">{intl.get('header.developers')}</NavLink>
+              <a href="https://testnet.violas.io/app/Violas" target="_blank">{intl.get('header.blockchain explorer')}</a>
+              <NavLink to="/app/media">{intl.get('header.media')}</NavLink>
+              <NavLink to="/developers">{intl.get('header.developers')}</NavLink>
             </div>
             <div>
-              <NavLink to="/app">{intl.get('header.white paper')}</NavLink>
+              <NavLink to="/whitePaper">{intl.get('header.white paper')}</NavLink>
             </div>
           </div>
         </div>
