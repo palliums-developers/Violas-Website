@@ -460,19 +460,17 @@ class Home extends Component {
                 <dd>Mr. Riccardo Conti</dd>
               </dl>
               <dl>
-                <h2>Academic Institution  Product Business Partner</h2>
+                <h2>Business Partner</h2>
                 <dt><img src="/img/编组 56@2x.png" /></dt>
                 <dd>Dr. Mark Hale</dd>
               </dl>
             </div>
             <div className="icon">
               <dl>
-                <dt><img src="/img/编组 45@2x.png" /></dt>
-                <dd><a href="https://www.ece.utoronto.ca/people/jacobsen-h-a/">https://www.ece.utoronto.ca/people/jacobsen-h-a/</a></dd>
+                <dt><a href="https://www.ece.utoronto.ca/people/jacobsen-h-a/" title="https://www.ece.utoronto.ca/people/jacobsen-h-a/" target="_blank"><img src="/img/编组 45@2x.png" /></a></dt>
               </dl>
               <dl>
-                <dt><img src="/img/编组 47@2x.png" /></dt>
-                <dd><a href="https://facepay.io/">https://facepay.io/</a></dd>
+                <dt><a href="https://facepay.io/" title="https://facepay.io/" target="_blank"><img src="/img/编组 47@2x.png" /></a></dt>
               </dl>
             </div>
           </div>

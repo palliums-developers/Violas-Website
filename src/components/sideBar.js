@@ -43,16 +43,17 @@ class SideBar extends Component {
     return (
       <div id="dw-p1" className="bmd-layout-drawer bg-faded">
         <a className="home"  onClick={() => {
-            this.props.history.push('/home')
+            this.props.history.push('/app/home')
+            this.onOpenChange()
           }}><img src="../img/home 2.png" /></a>
         <span className="close" onClick={() => this.onOpenChange()}><img src="../img/guanbi-2备份 2.png" /></span>
         <ul className="list-group phone_list">
-          <a onClick={() => { this.props.history.push('/app/vision') }}>{intl.get('header.vision')}</a>
-          <a onClick={() => { this.props.history.push('/app/association') }}>{intl.get('header.association')}</a>
-          <a onClick={() => { this.props.history.push('/app/partners') }}>{intl.get('header.partners')}</a>
+          <a onClick={() => { this.props.history.push('/app/vision');this.onOpenChange() }}>{intl.get('header.vision')}</a>
+          <a onClick={() => { this.props.history.push('/app/association');this.onOpenChange()}}>{intl.get('header.association')}</a>
+          <a onClick={() => { this.props.history.push('/app/partners') ;this.onOpenChange()}}>{intl.get('header.partners')}</a>
           <a href="https://testnet.violas.io/app/Violas" target="_blank">{intl.get('header.blockchain explorer')}</a>
-          <a onClick={() => { this.props.history.push('/app/media') }}>{intl.get('header.media')}</a>
-          <a onClick={() => { this.props.history.push('/developers') }}>{intl.get('header.developers')}</a>
+          <a onClick={() => { this.props.history.push('/app/media') ;this.onOpenChange()}}>{intl.get('header.media')}</a>
+          <a onClick={() => { this.props.history.push('/developers')}}>{intl.get('header.developers')}</a>
           <span id="whitePaper1" onClick={() => {
             this.props.history.push('/whiteParper')
           }}>{intl.get('header.white paper')}</span>
