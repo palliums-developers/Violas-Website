@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import intl from 'react-intl-universal';
-import { NavBar, Icon } from 'antd-mobile';
+import { NavBar } from 'antd-mobile';
 import 'antd-mobile/dist/antd-mobile.css'
 class Header extends Component {
   constructor(props) {
@@ -11,7 +11,9 @@ class Header extends Component {
       open: false,
       getChange: false,
       scrollDirection: 'stop',
-      preScroll: 0
+      preScroll: 0,
+      mobileNav:true,
+      isTransparent:true
     }
   }
   componentWillMount() {
@@ -53,32 +55,42 @@ class Header extends Component {
     window.addEventListener('scroll', this.handleScroll)
   }
   handleScroll = (e) => {
-    if (window.scrollY == this.state.preScroll||window.scrollY<=80) {
+    if (window.scrollY == this.state.preScroll || window.scrollY <= 80) {
       this.setState({ scrollDirection: 'stop' });
     } else if (window.scrollY > this.state.preScroll) {
       this.setState({ scrollDirection: 'down', preScroll: window.scrollY })
     } else if (window.scrollY < this.state.preScroll) {
       this.setState({ scrollDirection: 'up', preScroll: window.scrollY })
     }
+    if (window.scrollY == 0){
+      this.setState({mobileNav:true,isTransparent:true});
+      console.log(1)
+    } else if ( window.scrollY>0 && window.scrollY<452){
+      this.setState({mobileNav:false});
+      console.log(2)
+    } else if (window.scrollY>=452){
+      this.setState({mobileNav:true,isTransparent:false});
+      console.log(3)
+    }
   }
-  scrollHeader=(temp)=>{
-    let className_temp="";
-    let style_temp={};
-    if(this.state.scrollDirection=='up'&&window.scrollY>608){
-    // return {position:"fixed",background:"white",color:"black"}
+  scrollHeader = (temp) => {
+    let className_temp = "";
+    let style_temp = {};
+    if (this.state.scrollDirection == 'up' && window.scrollY > 608) {
+      // return {position:"fixed",background:"white",color:"black"}
       // return 'className="header1" style={position:"fixed"}'
-      className_temp='header1';
-      style_temp={position:"fixed", background:"white", zIndex:"999"};
-    }else{
+      className_temp = 'header1';
+      style_temp = { position: "fixed", background: "white", zIndex: "999" };
+    } else {
       // return {position:"absolute"}
       // return 'className="header"'
-      className_temp= 'header';
-      style_temp={};
+      className_temp = 'header';
+      style_temp = {};
     }
     // this.state.scrollDirection=='up'&&window.scrollY>608?'className="header1" style={position:"fixed"}':'className="header"'
-    if(temp=='className'){
+    if (temp == 'className') {
       return className_temp;
-    }else if(temp=='style'){
+    } else if (temp == 'style') {
       return style_temp;
     }
   }
@@ -91,7 +103,7 @@ class Header extends Component {
           <div className="head">
             <div className="logo">
               {/* <a href="home">{localStorage.getItem('whiteBg') === "header" ? <img src="/img/编组 25@2x.png" /> : <img src="/img/编组 252@2x.png" />}</a> */}
-              <img onClick={() => { this.props.history.push('/app/home') }} src={this.state.scrollDirection=='stop'?"/img/编组 25@2x.png":"/img/编组 252@2x.png"} />
+              <img onClick={() => { this.props.history.push('/app/home') }} src={this.state.scrollDirection == 'stop' ? "/img/编组 25@2x.png" : "/img/编组 252@2x.png"} />
               {/* <img onClick={() => { this.props.history.push('/app/home') }} src="/img/编组 25@2x.png" /> */}
             </div>
             <ul className="navList">
@@ -109,8 +121,10 @@ class Header extends Component {
               {this.twoLanguages(localStorage.getItem("local"))}
             </div>
           </div>
-        </header> : <NavBar style={this.scrollHeader('style')} leftContent={<img onClick={() => { this.props.history.push('/home') }} src="/img/编组 74复制 4@2x.png" />} rightContent={<img src="/img/编组 212@2x.png" onClick={this.onOpenChange} />}>
-        </NavBar>
+        </header> :
+        this.state.mobileNav?
+        <NavBar style={this.scrollHeader('style')} leftContent={<img onClick={() => { this.props.history.push('/home') }} src="/img/编组 74复制 4@2x.png" />} rightContent={<img src="/img/编组 212@2x.png" onClick={this.onOpenChange} />}>
+        </NavBar>:<></>
     );
   }
 }

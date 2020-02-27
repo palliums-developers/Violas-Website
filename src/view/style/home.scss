@@ -327,19 +327,12 @@
               width: 194px;
               height: 200px;
             }
-            p {
-              display: none;
-            }
-
           }
           .swiper-slide:nth-child(2) {
             background: #2e2c64;
             img {
               width: 198px;
               height: 193px;
-            }
-            p {
-              display: none;
             }
             // .img:hover {
             //   display: none;
@@ -354,9 +347,6 @@
               width: 206px;
               height: 218px;
             }
-            p {
-              display: none;
-            }
           }
           .swiper-slide:nth-child(4) {
             background: #62409e;
@@ -364,18 +354,12 @@
               width: 194px;
               height: 200px;
             }
-            p {
-              display: none;
-            }
           }
           .swiper-slide:nth-child(5) {
             background: #2d2d64;
             img {
               width: 204px;
               height: 181px;
-            }
-            p {
-              display: none;
             }
           }
           .swiper-slide:nth-child(6) {
@@ -385,9 +369,6 @@
               height: 199px;
               margin-top: -30px;
             }
-            p {
-              display: none;
-            }
           }
           .swiper-slide:nth-child(7) {
             background: #6041a0;
@@ -395,9 +376,6 @@
               width: 187px;
               height: 186px;
               margin-top: -50px;
-            }
-            p {
-              display: none;
             }
           }
           .swiper-slide:nth-child(8) {
@@ -407,9 +385,6 @@
               height: 166px;
               margin-top: -20px;
             }
-            p {
-              display: none;
-            }
           }
           .swiper-slide:nth-child(9) {
             background: #3e697b;
@@ -418,12 +393,15 @@
               height: 188px;
               margin-top: -20px;
             }
-            p {
-              display: none;
-            }
           }
         }
       }
+      .swiper-container1 .swiper-wrapper .swiper-slide p{
+        display:none;
+      }
+      // .swiper-container2 .swiper-wrapper .swiper-slide p{
+      //   display:flex;
+      // }
       .swiper-container1{
         display: flex;
       }
@@ -1804,7 +1782,7 @@
     }
   }
 }
-@media (max-width:400px){
+@media (max-width:800px){
   .home section .banner .swiper-container1{
     display: none;
     

@@ -558,9 +558,9 @@
     }
     .am-navbar {
       width: 100%;
-      background: 0;
+      background: transparent;
       position: absolute;
-      top: 0;
+      // top: 0px;
       z-index: 9;
       .am-navbar-left {
         img {
