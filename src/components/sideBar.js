@@ -50,7 +50,7 @@ class SideBar extends Component {
           <a onClick={() => { this.props.history.push('/app/vision') }}>{intl.get('header.vision')}</a>
           <a onClick={() => { this.props.history.push('/app/association') }}>{intl.get('header.association')}</a>
           <a onClick={() => { this.props.history.push('/app/partners') }}>{intl.get('header.partners')}</a>
-          <a>{intl.get('header.blockchain explorer')}</a>
+          <a href="https://testnet.violas.io/app/Violas" target="_blank">{intl.get('header.blockchain explorer')}</a>
           <a onClick={() => { this.props.history.push('/app/media') }}>{intl.get('header.media')}</a>
           <a onClick={() => { this.props.history.push('/developers') }}>{intl.get('header.developers')}</a>
           <span id="whitePaper1" onClick={() => {

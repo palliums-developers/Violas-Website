@@ -449,7 +449,7 @@ class Home extends Component {
               <dl>
                 <h2>Product</h2>
                 <dt><img src="/img/编组 55@2x.png" /></dt>
-                <dd>Mr. Riccardo Conti</dd>
+                <dd>Riccardo Conti</dd>
               </dl>
               <dl>
                 <h2>Business Partner</h2>

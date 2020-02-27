@@ -83,7 +83,7 @@ class Header1 extends Component {
             <li id="vision" onClick={() => { this.props.history.push('/app/vision') }}>{intl.get('header.vision')}</li>
             <li id="association" onClick={() => { this.props.history.push('/app/association') }}>{intl.get('header.association')}</li>
             <li id="partners" onClick={() => { this.props.history.push('/app/partners') }}>{intl.get('header.partners')}</li>
-            <li>{intl.get('header.blockchain explorer')}</li>
+            <li><a href="https://testnet.violas.io/app/Violas" target="_blank">{intl.get('header.blockchain explorer')}</a></li>
             <li id="media" onClick={() => { this.props.history.push('/app/media') }}>{intl.get('header.media')}</li>
             <li id="developers" onClick={() => { this.props.history.push('/developers') }}>{intl.get('header.developers')}</li>
           </ul>

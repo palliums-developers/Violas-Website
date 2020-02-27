@@ -232,12 +232,12 @@ class WhitePaper extends Component {
                   }
                 </div>
                 <div className="headTalk" onClick={()=>this.clickMobileNavClose()}>
-                  <div className="bg1"><img src="/img/矩形 3@2x.png" /></div>
+                  {/* <div className="bg1"><img src="/img/矩形 3@2x.png" /></div> */}
                   <div className="content">
                     <h3>{intl.get('whitepaper.Violas White Paper')}</h3>
                     <p>{intl.get('whitepaper.Violas White Paper1')}</p>
                     <p>{intl.get('whitepaper.Violas White Paper2')}</p>
-                    <span>滚动阅读</span>
+                    <span>Start Reading</span>
                   </div>
                   <div className="bg2"><img src="/img/矩形复制 44@2x.png" /></div>
                 </div>
