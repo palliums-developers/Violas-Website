@@ -108,10 +108,10 @@ class Media extends Component {
           <li>{intl.get('media.Violas Platform Roadmap #235')}</li>
           <li>{intl.get('media.Violas Platform Roadmap #236')}</li>
           <p>{intl.get('media.Violas Platform Roadmap #240')}</p>
-          <li>{intl.get('media.Violas Platform Roadmap #241')}</li>
-          <li>{intl.get('media.Violas Platform Roadmap #242')}</li>
-          <li>{intl.get('media.Violas Platform Roadmap #243')}</li>
-          <li>{intl.get('media.Violas Platform Roadmap #244')}</li>
+          <p>{intl.get('media.Violas Platform Roadmap #241')}</p>
+          <p>{intl.get('media.Violas Platform Roadmap #242')}</p>
+          <p>{intl.get('media.Violas Platform Roadmap #243')}</p>
+          <p>{intl.get('media.Violas Platform Roadmap #244')}</p>
         </div>
       </div>
     );

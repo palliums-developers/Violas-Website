@@ -25,7 +25,10 @@ class Home extends Component {
       display8:'flex',
       display81:'none',
       display9:'flex',
-      display91:'none'
+      display91:'none',
+      downloadButton1:true,
+      downloadButton2:true,
+      downloadButton3:true
     }
     this.onMouseEnter = this.onMouseEnter.bind(this);
     this.onMouseLeave = this.onMouseLeave.bind(this);
@@ -166,6 +169,12 @@ class Home extends Component {
       display91:'none'
     })
   }
+  handleMouseOverDownloadButton1=()=>{this.setState({downloadButton1:false})}
+  handleMouseOverDownloadButton2=()=>{this.setState({downloadButton2:false})}
+  handleMouseOverDownloadButton3=()=>{this.setState({downloadButton3:false})}
+  handleMouseOutDownloadButton1=()=>{this.setState({downloadButton1:true})}
+  handleMouseOutDownloadButton2=()=>{this.setState({downloadButton2:true})}
+  handleMouseOutDownloadButton3=()=>{this.setState({downloadButton3:true})}
   render() {
     return (
       <div className="home">
@@ -176,10 +185,24 @@ class Home extends Component {
           <div className="headTalk animated fadeInUp">
             <p>{intl.get('home.Welcome to Violas')}</p>
             <p>
-              <label  onClick={() => {
-                this.props.history.push('/whiteParper')
-              }}>{intl.get('home.whitePaper')}</label>
-              <img src="/img/编组 45复制 3@2x.png" />
+              {this.state.downloadButton1?
+              <>
+                <label 
+                onClick={() => {this.props.history.push('/whiteParper')}} 
+                onMouseOver={()=>{this.handleMouseOverDownloadButton1()}}>
+                  {intl.get('home.whitePaper')}
+                </label>
+                <img onClick={() => {this.props.history.push('/whiteParper')}} 
+                onMouseOver={()=>{this.handleMouseOverDownloadButton1()}}src="/img/编组 8@2x.png" />
+              </>
+                :
+                <>
+                <label onClick={() => {this.props.history.push('/whiteParper')}} 
+            onMouseOut={()=>{this.handleMouseOutDownloadButton1()}}style={{color:"#590BA9"}}>{intl.get('home.whitePaper')}</label>
+                <img onClick={() => {this.props.history.push('/whiteParper')}} 
+            onMouseOut={()=>{this.handleMouseOutDownloadButton1()}}src="/img/编组 8@2x(1).png" />
+                </>
+              }
             </p>
           </div>
         </div>
@@ -269,13 +292,31 @@ class Home extends Component {
             <div className="title">
               <h3>{intl.get('home.The Violas White Paper')}</h3>
               <p>
-                <span onClick={() => {
-                  this.props.history.push('/whiteParper')
-                }}>{intl.get('home.Read the White Paper')}</span>
-                <div className="sq">
-                  <img src="/img/编组 18@2x.png" />
-                  <img src="/img/编组 20@2x.png" />
-                </div>
+                {
+                  this.state.downloadButton2?
+                  <>
+                    <span onClick={()=>{this.props.history.push('/whitePaper')}}
+                    onMouseOver={()=>{this.handleMouseOverDownloadButton2()}} >
+                      {intl.get('home.Read the White Paper')}
+                    </span>
+                    <div className="sq"onClick={()=>{this.props.history.push('/whitePaper')}}
+                    onMouseOver={()=>{this.handleMouseOverDownloadButton2()}} >
+                      <img src="/img/编组 18@2x.png" />
+                      <img src="/img/编组 20@2x.png" />
+                    </div>
+                  </>:
+                  <>
+                    <span onClick={()=>{this.props.history.push('/whitePaper')}}
+                    onMouseOut={()=>{this.handleMouseOutDownloadButton2()}} style={{color:"#451294"}}>
+                      {intl.get('home.Read the White Paper')}
+                    </span>
+                    <div className="sq"onClick={()=>{this.props.history.push('/whitePaper')}}
+                    onMouseOut={()=>{this.handleMouseOutDownloadButton2()}} >
+                      <img src="/img/编组 18@2x1.png" />
+                      <img src="/img/编组 20@2x.png" />
+                    </div>
+                  </>
+                }
               </p>
             </div>
           </div>
@@ -361,12 +402,39 @@ class Home extends Component {
               <div className="title">
                 <h3>{intl.get('home.The Violas Association0')}</h3>
                 <h4>{intl.get('home.An independent')}</h4>
-                <p onClick={() => { this.props.history.push('/app/association') }}>
-                  <span>{intl.get('home.Learn More')}</span>
+                <p>
+                  {/* <span>{intl.get('home.Learn More')}</span>
                   <div className="sq">
                     <img src="/img/编组 18@2x.png" />
                     <img src="/img/编组 20@2x.png" />
-                  </div>
+                  </div> */}
+                  {
+                    this.state.downloadButton3?
+                    <>
+                      <span onClick={() => { this.props.history.push('/app/association')}}
+                      onMouseOver={()=>{this.handleMouseOverDownloadButton3()}}
+                      >
+                        {intl.get('home.Learn More')}
+                      </span>
+                      <div className="sq" onClick={() => { this.props.history.push('/app/association')}}
+                      onMouseOver={()=>{this.handleMouseOverDownloadButton3()}}>
+                        <img src="/img/编组 18@2x.png" />
+                        <img src="/img/编组 20@2x.png" />
+                      </div>
+                    </>:
+                    <>
+                      <span onClick={() => { this.props.history.push('/app/association')}}
+                      onMouseOut={()=>{this.handleMouseOutDownloadButton3()}} style={{color:"#451294"}}
+                      >
+                        {intl.get('home.Learn More')}
+                      </span>
+                      <div className="sq" onClick={() => { this.props.history.push('/app/association')}}
+                      onMouseOut={()=>{this.handleMouseOutDownloadButton3()}}>
+                        <img src="/img/编组 18@2x1.png" />
+                        <img src="/img/编组 20@2x.png" />
+                      </div>
+                    </>
+                  }
                 </p>
               </div>
             </div>

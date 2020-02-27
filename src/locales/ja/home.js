@@ -41,5 +41,5 @@ export default {
     'The Violas Association0':'Violas アソシエーション',
     'An independent':'独立非営利組織',
     'Learn More':'[アソシエーション] リンクへ移動',
-    'Get To Know Violas':'Get To Know Violas...'
+    'Get To Know Violas':'Get to know Violas'
 }
