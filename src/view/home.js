@@ -440,17 +440,19 @@ class Home extends Component {
             </div>
           </div>
           <div className="personDescr">
-            <h2>Academic Institution  Product Business Partner</h2>
             <div className="person">
               <dl>
+                <h2>Academic Institution</h2>
                 <dt><img src="/img/编组 52@2x.png" /></dt>
                 <dd>Hans-Arno Jacobsen</dd>
               </dl>
               <dl>
+                <h2>Product</h2>
                 <dt><img src="/img/编组 55@2x.png" /></dt>
                 <dd>Mr. Riccardo Conti</dd>
               </dl>
               <dl>
+                <h2>Business Partner</h2>
                 <dt><img src="/img/编组 56@2x.png" /></dt>
                 <dd>Dr. Mark Hale</dd>
               </dl>
