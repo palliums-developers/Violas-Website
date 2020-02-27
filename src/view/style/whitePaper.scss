@@ -940,6 +940,9 @@
 }
 @media (max-width: 321px) {
   .whitePaper {
+    .mobileNav {
+      width: 320px;
+    }
     section {
       width: 320px;
       .headTalk {

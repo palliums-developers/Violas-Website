@@ -41,5 +41,5 @@ export default {
     'The Violas Association0':'Violas 협회',
     'An independent':'독립 비 영리 조직',
     'Learn More':'더 알아보기',
-    'Get To Know Violas':'Get To Know Violas...'
+    'Get To Know Violas':'Get to know Violas'
 }
