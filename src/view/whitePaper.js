@@ -63,7 +63,6 @@ class WhitePaper extends Component {
           this.state.clWidth > 1024 ?
             <section>
               <div className="headTalk">
-                <div className="bg1"><img src="/img/矩形 3@2x.png" /></div>
                 <div className="content">
                   <h3>{intl.get('whitepaper.Violas White Paper')}</h3>
                   <p>{intl.get('whitepaper.Violas White Paper1')}</p>
@@ -235,7 +234,6 @@ class WhitePaper extends Component {
                   }
                 </div>
                 <div className="headTalk" onClick={() => this.clickMobileNavClose()}>
-                  {/* <div className="bg1"><img src="/img/矩形 3@2x.png" /></div> */}
                   <div className="content">
                     <h3>{intl.get('whitepaper.Violas White Paper')}</h3>
                     <p>{intl.get('whitepaper.Violas White Paper1')}</p>

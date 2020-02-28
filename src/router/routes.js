@@ -44,7 +44,7 @@ const routes = [
         component: Developers
     },
     {
-        path: "/whiteParper",
+        path: "/whitePaper",
         component: WhitePaper
     },
     {

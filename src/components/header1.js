@@ -89,7 +89,7 @@ class Header1 extends Component {
           </ul>
           <div className="descr">
             <span id="whitePaper" onClick={() => {
-              this.props.history.push('/whiteParper')
+              this.props.history.push('/whitePaper')
             }}>{intl.get('header.white paper')}</span>
             {this.twoLanguages(localStorage.getItem("local"))}
           </div>

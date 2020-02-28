@@ -55,7 +55,7 @@ class SideBar extends Component {
           <a onClick={() => { this.props.history.push('/app/media') ;this.onOpenChange()}}>{intl.get('header.media')}</a>
           <a onClick={() => { this.props.history.push('/developers')}}>{intl.get('header.developers')}</a>
           <span id="whitePaper1" onClick={() => {
-            this.props.history.push('/whiteParper')
+            this.props.history.push('/whitePaper')
           }}>{intl.get('header.white paper')}</span>
           <div className="change">
           {this.twoLanguages(localStorage.getItem("local"))}

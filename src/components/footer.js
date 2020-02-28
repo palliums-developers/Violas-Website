@@ -40,7 +40,7 @@ class Footer extends Component {
     return (
       <footer>
         <div className="footerNav">
-          <div className="logo" onClick={() => { this.props.history.push('/app')}}><img src="/img/编组 74复制 3@2x.png" /></div>
+          <div className="logo" onClick={() => { this.props.history.push('/app/home')}}><img src="/img/编组 74复制 3@2x.png" /></div>
           <div className="nav">
             <div>
               <NavLink to="/app/vision">{intl.get('header.vision')}</NavLink>
