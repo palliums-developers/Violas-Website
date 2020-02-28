@@ -62,16 +62,16 @@ class Header extends Component {
     } else if (window.scrollY < this.state.preScroll) {
       this.setState({ scrollDirection: 'up', preScroll: window.scrollY })
     }
-    if (window.scrollY == 0){
-      this.setState({mobileNav:true,isTransparent:true});
-      console.log(1)
-    } else if ( window.scrollY>0 && window.scrollY<452){
-      this.setState({mobileNav:false});
-      console.log(2)
-    } else if (window.scrollY>=452){
-      this.setState({mobileNav:true,isTransparent:false});
-      console.log(3)
-    }
+    // if (window.scrollY == 0){
+    //   this.setState({mobileNav:true,isTransparent:true});
+    //   console.log(1)
+    // } else if ( window.scrollY>0 && window.scrollY<452){
+    //   this.setState({mobileNav:false});
+    //   console.log(2)
+    // } else if (window.scrollY>=452){
+    //   this.setState({mobileNav:true,isTransparent:false});
+    //   console.log(3)
+    // }
   }
   scrollHeader = (temp) => {
     let className_temp = "";
