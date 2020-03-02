@@ -123,8 +123,8 @@ class Developers extends Component {
                                 </div>
                                 <div className="vision2Content">
                                     <div className="code"><img src="/img/code.png" /></div>
-                                    <a href="https://violas.io/client/violas-client.tar.gz"><i></i>{intl.get('developers.Violas Client')} &nbsp;&nbsp;&nbsp;&nbsp;</a>
-                                    <a download="../utils/ViolasClient.pdf" href="../ViolasClient.pdf"><i></i>{intl.get('developers.ViolasClient pdf')}</a>
+                                    <a href="/documents/violas-client.tar.gz"><i></i>{intl.get('developers.Violas Client')} &nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                    <a href="/documents/ViolasClient.pdf"><i></i>{intl.get('developers.ViolasClient pdf')}</a>
                                 </div>
                             </div>
                         </section> :

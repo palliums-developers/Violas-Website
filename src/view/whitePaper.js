@@ -69,7 +69,7 @@ class WhitePaper extends Component {
                   <p>{intl.get('whitepaper.Violas White Paper2')}</p>
                   <div className="down">
                       <span>Start Reading</span>
-                      <a href="/documents/Violas-WhitePaper-EN.docx"><label>Download WhitePaper</label><i></i></a>
+                      <a href="/documents/Violas-WhitePaper-EN.pdf"><label>Download WhitePaper</label><i></i></a>
                     </div>
                 </div>
                 <div className="bg2"><img src="/img/矩形复制 44@2x.png" /></div>
