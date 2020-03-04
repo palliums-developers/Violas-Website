@@ -17,17 +17,17 @@ class Association extends Component {
           </div>
         </div>
         <div className="section">
-          <div className="title"><img src='/img/矩形 3@2x.png' />{intl.get('association.Bylaws of The Violas Association')}</div>
+          <div className="title"><img src='./img/矩形 3@2x.png' />{intl.get('association.Bylaws of The Violas Association')}</div>
           <div className='title1'>{intl.get('association.Bylaws of The Violas Association1')}</div>
           <div className="title2">
             <div className="title3">
-              <img src='/img/编组 7@2x.png' />
-              <p><img src='/img/矩形 3@2x.png' />{intl.get('association.A Violas Validator')}</p>
+              <img src='./img/编组 7@2x.png' />
+              <p><img src='./img/矩形 3@2x.png' />{intl.get('association.A Violas Validator')}</p>
               <p>{intl.get('association.A Violas Validator1')}</p>
             </div>
             <div className="title3">
-              <img src='/img/编组 7@x.png' />
-              <p><img src='/img/矩形 3@2x.png' />{intl.get('association.A Violas Representative')}</p>
+              <img src='./img/编组 7@x.png' />
+              <p><img src='./img/矩形 3@2x.png' />{intl.get('association.A Violas Representative')}</p>
               <p>{intl.get('association.A Violas Representative1')}</p>
             </div>
           </div>

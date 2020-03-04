@@ -72,7 +72,7 @@ class WhitePaper extends Component {
                       <a href="/documents/Violas-WhitePaper-EN.pdf"><label>Download WhitePaper</label><i></i></a>
                     </div>
                 </div>
-                <div className="bg2"><img src="/img/矩形复制 44@2x.png" /></div>
+                <div className="bg2"><img src="./img/矩形复制 44@2x.png" /></div>
               </div>
               <div className="wrapper">
                 <div className="wrapHead">
@@ -243,7 +243,7 @@ class WhitePaper extends Component {
                       <a href="/documents/Violas-WhitePaper-EN.docx"><label>Download WhitePaper</label><i></i></a>
                     </div>
                   </div>
-                  <div className="bg2"><img src="/img/矩形复制 44@2x.png" /></div>
+                  <div className="bg2"><img src="./img/矩形复制 44@2x.png" /></div>
                 </div>
                 <div className="wrapper" onClick={() => this.clickMobileNavClose()}>
                   <div className="wrapHead">

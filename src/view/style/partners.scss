@@ -667,6 +667,27 @@
     height:900px;
   }
 }
+@media (max-width: 750px){
+  .partners{
+    .headContent{
+      height: 602px;
+      // background-size:260% 130%;
+      // background-position: 55% 80%;
+      .headTalk{
+        margin-top:40px;
+      }
+    }
+    .section .section1 .section11{
+      margin-top: 50px;
+      p:nth-child(2){
+        line-height: 20px;
+        img{
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
 @media(max-width:574px){
   .partners .section .section3{
     height:1000px;

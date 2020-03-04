@@ -262,20 +262,20 @@ class Home extends Component {
       <div className="home">
         <div className="headContent">
           <div className="inset">
-            <img src="/img/矩形 6@2x.png" />
+            <img src="./img/矩形 6@2x.png" />
           </div>
           <div className="headTalk animated fadeInUp">
-            <p>{intl.get('home.Welcome to Violas')}</p>
+            <p>{intl.get('home.Welcome to')}<label>{intl.get('home.Violas')}</label></p>
             <p>
               {
                 this.state.hover1 ?
                   <>
                     <label onClick={() => { this.props.history.push('/whitePaper') }} onMouseOver={() => { this.handleHover('whitepaper1', 'over') }}>{intl.get('home.whitePaper')}</label>
-                    <img onClick={() => { this.props.history.push('/whitePaper') }} onMouseOver={() => { this.handleHover('whitepaper1', 'over') }} src='/img/编组 8@2x.png' />
+                    <img onClick={() => { this.props.history.push('/whitePaper') }} onMouseOver={() => { this.handleHover('whitepaper1', 'over') }} src='./img/编组 8@2x.png' />
                   </> :
                   <>
                     <label onClick={() => { this.props.history.push('/whitePaper') }} onMouseOut={() => { this.handleHover('whitepaper1', 'out') }} style={{ color: ' #4b199f' }}>{intl.get('home.whitePaper')}</label>
-                    <img onClick={() => { this.props.history.push('/whitePaper') }} onMouseOut={() => { this.handleHover('whitepaper1', 'out') }} src='/img/编组 8@2x(1).png' />
+                    <img onClick={() => { this.props.history.push('/whitePaper') }} onMouseOut={() => { this.handleHover('whitepaper1', 'out') }} src='./img/编组 8@2x(1).png' />
                   </>
               }
             </p>
@@ -292,10 +292,10 @@ class Home extends Component {
           </div>
           <div className="missionImg">
             <div className="leftImg">
-              <img src="/img/IMG_7788.jpg" />
+              <img src="./img/img_7788.jpg" />
             </div>
             <div className="rightImg">
-              <img src="/img/IMG_77601.jpg" />
+              <img src="./img/img_77601.jpg" />
             </div>
           </div>
           <div className="forReal">
@@ -304,7 +304,7 @@ class Home extends Component {
             <div className="forRealContent">
               <dl>
                 <dt>
-                  <img src="/img/编组 11@2x.png" />
+                  <img src="./img/编组 11@2x.png" />
                 </dt>
                 <dd>
                   <h3><s></s>{intl.get('home.Mobile')} </h3>
@@ -313,7 +313,7 @@ class Home extends Component {
               </dl>
               <dl>
                 <dt>
-                  <img src="/img/编组 9复制 3@2x.png" />
+                  <img src="./img/编组 9复制 3@2x.png" />
                 </dt>
                 <dd>
                   <h3><s></s>{intl.get('home.Stable')}</h3>
@@ -322,7 +322,7 @@ class Home extends Component {
               </dl>
               <dl>
                 <dt>
-                  <img src="/img/编组 26@2x.png" />
+                  <img src="./img/编组 26@2x.png" />
                 </dt>
                 <dd>
                   <h3><s></s>{intl.get('home.Fast')}</h3>
@@ -331,7 +331,7 @@ class Home extends Component {
               </dl>
               <dl>
                 <dt>
-                  <img src="/img/编组 14@2x.png" />
+                  <img src="./img/编组 14@2x.png" />
                 </dt>
                 <dd>
                   <h3><s></s>{intl.get('home.Real World Utility')}</h3>
@@ -340,7 +340,7 @@ class Home extends Component {
               </dl>
               <dl>
                 <dt>
-                  <img src="/img/编组 27@2x.png" />
+                  <img src="./img/编组 27@2x.png" />
                 </dt>
                 <dd>
                   <h3><s></s>{intl.get('home.Scalable')}</h3>
@@ -349,7 +349,7 @@ class Home extends Component {
               </dl>
               <dl>
                 <dt>
-                  <img src="/img/编组 11@2x.png" />
+                  <img src="./img/编组 11@2x.png" />
                 </dt>
                 <dd>
                   <h3><s></s>{intl.get('home.Secure')}</h3>
@@ -360,9 +360,9 @@ class Home extends Component {
           </div>
           <div className="goWhitepaper">
             <div className="img">
-              <img src="/img/矩形复制 58@2x.png" />
-              <img src="/img/矩形复制 57@2x.png" />
-              <img src="/img/编组 13@2x.png" />
+              <img src="./img/矩形复制 58@2x.png" />
+              <img src="./img/矩形复制 57@2x.png" />
+              <img src="./img/编组 13@2x.png" />
             </div>
             <div className="title">
               <h3>{intl.get('home.The Violas White Paper')}</h3>
@@ -372,15 +372,15 @@ class Home extends Component {
                     <>
                       <span onClick={() => { this.props.history.push('/whitePaper') }} onMouseOver={() => { this.handleHover('whitepaper2', 'over') }}>{intl.get('home.Read the White Paper')}</span>
                       <div className="sq" onClick={() => { this.props.history.push('/whitePaper') }} onMouseOver={() => { this.handleHover('whitepaper2', 'over') }}>
-                        <img src="/img/编组 18@2x.png" />
-                        <img src="/img/编组 20@2x.png" />
+                        <img src="./img/编组 18@2x.png" />
+                        <img src="./img/编组 20@2x.png" />
                       </div>
                     </> :
                     <>
                       <span onClick={() => { this.props.history.push('/whitePaper') }} onMouseOut={() => { this.handleHover('whitepaper2', 'out') }} style={{color:'#451294'}}>{intl.get('home.Read the White Paper')}</span>
                       <div className="sq" onClick={() => { this.props.history.push('/whitePaper') }} onMouseOut={() => { this.handleHover('whitepaper2', 'out') }}>
-                        <img src="/img/编组 18@2x1.png" />
-                        <img src="/img/编组 20@2x.png" />
+                        <img src="./img/编组 18@2x1.png" />
+                        <img src="./img/编组 20@2x.png" />
                       </div>
                     </>
                 }
@@ -394,63 +394,63 @@ class Home extends Component {
                 <div className="swiper-slide" onMouseOver={() => this.handleMouseOver()} onMouseOut={() => this.handleMouseOut()}>
                   <h3>{intl.get('home.Violas’ Manifesto')}</h3>
                   <div className="img" style={{ display: this.state.display }}>
-                    <img src="/img/编组 32@2x.png" />
+                    <img src="./img/编组 32@2x.png" />
                   </div>
                   <p style={{ display: this.state.display1 }}>{intl.get('home.Violas’ Manifesto1')}</p>
                 </div>
                 <div className="swiper-slide" onMouseOver={() => this.handleMouseOver2()} onMouseOut={() => this.handleMouseOut2()}>
                   <h3>{intl.get('home.Violas’ Influences')}</h3>
                   <div className="img" style={{ display: this.state.display2 }}>
-                    <img src="/img/编组 44@2x.png" />
+                    <img src="./img/编组 44@2x.png" />
                   </div>
                   <p style={{ display: this.state.display21 }}>{intl.get('home.Violas’ Influences1')}</p>
                 </div>
                 <div className="swiper-slide" onMouseOver={() => this.handleMouseOver3()} onMouseOut={() => this.handleMouseOut3()}>
                   <h3>{intl.get('home.The Violas Reserve')}</h3>
                   <div className="img" style={{ display: this.state.display3 }}>
-                    <img src="/img/编组 30@2x.png" />
+                    <img src="./img/编组 30@2x.png" />
                   </div>
                   <p style={{ display: this.state.display31 }}>{intl.get('home.The Violas Reserve1')}</p>
                 </div>
                 <div className="swiper-slide" onMouseOver={() => this.handleMouseOver4()} onMouseOut={() => this.handleMouseOut4()}>
                   <h3>{intl.get('home.The Violas blockchain')}</h3>
                   <div className="img" style={{ display: this.state.display4 }}>
-                    <img src="/img/编组 21@2x.png" />
+                    <img src="./img/编组 21@2x.png" />
                   </div>
                   <p style={{ display: this.state.display41 }}>{intl.get('home.The Violas blockchain1')}</p>
                 </div>
                 <div className="swiper-slide" onMouseOver={() => this.handleMouseOver5()} onMouseOut={() => this.handleMouseOut5()}>
                   <h3>{intl.get('home.The Violas Association')}</h3>
                   <div className="img" style={{ display: this.state.display5 }}>
-                    <img src="/img/编组 132@2x.png" />
+                    <img src="./img/编组 132@2x.png" />
                   </div>
                   <p style={{ display: this.state.display51 }}>{intl.get('home.The Violas Association1')}</p>
                 </div>
                 <div className="swiper-slide" onMouseOver={() => this.handleMouseOver6()} onMouseOut={() => this.handleMouseOut6()}>
                   <h3>{intl.get('home.Security & Privacy on the Violas Network')}</h3>
                   <div className="img" style={{ display: this.state.display6 }}>
-                    <img src="/img/编组 15@2x.png" />
+                    <img src="./img/编组 15@2x.png" />
                   </div>
                   <p style={{ display: this.state.display61 }}>{intl.get('home.Security & Privacy on the Violas Network1')}</p>
                 </div>
                 <div className="swiper-slide" onMouseOver={() => this.handleMouseOver7()} onMouseOut={() => this.handleMouseOut7()}>
                   <h3>{intl.get('home.Commitment to Compliance & Consumer Protection')}</h3>
                   <div className="img" style={{ display: this.state.display7 }}>
-                    <img src="/img/编组 10@2x.png" />
+                    <img src="./img/编组 10@2x.png" />
                   </div>
                   <p style={{ display: this.state.display71 }}>{intl.get('home.Commitment to Compliance & Consumer Protection1')}</p>
                 </div>
                 <div className="swiper-slide" onMouseOver={() => this.handleMouseOver8()} onMouseOut={() => this.handleMouseOut8()}>
                   <h3>{intl.get('home.Move Programming Language')}</h3>
                   <div className="img" style={{ display: this.state.display8 }}>
-                    <img src="/img/编组 11@x.png" />
+                    <img src="./img/编组 11@x.png" />
                   </div>
                   <p style={{ display: this.state.display81 }}>{intl.get('home.Move Programming Language1')}</p>
                 </div>
                 <div className="swiper-slide" onMouseOver={() => this.handleMouseOver9()} onMouseOut={() => this.handleMouseOut9()}>
                   <h3>{intl.get('home.How to Become a Founding Member')}</h3>
                   <div className="img" style={{ display: this.state.display9 }}>
-                    <img src="/img/编组 12@2x.png" />
+                    <img src="./img/编组 12@2x.png" />
                   </div>
                   <p style={{ display: this.state.display91 }}>{intl.get('home.How to Become a Founding Member1')}</p>
                 </div>
@@ -462,7 +462,7 @@ class Home extends Component {
                   <h3>{intl.get('home.Violas’ Manifesto')}</h3>
                   {
                     this.state.isDisplay1 ? <div className="img">
-                      <img src="/img/编组 32@2x.png" />
+                      <img src="./img/编组 32@2x.png" />
                     </div> : <p>{intl.get('home.Violas’ Manifesto1')}</p>
                   }
                 </div>
@@ -470,7 +470,7 @@ class Home extends Component {
                   <h3>{intl.get('home.Violas’ Influences')}</h3>
                   {
                     this.state.isDisplay2 ? <div className="img">
-                      <img src="/img/编组 44@2x.png" />
+                      <img src="./img/编组 44@2x.png" />
                     </div> : <p>{intl.get('home.Violas’ Influences1')}</p>
                   }
                 </div>
@@ -478,7 +478,7 @@ class Home extends Component {
                   <h3>{intl.get('home.The Violas Reserve')}</h3>
                   {
                     this.state.isDisplay3 ? <div className="img">
-                      <img src="/img/编组 30@2x.png" />
+                      <img src="./img/编组 30@2x.png" />
                     </div> : <p>{intl.get('home.The Violas Reserve1')}</p>
                   }
                 </div>
@@ -486,7 +486,7 @@ class Home extends Component {
                   <h3>{intl.get('home.The Violas blockchain')}</h3>
                   {
                     this.state.isDisplay4 ? <div className="img">
-                      <img src="/img/编组 21@2x.png" />
+                      <img src="./img/编组 21@2x.png" />
                     </div> : <p>{intl.get('home.The Violas blockchain1')}</p>
                   }
                 </div>
@@ -494,7 +494,7 @@ class Home extends Component {
                   <h3>{intl.get('home.The Violas Association')}</h3>
                   {
                     this.state.isDisplay5 ? <div className="img">
-                      <img src="/img/编组 132@2x.png" />
+                      <img src="./img/编组 132@2x.png" />
                     </div> : <p>{intl.get('home.The Violas Association1')}</p>
                   }
                 </div>
@@ -502,7 +502,7 @@ class Home extends Component {
                   <h3>{intl.get('home.Security & Privacy on the Violas Network')}</h3>
                   {
                     this.state.isDisplay6 ? <div className="img">
-                      <img src="/img/编组 15@2x.png" />
+                      <img src="./img/编组 15@2x.png" />
                     </div> : <p>{intl.get('home.Security & Privacy on the Violas Network1')}</p>
                   }
                 </div>
@@ -510,7 +510,7 @@ class Home extends Component {
                   <h3>{intl.get('home.Commitment to Compliance & Consumer Protection')}</h3>
                   {
                     this.state.isDisplay7 ? <div className="img">
-                      <img src="/img/编组 10@2x.png" />
+                      <img src="./img/编组 10@2x.png" />
                     </div> : <p>{intl.get('home.Commitment to Compliance & Consumer Protection1')}</p>
                   }
                 </div>
@@ -518,7 +518,7 @@ class Home extends Component {
                   <h3>{intl.get('home.Move Programming Language')}</h3>
                   {
                     this.state.isDisplay8 ? <div className="img">
-                      <img src="/img/编组 11@x.png" />
+                      <img src="./img/编组 11@x.png" />
                     </div> : <p>{intl.get('home.Move Programming Language1')}</p>
                   }
                 </div>
@@ -526,7 +526,7 @@ class Home extends Component {
                   <h3>{intl.get('home.How to Become a Founding Member')}</h3>
                   {
                     this.state.isDisplay9 ? <div className="img">
-                      <img src="/img/编组 12@2x.png" />
+                      <img src="./img/编组 12@2x.png" />
                     </div> : <p>{intl.get('home.How to Become a Founding Member1')}</p>
                   }
                 </div>
@@ -538,8 +538,8 @@ class Home extends Component {
           <div className="goAssociation">
             <div className="content">
               <div className="img">
-                <img src="/img/IMG_77951.jpg" />
-                <img src="/img/IMG_7769.jpg" />
+                <img src="./img/img_77951.jpg" />
+                <img src="./img/img_7769.jpg" />
               </div>
               <div className="title">
                 <h3>{intl.get('home.The Violas Association0')}</h3>
@@ -547,8 +547,8 @@ class Home extends Component {
                 {/* <p onClick={() => { this.props.history.push('/app/association') }}>
                   <span>{intl.get('home.Learn More')}</span>
                   <div className="sq">
-                    <img src="/img/编组 18@2x.png" />
-                    <img src="/img/编组 20@2x.png" />
+                    <img src="./img/编组 18@2x.png" />
+                    <img src="./img/编组 20@2x.png" />
                   </div>
                 </p> */}
                 <p>
@@ -557,15 +557,15 @@ class Home extends Component {
                     <>
                       <span onClick={() => { this.props.history.push('/app/association') }} onMouseOver={() => { this.handleHover('association1', 'over') }}>{intl.get('home.Learn More')}</span>
                       <div className="sq" onClick={() => { this.props.history.push('/app/association') }} onMouseOver={() => { this.handleHover('association1', 'over') }}>
-                        <img src="/img/编组 18@2x.png" />
-                        <img src="/img/编组 20@2x.png" />
+                        <img src="./img/编组 18@2x.png" />
+                        <img src="./img/编组 20@2x.png" />
                       </div>
                     </> :
                     <>
                       <span onClick={() => { this.props.history.push('/app/association') }} onMouseOut={() => { this.handleHover('association1', 'out') }} style={{color:'#451294'}}>{intl.get('home.Learn More')}</span>
                       <div className="sq" onClick={() => { this.props.history.push('/app/association') }} onMouseOut={() => { this.handleHover('association1', 'out') }}>
-                        <img src="/img/编组 18@2x1.png" />
-                        <img src="/img/编组 20@2x.png" />
+                        <img src="./img/编组 18@2x1.png" />
+                        <img src="./img/编组 20@2x.png" />
                       </div>
                     </>
                 }
@@ -577,26 +577,26 @@ class Home extends Component {
             <div className="person">
               <dl>
                 <h2>Academic Institution</h2>
-                <dt><img src="/img/编组 52@2x.png" /></dt>
+                <dt><img src="./img/编组 52@2x.png" /></dt>
                 <dd>Hans-Arno Jacobsen</dd>
               </dl>
               <dl>
                 <h2>Product</h2>
-                <dt><img src="/img/编组 55@2x.png" /></dt>
+                <dt><img src="./img/编组 55@2x.png" /></dt>
                 <dd>Mr. Riccardo Conti</dd>
               </dl>
               <dl>
                 <h2>Business Partner</h2>
-                <dt><img src="/img/编组 56@2x.png" /></dt>
+                <dt><img src="./img/编组 56@2x.png" /></dt>
                 <dd>Dr. Mark Hale</dd>
               </dl>
             </div>
             <div className="icon">
               <dl>
-                <dt><a href="https://www.ece.utoronto.ca/people/jacobsen-h-a/" title="https://www.ece.utoronto.ca/people/jacobsen-h-a/" target="_blank"><img src="/img/编组 45@2x.png" /></a></dt>
+                <dt><a href="https://www.ece.utoronto.ca/people/jacobsen-h-a/" title="https://www.ece.utoronto.ca/people/jacobsen-h-a/" target="_blank"><img src="./img/编组 45@2x.png" /></a></dt>
               </dl>
               <dl>
-                <dt><a href="https://facepay.io/" title="https://facepay.io/" target="_blank"><img src="/img/编组 47@2x.png" /></a></dt>
+                <dt><a href="https://facepay.io/" title="https://facepay.io/" target="_blank"><img src="./img/编组 47@2x.png" /></a></dt>
               </dl>
             </div>
           </div>

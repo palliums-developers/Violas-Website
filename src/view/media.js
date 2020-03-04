@@ -16,11 +16,11 @@ class Media extends Component {
           </div>
         </div>
         <div className="section">
-          <div className="black"><img src='/img/矩形 3@2x.png' />{intl.get('media.Summary')}</div>
+          <div className="black"><img src='./img/矩形 3@2x.png' />{intl.get('media.Summary')}</div>
           <p>{intl.get('media.Summary1')}</p>
           <p>{intl.get('media.The Vision2')}</p>
           <div className="title">{intl.get('media.Violas Platform Roadmap #1 Retrospective')}</div>
-          <div className="black"><img src='/img/矩形 3@2x.png' />{intl.get('media.Overview')}</div>
+          <div className="black"><img src='./img/矩形 3@2x.png' />{intl.get('media.Overview')}</div>
           <p>{intl.get('media.Overview0')}</p>
           <li>{intl.get('media.Overview1')}</li>
           <li>{intl.get('media.Overview2')}</li>
@@ -35,7 +35,7 @@ class Media extends Component {
           <li>{intl.get('media.Overview11')}</li>
           <li>{intl.get('media.Overview12')}</li>
           <p>{intl.get('media.Overview13')}</p>
-          <div className="black"><img src='/img/矩形 3@2x.png' />{intl.get('media.Highlights')}</div>
+          <div className="black"><img src='./img/矩形 3@2x.png' />{intl.get('media.Highlights')}</div>
           <div className="black black1">{intl.get('media.Violas mainnet features')}</div>
           <p>{intl.get('media.Violas mainnet features1')}</p>
           <div className="black black1">{intl.get('media.Violaspay')}</div>

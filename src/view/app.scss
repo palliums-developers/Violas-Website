@@ -584,7 +584,7 @@
         position: static;
       }
       .am-drawer-sidebar {
-        max-height: 667px;
+        max-height: 100%;
         .am-list {
           width: 240px;
           height: 100%;
@@ -594,7 +594,7 @@
         }
       }
       .am-drawer-overlay{
-        max-height: 667px;
+        max-height: 100%;
       }
     }
     .my-drawer .am-drawer-sidebar {

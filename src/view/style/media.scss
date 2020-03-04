@@ -3,7 +3,7 @@
   .headContent {
     width: 100%;
     height: 726px;
-    background:url("/img/蒙版 3@2x.png") no-repeat,url("/img/IMG_77841.jpg") no-repeat;
+    background:url("/img/蒙版 3@2x.png") no-repeat,url("/img/img_77841.jpg") no-repeat;
     background-size: cover;
     background-position: 50%;
     .headContent1 {
@@ -254,6 +254,23 @@
         font-size: 14px;
         line-height: 20px;
       }
+    }
+  }
+}
+@media (max-width: 750px){
+  .media{
+    .headContent{
+      height: 602px;
+
+      .headTalk{
+        margin-top:-30px;
+      }
+    }
+    
+  }
+  .app{
+    footer{
+      margin-top: 30px;
     }
   }
 }

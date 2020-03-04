@@ -1,5 +1,5 @@
 export default {
-    'Welcome to Violas':'Welcome to Violas',
+    'Welcome to':'Welcome to',
     'whitePaper':'WhitePaper',
     'Violas':'Violas',
     'Violas1':'Issue your own stablecoin on top of Libra technology.',

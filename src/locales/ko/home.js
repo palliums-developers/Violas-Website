@@ -1,5 +1,5 @@
 export default {
-    'Welcome to Violas':'에 오신 것 환영 Violas',
+    'Welcome to':'에 오신 것 환영',
     'whitePaper':'백서',
     'Violas':'Violas',
     'Violas1':'Libra 기술 위에서 여러분 자신의 스테이블코인을 발행하십시오.',

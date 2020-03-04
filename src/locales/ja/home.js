@@ -1,5 +1,5 @@
 export default {
-    'Welcome to Violas':'へようこそ Violas',
+    'Welcome to':'へようこそ',
     'whitePaper':'ホワイトペーパー',
     'Violas':'Violas',
     'Violas1':'Libraのテクノロジーを基礎に、独自のスタビリティを付加',
