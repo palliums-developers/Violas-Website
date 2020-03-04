@@ -261,7 +261,9 @@
   .media{
     .headContent{
       height: 602px;
-
+      background:url("/img/蒙版 3@2x.png") no-repeat,url("/img/img_7784.jpg") no-repeat;
+      background-size:250% 105%;
+      background-position:10%;
       .headTalk{
         margin-top:-30px;
       }
