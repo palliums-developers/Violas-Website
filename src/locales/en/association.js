@@ -1,6 +1,6 @@
 export default {
     'Violas Association': 'Violas Association',
-    'Violas Association1': 'The VIolas Association is a global network of partners developing the Violas ecosystem in accordance with the Violas Vision.',
+    'Violas Association1': 'The Violas Association is a global network of partners developing the Violas ecosystem in accordance with the Violas Vision.',
     'Bylaws of The Violas Association': 'Bylaws of The Violas Association',
     'Bylaws of The Violas Association1': 'Each Violas State has a governor who manages a validator node on the Violas Blockchain. This comprises the executive branch of governance.',
     'A Violas Validator': 'A Violas Validator',
