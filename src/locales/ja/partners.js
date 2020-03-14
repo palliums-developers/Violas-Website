@@ -2,7 +2,7 @@ export default{
     'Join the Violas Association':'Violas の協会メンバー兼',
     'Network of Partners':'パートナー募集中',
     '100 Members of the “Violas States”':'参議院メンバー：100名',
-    '100 Members of the “Violas States”1':'協会全体で計100人の参議院メンバー（各メンバーが一つのノードを運営）を募集しています。また、インフラの運営やエコシステム発展のインセンティブのために用いる発展基金を設立するために100ビットコインの出資も併せて募集します。',
+    '100 Members of the “Violas States”1':'Violas Associationは、Violasブロックチェーンの発展を促進し、Violasリザーブを管理し、Violasエコシステムを拡大するために、100あるViolasステイツのガバナーを任命する。各ガバナーは、100BTCを投資する義務を有し、これを果たせば、Violasブロックチェーン上で独自のバリデータノードを実行することができる。投資は「Violas Investment Token」との引き換え形式で行われ、交換比率は「1Violas Investment Token＝1BTC」である。Violas Investment Tokensの所有者は、Violasブロックチェーンとそのエコシステムから生まれる利益から、配当を受ける権利を有する。',
     '500 Representatives of Stablecoin Issuers':'ステーブルコイン発行の500人委員会',
     '500 Representatives of Stablecoin Issuers1':'各Violas国のリブレゼンタティブは、Violas国内のステーブルコインの発行者によって選出される。リブレゼンタティは、ガバナーと協力して、Violasブロックチェーン の開発を推進し、Violasリザーブを管理し、各国のエコシステムを構築する。リブレゼンタティブは、その見返りとして、エコシステムとViolasブロックチェーンから収益することができる。',
     'Custodial Services for Compliant Assets':'規定にかなった資産委託サービス機構',

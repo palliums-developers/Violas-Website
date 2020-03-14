@@ -27,7 +27,9 @@
         margin-bottom: 100px;
         margin-top: -100px;
         display: flex;
-        flex-direction: column;
+        label{
+          margin-left: 10px;
+        }
       }
       p:nth-child(2) {
         // width:5.3rem;
@@ -1305,6 +1307,7 @@
     .headContent {
       .headTalk {
         width: 100%;
+        
       }
     }
     section {
@@ -1576,10 +1579,12 @@
         p:nth-child(1){
           font-size: 32px;
           font-weight: 400px;
+          flex-direction: column;
           label{
             font-size: 50px;
             font-weight: 600;
             margin-top: 10px;
+            margin-left: 0;
           }
         }
         p:nth-child(2){
