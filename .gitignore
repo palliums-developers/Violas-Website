@@ -30,7 +30,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-./violas/build/Release
+./violas.io/build/
 
 # Dependency directories
 ./violas.io/node_modules/
