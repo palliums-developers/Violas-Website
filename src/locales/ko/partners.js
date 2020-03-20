@@ -3,6 +3,7 @@ export default{
     'Network of Partners':'함께합시다',
     '100 Members of the “Violas States”':'100 명의 참의원으로 구성되어 있습니다.',
     '100 Members of the “Violas States”1':'Violas 연합은 Violas 블록체인의 개발을 지원하고, Violas 보유금을 관리하며, Violas 에코시스템을 확장하기 위한 100개의 Violas 주로부터의 주지사를 포함합니다. 각각의 주지사는 100 BTC의 투자 후에 Violas 블록체인에 자체 검증자 노드를 실행할 수 있는 기회도 갖게 됩니다. 투자는 1 Violas 투자 토큰 대 1 BTC의 비율로 Violas 투자 토큰의 형태로 이루어지게 됩니다. Violas 투자 토큰은 Violas 블록체인 및 해당 에코시스템으로부터 생성되는 미래의 수익 지분에 대한 권리를 부여합니다.',
+    '500 Representatives of Stablecoin Issuers':'500 명의 스테이블코인 발행자 의원',
     '500 Representatives of Stablecoin Issuers1':'각각의 Violas 주 의원은 하나의 Violas 주 내에 있는 스테이블코인 발행자들에 의해 선출됩니다. 의원들은 해당 Violas 주지사와 함께 협력하여 Violas 블록체인의 개발을 촉진하고, Violas 준비금을 관리하며, 해당 주의 에코시스템을 구축하고, 해당 에코시스템과 Violas 블록체인에서 생성된 수익을 공유합니다.',
     'Custodial Services for Compliant Assets':'준법 자산 위탁관리서비스 기관',
     'Custodial Services for Compliant Assets1':'스테이블코인 제공을 위한 자산 보관 서비스를 제공하는 기관들은 현지 규정을 준수해야 하고, Violas 협회의 승인을 받아야 합니다. 해당 기관들은 자신들의 서비스에 대해 수수료를 청구할 수 있습니다.',
