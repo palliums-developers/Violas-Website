@@ -1,42 +1,109 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+// import { Link } from "gatsby"
+// import PropTypes from "prop-types"
+import { graphql } from "gatsby"
+import React, { Component } from "react"
+import langLink from "./langLink"
+// const Header = ({ language }) => (
+//   <header
+//     style={{
+//       background: `rebeccapurple`,
+//       marginBottom: `1.45rem`,
+//     }}
+//   >
+//     <div
+//       style={{
+//         margin: `0 auto`,
+//         maxWidth: 960,
+//         padding: `1.45rem 1.0875rem`,
+//       }}
+//     >
+//       <h1 style={{ margin: 0 }}>
+//         <Link
+//           to="/"
+//           style={{
+//             color: `white`,
+//             textDecoration: `none`,
+//           }}
+//         >
+//           {language}
+//         </Link>
+//       </h1>
+//     </div>
+//   </header>
+// )
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      language:'en'
+    }
+  }
+  componentDidMount(){
+    this.setState({language:this.props.language})
+  }
+  changeLang(_chosenLang){
+    let slug = this.props.wp_path.split('-')[0]+'-'+_chosenLang;
+    console.log(slug)
+    return slug;
+  }
+  changeSession(_chosenLang){
+    sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+  }
+  clickLang(_lang){
+    switch(_lang){
+      case "en":
+        return <><a aria-current="page" href={this.changeLang("ja")} onClick={this.changeSession("ja")}>日本語</a><a aria-current="page" href={this.changeLang("ko")} onClick={this.changeSession("ko")}>한국어</a></>
+      case "ja":
+        return <><a aria-current="page" href={this.changeLang("en")} onClick={this.changeSession("en")}>EN</a><a aria-current="page" href={this.changeLang("ko")} onClick={this.changeSession("ko")}>한국어</a></>
+      case "ko":
+        return <><a aria-current="page" href={this.changeLang("ja")} onClick={this.changeSession("ja")}>日本語</a><a aria-current="page" href={this.changeLang("en")} onClick={this.changeSession("en")}>EN</a></>
+    }
+  }
+  render() {
+    return (
+      <header
+        style={{
+          background: `rebeccapurple`,
+          marginBottom: `1.45rem`,
+        }}
+      >
+        <div
           style={{
-            color: `white`,
-            textDecoration: `none`,
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `1.45rem 1.0875rem`,
           }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+          <div className="title" dangerouslySetInnerHTML={{ __html: langLink(this.state.language) }}></div>
+        </div>
+        {
+          // this.props.language==="ja"?<>{this.clickLang("ja")}</>:this.props.language==="ko"?<>{this.clickLang("ko")}</>:<>{this.clickLang("en")}</>
+          <>
+          <a aria-current="page" href={this.changeLang("ko")} onClick={this.changeSession("ko")}>한국어</a>
+          {/* <a aria-current="page" href={this.changeLang("en")} onClick={this.changeSession("en")}>EN</a>
+          <a aria-current="page" href={this.changeLang("ja")} onClick={this.changeSession("ja")}>日本語</a> */}
+          </>
+        }
+      </header>
+    )
+  }
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+// Header.propTypes = {
+//   siteTitle: PropTypes.string,
+// }
+
+// Header.defaultProps = {
+//   siteTitle: ``,
+// }
 
 export default Header
+
+export const pageQuery = graphql`
+  query($id: String!) {
+    wordpressPage(id: { eq: $id }) {
+      slug
+    }
+  }
+`
