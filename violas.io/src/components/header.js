@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 // import PropTypes from "prop-types"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React, { Component } from "react"
 import langLink from "./langLink"
 // const Header = ({ language }) => (
@@ -33,32 +33,97 @@ import langLink from "./langLink"
 // )
 
 class Header extends Component {
-  constructor(props){
-    super(props);
-    this.state={
-      language:'en'
+  constructor(props) {
+    super(props)
+    this.state = {
+      language: "en",
     }
   }
-  componentDidMount(){
-    this.setState({language:this.props.language})
+  componentDidMount() {
+    this.setState({ language: this.props.language })
   }
-  changeLang(_chosenLang){
-    let slug = this.props.wp_path.split('-')[0]+'-'+_chosenLang;
-    console.log(slug)
-    return slug;
+  changeLang(_chosenLang) {
+    let slug = this.props.wp_path.split("-")[0] + "-" + _chosenLang
+    return slug
   }
-  changeSession(_chosenLang){
+  changeSession(_chosenLang) {
     sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
   }
-  clickLang(_lang){
-    switch(_lang){
-      case "en":
-        return <><a aria-current="page" href={this.changeLang("ja")} onClick={this.changeSession("ja")}>日本語</a><a aria-current="page" href={this.changeLang("ko")} onClick={this.changeSession("ko")}>한국어</a></>
-      case "ja":
-        return <><a aria-current="page" href={this.changeLang("en")} onClick={this.changeSession("en")}>EN</a><a aria-current="page" href={this.changeLang("ko")} onClick={this.changeSession("ko")}>한국어</a></>
-      case "ko":
-        return <><a aria-current="page" href={this.changeLang("ja")} onClick={this.changeSession("ja")}>日本語</a><a aria-current="page" href={this.changeLang("en")} onClick={this.changeSession("en")}>EN</a></>
-    }
+  // clickLang(_lang) {
+  //   switch (_lang) {
+  //     case "en":
+  //       return (
+  //         <>
+  //           <a
+  //             aria-current="page"
+  //             href={this.changeLang("ja")}
+  //             onClick={this.changeSession("ja")}
+  //           >
+  //             日本語
+  //           </a>
+  //           <a
+  //             aria-current="page"
+  //             href={this.changeLang("ko")}
+  //             onClick={this.changeSession("ko")}
+  //           >
+  //             한국어
+  //           </a>
+  //         </>
+  //       )
+  //     case "ja":
+  //       return (
+  //         <>
+  //           <a
+  //             aria-current="page"
+  //             href={this.changeLang("en")}
+  //             onClick={this.changeSession("en")}
+  //           >
+  //             EN
+  //           </a>
+  //           <a
+  //             aria-current="page"
+  //             href={this.changeLang("ko")}
+  //             onClick={this.changeSession("ko")}
+  //           >
+  //             한국어
+  //           </a>
+  //         </>
+  //       )
+  //     case "ko":
+  //       return (
+  //         <>
+  //           <a
+  //             aria-current="page"
+  //             href={this.changeLang("ja")}
+  //             onClick={this.changeSession("ja")}
+  //           >
+  //             日本語
+  //           </a>
+  //           <a
+  //             aria-current="page"
+  //             href={this.changeLang("en")}
+  //             onClick={this.changeSession("en")}
+  //           >
+  //             EN
+  //           </a>
+  //         </>
+  //       )
+  //   }
+  // }
+
+  // clickLang(_lang) {
+  //   switch (_lang) {
+  //     case "ja":
+  //       return (<a href={this.changeLang("ja")}></a>)
+  //     case "ja":
+  //       return <a href={this.changeLang("ko")}></a>
+  //     default:
+  //       return <a href={this.changeLang("en")}></a>
+  //   }
+  // }
+
+  storeSession = (_lang) => {
+    sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
   }
   render() {
     return (
@@ -75,16 +140,28 @@ class Header extends Component {
             padding: `1.45rem 1.0875rem`,
           }}
         >
-          <div className="title" dangerouslySetInnerHTML={{ __html: langLink(this.state.language) }}></div>
+          <div
+            className="title"
+            dangerouslySetInnerHTML={{ __html: langLink(this.state.language) }}
+          ></div>
         </div>
         {
           // this.props.language==="ja"?<>{this.clickLang("ja")}</>:this.props.language==="ko"?<>{this.clickLang("ko")}</>:<>{this.clickLang("en")}</>
           <>
-          <a aria-current="page" href={this.changeLang("ko")} onClick={this.changeSession("ko")}>한국어</a>
-          {/* <a aria-current="page" href={this.changeLang("en")} onClick={this.changeSession("en")}>EN</a>
+            {/* <a aria-current="page" href={this.changeLang("ko")} onClick={this.changeSession("ko")}>한국어</a>
+          <a aria-current="page" href={this.changeLang("en")} onClick={this.changeSession("en")}>EN</a>
           <a aria-current="page" href={this.changeLang("ja")} onClick={this.changeSession("ja")}>日本語</a> */}
           </>
         }
+        <div className="lang">
+          {/* <p onClick={this.clickLang("en")}>EN</p>
+          <p onClick={this.clickLang("ja")}>日本語</p>
+          <p onClick={this.clickLang("ko")}>한국어</p> */}
+          {/* <p onClick={console.log('111')}>test</p> */}
+          <Link to="homepage-en" onClick={this.storeSession("en")}>EN</Link>
+          <Link to="homepage-ja" onClick={this.storeSession("ja")}>日本語</Link>
+          <Link to="homepage-ko" onClick={this.storeSession("ko")}>한국어</Link>
+        </div>
       </header>
     )
   }
