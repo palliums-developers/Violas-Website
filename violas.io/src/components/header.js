@@ -130,7 +130,7 @@ class Header extends Component {
       <header
         style={{
           background: `rebeccapurple`,
-          marginBottom: `1.45rem`,
+          // marginBottom: `1.45rem`,
         }}
       >
         <div
@@ -141,7 +141,7 @@ class Header extends Component {
           }}
         >
           <div
-            className="title"
+            className="nav"
             dangerouslySetInnerHTML={{ __html: langLink(this.state.language) }}
           ></div>
         </div>
