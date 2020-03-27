@@ -42,13 +42,13 @@ class Header extends Component {
   componentDidMount() {
     this.setState({ language: this.props.language })
   }
-  changeLang(_chosenLang) {
-    let slug = this.props.wp_path.split("-")[0] + "-" + _chosenLang
-    return slug
-  }
-  changeSession(_chosenLang) {
-    sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
-  }
+  // changeLang(_chosenLang) {
+  //   let slug = this.props.wp_path.split("-")[0] + "-" + _chosenLang
+  //   return slug
+  // }
+  // changeSession(_chosenLang) {
+  //   sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+  // }
   // clickLang(_lang) {
   //   switch (_lang) {
   //     case "en":
@@ -101,8 +101,8 @@ class Header extends Component {
   //           </a>
   //           <a
   //             aria-current="page"
-  //             href={this.changeLang("en")}
-  //             onClick={this.changeSession("en")}
+  //             href={this.changeLang("ko")}
+  //             onClick={this.changeSession("ko")}
   //           >
   //             EN
   //           </a>
@@ -154,13 +154,13 @@ class Header extends Component {
           </>
         }
         <div className="lang">
-          {/* <p onClick={this.clickLang("en")}>EN</p>
-          <p onClick={this.clickLang("ja")}>日本語</p>
-          <p onClick={this.clickLang("ko")}>한국어</p> */}
+          {/* <p onClick={this.clickLang.bind(this,"en")}>EN aaa</p>
+          <p onClick={this.clickLang.bind(this,"ja")}>日本語 aaa</p>
+          <p onClick={this.clickLang.bind(this,"ko")}>한국어 aaa</p> */}
           {/* <p onClick={console.log('111')}>test</p> */}
-          <Link to="homepage-en" onClick={this.storeSession("en")}>EN</Link>
-          <Link to="homepage-ja" onClick={this.storeSession("ja")}>日本語</Link>
-          <Link to="homepage-ko" onClick={this.storeSession("ko")}>한국어</Link>
+          <Link to="homepage-en" onClick={this.storeSession.bind(this,"en")}>EN</Link>
+          <Link to="homepage-ja" onClick={this.storeSession.bind(this,"ja")}>日本語</Link>
+          <Link to="homepage-ko" onClick={this.storeSession.bind(this,"ko")}>한국어</Link>
         </div>
       </header>
     )

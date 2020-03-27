@@ -11,6 +11,7 @@ const router = {
     ["Blockchain Explorer", explorerUrl],
     ["Media", "media-en"],
     ["Developers", "developers-en"],
+    ["blog", "violas-blog"],
     ["WhitePaper", "whitepaper-en"],
   ],
   ja: [
@@ -21,6 +22,7 @@ const router = {
     ["ブロックチェーン エクスプローラ", explorerUrl],
     ["メディア", "media-ja"],
     ["開発者", "developers-ja"],
+    ["blog", "violas-blog"],
     ["ホワイトペーパー", "whitepaper-ja"],
   ],
   ko: [
@@ -31,23 +33,26 @@ const router = {
     ["블록체인 탐색기", explorerUrl],
     ["미디어", "media-ko"],
     ["개발자", "developers-ko"],
+    ["blog", "violas-blog"],
     ["백서", "whitepaper-ko"],
   ],
 }
 const langLink = _lang => {
   let result = ""
   let page_json =
-    _lang == "ja" ? router.ja : _lang == "ko" ? router.ko : router.en
+    _lang === "ja" ? router.ja : _lang === "ko" ? router.ko : router.en
   for (let i = 0; i < page_json.length; i++) {
-    if (i == 0) {
+    if (i === 0) {
       result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><img src='/images/logo-white.png'/></a>"
-    } else if (i == 4) {
+    } else if (i === 4) {
       result += "<a href='" + page_json[i][1] + "'>" + page_json[i][0] + "</a>"
-    } else {
+    }
+    else {
       result +=
         "<a aria-current=\"page\" href='" + page_json[i][1] + "'>" + page_json[i][0] + "</a>"
     }
   }
+  // console.log(result)
   return result
 }
 export default langLink;
