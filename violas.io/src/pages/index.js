@@ -94,31 +94,31 @@ class HomePage extends Component {
 
 export default HomePage
 
-export const pageQuery = graphql`
-  query {
-    allWordpressPage {
-      edges {
-        node {
-          title
-          content
-          slug
-          id
-        }
-      }
-    }
-    allWordpressPost {
-      edges {
-        node {
-          title
-          content
-          slug
-          id
-          author {
-            name
-          }
-          date
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     allWordpressPage {
+//       edges {
+//         node {
+//           title
+//           content
+//           slug
+//           id
+//         }
+//       }
+//     }
+//     allWordpressPost {
+//       edges {
+//         node {
+//           title
+//           content
+//           slug
+//           id
+//           author {
+//             name
+//           }
+//           date
+//         }
+//       }
+//     }
+//   }
+// `

@@ -11,7 +11,7 @@ const router = {
     ["Blockchain Explorer", explorerUrl],
     ["Media", "media-en"],
     ["Developers", "developers-en"],
-    ["blog", "violas-blog"],
+    ["Blog", "blog"],
     ["WhitePaper", "whitepaper-en"],
   ],
   ja: [
@@ -22,7 +22,7 @@ const router = {
     ["ブロックチェーン エクスプローラ", explorerUrl],
     ["メディア", "media-ja"],
     ["開発者", "developers-ja"],
-    ["blog", "violas-blog"],
+    ["Blog", "blog"],
     ["ホワイトペーパー", "whitepaper-ja"],
   ],
   ko: [
@@ -33,7 +33,7 @@ const router = {
     ["블록체인 탐색기", explorerUrl],
     ["미디어", "media-ko"],
     ["개발자", "developers-ko"],
-    ["blog", "violas-blog"],
+    ["Blog", "blog"],
     ["백서", "whitepaper-ko"],
   ],
 }
@@ -48,8 +48,7 @@ const langLink = _lang => {
       result += "<a href='" + page_json[i][1] + "'>" + page_json[i][0] + "</a>"
     }
     else {
-      result +=
-        "<a aria-current=\"page\" href='" + page_json[i][1] + "'>" + page_json[i][0] + "</a>"
+      result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'>" + page_json[i][0] + "</a>"
     }
   }
   // console.log(result)
