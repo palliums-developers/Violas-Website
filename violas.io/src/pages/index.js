@@ -76,7 +76,7 @@ class HomePage extends Component {
     return (
       <>
         <Layout language={this.state.UserLang}>
-          <SEO title="Home" />
+          <SEO title="violas homepage" />
           {/* {data.allWordpressPage.edges.map(({ node }) => (
             <div key={node.slug}>
               <Link to={node.slug}>

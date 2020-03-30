@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 // import PropTypes from "prop-types"
-import { graphql, Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import React, { Component } from "react"
 import langLink from "./langLink"
 // const Header = ({ language }) => (
@@ -129,7 +129,8 @@ class Header extends Component {
     return (
       <header
         style={{
-          background: `rebeccapurple`,
+          // background: `rebeccapurple`,
+          background: `black`,
           // marginBottom: `1.45rem`,
         }}
       >

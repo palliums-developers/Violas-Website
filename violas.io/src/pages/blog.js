@@ -2,12 +2,14 @@ import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import SEO from "../components/seo"
 
 class Blog extends Component {
   render() {
     const data = this.props.data
     return (
       <>
+        <SEO title="violas blog" />
         <Header></Header>
         {data.allWordpressPost.edges.map(({ node }) => (
           <div key={node.slug}>

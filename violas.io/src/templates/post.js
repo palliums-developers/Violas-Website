@@ -2,12 +2,15 @@ import React, { Component } from "react"
 import { graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import SEO from "../components/seo"
+
 class Post extends Component {
   render() {
     // const post = this.props.data.wordpressPost
     const StaticPost = this.props.data.wordpressPost;
     return (
       <>
+        <SEO title="violas posts" />
         <Header></Header>
         <h1>{StaticPost.title}</h1>
         <h4>{StaticPost.author.name}</h4>
@@ -21,7 +24,7 @@ class Post extends Component {
 
 export default Post
 
-export const MyQuery = graphql `
+export const MyQuery = graphql`
   query  {
     wordpressPost(content: {}) {
       title
