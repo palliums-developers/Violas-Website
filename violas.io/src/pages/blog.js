@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 class Blog extends Component {
   render() {
     const data = this.props.data
+    console.log(data.allWordpressPost.edges)
     return (
       <>
         <SEO title="violas blog" />
@@ -37,6 +38,7 @@ export const pageQuery = graphql`
           title
         }
         node {
+          slug
           content
           date(formatString: "YYY-MM-DD")
           title
@@ -49,3 +51,14 @@ export const pageQuery = graphql`
     }
   }
 `
+
+// query MyQuery {
+//   allImageSharp {
+//     nodes {
+//       sizes {
+//         originalName
+//         src
+//       }
+//     }
+//   }
+// }
