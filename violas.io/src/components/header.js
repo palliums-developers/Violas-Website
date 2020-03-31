@@ -147,6 +147,7 @@ class Header extends Component {
         style={{
           // background: `rebeccapurple`,
           background: `black`,
+          height:100
           // marginBottom: `1.45rem`,
         }}
       >
@@ -154,23 +155,16 @@ class Header extends Component {
           style={{
             margin: `0 auto`,
             maxWidth: 960,
-            padding: `1.45rem 1.0875rem`,
+            
+            // padding: `1.45rem 1.0875rem`,
           }}
+          className="head"
         >
           <div
             className="nav"
             dangerouslySetInnerHTML={{ __html: langLink(this.state.language) }}
           ></div>
-        </div>
-        {
-          // this.props.language==="ja"?<>{this.clickLang("ja")}</>:this.props.language==="ko"?<>{this.clickLang("ko")}</>:<>{this.clickLang("en")}</>
-          <>
-            {/* <a aria-current="page" href={this.changeLang("ko")} onClick={this.changeSession("ko")}>한국어</a>
-          <a aria-current="page" href={this.changeLang("en")} onClick={this.changeSession("en")}>EN</a>
-          <a aria-current="page" href={this.changeLang("ja")} onClick={this.changeSession("ja")}>日本語</a> */}
-          </>
-        }
-        <div className="lang">
+          <div className="lang">
           {/* <p onClick={this.clickLang.bind(this,"en")}>EN aaa</p>
           <p onClick={this.clickLang.bind(this,"ja")}>日本語 aaa</p>
           <p onClick={this.clickLang.bind(this,"ko")}>한국어 aaa</p> */}
@@ -189,6 +183,16 @@ class Header extends Component {
           }
           }
         </div>
+        </div>
+        {
+          // this.props.language==="ja"?<>{this.clickLang("ja")}</>:this.props.language==="ko"?<>{this.clickLang("ko")}</>:<>{this.clickLang("en")}</>
+          <>
+            {/* <a aria-current="page" href={this.changeLang("ko")} onClick={this.changeSession("ko")}>한국어</a>
+          <a aria-current="page" href={this.changeLang("en")} onClick={this.changeSession("en")}>EN</a>
+          <a aria-current="page" href={this.changeLang("ja")} onClick={this.changeSession("ja")}>日本語</a> */}
+          </>
+        }
+        
       </header>
     )
   }
