@@ -125,6 +125,22 @@ class Header extends Component {
   storeSession = (_lang) => {
     sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
   }
+  headerImg = (_pages) => {
+    switch (_pages) {
+      case "homepage":
+        return <img src="/static/9bb038b9ff4d9f1cede0b1232abd6e6c/14b42/homepage.jpg" />
+      case "vision":
+        return <img src="/static/3cad50fb229e266066a9bdf3996fd227/14b42/vision.jpg" />
+      case "association":
+        return <img src="/static/b9880b6f7ff04cd9bb3e35c078570490/14b42/association.jpg" />
+      case "partners":
+        return <img src="/static/82dd86db42801d541b03592db593786b/14b42/partners.jpg" />
+      case "media":
+        return <img src="/static/2937f6503b6e9bf3b89b6e28fabc842a/14b42/media.jpg" />
+      case "logo":
+        return <img src="/static/c7a541a81abe46e6e59775bf7782f50d/75ec2/logo-purple.png" />
+    }
+  }
   render() {
     return (
       <header
@@ -159,9 +175,19 @@ class Header extends Component {
           <p onClick={this.clickLang.bind(this,"ja")}>日本語 aaa</p>
           <p onClick={this.clickLang.bind(this,"ko")}>한국어 aaa</p> */}
           {/* <p onClick={console.log('111')}>test</p> */}
-          <Link to="homepage-en" onClick={this.storeSession.bind(this,"en")}>EN</Link>
-          <Link to="homepage-ja" onClick={this.storeSession.bind(this,"ja")}>日本語</Link>
-          <Link to="homepage-ko" onClick={this.storeSession.bind(this,"ko")}>한국어</Link>
+          <Link to="homepage-en" onClick={this.storeSession.bind(this, "en")}>EN</Link>
+          <Link to="homepage-ja" onClick={this.storeSession.bind(this, "ja")}>日本語</Link>
+          <Link to="homepage-ko" onClick={this.storeSession.bind(this, "ko")}>한국어</Link>
+          {
+            // switch(this.props.wp_path.split("-")[0]){
+            //   case "version":
+
+            // }
+            // console.log(this.props.wp_path.split("-")[0])
+            this.headerImg(this.props.wp_path.split("-")[0])
+            // this.headerImg.bind(this,this.props.wp_path.split("-")[0])
+          }
+          }
         </div>
       </header>
     )

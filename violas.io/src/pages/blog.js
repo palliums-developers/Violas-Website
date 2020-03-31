@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 class Blog extends Component {
   render() {
     const data = this.props.data
-    console.log(data.allWordpressPost.edges)
     return (
       <>
         <SEO title="violas blog" />
