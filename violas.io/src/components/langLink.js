@@ -1,5 +1,5 @@
-// import { Link } from "gatsby"
-// import React from "react"
+import LogoPath from "./logo"
+
 const explorerUrl = "https://testnet.violas.io/app/Violas"
 
 const router = {
@@ -37,13 +37,16 @@ const router = {
     ["백서", "whitepaper-ko"],
   ],
 }
+
 const langLink = _lang => {
   let result = ""
   let page_json =
     _lang === "ja" ? router.ja : _lang === "ko" ? router.ko : router.en
   for (let i = 0; i < page_json.length; i++) {
     if (i === 0) {
-      result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><img src='/static/247851bb72483b4273995cf9041752c2/75ec2/logo-white.png'/></a>"
+      // result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><Img src='/static/247851bb72483b4273995cf9041752c2/75ec2/logo-white.png'/></a>"
+      // result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><Img src={this.logoPath()}/></a>"
+      result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'>"+LogoPath+"</a>"
     } else if (i === 4) {
       result += "<a href='" + page_json[i][1] + "'>" + page_json[i][0] + "</a>"
     } else if (i === 8) {
@@ -56,4 +59,5 @@ const langLink = _lang => {
   // console.log(result)
   return result
 }
+
 export default langLink;

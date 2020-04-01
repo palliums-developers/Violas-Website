@@ -1,8 +1,9 @@
 // import { Link } from "gatsby"
 // import PropTypes from "prop-types"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery , StaticQuery} from "gatsby"
 import React, { Component } from "react"
 import langLink from "./langLink"
+import Img from "gatsby-image"
 // const Header = ({ language }) => (
 //   <header
 //     style={{
@@ -40,7 +41,7 @@ class Header extends Component {
     }
   }
   componentDidMount() {
-    this.setState({ language: this.props.language })
+    this.setState({ language: this.props.language });
   }
   // changeLang(_chosenLang) {
   //   let slug = this.props.wp_path.split("-")[0] + "-" + _chosenLang
@@ -126,21 +127,62 @@ class Header extends Component {
     sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
   }
   headerImg = (_pages) => {
-    switch (_pages) {
-      case "homepage":
-        return <img src="/static/9bb038b9ff4d9f1cede0b1232abd6e6c/14b42/homepage.jpg" />
-      case "vision":
-        return <img src="/static/3cad50fb229e266066a9bdf3996fd227/14b42/vision.jpg" />
-      case "association":
-        return <img src="/static/b9880b6f7ff04cd9bb3e35c078570490/14b42/association.jpg" />
-      case "partners":
-        return <img src="/static/82dd86db42801d541b03592db593786b/14b42/partners.jpg" />
-      case "media":
-        return <img src="/static/2937f6503b6e9bf3b89b6e28fabc842a/14b42/media.jpg" />
-      case "logo":
-        return <img src="/static/c7a541a81abe46e6e59775bf7782f50d/75ec2/logo-purple.png" />
-    }
+
+    // const data=useStaticQuery(graphql`
+    //   query{
+    //     file(relativePath: {eq: "media.jpg"}){
+    //       childImageSharp{
+    //           fluid(maxWidth:1000){
+    //               ...GatsbyImageSharpFluid
+    //           }
+    //         }
+    //     }
+    //   }
+    // `);
+
+    // switch (_pages) {
+    //   case "homepage":
+    //     return <img src="/static/9bb038b9ff4d9f1cede0b1232abd6e6c/14b42/homepage.jpg" />
+    //   case "vision":
+    //     return <img src="/static/3cad50fb229e266066a9bdf3996fd227/14b42/vision.jpg" />
+    //   case "association":
+    //     return <img src="/static/b9880b6f7ff04cd9bb3e35c078570490/14b42/association.jpg" />
+    //   case "partners":
+    //     return <img src="/static/82dd86db42801d541b03592db593786b/14b42/partners.jpg" />
+    //   case "media":
+    //     return <img src="/static/2937f6503b6e9bf3b89b6e28fabc842a/14b42/media.jpg" />
+    //     // return <Img fluid={data.media.childImageSharp.fluid}/>
+    //   case "logo":
+    //     return <img src="/static/c7a541a81abe46e6e59775bf7782f50d/75ec2/logo-purple.png" />
+    // }
+
+    // let imgData = await graphql(`
+    //   allImageSharp {
+    //     nodes {
+    //       sizes {
+    //         originalName
+    //         src
+    //       }
+    //     }
+    //   }
+    // `)
+    // console.log(imgData)
   }
+  // logoPath=()=>{
+  //   const data=useStaticQuery(graphql`
+  //   query MyQuery {
+  //     file(relativePath: {eq: "logo-white.png"}) {
+  //       childImageSharp {
+  //         fixed {
+  //           originalName
+  //           src
+  //         }
+  //       }
+  //     }
+  //   }
+  //   `)
+  //   console.log(111)
+  // }
   render() {
     return (
       <header
@@ -155,7 +197,6 @@ class Header extends Component {
           style={{
             margin: `0 auto`,
             maxWidth: 960,
-            
             // padding: `1.45rem 1.0875rem`,
           }}
           className="head"
@@ -173,12 +214,8 @@ class Header extends Component {
           <Link to="homepage-ja" onClick={this.storeSession.bind(this, "ja")}>日本語</Link>
           <Link to="homepage-ko" onClick={this.storeSession.bind(this, "ko")}>한국어</Link>
           {
-            // switch(this.props.wp_path.split("-")[0]){
-            //   case "version":
+            // this.headerImg(this.props.wp_path.split("-")[0])
 
-            // }
-            // console.log(this.props.wp_path.split("-")[0])
-            this.headerImg(this.props.wp_path.split("-")[0])
             // this.headerImg.bind(this,this.props.wp_path.split("-")[0])
           }
           }
@@ -192,7 +229,6 @@ class Header extends Component {
           <a aria-current="page" href={this.changeLang("ja")} onClick={this.changeSession("ja")}>日本語</a> */}
           </>
         }
-        
       </header>
     )
   }
@@ -208,10 +244,22 @@ class Header extends Component {
 
 export default Header
 
-export const pageQuery = graphql`
-  query($id: String!) {
-    wordpressPage(id: { eq: $id }) {
-      slug
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query($id: String!) {
+//     wordpressPage(id: { eq: $id }) {
+//       slug
+//     }
+//   }
+// `
+
+// export const image = useStaticQuery(graphql`
+//   query {
+//     file(relativePath: { eq: "images/default.jpg" }) {
+//       childImageSharp {
+//         fixed {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//   }
+// `)
