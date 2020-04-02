@@ -1,9 +1,18 @@
 // import { Link } from "gatsby"
 // import PropTypes from "prop-types"
-import { graphql, Link, useStaticQuery , StaticQuery} from "gatsby"
+import { graphql, Link, useStaticQuery, StaticQuery } from "gatsby"
 import React, { Component } from "react"
 import langLink from "./langLink"
 import Img from "gatsby-image"
+
+import logoWhite_jpg from "../images/logo-white.png"
+import logoPurple_jpg from "../images/logo-purple.png"
+import homepage_jpg from "../images/homepage.jpg"
+import vision_jpg from "../images/vision.jpg"
+import association_jpg from "../images/association.jpg"
+import partners_jpg from "../images/partners.jpg"
+import media_jpg from "../images/media.jpg"
+
 // const Header = ({ language }) => (
 //   <header
 //     style={{
@@ -140,21 +149,27 @@ class Header extends Component {
     //   }
     // `);
 
-    // switch (_pages) {
-    //   case "homepage":
-    //     return <img src="/static/9bb038b9ff4d9f1cede0b1232abd6e6c/14b42/homepage.jpg" />
-    //   case "vision":
-    //     return <img src="/static/3cad50fb229e266066a9bdf3996fd227/14b42/vision.jpg" />
-    //   case "association":
-    //     return <img src="/static/b9880b6f7ff04cd9bb3e35c078570490/14b42/association.jpg" />
-    //   case "partners":
-    //     return <img src="/static/82dd86db42801d541b03592db593786b/14b42/partners.jpg" />
-    //   case "media":
-    //     return <img src="/static/2937f6503b6e9bf3b89b6e28fabc842a/14b42/media.jpg" />
-    //     // return <Img fluid={data.media.childImageSharp.fluid}/>
-    //   case "logo":
-    //     return <img src="/static/c7a541a81abe46e6e59775bf7782f50d/75ec2/logo-purple.png" />
-    // }
+    switch (_pages) {
+      case "homepage":
+        // return <img src="/static/9bb038b9ff4d9f1cede0b1232abd6e6c/14b42/homepage.jpg" />
+        return <img src={homepage_jpg} />
+      case "vision":
+        // return <img src="/static/3cad50fb229e266066a9bdf3996fd227/14b42/vision.jpg" />
+        return <img src={vision_jpg} />
+      case "association":
+        // return <img src="/static/b9880b6f7ff04cd9bb3e35c078570490/14b42/association.jpg" />
+        return <img src={association_jpg} />
+      case "partners":
+        // return <img src="/static/82dd86db42801d541b03592db593786b/14b42/partners.jpg" />
+        return <img src={partners_jpg} />
+      case "media":
+        // return <img src="/static/2937f6503b6e9bf3b89b6e28fabc842a/14b42/media.jpg" />
+        // return <Img fluid={data.media.childImageSharp.fluid}/>
+        return <img src={media_jpg} />
+      case "logo":
+        // return <img src="/static/c7a541a81abe46e6e59775bf7782f50d/75ec2/logo-purple.png" />
+        return <img src={logoPurple_jpg} />
+    }
 
     // let imgData = await graphql(`
     //   allImageSharp {
@@ -189,7 +204,7 @@ class Header extends Component {
         style={{
           // background: `rebeccapurple`,
           background: `black`,
-          height:100
+          height: 100
           // marginBottom: `1.45rem`,
         }}
       >
@@ -201,24 +216,31 @@ class Header extends Component {
           }}
           className="head"
         >
-          <div
+          {/* <div
             className="nav"
             dangerouslySetInnerHTML={{ __html: langLink(this.state.language) }}
-          ></div>
+          ></div> */}
+            {
+              // console.log(langLink(this.state.language))
+              langLink(this.state.language)
+            }
+          {/* <div className="nav" >{langLink(this.state.language).map((item, index) => {
+            return <>{item}</>
+          })}</div> */}
           <div className="lang">
-          {/* <p onClick={this.clickLang.bind(this,"en")}>EN aaa</p>
+            {/* <p onClick={this.clickLang.bind(this,"en")}>EN aaa</p>
           <p onClick={this.clickLang.bind(this,"ja")}>日本語 aaa</p>
           <p onClick={this.clickLang.bind(this,"ko")}>한국어 aaa</p> */}
-          {/* <p onClick={console.log('111')}>test</p> */}
-          <Link to="homepage-en" onClick={this.storeSession.bind(this, "en")}>EN</Link>
-          <Link to="homepage-ja" onClick={this.storeSession.bind(this, "ja")}>日本語</Link>
-          <Link to="homepage-ko" onClick={this.storeSession.bind(this, "ko")}>한국어</Link>
-          {
-            // this.headerImg(this.props.wp_path.split("-")[0])
+            {/* <p onClick={console.log('111')}>test</p> */}
+            <Link to="homepage-en" onClick={this.storeSession.bind(this, "en")}>EN</Link>
+            <Link to="homepage-ja" onClick={this.storeSession.bind(this, "ja")}>日本語</Link>
+            <Link to="homepage-ko" onClick={this.storeSession.bind(this, "ko")}>한국어</Link>
+            {
+              this.headerImg(this.props.wp_path.split("-")[0])
 
-            // this.headerImg.bind(this,this.props.wp_path.split("-")[0])
-          }
-          }
+              // this.headerImg.bind(this,this.props.wp_path.split("-")[0])
+            }
+            }
         </div>
         </div>
         {
