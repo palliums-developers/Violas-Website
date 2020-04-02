@@ -44,17 +44,22 @@ header{
     line-height: 32px;
     letter-spacing: 2px;
 }
+.go_white{
+    font-size:32px;
+    font-weight:600;
+    color:rgba(80,27,162,1);
+}
 .h_title{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 400;
     color: #382f44;
     line-height: 32px;
 }
 .h_con{
-    font-size: 46px;
+    font-size: 40px;
     font-weight: 400;
     color: #501ba2;
-    line-height: 54px;
+    line-height: 45px;
     margin-top: 52px;
     margin-bottom: 62px;
 }
@@ -87,6 +92,208 @@ header{
     font-weight: 300;
     color: #5d5666;
     line-height: 32px;
+}
+.forReal{
+    background: #f9f9f9;
+    padding-left:20px;
+    padding-top: 100px;
+    
+    box-sizing: border-box;
+}
+.real_list>.wp-block-group__inner-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+.real_contents{
+    width: 32%;
+    margin-right: 10px;
+}
+.real_contents img{
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0 auto;
+    display: flex;
+}
+.real_contents h3{
+    text-align: center;
+}
+.wh_content>.wp-block-group__inner-container{
+    display: flex;
+    background: #f9f9f9;
+    justify-content: space-between;
+    padding-top: 300px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+}
+.wh_con{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 300px; */
+    position: relative;
+    top: -50px;
+}
+.know_list{
+    margin-top: 30px;
+}
+.know_list .know_title{
+    font-size:32px;
+    font-weight:300;
+    color:rgba(93,86,102,1);
+}
+.know_lists>.wp-block-group__inner-container{
+    width: 227px;
+    height: 414px;
+    
+}
+
+.know_content>.wp-block-group__inner-container{
+   width: 100%;
+   display: flex;
+   /* overflow-x: auto; */
+}
+.know_content>.wp-block-group__inner-container .know_lists{
+    margin-right: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.know_content>.wp-block-group__inner-container .know_lists:nth-child(1){
+   background: #60419e;
+ }
+.know_content>.wp-block-group__inner-container .know_lists:nth-child(2){
+    background: #2e2c64;
+  }
+.know_content>.wp-block-group__inner-container .know_lists:nth-child(3){
+    background: #3e697b;
+  }
+.know_content>.wp-block-group__inner-container .know_lists:nth-child(4){
+    background: #62409e;
+  }
+.know_content>.wp-block-group__inner-container .know_lists:nth-child(5){
+    background: #2d2d64;
+  }
+.know_content>.wp-block-group__inner-container .know_lists:nth-child(6){
+    background: #3d6a79;
+  }
+.know_content>.wp-block-group__inner-container .know_lists:nth-child(7){
+    background: #6041a0;
+  }
+.know_content>.wp-block-group__inner-container .know_lists:nth-child(8){
+    background: #2e2c64;
+  }
+.know_content>.wp-block-group__inner-container .know_lists:nth-child(9){
+    background: #3e697b;
+  }
+.know_title1{
+    font-size: 26px;
+    font-weight: 500;
+    color: #f9f9f9;
+}
+.know_img{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.know_intro{
+    font-size: 18px;
+    display: none;
+}
+.white_title{
+    font-size:54px;
+    font-weight:600;
+    color:rgba(56,47,68,1);
+    
+}
+.go_whites .wp-block-group__inner-container{
+    display: flex;
+    align-items: center;
+}
+.go_img{
+    margin-left: 10px;
+}
+.go_whites p{
+    margin-bottom: 0;
+}
+.association_list>.wp-block-group__inner-container{
+    display: flex;
+    width: 100%;
+    background: #f1f1f1;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.association_content{
+    width: 50%;
+    margin-top: 70px;
+}
+.association_content .association_intro{
+    font-size:45px;
+    font-weight:600;
+    color:rgba(56,47,68,1);
+}
+.association_content .association_title{
+    font-size:24px;
+    font-weight:400;
+    color:rgba(93,86,102,1);
+}
+.go_association{
+    font-size:32px;
+    font-weight:600;
+    color:rgba(80,27,162,1);
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+.go_associationsImg{
+    position: relative;
+    max-width: 100px;
+    max-height: 100px;
+    margin-left: 15px;
+}
+.go_associations>.wp-block-group__inner-container{
+    display: flex;
+    align-items: center;
+    
+}
+.go_association_img1 img{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.go_association_img2 img{
+    max-width: 33px;
+    max-height: 29px;
+    position: absolute;
+    top:50%;
+    margin-top:-15px;
+    left:50%;
+    margin-left: -15px;
+  }
+.person_list{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.person_list>.wp-block-group__inner-container{
+    display: flex;
+}
+.preson_lists{
+   text-align: center;
+}
+.preson_lists .person_title{
+    font-size:30px;
+    font-weight:400;
+    color:rgba(56,47,68,1);
+}
+.preson_lists .person_name{
+    font-size:22px;
+    font-weight:600;
+    color:rgba(56,47,68,1);
+}
+.preson_lists>.wp-block-group__inner-container{
+    margin-right: 20px;
+}
+.preson_lists .person_img img{
+    width: 256px;
+    height: 404px;
 }
 /* vision_page */
 .vision_title{
@@ -376,34 +583,53 @@ header{
 }
 .wh_img{
     max-width: 480px;
-    height: 553px;
+    display: flex;
+    /* height: 553px; */
     position: relative;
 }
 .wh_img .white_img1 img{
-    max-width: 480px;
-    max-height: 389px;
+    max-width: 300px;
+    max-height: 243px;
     position: absolute;
     bottom: 0;
 }
 .wh_img .white_img2 img{
-    max-width: 389px;
-    max-height: 498px;
+    max-width: 243px;
+    max-height: 311px;
     position: absolute;
     bottom: 0;
-    left: 50px;
+    left:35px;
 }
 .wh_img .white_img3 img{
-    max-width: 384px;
-    max-height: 553px;
+    max-width: 240px;
+    max-height: 345px;
     position: absolute;
-    top: 0;
-    right: 10px;
+    bottom: 0;
+    left: 70px;
 }
+.go_img{
+    position: relative;
+    max-width: 100px;
+    max-height: 100px;
+}
+.go_whiteImg1 img{
+  max-width: 100px;
+  max-height: 100px;
+}
+.go_whiteImg2 img{
+    max-width: 33px;
+    max-height: 29px;
+    position: absolute;
+    top:50%;
+    margin-top:-15px;
+    left:50%;
+    margin-left: -15px;
+  }
 .r_imgs{
+    width: 300px;
     height: 520px;
-    display: flex;
-    background: #f1f1f1;
-    margin: 100px 0;
+    /* display: flex; */
+    /* margin: 100px 0; */
     position: relative;
 }
 .r_imgs .r_img1 img{
@@ -413,7 +639,7 @@ header{
     z-index: 2;
 }
 .r_imgs .r_img2 img{
-    max-height: 485px;
+    max-height: 505px;
     position: absolute;
     bottom:80px;
     left: 150px;
