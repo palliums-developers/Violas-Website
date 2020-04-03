@@ -52,11 +52,11 @@ abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted;
 }
-b,
+/* b,
 strong {
   font-weight: inherit;
   font-weight: bolder;
-}
+} */
 dfn {
   font-style: italic;
 }
@@ -496,7 +496,7 @@ address {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-b {
+/* b {
   font-weight: bold;
 }
 strong {
@@ -507,7 +507,7 @@ dt {
 }
 th {
   font-weight: bold;
-}
+} */
 li {
   margin-bottom: calc(1.45rem / 2);
 }
