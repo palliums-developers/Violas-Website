@@ -204,7 +204,7 @@ class Header extends Component {
         style={{
           // background: `rebeccapurple`,
           background: `black`,
-          height: 100
+          // height:`720px`
           // marginBottom: `1.45rem`,
         }}
       >
@@ -212,6 +212,7 @@ class Header extends Component {
           style={{
             margin: `0 auto`,
             maxWidth: 960,
+            height: `100px`
             // padding: `1.45rem 1.0875rem`,
           }}
           className="head"

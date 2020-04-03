@@ -119,6 +119,7 @@ header{
 .real_contents h3{
     text-align: center;
 }
+
 .wh_content>.wp-block-group__inner-container{
     display: flex;
     background: #f9f9f9;
@@ -157,6 +158,75 @@ header{
     margin-right: 20px;
     padding: 15px;
     box-sizing: border-box;
+}
+.banner {
+    position: relative;
+}
+.banner .swiper-container {
+      width: 100%;
+      margin-top: 32px;
+}
+.banner .swiper-container .swiper-wrapper .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+.banner .swiper-container .swiper-wrapper>.wp-block-group__inner-container{
+    display: flex;
+}
+.banner .swiper-container .swiper-wrapper .swiper-slide .know_title1{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(249, 249, 249, 1);
+    line-height: 32px;
+}
+.banner .swiper-container .swiper-wrapper .swiper-slide .know_intro{
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 20px;
+    margin-top: -100px;
+}
+.swiper-container1 .swiper-wrapper .swiper-slide p{
+    /* display:none; */
+}
+.swiper-container1{
+    display: flex;
+}
+.swiper-container2{
+    display: none;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    top: 18px;
+    width: 37px;
+    height: 33px;
+    z-index: 2;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: unset;
+}
+.swiper-button-next {
+    background: url("../images/rightArrow.png") no-repeat;
+    background-size: 100% 100%;
+    right: 18%;
+}
+.swiper-button-prev {
+    left: auto !important;
+    right: 23%;
+    background: url("../images/leftArrow.png") no-repeat;
+    background-size: 100% 100%;
+}
+.swiper-button-next.swiper-button-disabled {
+    background: url("../images/rightClick.png") no-repeat;
+
+    background-size: 100% 100%;
+}
+.swiper-button-prev.swiper-button-disabled {
+    background: url("../images/leftClick.png") no-repeat;
+    background-size: 100% 100%;
 }
 .know_content>.wp-block-group__inner-container .know_lists:nth-child(1){
    background: #60419e;

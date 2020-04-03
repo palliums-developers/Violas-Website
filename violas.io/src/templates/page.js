@@ -2,10 +2,26 @@ import React, { Component } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+import Swiper from "swiper/js/swiper.js";
+import "swiper/css/swiper.min.css";
 class Page extends Component {
   componentWillMount() {
     this.followLang()
+  }
+  componentDidMount(){
+    var mySwiper = new Swiper(".swiper-container1", {
+      slidesPerView: 3.3,
+      spaceBetween: 20,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
   }
   followLang() {
     let temp_lang = this.langLimit();
