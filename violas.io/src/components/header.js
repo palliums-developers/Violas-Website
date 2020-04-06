@@ -68,14 +68,14 @@ class Header extends Component {
             <a
               aria-current="page"
               href={this.changeLang("ja")}
-              onClick={this.changeSession.bind(this,"ja")}
+              onClick={this.changeSession.bind(this, "ja")}
             >
               日本語
             </a>
             <a
               aria-current="page"
               href={this.changeLang("ko")}
-              onClick={this.changeSession.bind(this,"ko")}
+              onClick={this.changeSession.bind(this, "ko")}
             >
               한국어
             </a>
@@ -87,14 +87,14 @@ class Header extends Component {
             <a
               aria-current="page"
               href={this.changeLang("en")}
-              onClick={this.changeSession.bind(this,"en")}
+              onClick={this.changeSession.bind(this, "en")}
             >
               EN
             </a>
             <a
               aria-current="page"
               href={this.changeLang("ko")}
-              onClick={this.changeSession.bind(this,"ko")}
+              onClick={this.changeSession.bind(this, "ko")}
             >
               한국어
             </a>
@@ -106,14 +106,14 @@ class Header extends Component {
             <a
               aria-current="page"
               href={this.changeLang("ja")}
-              onClick={this.changeSession.bind(this,"ja")}
+              onClick={this.changeSession.bind(this, "ja")}
             >
               日本語
             </a>
             <a
               aria-current="page"
               href={this.changeLang("en")}
-              onClick={this.changeSession.bind(this,"en")}
+              onClick={this.changeSession.bind(this, "en")}
             >
               EN
             </a>
@@ -240,7 +240,7 @@ class Header extends Component {
           <div className="linkPage">
             {
               // console.log(langLink(this.state.language))
-              langLink(this.state.language)
+              langLink(this.state.language, "white")
             }
           </div>
           {/* <div className="nav" >{langLink(this.state.language).map((item, index) => {
@@ -250,9 +250,9 @@ class Header extends Component {
             {/* <p onClick={this.clickLang.bind(this,"en")}>EN aaa</p>
           <p onClick={this.clickLang.bind(this,"ja")}>日本語 aaa</p>
           <p onClick={this.clickLang.bind(this,"ko")}>한국어 aaa</p> */}
-          {
-            this.clickLang(this.state.language)
-          }
+            {
+              this.clickLang(this.state.language)
+            }
             {/* <Link to="homepage-en" onClick={this.storeSession.bind(this, "en")}>EN</Link>
             <Link to="homepage-ja" onClick={this.storeSession.bind(this, "ja")}>日本語</Link>
             <Link to="homepage-ko" onClick={this.storeSession.bind(this, "ko")}>한국어</Link> */}

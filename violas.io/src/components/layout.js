@@ -78,7 +78,7 @@ class Layout extends Component {
         >
           <main>{this.props.children}</main>
         </div>
-        <Footer language={this.state.UserLang} />
+        <Footer language={this.state.UserLang} wp_path={this.props.children._self.props.path.split("/")[1]}/>
       </>
     )
   }

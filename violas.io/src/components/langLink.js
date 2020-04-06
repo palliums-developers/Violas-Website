@@ -1,7 +1,10 @@
 // import LogoPath from "./logo"
 import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
-import logoWhite_jpg from "../images/logo-white.png"
+import logoWhite_png from "../images/logo-white.png"
+import logoPurple_png from "../images/logo-purple.png"
+import logoWhiteS_png from "../images/logo-purple-single.png"
+import logoPurpleS_png from "../images/logo-purple-single.png"
 
 const explorerUrl = "https://testnet.violas.io/app/Violas"
 
@@ -41,9 +44,9 @@ const router = {
   ],
 }
 
-const langLink = _lang => {
+const langLink = (_lang, logo_type) => {
   let page_json =
-  _lang === "ja" ? router.ja : _lang === "ko" ? router.ko : router.en;
+    _lang === "ja" ? router.ja : _lang === "ko" ? router.ko : router.en;
 
   // const data =useStaticQuery(graphql`
   // query  {
@@ -62,7 +65,7 @@ const langLink = _lang => {
   //   if (i === 0) {
   //     // result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><Img src='/static/247851bb72483b4273995cf9041752c2/75ec2/logo-white.png'/></a>"
   //     // result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><Img src={this.logoPath()}/></a>"
-  //     result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><img src={"+logoWhite_jpg+"}/></a>"
+  //     result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><img src={"+logoWhite_png+"}/></a>"
   //   } else if (i === 4) {
   //     result += "<a href='" + page_json[i][1] + "'>" + page_json[i][0] + "</a>"
   //   } else if (i === 8) {
@@ -78,7 +81,7 @@ const langLink = _lang => {
   //   if (i === 0) {
   //     // result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><Img src='/static/247851bb72483b4273995cf9041752c2/75ec2/logo-white.png'/></a>"
   //     // result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><Img src={this.logoPath()}/></a>"
-  //     result += <a aria-current="page" href={page_json[i][1]}><img src={logoWhite_jpg}/></a>
+  //     result += <a aria-current="page" href={page_json[i][1]}><img src={logoWhite_png}/></a>
   //   } else if (i === 4) {
   //     result += <a href={page_json[i][1]}>{page_json[i][0]}</a>
   //   } else if (i === 8) {
@@ -94,7 +97,29 @@ const langLink = _lang => {
     if (i === 0) {
       // result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><Img src='/static/247851bb72483b4273995cf9041752c2/75ec2/logo-white.png'/></a>"
       // result += "<a aria-current=\"page\" href='" + page_json[i][1] + "'><Img src={this.logoPath()}/></a>"
-      result.push(<a aria-current="page" href={page_json[i][1]}><img src={logoWhite_jpg} /></a>)
+      // if(logo_type==="white"){
+      //   result.push(<a aria-current="page" href={page_json[i][1]} className="logo"><img src={logoWhite_png} /></a>)
+      // }else if(logo_type==="purple"){
+      //   result.push(<a aria-current="page" href={page_json[i][1]} className="logo"><img src={logoPurple_png} /></a>)
+      // }
+      switch (logo_type) {
+        case "white":
+          // result.push(<div className="logo"><a aria-current="page" href={page_json[i][1]}><img src={logoWhite_png} /></a></div>)
+          result.push(<a aria-current="page" className="logo" href={page_json[i][1]}><img src={logoWhite_png} /></a>)
+          break;
+        case "purple":
+          // result.push(<div className="logo"><a aria-current="page" href={page_json[i][1]}><img src={logoPurple_png} /></a></div>)
+          result.push(<a aria-current="page" className="logo" href={page_json[i][1]}><img src={logoPurple_png} /></a>)
+          break;
+        case "white-single":
+          // result.push(<div className="logo"><a aria-current="page" href={page_json[i][1]}><img src={logoWhiteS_png} /></a></div>)
+          result.push(<a aria-current="page" className="logo" href={page_json[i][1]}><img src={logoWhiteS_png} /></a>)
+          break;
+        case "purple-single":
+          // result.push(<div className="logo"><a aria-current="page" href={page_json[i][1]}><img src={logoPurpleS_png} /></a></div>)
+          result.push(<a aria-current="page" className="logo" href={page_json[i][1]}><img src={logoPurpleS_png} /></a>)
+          break;
+      }
     } else if (i === 4) {
       result.push(<a href={page_json[i][1]}>{page_json[i][0]}</a>)
     } else if (i === 8) {

@@ -1,0 +1,55 @@
+.foot {
+  width: 989px;
+  margin: 0 auto;
+}
+.foot .linkPage {
+  width: 100%;
+  height: 126px;
+  color: #501ba2;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.foot .linkPage a {
+  height: 32px;
+  width: 186px;
+  color: #501ba2;
+  font-size: 18px;
+  line-height: 18px;
+  /* margin-bottom: 20px; */
+  margin-right: 90px;
+}
+.foot .linkPage :nth-child(5), :nth-child(8){
+    margin-left: 150px;
+}
+.foot .linkPage .logo {
+  margin-top: 0;
+  /* margin-bottom: 108px; */
+  width: 60px;
+  height: 32px;
+  display: block;
+}
+.foot .linkPage .logo img {
+  width: 100%;
+  height: 100%;
+}
+/* .foot .linkPage :nth-child(1) img {
+  width: 60px;
+  height: 32px;
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: row;
+}
+.foot .linkPage :nth-child(2),
+:nth-child(3),
+:nth-child(4) {
+  display: flex;
+  flex-direction: row;
+} */
+.foot .info {
+  width: 100%;
+  display: flex;
+}
