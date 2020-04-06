@@ -112,8 +112,8 @@ class Header extends Component {
             </a>
             <a
               aria-current="page"
-              href={this.changeLang("ko")}
-              onClick={this.changeSession.bind(this,"ko")}
+              href={this.changeLang("en")}
+              onClick={this.changeSession.bind(this,"en")}
             >
               EN
             </a>
