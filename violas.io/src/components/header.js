@@ -246,10 +246,10 @@ class Header extends Component {
             {
               // console.log(langLink(this.state.language))
               (this.props.wp_path == undefined ?
-                langLink(this.state.language, "purple", "purple") :
+                langLink(this.state.language, "purple", "purple", "header") :
                 this.props.wp_path.split("-")[0]) === "whitepaper" ?
-                langLink(this.state.language, "purple", "purple") :
-                langLink(this.state.language, "white")
+                langLink(this.state.language, "purple", "purple", "header") :
+                langLink(this.state.language, "white", "white", "header")
             }
           </div>
           {/* <div className="nav" >{langLink(this.state.language).map((item, index) => {

@@ -68,7 +68,7 @@ class Layout extends Component {
   render() {
     return (
       <>
-        <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path.split("/")[1]}/>
+        <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path?this.props.children._self.props.path.split("/")[1]:"blog"}/>
         <div
           style={{
             margin: `0 auto`,

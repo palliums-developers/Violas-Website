@@ -44,7 +44,7 @@ const router = {
   ],
 }
 
-const langLink = (_lang, logo_type, text_color) => {
+const langLink = (_lang, logo_type, text_color, used) => {
   let link_color="white";
   let whitepaper_color="#501ba2";
   if(text_color==="purple"){
@@ -129,7 +129,11 @@ const langLink = (_lang, logo_type, text_color) => {
     } else if (i === 4) {
       result.push(<a style={{color:link_color}} href={page_json[i][1]}>{page_json[i][0]}</a>)
     } else if (i === 8) {
-      result.push(<a style={{color:whitepaper_color,backgroundColor:link_color}} aria-current="page" className="whitepaper" href={page_json[i][1]}>{page_json[i][0]}</a>)
+      if(used==="header"){
+        result.push(<a style={{color:whitepaper_color,backgroundColor:link_color}} aria-current="page" className="whitepaper" href={page_json[i][1]}>{page_json[i][0]}</a>)
+      }else{
+        result.push(<a style={{color:link_color}} aria-current="page" className="whitepaper" href={page_json[i][1]}>{page_json[i][0]}</a>)
+      }
     }
     else {
       result.push(<a style={{color:link_color}} aria-current="page" href={page_json[i][1]}>{page_json[i][0]}</a>)
