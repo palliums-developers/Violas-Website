@@ -8,7 +8,7 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
+import Header from "./header1"
 import Footer from "./footer"
 import "../style/layout.css"
 
@@ -66,9 +66,12 @@ class Layout extends Component {
     sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
   }
   render() {
+    // console.log(this.props.children._self.props.path===undefined?111:222)
+    // console.log(222)
     return (
       <>
-        <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path?this.props.children._self.props.path.split("/")[1]:"blog"}/>
+        {/* <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path?this.props.children._self.props.path.split("/")[1]:"blog"}/> */}
+        <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path.split("/")[1]}/>
         <div
           style={{
             margin: `0 auto`,

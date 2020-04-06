@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 
 class Blog extends Component {
   render() {
@@ -10,16 +11,18 @@ class Blog extends Component {
     return (
       <>
         <SEO title="violas blog" />
-        <Header></Header>
-        {data.allWordpressPost.edges.map(({ node }) => (
-          <div key={node.slug}>
-            <Link to={node.slug}>
-              <h2>{node.title}</h2>
-            </Link>
-            <p>{node.date}</p>
+        <Header wp_path={"blog"}/>
+          <div>
+            {data.allWordpressPost.edges.map(({ node }) => (
+              <div key={node.slug}>
+                <Link to={node.slug}>
+                  <h2>{node.title}</h2>
+                </Link>
+                <p>{node.date}</p>
+              </div>
+            ))}
           </div>
-        ))}
-        <Footer></Footer>
+          <Footer wp_path={"blog"}/>
       </>
     )
   }

@@ -1,0 +1,8 @@
+header head .linkPage .logo{
+    width:60px;
+    height:32px;
+}
+header head .linkPage .logo img{
+    width:100%;
+    height:100%;
+}

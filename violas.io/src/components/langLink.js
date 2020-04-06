@@ -139,7 +139,6 @@ const langLink = (_lang, logo_type, text_color, used) => {
       result.push(<a style={{color:link_color}} aria-current="page" href={page_json[i][1]}>{page_json[i][0]}</a>)
     }
   }
-
   // console.log(result)
   return result
 }
