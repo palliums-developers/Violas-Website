@@ -27,14 +27,13 @@ header .head .linkPage img {
   width: 107px;
 }
 header .head .linkPage .whitepaper {
-  width: 70px;
-  margin-left: 50px;
-  /* display: inline-block; */
+  margin-left: 100px;
   background: #fff;
   border-radius: 3rem;
-  text-align: center;
   font-weight: 400;
   color: #501ba2;
+  padding: 5px 10px;
+  box-sizing: border-box;
 }
 header .head .lang a {
   font-size: 12px;
