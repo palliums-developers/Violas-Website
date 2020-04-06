@@ -53,74 +53,74 @@ class Header extends Component {
   componentDidMount() {
     this.setState({ language: this.props.language });
   }
-  // changeLang(_chosenLang) {
-  //   let slug = this.props.wp_path.split("-")[0] + "-" + _chosenLang
-  //   return slug
-  // }
-  // changeSession(_chosenLang) {
-  //   sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
-  // }
-  // clickLang(_lang) {
-  //   switch (_lang) {
-  //     case "en":
-  //       return (
-  //         <>
-  //           <a
-  //             aria-current="page"
-  //             href={this.changeLang("ja")}
-  //             onClick={this.changeSession("ja")}
-  //           >
-  //             日本語
-  //           </a>
-  //           <a
-  //             aria-current="page"
-  //             href={this.changeLang("ko")}
-  //             onClick={this.changeSession("ko")}
-  //           >
-  //             한국어
-  //           </a>
-  //         </>
-  //       )
-  //     case "ja":
-  //       return (
-  //         <>
-  //           <a
-  //             aria-current="page"
-  //             href={this.changeLang("en")}
-  //             onClick={this.changeSession("en")}
-  //           >
-  //             EN
-  //           </a>
-  //           <a
-  //             aria-current="page"
-  //             href={this.changeLang("ko")}
-  //             onClick={this.changeSession("ko")}
-  //           >
-  //             한국어
-  //           </a>
-  //         </>
-  //       )
-  //     case "ko":
-  //       return (
-  //         <>
-  //           <a
-  //             aria-current="page"
-  //             href={this.changeLang("ja")}
-  //             onClick={this.changeSession("ja")}
-  //           >
-  //             日本語
-  //           </a>
-  //           <a
-  //             aria-current="page"
-  //             href={this.changeLang("ko")}
-  //             onClick={this.changeSession("ko")}
-  //           >
-  //             EN
-  //           </a>
-  //         </>
-  //       )
-  //   }
-  // }
+  changeLang(_chosenLang) {
+    let slug = this.props.wp_path.split("-")[0] + "-" + _chosenLang
+    return slug
+  }
+  changeSession(_chosenLang) {
+    sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+  }
+  clickLang(_lang) {
+    switch (_lang) {
+      case "en":
+        return (
+          <>
+            <a
+              aria-current="page"
+              href={this.changeLang("ja")}
+              onClick={this.changeSession.bind(this,"ja")}
+            >
+              日本語
+            </a>
+            <a
+              aria-current="page"
+              href={this.changeLang("ko")}
+              onClick={this.changeSession.bind(this,"ko")}
+            >
+              한국어
+            </a>
+          </>
+        )
+      case "ja":
+        return (
+          <>
+            <a
+              aria-current="page"
+              href={this.changeLang("en")}
+              onClick={this.changeSession.bind(this,"en")}
+            >
+              EN
+            </a>
+            <a
+              aria-current="page"
+              href={this.changeLang("ko")}
+              onClick={this.changeSession.bind(this,"ko")}
+            >
+              한국어
+            </a>
+          </>
+        )
+      case "ko":
+        return (
+          <>
+            <a
+              aria-current="page"
+              href={this.changeLang("ja")}
+              onClick={this.changeSession.bind(this,"ja")}
+            >
+              日本語
+            </a>
+            <a
+              aria-current="page"
+              href={this.changeLang("en")}
+              onClick={this.changeSession.bind(this,"en")}
+            >
+              EN
+            </a>
+          </>
+        )
+    }
+  }
 
   // clickLang(_lang) {
   //   switch (_lang) {
@@ -250,10 +250,12 @@ class Header extends Component {
             {/* <p onClick={this.clickLang.bind(this,"en")}>EN aaa</p>
           <p onClick={this.clickLang.bind(this,"ja")}>日本語 aaa</p>
           <p onClick={this.clickLang.bind(this,"ko")}>한국어 aaa</p> */}
-            {/* <p onClick={console.log('111')}>test</p> */}
-            <Link to="homepage-en" onClick={this.storeSession.bind(this, "en")}>EN</Link>
+          {
+            this.clickLang(this.state.language)
+          }
+            {/* <Link to="homepage-en" onClick={this.storeSession.bind(this, "en")}>EN</Link>
             <Link to="homepage-ja" onClick={this.storeSession.bind(this, "ja")}>日本語</Link>
-            <Link to="homepage-ko" onClick={this.storeSession.bind(this, "ko")}>한국어</Link>
+            <Link to="homepage-ko" onClick={this.storeSession.bind(this, "ko")}>한국어</Link> */}
             {
               // <img src={this.headerImg(this.props.wp_path.split("-")[0])}/>
               // this.headerImg.bind(this,this.props.wp_path.split("-")[0])
