@@ -85,6 +85,24 @@ class Page extends Component {
         return logoWhite_jpg;
     }
   }
+  hasBackground(_temp) {
+    let url = _temp.split("/")[1].split("-")[0]
+    if (url === "blog") {
+      return {
+        height:"80px"
+      }
+    } if (url === "whitepaper") {
+      return {
+        height:"80px"
+      }
+    } else {
+      return { background: 'url(' + this.selectBackgroundImg(url) + ')' + ', url(' + cover_png + ')',
+      backgroundRepeat:"no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition: "50%"
+    }
+    }
+  }
   render() {
     const StaticPage = this.props.data.wordpressPage;
     // backgroundImage: 'url(' + this.headerImg(this.props.wp_path.split("-")[0] ? this.props.wp_path.split("-")[0] : '111') + ')',
@@ -96,9 +114,12 @@ class Page extends Component {
 
       } */}
         <SEO title="violas pages" />
-        <div className="headContent" style={{
+        {/* <div className="headContent" style={{
           backgroundImage: 'url(' + this.selectBackgroundImg(this.props.path.split("/")[1].split("-")[0]) + ')' + ', url(' + cover_png + ')',
-        }}></div>
+        }}></div> */}
+        <div className="headContent" style={
+          this.hasBackground(this.props.path)
+        }></div>
         <Layout>
           <div dangerouslySetInnerHTML={{ __html: StaticPage.content }}></div>
         </Layout>

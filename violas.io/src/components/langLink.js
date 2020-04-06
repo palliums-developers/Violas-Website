@@ -44,7 +44,13 @@ const router = {
   ],
 }
 
-const langLink = (_lang, logo_type) => {
+const langLink = (_lang, logo_type, text_color) => {
+  let link_color="white";
+  let whitepaper_color="#501ba2";
+  if(text_color==="purple"){
+    link_color="#501ba2"
+    whitepaper_color="white"
+  }
   let page_json =
     _lang === "ja" ? router.ja : _lang === "ko" ? router.ko : router.en;
 
@@ -121,12 +127,12 @@ const langLink = (_lang, logo_type) => {
           break;
       }
     } else if (i === 4) {
-      result.push(<a href={page_json[i][1]}>{page_json[i][0]}</a>)
+      result.push(<a style={{color:link_color}} href={page_json[i][1]}>{page_json[i][0]}</a>)
     } else if (i === 8) {
-      result.push(<a aria-current="page" className="whitepaper" href={page_json[i][1]}>{page_json[i][0]}</a>)
+      result.push(<a style={{color:whitepaper_color,backgroundColor:link_color}} aria-current="page" className="whitepaper" href={page_json[i][1]}>{page_json[i][0]}</a>)
     }
     else {
-      result.push(<a aria-current="page" href={page_json[i][1]}>{page_json[i][0]}</a>)
+      result.push(<a style={{color:link_color}} aria-current="page" href={page_json[i][1]}>{page_json[i][0]}</a>)
     }
   }
 

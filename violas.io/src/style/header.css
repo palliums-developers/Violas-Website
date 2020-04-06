@@ -9,6 +9,7 @@ header .head {
   width: 989px;
   height: 60px;
   margin: 0 auto;
+  /* background-repeat: no-repeat; */
 }
 header .head .linkPage {
   /* display: flex; */

@@ -16,7 +16,7 @@ class Footer extends Component {
     this.setState({ language: this.props.language });
   }
   changeLang(_chosenLang) {
-    let slug = this.props.wp_path.split("-")[0] + "-" + _chosenLang
+    let slug = this.props.wp_path?this.props.wp_path.split("-")[0] + "-" + _chosenLang:"blog"
     return slug
   }
   changeSession(_chosenLang) {
