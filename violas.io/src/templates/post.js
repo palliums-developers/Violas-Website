@@ -1,23 +1,31 @@
 import React, { Component } from "react"
-import { graphql } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "../style/blogs.css"
 
 class Post extends Component {
   render() {
     // const post = this.props.data.wordpressPost
     const StaticPost = this.props.data.wordpressPost;
     return (
-      <>
+      <div className="blog">
         <SEO title="violas posts" />
-        <Header></Header>
-        <h1>{StaticPost.title}</h1>
-        <h4>{StaticPost.author.name}</h4>
-        <div dangerouslySetInnerHTML={{ __html: StaticPost.content }}></div>
-        <h5>{StaticPost.date}</h5>
-        <Footer></Footer>
-      </>
+        <Layout>
+          <div className="blog_detail">
+            <h1>{StaticPost.title}</h1>
+            <h4>{StaticPost.author.name}</h4>
+            <div dangerouslySetInnerHTML={{ __html: StaticPost.content }}></div>
+            <h5>{StaticPost.date}</h5>
+          </div>
+          <div className="relative">
+            <h2>Related Literature</h2>
+            <p>{StaticQuery}</p>
+          </div>
+        </Layout>
+      </div>
     )
   }
 }
@@ -25,8 +33,8 @@ class Post extends Component {
 export default Post
 
 export const MyQuery = graphql`
-  query  {
-    wordpressPost(content: {}) {
+  query  ($id: String!){
+    wordpressPost(content: {}, id:{eq:$id} ) {
       title
       content
       date (formatString: "YYYY-MM-DD")

@@ -91,26 +91,26 @@ class Header extends Component {
     storeSession = (_lang) => {
         sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
     }
-    selectLink=(_lang)=>{
-        switch(_lang){
+    selectLink = (_lang) => {
+        switch (_lang) {
             case "en":
-                return<>
-                
-                <a aria-current="page" className="link" href="vision-en">Vision</a>
-                <a aria-current="page" className="link" href="association-en">Association</a>
-                <a className="link" href="">Blockchain Explorer</a>
-                <a aria-current="page" className="link" href="developers-en">Developers</a>
-                <a aria-current="page" className="link" href="media-en">Media</a>
-                <a aria-current="page" className="link" href="blog">Blog</a>
-                <a aria-current="page" className="whitepaper" href="whitepaper-en">WhitePaper</a>
+                return <>
+
+                    <a aria-current="page" className="link" href="vision-en">Vision</a>
+                    <a aria-current="page" className="link" href="association-en">Association</a>
+                    <a className="link" href="">Blockchain Explorer</a>
+                    <a aria-current="page" className="link" href="developers-en">Developers</a>
+                    <a aria-current="page" className="link" href="media-en">Media</a>
+                    <a aria-current="page" className="link" href="blog">Blog</a>
+                    <a aria-current="page" className="whitepaper" href="whitepaper-en">WhitePaper</a>
                 </>
             case "ja":
-                return<>
-                
+                return <>
+
                 </>
             case "ko":
-                return<>
-                
+                return <>
+
                 </>
         }
     }
@@ -118,26 +118,26 @@ class Header extends Component {
         return (
             <header className="header2">
                 <div className="head">
-                   <a href="/app/home"><img src={logoWhite_png1} /></a>
-                   <a><img src={logoWhite_png2} /></a>
+                    <a href="/app/home"><img src={logoWhite_png1} /></a>
+                    <a><img src={logoWhite_png2} /></a>
                 </div>
                 <div className="asideLayout">
-                <div className="aside">
-                    <div className="display">
-                        <a href="/app/home"><img src={logoWhite_png3} /></a>
-                        <a><img src={logoWhite_png4} /></a>
+                    <div className="aside">
+                        <div className="display">
+                            <a href="/app/home"><img src={logoWhite_png3} /></a>
+                            <a><img src={logoWhite_png4} /></a>
+                        </div>
+                        <div className="linkPage">
+                            {
+                                this.selectLink("en")
+                            }
+                        </div>
+                        <div className="lang">
+                            {
+                                this.clickLang(this.state.language)
+                            }
+                        </div>
                     </div>
-                    <div className="linkPage">
-                        {
-                            this.selectLink("en")
-                        }
-                    </div>
-                    <div className="lang">
-                        {
-                            this.clickLang(this.state.language)
-                        }
-                    </div>
-                </div>
                 </div>
             </header >
         )

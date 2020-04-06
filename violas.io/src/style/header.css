@@ -28,7 +28,7 @@ header .head .linkPage img {
   width: 107px;
 }
 header .head .linkPage .whitepaper {
-  margin-left: 100px;
+  /* margin-left: 100px; */
   background: #fff;
   border-radius: 3rem;
   font-weight: 400;
