@@ -1298,6 +1298,7 @@ footer .email p span {
 @media (max-width:1000px){
   #___gatsby{
     width: 100%;
+    position: relative;
   }
   /* vision_page */
   .vision_title {

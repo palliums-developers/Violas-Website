@@ -9,6 +9,7 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header1"
+import Header1 from "./header2"
 import Footer from "./footer"
 import "../style/layout.css"
 
@@ -72,6 +73,7 @@ class Layout extends Component {
       <>
         {/* <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path?this.props.children._self.props.path.split("/")[1]:"blog"}/> */}
         <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path.split("/")[1]}/>
+        <Header1 />
         <div
           style={{
             margin: `0 auto`,

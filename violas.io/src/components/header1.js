@@ -91,7 +91,7 @@ class Header extends Component {
         switch(_lang){
             case "en":
                 return<>
-                <a aria-current="page" className="logo" href="homepage-en"><img href={logoWhite_png}></img></a>
+                <a aria-current="page" className="logo" href="homepage-en"><img src={logoWhite_png}></img></a>
                 <a aria-current="page" className="link" href="vision-en">Vision</a>
                 <a aria-current="page" className="link" href="association-en">Association</a>
                 <a className="link" href="">Blockchain Explorer</a>
@@ -113,6 +113,7 @@ class Header extends Component {
     render() {
         return (
             <header
+                className="header1"
                 style={{
                     background: `transparent`,
                     position: 'absolute',

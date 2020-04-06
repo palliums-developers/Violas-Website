@@ -41,3 +41,77 @@ header .head .lang a {
   margin-left: 20px;
   color: white;
 }
+.header1{
+  display: flex;
+}
+.header2{
+  display: none;
+}
+@media (max-width:1000px){
+  .header2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    top: 0;
+  }
+  .header1{
+    display: none;
+  }
+  .header2 .head{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .head>a:nth-child(1) img {
+    width: 36px;
+  }
+  .head>a:nth-child(2) img {
+    width: 27px;
+    height: 21px;
+  }
+  .asideLayout{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.4);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+  }
+  .aside{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:22%;
+    height: 100%;
+    background-color: #4b199f;
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .display{
+    display: flex;
+    justify-content: space-between;
+  }
+  .linkPage{
+    display: flex;
+    flex-direction: column;
+  }
+  .linkPage a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f8f8f8;
+    line-height: 14px;
+    margin-top: 47px;
+  }
+}
