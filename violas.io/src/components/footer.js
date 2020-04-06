@@ -118,7 +118,6 @@ class Footer extends Component {
       //   </div>
       // </footer>
       <footer>
-<<<<<<< HEAD
         <div className="foot">
           <div className="linkPage">
             {
@@ -128,16 +127,6 @@ class Footer extends Component {
           <div className="info">
             <div className="copyright">
               <p>Copyright©2019Violas</p>
-=======
-        <div className="footerNav">
-          <div className="logo"><img src={logoPurple_jpg} /></div>
-          <div className="logo1"><img src={logoPurple_jpg1} /></div>
-          <div className="nav">
-            <div>
-              <Link>vision</Link>
-              <Link>association</Link>
-              <Link to="/app/partners">partners</Link>
->>>>>>> 783be3eedbb61d4f1f3080ce864ef335f20a8c84
             </div>
             <div className="email">
               <p><img src={Mail} />violas.team@violas.io</p>
