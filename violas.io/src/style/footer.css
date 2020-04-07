@@ -57,8 +57,53 @@
 .foot .info .email{
     width: 100px;
 }
+.foot .info .email p{
+  display: flex;
+}
+footer .email p img {
+  max-width: 19px;
+  max-height: 15px;
+  margin-right: 10px;
+}
 @media (max-width:1000px){
+  .foot {
+    width: 320px;
+  }
+  
+  .foot .linkPage a{
+    font-size: 14px;
+    font-weight: 300;
+    color: #501ba2;
+    margin-top: 15px;
+    line-height: 13px;
+    width:80px;
+    margin-right: 20px;
+  }
   .foot .linkPage a.logo {
     width: 100%;
+    margin-bottom: 10px;
+  }
+  .foot .linkPage a.logo img{
+    width: 50px;
+    height: 24px;
+  }
+  .foot .linkPage a:nth-child(5),
+  .foot .linkPage a:nth-child(8) {
+    margin-left: 0;
+  }
+  .info{
+    margin-top: 100px;
+  }
+  .copyright p{
+    widows: 100%;;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .email{
+     padding-left: 30px;
+  }
+  .email p{
+    font-size: 12px;
+    line-height: 12px;
   }
 }

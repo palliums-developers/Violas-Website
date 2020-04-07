@@ -891,7 +891,7 @@ header {
   margin-left: 20px;
 }
 
-footer {
+/* footer {
   width: 100%;
   margin-top: 100px;
 }
@@ -935,7 +935,6 @@ footer .email {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  /* margin-bottom: 60px; */
 }
 footer .email p {
   font-size: 14px;
@@ -959,10 +958,7 @@ footer .email p span {
 }
 footer .email p span:last-child {
   border-right: 0;
-}
-footer .email p :nth-child(2) {
-  /* margin-left: 300px; */
-}
+} */
 
 @media (max-width: 1600px){
   /* home_page */
