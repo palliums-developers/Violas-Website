@@ -22,8 +22,8 @@
   /* margin-bottom: 20px; */
   margin-right: 50px;
 }
-.foot .linkPage :nth-child(5),
-:nth-child(8) {
+.foot .linkPage a:nth-child(5),
+.foot .linkPage a:nth-child(8) {
   margin-left: 240px;
 }
 .foot .linkPage .logo a {
@@ -56,4 +56,9 @@
 }
 .foot .info .email{
     width: 100px;
+}
+@media (max-width:1000px){
+  .foot .linkPage a.logo {
+    width: 100%;
+  }
 }
