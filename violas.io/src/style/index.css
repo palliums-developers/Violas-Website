@@ -798,6 +798,63 @@ header {
   line-height: 32px;
 }
 /* whitePaper_page */
+.whitePaper_headContent>.wp-block-group__inner-container{
+  position: relative;
+}
+.headContentImg{
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.whitePaper_headContents{
+  width: 90%;
+  background: #FFF;
+  position: relative;
+  left:100px;
+  bottom: 0;
+  z-index: 2;
+}
+.whitePaper_headContents1 .title{
+  font-size: 38px;
+  font-weight: 500;
+  color: #3a2e46;
+  line-height: 38px;
+  margin-top: 59px;
+  margin-bottom: 24px;
+  margin-left: 53px;
+
+}
+.down>.wp-block-group__inner-container{
+  margin-left: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.down>.wp-block-group__inner-container>p{
+  border-left: 1px solid #60429e;
+  font-size: 20px;
+  font-weight: 300;
+  color: #5d5666;
+  line-height: 19px;
+  padding-left: 17px;
+  white-space: nowrap;
+}
+.downloads>.wp-block-group__inner-container{
+  display: flex;
+  align-items: center;
+}
+.downloads>.wp-block-group__inner-container>p a{
+  display: flex;
+  font-size: 32px;
+  font-weight: 400;
+  color: #3a2e46;
+  margin-right: 30px;
+}
+.downloads>.wp-block-group__inner-container>p{
+  font-size: 16px;
+  white-space: nowrap;
+  margin-right: 10px;
+}
 .intro1 {
   margin-bottom: 0;
 }
@@ -807,10 +864,13 @@ header {
   font-weight: 300;
   color: #5d5666;
   line-height: 32px;
+  margin-left: 53px;
+
 }
 .real_content {
   width: 32%;
   /* float: left; */
+  
 }
 .real_content img {
   max-width: 165px;
@@ -1707,6 +1767,44 @@ footer .email p span {
 }
 .wh_con{
   top: -30px;
+}
+/* whitepaper */
+.headContentImg img{
+  width: 80%;
+  height: 283px;
+}
+.whitePaper_headContents {
+  left: 30px;
+}
+.whitePaper_headContents1 .title{
+  font-size: 18px;
+  line-height: 18px;
+  margin-left: 33px;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+.intro1, .intro2{
+  margin-left: 33px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.down>.wp-block-group__inner-container{
+  margin-left: 33px;
+}
+.down>.wp-block-group__inner-container>p{
+  font-size: 9px;
+  line-height: 9px;
+  padding-left: 8px;
+  box-sizing: border-box;
+}
+.downloads>.wp-block-group__inner-container>p a{
+  font-size: 16px;
+  white-space: nowrap;
+  margin-right: 0;
+}
+.downloads>.wp-block-group__inner-container img {
+  width: 44px;
+  height: 44px;
 }
 /* footer */
 /* footer .footerNav {
