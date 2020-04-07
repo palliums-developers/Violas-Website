@@ -11,6 +11,7 @@ class Header extends Component {
         super(props)
         this.state = {
             language: "en",
+            dis:'none'
         }
     }
     componentDidMount() {
@@ -114,18 +115,33 @@ class Header extends Component {
                 </>
         }
     }
+    getDis = () =>{
+       this.setState({
+        dis:'flex'
+       },()=>{
+        console.log(this.state.dis)
+    })
+    }
+    getDis2 = () =>{
+        console.log('11111')
+        this.setState({
+            dis:'none'
+        },()=>{
+            console.log(this.state.dis)
+        })
+     }
     render() {
         return (
             <header className="header2">
                 <div className="head">
-                    <a href="/app/home"><img src={logoWhite_png1} /></a>
-                    <a><img src={logoWhite_png2} /></a>
+                    <a aria-current="page" href="homepage-en"><img src={logoWhite_png1} /></a>
+                    <a onClick={()=>this.getDis()}><img src={logoWhite_png2} /></a>
                 </div>
-                <div className="asideLayout">
+                <div className="asideLayout" style={{display:this.state.dis}}>
                     <div className="aside">
                         <div className="display">
-                            <a href="/app/home"><img src={logoWhite_png3} /></a>
-                            <a><img src={logoWhite_png4} /></a>
+                            <a aria-current="page" href="homepage-en"><img src={logoWhite_png3} /></a>
+                            <a onClick={()=>this.getDis2()}><img src={logoWhite_png4} /></a>
                         </div>
                         <div className="linkPage">
                             {
