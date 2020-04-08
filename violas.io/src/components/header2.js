@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import logoWhite_png from "../images/logo-white.png"
-import logoWhite_png1 from '../images/编组 74复制 4@2x.png'
-import logoWhite_png2 from '../images/编组 212@2x.png'
+import logoWhite_png1 from '../images/logo-white-single.png'
+import logoWhite_png2 from '../images/menu-button-white.png'
 import logoWhite_png3 from '../images/home 2.png'
-import logoWhite_png4 from '../images/guanbi-2备份 2.png'
+import logoWhite_png4 from '../images/X.png'
 import "../style/header1.css"
 
 class Header extends Component {
@@ -11,7 +11,7 @@ class Header extends Component {
         super(props)
         this.state = {
             language: "en",
-            dis:'none'
+            dis: 'none'
         }
     }
     componentDidMount() {
@@ -115,33 +115,33 @@ class Header extends Component {
                 </>
         }
     }
-    getDis = () =>{
-       this.setState({
-        dis:'flex'
-       },()=>{
-        console.log(this.state.dis)
-    })
+    getDis = () => {
+        this.setState({
+            dis: 'flex'
+        }, () => {
+            // console.log(this.state.dis)
+        })
     }
-    getDis2 = () =>{
+    getDis2 = () => {
         console.log('11111')
         this.setState({
-            dis:'none'
-        },()=>{
+            dis: 'none'
+        }, () => {
             console.log(this.state.dis)
         })
-     }
+    }
     render() {
         return (
             <header className="header2">
                 <div className="head">
                     <a aria-current="page" href="homepage-en"><img src={logoWhite_png1} /></a>
-                    <a onClick={()=>this.getDis()}><img src={logoWhite_png2} /></a>
+                    <a onClick={() => this.getDis()}><img src={logoWhite_png2} /></a>
                 </div>
-                <div className="asideLayout" style={{display:this.state.dis}}>
+                <div className="asideLayout" style={{ display: this.state.dis }}>
                     <div className="aside">
                         <div className="display">
                             <a aria-current="page" href="homepage-en"><img src={logoWhite_png3} /></a>
-                            <a onClick={()=>this.getDis2()}><img src={logoWhite_png4} /></a>
+                            <a onClick={() => this.getDis2()}><img src={logoWhite_png4} /></a>
                         </div>
                         <div className="linkPage">
                             {

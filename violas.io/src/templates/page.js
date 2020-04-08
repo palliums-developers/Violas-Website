@@ -107,6 +107,7 @@ class Page extends Component {
     const StaticPage = this.props.data.wordpressPage;
     // backgroundImage: 'url(' + this.headerImg(this.props.wp_path.split("-")[0] ? this.props.wp_path.split("-")[0] : '111') + ')',
     // console.log(this.props.path.split("/")[1].split("-")[0]);
+    console.log(this.props.path);
     return (
       <>
         {/* {
