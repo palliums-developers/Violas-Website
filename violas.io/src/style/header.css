@@ -6,7 +6,7 @@ header {
   align-items: center;
 }
 header .head {
-  width: 989px;
+  width: 1020px;
   height: 60px;
   margin: 0 auto;
   /* background-repeat: no-repeat; */
@@ -17,12 +17,22 @@ header .head .linkPage {
   height: 100%;
   /* align-items: center; */
   margin: auto 0;
-}
-header .head .linkPage a {
   font-size: 12px;
+}
+header .head .linkPage .link {
   margin-left: 20px;
   color: white;
   height: 30px;
+}
+header .head .linkPag .link:hover {
+  border: #501ba2 2px solid;
+}
+header .head .linkPage .whitepaper:hover {
+  background-color: #501ba2;
+  color: white;
+}
+header .head .linkPage .whitepaper {
+  margin-left: 20px;
 }
 header .head .linkPage img {
   width: 107px;
@@ -36,29 +46,52 @@ header .head .linkPage .whitepaper {
   padding: 5px 10px;
   box-sizing: border-box;
 }
-header .head .lang a {
-  font-size: 12px;
-  margin-left: 20px;
-  color: white;
+header .head .lang {
+  display: flex;
+  flex-direction: column;
 }
-.header1{
+header .head .lang p {
+  width: 50px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0;
+  position: relative;
+  bottom: 48px;
+}
+header .head .lang a {
+  line-height: 20px;
+  font-size: 12px;
+  margin-left: 0px;
+  height: 50px;
+  background-color: white;
+  padding: 5px;
+  /* color: #501ba2; */
+  text-align: center;
+  position: relative;
+  bottom: 80px;
+  height: 40px;
+}
+header .head .lang a:hover {
+  border: #501ba2 1px dashed;
+}
+.header1 {
   display: flex;
 }
-.header2{
+.header2 {
   display: none;
 }
-@media (max-width:1000px){
-  .header2{
+@media (max-width: 1000px) {
+  .header2 {
     width: 100%;
     height: 50px;
     display: flex;
     position: absolute;
     top: 0;
   }
-  .header1{
+  .header1 {
     display: none;
   }
-  .header2 .head{
+  .header2 .head {
     width: 100%;
     height: 50px;
     display: flex;
@@ -66,29 +99,29 @@ header .head .lang a {
     padding: 0 15px;
     box-sizing: border-box;
   }
-  .head>a:nth-child(1) img {
+  .head > a:nth-child(1) img {
     width: 36px;
   }
-  .head>a:nth-child(2) img {
+  .head > a:nth-child(2) img {
     width: 27px;
     height: 21px;
   }
-  .asideLayout{
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.4);
+  .asideLayout {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
     position: fixed;
-    top:0;
+    top: 0;
     right: 0;
     z-index: 999;
     /* display: flex; */
     overflow: hidden;
   }
-  .aside{
+  .aside {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
-    width:230px;
+    width: 230px;
     height: 100%;
     background-color: #4b199f;
     color: #fff;
@@ -100,15 +133,15 @@ header .head .lang a {
     display: flex;
     flex-direction: column;
   }
-  .display{
+  .display {
     display: flex;
     justify-content: space-between;
   }
-  .linkPage{
+  .linkPage {
     display: flex;
     flex-direction: column;
   }
-  .linkPage a{
+  .linkPage a {
     font-size: 14px;
     font-weight: 400;
     color: #f8f8f8;

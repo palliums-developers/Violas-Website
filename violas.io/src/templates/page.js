@@ -2,8 +2,8 @@ import React, { Component } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Swiper from "swiper/js/swiper.js";
 import "swiper/css/swiper.min.css";
+import Swiper from "swiper/js/swiper.js";
 
 import "../style/headContent.css"
 import logoWhite_jpg from "../images/logo-white.png"
@@ -89,18 +89,22 @@ class Page extends Component {
     let url = _temp.split("/")[1].split("-")[0]
     if (url === "blog") {
       return {
-        height:"80px"
+        height: "80px"
       }
     } if (url === "whitepaper") {
       return {
-        height:"80px"
+        height: "80px"
       }
     } else {
-      return { background: 'url(' + this.selectBackgroundImg(url) + ')' + ', url(' + cover_png + ')',
-      backgroundRepeat:"no-repeat",
-      backgroundSize: "cover",
-      backgroundPosition: "50%"
-    }
+      return {
+        // background: 'url(' + this.selectBackgroundImg(url) + ')' + ', url(' + cover_png + ')',
+        // background: 'url(' + cover_png + ')',
+        // background: 'url(' + this.selectBackgroundImg(url) + ')',
+        background: 'url(' + cover_png + ')' + ',url(' + this.selectBackgroundImg(url) + ')',
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "50%"
+      }
     }
   }
   render() {

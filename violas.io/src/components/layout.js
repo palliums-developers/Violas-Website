@@ -72,8 +72,8 @@ class Layout extends Component {
     return (
       <>
         {/* <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path?this.props.children._self.props.path.split("/")[1]:"blog"}/> */}
-        <Header language={this.state.UserLang} wp_path={this.props.children._self?this.props.children._self.props.path.split("/")[1]:undefined}/>
-        <Header1 />
+        <Header language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} />
+        <Header1 language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} />
         <div
           style={{
             margin: `0 auto`,
@@ -83,7 +83,7 @@ class Layout extends Component {
         >
           <main>{this.props.children}</main>
         </div>
-        <Footer language={this.state.UserLang} wp_path={this.props.children._self?this.props.children._self.props.path.split("/")[1]:undefined}/>
+        <Footer language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} />
       </>
     )
   }
