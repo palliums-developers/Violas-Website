@@ -7,6 +7,9 @@ import SEO from "../components/seo"
 import "../style/blogs.css"
 
 class Post extends Component {
+  componentWillMount(){
+    sessionStorage.setItem("wp_path","blog")
+  }
   render() {
     // const post = this.props.data.wordpressPost
     const StaticPost = this.props.data.wordpressPost;
@@ -77,3 +80,41 @@ export const MyQuery = graphql`
 //     }
 //   }
 // `
+
+// {
+//   allWordpressPost {
+//     edges {
+//       previous {
+//         title
+//       }
+//       next {
+//         title
+//       }
+//       node {
+//         slug
+//         content
+//         date(formatString: "YYY-MM-DD")
+//         title
+//         author {
+//           name
+//         }
+//         categories {
+//           link
+//           name
+//           path
+//           slug
+//         }
+//         excerpt
+//       }
+//     }
+//     totalCount
+//   }
+// }
+
+// {
+//   wordpressPost(categories: {elemMatch: {name: {eq: "blog"}}}) {
+//     id
+//     path
+//     slug
+//   }
+// }

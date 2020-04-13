@@ -126,7 +126,7 @@ class Footer extends Component {
           </div>
           <div className="info">
             <div className="copyright">
-              <p>Copyright©2019Violas</p>
+              <p>Copyright©2020Violas</p>
             </div>
             <div className="email">
               <p><img src={Mail} />violas.team@violas.io</p>

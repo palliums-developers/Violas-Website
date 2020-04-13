@@ -6,7 +6,8 @@ header {
   align-items: center;
 }
 header .head {
-  width: 1020px;
+  width: 1000px;
+  /* width: 1020px; */
   height: 60px;
   margin: 0 auto;
   /* background-repeat: no-repeat; */
@@ -36,6 +37,7 @@ header .head .linkPage .whitepaper {
 }
 header .head .linkPage img {
   width: 107px;
+  height: 17.4px;
 }
 header .head .linkPage .whitepaper {
   /* margin-left: 100px; */
@@ -101,6 +103,7 @@ header .head .lang a:hover {
   }
   .head > a:nth-child(1) img {
     width: 36px;
+    height: 16.5px;
   }
   .head > a:nth-child(2) img {
     width: 27px;

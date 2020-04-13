@@ -122,5 +122,11 @@ footer .email p img {
   .lang{
     display: flex;
     align-items: baseline;
+    margin-top: 0px;
+  }
+  .langs{
+    display: flex;
+    align-items: baseline;
+    margin-top: 50px;
   }
 }

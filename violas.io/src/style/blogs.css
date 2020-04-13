@@ -9,3 +9,9 @@
 .relative{
     margin-top: 80px;
 }
+@media (max-width: 1000px){
+    .blog_list{
+        margin-top: 0px;
+        padding-top: 80px;
+    }
+}

@@ -110,11 +110,8 @@ class Header extends Component {
         this.setState({ langClick: !this.state.langClick })
     }
     clickLang(_lang) {
-        // switch(_lang){
-        //     case "en":
-        //         return (<p style={this.state.purple?{color:"#501ba2"}:{color:"white"}} >EN</p>)
-        // }
-        return (<p style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} onClick={this.clickLangButton.bind(this)}>{_lang.toUpperCase()}</p>)
+        let temp=_lang==="en"?"EN":_lang==="ja"?"日本語":_lang==="ko"?"한국어":"";
+        return (<p style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} onClick={this.clickLangButton.bind(this)}>{temp}</p>)
     }
     storeSession = (_lang) => {
         sessionStorage.setItem("violas-lang", JSON.stringify(_lang))

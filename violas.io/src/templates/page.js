@@ -3,8 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "swiper/css/swiper.min.css";
-import Swiper from "swiper/js/swiper.js";
-
+import Swiper from "swiper/js/swiper.min.js"
 import "../style/headContent.css"
 import logoWhite_jpg from "../images/logo-white.png"
 import logoPurple_jpg from "../images/logo-purple.png"
@@ -18,9 +17,10 @@ import cover_png from "../images/cover.png"
 class Page extends Component {
   componentWillMount() {
     this.followLang()
+    this.wp_path(this.props.path.split("/")[1].split("-")[0])
   }
   componentDidMount() {
-    var mySwiper = new Swiper(".swiper-container1", {
+    var mySwiper1 = new Swiper(".swiper-container", {
       slidesPerView: 3.3,
       spaceBetween: 20,
       freeMode: true,
@@ -33,6 +33,16 @@ class Page extends Component {
         prevEl: ".swiper-button-prev"
       }
     });
+    var mySwiper2 = new Swiper(".swiper-container2", {
+      slidesPerView: 1.3,
+      spaceBetween: 10,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
+    });
+    console.log(mySwiper1)
   }
   followLang() {
     let temp_lang = this.langLimit();
@@ -40,6 +50,9 @@ class Page extends Component {
     if (slug !== "violas-blog" && slug !== "blog" && temp_lang !== slug.split('-')[1]) {
       window.location = slug.split('-')[0] + '-' + temp_lang;
     }
+  }
+  wp_path(_path){
+    sessionStorage.setItem("wp_path",_path)
   }
   langLimit() {
     let _temp = JSON.parse(sessionStorage.getItem("violas-lang"));
@@ -111,7 +124,7 @@ class Page extends Component {
     const StaticPage = this.props.data.wordpressPage;
     // backgroundImage: 'url(' + this.headerImg(this.props.wp_path.split("-")[0] ? this.props.wp_path.split("-")[0] : '111') + ')',
     // console.log(this.props.path.split("/")[1].split("-")[0]);
-    console.log(this.props.path);
+    // console.log(this.props.path);
     return (
       <>
         {/* {

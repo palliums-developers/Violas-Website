@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 import logoWhite_png from "../images/logo-white.png"
 import logoWhite_png1 from '../images/logo-white-single.png'
+import logoWhite_png11 from '../images/logo-purple-single.png'
 import logoWhite_png2 from '../images/menu-button-white.png'
+import logoWhite_png22 from '../images/menu-button-purple.png'
 import logoWhite_png3 from '../images/home 2.png'
 import logoWhite_png4 from '../images/X.png'
 import "../style/header1.css"
@@ -40,7 +42,7 @@ class Header extends Component {
                             onClick={this.changeSession.bind(this, "ja")}
                         >
                             日本語
-                        </a>
+                        </a>&nbsp;|&nbsp;
                         <a
                             aria-current="page"
                             style={{ color: "white" }}
@@ -61,7 +63,7 @@ class Header extends Component {
                             onClick={this.changeSession.bind(this, "en")}
                         >
                             EN
-                        </a>
+                        </a>&nbsp;|&nbsp;
                         <a
                             aria-current="page"
                             style={{ color: "white" }}
@@ -82,7 +84,7 @@ class Header extends Component {
                             onClick={this.changeSession.bind(this, "ja")}
                         >
                             日本語
-                        </a>
+                        </a>&nbsp;|&nbsp;
                         <a
                             aria-current="page"
                             style={{ color: "white" }}
@@ -104,7 +106,7 @@ class Header extends Component {
                 return <>
                     <a aria-current="page" className="link" href="vision-en">Vision</a>
                     <a aria-current="page" className="link" href="association-en">Association</a>
-                    <a aria-current="page" className="link" href="partners-en">パートナー</a>
+                    <a aria-current="page" className="link" href="partners-en">Partners</a>
                     <a className="link" href="https://testnet.violas.io/app/Violas">Blockchain Explorer</a>
                     <a aria-current="page" className="link" href="developers-en">Developers</a>
                     <a aria-current="page" className="link" href="media-en">Media</a>
@@ -153,17 +155,38 @@ class Header extends Component {
             console.log(this.state.dis)
         })
     }
+    whiteBg(_temp){
+        if(_temp==="logo"){
+            switch (sessionStorage.getItem("wp_path")) {
+                case "blog":
+                    return logoWhite_png11
+                case "whitepaper":
+                    return logoWhite_png11
+                default:
+                    return logoWhite_png1
+            }
+        }else{
+            switch (sessionStorage.getItem("wp_path")) {
+                case "blog":
+                    return logoWhite_png22
+                case "whitepaper":
+                    return logoWhite_png22
+                default:
+                    return logoWhite_png2
+            }
+        }
+    }
     render() {
         return (
             <header className="header2">
                 <div className="head">
-                    <a aria-current="page" href={"homepage-"+this.state.language}><img src={logoWhite_png1} /></a>
-                    <a onClick={() => this.getDis()}><img src={logoWhite_png2} /></a>
+                    <a aria-current="page" href={"homepage-" + this.state.language}><img src={this.whiteBg("logo")} /></a>
+                    <a onClick={() => this.getDis()}><img src={this.whiteBg("menu")} /></a>
                 </div>
                 <div className="asideLayout" style={{ display: this.state.dis }}>
                     <div className="aside">
                         <div className="display">
-                            <a aria-current="page" href={"homepage-"+this.state.language}><img src={logoWhite_png3} /></a>
+                            <a aria-current="page" href={"homepage-" + this.state.language}><img src={logoWhite_png3} /></a>
                             <a onClick={() => this.getDis2()}><img src={logoWhite_png4} /></a>
                         </div>
                         <div className="linkPage">
@@ -171,7 +194,7 @@ class Header extends Component {
                                 this.selectLink("en")
                             }
                         </div>
-                        <div className="lang">
+                        <div className="langs">
                             {
                                 this.clickLang(this.state.language)
                             }

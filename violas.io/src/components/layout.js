@@ -68,12 +68,14 @@ class Layout extends Component {
   }
   render() {
     // console.log(this.props.children._self.props.path===undefined?111:222)
-    // console.log(222)
+    // console.log(sessionStorage.getItem("wp_path"))
     return (
       <>
         {/* <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path?this.props.children._self.props.path.split("/")[1]:"blog"}/> */}
-        <Header language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} />
-        <Header1 language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} />
+        {/* <Header language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} />
+        <Header1 language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} /> */}
+        <Header language={this.state.UserLang} wp_path={sessionStorage.getItem("wp_path")} />
+        <Header1 language={this.state.UserLang} wp_path={sessionStorage.getItem("wp_path")} />
         <div
           style={{
             margin: `0 auto`,
@@ -83,7 +85,8 @@ class Layout extends Component {
         >
           <main>{this.props.children}</main>
         </div>
-        <Footer language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} />
+        <Footer language={this.state.UserLang} wp_path={sessionStorage.getItem("wp_path")} />
+        {/* <Footer language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} /> */}
       </>
     )
   }
