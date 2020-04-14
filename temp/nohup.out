@@ -1,0 +1,172 @@
+success open and validate gatsby-configs - 0.016s
+success load plugins - 0.325s
+success onPreInit - 0.002s
+success initialize cache - 0.008s
+success copy gatsby files - 0.031s
+success onPreBootstrap - 0.007s
+success createSchemaCustomization - 0.004s
+[32m -> wordpress__wp_v2 fetched : 1[0m
+[32m -> wordpress__POST fetched : 1[0m
+[32m -> wordpress__PAGE fetched : 23[0m
+[32m -> wordpress__wp_media fetched : 272[0m
+[32m -> wordpress__wp_blocks fetched : 0[0m
+[32m -> wordpress__wp_types fetched : 1[0m
+[32m -> wordpress__wp_statuses fetched : 1[0m
+[32m -> wordpress__wp_taxonomies fetched : 1[0m
+[32m -> wordpress__CATEGORY fetched : 2[0m
+[32m -> wordpress__TAG fetched : 0[0m
+[32m -> wordpress__wp_users fetched : 2[0m
+[31m
+Path: /wp-json/wp/v2/users/me?per_page=100&page=1[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message: "您目前没有登录。"[0m
+[32m -> wordpress__wp_comments fetched : 0[0m
+[32m -> wordpress__wp_search fetched : 24[0m
+[31m
+Path: /wp-json/wp/v2/settings?per_page=100&page=1[0m
+[31mThe server response was "401 Unauthorized"[0m
+[31mInner exception message: "抱歉，您不能做那个。"[0m
+[31m
+Path: /wp-json/wp/v2/themes?per_page=100&page=1[0m
+[31mThe server response was "400 Bad Request"[0m
+[31mInner exception message: "缺少参数：status"[0m
+success source and transform nodes - 4.927s
+success building schema - 0.525s
+success createPages - 0.047s
+success createPagesStatefully - 0.049s
+success onPreExtractQueries - 0.001s
+success update schema - 0.028s
+success extract queries from components - 0.351s
+success write out requires - 0.032s
+success write out redirect data - 0.005s
+success Build manifest and related icons - 0.200s
+success onPostBootstrap - 0.205s
+⠀
+info bootstrap finished - 8.802 s
+⠀
+success run queries - 0.011s - 4/4 361.80/s
+⠀
+You can now view gatsby-starter-default in the browser.
+⠀
+  http://localhost:8000/
+⠀
+View GraphiQL, an in-browser IDE, to explore your site's data and schema
+⠀
+  http://localhost:8000/___graphql
+⠀
+Note that the development build is not optimized.
+To create a production build, use gatsby build
+⠀
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/components/footer.js
+    1:10  warning  'Link' is defined but never used
+                          no-unused-vars
+    2:8   warning  'PropTypes' is defined but never used
+                          no-unused-vars
+   26:5   warning  Expected a default case
+                          default-case
+  132:18  warning  img elements must have an alt prop, either with meaningful text, or an empty
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/components/header.js
+   3:10  warning  'graphql' is defined but never used         no-unused-vars
+   3:19  warning  'Link' is defined but never used            no-unused-vars
+   3:25  warning  'useStaticQuery' is defined but never used  no-unused-vars
+   3:41  warning  'StaticQuery' is defined but never used     no-unused-vars
+   6:8   warning  'Img' is defined but never used             no-unused-vars
+  69:5   warning  Expected a default case                     default-case
+
+✖ 6 problems (0 errors, 6 warnings)
+
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/components/header1.js
+   42:9    warning  Expected a default case
+
+
+                                                                          default-case
+  114:17   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener
+
+
+jsx-a11y/click-events-have-key-events
+  114:17   warning  Non-interactive elements should not be assigned mouse or keyboard event
+listeners
+
+
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/components/header2.js
+    2:8   warning  'logoWhite_png' is defined but never used
+
+
+                                                                                no-unused-vars
+   34:9   warning  Expected a default case
+
+
+                                                                                default-case
+  104:9   warning  Expected a default case
+
+
+                                                                                default-case
+  114:21  warning  The href attribute requires a valid value to be accessible. Provide a valid,
+navigable address as the href value. If you cannot provide a valid href, but still need the element
+to resemble a link, use a button and change it with appropriate styles. Learn more:
+https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
+jsx-a11y/anchor-is-valid
+  126:21  warning  The href attribute requires a valid value to be accessible. Provide a valid,
+navigable address as the href value. If you cannot provide a valid href, but still need the element
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/components/langLink.js
+    3:10  warning  'graphql' is defined but never used
+                          no-unused-vars
+    3:19  warning  'useStaticQuery' is defined but never used
+                          no-unused-vars
+  111:7   warning  Expected a default case
+                          default-case
+  114:86  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+  118:86  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images  jsx-a11y/alt-text
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/components/layout.js
+  10:10  warning  'useStaticQuery' is defined but never used  no-unused-vars
+  10:26  warning  'graphql' is defined but never used         no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/pages/404.js
+  3:8  warning  'Layout' is defined but never used  no-unused-vars
+
+✖ 1 problem (0 errors, 1 warning)
+
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/pages/blog.js
+  3:8  warning  'Header' is defined but never used  no-unused-vars
+  4:8  warning  'Footer' is defined but never used  no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/pages/index.js
+  2:10  warning  'Link' is defined but never used     no-unused-vars
+  2:16  warning  'graphql' is defined but never used  no-unused-vars
+  3:8   warning  'Header' is defined but never used   no-unused-vars
+  4:8   warning  'Footer' is defined but never used   no-unused-vars
+
+✖ 4 problems (0 errors, 4 warnings)
+
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/templates/page.js
+   24:9   warning  'mySwiper1' is assigned a value but never used  no-unused-vars
+   37:9   warning  'mySwiper2' is assigned a value but never used  no-unused-vars
+  121:46  warning  Unexpected string concatenation of literals     no-useless-concat
+
+✖ 3 problems (0 errors, 3 warnings)
+
+warn ESLintError:
+/home/huangw/CODING/github/Violas-Website/violas.io/src/templates/post.js
+  3:8  warning  'Header' is defined but never used  no-unused-vars
+  4:8  warning  'Footer' is defined but never used  no-unused-vars
+
+✖ 2 problems (0 errors, 2 warnings)
+
+success Building development bundle - 3.963s
