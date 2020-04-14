@@ -406,7 +406,7 @@ header {
   color: rgba(249, 249, 249, 1);
 }
 .vision_intro {
-  font-size: 46px;
+  font-size: 26px;
   font-weight: 400;
   color: rgba(249, 249, 249, 1);
   line-height: 60px;
@@ -751,7 +751,7 @@ header {
   display: flex;
 }
 .issuers_content {
-  width: 23%;
+  width: 25%;
 }
 .issuers_content img {
   max-width: 100px;
@@ -761,7 +761,7 @@ header {
 }
 .issuers_content > figcaption {
   height: 470px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
   color: #fff;
   line-height: 30px;
@@ -785,6 +785,12 @@ header {
   margin-right: 15px;
 }
 .issuers_title figcaption strong {
+  font-size: 30px;
+  font-weight: 400 !important;
+  color: #fff;
+  line-height: 32px;
+}
+.issuers_title strong {
   font-size: 30px;
   font-weight: 400 !important;
   color: #fff;

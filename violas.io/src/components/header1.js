@@ -18,7 +18,7 @@ class Header extends Component {
     }
     isPurple() {
         let page_type = this.props.wp_path ? this.props.wp_path.split("-")[0] : "blog"
-        if (page_type === "blog" || page_type === "whitepaper") {
+        if (page_type === "blog" || page_type === "whitepaper" || page_type ==="developers") {
             this.setState({ purple: true })
         } else {
             this.setState({ purple: false })

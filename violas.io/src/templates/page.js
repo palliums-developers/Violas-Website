@@ -2,7 +2,8 @@ import React, { Component } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "swiper/css/swiper.min.css";
+// import "swiper/css/swiper.min.css";
+import "../style/swiper.css";
 import Swiper from "swiper/js/swiper.min.js"
 import "../style/headContent.css"
 import logoWhite_jpg from "../images/logo-white.png"
@@ -42,7 +43,7 @@ class Page extends Component {
         clickable: true
       }
     });
-    console.log(mySwiper1)
+    // console.log(mySwiper1)
   }
   followLang() {
     let temp_lang = this.langLimit();
@@ -51,8 +52,8 @@ class Page extends Component {
       window.location = slug.split('-')[0] + '-' + temp_lang;
     }
   }
-  wp_path(_path){
-    sessionStorage.setItem("wp_path",_path)
+  wp_path(_path) {
+    sessionStorage.setItem("wp_path", _path)
   }
   langLimit() {
     let _temp = JSON.parse(sessionStorage.getItem("violas-lang"));
@@ -104,11 +105,15 @@ class Page extends Component {
       return {
         height: "80px"
       }
-    } if (url === "whitepaper") {
+    } else if (url === "whitepaper") {
       return {
         height: "80px"
       }
-    } else {
+    } else if (url === "developers") {
+      return {
+        height: "80px"
+      }
+    }else {
       return {
         // background: 'url(' + this.selectBackgroundImg(url) + ')' + ', url(' + cover_png + ')',
         // background: 'url(' + cover_png + ')',

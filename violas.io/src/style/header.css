@@ -58,7 +58,7 @@ header .head .lang p {
   text-align: center;
   margin-bottom: 0;
   position: relative;
-  bottom: 48px;
+  /* bottom: 48px;   */
 }
 header .head .lang a {
   line-height: 20px;
@@ -70,7 +70,7 @@ header .head .lang a {
   /* color: #501ba2; */
   text-align: center;
   position: relative;
-  bottom: 80px;
+  bottom: 36px;
   height: 40px;
 }
 header .head .lang a:hover {

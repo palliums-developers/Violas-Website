@@ -52,6 +52,7 @@ class Header extends Component {
   }
   componentDidMount() {
     this.setState({ language: this.props.language });
+
   }
   changeLang(_chosenLang) {
     let type = this.props.wp_path ? this.props.wp_path.split("-")[0] : null
@@ -245,11 +246,10 @@ class Header extends Component {
           <div className="linkPage">
             {
               // console.log(langLink(this.state.language))
-              (this.props.wp_path === undefined ?
-                langLink(this.state.language, "purple", "purple", "header") :
-                this.props.wp_path.split("-")[0]) === "whitepaper" ?
-                langLink(this.state.language, "purple", "purple", "header") :
-                langLink(this.state.language, "white", "white", "header")
+              this.props.wp_path === undefined ? langLink(this.state.language, "purple", "purple", "header") :
+                this.props.wp_path.split("-")[0] === "whitepaper" ? langLink(this.state.language, "purple", "purple", "header") :
+                  this.props.wp_path.split("-")[0] === "developers" ? langLink(this.state.language, "purple", "purple", "header") :
+                    langLink(this.state.language, "white", "white", "header")
             }
           </div>
           {/* <div className="nav" >{langLink(this.state.language).map((item, index) => {
