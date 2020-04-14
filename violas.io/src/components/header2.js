@@ -155,21 +155,25 @@ class Header extends Component {
             console.log(this.state.dis)
         })
     }
-    whiteBg(_temp){
-        if(_temp==="logo"){
+    whiteBg(_temp) {
+        if (_temp === "logo") {
             switch (sessionStorage.getItem("wp_path")) {
                 case "blog":
                     return logoWhite_png11
                 case "whitepaper":
+                    return logoWhite_png11
+                case "developers":
                     return logoWhite_png11
                 default:
                     return logoWhite_png1
             }
-        }else{
+        } else {
             switch (sessionStorage.getItem("wp_path")) {
                 case "blog":
                     return logoWhite_png22
                 case "whitepaper":
+                    return logoWhite_png22
+                case "developers":
                     return logoWhite_png22
                 default:
                     return logoWhite_png2
