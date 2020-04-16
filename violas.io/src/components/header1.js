@@ -124,11 +124,11 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="vision-en">Vision</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="association-en">Association</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="partners-en">Partners</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas">Blockchain Explorer</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas" target="_blank">Blockchain Explorer</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="developers-en">Developers</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="media-en">Media</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="blog">Blog</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="">Wallet</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="" target="_blank">Wallet</a>
                     {/* <a style={this.state.purple?{color:"#501ba2"}:{color:"white"}} aria-current="page" className="link" href="violas-blog">Blog</a> */}
                     {/* <a style={this.state.purple ? { color: "white", backgroundColor: "#501ba2" } : { color: "#501ba2", backgroundColor: "white" }} aria-current="page" className="whitepaper" href="whitepaper-en">WhitePaper</a> */}
                     <a aria-current="page" className="whitepaper" href="whitepaper-en">WhitePaper</a>
@@ -139,11 +139,11 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="vision-ja">ビジョン</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="association-ja">アソシエーション</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="partners-ja">パートナー</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas">ブロックチェーン エクスプローラ</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas" target="_blank">ブロックチェーン エクスプローラ</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="developers-ja">開発者</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="media-ja">メディア</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="blog">Blog</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="">Wallet</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-ja">ホワイトペーパー</a>
                 </>
             case "ko":
@@ -152,11 +152,11 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="vision-ko">비전</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="association-ko">협회</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="partners-ja">파트너들</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas">블록체인 탐색기</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas" target="_blank">블록체인 탐색기</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="developers-ko">개발자</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="media-ko">미디어</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="blog">Blog</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="">Wallet</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-ko">백서</a>
                 </>
         }

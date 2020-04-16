@@ -11,6 +11,10 @@
   list-style: none;
   text-decoration: none;
 }
+@font-face {
+  font-family: "OpenSans-Regular.ttf";
+  src: url(./font/OpenSans-Regular.ttf);
+}
 /* header */
 header {
   display: flex;
@@ -40,18 +44,17 @@ header {
   color: #fff;
   line-height: 72px;
 }
-.go_whitePaper {
+.go_whitePaper a{
   color: #fff;
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
   letter-spacing: 2px;
-}
-.head_goWhitepaper > .wp-block-group__inner-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
-.go_whiteImg img {
+.go_whitePaper img {
   max-width: 98px;
   max-height: 98px;
   margin-left: 20px;
@@ -65,13 +68,13 @@ header {
   color: rgba(80, 27, 162, 1);
 }
 .h_title {
-  font-size: 28px;
   font-weight: 400;
   color: #382f44;
+  font-size: 40px;
   line-height: 32px;
 }
 .h_con {
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 400;
   color: #501ba2;
   line-height: 45px;
@@ -98,7 +101,7 @@ header {
   z-index: 1;
 }
 .real_title {
-  font-size: 56px;
+  font-size: 35px;
   font-weight: 600;
   color: #382f44;
   line-height: 56px;
@@ -113,7 +116,7 @@ header {
 .forReal {
   background: #f9f9f9;
   padding-left: 20px;
-  padding-top: 100px;
+  padding-top: 50px;
 
   box-sizing: border-box;
 }
@@ -392,9 +395,13 @@ header {
 .preson_lists > .wp-block-group__inner-container {
   margin-right: 20px;
 }
+.person_list figure{
+  margin:20px;
+}
 .preson_lists .person_img img {
-  width: 256px;
-  height: 404px;
+
+  width: 270px;
+  height: 370px;
 }
 /* vision_page */
 .vision_headTalk > .wp-block-group__inner-container {
@@ -415,7 +422,6 @@ header {
   padding: 64px 50px;
   box-sizing: border-box;
   font-size: 24px;
-  font-family: PingFangSC-Light, PingFang SC;
   color: rgba(56, 47, 68, 1);
   line-height: 32px;
   background: rgba(255, 255, 255, 1);
@@ -806,10 +812,10 @@ header {
   z-index: 1;
 }
 .whitePaper_headContents {
-  width: 90%;
+  width: 100%;
   background: #fff;
   position: relative;
-  left: 100px;
+  /* left: 100px; */
   bottom: 0;
   z-index: 2;
 }
@@ -820,7 +826,7 @@ header {
   line-height: 38px;
   margin-top: 59px;
   margin-bottom: 24px;
-  margin-left: 53px;
+  /* margin-left: 53px; */
 }
 .down > .wp-block-group__inner-container {
   margin-left: 53px;
@@ -862,7 +868,7 @@ header {
   font-weight: 300;
   color: #5d5666;
   line-height: 32px;
-  margin-left: 53px;
+  /* margin-left: 53px; */
 }
 .real_content {
   width: 32%;

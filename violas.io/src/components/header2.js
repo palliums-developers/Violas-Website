@@ -107,11 +107,11 @@ class Header extends Component {
                     <a aria-current="page" className="link" href="vision-en">Vision</a>
                     <a aria-current="page" className="link" href="association-en">Association</a>
                     <a aria-current="page" className="link" href="partners-en">Partners</a>
-                    <a className="link" href="https://testnet.violas.io/app/Violas">Blockchain Explorer</a>
+                    <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank">Blockchain Explorer</a>
                     <a aria-current="page" className="link" href="developers-en">Developers</a>
                     <a aria-current="page" className="link" href="media-en">Media</a>
                     <a aria-current="page" className="link" href="blog">Blog</a>
-                    <a className="link" href="">Wallet</a>
+                    <a className="link" href="" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-en">WhitePaper</a>
                 </>
             case "ja":
@@ -119,11 +119,11 @@ class Header extends Component {
                     <a aria-current="page" className="link" href="vision-ja">ビジョン</a>
                     <a aria-current="page" className="link" href="association-ja">アソシエーション</a>
                     <a aria-current="page" className="link" href="partners-ja">パートナー</a>
-                    <a className="link" href="https://testnet.violas.io/app/Violas">ブロックチェーン エクスプローラ</a>
+                    <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank">ブロックチェーン エクスプローラ</a>
                     <a aria-current="page" className="link" href="developers-ja">開発者</a>
                     <a aria-current="page" className="link" href="media-ja">メディア</a>
                     <a aria-current="page" className="link" href="blog">Blog</a>
-                    <a className="link" href="">Wallet</a>
+                    <a className="link" href="" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-ja">ホワイトペーパー</a>
                 </>
             case "ko":
@@ -131,11 +131,11 @@ class Header extends Component {
                     <a aria-current="page" className="link" href="vision-ko">비전</a>
                     <a aria-current="page" className="link" href="association-ko">협회</a>
                     <a aria-current="page" className="link" href="partners-ja">파트너들</a>
-                    <a className="link" href="https://testnet.violas.io/app/Violas">블록체인 탐색기</a>
+                    <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank">블록체인 탐색기</a>
                     <a aria-current="page" className="link" href="developers-ko">개발자</a>
                     <a aria-current="page" className="link" href="media-ko">미디어</a>
                     <a aria-current="page" className="link" href="blog">Blog</a>
-                    <a className="link" href="">Wallet</a>
+                    <a className="link" href="" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-ko">백서</a>
                 </>
         }
