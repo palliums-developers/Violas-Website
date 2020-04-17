@@ -128,7 +128,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="developers-en">Developers</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="media-en">Media</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="blog">Blog</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="" target="_blank">Wallet</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
                     {/* <a style={this.state.purple?{color:"#501ba2"}:{color:"white"}} aria-current="page" className="link" href="violas-blog">Blog</a> */}
                     {/* <a style={this.state.purple ? { color: "white", backgroundColor: "#501ba2" } : { color: "#501ba2", backgroundColor: "white" }} aria-current="page" className="whitepaper" href="whitepaper-en">WhitePaper</a> */}
                     <a aria-current="page" className="whitepaper" href="whitepaper-en">WhitePaper</a>
@@ -143,7 +143,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="developers-ja">開発者</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="media-ja">メディア</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="blog">Blog</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="" target="_blank">Wallet</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-ja">ホワイトペーパー</a>
                 </>
             case "ko":
@@ -156,7 +156,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="developers-ko">개발자</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="media-ko">미디어</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="blog">Blog</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="" target="_blank">Wallet</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-ko">백서</a>
                 </>
         }

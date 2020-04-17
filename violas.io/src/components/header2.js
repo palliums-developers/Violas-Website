@@ -111,7 +111,7 @@ class Header extends Component {
                     <a aria-current="page" className="link" href="developers-en">Developers</a>
                     <a aria-current="page" className="link" href="media-en">Media</a>
                     <a aria-current="page" className="link" href="blog">Blog</a>
-                    <a className="link" href="" target="_blank">Wallet</a>
+                    <a className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-en">WhitePaper</a>
                 </>
             case "ja":
@@ -123,7 +123,7 @@ class Header extends Component {
                     <a aria-current="page" className="link" href="developers-ja">開発者</a>
                     <a aria-current="page" className="link" href="media-ja">メディア</a>
                     <a aria-current="page" className="link" href="blog">Blog</a>
-                    <a className="link" href="" target="_blank">Wallet</a>
+                    <a className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-ja">ホワイトペーパー</a>
                 </>
             case "ko":
@@ -135,7 +135,7 @@ class Header extends Component {
                     <a aria-current="page" className="link" href="developers-ko">개발자</a>
                     <a aria-current="page" className="link" href="media-ko">미디어</a>
                     <a aria-current="page" className="link" href="blog">Blog</a>
-                    <a className="link" href="" target="_blank">Wallet</a>
+                    <a className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="whitepaper-ko">백서</a>
                 </>
         }

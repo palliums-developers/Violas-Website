@@ -131,7 +131,7 @@ class Footer extends Component {
             <div className="email">
               <p><img src={Mail} />violas.team@violas.io</p>
             </div>
-            <div className="langs">
+            <div className="lang">
               {
                 this.clickLang(this.state.language)
               }
