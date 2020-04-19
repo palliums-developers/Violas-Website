@@ -48,12 +48,12 @@ class Layout extends Component {
     }
   }
   componentWillMount() {
-    let temp_lang = JSON.parse(sessionStorage.getItem("violas-lang"))
+    let temp_lang = (this.getSession("violas-lang")?this.getSession("violas-lang").split('"')[1]:'en')
     if (temp_lang) {
       this.setState({ UserLang: temp_lang })
     } else {
       let browserLang = this.getBrowserLang()
-      this.storeSession(browserLang)
+      this.setViolasLang(browserLang)
       this.setState({ UserLang: browserLang })
     }
   }
@@ -63,19 +63,27 @@ class Layout extends Component {
     let lang = lang_full.split("-")[0]
     return lang
   }
-  storeSession = _lang => {
-    sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
+  setViolasLang = _lang => {
+    // console.log(_lang)
+    // sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
+    if(typeof window !==  'undefined'){
+      sessionStorage.setItem("violas-lang",_lang)
+    }
+  }
+  getSession=(_temp)=>{
+    if(typeof window !== 'undefined'){
+      return sessionStorage.getItem(_temp)
+    }
   }
   render() {
     // console.log(this.props.children._self.props.path===undefined?111:222)
-    // console.log(sessionStorage.getItem("wp_path"))
     return (
       <>
         {/* <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path?this.props.children._self.props.path.split("/")[1]:"blog"}/> */}
         {/* <Header language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} />
         <Header1 language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} /> */}
-        <Header language={this.state.UserLang} wp_path={sessionStorage.getItem("wp_path")} />
-        <Header1 language={this.state.UserLang} wp_path={sessionStorage.getItem("wp_path")} />
+        <Header language={this.state.UserLang} wp_path={this.getSession("wp_path")} />
+        <Header1 language={this.state.UserLang} wp_path={this.getSession("wp_path")} />
         <div
           style={{
             margin: `0 auto`,
@@ -85,7 +93,7 @@ class Layout extends Component {
         >
           <main>{this.props.children}</main>
         </div>
-        <Footer language={this.state.UserLang} wp_path={sessionStorage.getItem("wp_path")} />
+        <Footer language={this.state.UserLang} wp_path={this.getSession("wp_path")} />
         {/* <Footer language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} /> */}
       </>
     )

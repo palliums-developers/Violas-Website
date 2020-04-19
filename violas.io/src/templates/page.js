@@ -47,17 +47,29 @@ class Page extends Component {
   }
   followLang() {
     let temp_lang = this.langLimit();
+    // let temp_lang = this.getSession('violas-lang').split('"')[1];
     let slug = this.props.data.wordpressPage.slug.toString();
     if (slug !== "violas-blog" && slug !== "blog" && temp_lang !== slug.split('-')[1]) {
-      window.location = slug.split('-')[0] + '-' + temp_lang;
+      if(typeof window !=='undefined'){
+        window.location = slug.split('-')[0] + '-' + temp_lang;
+      }
     }
   }
   wp_path(_path) {
-    sessionStorage.setItem("wp_path", _path)
+    // sessionStorage.setItem("wp_path", _path)
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem("wp_path", _path)
+    }
+  }
+  getSession(_temp) {
+    if (typeof window !== 'undefined') {
+      return sessionStorage.getItem(_temp)
+    }
   }
   langLimit() {
-    let _temp = JSON.parse(sessionStorage.getItem("violas-lang"));
-    switch (_temp) {
+    // console.log(this.getSession('violas-lang').split('"')[1])
+    // let _temp = JSON.parse(this.getSession("violas-lang"));
+    switch (this.getSession('violas-lang')?this.getSession('violas-lang').split('"')[1]:"") {
       case "ko":
         return "ko";
       case "ja":
@@ -113,7 +125,7 @@ class Page extends Component {
       return {
         height: "80px"
       }
-    }else {
+    } else {
       return {
         // background: 'url(' + this.selectBackgroundImg(url) + ')' + ', url(' + cover_png + ')',
         // background: 'url(' + cover_png + ')',

@@ -44,7 +44,7 @@ class HomePage extends Component {
     }
   }
   componentWillMount() {
-    let temp_lang = JSON.parse(sessionStorage.getItem("violas-lang"))
+    let temp_lang = this.getBrowserLang();
     if (temp_lang) {
       this.setState({ UserLang: temp_lang })
     } else {
@@ -53,22 +53,33 @@ class HomePage extends Component {
       this.setState({ UserLang: browserLang })
     }
   }
+  getSessionLang = () => {
+    if (typeof window !== 'undefined') {
+      return sessionStorage.getItem("violas-lang")
+    }
+  }
   getBrowserLang = () => {
-    let lang_full =
-      (navigator.languages && navigator.languages[0]) || navigator.language
-    let lang = lang_full.split("-")[0]
-    return lang
+    if (typeof navigator !== 'undefined') {
+      let lang_full =
+        (navigator.languages && navigator.languages[0]) || navigator.language
+      let lang = lang_full.split("-")[0]
+      return lang
+    }
   }
   storeSession = _lang => {
-    sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
+    }
   }
   initPage = _ => {
-    if (this.state.UserLang === "ja") {
-      window.location = "/homepage-ja"
-    } else if (this.state.UserLang === "ko") {
-      window.location = "/homepage-ko"
-    } else {
-      window.location = "/homepage-en"
+    if (typeof window !== 'undefined') {
+      if (this.state.UserLang === "ja") {
+        window.location = "/homepage-ja"
+      } else if (this.state.UserLang === "ko") {
+        window.location = "/homepage-ko"
+      } else {
+        window.location = "/homepage-en"
+      }
     }
   }
   render() {

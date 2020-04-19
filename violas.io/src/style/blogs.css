@@ -1,7 +1,9 @@
 .blog_list {
+  margin:0 auto;
   margin-top: 80px;
   background-color: white;
-  padding-top: 40px;
+  width: 80%;
+  padding:20px 40px;
 }
 .blog {
   margin-top: 80px;

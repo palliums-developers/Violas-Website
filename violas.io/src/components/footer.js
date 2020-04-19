@@ -20,7 +20,10 @@ class Footer extends Component {
     return slug
   }
   changeSession(_chosenLang) {
-    sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+    // sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+    }
   }
   clickLang(_lang) {
     switch (_lang) {

@@ -63,7 +63,9 @@ class Header extends Component {
     return slug
   }
   changeSession(_chosenLang) {
-    sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem("violas-lang", (_chosenLang))
+    }
   }
   clickLang(_lang) {
     switch (_lang) {
@@ -138,9 +140,9 @@ class Header extends Component {
   //   }
   // }
 
-  storeSession = (_lang) => {
-    sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
-  }
+  // storeSession = (_lang) => {
+  //   sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
+  // }
   headerImg = (_pages) => {
 
     // const data=useStaticQuery(graphql`

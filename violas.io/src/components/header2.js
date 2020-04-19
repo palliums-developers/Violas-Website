@@ -28,7 +28,10 @@ class Header extends Component {
         return slug
     }
     changeSession(_chosenLang) {
-        sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+        // sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+        if (typeof window !== 'undefined') {
+            sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
+        }
     }
     clickLang(_lang) {
         switch (_lang) {
@@ -97,46 +100,48 @@ class Header extends Component {
                 )
         }
     }
-    storeSession = (_lang) => {
-        sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
+    getSession = (_lang) => {
+        if(typeof window !=='undefined'){
+            return sessionStorage.getItem(_lang)
+        }
     }
     selectLink = (_lang) => {
         switch (_lang) {
             case "en":
                 return <>
-                    <a aria-current="page" className="link" href="vision-en">Vision</a>
-                    <a aria-current="page" className="link" href="association-en">Association</a>
-                    <a aria-current="page" className="link" href="partners-en">Partners</a>
+                    <a aria-current="page" className="link" href="/vision-en">Vision</a>
+                    <a aria-current="page" className="link" href="/association-en">Association</a>
+                    <a aria-current="page" className="link" href="/partners-en">Partners</a>
                     <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank">Blockchain Explorer</a>
-                    <a aria-current="page" className="link" href="developers-en">Developers</a>
-                    <a aria-current="page" className="link" href="media-en">Media</a>
-                    <a aria-current="page" className="link" href="blog">Blog</a>
+                    <a aria-current="page" className="link" href="/developers-en">Developers</a>
+                    <a aria-current="page" className="link" href="/media-en">Media</a>
+                    <a aria-current="page" className="link" href="/blog">Blog</a>
                     <a className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
-                    <a aria-current="page" className="whitepaper" href="whitepaper-en">WhitePaper</a>
+                    <a aria-current="page" className="whitepaper" href="/whitepaper-en">WhitePaper</a>
                 </>
             case "ja":
                 return <>
-                    <a aria-current="page" className="link" href="vision-ja">ビジョン</a>
-                    <a aria-current="page" className="link" href="association-ja">アソシエーション</a>
-                    <a aria-current="page" className="link" href="partners-ja">パートナー</a>
+                    <a aria-current="page" className="link" href="/vision-ja">ビジョン</a>
+                    <a aria-current="page" className="link" href="/association-ja">アソシエーション</a>
+                    <a aria-current="page" className="link" href="/partners-ja">パートナー</a>
                     <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank">ブロックチェーン エクスプローラ</a>
-                    <a aria-current="page" className="link" href="developers-ja">開発者</a>
-                    <a aria-current="page" className="link" href="media-ja">メディア</a>
-                    <a aria-current="page" className="link" href="blog">Blog</a>
+                    <a aria-current="page" className="link" href="/developers-ja">開発者</a>
+                    <a aria-current="page" className="link" href="/media-ja">メディア</a>
+                    <a aria-current="page" className="link" href="/blog">Blog</a>
                     <a className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
-                    <a aria-current="page" className="whitepaper" href="whitepaper-ja">ホワイトペーパー</a>
+                    <a aria-current="page" className="whitepaper" href="/whitepaper-ja">ホワイトペーパー</a>
                 </>
             case "ko":
                 return <>
-                    <a aria-current="page" className="link" href="vision-ko">비전</a>
-                    <a aria-current="page" className="link" href="association-ko">협회</a>
-                    <a aria-current="page" className="link" href="partners-ja">파트너들</a>
+                    <a aria-current="page" className="link" href="/vision-ko">비전</a>
+                    <a aria-current="page" className="link" href="/association-ko">협회</a>
+                    <a aria-current="page" className="link" href="/partners-ja">파트너들</a>
                     <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank">블록체인 탐색기</a>
-                    <a aria-current="page" className="link" href="developers-ko">개발자</a>
-                    <a aria-current="page" className="link" href="media-ko">미디어</a>
-                    <a aria-current="page" className="link" href="blog">Blog</a>
+                    <a aria-current="page" className="link" href="/developers-ko">개발자</a>
+                    <a aria-current="page" className="link" href="/media-ko">미디어</a>
+                    <a aria-current="page" className="link" href="/blog">Blog</a>
                     <a className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
-                    <a aria-current="page" className="whitepaper" href="whitepaper-ko">백서</a>
+                    <a aria-current="page" className="whitepaper" href="/whitepaper-ko">백서</a>
                 </>
         }
     }
@@ -157,7 +162,7 @@ class Header extends Component {
     }
     whiteBg(_temp) {
         if (_temp === "logo") {
-            switch (sessionStorage.getItem("wp_path")) {
+            switch (this.getSession("wp_path")) {
                 case "blog":
                     return logoWhite_png11
                 case "whitepaper":
@@ -168,7 +173,7 @@ class Header extends Component {
                     return logoWhite_png1
             }
         } else {
-            switch (sessionStorage.getItem("wp_path")) {
+            switch (this.getSession("wp_path")) {
                 case "blog":
                     return logoWhite_png22
                 case "whitepaper":
@@ -183,7 +188,7 @@ class Header extends Component {
     render() {
         return (
             <header className="header2">
-                <div className="head">
+                <div className="head" style={this.getSession("wp_path")==="blog"?{backgroundColor:"#F9F9F9 "}:null}>
                     <a aria-current="page" href={"homepage-" + this.state.language}><img src={this.whiteBg("logo")} /></a>
                     <a onClick={() => this.getDis()}><img src={this.whiteBg("menu")} /></a>
                 </div>
@@ -195,7 +200,9 @@ class Header extends Component {
                         </div>
                         <div className="linkPage">
                             {
-                                this.selectLink("en")
+                                this.selectLink(this.getSession("violas-lang")?this.getSession("violas-lang").split('"')[1]:'en')
+                                // this.getSession("wp_path")
+                                // this.selectLink("ko")
                             }
                         </div>
                         <div className="langs">

@@ -7,8 +7,11 @@ import SEO from "../components/seo"
 import "../style/blogs.css"
 
 class Post extends Component {
-  componentWillMount(){
-    sessionStorage.setItem("wp_path","blog")
+  componentWillMount() {
+    // sessionStorage.setItem("wp_path","blog")
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem("wp_path", "blog")
+    }
   }
   render() {
     // const post = this.props.data.wordpressPost
@@ -18,8 +21,8 @@ class Post extends Component {
         <SEO title="violas posts" />
         <Layout>
           <div className="blog_detail">
-            <h1>{StaticPost.title}</h1>
-            <h4>{StaticPost.author.name}</h4>
+            {/* <h1>{StaticPost.title}</h1>
+            <h4>{StaticPost.author.name}</h4> */}
             <div dangerouslySetInnerHTML={{ __html: StaticPost.content }}></div>
             <h5>{StaticPost.date}</h5>
           </div>

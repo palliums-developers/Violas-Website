@@ -44,7 +44,7 @@ header {
   color: #fff;
   line-height: 72px;
 }
-.go_whitePaper a{
+.go_whitePaper a {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
@@ -395,11 +395,10 @@ header {
 .preson_lists > .wp-block-group__inner-container {
   margin-right: 20px;
 }
-.person_list figure{
-  margin:20px;
+.person_list figure {
+  margin: 20px;
 }
 .preson_lists .person_img img {
-
   width: 270px;
   height: 370px;
 }
@@ -407,6 +406,7 @@ header {
 .vision_headTalk > .wp-block-group__inner-container {
   position: absolute;
   top: 200px;
+  width: 920px;
 }
 .vision_title {
   font-size: 72px;
@@ -431,6 +431,7 @@ header {
 .association_headTalk {
   position: absolute;
   top: 200px;
+  width: 920px;
 }
 .association_headTalk .association_title {
   font-size: 72px;
@@ -868,6 +869,7 @@ header {
   font-weight: 300;
   color: #5d5666;
   line-height: 32px;
+  margin-bottom: 10px;
   /* margin-left: 53px; */
 }
 .real_content {
@@ -1381,10 +1383,11 @@ footer .email p span {
   }
   .vision_headTalk > .wp-block-group__inner-container {
     top: 300px;
+    width: 90%;
   }
   .vision_con {
     font-size: 15px;
-    line-height: 24px;
+    /* line-height: 24px; */
     padding: 0;
     box-sizing: border-box;
     margin-top: 50px;
@@ -1396,6 +1399,7 @@ footer .email p span {
   }
   .association_headTalk {
     top: 250px;
+    width: 90%;
   }
   .association_headTalk .association_title {
     font-size: 40px;
@@ -1424,7 +1428,7 @@ footer .email p span {
   .a_intro {
     font-size: 20px;
     color: #501ba2;
-    line-height: 28px;
+    /* line-height: 28px; */
     margin-top: 10px;
   }
   .contents1 > .wp-block-group__inner-container {
@@ -1788,7 +1792,8 @@ footer .email p span {
     height: 283px;
   }
   .whitePaper_headContents {
-    left: 30px;
+    /* left: 30px; */
+    width: 95%;
   }
   .whitePaper_headContents1 .title {
     font-size: 18px;

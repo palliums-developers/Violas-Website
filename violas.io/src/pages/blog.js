@@ -7,8 +7,10 @@ import Layout from "../components/layout"
 import "../style/blogs.css"
 
 class Blog extends Component {
-  componentWillMount(){
-    sessionStorage.setItem("wp_path","blog")
+  componentWillMount() {
+    if (typeof window !== 'undefined') {
+      sessionStorage.setItem("wp_path", "blog")
+    }
   }
   render() {
     const data = this.props.data
