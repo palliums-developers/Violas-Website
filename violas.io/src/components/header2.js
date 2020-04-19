@@ -21,9 +21,9 @@ class Header extends Component {
     }
     changeLang(_chosenLang) {
         let type = this.props.wp_path ? this.props.wp_path.split("-")[0] : null
-        let slug = "blog"
+        let slug = "media"
         if (type) {
-            slug = type + "-" + _chosenLang
+            slug = "/" + type + "-" + _chosenLang
         }
         return slug
     }
@@ -101,7 +101,7 @@ class Header extends Component {
         }
     }
     getSession = (_lang) => {
-        if(typeof window !=='undefined'){
+        if (typeof window !== 'undefined') {
             return sessionStorage.getItem(_lang)
         }
     }
@@ -114,8 +114,7 @@ class Header extends Component {
                     <a aria-current="page" className="link" href="/partners-en">Partners</a>
                     <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank">Blockchain Explorer</a>
                     <a aria-current="page" className="link" href="/developers-en">Developers</a>
-                    <a aria-current="page" className="link" href="/media-en">Media</a>
-                    <a aria-current="page" className="link" href="/blog">Blog</a>
+                    <a aria-current="page" className="link" href="/media">Media</a>
                     <a className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="/whitepaper-en">WhitePaper</a>
                 </>
@@ -126,8 +125,7 @@ class Header extends Component {
                     <a aria-current="page" className="link" href="/partners-ja">パートナー</a>
                     <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank">ブロックチェーン エクスプローラ</a>
                     <a aria-current="page" className="link" href="/developers-ja">開発者</a>
-                    <a aria-current="page" className="link" href="/media-ja">メディア</a>
-                    <a aria-current="page" className="link" href="/blog">Blog</a>
+                    <a aria-current="page" className="link" href="/media">メディア</a>
                     <a className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="/whitepaper-ja">ホワイトペーパー</a>
                 </>
@@ -138,8 +136,7 @@ class Header extends Component {
                     <a aria-current="page" className="link" href="/partners-ja">파트너들</a>
                     <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank">블록체인 탐색기</a>
                     <a aria-current="page" className="link" href="/developers-ko">개발자</a>
-                    <a aria-current="page" className="link" href="/media-ko">미디어</a>
-                    <a aria-current="page" className="link" href="/blog">Blog</a>
+                    <a aria-current="page" className="link" href="/media">미디어</a>
                     <a className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="/whitepaper-ko">백서</a>
                 </>
@@ -163,7 +160,7 @@ class Header extends Component {
     whiteBg(_temp) {
         if (_temp === "logo") {
             switch (this.getSession("wp_path")) {
-                case "blog":
+                case "media":
                     return logoWhite_png11
                 case "whitepaper":
                     return logoWhite_png11
@@ -174,7 +171,7 @@ class Header extends Component {
             }
         } else {
             switch (this.getSession("wp_path")) {
-                case "blog":
+                case "media":
                     return logoWhite_png22
                 case "whitepaper":
                     return logoWhite_png22
@@ -188,19 +185,19 @@ class Header extends Component {
     render() {
         return (
             <header className="header2">
-                <div className="head" style={this.getSession("wp_path")==="blog"?{backgroundColor:"#F9F9F9 "}:null}>
-                    <a aria-current="page" href={"homepage-" + this.state.language}><img src={this.whiteBg("logo")} /></a>
+                <div className="head" style={this.getSession("wp_path") === "media" ? { backgroundColor: "#F9F9F9 " } : null}>
+                    <a aria-current="page" href={"/homepage-" + this.state.language}><img src={this.whiteBg("logo")} /></a>
                     <a onClick={() => this.getDis()}><img src={this.whiteBg("menu")} /></a>
                 </div>
                 <div className="asideLayout" style={{ display: this.state.dis }}>
                     <div className="aside">
                         <div className="display">
-                            <a aria-current="page" href={"homepage-" + this.state.language}><img src={logoWhite_png3} /></a>
+                            <a aria-current="page" href={"/homepage-" + this.state.language}><img src={logoWhite_png3} /></a>
                             <a onClick={() => this.getDis2()}><img src={logoWhite_png4} /></a>
                         </div>
                         <div className="linkPage">
                             {
-                                this.selectLink(this.getSession("violas-lang")?this.getSession("violas-lang").split('"')[1]:'en')
+                                this.selectLink(this.getSession("violas-lang") ? this.getSession("violas-lang").split('"')[1] : 'en')
                                 // this.getSession("wp_path")
                                 // this.selectLink("ko")
                             }

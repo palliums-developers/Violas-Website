@@ -1,16 +1,18 @@
 import React, { Component } from "react"
 import { graphql, StaticQuery } from "gatsby"
-import Header from "../components/header"
+import Header1 from "../components/header1"
+import Header2 from "../components/header2"
 import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../style/blogs.css"
+import Header from "../components/header1"
 
 class Post extends Component {
   componentWillMount() {
     // sessionStorage.setItem("wp_path","blog")
     if (typeof window !== 'undefined') {
-      sessionStorage.setItem("wp_path", "blog")
+      sessionStorage.setItem("wp_path", "media")
     }
   }
   render() {

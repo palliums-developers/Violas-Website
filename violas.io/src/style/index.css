@@ -950,9 +950,10 @@ header {
 .imgs img {
   max-width: 439px;
   max-height: 191px;
+  margin-left: 20px;
 }
 .imgs .p_img2 img {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 /* footer {
@@ -1727,6 +1728,7 @@ footer .email p span {
   }
   .imgs img {
     width: 320px;
+    margin-left: 0;
   }
   .wh_content > .wp-block-group__inner-container {
     display: none;

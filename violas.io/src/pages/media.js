@@ -6,10 +6,10 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import "../style/blogs.css"
 
-class Blog extends Component {
+class Media extends Component {
   componentWillMount() {
     if (typeof window !== 'undefined') {
-      sessionStorage.setItem("wp_path", "blog")
+      sessionStorage.setItem("wp_path", "media")
     }
   }
   render() {
@@ -36,7 +36,7 @@ class Blog extends Component {
     )
   }
 }
-export default Blog
+export default Media
 
 // export const pageQuery = graphql`
 //   query {

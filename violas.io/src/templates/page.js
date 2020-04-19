@@ -49,7 +49,7 @@ class Page extends Component {
     let temp_lang = this.langLimit();
     // let temp_lang = this.getSession('violas-lang').split('"')[1];
     let slug = this.props.data.wordpressPage.slug.toString();
-    if (slug !== "violas-blog" && slug !== "blog" && temp_lang !== slug.split('-')[1]) {
+    if (slug !== "violas-media" && slug !== "media" && temp_lang !== slug.split('-')[1]) {
       if(typeof window !=='undefined'){
         window.location = slug.split('-')[0] + '-' + temp_lang;
       }
@@ -113,7 +113,7 @@ class Page extends Component {
   }
   hasBackground(_temp) {
     let url = _temp.split("/")[1].split("-")[0]
-    if (url === "blog") {
+    if (url === "media") {
       return {
         height: "80px"
       }
@@ -144,10 +144,6 @@ class Page extends Component {
     // console.log(this.props.path);
     return (
       <>
-        {/* {
-        this.props.data.wordpressPage.slug.toString()==="violas-blog"?
-
-      } */}
         <SEO title="violas pages" />
         {/* <div className="headContent" style={{
           backgroundImage: 'url(' + this.selectBackgroundImg(this.props.path.split("/")[1].split("-")[0]) + ')' + ', url(' + cover_png + ')',

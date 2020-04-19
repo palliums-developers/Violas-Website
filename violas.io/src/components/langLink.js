@@ -16,8 +16,7 @@ const router = {
     ["Partners", "partners-en"],
     ["Blockchain Explorer", explorerUrl],
     ["Developers", "developers-en"],
-    ["Media", "media-en"],
-    ["Blog", "blog"],
+    ["Media", "media"],
     ["WhitePaper", "whitepaper-en"],
   ],
   ja: [
@@ -27,8 +26,7 @@ const router = {
     ["パートナー", "partners-ja"],
     ["ブロックチェーン エクスプローラ", explorerUrl],
     ["開発者", "developers-ja"],
-    ["メディア", "media-ja"],
-    ["Blog", "blog"],
+    ["メディア", "media"],
     ["ホワイトペーパー", "whitepaper-ja"],
   ],
   ko: [
@@ -38,8 +36,7 @@ const router = {
     ["파트너들", "partners-ko"],
     ["블록체인 탐색기", explorerUrl],
     ["개발자", "developers-ko"],
-    ["미디어", "media-ko"],
-    ["Blog", "blog"],
+    ["미디어", "media"],
     ["백서", "whitepaper-ko"],
   ],
 }
@@ -128,7 +125,7 @@ const langLink = (_lang, logo_type, text_color, used) => {
       }
     } else if (i === 4) {
       result.push(<a style={{color:link_color}} href={page_json[i][1]}>{page_json[i][0]}</a>)
-    } else if (i === 8) {
+    } else if (i === 7) {
       if(used==="header"){
         result.push(<a style={{color:whitepaper_color,backgroundColor:link_color}} aria-current="page" className="whitepaper" href={"/"+page_json[i][1]}>{page_json[i][0]}</a>)
       }else{
