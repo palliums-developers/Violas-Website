@@ -19,7 +19,28 @@ import SEO from "../components/seo"
 // )
 
 class NotFoundPage extends Component {
-
+  constructor(props){
+    super(props)
+    this.state={
+      _lang:"en"
+    }
+  }
+  componentWillMount(){
+    this.getLang()
+  }
+  initLang(){
+    if(typeof window !== 'undefined'){
+      sessionStorage.setItem("violas-lang","en")
+    }
+  }
+  getLang(){
+    let res="en";
+    if(typeof window !== 'undefined'){
+      res= sessionStorage.getItem("violas-lang")
+    }
+    // console.log(res)
+    this.setState({_lang:res})
+  }
   render() {
     return (
       <>
@@ -28,7 +49,7 @@ class NotFoundPage extends Component {
           <h1>404</h1>
           <h2>Page Not Found</h2>
           {/* <Link src="/">Come to homepage</Link> */}
-          <a aria-current="page" href="/">Come to homepage</a>
+          <a aria-current="page" href={"/homepage-"+this.state._lang} onClick={this.initLang.bind(this)}>Come to homepage</a>
         </div>
       </>
     )

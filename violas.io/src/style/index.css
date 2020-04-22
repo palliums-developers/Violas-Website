@@ -378,6 +378,7 @@ header {
 }
 .person_list > .wp-block-group__inner-container {
   display: flex;
+  justify-content: space-around;
 }
 .preson_lists {
   text-align: center;
@@ -467,7 +468,7 @@ header {
   color: rgba(56, 47, 68, 1);
 }
 .a_intro {
-  font-size: 46px;
+  font-size: 20px;
   font-weight: 400;
   color: rgba(93, 86, 102, 1);
   line-height: 54px;

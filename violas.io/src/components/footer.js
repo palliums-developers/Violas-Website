@@ -15,8 +15,20 @@ class Footer extends Component {
   componentDidMount() {
     this.setState({ language: this.props.language });
   }
+  // changeLang(_chosenLang) {
+  //   let slug = this.props.wp_path!=="media" ? "/"+this.props.wp_path + "-" + _chosenLang : "media"
+  //   return slug
+  // }
   changeLang(_chosenLang) {
-    let slug = this.props.wp_path ? this.props.wp_path.split("-")[0] + "-" + _chosenLang : "blog"
+    // if (this.props.wp_path === "media") {
+    //     return this.props.wp_path
+    // }
+    console.log(this.props.wp_path,'footer')
+    let type = this.props.wp_path ? this.props.wp_path.split("-")[0] : null
+    let slug = "/media"
+    if (type !== "media") {
+      slug = "/" + type + "-" + _chosenLang
+    }
     return slug
   }
   changeSession(_chosenLang) {
@@ -72,6 +84,7 @@ class Footer extends Component {
           <>
             <a
               aria-current="page"
+              // href="/vision-ja"
               href={this.changeLang("ja")}
               onClick={this.changeSession.bind(this, "ja")}
             >

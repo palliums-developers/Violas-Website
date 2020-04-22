@@ -12,11 +12,16 @@ class Header extends Component {
             langClick: false
         }
     }
+    componentWillMount() {
+        // console.log(this.props.wp_path,"header")
+    }
     componentDidMount() {
         this.setState({ language: this.props.language });
         this.isPurple();
     }
     isPurple() {
+        // console.log(this.props.wp_path)
+        console.log(this.props.wp_path)
         let page_type = this.props.wp_path ? this.props.wp_path.split("-")[0] : "media"
         if (page_type === "media" || page_type === "whitepaper" || page_type === "developers") {
             this.setState({ purple: true })
@@ -25,13 +30,14 @@ class Header extends Component {
         }
     }
     changeLang(_chosenLang) {
-        if (this.props.wp_path === "media") {
-            return this.props.wp_path
-        }
+        // if (this.props.wp_path === "media") {
+        //     return this.props.wp_path
+        // }
+        console.log(this.props.wp_path,'header1')
         let type = this.props.wp_path ? this.props.wp_path.split("-")[0] : null
-        let slug = "media"
-        if (type) {
-            slug = "/"+type + "-" + _chosenLang
+        let slug = "/media"
+        if (type !== "media") {
+            slug = "/" + type + "-" + _chosenLang
         }
         return slug
     }
@@ -150,7 +156,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="logo" href="/homepage-ko"><img src={this.state.purple ? logoPurple_png : logoWhite_png}></img></a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/vision-ko">비전</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/association-ko">협회</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/partners-ja">파트너들</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/partners-ko">파트너들</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas" target="_blank">블록체인 탐색기</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/developers-ko">개발자</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/media">미디어</a>

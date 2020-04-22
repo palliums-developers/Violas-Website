@@ -13,14 +13,30 @@ import vision_jpg from "../images/vision.jpg"
 import association_jpg from "../images/association.jpg"
 import partners_jpg from "../images/partners.jpg"
 import media_jpg from "../images/media.jpg"
+import homepage_jpg1 from "../images/homepage1.jpg"
+import vision_jpg1 from "../images/vision1.jpg"
+import association_jpg1 from "../images/association1.jpg"
+import partners_jpg1 from "../images/partners1.jpg"
+import media_jpg1 from "../images/media1.jpg"
 import cover_png from "../images/cover.png"
 
 class Page extends Component {
+  constructor(props) {
+    super(props)
+  }
   componentWillMount() {
     this.followLang()
-    this.wp_path(this.props.path.split("/")[1].split("-")[0])
+    // if((typeof window !== 'undefined')){
+    //   console.log(window.location.href,"window.location.href")
+    // }
+    // console.log(this.props.wp_path,'wp')
+    // console.log(this.props.path, 'path')
+    // console.log(this.props.url, 'url')
+    // console.log(this.props.location.href, 'href')
+    // console.log(this.props.location.pathname, 'pathname')
   }
   componentDidMount() {
+    this.wp_path(this.props.path.split("/")[1].split("-")[0])
     var mySwiper1 = new Swiper(".swiper-container", {
       slidesPerView: 3.3,
       spaceBetween: 20,
@@ -44,13 +60,14 @@ class Page extends Component {
       }
     });
     // console.log(mySwiper1)
+    // console.log(this.props.path, 333)
   }
   followLang() {
     let temp_lang = this.langLimit();
     // let temp_lang = this.getSession('violas-lang').split('"')[1];
     let slug = this.props.data.wordpressPage.slug.toString();
     if (slug !== "violas-media" && slug !== "media" && temp_lang !== slug.split('-')[1]) {
-      if(typeof window !=='undefined'){
+      if (typeof window !== 'undefined') {
         window.location = slug.split('-')[0] + '-' + temp_lang;
       }
     }
@@ -69,7 +86,7 @@ class Page extends Component {
   langLimit() {
     // console.log(this.getSession('violas-lang').split('"')[1])
     // let _temp = JSON.parse(this.getSession("violas-lang"));
-    switch (this.getSession('violas-lang')?this.getSession('violas-lang').split('"')[1]:"") {
+    switch (this.getSession('violas-lang') ? this.getSession('violas-lang').split('"')[1] : "") {
       case "ko":
         return "ko";
       case "ja":
@@ -83,7 +100,8 @@ class Page extends Component {
       case "homepage":
         // return <img src="/static/9bb038b9ff4d9f1cede0b1232abd6e6c/14b42/homepage.jpg" />
         // return <img src={homepage_jpg} />
-        return homepage_jpg
+        // return homepage_jpg
+        return homepage_jpg1
       case "vision":
         // return <img src="/static/3cad50fb229e266066a9bdf3996fd227/14b42/vision.jpg" />
         // return <img src={vision_jpg} />
@@ -112,25 +130,28 @@ class Page extends Component {
     }
   }
   hasBackground(_temp) {
-    let url = _temp.split("/")[1].split("-")[0]
+    // let url = _temp.split("/")[1] ? _temp.split("/")[1].split("-")[0] : "media"
+    // console.log(url, 222)
+    let url = _temp
     if (url === "media") {
       return {
-        height: "80px"
+        height: "80px",
       }
     } else if (url === "whitepaper") {
       return {
-        height: "80px"
+        height: "80px",
       }
     } else if (url === "developers") {
       return {
-        height: "80px"
+        height: "80px",
       }
     } else {
       return {
         // background: 'url(' + this.selectBackgroundImg(url) + ')' + ', url(' + cover_png + ')',
         // background: 'url(' + cover_png + ')',
         // background: 'url(' + this.selectBackgroundImg(url) + ')',
-        background: 'url(' + cover_png + ')' + ',url(' + this.selectBackgroundImg(url) + ')',
+        // background: 'url(' + cover_png + ')' + ',url(' + this.selectBackgroundImg(url) + ')',
+        background: 'url(' + this.selectBackgroundImg(url) + ')',
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "50%"
@@ -142,6 +163,10 @@ class Page extends Component {
     // backgroundImage: 'url(' + this.headerImg(this.props.wp_path.split("-")[0] ? this.props.wp_path.split("-")[0] : '111') + ')',
     // console.log(this.props.path.split("/")[1].split("-")[0]);
     // console.log(this.props.path);
+    // console.log(this.props.path,111)
+    // console.log(this.props.location.pathname.split("/")[1].split("-")[0])
+    let path_temp = this.props.location.pathname.split("/")[1].split("-")[0]
+    // console.log(path_temp,111)
     return (
       <>
         <SEO title="violas pages" />
@@ -149,7 +174,7 @@ class Page extends Component {
           backgroundImage: 'url(' + this.selectBackgroundImg(this.props.path.split("/")[1].split("-")[0]) + ')' + ', url(' + cover_png + ')',
         }}></div> */}
         <div className="headContent" style={
-          this.hasBackground(this.props.path)
+          this.hasBackground(path_temp)
         }></div>
         <Layout>
           <div dangerouslySetInnerHTML={{ __html: StaticPage.content }}></div>

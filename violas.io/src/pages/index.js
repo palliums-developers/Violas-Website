@@ -80,6 +80,7 @@ class HomePage extends Component {
       } else {
         window.location = "/homepage-en"
       }
+      // window.location = "/homepage-en"
     }
   }
   render() {
