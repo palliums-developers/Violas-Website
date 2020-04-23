@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Libra Protocol: Key Concepts · Libra</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content="Docusaurus" />
+  <meta name="description"
+    content="The Libra Blockchain is a cryptographically authenticated distributed database, and it is based on the Libra protocol. This document briefly describes the key concepts of the Libra protocol. For a detailed description of all the elements of the Libra protocol, refer to the [Libra Blockchain technical paper](https://libra.org/en-us/whitepaper)." />
+  <meta name="docsearch:language" content="en" />
+  <meta property="og:title" content="Libra Protocol: Key Concepts · Libra" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://developers.libra.org/" />
+  <meta property="og:description"
+    content="The Libra Blockchain is a cryptographically authenticated distributed database, and it is based on the Libra protocol. This document briefly describes the key concepts of the Libra protocol. For a detailed description of all the elements of the Libra protocol, refer to the [Libra Blockchain technical paper](https://libra.org/en-us/whitepaper)." />
+  <meta property="og:image" content="https://developers.libra.org/img/libra.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://developers.libra.org/img/libra.png" />
+  <link rel="shortcut icon" href="libra.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+  <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Libra Blog ATOM Feed" />
+  <link rel="alternate" type="application/rss+xml" href="feed.xml" title="Libra Blog RSS Feed" />
+  <script type="text/javascript" src="buttons.js"></script>
+  <script type="text/javascript" src="code_block_buttons.js"></script>
+  <script type="text/javascript" src="cookie_banner.js"></script>
+  <script type="text/javascript" src="disable_adblock.js"></script>
+  <script type="text/javascript" src="segment.analytics.min.js"></script>
+  <script type="text/javascript" src="segment.js"></script>
+  <script type="text/javascript" src="clipboardjs.2.0.0.min.js"></script>
+  <script type="text/javascript" src="forms.js"></script>
+  <script src="scrollSpy.js"></script>
+  <link rel="stylesheet" href="main.css" />
+  <script src="codetabs.js"></script>
+</head>
+
+<body class="sideNavVisible separateOnPageNav">
+  <div class="fixedHeaderContainer">
+    <div class="headerWrapper wrapper">
+      <header><a href="https://developers.libra.org/"><img class="logo" src="libra-nav-logo.png" alt="Libra" />
+          <h2 class="headerTitleWithLogo">Libra</h2>
+        </a>
+        <div class="navigationWrapper navigationSlider">
+          <nav class="slidingNav">
+            <ul class="nav-site nav-site-internal">
+              <li class=""><a href="https://violas.io/">主页</a></li>
+              <li class="siteNavGroupActive"><a href="welcome-to-libra.htm" target="_self">文档</a></li>
+              <li class=""><a href="https://community.libra.org" target="_self">Libra 社区</a></li>
+              <li class=""><a href="blog_2.html" target="_self">Libra Blog</a></li>
+              <li class=""><a href="https://libra.org" target="_self">libra 官网</a></li>
+              <li class=""><a href="https://github.com/libra/libra" target="_self">Libra GitHub</a></li>
+              <li class=""><a href="../lib_doc_en/libra-protocol.htm">中/EN</a></li>
+              <li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react"
+                  placeholder="Search" title="Search" /></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <div class="hamburger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                </div>
+                <h2><i>›</i><span>学习 Libra</span></h2>
+                <div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div>
+              </div>
+              <div class="navGroups">
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习 Libra</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="welcome-to-libra.htm">欢迎</a>
+                    </li>
+                    <li class="navListItem navListItemActive"><a class="navItem" href="libra-protocol.htm">Libra 协议:
+                        核心概念</a></li>
+                    <li class="navListItem"><a class="navItem" href="life-of-a-transaction.htm">交易的生命周期</a></li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">技术论文</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="the-libra-blockchain-paper.htm">Libra 区块链</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="move-paper.htm">Move: 一种可编程资源的语言</a></li>
+                        <li class="navListItem"><a class="navItem"
+                            href="state-machine-replication-paper.htm">Libra区块链中状态机的复制</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习Libra核心</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="my-first-transaction.htm">我的第一笔交易</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="move-overview.htm">Move概述</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="run-local-network.htm">在本地网络上运行</a></li>
+                    <li class="navListItem"><a class="navItem" href="run-move-locally.htm">本地运行Move程序</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">社区</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-open-source-paper.htm">Libra开源</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="contributing.htm">贡献指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="coding-guidelines.htm">代码指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="security.htm">报告漏洞</a></li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Libra 协议实现</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-core-overview.htm">Libra Core概述</a>
+                    </li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">READMEs</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="admission-control.htm">准入控制 admission
+                            control</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="bytecode-verifier.htm">字节码验证器 Bytecode
+                            Verifier</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="consensus.htm">共识组件 Consensus</a></li>
+                        <li class="navListItem"><a class="navItem" href="crypto.htm">加密组件 Crypto</a></li>
+                        <li class="navListItem"><a class="navItem" href="execution.htm">执行组件 Execution</a></li>
+                        <li class="navListItem"><a class="navItem" href="mempool.htm">内存池 Mempool</a></li>
+                        <li class="navListItem"><a class="navItem" href="ir-to-bytecode.htm">Move IR 编译器</a></li>
+                        <li class="navListItem"><a class="navItem" href="move-language.htm">Move 语言</a></li>
+                        <li class="navListItem"><a class="navItem" href="network.htm">网络组件 Network</a></li>
+                        <li class="navListItem"><a class="navItem" href="storage.htm">存储组件 Storage</a></li>
+                        <li class="navListItem"><a class="navItem" href="vm.htm">虚拟机 Virtual Machine</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">参考引用</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-cli.htm">Libra命令行工具</a></li>
+                    <li class="navListItem"><a class="navItem" href="glossary.htm">词汇表</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory) {
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')) {
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function () {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function (event) {
+                var el = event.target;
+                while (el !== headings) {
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else {
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function (event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader"><a class="edit-page-link button"
+                href="https://github.com/lbc-team/libra-docs/edit/lbc/docs/libra-protocol.md" target="_blank"
+                rel="noreferrer noopener">编辑</a>
+              <h1 class="postHeaderTitle">Libra 协议核心概念</h1>
+            </header>
+            <article>
+              <div><span>
+                  <p>Libra区块链是一个基于Libra协议通过加密认证的分布式数据库。本文档简要介绍了Libra协议中的关键概念，有关Libra协议中所有元素的详细说明，请参阅<a
+                      href="https://libra.org/zh-CN/white-paper/?noredirect=zh-Hans-CN">Libra区块链技术白皮书</a>。</p>
+                  <p>Libra区块链分布式网络由<a href="glossary.htm#验证器节点">验证器节点</a>来维护。或简称称为验证器。验证人（验证节点）通过遵守<a
+                      href="glossary.htm#共识协议">共识协议</a>来达成区块链中的交易的一致。</p>
+                  <p>Libra 测试网络（testnet）是区块链协议实现早期原型即Libra Core 的展示。</p>
+                  <h2><a class="anchor" aria-hidden="true" id="交易和状态"></a><a href="#交易和状态" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>交易和状态</h2>
+                  <p>Libra协议两个核心基本概念 — 交易和状态。 在任何时间点，区块链都有一个“状态”。状态（或称为分布式账本状态）表示链上数据的当前快照。 在执行了交易后会更改区块链的状态。</p>
+                  <p><img src="transactions.svg" alt="交易状态变更">
+                    <small class="figure">图1.1交易状态变更</small></p>
+                  <p>图1.1表示在Libra区块链上执行交易时状态的变化。例：在状态 S<sub>N-1</sub> 时，Alice拥有 110 Libra 币，Bob拥有52个Libra
+                    币。当交易（T<sub>N</sub>）发生后，区块链生成一个新的状态。交易 T<sub>N</sub>（发送10Libra
+                    Coin从Alice到Bob）发生，状态从S<sub>N-1</sub>变更为S<sub>N</sub>。可以看到Alice的Libra 币减少10，Bob的Libra
+                    币增加10。新的状态（S<sub>N</sub>）显示更新后的Libra 币余额，在图1.1中：</p>
+                  <ul>
+                    <li><strong>A</strong> 和 <strong>B</strong> 区块链中的Alice和Bob的帐户。</li>
+                    <li><strong>S<sub>N-1</sub></strong> 表示区块链中第 N-1 个的状态。</li>
+                    <li><strong>T<sub>N</sub></strong> 区块链上执行的第 N 个交易
+                      <ul>
+                        <li>在图中例子是，T<sub>N</sub>表示是： “将10个Libra 币从Alice的账户发送到Bob的账户”</li>
+                      </ul>
+                    </li>
+                    <li><strong>F</strong>
+                      一个确定性函数。F函数对于确定初始状态在执行特定交易后始终会返回一个相同的的最终状态。如果区块链当前状态是S<sub>N-1</sub>，那么在状态S<sub>N-1</sub>上执行了交易T<sub>N</sub>，最后区块链的状态一定是S<sub>N</sub>。
+                    </li>
+                    <li><strong>S<sub>N</sub></strong> 是区块链的第N个状态。 S<sub>N</sub>是在T<sub>N</sub>与S<sub>N-1</sub>上应用函数F
+                      后的结果。</li>
+                  </ul>
+                  <p>Libra协议使用 <a href="move-overview.htm">Move 语言</a> 来实现函数F的确定性执行。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="交易"></a><a href="#交易" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>交易</h3>
+                  <p>Libra 区块链的客户端通过提交交易来请求更改分布式账本的状态，在区块链上一个签名交易包含如下部分：</p>
+                  <ul>
+                    <li><strong>发送人地址</strong> — 交易发起人的帐户地址。</li>
+                    <li><strong>发送人的公钥</strong> — 用于签署交易的私钥所对应的公钥。</li>
+                    <li><strong>程序</strong> — 程序包含以下内容:
+                      <ul>
+                        <li>Move语言的字节码交易脚本。</li>
+                        <li>可选的输入参数列表。对于点对点的交易中，输入包含接收人的信息，交易发送的金额。</li>
+                        <li>可选的需发布的字节码模块</li>
+                      </ul>
+                    </li>
+                    <li><strong>Gas 价格</strong> (以 microlibra/gas 为单位) — 发送方执行交易时需要为每单位<a
+                        href="glossary.htm#gas">gas</a>支付的价格。
+                      Gas是支付的是在区块链上计算和存储的费用。Gas是一个计算量的抽象，没有具体固定的真实价值。</li>
+                    <li><strong>Gas 上限</strong> — 交易允许消耗的最大 Gas 量。</li>
+                    <li><strong>序号</strong> — 无符号整型，必须等于发送者帐户中存储的序列号。</li>
+                    <li><strong>过期时间</strong> — 交易有效截止的时间。</li>
+                    <li><strong>签名</strong> — 发送人的数字签名。</li>
+                  </ul>
+                  <p>交易脚本是一个任意的程序，用于对交易逻辑进行编码，并与Libra区块链中发布的数字资产（资源）进行交互。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="分布式账本状态"></a><a href="#分布式账本状态" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>分布式账本状态</h3>
+                  <p>T分布式账本或者称为Libra区块链的全局状态，它是由区块链中所有账户状态组成总状态。在执行交易时，每个验证节点必须知道区块链中的分布式数据库的最新的全局状态。 参考<a
+                      href="#版本化数据库">版本化数据库</a>.</p>
+                  <h2><a class="anchor" aria-hidden="true" id="版本化数据库"></a><a href="#版本化数据库" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>版本化数据库</h2>
+                  <p>Libra区块链中的所有数据都保存在单个版本化分布式数据库中（single-versioned distributed database）。版本号是一个无符号的 64
+                    位整数，对应于系统已执行的交易数量。</p>
+                  <p>版本化数据库（versioned database）允许验证器:</p>
+                  <ul>
+                    <li>在最新版本状态下执行交易。</li>
+                    <li>响应客户端对当前和以前版本的账本历史记录数据的查询</li>
+                  </ul>
+                  <h2><a class="anchor" aria-hidden="true" id="账户"></a><a href="#账户" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>账户</h2>
+                  <p>Libra账户包含 Move 模块(modules)和Move 资源(resources)。账户通过<a
+                      href="glossary.htm#账户地址">账户地址</a>来标识。这意味上每个账户的状态都包含代码和数据：</p>
+                  <ul>
+                    <li>
+                      <p><strong><a href="move-overview.htm#move-modules-allow-composable-smart-contracts">Move
+                            模块</a></strong> 包含代码（类型和过程声明），但他们不包含数据。模块过程（procedures）编码了更新区块链的全局状态的规则。</p>
+                    </li>
+                    <li>
+                      <p><strong><a href="move-overview.htm#move-has-first-class-resources">Move
+                            资源</a></strong> 包含数据不包含代码。每个资源值的类型都需要是在已发布的模块中声明过。</p>
+                    </li>
+                  </ul>
+                  <p>账户可以包含任意数量的Move资源和Move模块。</p>
+                  <h4><a class="anchor" aria-hidden="true" id="账户地址"></a><a href="#账户地址" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>账户地址</h4>
+                  <p>Libra账户的是地址是256位的值。用户使用签名后来声明地址所有权，账户的地址由公钥Hash加密生成。用户（自己或者代用户保管私钥的客户端）必须通过私钥签名才能发出交易。</p>
+                  <p>Libra用户想要拥有的地址是没有限制的，不过要想拥有一个地址需要从一个账户支付一笔创建账号的费用。</p>
+                  <h2><a class="anchor" aria-hidden="true" id="证明"></a><a href="#证明" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>证明</h2>
+                  <p>Libra区块链中的所有数据都存储在单个版本化分布式数据库中。存储是用于记录确定过的区块交易及执行结果。区块链链用一个不断增长的 <a
+                      href="glossary.htm#merkle-trees">Merkle Tree</a>
+                    来表示。对于在区块链上执行的每个交易，交易树都会追加一个&quot;叶子&quot;。</p>
+                  <ul>
+                    <li>证明是验证Libra区块链中数据真实性的一种方式。</li>
+                    <li>区块链上存储的每个操作都可以进行加密验证,因此,结果证明也证明没有遗漏任何数据。例如,如果客户端查询帐户最新的 <em>n</em> 个交易记录，则证明会验证查询响应中未遗漏任何交易记录。
+                    </li>
+                  </ul>
+                  <p>在区块链中,客户端不需要信任接收数据的实体。客户端可以查询帐户的余额，询问是否处理了特定交易等等。与其他 Merkle 树一样, 分布式账本记录可以对一个特定的交易提供 <span
+                      class="katex"><span class="katex-mathml"><math>
+                          <semantics>
+                            <mrow>
+                              <mi>O</mi>
+                              <mo>(</mo>
+                              <mi>log</mi>
+                              <mi>n</mi>
+                              <mo>)</mo>
+                            </mrow>
+                            <annotation encoding="application/x-tex">O(\log n)</annotation>
+                          </semantics>
+                        </math></span><span class="katex-html" aria-hidden="true"><span class="strut"
+                          style="height:0.75em;"></span><span class="strut bottom"
+                          style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span
+                            class="mord mathit" style="margin-right:0.02778em;">O</span><span
+                            class="mopen">(</span><span class="mop">lo<span
+                              style="margin-right:0.01389em;">g</span></span><span class="mord mathit">n</span><span
+                            class="mclose">)</span></span></span></span> 时间复杂度的证明，<em>n</em> 是处理的总交易量。</p>
+                  <h2><a class="anchor" aria-hidden="true" id="验证器节点-验证器"></a><a href="#验证器节点-验证器" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>验证器节点 (验证器)</h2>
+                  <p>Libra
+                    区块链的客户创建交易并将其提交到验证器节点。验证器节点运行共识协议(与其他验证器节点一起)，执行交易，并将交易和执行结果存储在区块链中。验证器节点决定哪些交易将添加到区块链,以及按什么样顺序进行交易。
+                  </p>
+                  <p><img src="validator.svg" alt="图 1.1 验证器的逻辑组件">
+                    <small class="figure">图 1.2 验证器的逻辑组件</small></p>
+                  <p>验证器节点包含以下逻辑组件:</p>
+                  <p><strong>准入控制 (AC)</strong></p>
+                  <ul>
+                    <li>准入控制是验证器节点的唯一外部接口。客户端对验证器节点发出的任何请求首先将转到准入控制组件。</li>
+                    <li>准入控制对请求执行初始检查,以保护验证器节点的其他部分免受损坏或大量输入的影响。</li>
+                  </ul>
+                  <p><strong>内存池（Mempool）</strong></p>
+                  <ul>
+                    <li>内存池是一个缓存区，用于保存正&quot;等待&quot;执行的交易。</li>
+                    <li>当新交易添加到验证器节点的内存池时，此验证器节点的内存池与系统中其他验证器的内存池共享此交易。</li>
+                  </ul>
+                  <p><strong>共识 Consensus</strong></p>
+                  <ul>
+                    <li>共识组件的负责对交易区块进行排序，并与网络中的其他验证器节点在<a href="glossary.htm#共识">共识</a>协议下商定执行结果。
+                    </li>
+                  </ul>
+                  <p><strong>执行 Execution</strong></p>
+                  <ul>
+                    <li>执行组件利用虚拟机 (VM) 执行交易。</li>
+                    <li>执行的工作是协调交易块的执行,并保持一个瞬时状态,用户共识协商投票。</li>
+                    <li>执行组件会维护执行结果的内存,直到共识将块提交到分布式数据库。</li>
+                  </ul>
+                  <p><strong>虚拟机（VM）</strong></p>
+                  <ul>
+                    <li>准入控制 和 内存池 使用 VM 组件对交易执行验证检查。</li>
+                    <li>VM 用于运行交易中包含的程序并确定结果。</li>
+                  </ul>
+                  <p><strong>存储 Storage</strong></p>
+                  <p>存储用于持久化保存已经商定过的交易块及其执行结果。</p>
+                  <p>有关每个验证器组件与其他组件的交互的信息，参考<a href="life-of-a-transaction.htm">交易生命周期</a></p>
+                  <h2><a class="anchor" aria-hidden="true" id="参考"></a><a href="#参考" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>参考</h2>
+                  <ul>
+                    <li><a href="welcome-to-libra.htm">欢迎页</a>.</li>
+                    <li><a href="my-first-transaction.htm">我的第一笔交易 </a> — 指导你使用Libra CLI客户端在Libra区块链上执行你的第一笔交易。</li>
+                    <li><a href="move-overview.htm">开始使用Move </a> — 介绍新区块链编程语言Move。</li>
+                    <li><a href="life-of-a-transaction.htm">交易的生命周期 </a> — 介绍交易被提交和执行的底层实现</li>
+                    <li><a href="libra-core-overview.htm">Libra Core 概述 </a> — Libra Core 组件的概念和实现细节。</li>
+                    <li><a href="libra-cli.htm">CLI 指南 </a> — 列出了Libra CLI客户端的命令及其用法。</li>
+                    <li><a href="glossary.htm">Libra 词汇表 </a> — 提供了一份Libra技术的快速参考。
+                    </li>
+                  </ul>
+                </span></div>
+            </article>
+          </div>
+          <div class="docs-prevnext"><a class="docs-prev button" href="welcome-to-libra.htm"><span class="arrow-prev">←
+              </span><span>来到 Libra 世界</span></a><a class="docs-next button"
+              href="life-of-a-transaction.htm"><span>交易的生命周期</span><span class="arrow-next"> →</span></a>
+          </div>
+        </div>
+      </div>
+      <nav class="onPageNav">
+        <ul class="toc-headings">
+          <li><a href="libra-protocol.htm#transactions-and-states">Transactions and States</a>
+            <ul class="toc-headings">
+              <li><a href="libra-protocol.htm#transactions">Transactions</a></li>
+              <li><a href="libra-protocol.htm#ledger-state">Ledger State</a></li>
+            </ul>
+          </li>
+          <li><a href="libra-protocol.htm#versioned-database">Versioned Database</a></li>
+          <li><a href="libra-protocol.htm#account">Account</a></li>
+          <li><a href="libra-protocol.htm#proof">Proof</a></li>
+          <li><a href="libra-protocol.htm#validator-node-validator">Validator Node (Validator)</a></li>
+          <li><a href="libra-protocol.htm#reference">Reference</a></li>
+        </ul>
+      </nav>
+    </div>
+    <footer class="nav-footer" id="footer">
+        <section class="sitemap"><a href="https://developers.libra.org/" class="nav-home"><img
+              src="libra-logomark-white.png" alt="Libra" /></a>
+          <div class="footerSection">
+            <h5>Learn About Libra</h5><a href="welcome-to-libra.htm">Welcome to Libra</a><a
+              href="libra-protocol.htm">Libra Protocol</a><a href="the-libra-blockchain-paper.htm">Libra Blockchain</a><a
+              href="life-of-a-transaction.htm">Life of a Transaction</a>
+            <p></p>
+            <h5>Try Libra Core </h5><a href="my-first-transaction.htm">My First Transaction</a><a
+              href="move-overview.htm">Getting Started With Move</a>
+          </div>
+          <div class="footerSection">
+            <h5>Policies</h5><a href="https://developers.libra.org/docs/policies/privacy-policy.htm">Privacy Policy</a><a href="https://developers.libra.org/docs/policies/terms-of-use.htm">Terms of Use</a><a
+              href="https://developers.libra.org/docs/policies/cookies-policy.htm">Cookies Policy</a><a href="https://developers.libra.org/docs/policies/code-of-conduct.htm">Code of Conduct</a>
+            <p></p>
+            <h5>Community</h5><a href="https://community.libra.org/">Developer Forum</a><a
+              href="https://developers.libra.org/newsletter_form">Newsletter</a>
+          </div>
+          <div class="footerSection">
+            <h5>Libra开发者社区</h5>
+            <img style="width:150px" src='qr_violas.png'>
+            <h5>备注"Libra"加群<h5>
+          </div>
+        </section>
+        <section class="copyright"> © Violas Association</section>
+      </footer>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script>
+    document.addEventListener('keyup', function (e) {
+      if (e.target !== document.body) {
+        return;
+      }
+      // keyCode for '/' (slash)
+      if (e.keyCode === 191) {
+        const search = document.getElementById('search_input_react');
+        search && search.focus();
+      }
+    });
+  </script>
+  <script>
+    var search = docsearch({
+
+      apiKey: '0d48ee629d39ddc4916eeef7755a0c4c',
+      indexName: 'libra',
+      inputSelector: '#search_input_react'
+    });
+  </script>
+</body>
+
+</html>

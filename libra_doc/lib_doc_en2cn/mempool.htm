@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Mempool · Libra</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content="Docusaurus" />
+  <meta name="description"
+    content="Mempool is a memory-buffer that holds the transactions that are waiting to be executed." />
+  <meta name="docsearch:language" content="en" />
+  <meta property="og:title" content="Mempool · Libra" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://developers.libra.org/" />
+  <meta property="og:description"
+    content="Mempool is a memory-buffer that holds the transactions that are waiting to be executed." />
+  <meta property="og:image" content="https://developers.libra.org/img/libra.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://developers.libra.org/img/libra.png" />
+  <link rel="shortcut icon" href="libra.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+  <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Libra Blog ATOM Feed" />
+  <link rel="alternate" type="application/rss+xml" href="feed.xml" title="Libra Blog RSS Feed" />
+  <script type="text/javascript" src="buttons.js"></script>
+  <script type="text/javascript" src="code_block_buttons.js"></script>
+  <script type="text/javascript" src="cookie_banner.js"></script>
+  <script type="text/javascript" src="disable_adblock.js"></script>
+  <script type="text/javascript" src="segment.analytics.min.js"></script>
+  <script type="text/javascript" src="segment.js"></script>
+  <script type="text/javascript" src="clipboardjs.2.0.0.min.js"></script>
+  <script type="text/javascript" src="forms.js"></script>
+  <script src="scrollSpy.js"></script>
+  <link rel="stylesheet" href="main.css" />
+  <script src="codetabs.js"></script>
+</head>
+
+<body class="sideNavVisible separateOnPageNav">
+  <div class="fixedHeaderContainer">
+    <div class="headerWrapper wrapper">
+      <header><a href="https://developers.libra.org/"><img class="logo" src="libra-nav-logo.png" alt="Libra" />
+          <h2 class="headerTitleWithLogo">Libra</h2>
+        </a>
+        <div class="navigationWrapper navigationSlider">
+          <nav class="slidingNav">
+            <ul class="nav-site nav-site-internal">
+                <li class=""><a href="https://violas.io/">主页</a></li>
+                <li class="siteNavGroupActive siteNavItemActive"><a href="welcome-to-libra.htm" target="_self">文档</a></li>
+                <li class=""><a href="https://community.libra.org" target="_self">Libra 社区</a></li>
+                <li class=""><a href="blog_2.html" target="_self">Libra Blog</a></li>
+                <li class=""><a href="https://libra.org" target="_self">Libra 官网</a></li>
+                <li class=""><a href="https://github.com/libra/libra" target="_self">Libra GitHub</a></li>
+                <li class=""><a href="../lib_doc_en/mempool.htm" target="_self">中/EN</a></li>
+              <li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react"
+                  placeholder="Search" title="Search" /></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <div class="hamburger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                </div>
+                <h2><i>›</i><span>学习 Libra</span></h2>
+                <div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div>
+              </div>
+              <div class="navGroups">
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习 Libra</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="welcome-to-libra.htm">欢迎</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="libra-protocol.htm">Libra 协议: 核心概念</a></li>
+                    <li class="navListItem"><a class="navItem" href="life-of-a-transaction.htm">交易的生命周期</a></li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">技术论文</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="the-libra-blockchain-paper.htm">Libra 区块链</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="move-paper.htm">Move: 一种可编程资源的语言</a></li>
+                        <li class="navListItem"><a class="navItem"
+                            href="state-machine-replication-paper.htm">Libra区块链中状态机的复制</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习Libra核心</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="my-first-transaction.htm">我的第一笔交易</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="move-overview.htm">Move概述</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="run-local-network.htm">在本地网络上运行</a></li>
+                    <li class="navListItem"><a class="navItem" href="run-move-locally.htm">本地运行Move程序</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">社区</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-open-source-paper.htm">Libra开源</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="contributing.htm">贡献指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="coding-guidelines.htm">代码指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="security.htm">报告漏洞</a></li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Libra 协议实现</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-core-overview.htm">Libra Core概述</a>
+                    </li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">READMEs</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="admission-control.htm">准入控制 admission
+                            control</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="bytecode-verifier.htm">字节码验证器 Bytecode
+                            Verifier</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="consensus.htm">共识组件 Consensus</a></li>
+                        <li class="navListItem"><a class="navItem" href="crypto.htm">加密组件 Crypto</a></li>
+                        <li class="navListItem"><a class="navItem" href="execution.htm">执行组件 Execution</a></li>
+                        <li class="navListItem navListItemActive"><a class="navItem" href="mempool.htm">内存池 Mempool</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="ir-to-bytecode.htm">Move IR 编译器</a></li>
+                        <li class="navListItem"><a class="navItem" href="move-language.htm">Move 语言</a></li>
+                        <li class="navListItem"><a class="navItem" href="network.htm">网络组件 Network</a></li>
+                        <li class="navListItem"><a class="navItem" href="storage.htm">存储组件 Storage</a></li>
+                        <li class="navListItem"><a class="navItem" href="vm.htm">虚拟机 Virtual Machine</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">参考引用</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-cli.htm">Libra命令行工具</a></li>
+                    <li class="navListItem"><a class="navItem" href="glossary.htm">词汇表</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory) {
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')) {
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function () {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function (event) {
+                var el = event.target;
+                while (el !== headings) {
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else {
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function (event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader"><a class="edit-page-link button"
+                href="https://github.com/libra/libra/edit/master/mempool/README.md" target="_blank"
+                rel="noreferrer noopener">编辑</a>
+              <h1 class="postHeaderTitle">内存池</h1>
+            </header>
+            <article>
+              <div><span>
+                  <p>内存池是一个内存缓冲区，用于保存等待执行的交易。</p>
+                  <h2><a class="anchor" aria-hidden="true" id="overview"></a><a href="mempool.htm#overview"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>概要</h2>
+                  <p>入控制（AC）模块将交易发送到内存池(Mempool)。 在共识模块提交之前，内存池将会把交易保留一段时间。 当有新交易添加时，内存池会与系统中的其他验证程序（验证器节点）共享此交易。 内存池是一个“共享的内存池”，因为这些内存池之间的交易与其他验证器共享。 这有助于维护一个伪全局排序（pseudoglobal ordering）。</p>
+                  <p>当验证器从另一个内存池接收到一个交易时，该交易在被添加到接收者验证器有些队列时，同样会排序。 为了减少共享内存池中的网络消耗，每个验证器负责处理自己的交易。 我们不会重复广播来自对等验证器的交易。</p>
+                  <p>我们只广播有可能包含在下一个块中的交易。 这意味着要么交易的序列号（sequence number）是发起人帐户的下一个序列号，或者是顺延的。 例如，如果帐户的当前序列号为2且本地内存池中包含序列号为2,3,4,7,8的交易，则仅广播交易2,3和4。</p>
+                  <p>共识模块从内存池获取交易，内存池不会将交易推向共识。 这样在交易达成共识前，还可以：</p>
+                  <ul>
+                    <li>内存池可以继续基于gas对交易排序;</li>
+                    <li>共识模块可以允许交易在内存池中建立。</li>
+                  </ul>
+                  <p>这允许将交易分组为单个共识区块，并按gas价格划分优先级。
+                  </p>
+                  <p>内存池不会跟踪发送到共识模块的交易。 在每个get_block请求上（去内存池中提取一个交易块），共识模块发送一组从内存池中提取但未提交（committed）的交易。 这让内存池对不同的共识模块提议分支保持不可知。</p>
+                  <p>当交易完全执行并写入存储时，共识模块通知内存池。 然后，内存池将此交易从其内部状态中删除。</p>
+                  <h2><a class="anchor" aria-hidden="true" id="implementation-details"></a><a
+                      href="mempool.htm#implementation-details" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>实现细节</h2>
+                  <p>在内部，内存池被建模为 <code>HashMap&lt;AccountAddress, AccountTransactions&gt;</code>
+                    在其上构建了各种索引。</p>
+                  <p>主索引 - PriorityIndex 是一个有序的交易队列，它“准备好”被包含在下一个块中（即，它们的序列号与帐户当前序列号是顺序的）。 这个队列按gas价格排序，这样如果客户愿意为每个执行单位支付更多（相比其他客户多），那么他们可以更早进入共识。</p>
+                  <p>请注意，即使全部订单是按gas价格维护的，对于单个帐户交易按序号排序。 未准备好包含在下一个块中的所有交易都是单独的 ParkingLotIndex 索引的一部分。 一旦某个事件让交易解除阻塞，它们就会被移动到有序队列中。</p>
+                  <p>下面是一个示例：内存池中有一个序列号为4的交易，而该帐户的当前序列号为3.此交易被视为“未就绪”。来自共识的回调通知交易已提交（即，交易3已提交到一个不同的节点，因此已经在链上提交）。 则“解除阻塞”本地交易，交易＃4 被移动到 OrderedQueue。</p>
+                  <p>内存池只保留有限数量的交易，以避免系统被滥用和攻击。 内存池中的交易有两种类型的过期： systemTTL 和客户端指定的过期。 达到其中任何一个时，将从内存池中删除该交易。</p>
+                  <p>在后台会定期检查SystemTTL，同时在每个共识提交请求时检查客户端指定的到期时间。 我们使用单独的System TTL来确保交易不会永远停留在内存池中，即使共识未取得进展。
+                  </p>
+                  <h2><a class="anchor" aria-hidden="true" id="how-is-this-module-organized"></a><a
+                      href="mempool.htm#how-is-this-module-organized" aria-hidden="true" class="hash-link"><svg
+                        class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                        width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>这个模块是怎样组织的？</h2>
+                  <pre><code class="hljs">    mempool/src
+    ├── core_mempool             # main in memory data structure
+    ├── proto                    # protobuf definitions for interactions with mempool
+    ├── lib.rs
+    ├── mempool_service.rs       # gRPC service
+    ├── runtime.rs               # bundle of shared mempool and gRPC service
+    └── shared_mempool.rs        # shared mempool
+</code></pre>
+                </span></div>
+            </article>
+          </div>
+          <div class="docs-prevnext"><a class="docs-prev button" href="execution.htm"><span class="arrow-prev">←
+              </span><span>执行组件</span></a><a class="docs-next button" href="ir-to-bytecode.htm"><span>MOVE IR 编译器</span><span class="arrow-next"> →</span></a></div>
+        </div>
+      </div>
+      <nav class="onPageNav">
+        <ul class="toc-headings">
+          <li><a href="mempool.htm#overview">概要</a></li>
+          <li><a href="mempool.htm#implementation-details">实现细节</a></li>
+          <li><a href="mempool.htm#how-is-this-module-organized">这个模块是怎样组织的？</a></li>
+        </ul>
+      </nav>
+    </div>
+    <footer class="nav-footer" id="footer">
+        <section class="sitemap"><a href="https://developers.libra.org/" class="nav-home"><img
+              src="libra-logomark-white.png" alt="Libra" /></a>
+          <div class="footerSection">
+            <h5>Learn About Libra</h5><a href="welcome-to-libra.htm">Welcome to Libra</a><a
+              href="libra-protocol.htm">Libra Protocol</a><a href="the-libra-blockchain-paper.htm">Libra Blockchain</a><a
+              href="life-of-a-transaction.htm">Life of a Transaction</a>
+            <p></p>
+            <h5>Try Libra Core </h5><a href="my-first-transaction.htm">My First Transaction</a><a
+              href="move-overview.htm">Getting Started With Move</a>
+          </div>
+          <div class="footerSection">
+            <h5>Policies</h5><a href="https://developers.libra.org/docs/policies/privacy-policy.htm">Privacy Policy</a><a href="https://developers.libra.org/docs/policies/terms-of-use.htm">Terms of Use</a><a
+              href="https://developers.libra.org/docs/policies/cookies-policy.htm">Cookies Policy</a><a href="https://developers.libra.org/docs/policies/code-of-conduct.htm">Code of Conduct</a>
+            <p></p>
+            <h5>Community</h5><a href="https://community.libra.org/">Developer Forum</a><a
+              href="https://developers.libra.org/newsletter_form">Newsletter</a>
+          </div>
+          <div class="footerSection">
+            <h5>Libra开发者社区</h5>
+            <img style="width:150px" src='qr_violas.png'>
+            <h5>备注"Libra"加群<h5>
+          </div>
+        </section>
+        <section class="copyright"> © Violas Association</section>
+      </footer>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script>
+    document.addEventListener('keyup', function (e) {
+      if (e.target !== document.body) {
+        return;
+      }
+      // keyCode for '/' (slash)
+      if (e.keyCode === 191) {
+        const search = document.getElementById('search_input_react');
+        search && search.focus();
+      }
+    });
+  </script>
+  <script>
+    var search = docsearch({
+
+      apiKey: '0d48ee629d39ddc4916eeef7755a0c4c',
+      indexName: 'libra',
+      inputSelector: '#search_input_react'
+    });
+  </script>
+</body>
+
+</html>
