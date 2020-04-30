@@ -1,7 +1,5 @@
 import React, { Component } from "react"
 import { Link, graphql } from "gatsby"
-import Header from "../components/header1"
-import Footer from "../components/footer"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import "../style/blogs.css"
@@ -25,7 +23,7 @@ class Media extends Component {
                   <Link to={node.slug}>
                     <h2>{node.title}</h2>
                     <div dangerouslySetInnerHTML={{ __html: node.excerpt }}></div>
-                    <p>{node.date}</p>
+                    {/* <p>{node.date}</p> */}
                   </Link>
                 </div>
               ))}

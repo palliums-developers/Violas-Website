@@ -15,15 +15,7 @@ class Footer extends Component {
   componentDidMount() {
     this.setState({ language: this.props.language });
   }
-  // changeLang(_chosenLang) {
-  //   let slug = this.props.wp_path!=="media" ? "/"+this.props.wp_path + "-" + _chosenLang : "media"
-  //   return slug
-  // }
   changeLang(_chosenLang) {
-    // if (this.props.wp_path === "media") {
-    //     return this.props.wp_path
-    // }
-    console.log(this.props.wp_path,'footer')
     let type = this.props.wp_path ? this.props.wp_path.split("-")[0] : null
     let slug = "/media"
     if (type !== "media") {
@@ -104,35 +96,6 @@ class Footer extends Component {
   }
   render() {
     return (
-      // <footer>
-      //   <div className="footerNav">
-      //     <div className="logo" onClick={() => { this.props.history.push('/app/home') }}><img src={logoPurple_jpg} /></div>
-      //     <div className="nav">
-      //       <div>
-      //         <Link>vision</Link>
-      //         <Link>association</Link>
-      //         <Link to="/app/partners">partners</Link>
-      //       </div>
-      //       <div>
-      //         <a href="https://testnet.violas.io/app/Violas" target="_blank">blockchain explorer</a>
-      //         <Link>media</Link>
-      //         <Link>developers</Link>
-      //       </div>
-      //       <div>
-      //         <Link>white paper</Link>
-      //       </div>
-      //     </div>
-      //   </div>
-      //   <div className="email">
-      //     <p>Copyright©2019Violas</p>
-      //     {/* <p>{intl.get('footer.Connect Us')}</p> */}
-      //     <p><img src={Mail} />violas.team@violas.io</p>
-      //     <p>
-      //       <span>日本语</span>
-      //       <span>日本语</span>
-      //     </p>
-      //   </div>
-      // </footer>
       <footer>
         <div className="foot">
           <div className="linkPage">

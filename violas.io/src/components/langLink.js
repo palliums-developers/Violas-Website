@@ -1,6 +1,6 @@
 // import LogoPath from "./logo"
 import React from 'react'
-import { graphql, useStaticQuery } from "gatsby"
+// import { graphql, useStaticQuery } from "gatsby"
 import logoWhite_png from "../images/logo-white.png"
 import logoPurple_png from "../images/logo-purple.png"
 import logoWhiteS_png from "../images/logo-purple-single.png"
@@ -42,11 +42,11 @@ const router = {
 }
 
 const langLink = (_lang, logo_type, text_color, used) => {
-  let link_color="white";
-  let whitepaper_color="#501ba2";
-  if(text_color==="purple"){
-    link_color="#501ba2"
-    whitepaper_color="white"
+  let link_color = "white";
+  let whitepaper_color = "#501ba2";
+  if (text_color === "purple") {
+    link_color = "#501ba2"
+    whitepaper_color = "white"
   }
   let page_json =
     _lang === "ja" ? router.ja : _lang === "ko" ? router.ko : router.en;
@@ -108,32 +108,34 @@ const langLink = (_lang, logo_type, text_color, used) => {
       switch (logo_type) {
         case "white":
           // result.push(<div className="logo"><a aria-current="page" href={page_json[i][1]}><img src={logoWhite_png} /></a></div>)
-          result.push(<a aria-current="page" className="logo" href={"/"+page_json[i][1]}><img src={logoWhite_png} /></a>)
+          result.push(<a aria-current="page" className="logo" href={"/" + page_json[i][1]}><img src={logoWhite_png} alt="logo" /></a>)
           break;
         case "purple":
           // result.push(<div className="logo"><a aria-current="page" href={page_json[i][1]}><img src={logoPurple_png} /></a></div>)
-          result.push(<a aria-current="page" className="logo" href={"/"+page_json[i][1]}><img src={logoPurple_png} /></a>)
+          result.push(<a aria-current="page" className="logo" href={"/" + page_json[i][1]}><img src={logoPurple_png} alt="logo" /></a>)
           break;
         case "white-single":
           // result.push(<div className="logo"><a aria-current="page" href={page_json[i][1]}><img src={logoWhiteS_png} /></a></div>)
-          result.push(<a aria-current="page" className="logo" href={"/"+page_json[i][1]}><img src={logoWhiteS_png} /></a>)
+          result.push(<a aria-current="page" className="logo" href={"/" + page_json[i][1]}><img src={logoWhiteS_png} alt="logo" /></a>)
           break;
         case "purple-single":
           // result.push(<div className="logo"><a aria-current="page" href={page_json[i][1]}><img src={logoPurpleS_png} /></a></div>)
-          result.push(<a aria-current="page" className="logo" href={"/"+page_json[i][1]}><img src={logoPurpleS_png} /></a>)
+          result.push(<a aria-current="page" className="logo" href={"/" + page_json[i][1]}><img src={logoPurpleS_png} alt="logo" /></a>)
           break;
+        default:
+          return;
       }
     } else if (i === 4) {
-      result.push(<a style={{color:link_color}} href={page_json[i][1]}>{page_json[i][0]}</a>)
+      result.push(<a style={{ color: link_color }} href={page_json[i][1]}>{page_json[i][0]}</a>)
     } else if (i === 7) {
-      if(used==="header"){
-        result.push(<a style={{color:whitepaper_color,backgroundColor:link_color}} aria-current="page" className="whitepaper" href={"/"+page_json[i][1]}>{page_json[i][0]}</a>)
-      }else{
-        result.push(<a style={{color:link_color}} aria-current="page" className="whitepaper" href={"/"+page_json[i][1]}>{page_json[i][0]}</a>)
+      if (used === "header") {
+        result.push(<a style={{ color: whitepaper_color, backgroundColor: link_color }} aria-current="page" className="whitepaper" href={"/" + page_json[i][1]}>{page_json[i][0]}</a>)
+      } else {
+        result.push(<a style={{ color: link_color }} aria-current="page" className="whitepaper" href={"/" + page_json[i][1]}>{page_json[i][0]}</a>)
       }
     }
     else {
-      result.push(<a style={{color:link_color}} aria-current="page" href={"/"+page_json[i][1]}>{page_json[i][0]}</a>)
+      result.push(<a style={{ color: link_color }} aria-current="page" href={"/" + page_json[i][1]}>{page_json[i][0]}</a>)
     }
   }
   // console.log(result)

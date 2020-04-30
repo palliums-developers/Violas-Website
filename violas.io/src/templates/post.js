@@ -1,12 +1,8 @@
 import React, { Component } from "react"
 import { graphql, StaticQuery } from "gatsby"
-import Header1 from "../components/header1"
-import Header2 from "../components/header2"
-import Footer from "../components/footer"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../style/blogs.css"
-import Header from "../components/header1"
 
 class Post extends Component {
   componentWillMount() {
@@ -26,11 +22,11 @@ class Post extends Component {
             {/* <h1>{StaticPost.title}</h1>
             <h4>{StaticPost.author.name}</h4> */}
             <div dangerouslySetInnerHTML={{ __html: StaticPost.content }}></div>
-            <h5>{StaticPost.date}</h5>
+            {/* <h5>{StaticPost.date}</h5> */}
           </div>
           <div className="relative">
-            <h2>Related Literature</h2>
-            <p>{StaticQuery}</p>
+            {/* <h2>Related Literature</h2>
+            <p>{StaticQuery}</p> */}
           </div>
         </Layout>
       </div>

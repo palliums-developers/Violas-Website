@@ -24,6 +24,8 @@ header .head .linkPage .link {
   margin-left: 20px;
   color: white;
   height: 30px;
+  position: relative;
+  bottom: 2px;
 }
 header .head .linkPag .link:hover {
   border: #501ba2 2px solid;
@@ -32,15 +34,31 @@ header .head .linkPage .whitepaper:hover {
   background-color: #501ba2;
   color: white;
 }
-header .head .linkPage .whitepaper {
+header .head .linkPage .whitepaper1 {
   margin-left: 20px;
+  position: relative;
+  bottom: 2px;
+  background: #501ba2;
+  border-radius: 3rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+header .head .linkPage .whitepaper1:hover {
+  background-color: white;
+  color: #501ba2;
+  border: #501ba2 1px solid;
 }
 header .head .linkPage img {
   width: 107px;
   height: 17.4px;
 }
 header .head .linkPage .whitepaper {
-  /* margin-left: 100px; */
+  /* margin-bottom: 2px; */
+  margin-left: 20px;
+  position: relative;
+  bottom: 2px;
   background: #fff;
   border-radius: 3rem;
   font-weight: 400;
@@ -49,32 +67,68 @@ header .head .linkPage .whitepaper {
   box-sizing: border-box;
 }
 header .head .lang {
+  width: 80px;
+  height:25px;
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  line-height:20px;
+  position: relative;
+  top:36px;
 }
-header .head .lang p {
-  width: 50px;
+header .head .lang .aa {
+  width: 80px;
+  height: 25px;
   font-size: 12px;
   text-align: center;
-  margin-bottom: 0;
   position: relative;
-  /* bottom: 48px;   */
+  border: white solid 2px;
+  border-radius: 3rem;
+  box-sizing: border-box;
+  margin-left:0px;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
 }
-header .head .lang a {
-  line-height: 20px;
-  font-size: 12px;
-  margin-left: 0px;
-  height: 50px;
+header .head .lang .aa  img{
+  width:11px;
+  height:11px;
+  margin:0 5px;
+  position: relative;
+  top:5px;
+}
+header .head .lang .aaa {
+  width: 60px;
+  /* height: 80px; */
+  margin-left:10px;
   background-color: white;
-  padding: 5px;
+  position: relative;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+header .head .lang .aaa .aaa1{
+  width: 60px;
+  height: 19px;
+  padding:0px 5px;
+  text-align: center;
+}
+header .head .lang .aaa a {
+  width: 60px;
+  height:25px;
+  margin: 0px auto;
+  font-size: 12px;
+  font-weight:500;
+  /* padding: 5px; */
   /* color: #501ba2; */
   text-align: center;
-  position: relative;
-  bottom: 36px;
-  height: 40px;
+  color: black;
+  border-bottom: grey 1px solid;
 }
-header .head .lang a:hover {
-  border: #501ba2 1px dashed;
+header .head .lang .aaa a:hover {
+  border-bottom: #501ba2 1px dashed;
+  color: #501ba2;
 }
 .header1 {
   display: flex;
@@ -131,10 +185,14 @@ header .head .lang a:hover {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 10px;
-
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+  }
+  .aside2{
+    width: 50%;
+    position: absolute;
+    right:0;
   }
   .display {
     display: flex;

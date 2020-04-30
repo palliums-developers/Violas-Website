@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import "../style/404.css"
-import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // const NotFoundPage = () => (
@@ -49,7 +48,8 @@ class NotFoundPage extends Component {
           <h1>404</h1>
           <h2>Page Not Found</h2>
           {/* <Link src="/">Come to homepage</Link> */}
-          <a aria-current="page" href={"/homepage-"+this.state._lang} onClick={this.initLang.bind(this)}>Come to homepage</a>
+          <a aria-current="page" href={"/homepage-en"} onClick={this.initLang.bind(this)}>Come to homepage</a>
+          {/* <a aria-current="page" href={"/homepage-"+this.state._lang} onClick={this.initLang.bind(this)}>Come to homepage</a> */}
         </div>
       </>
     )

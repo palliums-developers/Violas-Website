@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 import logoWhite_png from "../images/logo-white.png"
 import logoPurple_png from "../images/logo-purple.png"
-import "../style/header1.css"
+import lang1 from '../images/lang1.png'
+import lang2 from '../images/lang2.png'
+import "../style/header.css"
 
 class Header extends Component {
     constructor(props) {
@@ -13,27 +15,22 @@ class Header extends Component {
         }
     }
     componentWillMount() {
-        // console.log(this.props.wp_path,"header")
     }
     componentDidMount() {
         this.setState({ language: this.props.language });
         this.isPurple();
     }
     isPurple() {
-        // console.log(this.props.wp_path)
-        console.log(this.props.wp_path)
-        let page_type = this.props.wp_path ? this.props.wp_path.split("-")[0] : "media"
-        if (page_type === "media" || page_type === "whitepaper" || page_type === "developers") {
+        let page_type = this.props.wp_path ? this.props.wp_path.split("-")[0] : "media";
+        if (page_type === "media" || page_type === "whitepaper" || page_type === "developers" || page_type === "blog") {
             this.setState({ purple: true })
+            return
         } else {
             this.setState({ purple: false })
+            return
         }
     }
     changeLang(_chosenLang) {
-        // if (this.props.wp_path === "media") {
-        //     return this.props.wp_path
-        // }
-        console.log(this.props.wp_path,'header1')
         let type = this.props.wp_path ? this.props.wp_path.split("-")[0] : null
         let slug = "/media"
         if (type !== "media") {
@@ -42,76 +39,86 @@ class Header extends Component {
         return slug
     }
     changeSession(_chosenLang) {
-        // sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
         if (typeof window !== 'undefined') {
             sessionStorage.setItem("violas-lang", JSON.stringify(_chosenLang))
         }
+    }
+    langListBorder(_temp) {
+        if (_temp === "clickLang") {
+            return this.state.purple ? { color: "#501ba2", border: "#501ba2 1px solid" } : { color: "white" }
+        }
+        return this.state.purple ? { border: "#501ba2 1.5px solid" } : {}
     }
     clickLangList(_lang) {
         switch (_lang) {
             case "en":
                 return (
-                    <>
-                        <a
-                            // style={this.state.purple ? { color: "white" } : { color: "#501ba2" }}
-                            style={{ color: "#501ba2" }}
-                            aria-current="page"
-                            href={this.changeLang("ja")}
-                            onClick={this.changeSession.bind(this, "ja")}
-                        >
-                            日本語
+                    <div className="aaa" style={this.langListBorder()}>
+                        <div className="aaa1">
+                            <a
+                                aria-current="page"
+                                href={this.changeLang("ja")}
+                                onClick={this.changeSession.bind(this, "ja")}
+                            >
+                                日本語
                         </a>
-                        <a
-                            style={{ color: "#501ba2" }}
-                            aria-current="page"
-                            href={this.changeLang("ko")}
-                            onClick={this.changeSession.bind(this, "ko")}
-                        >
-                            한국어
+                        </div>
+                        <div className="aaa1">
+                            <a
+                                aria-current="page"
+                                href={this.changeLang("ko")}
+                                onClick={this.changeSession.bind(this, "ko")}
+                            >
+                                한국어
                         </a>
-                    </>
+                        </div>
+                    </div>
                 )
             case "ja":
                 return (
-                    <>
-                        <a
-                            style={{ color: "#501ba2" }}
-                            aria-current="page"
-                            href={this.changeLang("en")}
-                            onClick={this.changeSession.bind(this, "en")}
-                        >
-                            EN
+                    <div className="aaa" style={this.langListBorder()}>
+                        <div className="aaa1">
+                            <a
+                                aria-current="page"
+                                href={this.changeLang("ko")}
+                                onClick={this.changeSession.bind(this, "ko")}
+                            >
+                                한국어
                         </a>
-                        <a
-                            style={{ color: "#501ba2" }}
-                            aria-current="page"
-                            href={this.changeLang("ko")}
-                            onClick={this.changeSession.bind(this, "ko")}
-                        >
-                            한국어
+                        </div>
+                        <div className="aaa1">
+                            <a
+                                aria-current="page"
+                                href={this.changeLang("en")}
+                                onClick={this.changeSession.bind(this, "en")}
+                            >
+                                EN
                         </a>
-                    </>
+                        </div>
+                    </div>
                 )
             case "ko":
                 return (
-                    <>
-                        <a
-                            style={{ color: "#501ba2" }}
-                            aria-current="page"
-                            href={this.changeLang("ja")}
-                            onClick={this.changeSession.bind(this, "ja")}
-                        >
-                            日本語
+                    <div className="aaa" style={this.langListBorder()}>
+                        <div className="aaa1">
+                            <a
+                                aria-current="page"
+                                href={this.changeLang("ja")}
+                                onClick={this.changeSession.bind(this, "ja")}
+                            >
+                                日本語
                         </a>
-                        <a
-                            style={{ color: "#501ba2" }}
-                            aria-current="page"
-                            href={this.changeLang("en")}
-                            onClick={this.changeSession.bind(this, "en")}
-                        >
-                            EN
+                        </div>
+                        <div className="aaa1">
+                            <a
+                                aria-current="page"
+                                href={this.changeLang("en")}
+                                onClick={this.changeSession.bind(this, "en")}
+                            >
+                                EN
                         </a>
-                    </>
+                        </div>
+                    </div>
                 )
         }
     }
@@ -120,7 +127,7 @@ class Header extends Component {
     }
     clickLang(_lang) {
         let temp = _lang === "en" ? "EN" : _lang === "ja" ? "日本語" : _lang === "ko" ? "한국어" : "";
-        return (<p style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} onClick={this.clickLangButton.bind(this)}>{temp}</p>)
+        return (<a className="aa" href="javascript:void(0);" style={this.langListBorder("clickLang")} onClick={this.clickLangButton.bind(this)}>{temp}<img src={this.state.purple ? lang2 : lang1}></img></a>)
     }
     // storeSession = (_lang) => {
     //     sessionStorage.setItem("violas-lang", JSON.stringify(_lang))
@@ -137,7 +144,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/developers-en">Developers</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/media">Media</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
-                    <a aria-current="page" className="whitepaper" href="/whitepaper-en">WhitePaper</a>
+                    <a aria-current="page" className={this.state.purple ? "whitepaper1" : "whitepaper"} href="/whitepaper-en">WhitePaper</a>
                 </>
             case "ja":
                 return <>
@@ -149,7 +156,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/developers-ja">開発者</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/media">メディア</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
-                    <a aria-current="page" className="whitepaper" href="/whitepaper-ja">ホワイトペーパー</a>
+                    <a aria-current="page" className={this.state.purple ? "whitepaper1" : "whitepaper"} href="/whitepaper-ja">ホワイトペーパー</a>
                 </>
             case "ko":
                 return <>
@@ -161,7 +168,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/developers-ko">개발자</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/media">미디어</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
-                    <a aria-current="page" className="whitepaper" href="/whitepaper-ko">백서</a>
+                    <a aria-current="page" className={this.state.purple ? "whitepaper1" : "whitepaper"} href="/whitepaper-ko">백서</a>
                 </>
         }
     }

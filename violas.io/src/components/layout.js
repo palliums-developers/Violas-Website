@@ -5,13 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { Component, Children } from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header1"
-import Header1 from "./header2"
+// import { useStaticQuery, graphql } from "gatsby"
+import Header1 from "./header1"
+import Header2 from "./header2"
 import Footer from "./footer"
 import "../style/layout.css"
+import { createStore } from "redux"
 
 // const Layout = ({ children }) => {
 //   const data = useStaticQuery(graphql`
@@ -25,7 +26,7 @@ import "../style/layout.css"
 //   `)
 //   return (
 //     <>
-//       <Header siteTitle="Violas" />
+//       <Header1 siteTitle="Violas" />
 //       <div
 //         style={{
 //           margin: `0 auto`,
@@ -48,14 +49,28 @@ class Layout extends Component {
     }
   }
   componentWillMount() {
-    let temp_lang = (this.getSession("violas-lang") ? this.getSession("violas-lang").split('"')[1] : 'en')
+    let temp_lang = (this.getSession("violas-lang") ? this.getSession("violas-lang").split('"')[0] : 'en')
+    console.log(temp_lang)
     if (temp_lang) {
       this.setState({ UserLang: temp_lang })
     } else {
       let browserLang = this.getBrowserLang()
+      console.log(browserLang)
+      if(browserLang==='en'||browserLang==='ja'||browserLang==='ko'){
+      }else{
+        browserLang='en'
+      }
       this.setViolasLang(browserLang)
       this.setState({ UserLang: browserLang })
     }
+  }
+  componentDidMount() {
+    // const counterReducer=(state={count:1},action)=>{
+    //   return state;
+    // }
+    // const store=createStore(counterReducer)
+    // console.log(store)
+    // console.log(store.getState())
   }
   getBrowserLang = () => {
     let lang_full =
@@ -80,20 +95,14 @@ class Layout extends Component {
       return window.location.pathname.split("/")[1].split("-")[0]
     }
   }
-  callbackLang = (_childData) => {
-    this.setState({ UserLang: _childData })
-  }
+  // callbackLang = (_childData) => {
+  //   this.setState({ UserLang: _childData })
+  // }
   render() {
-    // console.log(this.props.children._self.props.path===undefined?111:222)
-    // let temp = { wp_path: this.getCurrentUrl() }
-    // console.log(this.getCurrentUrl())
     return (
       <>
-        {/* <Header language={this.state.UserLang} wp_path={this.props.children._self.props.path?this.props.children._self.props.path.split("/")[1]:"blog"}/> */}
-        {/* <Header language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} />
-        <Header1 language={this.state.UserLang} wp_path={this.props.children._self ? this.props.children._self.props.path.split("/")[1] : undefined} /> */}
-        <Header language={this.state.UserLang} callbackLang={this.callbackLang} wp_path={this.getCurrentUrl()} />
         <Header1 language={this.state.UserLang} wp_path={this.getCurrentUrl()} />
+        <Header2 language={this.state.UserLang} wp_path={this.getCurrentUrl()} />
         <div
           style={{
             margin: `0 auto`,
@@ -101,10 +110,6 @@ class Layout extends Component {
             padding: `0 1.0875rem 1.45rem`,
           }}
         >
-          {/* <main>{React.Children.map(this.props.children,child=>(
-            React.cloneElement(child,{wp_path:this.getCurrentUrl()})
-          ))}</main> */}
-          {/* <main>{this.props.children({ ...this.props, ...temp })}</main> */}
           <main>{this.props.children}</main>
         </div>
         <Footer language={this.state.UserLang} wp_path={this.getCurrentUrl()} />

@@ -1,7 +1,5 @@
 import React, { Component } from "react"
-import { Link, graphql } from "gatsby"
-import Header from "../components/header"
-import Footer from "../components/footer"
+// import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -49,6 +47,10 @@ class HomePage extends Component {
       this.setState({ UserLang: temp_lang })
     } else {
       let browserLang = this.getBrowserLang()
+      if(browserLang==='en'||browserLang==='ja'||browserLang==='ko'){
+      }else{
+        browserLang='en'
+      }
       this.storeSession(browserLang)
       this.setState({ UserLang: browserLang })
     }

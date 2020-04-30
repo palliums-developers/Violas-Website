@@ -1,0 +1,21 @@
+.checklist{
+    margin: 10px auto;
+    width: 100%;
+}
+.checklist1{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.checklist1 p{
+    width: 13%;
+    text-align: center;
+    border: olive 1px solid;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+.checklist1 .uid{
+    width: 20px;
+}
