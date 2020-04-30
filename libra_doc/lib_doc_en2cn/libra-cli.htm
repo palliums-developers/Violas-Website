@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Libra CLI · Libra</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content="Docusaurus" />
+  <meta name="description"
+    content="This guide describes how to use the Libra command line interface (CLI) client to interact with the Libra Blockchain. The CLI is invoked as an interactive shell. It provides basic commands to create accounts, mint coins, perform transfers, and query the blockchain. You can use the CLI client to interact with a validator node on the testnet, on a local Libra Blockchain, or on a remote blockchain by specifying the node&#x27;s hostname." />
+  <meta name="docsearch:language" content="en" />
+  <meta property="og:title" content="Libra CLI · Libra" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://developers.libra.org/" />
+  <meta property="og:description"
+    content="This guide describes how to use the Libra command line interface (CLI) client to interact with the Libra Blockchain. The CLI is invoked as an interactive shell. It provides basic commands to create accounts, mint coins, perform transfers, and query the blockchain. You can use the CLI client to interact with a validator node on the testnet, on a local Libra Blockchain, or on a remote blockchain by specifying the node&#x27;s hostname." />
+  <meta property="og:image" content="https://developers.libra.org/img/libra.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://developers.libra.org/img/libra.png" />
+  <link rel="shortcut icon" href="libra.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" />
+  <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Libra Blog ATOM Feed" />
+  <link rel="alternate" type="application/rss+xml" href="feed.xml" title="Libra Blog RSS Feed" />
+  <script type="text/javascript" src="buttons.js"></script>
+  <script type="text/javascript" src="code_block_buttons.js"></script>
+  <script type="text/javascript" src="cookie_banner.js"></script>
+  <script type="text/javascript" src="disable_adblock.js"></script>
+  <script type="text/javascript" src="segment.analytics.min.js"></script>
+  <script type="text/javascript" src="segment.js"></script>
+  <script type="text/javascript" src="clipboardjs.2.0.0.min.js"></script>
+  <script type="text/javascript" src="forms.js"></script>
+  <script src="scrollSpy.js"></script>
+  <link rel="stylesheet" href="main.css" />
+  <script src="codetabs.js"></script>
+</head>
+
+<body class="sideNavVisible separateOnPageNav">
+  <div class="fixedHeaderContainer">
+    <div class="headerWrapper wrapper">
+      <header><a href="https://developers.libra.org/"><img class="logo" src="libra-nav-logo.png" alt="Libra" />
+          <h2 class="headerTitleWithLogo">Libra</h2>
+        </a>
+        <div class="navigationWrapper navigationSlider">
+          <nav class="slidingNav">
+            <ul class="nav-site nav-site-internal">
+                <li class=""><a href="https://violas.io/">主页</a></li>
+                <li class="siteNavGroupActive siteNavItemActive"><a href="welcome-to-libra.htm" target="_self">文档</a></li>
+                <li class=""><a href="https://community.libra.org" target="_self">Libra 社区</a></li>
+                <li class=""><a href="blog_2.html" target="_self">Libra Blog</a></li>
+                <li class=""><a href="https://libra.org" target="_self">Libra 官网</a></li>
+                <li class=""><a href="https://github.com/libra/libra" target="_self">Libra GitHub</a></li>
+                <li class=""><a href="../lib_doc_en/libra-cli.htm" target="_self">中/EN</a></li>
+              <li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react"
+                  placeholder="Search" title="Search" /></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </div>
+  <div class="navPusher">
+    <div class="docMainWrapper wrapper">
+      <div class="docsNavContainer" id="docsNav">
+        <nav class="toc">
+          <div class="toggleNav">
+            <section class="navWrapper wrapper">
+              <div class="navBreadcrumb wrapper">
+                <div class="navToggle" id="navToggler">
+                  <div class="hamburger-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                  </div>
+                </div>
+                <h2><i>›</i><span>学习 Libra</span></h2>
+                <div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div>
+              </div>
+              <div class="navGroups">
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习 Libra</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="welcome-to-libra.htm">欢迎</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="libra-protocol.htm">Libra 协议: 核心概念</a></li>
+                    <li class="navListItem"><a class="navItem" href="life-of-a-transaction.htm">交易的生命周期</a></li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">技术论文</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="the-libra-blockchain-paper.htm">Libra 区块链</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="move-paper.htm">Move: 一种可编程资源的语言</a></li>
+                        <li class="navListItem"><a class="navItem"
+                            href="state-machine-replication-paper.htm">Libra区块链中状态机的复制</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">学习Libra核心</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="my-first-transaction.htm">我的第一笔交易</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="move-overview.htm">Move概述</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="run-local-network.htm">在本地网络上运行</a></li>
+                    <li class="navListItem"><a class="navItem" href="run-move-locally.htm">本地运行Move程序</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">社区</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-open-source-paper.htm">Libra开源</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="contributing.htm">贡献指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="coding-guidelines.htm">代码指南</a></li>
+                    <li class="navListItem"><a class="navItem" href="security.htm">报告漏洞</a></li>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">Libra 协议实现</h3>
+                  <ul class="">
+                    <li class="navListItem"><a class="navItem" href="libra-core-overview.htm">Libra Core概述</a>
+                    </li>
+                    <div class="navGroup subNavGroup">
+                      <h4 class="navGroupSubcategoryTitle">READMEs</h4>
+                      <ul>
+                        <li class="navListItem"><a class="navItem" href="admission-control.htm">准入控制 admission
+                            control</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="bytecode-verifier.htm">字节码验证器 Bytecode
+                            Verifier</a>
+                        </li>
+                        <li class="navListItem"><a class="navItem" href="consensus.htm">共识组件 Consensus</a></li>
+                        <li class="navListItem"><a class="navItem" href="crypto.htm">加密组件 Crypto</a></li>
+                        <li class="navListItem"><a class="navItem" href="execution.htm">执行组件 Execution</a></li>
+                        <li class="navListItem"><a class="navItem" href="mempool.htm">内存池 Mempool</a></li>
+                        <li class="navListItem"><a class="navItem" href="ir-to-bytecode.htm">Move IR 编译器</a></li>
+                        <li class="navListItem"><a class="navItem" href="move-language.htm">Move 语言</a></li>
+                        <li class="navListItem"><a class="navItem" href="network.htm">网络组件 Network</a></li>
+                        <li class="navListItem"><a class="navItem" href="storage.htm">存储组件 Storage</a></li>
+                        <li class="navListItem"><a class="navItem" href="vm.htm">虚拟机 Virtual Machine</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </div>
+                <div class="navGroup">
+                  <h3 class="navGroupCategoryTitle">参考引用</h3>
+                  <ul class="">
+                    <li class="navListItem navListItemActive"><a class="navItem" href="libra-cli.htm">Libra命令行工具</a>
+                    </li>
+                    <li class="navListItem"><a class="navItem" href="glossary.htm">词汇表</a></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory) {
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')) {
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function () {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function (event) {
+                var el = event.target;
+                while (el !== headings) {
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else {
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function (event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+          </script>
+        </nav>
+      </div>
+      <div class="container mainContainer">
+        <div class="wrapper">
+          <div class="post">
+            <header class="postHeader"><a class="edit-page-link button"
+                href="https://github.com/libra/website/edit/master/docs/reference/libra-cli.md" target="_blank"
+                rel="noreferrer noopener">编辑</a>
+              <h1 class="postHeaderTitle">Libra CLI 命令指南</h1>
+            </header>
+            <article>
+              <div><span>
+                  <p>T本指南介绍如何使用Libra命令行界面客户端（CLI）与Libra 区块链进行交互。 CLI作为交互式shell调用。 它提供了创建帐户，铸币，资产交易和查询区块链的基本命令。 您可以使用CLI客户端通过指定节点的主机名与testnet上的验证器节点，本地Libra 区块链或远程区块链进行交互。</p>
+                  <h2><a class="anchor" aria-hidden="true" id="invocation"></a><a href="libra-cli.htm#invocation"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>调用</h2>
+                  <p>有三种方法可以调用Libra CLI客户端。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="connect-to-the-testnet-via-the-cli-client"></a><a
+                      href="libra-cli.htm#connect-to-the-testnet-via-the-cli-client" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>通过CLI客户端连接到Testnet</h3>
+                  <p>要通过CLI连接到testnet，可以使用便捷脚本来调用CLI，而无需指定参数。 要调用它，请切换到libra目录并运行:</p>
+                  <pre><code class="hljs css language-bash">./scripts/cli/start_cli_testnet.sh
+</code></pre>
+                  <h3><a class="anchor" aria-hidden="true" id="run-a-local-libra-network-and-spawn-a-cli-client"></a><a
+                      href="libra-cli.htm#run-a-local-libra-network-and-spawn-a-cli-client" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>运行本地Libra网络和CLI客户端</h3>
+                  <p>要启动本地Libra网络并生成连接到此本地网络的CLI客户端，请运行：</p>
+                  <pre><code class="hljs css language-bash">cargo run -p libra_swarm -- -s
+
+</code></pre>
+                  <p><code>-s</code> 选项使CLI在本地Libra网络启动后运行。 请注意，这可能需要几分钟才能构建然后启动。</p>
+                  <h3><a class="anchor" aria-hidden="true" id="run-a-cli-client-to-connect-to-any-libra-network"></a><a
+                      href="libra-cli.htm#run-a-cli-client-to-connect-to-any-libra-network" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>运行CLI客户端以连接到任意Libra网络</h3>
+                  <p>要调用CLI客户端并自行配置，请运行：</p>
+                  <pre><code class="hljs css language-bash">cargo run -p client --bin client -- [OPTIONS] --host &lt;host&gt; --validator_set_file &lt;validator_set_file&gt;
+
+</code></pre>
+                  <h4><a class="anchor" aria-hidden="true" id="options"></a><a href="libra-cli.htm#options"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>选项</h4>
+                  <p>运行CLI客户端命令以连接到任一Libra网络的选项包括：</p>
+                  <ul>
+                    <li><code>-m | --faucet_key_file_path</code> — 生成的faucet帐户密钥对的路径。 faucet帐户可用于铸币。 如果未通过，将为您生成一个新的密钥对，并将其放在临时目录中。 要手动生成密钥对，请使用： <code>cargo run -p generate_keypair -- -o &lt;output_file_path&gt;</code>.</li>
+                    <li><code>-f | --faucet_server</code> — 操作faucet服务的主机。如果没有传递，这将从host参数派生。</li>
+                    <li><code>-a | —-host</code> — CLI要连接的目标主机。</li>
+                    <li><code>-p | -—port</code> — 目标Libra 区块链的公共端口供客户端连接，默认值为30307。</li>
+                    <li><code>-n | --mnemonic_file</code> — T他提供加载用户帐户地址/密钥生成的助记词的文件位置。 如果未通过，则libra_wallet将在当前目录中生成新的助记词文件。</li>
+                    <li><code>-s | --validator_set_file</code> — 用于加载受信任验证程序配置的文件位置。 它用于验证验证器查询响应中的验证器签名。 该文件至少应包含客户端信任的所有验证器的公钥 — 通常应该是网络上的所有验证器。 要连接到testnet，请使用 'libra/scripts/cli/trusted_peers.config.toml'. 可以通过libra-config为本地测试生成:
+                      <code>cargo run --bin libra-config</code> 但首选方法是使用libra-swarm来运行本地网络。</li>
+                  </ul>
+                  <h2><a class="anchor" aria-hidden="true" id="commands"></a><a href="libra-cli.htm#commands"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>命令</h2>
+                  <p>使用前面提到的三个命令中的任何一个启动后，可以使用以下CLI命令：</p>
+                  <pre><code class="hljs css language-plaintext">major_command subcommand [options]
+</code></pre>
+                  <p>如果仅输入主命令，它将显示该命令的帮助信息。 主命令可以是以下任何一种：</p>
+                  <hr>
+                  <h4><a class="anchor" aria-hidden="true"
+                      id="account-a-mdash-account-related-operations-subcommands-include"></a><a
+                      href="libra-cli.htm#account-a-mdash-account-related-operations-subcommands-include"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>account | a</code> — A帐户相关操作，子命令包括：</h4>
+                  <p><code>create | c</code> — 使用私钥/公钥对创建随机帐户。 帐户信息仅保存在内存中。 创建的帐户不会保存到链中。</p>
+                  <pre><code class="hljs">   Usage:
+    create|c
+</code></pre>
+                  <p><code>list | la</code> —  输出显示已创建或加载的所有帐户。</p>
+                  <pre><code class="hljs"> Usage:
+    list|la
+</code></pre>
+                  <p><code>recover | r &lt;file_path&gt;</code> — R恢复所有帐户，已写入一个文件通过  <code>account write</code> 命令恢复。</p>
+                  <pre><code class="hljs"> Usage:
+    recover|r &lt;file_path&gt;
+ Arguments:
+     file_path - File path from which to load mnemonic recover seed.  Must have been written via `account write`
+</code></pre>
+                  <p><code>write | w &lt;file path&gt;</code> — 将Libra钱包助记词恢复种子保存到磁盘。 这将允许通过  <code>account recover</code>命令恢复账户。</p>
+                  <pre><code class="hljs"> Usage:
+    write|w &lt;file_path&gt;
+ Arguments:
+     file_path - File path at which to save the mnemonic recovery seed to disk.
+</code></pre>
+                  <p><code>&lt;mint | m&gt; | &lt;mintb| mb&gt;</code> — 铸币或者添加币到帐户。 后缀'b'用于块标记，如果指定了块（使用后缀'b'），CLI将查询链，直到交易完成/可用。 其他子“块”命令也是如此。</p>
+                  <pre><code class="hljs">  Usage:
+    mint|mint|m|b &lt;receiver_account_ref_id&gt;|&lt;receiver_account_address&gt; &lt;number_of_coins&gt;
+  Arguments:
+      receiver_account_ref_id | receiver_account_address - The receiver account to mint the coins to.
+            If the receiver account does not exist, it will be created first.
+            Either receiver_account_address or receiver_account_ref_id (an internal index of
+            the account in the CLI client) can be used to specify receiver account (as in
+            other commands). If gas is being charged, the account that sent this mint transaction
+            (currently preloaded genesis account) pays for the gas.
+      number_of_coins - The number of coins to be minted to the receiver account.
+</code></pre>
+                  <hr>
+                  <h4><a class="anchor" aria-hidden="true"
+                      id="transfer-transferb-t-tb-mdash-transfer-coins-from-one-account-to-another-suffix-b-is-for-blocking"></a><a
+                      href="libra-cli.htm#transfer-transferb-t-tb-mdash-transfer-coins-from-one-account-to-another-suffix-b-is-for-blocking"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>transfer | transferb | t | tb</code> — 将币从帐户转移到另一个帐户 后缀'b'用于块标记。</h4>
+                  <pre><code class="hljs">Usage:
+    transfer|transferb|t|tb &lt;sender_account_address&gt;|&lt;sender_account_ref_id&gt; &lt;receiver_account_address&gt;|&lt;receiver_account_ref_id&gt; &lt;number_of_coins&gt; [gas_unit_price (default=0)] [max_gas_amount (default 10000)]
+Arguments:
+    sender_account_address | sender_account_ref_id - The account from which this transfer transaction
+        is sent. The sender account pays for the gas.
+    receive_account_address | receiver_account_ref_id - The account to which this transaction sends coins.
+        If the receiver account does not exist, it will be created first. The sender will pay for
+        gas required for both account creation and coin transfer.
+    number_of_coins - The number of coins transferred to receiver account.
+    gas_unit_price - The unit price to pay for gas.
+    max_gas_amount - Max units of gas user is willing to pay for this transaction.
+</code></pre>
+                  <hr>
+                  <h4><a class="anchor" aria-hidden="true"
+                      id="query-q-mdash-query-data-from-destination-chain-all-query-operations-are-blocking-subcommands-include"></a><a
+                      href="libra-cli.htm#query-q-mdash-query-data-from-destination-chain-all-query-operations-are-blocking-subcommands-include"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a><code>query | q</code> — 从目标链查询数据。 所有查询操作都是基于块的。 子命令包括：</h4>
+                  <p><code>balance | b</code> —  获取帐户的当前余额</p>
+                  <pre><code class="hljs"> Usage:
+    balance | b &lt;account_ref_id&gt;|&lt;account_address&gt;
+ Arguments:
+     account_ref_id | account_address - The account to query balance for.
+</code></pre>
+                  <p><code>sequence | s</code> — 获取帐户的当前序列号。</p>
+                  <pre><code class="hljs">  Usage:
+    sequence | s &lt;account_ref_id&gt;|&lt;account_address&gt; [reset_sequence_number=true|false]
+  Arguments:
+      account_ref_id | account_address - The account to get current/latest sequence number.
+      reset_sequence_number - If the sequence number known locally by the CLI differs from the
+            value known on chain, this will reset the local sequence number to to on-chain
+            value.  This is useful when a user encounters an invalid sequence number error.
+</code></pre>
+                  <p><code>account_state | as</code> — 获取帐户的最新状态。</p>
+                  <pre><code class="hljs">  Usage:
+    account_state | as &lt;account_ref_id&gt;|&lt;account_address&gt;
+  Arguments:
+      account_ref_id | account_address - The account to query latest state.
+</code></pre>
+                  <p><code>txn_acc_seq | ts</code> — 按帐户和序列号获取已提交的交易。</p>
+                  <pre><code class="hljs">  Usage:
+    txn_acc_seq | ts &lt;account_ref_id&gt;|&lt;account_address&gt; &lt;sequence_number&gt; &lt;fetch_events=true|false&gt;
+  Arguments:
+      account_ref_id | account_address - The account to query committed transaction.
+      sequence_number - The sequence number of committed transaction.
+      fetch_events - Set to true to fetch events emitted by this transaction.
+</code></pre>
+                  <p><code>txn_range | tr</code> —  按范围获取提交的交易。</p>
+                  <pre><code class="hljs">  Usage:
+    txn_range | tr &lt;start_version&gt; &lt;limit&gt; &lt;fetch_events=true|false&gt;
+  Arguments:
+      start_version - The version to query the transaction from.
+      limit - The maximum number of transactions to query.
+      fetch_events - Set to true to fetch events emitted by each transaction.
+</code></pre>
+                  <p><code>event | ev</code> —  通过帐户和路径获取事件。</p>
+                  <pre><code class="hljs">  Usage:
+    event | ev &lt;account_ref_id&gt;|&lt;account_address&gt; &lt;sent|received&gt; &lt;start_sequence_number&gt; &lt;ascending=true|false&gt; &lt;limit&gt;
+  Arguments:
+      account_ref_id | account_address - The account to query events from.
+      sent | received - Fetch sent or received events for this account.
+            Note that this will later evolve into selecting any event path.
+      start_sequence_number - The sequence number of events to query starting from.
+      ascending - The direction of query from start_sequence_number.
+      limit - The maximum number of events to query.
+      ---
+</code></pre>
+                  <h4><a class="anchor" aria-hidden="true"
+                      id="dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules"></a><a
+                      href="libra-cli.htm#dev-d-mdash-operations-related-to-move-transaction-scripts-and-modules"
+                      aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16"
+                        version="1.1" viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>dev | d — 移动事务脚本和模块有关的操作。</h4>
+                  <blockquote class="block_note">
+                    <p><strong>注意:</strong> 此命令只能在本地网络上使用，不能在testnet上使用。</p>
+                  </blockquote>
+                  <p>子命令包括：</p>
+                  <p><code>compile | c</code> — 编译一个Move程序。</p>
+                  <pre><code class="hljs">Usage:
+  compile | c &lt;sender_account_address&gt;|&lt;sender_account_ref_id&gt; &lt;file_path&gt; &lt;module|script&gt; [output_file_path (compile into tmp file by default)]
+Arguments:
+  sender_account_address|sender_account_ref_id - Address of the sender account|Local index of the sender account.
+  module|script - Distinguishes between move modules and move scripts.
+  file_path - Path to the source Move program written in Intermediate Representation (IR).
+  output_file_path - (Optional) Where the compiled module will be saved.
+</code></pre>
+                  <p><code>publish | p</code> — 在本地区块链上发布移动模块。</p>
+                  <pre><code class="hljs">Usage:
+  publish | p &lt;sender_account_address&gt;|&lt;sender_account_ref_id&gt; &lt;compiled_module_path&gt;
+Arguments:
+  sender_account_address|sender_account_ref_id - Address of the sender account|Local index of the sender account
+  compiled_module_path - Path to the compiled module.
+</code></pre>
+                  <p><code>execute | e</code> — Execute Move transaction script.</p>
+                  <pre><code class="hljs">Usage:
+  execute|e &lt;sender_account_address&gt;|&lt;sender_account_ref_id&gt; &lt;compiled_module_path&gt; [script args]
+Arguments:
+  sender_account_address|sender_account_ref_id - Address of sender account|Local index of the sender account.
+  compiled_module_path -  Path to the compiled transaction script.
+  script args - Arguments expected by the transaction script.
+</code></pre>
+                  <hr>
+                  <p><strong><code>quit | q!</code> — 退出CLI。 不需要子命令.</strong></p>
+                  <hr>
+                  <p><strong><code>help | h</code> — 显示输出帮助。 不需要子命令。</strong></p>
+                  <h3><a class="anchor" aria-hidden="true" id="account-creation-minting-faucet-for-testnet"></a><a
+                      href="libra-cli.htm#account-creation-minting-faucet-for-testnet" aria-hidden="true"
+                      class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1"
+                        viewBox="0 0 16 16" width="16">
+                        <path fill-rule="evenodd"
+                          d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                        </path>
+                      </svg></a>estnet上的帐户创建/铸币(Faucet)</h3>
+                  <p>LI提供的帐户创建会生成本地密钥对，但区块链上不会创建任何内容。 要在区块链上创建帐户：</p>
+                  <ul>
+                    <li>将币交易到您要创建的地址。 如果收件人帐户不存在，将首先创建收件人帐户，然后交易币。 发送方支付创建帐户和转账的费用。</li>
+                    <li>发送铸币、交易币到帐户。 如果该帐户不存在，将首先创建该帐户，并且稍后将铸币。 与其他交易不同，不存在的账户本身可以请求铸币交易。 对于测试网，没有明确限制帐户可以铸造的硬币数量。 它旨在允许用户创建币以在testnet上进行实验。</li>
+                  </ul>
+                </span></div>
+            </article>
+          </div>
+          <div class="docs-prevnext"><a class="docs-prev button" href="vm.htm"><span class="arrow-prev">←
+              </span><span>虚拟机</span></a><a class="docs-next button"
+              href="glossary.htm"><span>词汇表</span><span class="arrow-next"> →</span></a></div>
+        </div>
+      </div>
+      <nav class="onPageNav">
+        <ul class="toc-headings">
+          <li><a href="libra-cli.htm#invocation">调用</a>
+            <ul class="toc-headings">
+              <li><a href="libra-cli.htm#connect-to-the-testnet-via-the-cli-client">通过CLI客户端连接到Testnet</a></li>
+              <li><a href="libra-cli.htm#run-a-local-libra-network-and-spawn-a-cli-client">运行本地Libra网络和CLI客户端</a></li>
+              <li><a href="libra-cli.htm#run-a-cli-client-to-connect-to-any-libra-network">运行CLI客户端以连接到任意Libra网络</a></li>
+            </ul>
+          </li>
+          <li><a href="libra-cli.htm#commands">命令</a>
+            <ul class="toc-headings">
+              <li><a href="libra-cli.htm#account-creation-minting-faucet-for-testnet">Testnet上的帐户创建/铸币(Faucet)</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <footer class="nav-footer" id="footer">
+        <section class="sitemap"><a href="https://developers.libra.org/" class="nav-home"><img
+              src="libra-logomark-white.png" alt="Libra" /></a>
+          <div class="footerSection">
+            <h5>Learn About Libra</h5><a href="welcome-to-libra.htm">Welcome to Libra</a><a
+              href="libra-protocol.htm">Libra Protocol</a><a href="the-libra-blockchain-paper.htm">Libra Blockchain</a><a
+              href="life-of-a-transaction.htm">Life of a Transaction</a>
+            <p></p>
+            <h5>Try Libra Core </h5><a href="my-first-transaction.htm">My First Transaction</a><a
+              href="move-overview.htm">Getting Started With Move</a>
+          </div>
+          <div class="footerSection">
+            <h5>Policies</h5><a href="https://developers.libra.org/docs/policies/privacy-policy.htm">Privacy Policy</a><a href="https://developers.libra.org/docs/policies/terms-of-use.htm">Terms of Use</a><a
+              href="https://developers.libra.org/docs/policies/cookies-policy.htm">Cookies Policy</a><a href="https://developers.libra.org/docs/policies/code-of-conduct.htm">Code of Conduct</a>
+            <p></p>
+            <h5>Community</h5><a href="https://community.libra.org/">Developer Forum</a><a
+              href="https://developers.libra.org/newsletter_form">Newsletter</a>
+          </div>
+          <div class="footerSection">
+            <h5>Libra开发者社区</h5>
+            <img style="width:150px" src='qr_violas.png'>
+            <h5>备注"Libra"加群<h5>
+          </div>
+        </section>
+        <section class="copyright"> © Violas Association</section>
+      </footer>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script>
+    document.addEventListener('keyup', function (e) {
+      if (e.target !== document.body) {
+        return;
+      }
+      // keyCode for '/' (slash)
+      if (e.keyCode === 191) {
+        const search = document.getElementById('search_input_react');
+        search && search.focus();
+      }
+    });
+  </script>
+  <script>
+    var search = docsearch({
+
+      apiKey: '0d48ee629d39ddc4916eeef7755a0c4c',
+      indexName: 'libra',
+      inputSelector: '#search_input_react'
+    });
+  </script>
+</body>
+
+</html>

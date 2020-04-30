@@ -1,12 +1,14 @@
-success open and validate gatsby-configs - 0.021s
-success load plugins - 0.435s
+success open and validate gatsby-configs - 0.026s
+success load plugins - 1.295s
 success onPreInit - 0.003s
-success initialize cache - 0.007s
-success copy gatsby files - 0.040s
-success onPreBootstrap - 0.010s
+info One or more of your plugins have changed since the last time you ran Gatsby. As
+a precaution, we're deleting your site's cache to ensure there's no stale data.
+success initialize cache - 0.484s
+success copy gatsby files - 0.057s
+success onPreBootstrap - 0.011s
 success createSchemaCustomization - 0.006s
 [32m -> wordpress__wp_v2 fetched : 1[0m
-[32m -> wordpress__POST fetched : 1[0m
+[32m -> wordpress__POST fetched : 3[0m
 [32m -> wordpress__PAGE fetched : 23[0m
 [32m -> wordpress__wp_media fetched : 272[0m
 [32m -> wordpress__wp_blocks fetched : 0[0m
@@ -21,7 +23,7 @@ Path: /wp-json/wp/v2/users/me?per_page=100&page=1[0m
 [31mThe server response was "401 Unauthorized"[0m
 [31mInner exception message: "您目前没有登录。"[0m
 [32m -> wordpress__wp_comments fetched : 0[0m
-[32m -> wordpress__wp_search fetched : 24[0m
+[32m -> wordpress__wp_search fetched : 26[0m
 [31m
 Path: /wp-json/wp/v2/settings?per_page=100&page=1[0m
 [31mThe server response was "401 Unauthorized"[0m
@@ -30,31 +32,32 @@ Path: /wp-json/wp/v2/settings?per_page=100&page=1[0m
 Path: /wp-json/wp/v2/themes?per_page=100&page=1[0m
 [31mThe server response was "400 Bad Request"[0m
 [31mInner exception message: "缺少参数：status"[0m
-success source and transform nodes - 1.695s
-success building schema - 0.676s
-success createPages - 0.066s
-success createPagesStatefully - 0.075s
+success Downloading remote files - 1.640s - 272/272 165.81/s
+success source and transform nodes - 3.489s
+success building schema - 0.650s
+success createPages - 0.088s
+success createPagesStatefully - 0.064s
 success onPreExtractQueries - 0.001s
-success update schema - 0.033s
-success extract queries from components - 0.451s
-success write out requires - 0.031s
-success write out redirect data - 0.002s
-success Build manifest and related icons - 0.285s
-success onPostBootstrap - 0.291s
+success update schema - 0.034s
+success extract queries from components - 0.471s
+success write out requires - 0.044s
+success write out redirect data - 0.004s
+success Build manifest and related icons - 0.405s
+success onPostBootstrap - 0.412s
 ⠀
-info bootstrap finished - 6.819 s
+info bootstrap finished - 13.281 s
 ⠀
-success run queries - 0.063s - 28/28 441.61/s
+success run queries - 1.193s - 33/33 27.65/s
 ⠀
 You can now view gatsby-starter-default in the browser.
 ⠀
-  Local:            http://localhost:8000/
-  On Your Network:  http://172.31.154.186:8000/
+  Local:            http://localhost:9000/
+  On Your Network:  http://172.31.154.186:9000/
 ⠀
 View GraphiQL, an in-browser IDE, to explore your site's data and schema
 ⠀
-  Local:            http://localhost:8000/___graphql
-  On Your Network:  http://172.31.154.186:8000/___graphql
+  Local:            http://localhost:9000/___graphql
+  On Your Network:  http://172.31.154.186:9000/___graphql
 ⠀
 Note that the development build is not optimized.
 To create a production build, use gatsby build
@@ -65,9 +68,9 @@ warn ESLintError:
                           no-unused-vars
     2:8   warning  'PropTypes' is defined but never used
                           no-unused-vars
-   26:5   warning  Expected a default case
+   41:5   warning  Expected a default case
                           default-case
-  132:18  warning  img elements must have an alt prop, either with meaningful text, or an empty
+  148:18  warning  img elements must have an alt prop, either with meaningful text, or an empty
 warn ESLintError:
 /home/ops/huangw/temp/Violas-Website/violas.io/src/components/header.js
    3:10  warning  'graphql' is defined but never used         no-unused-vars
@@ -75,77 +78,77 @@ warn ESLintError:
    3:25  warning  'useStaticQuery' is defined but never used  no-unused-vars
    3:41  warning  'StaticQuery' is defined but never used     no-unused-vars
    6:8   warning  'Img' is defined but never used             no-unused-vars
-  69:5   warning  Expected a default case                     default-case
+  71:5   warning  Expected a default case                     default-case
 
 ✖ 6 problems (0 errors, 6 warnings)
 
 warn ESLintError:
 /home/ops/huangw/temp/Violas-Website/violas.io/src/components/header1.js
-   42:9    warning  Expected a default case
-
-
-                                                                          default-case
-  114:17   warning  Visible, non-interactive elements with click handlers must have at least one
-keyboard listener
-
-
-jsx-a11y/click-events-have-key-events
-  114:17   warning  Non-interactive elements should not be assigned mouse or keyboard event
+   51:9    warning  Expected a default case
+                                              default-case
+  123:17   warning  Non-interactive elements should not be assigned mouse or keyboard event
 listeners
-
-
+jsx-a11y/no-noninteractive-element-interactions
+  123:17   warning  Visible, non-interactive elements with click handlers must have at least one
+keyboard listener                                jsx-a11y/click-events-have-key-events
+  129:9    warning  Expected a default case
+                                              default-case
+  132:151  warning  img elements must have an alt prop, either with meaningful text, or an empty
+string for decorative images                     jsx-a11y/alt-text
+  136:155  warning  Using target="_blank" without rel="noopener noreferrer" is a security risk: see
+https://mathiasbynens.github.io/rel-noopener  react/jsx-no-target-blank
+  139:143  warning  Using target="_blank" without rel="noopener noreferrer" is a security risk: see
+https://mathiasbynens.github.io/rel-noopener  react/jsx-no-target-blank
+  144:151  warning  img elements must have an alt prop, either with meaningful text, or an empty
 warn ESLintError:
 /home/ops/huangw/temp/Violas-Website/violas.io/src/components/header2.js
     2:8   warning  'logoWhite_png' is defined but never used
 
 
                                                                                 no-unused-vars
-   34:9   warning  Expected a default case
+   59:9   warning  Expected a default case
 
 
                                                                                 default-case
-  104:9   warning  Expected a default case
+  131:9   warning  Expected a default case
 
 
                                                                                 default-case
-  114:21  warning  The href attribute requires a valid value to be accessible. Provide a valid,
-navigable address as the href value. If you cannot provide a valid href, but still need the element
-to resemble a link, use a button and change it with appropriate styles. Learn more:
-https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
-jsx-a11y/anchor-is-valid
-  126:21  warning  The href attribute requires a valid value to be accessible. Provide a valid,
-navigable address as the href value. If you cannot provide a valid href, but still need the element
+  137:85  warning  Using target="_blank" without rel="noopener noreferrer" is a security risk: see
+https://mathiasbynens.github.io/rel-noopener
+
+
+react/jsx-no-target-blank
+  140:73  warning  Using target="_blank" without rel="noopener noreferrer" is a security risk: see
+https://mathiasbynens.github.io/rel-noopener
+
+
+react/jsx-no-target-blank
 warn ESLintError:
 /home/ops/huangw/temp/Violas-Website/violas.io/src/components/langLink.js
     3:10  warning  'graphql' is defined but never used
                           no-unused-vars
     3:19  warning  'useStaticQuery' is defined but never used
                           no-unused-vars
-  111:7   warning  Expected a default case
+  108:7   warning  Expected a default case
                           default-case
-  114:86  warning  img elements must have an alt prop, either with meaningful text, or an empty
+  111:90  warning  img elements must have an alt prop, either with meaningful text, or an empty
 string for decorative images  jsx-a11y/alt-text
-  118:86  warning  img elements must have an alt prop, either with meaningful text, or an empty
+  115:90  warning  img elements must have an alt prop, either with meaningful text, or an empty
 string for decorative images  jsx-a11y/alt-text
 warn ESLintError:
 /home/ops/huangw/temp/Violas-Website/violas.io/src/components/layout.js
+   8:28  warning  'Children' is defined but never used        no-unused-vars
   10:10  warning  'useStaticQuery' is defined but never used  no-unused-vars
   10:26  warning  'graphql' is defined but never used         no-unused-vars
 
-✖ 2 problems (0 errors, 2 warnings)
+✖ 3 problems (0 errors, 3 warnings)
 
 warn ESLintError:
 /home/ops/huangw/temp/Violas-Website/violas.io/src/pages/404.js
   3:8  warning  'Layout' is defined but never used  no-unused-vars
 
 ✖ 1 problem (0 errors, 1 warning)
-
-warn ESLintError:
-/home/ops/huangw/temp/Violas-Website/violas.io/src/pages/blog.js
-  3:8  warning  'Header' is defined but never used  no-unused-vars
-  4:8  warning  'Footer' is defined but never used  no-unused-vars
-
-✖ 2 problems (0 errors, 2 warnings)
 
 warn ESLintError:
 /home/ops/huangw/temp/Violas-Website/violas.io/src/pages/index.js
@@ -157,18 +160,33 @@ warn ESLintError:
 ✖ 4 problems (0 errors, 4 warnings)
 
 warn ESLintError:
-/home/ops/huangw/temp/Violas-Website/violas.io/src/templates/page.js
-   24:9   warning  'mySwiper1' is assigned a value but never used  no-unused-vars
-   37:9   warning  'mySwiper2' is assigned a value but never used  no-unused-vars
-  121:46  warning  Unexpected string concatenation of literals     no-useless-concat
-
-✖ 3 problems (0 errors, 3 warnings)
-
-warn ESLintError:
-/home/ops/huangw/temp/Violas-Website/violas.io/src/templates/post.js
+/home/ops/huangw/temp/Violas-Website/violas.io/src/pages/media.js
   3:8  warning  'Header' is defined but never used  no-unused-vars
   4:8  warning  'Footer' is defined but never used  no-unused-vars
 
 ✖ 2 problems (0 errors, 2 warnings)
 
-success Building development bundle - 4.857s
+warn ESLintError:
+/home/ops/huangw/temp/Violas-Website/violas.io/src/templates/page.js
+  11:8  warning  'homepage_jpg' is defined but never used        no-unused-vars
+  17:8  warning  'vision_jpg1' is defined but never used         no-unused-vars
+  18:8  warning  'association_jpg1' is defined but never used    no-unused-vars
+  19:8  warning  'partners_jpg1' is defined but never used       no-unused-vars
+  20:8  warning  'media_jpg1' is defined but never used          no-unused-vars
+  21:8  warning  'cover_png' is defined but never used           no-unused-vars
+  24:3  warning  Useless constructor                             no-useless-constructor
+  40:9  warning  'mySwiper1' is assigned a value but never used  no-unused-vars
+  53:9  warning  'mySwiper2' is assigned a value but never used  no-unused-vars
+
+✖ 9 problems (0 errors, 9 warnings)
+
+warn ESLintError:
+/home/ops/huangw/temp/Violas-Website/violas.io/src/templates/post.js
+  3:8  warning  'Header1' is defined but never used  no-unused-vars
+  4:8  warning  'Header2' is defined but never used  no-unused-vars
+  5:8  warning  'Footer' is defined but never used   no-unused-vars
+  9:8  warning  'Header' is defined but never used   no-unused-vars
+
+✖ 4 problems (0 errors, 4 warnings)
+
+success Building development bundle - 6.664s
