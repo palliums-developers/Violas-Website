@@ -22,8 +22,10 @@ class IEEE_presentation extends Component {
         let data = JSON.stringify({
             password: this.state.password,
         })
-        let ip = '47.52.66.26'
-        let url = 'http://' + ip + ':9002/getAllUserData'
+        // let ip = '47.52.66.26';
+        // let ip = 'localhost'
+        // let url = 'http://' + ip + ':9002/getAllUserData'
+        let url = 'https://IEEEBackend.violas.io/getAllUserData'
         // fetch()
         //     .then(res => res.json())
         //     // .then(res => console.log(res.length))

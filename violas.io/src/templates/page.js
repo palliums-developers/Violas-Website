@@ -288,7 +288,8 @@ class Page extends Component {
   postFun() {
     let ip = '47.52.66.26'
     // let ip = 'localhost'
-    let url = 'http://' + ip + ':9002/postUserData';
+    let url1 = 'http://' + ip + ':9002/postUserData';
+    let url = 'https://IEEEBackend.violas.io/postUserData'
     let temp = this.state.business;
     if (temp === "other") {
       temp = this.state.specify;
