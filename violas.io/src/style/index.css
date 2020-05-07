@@ -1614,6 +1614,7 @@ footer .email p span {
     font-size: 20px;
   }
   .vs_img {
+    width:100%;
     margin: 0 auto;
     margin-top: 180px;
     margin-bottom: 80px;
