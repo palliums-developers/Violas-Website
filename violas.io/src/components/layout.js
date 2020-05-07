@@ -50,12 +50,12 @@ class Layout extends Component {
   }
   componentWillMount() {
     let temp_lang = (this.getSession("violas-lang") ? this.getSession("violas-lang").split('"')[0] : 'en')
-    console.log(temp_lang)
+    // console.log(temp_lang)
     if (temp_lang) {
       this.setState({ UserLang: temp_lang })
     } else {
       let browserLang = this.getBrowserLang()
-      console.log(browserLang)
+      // console.log(browserLang)
       if(browserLang==='en'||browserLang==='ja'||browserLang==='ko'){
       }else{
         browserLang='en'
