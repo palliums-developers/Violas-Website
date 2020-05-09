@@ -143,7 +143,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas" target="_blank">Blockchain Explorer</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/developers-en">Developers</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/media">Media</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://wallet.violas.io/" target="_blank">Wallet</a>
                     <a aria-current="page" className={this.state.purple ? "whitepaper1" : "whitepaper"} href="/whitepaper-en">WhitePaper</a>
                 </>
             case "ja":
@@ -155,7 +155,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas" target="_blank">ブロックチェーン エクスプローラ</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/developers-ja">開発者</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/media">メディア</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://wallet.violas.io/" target="_blank">Wallet</a>
                     <a aria-current="page" className={this.state.purple ? "whitepaper1" : "whitepaper"} href="/whitepaper-ja">ホワイトペーパー</a>
                 </>
             case "ko":
@@ -167,7 +167,7 @@ class Header extends Component {
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://testnet.violas.io/app/Violas" target="_blank">블록체인 탐색기</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/developers-ko">개발자</a>
                     <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} aria-current="page" className="link" href="/media">미디어</a>
-                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="http://47.52.66.26:10089" target="_blank">Wallet</a>
+                    <a style={this.state.purple ? { color: "#501ba2" } : { color: "white" }} className="link" href="https://wallet.violas.io/" target="_blank">Wallet</a>
                     <a aria-current="page" className={this.state.purple ? "whitepaper1" : "whitepaper"} href="/whitepaper-ko">백서</a>
                 </>
         }

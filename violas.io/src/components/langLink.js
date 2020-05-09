@@ -7,6 +7,7 @@ import logoWhiteS_png from "../images/logo-purple-single.png"
 import logoPurpleS_png from "../images/logo-purple-single.png"
 
 const explorerUrl = "https://testnet.violas.io/app/Violas"
+const walletUrl = "https://wallet.violas.io/"
 
 const router = {
   en: [
@@ -17,6 +18,7 @@ const router = {
     ["Blockchain Explorer", explorerUrl],
     ["Developers", "developers-en"],
     ["Media", "media"],
+    ["Wallet", walletUrl],
     ["WhitePaper", "whitepaper-en"],
   ],
   ja: [
@@ -27,6 +29,7 @@ const router = {
     ["ブロックチェーン エクスプローラ", explorerUrl],
     ["開発者", "developers-ja"],
     ["メディア", "media"],
+    ["Wallet", walletUrl],
     ["ホワイトペーパー", "whitepaper-ja"],
   ],
   ko: [
@@ -37,6 +40,7 @@ const router = {
     ["블록체인 탐색기", explorerUrl],
     ["개발자", "developers-ko"],
     ["미디어", "media"],
+    ["Wallet", walletUrl],
     ["백서", "whitepaper-ko"],
   ],
 }
@@ -125,9 +129,9 @@ const langLink = (_lang, logo_type, text_color, used) => {
         default:
           return;
       }
-    } else if (i === 4) {
+    } else if (i === 4 || i === 7) {
       result.push(<a style={{ color: link_color }} href={page_json[i][1]}>{page_json[i][0]}</a>)
-    } else if (i === 7) {
+    } else if (i === 8) {
       if (used === "header") {
         result.push(<a style={{ color: whitepaper_color, backgroundColor: link_color }} aria-current="page" className="whitepaper" href={"/" + page_json[i][1]}>{page_json[i][0]}</a>)
       } else {

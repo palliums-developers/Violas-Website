@@ -135,7 +135,7 @@ class Header extends Component {
                     <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank" rel="noopener noreferrer">ブロックチェーン エクスプローラ</a>
                     <a aria-current="page" className="link" href="/developers-ja">開発者</a>
                     <a aria-current="page" className="link" href="/media">メディア</a>
-                    <a className="link" href="http://47.52.66.26:10089" target="_blank" rel="noopener noreferrer">Wallet</a>
+                    <a className="link" href="https://wallet.violas.io/" target="_blank" rel="noopener noreferrer">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="/whitepaper-ja">ホワイトペーパー</a>
                 </>)
             case "en":
@@ -146,7 +146,7 @@ class Header extends Component {
                     <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank" rel="noopener noreferrer">Blockchain Explorer</a>
                     <a aria-current="page" className="link" href="/developers-en">Developers</a>
                     <a aria-current="page" className="link" href="/media">Media</a>
-                    <a className="link" href="http://47.52.66.26:10089" target="_blank" rel="noopener noreferrer">Wallet</a>
+                    <a className="link" href="https://wallet.violas.io/" target="_blank" rel="noopener noreferrer">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="/whitepaper-en">WhitePaper</a>
                 </>)
             case "ko":
@@ -157,7 +157,7 @@ class Header extends Component {
                     <a className="link" href="https://testnet.violas.io/app/Violas" target="_blank" rel="noopener noreferrer">블록체인 탐색기</a>
                     <a aria-current="page" className="link" href="/developers-ko">개발자</a>
                     <a aria-current="page" className="link" href="/media">미디어</a>
-                    <a className="link" href="http://47.52.66.26:10089" target="_blank" rel="noopener noreferrer">Wallet</a>
+                    <a className="link" href="https://wallet.violas.io/" target="_blank" rel="noopener noreferrer">Wallet</a>
                     <a aria-current="page" className="whitepaper" href="/whitepaper-ko">백서</a>
                 </>)
             default:
