@@ -36,7 +36,13 @@ header {
 /* home_page */
 .headTalk {
   position: absolute;
+  padding: 0 1.0875rem 1.45rem;
   top: 280px;
+  width: 100%;
+}
+.headTalk .wp-block-group__inner-container {
+  width: 1000px;
+  margin: 0 auto;
 }
 .wel {
   font-size: 72px;
@@ -60,6 +66,9 @@ header {
   margin-left: 20px;
 }
 .margin {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 1.0875rem 1.45rem;
   margin-top: 130px;
 }
 .go_white {
@@ -82,8 +91,10 @@ header {
   margin-bottom: 62px;
 }
 .vs_img {
+  width: 1000px;
+  margin: 80px auto;
   display: flex;
-  margin: 80px 0;
+  /* margin: 80px; */
   margin-top: 180px;
 }
 .vs_img .v_img1 img {
@@ -113,11 +124,14 @@ header {
   line-height: 32px;
   margin-bottom: 50px;
 }
-.forReal {
+.forReal1 {
   background: #f9f9f9;
+}
+.forReal {
   padding-left: 20px;
   padding-top: 50px;
-
+  width: 1000px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 .real_list > .wp-block-group__inner-container {
@@ -147,9 +161,14 @@ header {
   line-height: 28px;
 }
 
-.wh_content > .wp-block-group__inner-container {
-  display: flex;
+.wh_content {
+  width: 100%;
   background: #f9f9f9;
+}
+.wh_content > .wp-block-group__inner-container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
   justify-content: space-between;
   padding-top: 300px;
   padding-bottom: 70px;
@@ -169,12 +188,15 @@ header {
 }
 .know_list {
   margin-top: 30px;
+  height: 700px;
 }
 .know_list .know_title {
   font-size: 30px;
   font-weight: 300;
   color: rgba(93, 86, 102, 1);
-  margin-top: 50px;
+  width: 1000px;
+  margin: 50px auto;
+  /* margin-top: 50px; */
 }
 .know_lists > .wp-block-group__inner-container {
   width: 227px;
@@ -320,10 +342,14 @@ header {
 .go_whites p {
   margin-bottom: 0;
 }
-.association_list > .wp-block-group__inner-container {
-  display: flex;
+.association_list1 {
   width: 100%;
   background: #f1f1f1;
+}
+.association_list > .wp-block-group__inner-container {
+  display: flex;
+  margin: 0 auto;
+  width: 1000px;
   justify-content: space-between;
   margin-top: 180px;
 }
@@ -377,6 +403,8 @@ header {
   margin-bottom: 50px;
 }
 .person_list > .wp-block-group__inner-container {
+  width: 1000px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
@@ -404,10 +432,14 @@ header {
   height: 370px;
 }
 /* vision_page */
-.vision_headTalk > .wp-block-group__inner-container {
+.vision_headTalk {
+  width: 100%;
   position: absolute;
   top: 200px;
-  width: 920px;
+}
+.vision_headTalk > .wp-block-group__inner-container {
+  margin: 0 auto;
+  width: 1000px;
 }
 .vision_title {
   font-size: 72px;
@@ -420,6 +452,8 @@ header {
   line-height: 60px;
 }
 .vision_con {
+  width: 1000px;
+  margin: 0 auto;
   padding: 64px 50px;
   box-sizing: border-box;
   font-size: 24px;
@@ -427,12 +461,17 @@ header {
   line-height: 32px;
   background: rgba(255, 255, 255, 1);
   margin-top: -100px;
+  margin-bottom: 70px;
 }
 /* assionation_page */
 .association_headTalk {
   position: absolute;
   top: 200px;
-  width: 920px;
+  width: 100%;
+}
+.association_headTalk .wp-block-group__inner-container {
+  width: 1000px;
+  margin: 0 auto;
 }
 .association_headTalk .association_title {
   font-size: 72px;
@@ -447,6 +486,8 @@ header {
   letter-spacing: 1px;
 }
 .section {
+  width: 1000px;
+  margin: 0 auto;
   margin-top: -100px;
   background: #fff;
   padding-top: 20px;
@@ -481,6 +522,7 @@ header {
   width: 45%;
   margin-top: 120px;
   margin-left: 35px;
+  margin-bottom: 100px;
 }
 
 .content1 > figure img {
@@ -532,6 +574,10 @@ header {
   height: 4px;
   margin-top: -20px;
 }
+.app_list {
+  width: 1000px;
+  margin: 0 auto;
+}
 .app_list > ul {
   display: flex;
 }
@@ -542,8 +588,11 @@ header {
   margin-right: 0;
 }
 .app_list img {
-  /* width: 20%; */
   max-height: 536px;
+}
+.app_soon1 {
+  width: 1000px;
+  margin: 0 auto;
 }
 .app_soon {
   width: 48%;
@@ -559,6 +608,11 @@ header {
   max-width: 221px;
   max-height: 55px;
 }
+.client1 {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
 .download {
   display: flex;
   justify-content: flex-end;
@@ -572,11 +626,16 @@ header {
   margin-left: 10px;
 }
 /* parters_page */
+.partner_headContent1 {
+  width: 100%;
+  position: absolute;
+  top: 230px;
+}
 .partner_headContent {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 230px;
+  margin: 0 auto;
+  width: 1000px;
 }
 .partner_headContent img {
   max-width: 127px;
@@ -595,6 +654,8 @@ header {
   margin-left: 40px;
 }
 .contents2 {
+  width: 1000px;
+  margin: 0 auto;
   margin-top: -100px;
   background: #fff;
 }
@@ -678,9 +739,6 @@ header {
   line-height: 32px;
   margin-left: 15px;
 }
-/* .sec_content{
-  margin-left: 15px;
-} */
 .sec_content p {
   margin-bottom: 10px;
   margin-left: 15px;
@@ -722,6 +780,8 @@ header {
   clear: both;
   padding-top: 100px;
   box-sizing: border-box;
+  width: 1000px;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 .assets img {
@@ -749,8 +809,8 @@ header {
 .issuers_contents {
   background: #2d2d64;
   padding-top: 20px;
-  /* padding-left: 20px;
-    box-sizing: border-box; */
+  margin: 0 auto;
+  width: 1000px;
 }
 .issuers_list {
   margin-top: 70px;
@@ -805,6 +865,11 @@ header {
   line-height: 32px;
 }
 /* whitePaper_page */
+.whitepaper1 {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
 .whitePaper_headContent > .wp-block-group__inner-container {
   position: relative;
 }
@@ -946,6 +1011,8 @@ header {
   z-index: 1;
 }
 .imgs {
+  width: 1000px;
+  margin: 0 auto;
   display: flex;
 }
 .imgs img {
@@ -1376,6 +1443,18 @@ footer .email p span {
     height: 100%;
     position: relative;
   }
+  .headTalk .wp-block-group__inner-container{
+    width: 100%;
+  }
+  .forReal{
+    width: 100%;
+  }
+  .association_list > .wp-block-group__inner-container{
+    width: 100%;
+  }
+  .person_list > .wp-block-group__inner-container{
+    width: 100%;
+  }
   /* vision_page */
   .vision_title {
     font-size: 40px;
@@ -1393,13 +1472,16 @@ footer .email p span {
     padding: 0;
     box-sizing: border-box;
     margin-top: 50px;
+    width: 100%;
+    padding: 1rem;
   }
   /* .association_page */
   .section {
     margin-top: 20px;
     padding: 0;
+    width: 95%;
   }
-  .association_headTalk {
+  .association_headTalk .wp-block-group__inner-container{
     top: 250px;
     width: 90%;
   }
@@ -1409,6 +1491,9 @@ footer .email p span {
   .association_headTalk .association_intro {
     font-size: 20px;
     line-height: 33px;
+  }
+  .partner_headContent{
+    width: 95%;
   }
   .a_title img {
     width: 3px;
@@ -1481,6 +1566,7 @@ footer .email p span {
   }
   .contents2 {
     margin-top: 0;
+    width: 95%;
   }
   .contents2 > .wp-block-group__inner-container {
     flex-direction: column;
@@ -1488,6 +1574,7 @@ footer .email p span {
   .assets {
     flex-direction: column;
     margin-bottom: 50px;
+    width: 95%;
   }
   .assets img {
     margin-right: 0;
@@ -1504,6 +1591,9 @@ footer .email p span {
     font-weight: 300;
     color: #5d5666;
     line-height: 22px;
+  }
+  .issuers_contents{
+    width: 95%;
   }
   .issuers_title img {
     height: 20px;
@@ -1584,11 +1674,17 @@ footer .email p span {
     height: 2px;
     margin-top: -35px;
   }
+  .app_list{
+    width: 95%;
+  }
   .app_list ul li:nth-child(1) img {
     display: none;
   }
   .app_list > ul li {
     margin-right: 10px;
+  }
+  .app_soon1{
+    width: 95%;
   }
   .app_soon .wp-block-media-text__media img {
     width: 132px;
@@ -1598,6 +1694,12 @@ footer .email p span {
     width: 100px;
     height: 25px;
     /* border-radius: 40px; */
+  }
+  .client1{
+    width: 95%;
+  }
+  .whitepaper1{
+    width: 95%;
   }
   /* home */
   .headTalk .wel {
@@ -1613,8 +1715,11 @@ footer .email p span {
   .h_con {
     font-size: 20px;
   }
+  .know_list .know_title{
+    width: 100%;
+  }
   .vs_img {
-    width:100%;
+    width: 300px;
     margin: 0 auto;
     margin-top: 180px;
     margin-bottom: 80px;
@@ -1722,6 +1827,7 @@ footer .email p span {
     margin-bottom: 5px;
   }
   .imgs {
+    width: 100%;
     flex-direction: column;
     text-align: center;
   }

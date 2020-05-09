@@ -9,8 +9,11 @@
     flex-direction: row;
     overflow-x:scroll;
     overflow-y: hidden;
-    width:960px;
+    width:1000px;
     height:580px;
+    margin: 0 auto;
+    /* position: absolute;
+    right:0px; */
 }
 .swiper-slide-scroll{
   margin: 0px 10px 10px 10px;

@@ -36,6 +36,8 @@ module.exports = {
          */
         baseUrl: `https://V10lasW0rdpre55.violas.io`,
         protocol: `https`,
+        // baseUrl: `http://47.52.66.26:10087`,
+        // protocol: `http`,
         hostingWPCOM: false,
         useACF: false,
       },
