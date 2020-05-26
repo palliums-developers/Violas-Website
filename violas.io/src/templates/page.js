@@ -341,7 +341,8 @@ class Page extends Component {
             <div className="IEEE">
               <div className="containerIEEE">
                 <div className="titleIEEE">
-                  <p>Request Access of Violas Apps and SDK for IEEE Presentation</p>
+                  {/* <p>Request Access of Violas Apps and SDK for IEEE Presentation</p> */}
+                  <p>Request Access of Violas Apps and SDK</p>
                   <img src={presentationLogo} />
                 </div>
                 <form onSubmit={this.handleSubmit}>
@@ -380,9 +381,7 @@ class Page extends Component {
                       <></>
                     }
                   </p>
-                  {/* <br /> */}
                   <button className="submit">Submit</button>
-                  {/* <input type="submit" value="Submit" className="submit" /> */}
                   <p className='warning'>{this.state.warning}</p>
                 </form>
               </div>
