@@ -337,73 +337,73 @@ class Page extends Component {
           this.hasBackground(path_temp)
         }></div>
         {
-          path_temp === 'developers' ?
-            <div className="IEEE">
-              <div className="containerIEEE">
-                <div className="titleIEEE">
-                  {/* <p>Request Access of Violas Apps and SDK for IEEE Presentation</p> */}
-                  <p>Request Access of Violas Apps and SDK</p>
-                  <img src={presentationLogo} />
-                </div>
-                <form onSubmit={this.handleSubmit}>
-                  <p>Last Name:&nbsp;&nbsp;
-            <input type="text" value={this.state.last_name} onChange={this.handleChange.bind(this, 'lname')} />
-                  </p>
-                  <p>First Name:&nbsp;&nbsp;
-            <input type="text" value={this.state.first_name} onChange={this.handleChange.bind(this, 'fname')} />
-                  </p>
-                  <p>Company Name:&nbsp;&nbsp;
-            <input type="text" value={this.state.company_name} onChange={this.handleChange.bind(this, 'cname')} />
-                  </p>
-                  <p>
-                    Contact:&nbsp;&nbsp;
-            <input type="text" value={this.state.contact} onChange={this.handleChange.bind(this, 'contact')} />
-                  </p>
-                  <p>Job title:&nbsp;&nbsp;
-            <input type="text" value={this.state.job_title} onChange={this.handleChange.bind(this, 'JobTitle')} />
-                  </p>
-                  <p>Business Sector:&nbsp;&nbsp;
-            <select value={this.state.business} onChange={this.handleChange.bind(this, 'business')}>
-                      <option value="" className="pSelect">Please Select</option>
-                      <option value="Academic">Academic</option>
-                      <option value="Commercial Bank">Commercial Bank</option>
-                      <option value="Central Bank">Central Bank</option>
-                      <option value="Trading">Trading</option>
-                      <option value="Payment">Payment</option>
-                      <option value="Money Transfer">Money Transfer</option>
-                      <option value="Stock Exchange">Stock Exchange</option>
-                      <option value="eCommerce">eCommerce</option>
-                      <option value="Financial Service">Financial Service</option>
-                      <option value="other">Other</option>
-                    </select>
-                    {this.state.business === "other" ?
-                      <input className="other" type="text" value={this.state.specify} onChange={this.handleChange.bind(this, 'specify')} /> :
-                      <></>
-                    }
-                  </p>
-                  <button className="submit">Submit</button>
-                  <p className='warning'>{this.state.warning}</p>
-                </form>
-              </div>
-              {
-                this.state.postSuccess ?
-                  <div className="postSuccess">
-                    <div style={{ backgroundImage: 'url(' + presentationBg + ')', backgroundSize: '100% 100%' }} className='container'>
-                      <div className='logo'>
-                        <img src={presentationSucceed} />
-                      </div>
-                      <h1>Submitted Successfully</h1>
-                      <p>We successfully received your application.</p>
-                      <p>Your request will be reviewed within 24h.</p>
-                      <p>Thanks for your interest.</p>
-                      <div className='button'>
-                        <button onClick={this.closeSubmit.bind(this)}>OK</button>
-                      </div>
-                    </div>
-                  </div> :
-                  <></>
-              }
-            </div> : <></>
+          // path_temp === 'developers' ?
+          //   <div className="IEEE">
+          //     <div className="containerIEEE">
+          //       <div className="titleIEEE">
+          //         {/* <p>Request Access of Violas Apps and SDK for IEEE Presentation</p> */}
+          //         <p>Request Access of Violas Apps and SDK</p>
+          //         <img src={presentationLogo} />
+          //       </div>
+          //       <form onSubmit={this.handleSubmit}>
+          //         <p>Last Name:&nbsp;&nbsp;
+          //   <input type="text" value={this.state.last_name} onChange={this.handleChange.bind(this, 'lname')} />
+          //         </p>
+          //         <p>First Name:&nbsp;&nbsp;
+          //   <input type="text" value={this.state.first_name} onChange={this.handleChange.bind(this, 'fname')} />
+          //         </p>
+          //         <p>Company Name:&nbsp;&nbsp;
+          //   <input type="text" value={this.state.company_name} onChange={this.handleChange.bind(this, 'cname')} />
+          //         </p>
+          //         <p>
+          //           Contact:&nbsp;&nbsp;
+          //   <input type="text" value={this.state.contact} onChange={this.handleChange.bind(this, 'contact')} />
+          //         </p>
+          //         <p>Job title:&nbsp;&nbsp;
+          //   <input type="text" value={this.state.job_title} onChange={this.handleChange.bind(this, 'JobTitle')} />
+          //         </p>
+          //         <p>Business Sector:&nbsp;&nbsp;
+          //   <select value={this.state.business} onChange={this.handleChange.bind(this, 'business')}>
+          //             <option value="" className="pSelect">Please Select</option>
+          //             <option value="Academic">Academic</option>
+          //             <option value="Commercial Bank">Commercial Bank</option>
+          //             <option value="Central Bank">Central Bank</option>
+          //             <option value="Trading">Trading</option>
+          //             <option value="Payment">Payment</option>
+          //             <option value="Money Transfer">Money Transfer</option>
+          //             <option value="Stock Exchange">Stock Exchange</option>
+          //             <option value="eCommerce">eCommerce</option>
+          //             <option value="Financial Service">Financial Service</option>
+          //             <option value="other">Other</option>
+          //           </select>
+          //           {this.state.business === "other" ?
+          //             <input className="other" type="text" value={this.state.specify} onChange={this.handleChange.bind(this, 'specify')} /> :
+          //             <></>
+          //           }
+          //         </p>
+          //         <button className="submit">Submit</button>
+          //         <p className='warning'>{this.state.warning}</p>
+          //       </form>
+          //     </div>
+          //     {
+          //       this.state.postSuccess ?
+          //         <div className="postSuccess">
+          //           <div style={{ backgroundImage: 'url(' + presentationBg + ')', backgroundSize: '100% 100%' }} className='container'>
+          //             <div className='logo'>
+          //               <img src={presentationSucceed} />
+          //             </div>
+          //             <h1>Submitted Successfully</h1>
+          //             <p>We successfully received your application.</p>
+          //             <p>Your request will be reviewed within 24h.</p>
+          //             <p>Thanks for your interest.</p>
+          //             <div className='button'>
+          //               <button onClick={this.closeSubmit.bind(this)}>OK</button>
+          //             </div>
+          //           </div>
+          //         </div> :
+          //         <></>
+          //     }
+          //   </div> : <></>
         }
         <Layout>
           <div dangerouslySetInnerHTML={{ __html: StaticPage.content }}></div>
